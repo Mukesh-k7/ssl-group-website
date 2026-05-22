@@ -1,0 +1,55 @@
+"use client";
+
+import Link from "next/link";
+import { Warehouse, Ship, Container } from "lucide-react";
+import { AnimatedSection, SectionHeader } from "@/components/shared/animated-section";
+import { Button } from "@/components/ui/button";
+
+const facilities = [
+  {
+    icon: Warehouse,
+    title: "Bonded Warehousing",
+    description: "50,000+ MT capacity across Mumbai, Kandla, and Vizag port facilities.",
+  },
+  {
+    icon: Ship,
+    title: "Vessel Loading",
+    description: "Dedicated berth access with 5,000–75,000 MT parcel loading capability.",
+  },
+  {
+    icon: Container,
+    title: "Container & Bulk",
+    description: "Flexible packaging — bulk vessels, containers, and jumbo bag dispatch.",
+  },
+];
+
+export function InfrastructurePreviewSection() {
+  return (
+    <AnimatedSection className="border-y border-white/10 bg-gunmetal/20 py-24">
+      <div className="container mx-auto px-4 md:px-6">
+        <SectionHeader
+          eyebrow="Infrastructure"
+          title="World-Class Export Infrastructure"
+          description="Port-side facilities, quality labs, and logistics networks engineered for industrial-scale shipments."
+        />
+        <div className="grid gap-6 md:grid-cols-3">
+          {facilities.map((item) => (
+            <div
+              key={item.title}
+              className="rounded-xl border border-white/10 bg-charcoal/50 p-8 text-center"
+            >
+              <item.icon className="mx-auto mb-4 h-10 w-10 text-industrial-blue" />
+              <h3 className="font-heading text-lg font-semibold text-white">{item.title}</h3>
+              <p className="mt-2 text-sm text-metallic/80">{item.description}</p>
+            </div>
+          ))}
+        </div>
+        <div className="mt-10 text-center">
+          <Button variant="secondary" asChild>
+            <Link href="/infrastructure">Explore Infrastructure</Link>
+          </Button>
+        </div>
+      </div>
+    </AnimatedSection>
+  );
+}

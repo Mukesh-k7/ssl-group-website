@@ -1,0 +1,87 @@
+"use client";
+
+import { MapPin } from "lucide-react";
+import {
+  AnimatedSection,
+  SectionHeader,
+  StaggerGrid,
+  StaggerItem,
+} from "@/components/shared/animated-section";
+import { exportRegions } from "@/data/site";
+
+export function ExportMapSection() {
+  return (
+    <AnimatedSection className="py-24">
+      <div className="container mx-auto px-4 md:px-6">
+        <SectionHeader
+          eyebrow="Global Export Network"
+          title="Strategic Trade Corridors Worldwide"
+          description="Established logistics routes and port partnerships delivering metallurgical raw materials across continents."
+        />
+        <div className="grid gap-8 lg:grid-cols-2">
+          <StaggerGrid className="grid gap-4 sm:grid-cols-2">
+            {exportRegions.map((region) => (
+              <StaggerItem key={region.name}>
+                <div className="rounded-xl border border-white/10 bg-gunmetal/30 p-6">
+                  <div className="mb-3 flex items-center gap-2">
+                    <MapPin className="h-5 w-5 text-industrial-blue" />
+                    <h3 className="font-heading text-lg font-semibold text-white">
+                      {region.name}
+                    </h3>
+                  </div>
+                  <p className="text-sm text-metallic/80">{region.description}</p>
+                  <div className="mt-4 flex flex-wrap gap-2">
+                    {region.countries.map((country) => (
+                      <span
+                        key={country}
+                        className="rounded-full border border-white/10 bg-charcoal/60 px-3 py-1 text-xs text-metallic"
+                      >
+                        {country}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </StaggerItem>
+            ))}
+          </StaggerGrid>
+
+          <div className="relative flex min-h-[400px] items-center justify-center overflow-hidden rounded-2xl border border-white/10 bg-gunmetal/40">
+            <div className="absolute inset-0 bg-industrial-grid opacity-20" />
+            {/* Stylized world map placeholder */}
+            <svg
+              viewBox="0 0 800 400"
+              className="h-full w-full p-8 opacity-60"
+              aria-hidden
+            >
+              <ellipse cx="400" cy="200" rx="350" ry="180" fill="none" stroke="#1E3A5F" strokeWidth="1" strokeDasharray="4 4" />
+              {[
+                { cx: 520, cy: 180, label: "ME" },
+                { cx: 480, cy: 240, label: "AF" },
+                { cx: 380, cy: 150, label: "EU" },
+                { cx: 600, cy: 200, label: "AP" },
+                { cx: 350, cy: 200, label: "IN" },
+              ].map((point) => (
+                <g key={point.label}>
+                  <circle cx={point.cx} cy={point.cy} r="8" fill="#1E3A5F" />
+                  <circle cx={point.cx} cy={point.cy} r="16" fill="#1E3A5F" opacity="0.3">
+                    <animate attributeName="r" values="16;24;16" dur="3s" repeatCount="indefinite" />
+                  </circle>
+                  <text x={point.cx} y={point.cy - 20} textAnchor="middle" fill="#BFC3C9" fontSize="12">
+                    {point.label}
+                  </text>
+                </g>
+              ))}
+              <line x1="350" y1="200" x2="520" y2="180" stroke="#1E3A5F" strokeWidth="1" opacity="0.5" />
+              <line x1="350" y1="200" x2="480" y2="240" stroke="#1E3A5F" strokeWidth="1" opacity="0.5" />
+              <line x1="350" y1="200" x2="380" y2="150" stroke="#1E3A5F" strokeWidth="1" opacity="0.5" />
+              <line x1="350" y1="200" x2="600" y2="200" stroke="#1E3A5F" strokeWidth="1" opacity="0.5" />
+            </svg>
+            <p className="absolute bottom-4 text-xs text-metallic/50">
+              Interactive map integration available
+            </p>
+          </div>
+        </div>
+      </div>
+    </AnimatedSection>
+  );
+}

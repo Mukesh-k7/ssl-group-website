@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1E3A5F"/>
+      <stop offset="50%" style="stop-color:#2A2A2A"/>
+      <stop offset="100%" style="stop-color:#111111"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#BFC3C9" stroke-width="0.3" opacity="0.15"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <rect width="800" height="600" fill="url(#grid)"/>
+  <text x="400" y="300" text-anchor="middle" fill="#BFC3C9" font-family="system-ui,sans-serif" font-size="24" font-weight="600" opacity="0.6">SSL GROUP</text>
+  <text x="400" y="340" text-anchor="middle" fill="#BFC3C9" font-family="system-ui,sans-serif" font-size="14" opacity="0.4">Industrial Metallurgy</text>
+</svg>
