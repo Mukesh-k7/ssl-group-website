@@ -237,7 +237,7 @@ export default function ContactPage() {
           >
             <iframe
               title="SSL Group Delhi Office Location"
-              src="https://maps.google.com/maps?q=Office+No+410+Ansal+Sumanglam+4TH+Floor+RDC+Raj+Nagar+Ghaziabad+201002+Uttar+Pradesh+India&t=&z=15&ie=UTF8&iwloc=&output=embed"
+              src="https://maps.google.com/maps?q=Ground+Floor+CC-23+AVANTIKA+1+Avantika+Main+Road+Saini+Washing+Center+Avantika+Ghaziabad+Uttar+Pradesh+201015+India&t=&z=15&ie=UTF8&iwloc=&output=embed"
               className="
                 h-80 w-full
                 bg-gunmetal
