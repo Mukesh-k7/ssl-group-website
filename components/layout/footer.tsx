@@ -165,7 +165,7 @@ export function Footer() {
                   className="
                     h-4 w-4
                     mt-0.5
-                    text-industrial-blue
+                    text-[#c96a00] text-bold
                     shrink-0
                   "
                 />
@@ -187,7 +187,7 @@ export function Footer() {
                   <Phone
                     className="
                       h-4 w-4
-                      text-industrial-blue
+                      text-[#c96a00] text-bold
                     "
                   />
                   {company.phone}
@@ -205,7 +205,7 @@ export function Footer() {
                   <Mail
                     className="
                       h-4 w-4
-                      text-industrial-blue
+                      text-[#c96a00] text-bold
                     "
                   />
                   {company.email}
