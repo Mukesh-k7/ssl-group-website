@@ -12,8 +12,8 @@ export const company = {
   phone: "+91 - 9599053449",
   whatsapp: "+91 - 9599053449",
   address: {
-    line1: "Delhi Head Office : Office No 410 Ansal Sumanglam, 4TH Floor, RDC, Raj Nagar, Ghaziabad 201002",
-    line2: "Uttar Pradesh, INDIA",
+    line1: "Delhi Head Office : Ground Floor, CC-23, AVANTIKA 1, Avantika Main Road, Saini Washing Center, Avantika, Ghaziabad,",
+    line2: " Uttar Pradesh 201015, India",
   },
   founded: 1998,
   catalogUrl: getAbsoluteUrl("/catalog/ssl-group-product-catalog.pdf"),
