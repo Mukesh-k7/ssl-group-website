@@ -94,10 +94,11 @@ export default function ContactPage() {
                       className="
                         h-5 w-5
                         mt-0.5
-                        text-industrial-blue
+                        text-[#c96a00] text-bold
                         shrink-0
                       "
-                    />
+                      /
+                    >
                     <span>
                       <strong
                         className="
@@ -122,9 +123,10 @@ export default function ContactPage() {
                       <Phone
                         className="
                           h-5 w-5
-                          text-industrial-blue
+                          text-[#c96a00] text-bold
                         "
-                      />
+                        /
+                      >
                       {company.phone}
                     </a>
                   </li>
@@ -140,7 +142,7 @@ export default function ContactPage() {
                       <Mail
                         className="
                           h-5 w-5
-                          text-industrial-blue
+                          text-[#c96a00] text-bold
                         "
                       />
                       {company.email}
@@ -158,7 +160,7 @@ export default function ContactPage() {
                       <Mail
                         className="
                           h-5 w-5
-                          text-industrial-blue
+                          text-[#c96a00] text-bold
                         "
                       />
                       {company.salesEmail}
