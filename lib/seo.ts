@@ -124,7 +124,7 @@ export function organizationSchema() {
       streetAddress: `${company.address.line1}, ${company.address.line2}`,
       addressLocality: "Ghaziabad",
       addressRegion: "Uttar Pradesh",
-      postalCode: "201002",
+      postalCode: "201013",
       addressCountry: "IN",
     },
     contactPoint: {
