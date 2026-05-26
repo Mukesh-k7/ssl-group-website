@@ -64,7 +64,7 @@ export function InfrastructurePreviewSection() {
                 className="
                   h-10 w-10
                   mx-auto mb-4
-                  text-industrial-blue
+                  text-[#c96a00]
                 "
               />
               <h3
@@ -87,7 +87,13 @@ export function InfrastructurePreviewSection() {
             text-center
           "
         >
-          <Button variant="secondary" asChild>
+          <Button
+            variant="secondary"
+            className="
+              bg-[#c35303d1]
+            "
+            asChild
+          >
             <Link href="/infrastructure">Explore Infrastructure</Link>
           </Button>
         </div>

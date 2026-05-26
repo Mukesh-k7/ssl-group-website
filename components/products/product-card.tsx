@@ -124,6 +124,7 @@ export function ProductCard({ product }: ProductCardProps) {
             className="
               w-full
               mt-6
+              bg-[#1e3a5f]
               group/btn
             "
             asChild

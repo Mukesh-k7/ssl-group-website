@@ -13,7 +13,7 @@ export function HeroSection() {
       className="
         relative flex items-center overflow-hidden
         min-h-screen
-        bg-charcoal
+        bg-[#c35303d1]
       "
     >
       {/* Animated industrial background */}
@@ -296,10 +296,12 @@ export function HeroSection() {
                     <div
                       key={stat.label}
                       className="
-                        p-4
-                        bg-charcoal/60
-                        rounded-lg border border-white/10
-                        backdrop-blur-md
+                        p-4 py-3
+                        bg-gradient-to-r from-[#7C2D12] via-[#EA580C]
+                        to-[#FDBA74]
+                        rounded-lg border-0
+                        backdrop-blur-md backdrop-blur-xl
+                        shadow-2xl shadow-black/40
                       "
                     >
                       <p

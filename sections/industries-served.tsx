@@ -80,7 +80,7 @@ export function IndustriesServedSection({ limit }: { limit?: number }) {
                     className="
                       h-8 w-8
                       mb-4
-                      text-industrial-blue
+                      text-[#c96a00]
                       transition-transform
                       group-hover:scale-110
                     "
@@ -96,7 +96,7 @@ export function IndustriesServedSection({ limit }: { limit?: number }) {
                     className="
                       flex-1
                       mt-2
-                      text-sm text-metallic/80 line-clamp-3
+                      text-sm line-clamp-3
                     "
                   >
                     {industry.description}
@@ -104,7 +104,7 @@ export function IndustriesServedSection({ limit }: { limit?: number }) {
                   <p
                     className="
                       mt-4
-                      text-xs text-industrial-blue
+                      text-xs text-[#c96a00]
                     "
                   >
                     {industry.regions.join(" · ")}

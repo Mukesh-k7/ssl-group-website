@@ -58,7 +58,7 @@ export function StatsCounterSection() {
       className="
         relative
         py-16
-        bg-gunmetal/30
+        bg-white
         border-y border-white/10
       "
     >
@@ -114,7 +114,7 @@ export function StatsCounterSection() {
               <p
                 className="
                   mt-2
-                  text-sm text-metallic/80 md:text-base
+                  text-sm text-[#e78e03] md:text-base font-bold
                 "
               >
                 {stat.label}

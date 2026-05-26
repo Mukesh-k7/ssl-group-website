@@ -15,6 +15,7 @@ export function ExportMapSection() {
       id="export"
       className="
         py-24
+        bg-[#c35303d1]
       "
     >
       <div
@@ -59,7 +60,7 @@ export function ExportMapSection() {
                     <MapPin
                       className="
                         h-5 w-5
-                        text-industrial-blue
+                        text-[#c96a00] text-bold
                       "
                       /
                     >
@@ -128,7 +129,7 @@ export function ExportMapSection() {
               "
               aria-hidden
             >
-              <ellipse cx="400" cy="200" rx="350" ry="180" fill="none" stroke="#1E3A5F" strokeWidth="1" strokeDasharray="4 4" />
+              <ellipse cx="400" cy="200" rx="350" ry="180" fill="none" stroke="#fff" strokeWidth="1" strokeDasharray="4 4" />
               {[
                 { cx: 520, cy: 180, label: "ME" },
                 { cx: 480, cy: 240, label: "AF" },
@@ -137,8 +138,14 @@ export function ExportMapSection() {
                 { cx: 350, cy: 200, label: "IN" },
               ].map((point) => (
                 <g key={point.label}>
-                  <circle cx={point.cx} cy={point.cy} r="8" fill="#1E3A5F" />
-                  <circle cx={point.cx} cy={point.cy} r="16" fill="#1E3A5F" opacity="0.3">
+                  <circle
+                    cx={point.cx} cy={point.cy} r="8" fill="#fff"
+                    className="
+                      text-bold
+                    "
+                    /
+                  >
+                  <circle cx={point.cx} cy={point.cy} r="16" fill="#fff" opacity="0.3">
                     <animate attributeName="r" values="16;24;16" dur="3s" repeatCount="indefinite" />
                   </circle>
                   <text x={point.cx} y={point.cy - 20} textAnchor="middle" fill="#BFC3C9" fontSize="12">
@@ -146,10 +153,10 @@ export function ExportMapSection() {
                   </text>
                 </g>
               ))}
-              <line x1="350" y1="200" x2="520" y2="180" stroke="#1E3A5F" strokeWidth="1" opacity="0.5" />
-              <line x1="350" y1="200" x2="480" y2="240" stroke="#1E3A5F" strokeWidth="1" opacity="0.5" />
-              <line x1="350" y1="200" x2="380" y2="150" stroke="#1E3A5F" strokeWidth="1" opacity="0.5" />
-              <line x1="350" y1="200" x2="600" y2="200" stroke="#1E3A5F" strokeWidth="1" opacity="0.5" />
+              <line x1="350" y1="200" x2="520" y2="180" stroke="#fff" strokeWidth="1" opacity="0.5" />
+              <line x1="350" y1="200" x2="480" y2="240" stroke="#fff" strokeWidth="1" opacity="0.5" />
+              <line x1="350" y1="200" x2="380" y2="150" stroke="#fff" strokeWidth="1" opacity="0.5" />
+              <line x1="350" y1="200" x2="600" y2="200" stroke="#fff" strokeWidth="1" opacity="0.5" />
             </svg>
             <p
               className="

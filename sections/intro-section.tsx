@@ -112,9 +112,10 @@ export function IntroSection() {
               <div
                 className="
                   p-4
-                  bg-charcoal/80
-                  rounded-lg border border-white/10
-                  backdrop-blur-md
+                  bg-gradient-to-r from-[#7C2D12] via-[#EA580C] to-[#FDBA74]
+                  rounded-lg rounded-lg border-0 border border-white/10
+                  backdrop-blur-md backdrop-blur-xl backdrop-blur-md
+                  shadow-2xl shadow-black/40
                 "
               >
                 <p

@@ -63,7 +63,13 @@ export function ProductsGridSection({
               text-center
             "
           >
-            <Button size="lg" variant="secondary" asChild>
+            <Button
+              size="lg" variant="secondary"
+              className="
+                bg-[#c35303d1]
+              "
+              asChild
+            >
               <Link href="/products">View All Products</Link>
             </Button>
           </div>

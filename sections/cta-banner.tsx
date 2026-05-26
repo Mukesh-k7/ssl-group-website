@@ -16,30 +16,86 @@ export function CtaBannerSection({
   description = "Connect with our export desk for specifications, pricing, vessel scheduling, and Incoterms consultation.",
 }: CtaBannerProps) {
   return (
-    <section className="py-20">
-      <div className="container mx-auto px-4 md:px-6">
-        <motion.div
+    <section
+      className="
+        py-20
+        bg-[#c35303d1]
+      "
+    >
+      <div
+        className="
+          container
+          mx-auto px-4 md:px-6
+        "
+      >
+        <motion
+          .div
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="relative overflow-hidden rounded-2xl border border-industrial-blue/30 bg-gradient-to-br from-industrial-blue/40 via-gunmetal to-charcoal p-8 md:p-12 lg:p-16"
+          className="
+            relative overflow-hidden
+            p-8 md:p-12 lg:p-16
+            bg-gradient-to-br from-industrial-blue/40 via-gunmetal to-charcoal
+            rounded-2xl border border-industrial-blue/30
+          "
         >
-          <div className="absolute -right-20 -top-20 h-64 w-64 rounded-full bg-industrial-blue/20 blur-3xl" />
-          <div className="relative max-w-2xl">
-            <h2 className="font-heading text-3xl font-bold text-white md:text-4xl">
+          <div
+            className="
+              absolute
+              h-64 w-64
+              bg-industrial-blue/20
+              rounded-full
+              blur-3xl
+              -right-20 -top-20
+            "
+            /
+          >
+          <div
+            className="
+              relative
+              max-w-2xl
+            "
+          >
+            <h2
+              className="
+                font-heading font-bold text-3xl text-white md:text-4xl
+              "
+            >
               {title}
             </h2>
-            <p className="mt-4 text-lg text-metallic/90">{description}</p>
-            <div className="mt-8 flex flex-wrap gap-4">
+            <p
+              className="
+                mt-4
+                text-lg text-metallic/90
+              "
+            >{description}</p>
+            <div
+              className="
+                flex flex-wrap
+                mt-8
+                gap-4
+              "
+            >
               <Button size="lg" asChild>
                 <Link href="/contact">
                   Submit Export Inquiry
-                  <ArrowRight className="h-5 w-5" />
+                  <ArrowRight
+                    className="
+                      h-5 w-5
+                    "
+                    /
+                  >
                 </Link>
               </Button>
               <Button size="lg" variant="outline" asChild>
                 <a href={`mailto:${company.email}`}>
-                  <Mail className="h-5 w-5" />
+                  <Mail
+                    className="
+                      h-5 w-5
+                    "
+                    /
+                  >
                   {company.email}
                 </a>
               </Button>
