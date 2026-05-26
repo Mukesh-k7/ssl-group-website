@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { SITE_URL } from "@/lib/site-url";
 
 /**
  * Email integration structure for inquiry form submissions.
@@ -34,6 +35,7 @@ export async function POST(request: Request) {
       quantity: quantity ?? null,
       destination: destination ?? null,
       incoterms: incoterms ?? null,
+      source: SITE_URL,
       receivedAt: new Date().toISOString(),
     };
 

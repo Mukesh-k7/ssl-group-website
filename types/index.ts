@@ -8,6 +8,7 @@ export interface Product {
   specifications: { label: string; value: string }[];
   applications: string[];
   featured?: boolean;
+  className?: string
 }
 
 export interface Industry {

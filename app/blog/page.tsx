@@ -5,6 +5,7 @@ import { PageHero } from "@/components/shared/page-hero";
 import { AnimatedSection } from "@/components/shared/animated-section";
 import { CtaBannerSection } from "@/sections/cta-banner";
 import { blogPosts } from "@/data/blog";
+import { PageBreadcrumbJsonLd } from "@/components/shared/page-breadcrumb-jsonld";
 import { createPageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = createPageMetadata({
@@ -17,6 +18,12 @@ export const metadata: Metadata = createPageMetadata({
 export default function BlogPage() {
   return (
     <>
+      <PageBreadcrumbJsonLd
+        items={[
+          { name: "Home", path: "/" },
+          { name: "Insights", path: "/blog" },
+        ]}
+      />
       <PageHero
         eyebrow="Insights"
         title="Industry Intelligence"

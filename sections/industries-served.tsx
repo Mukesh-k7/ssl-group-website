@@ -35,30 +35,78 @@ export function IndustriesServedSection({ limit }: { limit?: number }) {
   const items = limit ? industries.slice(0, limit) : industries;
 
   return (
-    <AnimatedSection className="bg-gunmetal/20 py-24">
-      <div className="container mx-auto px-4 md:px-6">
+    <AnimatedSection
+      id="industries"
+      className="
+        py-24
+        bg-gunmetal/20
+      "
+    >
+      <div
+        className="
+          container
+          mx-auto px-4 md:px-6
+        "
+      >
         <SectionHeader
           eyebrow="Industries Served"
           title="Powering Global Industrial Supply Chains"
           description="From integrated steel plants to EPC contractors — tailored metallurgical supply solutions for every sector."
         />
-        <StaggerGrid className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <StaggerGrid
+          className="
+            grid sm:grid-cols-2 lg:grid-cols-4
+            gap-4
+          "
+        >
           {items.map((industry) => {
             const Icon = iconMap[industry.icon] ?? Factory;
             return (
               <StaggerItem key={industry.slug}>
                 <Link
                   href="/industries"
-                  className="group flex h-full flex-col rounded-xl border border-white/10 bg-charcoal/50 p-6 transition-all hover:border-industrial-blue/40 hover:bg-charcoal"
+                  className="
+                    flex flex-col
+                    h-full
+                    p-6
+                    bg-charcoal/50 hover:bg-charcoal
+                    rounded-xl
+                    border border-white/10 hover:border-industrial-blue/40
+                    transition-all
+                    group
+                  "
                 >
-                  <Icon className="mb-4 h-8 w-8 text-industrial-blue transition-transform group-hover:scale-110" />
-                  <h3 className="font-heading font-semibold text-white">
+                  <Icon
+                    className="
+                      h-8 w-8
+                      mb-4
+                      text-industrial-blue
+                      transition-transform
+                      group-hover:scale-110
+                    "
+                  ></Icon>
+                  <h3
+                    className="
+                      font-heading font-semibold text-white
+                    "
+                  >
                     {industry.name}
                   </h3>
-                  <p className="mt-2 flex-1 text-sm text-metallic/80 line-clamp-3">
+                  <p
+                    className="
+                      flex-1
+                      mt-2
+                      text-sm text-metallic/80 line-clamp-3
+                    "
+                  >
                     {industry.description}
                   </p>
-                  <p className="mt-4 text-xs text-industrial-blue">
+                  <p
+                    className="
+                      mt-4
+                      text-xs text-industrial-blue
+                    "
+                  >
                     {industry.regions.join(" · ")}
                   </p>
                 </Link>

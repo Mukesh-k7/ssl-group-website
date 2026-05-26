@@ -5,7 +5,7 @@ import { ArrowLeft, Calendar, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { CtaBannerSection } from "@/sections/cta-banner";
 import { blogPosts, getBlogPostBySlug } from "@/data/blog";
-import { createPageMetadata } from "@/lib/seo";
+import { articleSchema, breadcrumbSchema, createPageMetadata } from "@/lib/seo";
 
 interface BlogPostPageProps {
   params: Promise<{ slug: string }>;
@@ -23,6 +23,8 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
     title: post.title,
     description: post.excerpt,
     path: `/blog/${post.slug}`,
+    type: "article",
+    publishedTime: post.date,
   });
 }
 
@@ -33,6 +35,32 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            articleSchema({
+              title: post.title,
+              description: post.excerpt,
+              slug: post.slug,
+              date: post.date,
+              category: post.category,
+            })
+          ),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            breadcrumbSchema([
+              { name: "Home", path: "/" },
+              { name: "Insights", path: "/blog" },
+              { name: post.title, path: `/blog/${post.slug}` },
+            ])
+          ),
+        }}
+      />
       <article className="pt-32 pb-16">
         <div className="container mx-auto max-w-3xl px-4 md:px-6">
           <Button variant="ghost" asChild className="mb-8">

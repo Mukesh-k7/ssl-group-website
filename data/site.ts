@@ -1,19 +1,22 @@
 import type { NavItem, Stat, Testimonial } from "@/types";
+import { getAbsoluteUrl } from "@/lib/site-url";
 
 export const company = {
   name: "SSL Group",
   tagline: "Global Metallurgy. Trusted Supply.",
   legalName: "SSL Group International Trading Pvt. Ltd.",
-  email: "export@sslgroup.in",
-  salesEmail: "sales@sslgroup.in",
-  phone: "+91 22 4567 8900",
-  whatsapp: "+919876543210",
+  website: "https://www.sslgroup.in/",
+  domain: "www.sslgroup.in",
+  email: "support@sslgroup.in",
+  salesEmail: "support@sslgroup.in",
+  phone: "+91 - 9599053449",
+  whatsapp: "+91 - 9599053449",
   address: {
-    line1: "SSL House, Bandra Kurla Complex",
-    line2: "Mumbai, Maharashtra 400051, India",
+    line1: "Delhi Head Office : Office No 410 Ansal Sumanglam, 4TH Floor, RDC, Raj Nagar, Ghaziabad 201002",
+    line2: "Uttar Pradesh, INDIA",
   },
   founded: 1998,
-  catalogUrl: "/catalog/ssl-group-product-catalog.pdf",
+  catalogUrl: getAbsoluteUrl("/catalog/ssl-group-product-catalog.pdf"),
 };
 
 export const navigation: NavItem[] = [

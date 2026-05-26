@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { PageHero } from "@/components/shared/page-hero";
 import { ProductsGridSection } from "@/sections/products-grid";
 import { CtaBannerSection } from "@/sections/cta-banner";
+import { PageBreadcrumbJsonLd } from "@/components/shared/page-breadcrumb-jsonld";
 import { createPageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = createPageMetadata({
@@ -14,6 +15,12 @@ export const metadata: Metadata = createPageMetadata({
 export default function ProductsPage() {
   return (
     <>
+      <PageBreadcrumbJsonLd
+        items={[
+          { name: "Home", path: "/" },
+          { name: "Products", path: "/products" },
+        ]}
+      />
       <PageHero
         eyebrow="Product Portfolio"
         title="Metallurgy & Steel Raw Materials"

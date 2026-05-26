@@ -4,6 +4,7 @@ import { PageHero } from "@/components/shared/page-hero";
 import { AnimatedSection, SectionHeader } from "@/components/shared/animated-section";
 import { StatsCounterSection } from "@/sections/stats-counter";
 import { CtaBannerSection } from "@/sections/cta-banner";
+import { PageBreadcrumbJsonLd } from "@/components/shared/page-breadcrumb-jsonld";
 import { createPageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = createPageMetadata({
@@ -51,6 +52,12 @@ const facilities = [
 export default function InfrastructurePage() {
   return (
     <>
+      <PageBreadcrumbJsonLd
+        items={[
+          { name: "Home", path: "/" },
+          { name: "Infrastructure", path: "/infrastructure" },
+        ]}
+      />
       <PageHero
         eyebrow="Facilities"
         title="Export Infrastructure"

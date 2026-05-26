@@ -11,30 +11,87 @@ import { exportRegions } from "@/data/site";
 
 export function ExportMapSection() {
   return (
-    <AnimatedSection className="py-24">
-      <div className="container mx-auto px-4 md:px-6">
+    <AnimatedSection
+      id="export"
+      className="
+        py-24
+      "
+    >
+      <div
+        className="
+          container
+          mx-auto px-4 md:px-6
+        "
+      >
         <SectionHeader
           eyebrow="Global Export Network"
           title="Strategic Trade Corridors Worldwide"
           description="Established logistics routes and port partnerships delivering metallurgical raw materials across continents."
         />
-        <div className="grid gap-8 lg:grid-cols-2">
-          <StaggerGrid className="grid gap-4 sm:grid-cols-2">
+        <div
+          className="
+            grid lg:grid-cols-2
+            gap-8
+          "
+        >
+          <StaggerGrid
+            className="
+              grid sm:grid-cols-2
+              gap-4
+            "
+          >
             {exportRegions.map((region) => (
               <StaggerItem key={region.name}>
-                <div className="rounded-xl border border-white/10 bg-gunmetal/30 p-6">
-                  <div className="mb-3 flex items-center gap-2">
-                    <MapPin className="h-5 w-5 text-industrial-blue" />
-                    <h3 className="font-heading text-lg font-semibold text-white">
+                <div
+                  className="
+                    p-6
+                    bg-gunmetal/30
+                    rounded-xl border border-white/10
+                  "
+                >
+                  <div
+                    className="
+                      flex items-center
+                      mb-3
+                      gap-2
+                    "
+                  >
+                    <MapPin
+                      className="
+                        h-5 w-5
+                        text-industrial-blue
+                      "
+                      /
+                    >
+                    <h3
+                      className="
+                        font-heading font-semibold text-lg text-white
+                      "
+                    >
                       {region.name}
                     </h3>
                   </div>
-                  <p className="text-sm text-metallic/80">{region.description}</p>
-                  <div className="mt-4 flex flex-wrap gap-2">
+                  <p
+                    className="
+                      text-sm text-metallic/80
+                    "
+                  >{region.description}</p>
+                  <div
+                    className="
+                      flex flex-wrap
+                      mt-4
+                      gap-2
+                    "
+                  >
                     {region.countries.map((country) => (
                       <span
                         key={country}
-                        className="rounded-full border border-white/10 bg-charcoal/60 px-3 py-1 text-xs text-metallic"
+                        className="
+                          px-3 py-1
+                          text-xs text-metallic
+                          bg-charcoal/60
+                          rounded-full border border-white/10
+                        "
                       >
                         {country}
                       </span>
@@ -45,12 +102,30 @@ export function ExportMapSection() {
             ))}
           </StaggerGrid>
 
-          <div className="relative flex min-h-[400px] items-center justify-center overflow-hidden rounded-2xl border border-white/10 bg-gunmetal/40">
-            <div className="absolute inset-0 bg-industrial-grid opacity-20" />
+          <div
+            className="
+              relative flex items-center justify-center overflow-hidden
+              min-h-[400px]
+              bg-gunmetal/40
+              rounded-2xl border border-white/10
+            "
+          >
+            <div
+              className="
+                absolute inset-0
+                bg-industrial-grid
+                opacity-20
+              "
+              /
+            >
             {/* Stylized world map placeholder */}
             <svg
               viewBox="0 0 800 400"
-              className="h-full w-full p-8 opacity-60"
+              className="
+                h-full w-full
+                p-8
+                opacity-60
+              "
               aria-hidden
             >
               <ellipse cx="400" cy="200" rx="350" ry="180" fill="none" stroke="#1E3A5F" strokeWidth="1" strokeDasharray="4 4" />
@@ -76,7 +151,12 @@ export function ExportMapSection() {
               <line x1="350" y1="200" x2="380" y2="150" stroke="#1E3A5F" strokeWidth="1" opacity="0.5" />
               <line x1="350" y1="200" x2="600" y2="200" stroke="#1E3A5F" strokeWidth="1" opacity="0.5" />
             </svg>
-            <p className="absolute bottom-4 text-xs text-metallic/50">
+            <p
+              className="
+                absolute bottom-4
+                text-xs text-metallic/50
+              "
+            >
               Interactive map integration available
             </p>
           </div>

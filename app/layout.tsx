@@ -3,7 +3,7 @@ import { Inter, Space_Grotesk } from "next/font/google";
 import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
 import { WhatsAppButton } from "@/components/shared/whatsapp-button";
-import { defaultMetadata, organizationSchema } from "@/lib/seo";
+import { defaultMetadata, organizationSchema, websiteSchema } from "@/lib/seo";
 import "./globals.css";
 
 const inter = Inter({
@@ -32,6 +32,12 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(organizationSchema()),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(websiteSchema()),
           }}
         />
       </head>

@@ -14,6 +14,7 @@ import { PageHero } from "@/components/shared/page-hero";
 import { AnimatedSection, SectionHeader } from "@/components/shared/animated-section";
 import { CtaBannerSection } from "@/sections/cta-banner";
 import { industries } from "@/data/industries";
+import { PageBreadcrumbJsonLd } from "@/components/shared/page-breadcrumb-jsonld";
 import { createPageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = createPageMetadata({
@@ -37,6 +38,12 @@ const iconMap: Record<string, LucideIcon> = {
 export default function IndustriesPage() {
   return (
     <>
+      <PageBreadcrumbJsonLd
+        items={[
+          { name: "Home", path: "/" },
+          { name: "Industries", path: "/industries" },
+        ]}
+      />
       <PageHero
         eyebrow="Industries"
         title="Industries We Serve"

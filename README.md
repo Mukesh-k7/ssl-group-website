@@ -28,7 +28,9 @@ cp .env.example .env.local
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000).
+Open [http://localhost:3000](http://localhost:3000) for local development.
+
+**Production domain:** [https://www.sslgroup.in/](https://www.sslgroup.in/)
 
 ### Build for Production
 
@@ -66,20 +68,20 @@ public/                 # Static assets, catalog PDF
 
 ## Pages
 
-| Route | Description |
-|-------|-------------|
-| `/` | Homepage with all marketing sections |
-| `/about` | Company story, values, timeline |
-| `/products` | Product catalog grid |
-| `/products/[slug]` | Product detail with specs |
-| `/industries` | Industries served |
-| `/export-logistics` | Export & logistics services |
-| `/certifications` | ISO & trade certifications |
-| `/infrastructure` | Facilities & capabilities |
-| `/global-presence` | Export regions & map |
-| `/blog` | Industry insights |
-| `/blog/[slug]` | Article detail |
-| `/contact` | Export inquiry form |
+| Route | Production URL |
+|-------|----------------|
+| `/` | https://www.sslgroup.in/ |
+| `/about` | https://www.sslgroup.in/about |
+| `/products` | https://www.sslgroup.in/products |
+| `/products/[slug]` | https://www.sslgroup.in/products/[slug] |
+| `/industries` | https://www.sslgroup.in/industries |
+| `/export-logistics` | https://www.sslgroup.in/export-logistics |
+| `/certifications` | https://www.sslgroup.in/certifications |
+| `/infrastructure` | https://www.sslgroup.in/infrastructure |
+| `/global-presence` | https://www.sslgroup.in/global-presence |
+| `/blog` | https://www.sslgroup.in/blog |
+| `/blog/[slug]` | https://www.sslgroup.in/blog/[slug] |
+| `/contact` | https://www.sslgroup.in/contact |
 
 ## Customization
 
@@ -110,7 +112,7 @@ On the contact page, replace the map placeholder with an iframe embed from Googl
 1. Push the repository to GitHub/GitLab/Bitbucket
 2. Import the project at [vercel.com](https://vercel.com)
 3. Set environment variables:
-   - `NEXT_PUBLIC_SITE_URL` = your production domain
+   - `NEXT_PUBLIC_SITE_URL` = `https://www.sslgroup.in`
 4. Deploy
 
 ### Docker

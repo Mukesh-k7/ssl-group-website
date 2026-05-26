@@ -14,6 +14,7 @@ function AnimatedNumber({
   suffix?: string;
   prefix?: string;
   decimals?: number;
+  style?: React.CSSProperties;
 }) {
   const [display, setDisplay] = useState(0);
   const ref = useRef(null);
@@ -38,7 +39,9 @@ function AnimatedNumber({
   }, [isInView, value]);
 
   const formatted =
-    decimals > 0 ? display.toFixed(decimals) : Math.floor(display).toLocaleString();
+    decimals > 0
+      ? display.toFixed(decimals)
+      : Math.floor(display).toLocaleString();
 
   return (
     <span ref={ref}>
@@ -51,13 +54,29 @@ function AnimatedNumber({
 
 export function StatsCounterSection() {
   return (
-    <section className="relative border-y border-white/10 bg-gunmetal/30 py-16">
-      <div className="container mx-auto px-4 md:px-6">
-        <motion.div
+    <section
+      className="
+        relative
+        py-16
+        bg-gunmetal/30
+        border-y border-white/10
+      "
+    >
+      <div
+        className="
+          container
+          px-4 md:px-6 mx-auto
+        "
+      >
+        <motion
+          .div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="grid grid-cols-2 gap-8 md:grid-cols-4"
+          className="
+            grid grid-cols-2 md:grid-cols-4
+            gap-8
+          "
         >
           {stats.map((stat, index) => (
             <motion.div
@@ -66,9 +85,25 @@ export function StatsCounterSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="text-center"
+              className="
+                text-center
+              "
             >
-              <p className="font-heading text-3xl font-bold text-white md:text-4xl lg:text-5xl">
+              <p
+                className="
+                  text-3xl text-white md:text-4xl lg:text-5xl
+                  font-heading font-bold
+                "
+                style={{
+                  display: "inline-block",
+                  background:
+                    "linear-gradient(to bottom, #F7941D, #C96A00, #5B2A00)",
+                  WebkitBackgroundClip: "text",
+                  backgroundClip: "text",
+                  color: "transparent",
+                  filter: "drop-shadow(2px 2px 0px rgba(0, 0, 0, 0.25))",
+                }}
+              >
                 <AnimatedNumber
                   value={stat.value}
                   suffix={stat.suffix}
@@ -76,7 +111,14 @@ export function StatsCounterSection() {
                   decimals={stat.value % 1 !== 0 ? 1 : 0}
                 />
               </p>
-              <p className="mt-2 text-sm text-metallic/80 md:text-base">{stat.label}</p>
+              <p
+                className="
+                  mt-2
+                  text-sm text-metallic/80 md:text-base
+                "
+              >
+                {stat.label}
+              </p>
             </motion.div>
           ))}
         </motion.div>

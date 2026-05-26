@@ -4,6 +4,7 @@ import { PageHero } from "@/components/shared/page-hero";
 import { AnimatedSection, SectionHeader } from "@/components/shared/animated-section";
 import { CtaBannerSection } from "@/sections/cta-banner";
 import { certifications } from "@/data/certifications";
+import { PageBreadcrumbJsonLd } from "@/components/shared/page-breadcrumb-jsonld";
 import { createPageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = createPageMetadata({
@@ -16,6 +17,12 @@ export const metadata: Metadata = createPageMetadata({
 export default function CertificationsPage() {
   return (
     <>
+      <PageBreadcrumbJsonLd
+        items={[
+          { name: "Home", path: "/" },
+          { name: "Certifications", path: "/certifications" },
+        ]}
+      />
       <PageHero
         eyebrow="Compliance"
         title="Certifications & Standards"

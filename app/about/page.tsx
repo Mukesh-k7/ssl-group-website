@@ -4,6 +4,7 @@ import { AnimatedSection, SectionHeader } from "@/components/shared/animated-sec
 import { TimelineSection } from "@/sections/timeline";
 import { StatsCounterSection } from "@/sections/stats-counter";
 import { CtaBannerSection } from "@/sections/cta-banner";
+import { PageBreadcrumbJsonLd } from "@/components/shared/page-breadcrumb-jsonld";
 import { createPageMetadata } from "@/lib/seo";
 import { company } from "@/data/site";
 
@@ -40,40 +41,88 @@ const values = [
 export default function AboutPage() {
   return (
     <>
+      <PageBreadcrumbJsonLd
+        items={[
+          { name: "Home", path: "/" },
+          { name: "About Us", path: "/about" },
+        ]}
+      />
       <PageHero
         eyebrow="About SSL Group"
         title="Forging Global Metallurgy Partnerships"
         description={`Since ${company.founded}, SSL Group has grown from a Mumbai trading house into a premier international exporter of steel industry raw materials — trusted by manufacturers across 45+ countries.`}
       />
-      <AnimatedSection className="py-24">
-        <div className="container mx-auto px-4 md:px-6">
-          <div className="grid gap-12 lg:grid-cols-2">
+      <AnimatedSection
+        id="about-content"
+        className="
+          py-24
+        "
+      >
+        <div
+          className="
+            container
+            mx-auto px-4 md:px-6
+          "
+        >
+          <div
+            className="
+              grid lg:grid-cols-2
+              gap-12
+            "
+          >
             <div>
               <SectionHeader
                 eyebrow="Our Mission"
                 title="Connecting Indian Metallurgy to the World"
                 align="left"
               />
-              <p className="text-lg leading-relaxed text-metallic/90">
+              <p
+                className="
+                  text-lg text-metallic/90 leading-relaxed
+                "
+              >
                 We exist to bridge the gap between India&apos;s world-class metallurgical
                 production capacity and the global steel industry&apos;s demand for reliable,
                 export-grade raw materials. Every shipment reflects our commitment to quality,
                 documentation, and long-term partnership.
               </p>
-              <p className="mt-4 text-lg leading-relaxed text-metallic/80">
+              <p
+                className="
+                  mt-4
+                  text-lg text-metallic/80 leading-relaxed
+                "
+              >
                 Our team of metallurgists, trade specialists, and logistics coordinators
                 work as an extension of your procurement department — from specification
                 review to port delivery.
               </p>
             </div>
-            <div className="grid grid-cols-2 gap-4">
+            <div
+              className="
+                grid grid-cols-2
+                gap-4
+              "
+            >
               {values.map((value) => (
                 <div
                   key={value.title}
-                  className="rounded-xl border border-white/10 bg-gunmetal/30 p-5"
+                  className="
+                    p-5
+                    bg-gunmetal/30
+                    rounded-xl border border-white/10
+                  "
                 >
-                  <h3 className="font-heading font-semibold text-white">{value.title}</h3>
-                  <p className="mt-2 text-sm text-metallic/80">{value.description}</p>
+                  <h3
+                    className="
+                      font-heading font-semibold text-white
+                    "
+                  >{value.title}</h3>
+                  <p
+                    className="
+                      mt-2
+                      text-sm text-metallic/80
+                    "
+                  >{value.description}</p>
                 </div>
               ))}
             </div>

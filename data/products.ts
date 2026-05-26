@@ -9,7 +9,7 @@ export const products: Product[] = [
       "Foundry and steel-grade pig iron with controlled silicon and sulfur for blast furnace and casting applications.",
     description:
       "SSL Group exports premium foundry and basic pig iron sourced from ISO-certified integrated steel plants. Our pig iron meets stringent chemistry requirements for automotive castings, ductile iron production, and steelmaking charge materials.",
-    image: "/images/products/pig-iron.svg",
+    image: "/images/products/images-pig-iron.png",
     featured: true,
     specifications: [
       { label: "Carbon (C)", value: "3.5 – 4.5%" },
@@ -33,7 +33,7 @@ export const products: Product[] = [
       "Ferro manganese, ferro silicon, ferro chrome, and specialty alloys for steel deoxidation and alloying.",
     description:
       "Comprehensive ferro alloy portfolio for integrated steel plants and mini-mills. We supply low-carbon and high-carbon grades with batch traceability and sieve analysis documentation.",
-    image: "/images/products/ferro-alloys.svg",
+    image: "/images/products/images-ferro-silicon.png",
     featured: true,
     specifications: [
       { label: "FeMn (Mn)", value: "75 – 82%" },
@@ -57,7 +57,7 @@ export const products: Product[] = [
       "High-purity ferro titanium for grain refinement and micro-alloying in specialty steel grades.",
     description:
       "Precision ferro titanium with controlled titanium content for aerospace-grade steels, high-strength low-alloy applications, and critical casting operations requiring grain refinement.",
-    image: "/images/products/ferro-titanium.svg",
+    image: "/images/products/images-ferro-titanium.png",
     featured: true,
     specifications: [
       { label: "Titanium (Ti)", value: "30 – 40%" },
@@ -81,7 +81,7 @@ export const products: Product[] = [
       "Calcined petroleum coke, metallurgical coke, and carbon raisers for steel and foundry operations.",
     description:
       "Export-grade carbon products including CPC, GPC, and anthracite-based carbon raisers with low ash and volatile matter for EAF steelmaking and foundry cupola operations.",
-    image: "/images/products/carbon-products.svg",
+    image: "/images/products/images-carbon.png",
     specifications: [
       { label: "Fixed Carbon", value: "90 – 99%" },
       { label: "Ash", value: "≤ 1.0%" },
@@ -104,7 +104,7 @@ export const products: Product[] = [
       "High-grade zinc concentrate and ore for smelters and galvanizing supply chains.",
     description:
       "Direct export of zinc ore and concentrate with consistent Zn content, low impurities, and full assay certificates for smelter and galvanizing industry procurement.",
-    image: "/images/products/zinc-ore.svg",
+    image: "/images/products/zinc-ore.jpg",
     specifications: [
       { label: "Zinc (Zn)", value: "45 – 55%" },
       { label: "Lead (Pb)", value: "≤ 8%" },
@@ -127,7 +127,7 @@ export const products: Product[] = [
       "Flake and amorphous natural graphite for refractories, batteries, and lubricant industries.",
     description:
       "Premium natural graphite with controlled flake size distribution, high carbon content, and low ash for refractory brick, EV battery anode precursors, and industrial lubricant manufacturing.",
-    image: "/images/products/natural-graphite.svg",
+    image: "/images/products/natural-graphite.jpg",
     specifications: [
       { label: "Fixed Carbon", value: "85 – 97%" },
       { label: "Ash", value: "≤ 5%" },
@@ -150,7 +150,7 @@ export const products: Product[] = [
       "Seamless and welded steel pipes for oil & gas, infrastructure, and industrial fluid transport.",
     description:
       "API and ASTM compliant steel pipes and tubes for energy sector, water infrastructure, and industrial process piping with full mill test certification.",
-    image: "/images/products/steel-pipes.svg",
+    image: "/images/products/steel-pipes.jpg",
     specifications: [
       { label: "Grades", value: "API 5L / ASTM A106 / A53" },
       { label: "OD Range", value: "1/2\" – 48\"" },
@@ -173,7 +173,7 @@ export const products: Product[] = [
       "Bauxite, fluorspar, quartz, and specialty minerals for steel and chemical industries.",
     description:
       "Diversified industrial minerals portfolio supporting steel fluxing, aluminum production, and chemical manufacturing with consistent quality and export documentation.",
-    image: "/images/products/industrial-minerals.svg",
+    image: "/images/products/industrial-minerals.jpg",
     specifications: [
       { label: "Products", value: "Bauxite, Fluorspar, Quartz" },
       { label: "Purity", value: "Grade-specific" },
@@ -196,7 +196,7 @@ export const products: Product[] = [
       "Consolidated supply of iron ore, coal, scrap substitutes, and charge materials for steel plants.",
     description:
       "One-window procurement for integrated steel plants — iron ore fines and lumps, PCI coal, metallurgical coke, and alternative charge materials with vessel-level scheduling.",
-    image: "/images/products/steel-raw-materials.svg",
+    image: "/images/products/images-steel-shot.png",
     featured: true,
     specifications: [
       { label: "Iron Ore Fe", value: "62 – 65%" },

@@ -4,6 +4,7 @@ import { PageHero } from "@/components/shared/page-hero";
 import { ExportMapSection } from "@/sections/export-map";
 import { AnimatedSection, SectionHeader } from "@/components/shared/animated-section";
 import { CtaBannerSection } from "@/sections/cta-banner";
+import { PageBreadcrumbJsonLd } from "@/components/shared/page-breadcrumb-jsonld";
 import { createPageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = createPageMetadata({
@@ -45,6 +46,12 @@ const incoterms = ["FOB", "CFR", "CIF", "CIP", "DAP", "EXW"];
 export default function ExportLogisticsPage() {
   return (
     <>
+      <PageBreadcrumbJsonLd
+        items={[
+          { name: "Home", path: "/" },
+          { name: "Export & Logistics", path: "/export-logistics" },
+        ]}
+      />
       <PageHero
         eyebrow="Export Operations"
         title="Global Export & Logistics Excellence"

@@ -8,19 +8,53 @@ import { company } from "@/data/site";
 
 export function HeroSection() {
   return (
-    <section className="relative flex min-h-screen items-center overflow-hidden bg-charcoal">
+    <section
+      id="home"
+      className="
+        relative flex items-center overflow-hidden
+        min-h-screen
+        bg-charcoal
+      "
+    >
       {/* Animated industrial background */}
-      <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-industrial-grid opacity-30" />
-        <motion.div
-          className="absolute inset-0 bg-gradient-to-br from-industrial-blue/30 via-charcoal to-charcoal"
+      <div
+        className="
+          absolute inset-0
+        "
+      >
+        <div
+          className="
+            absolute inset-0
+            bg-industrial-grid
+            opacity-30
+          "
+          /
+        >
+        <motion
+          .div
+          className="
+            absolute inset-0
+            bg-gradient-to-br from-industrial-blue/30 via-charcoal to-charcoal
+          "
           animate={{ opacity: [0.4, 0.6, 0.4] }}
           transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-        />
-        <div className="absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-t from-charcoal to-transparent" />
+        /
+        >
+        <div
+          className="
+            absolute bottom-0 left-0 right-0
+            h-1/2
+            bg-gradient-to-t from-charcoal to-transparent
+          "
+          /
+        >
         {/* Steel beam lines */}
         <svg
-          className="absolute inset-0 h-full w-full opacity-[0.07]"
+          className="
+            absolute inset-0
+            h-full w-full
+            opacity-[0.07]
+          "
           xmlns="http://www.w3.org/2000/svg"
         >
           <defs>
@@ -30,109 +64,229 @@ export function HeroSection() {
           </defs>
           <rect width="100%" height="100%" fill="url(#steel)" />
         </svg>
-        <motion.div
-          className="absolute -left-1/4 top-1/4 h-[500px] w-[500px] rounded-full bg-industrial-blue/20 blur-[120px]"
+        <motion
+          .div
+          className="
+            absolute top-1/4
+            h-[500px] w-[500px]
+            bg-industrial-blue/20
+            rounded-full
+            blur-[120px]
+            -left-1/4
+          "
           animate={{ x: [0, 50, 0], y: [0, 30, 0] }}
           transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
-        />
-        <motion.div
-          className="absolute -right-1/4 bottom-1/4 h-[400px] w-[400px] rounded-full bg-metallic/10 blur-[100px]"
+        /
+        >
+        <motion
+          .div
+          className="
+            absolute bottom-1/4
+            h-[400px] w-[400px]
+            bg-metallic/10
+            rounded-full
+            blur-[100px]
+            -right-1/4
+          "
           animate={{ x: [0, -40, 0], y: [0, -20, 0] }}
           transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
-        />
+        /
+        >
       </div>
 
-      <div className="container relative z-10 mx-auto px-4 pb-20 pt-32 md:px-6 md:pt-40">
-        <div className="grid items-center gap-12 lg:grid-cols-2">
+      <div
+        className="
+          container relative z-10
+          mx-auto px-4 md:px-6 pb-20 pt-32 md:pt-40
+        "
+      >
+        <div
+          className="
+            grid lg:grid-cols-2 items-center
+            gap-12
+          "
+        >
           <div>
-            <motion.div
+            <motion
+              .div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/10 bg-gunmetal/60 px-4 py-2 text-sm text-metallic backdrop-blur-md"
+              className="
+                inline-flex items-center
+                mb-6 px-4 py-2
+                text-sm text-metallic
+                bg-gunmetal/60
+                rounded-full border border-white/10
+                backdrop-blur-md
+                gap-2
+              "
             >
-              <Globe className="h-4 w-4 text-industrial-blue" />
+              <Globe
+                className="
+                  h-4 w-4
+                  text-industrial-blue
+                "
+                /
+              >
               Exporting to 45+ Countries Since {company.founded}
             </motion.div>
 
-            <motion.h1
+            <motion
+              .h1
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="font-heading text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl"
+              className="
+                font-heading font-bold
+                text-4xl text-white sm:text-5xl md:text-6xl lg:text-7xl
+                leading-[1.1] tracking-tight
+              "
             >
               Global Metallurgy.
-              <span className="block bg-gradient-to-r from-metallic via-white to-metallic bg-clip-text text-transparent">
+              <span
+                className="
+                  block
+                  text-transparent
+                  bg-gradient-to-r bg-clip-text from-metallic via-white
+                  to-metallic
+                "
+              >
                 Trusted Supply.
               </span>
             </motion.h1>
 
-            <motion.p
+            <motion
+              .p
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="mt-6 max-w-xl text-lg leading-relaxed text-metallic/90 md:text-xl"
+              className="
+                max-w-xl
+                mt-6
+                text-lg text-metallic/90 md:text-xl leading-relaxed
+              "
             >
               {company.name} — India&apos;s premier exporter of pig iron, ferro alloys,
               carbon products, and steel industry raw materials to manufacturers
               across the Middle East, Africa, and Europe.
             </motion.p>
 
-            <motion.div
+            <motion
+              .div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="mt-8 flex flex-wrap gap-4"
+              className="
+                flex flex-wrap
+                mt-8
+                gap-4
+              "
             >
               <Button size="lg" asChild>
                 <Link href="/contact">
                   Request Export Quote
-                  <ArrowRight className="h-5 w-5" />
+                  <ArrowRight
+                    className="
+                      h-5 w-5
+                    "
+                    /
+                  >
                 </Link>
               </Button>
               <Button size="lg" variant="secondary" asChild>
                 <a href={company.catalogUrl}>
-                  <Download className="h-5 w-5" />
+                  <Download
+                    className="
+                      h-5 w-5
+                    "
+                    /
+                  >
                   Download Catalog
                 </a>
               </Button>
             </motion.div>
 
-            <motion.div
+            <motion
+              .div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.5 }}
-              className="mt-10 flex flex-wrap gap-6"
+              className="
+                flex flex-wrap
+                mt-10
+                gap-6
+              "
             >
               {[
                 { icon: Shield, label: "ISO Certified Operations" },
                 { icon: Globe, label: "45+ Export Markets" },
               ].map(({ icon: Icon, label }) => (
-                <div key={label} className="flex items-center gap-2 text-sm text-metallic">
-                  <Icon className="h-4 w-4 text-industrial-blue" />
+                <div
+                  key={label}
+                  className="
+                    flex items-center
+                    text-sm text-metallic
+                    gap-2
+                  "
+                >
+                  <Icon
+                    className="
+                      h-4 w-4
+                      text-industrial-blue
+                    "
+                    /
+                  >
                   {label}
                 </div>
               ))}
             </motion.div>
           </div>
 
-          <motion.div
+          <motion
+            .div
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="relative hidden lg:block"
+            className="
+              relative hidden lg:block
+            "
           >
-            <div className="relative aspect-square overflow-hidden rounded-2xl border border-white/10 bg-gunmetal/40 shadow-2xl backdrop-blur-sm">
+            <div
+              className="
+                relative overflow-hidden
+                bg-gunmetal/40
+                rounded-2xl border border-white/10
+                shadow-2xl backdrop-blur-sm
+                aspect-square
+              "
+            >
               <div
-                className="absolute inset-0 bg-cover bg-center"
+                className="
+                  absolute inset-0
+                  h-screen
+                  bg-cover bg-center bg-cover bg-center bg-no-repeat bg-[#2a2a2a]
+                "
                 style={{
                   backgroundImage:
-                    "linear-gradient(135deg, rgba(30,58,95,0.4) 0%, rgba(17,17,17,0.9) 100%), url('/images/hero-industrial.svg')",
+                    "linear-gradient(135deg, rgba(30,58,95,0.4) 0%, rgba(17,17,17,0.9) 100%), url('/images/products/banner01.jpg')",
                   backgroundColor: "#2A2A2A",
                 }}
-              />
-              <div className="absolute inset-0 flex flex-col justify-end p-8">
-                <div className="grid grid-cols-2 gap-4">
+              /
+              >
+                
+              <div
+                className="
+                  absolute inset-0 flex flex-col justify-end
+                  p-8
+                "
+              >
+                <div
+                  className="
+                    grid grid-cols-2
+                    gap-4
+                  "
+                >
                   {[
                     { value: "2.4M+", label: "MT Exported Annually" },
                     { value: "320+", label: "Global Partners" },
@@ -141,12 +295,25 @@ export function HeroSection() {
                   ].map((stat) => (
                     <div
                       key={stat.label}
-                      className="rounded-lg border border-white/10 bg-charcoal/60 p-4 backdrop-blur-md"
+                      className="
+                        p-4
+                        bg-charcoal/60
+                        rounded-lg border border-white/10
+                        backdrop-blur-md
+                      "
                     >
-                      <p className="font-heading text-2xl font-bold text-white">
+                      <p
+                        className="
+                          font-heading font-bold text-2xl text-white
+                        "
+                      >
                         {stat.value}
                       </p>
-                      <p className="text-xs text-metallic/80">{stat.label}</p>
+                      <p
+                        className="
+                          text-xs text-metallic/80
+                        "
+                      >{stat.label}</p>
                     </div>
                   ))}
                 </div>
@@ -156,17 +323,34 @@ export function HeroSection() {
         </div>
       </div>
 
-      <motion.div
-        className="absolute bottom-8 left-1/2 -translate-x-1/2"
+      <motion
+        .div
+        className="
+          absolute bottom-8 left-1/2
+          -translate-x-1/2
+        "
         animate={{ y: [0, 8, 0] }}
         transition={{ duration: 2, repeat: Infinity }}
       >
-        <div className="h-12 w-7 rounded-full border-2 border-white/20 p-1">
-          <motion.div
-            className="mx-auto h-2 w-1 rounded-full bg-metallic"
+        <div
+          className="
+            h-12 w-7
+            p-1
+            rounded-full border-2 border-white/20
+          "
+        >
+          <motion
+            .div
+            className="
+              h-2 w-1
+              mx-auto
+              bg-metallic
+              rounded-full
+            "
             animate={{ y: [0, 16, 0] }}
             transition={{ duration: 2, repeat: Infinity }}
-          />
+          /
+          >
         </div>
       </motion.div>
     </section>

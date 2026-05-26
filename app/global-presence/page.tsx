@@ -5,6 +5,7 @@ import { AnimatedSection, SectionHeader } from "@/components/shared/animated-sec
 import { StatsCounterSection } from "@/sections/stats-counter";
 import { CtaBannerSection } from "@/sections/cta-banner";
 import { exportRegions } from "@/data/site";
+import { PageBreadcrumbJsonLd } from "@/components/shared/page-breadcrumb-jsonld";
 import { createPageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = createPageMetadata({
@@ -17,6 +18,12 @@ export const metadata: Metadata = createPageMetadata({
 export default function GlobalPresencePage() {
   return (
     <>
+      <PageBreadcrumbJsonLd
+        items={[
+          { name: "Home", path: "/" },
+          { name: "Global Presence", path: "/global-presence" },
+        ]}
+      />
       <PageHero
         eyebrow="Worldwide"
         title="Global Presence"

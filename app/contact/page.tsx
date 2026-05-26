@@ -4,12 +4,13 @@ import { PageHero } from "@/components/shared/page-hero";
 import { AnimatedSection } from "@/components/shared/animated-section";
 import { InquiryForm } from "@/sections/inquiry-form";
 import { company } from "@/data/site";
+import { PageBreadcrumbJsonLd } from "@/components/shared/page-breadcrumb-jsonld";
 import { createPageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = createPageMetadata({
   title: "Contact Us",
   description:
-    "Contact SSL Group for export inquiries, product specifications, and metallurgy procurement. Mumbai headquarters with global export desk.",
+    "Contact SSL Group for export inquiries, product specifications, and metallurgy procurement. Delhi head office with global export desk.",
   path: "/contact",
 });
 
@@ -18,31 +19,92 @@ export default function ContactPage() {
 
   return (
     <>
+      <PageBreadcrumbJsonLd
+        items={[
+          { name: "Home", path: "/" },
+          { name: "Contact", path: "/contact" },
+        ]}
+      />
       <PageHero
         eyebrow="Get in Touch"
         title="Contact Our Export Desk"
         description="Submit your inquiry for product specifications, pricing, vessel scheduling, or partnership discussions. We respond within 24 business hours."
       />
-      <AnimatedSection className="py-24">
-        <div className="container mx-auto px-4 md:px-6">
-          <div className="grid gap-12 lg:grid-cols-5">
-            <div className="lg:col-span-3">
+      <AnimatedSection
+        className="
+          py-24
+        "
+      >
+        <div
+          className="
+            container
+            mx-auto px-4 md:px-6
+          "
+        >
+          <div
+            className="
+              grid lg:grid-cols-5
+              gap-12
+            "
+          >
+            <div
+              className="
+                lg:col-span-3
+              "
+            >
               <InquiryForm
                 title="Export Inquiry Form"
                 description="Complete the form below for product quotes, specifications, and shipment planning."
                 variant="export"
               />
             </div>
-            <div className="space-y-6 lg:col-span-2">
-              <div className="rounded-xl border border-white/10 bg-gunmetal/30 p-6">
-                <h3 className="font-heading text-lg font-semibold text-white">
+            <div
+              className="
+                space-y-6
+                lg:col-span-2
+              "
+            >
+              <div
+                className="
+                  p-6
+                  bg-gunmetal/30
+                  rounded-xl border border-white/10
+                "
+              >
+                <h3
+                  className="
+                    font-heading font-semibold text-lg text-white
+                  "
+                >
                   Company Details
                 </h3>
-                <ul className="mt-4 space-y-4">
-                  <li className="flex gap-3 text-sm text-metallic/80">
-                    <MapPin className="mt-0.5 h-5 w-5 shrink-0 text-industrial-blue" />
+                <ul
+                  className="
+                    mt-4 space-y-4
+                  "
+                >
+                  <li
+                    className="
+                      flex
+                      text-sm text-metallic/80
+                      gap-3
+                    "
+                  >
+                    <MapPin
+                      className="
+                        h-5 w-5
+                        mt-0.5
+                        text-industrial-blue
+                        shrink-0
+                      "
+                    />
                     <span>
-                      <strong className="block text-white">{company.legalName}</strong>
+                      <strong
+                        className="
+                          block
+                          text-white
+                        "
+                      >{company.legalName}</strong>
                       {company.address.line1}
                       <br />
                       {company.address.line2}
@@ -51,27 +113,54 @@ export default function ContactPage() {
                   <li>
                     <a
                       href={`tel:${company.phone}`}
-                      className="flex items-center gap-3 text-sm text-metallic/80 hover:text-white"
+                      className="
+                        flex items-center
+                        text-sm text-metallic/80 hover:text-white
+                        gap-3
+                      "
                     >
-                      <Phone className="h-5 w-5 text-industrial-blue" />
+                      <Phone
+                        className="
+                          h-5 w-5
+                          text-industrial-blue
+                        "
+                      />
                       {company.phone}
                     </a>
                   </li>
                   <li>
                     <a
                       href={`mailto:${company.email}`}
-                      className="flex items-center gap-3 text-sm text-metallic/80 hover:text-white"
+                      className="
+                        flex items-center
+                        text-sm text-metallic/80 hover:text-white
+                        gap-3
+                      "
                     >
-                      <Mail className="h-5 w-5 text-industrial-blue" />
+                      <Mail
+                        className="
+                          h-5 w-5
+                          text-industrial-blue
+                        "
+                      />
                       {company.email}
                     </a>
                   </li>
                   <li>
                     <a
                       href={`mailto:${company.salesEmail}`}
-                      className="flex items-center gap-3 text-sm text-metallic/80 hover:text-white"
+                      className="
+                        flex items-center
+                        text-sm text-metallic/80 hover:text-white
+                        gap-3
+                      "
                     >
-                      <Mail className="h-5 w-5 text-industrial-blue" />
+                      <Mail
+                        className="
+                          h-5 w-5
+                          text-industrial-blue
+                        "
+                      />
                       {company.salesEmail}
                     </a>
                   </li>
@@ -82,20 +171,55 @@ export default function ContactPage() {
                 href={whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-4 rounded-xl border border-[#25D366]/30 bg-[#25D366]/10 p-6 transition-colors hover:bg-[#25D366]/20"
+                className="
+                  flex items-center
+                  p-6
+                  bg-[#25D366]/10 hover:bg-[#25D366]/20
+                  rounded-xl border border-[#25D366]/30
+                  transition-colors
+                  gap-4
+                "
               >
-                <MessageCircle className="h-8 w-8 text-[#25D366]" />
+                <MessageCircle
+                  className="
+                    h-8 w-8
+                    text-[#25D366]
+                  "
+                />
                 <div>
-                  <p className="font-semibold text-white">WhatsApp Export Desk</p>
-                  <p className="text-sm text-metallic/80">Instant messaging for urgent inquiries</p>
+                  <p
+                    className="
+                      font-semibold text-white
+                    "
+                  >WhatsApp Export Desk</p>
+                  <p
+                    className="
+                      text-sm text-metallic/80
+                    "
+                  >Instant messaging for urgent inquiries</p>
                 </div>
               </a>
 
-              <div className="rounded-xl border border-white/10 bg-gunmetal/30 p-6">
-                <h3 className="font-heading text-lg font-semibold text-white">
+              <div
+                className="
+                  p-6
+                  bg-gunmetal/30
+                  rounded-xl border border-white/10
+                "
+              >
+                <h3
+                  className="
+                    font-heading font-semibold text-lg text-white
+                  "
+                >
                   Export Inquiry Hours
                 </h3>
-                <p className="mt-2 text-sm text-metallic/80">
+                <p
+                  className="
+                    mt-2
+                    text-sm text-metallic/80
+                  "
+                >
                   Monday – Saturday: 9:00 AM – 7:00 PM IST
                   <br />
                   Sunday: Emergency shipments only
@@ -104,20 +228,25 @@ export default function ContactPage() {
             </div>
           </div>
 
-          {/* Google Maps placeholder */}
-          <div className="mt-16 overflow-hidden rounded-2xl border border-white/10">
-            <div className="flex h-80 items-center justify-center bg-gunmetal/50">
-              <div className="text-center">
-                <MapPin className="mx-auto h-10 w-10 text-industrial-blue" />
-                <p className="mt-4 font-heading text-lg font-semibold text-white">
-                  Mumbai Headquarters
-                </p>
-                <p className="mt-1 text-sm text-metallic/70">{company.address.line2}</p>
-                <p className="mt-4 text-xs text-metallic/50">
-                  Replace with Google Maps embed: iframe src=&quot;https://maps.google.com/...&quot;
-                </p>
-              </div>
-            </div>
+          <div
+            className="
+              overflow-hidden
+              mt-16
+              rounded-2xl border border-white/10
+            "
+          >
+            <iframe
+              title="SSL Group Delhi Office Location"
+              src="https://maps.google.com/maps?q=Office+No+410+Ansal+Sumanglam+4TH+Floor+RDC+Raj+Nagar+Ghaziabad+201002+Uttar+Pradesh+India&t=&z=15&ie=UTF8&iwloc=&output=embed"
+              className="
+                h-80 w-full
+                bg-gunmetal
+                border-0
+              "
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              allowFullScreen
+            />
           </div>
         </div>
       </AnimatedSection>

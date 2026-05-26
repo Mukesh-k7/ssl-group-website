@@ -18,6 +18,7 @@ interface ProductsGridSectionProps {
   items?: Product[];
 }
 
+
 export function ProductsGridSection({
   limit,
   showAllLink = true,
@@ -26,14 +27,29 @@ export function ProductsGridSection({
   const displayProducts = limit ? items.slice(0, limit) : items;
 
   return (
-    <AnimatedSection className="py-24" id="products">
-      <div className="container mx-auto px-4 md:px-6">
+    <AnimatedSection
+      className="
+        py-24
+      "
+      id="products"
+    >
+      <div
+        className="
+          container
+          mx-auto px-4 md:px-6
+        "
+      >
         <SectionHeader
           eyebrow="Our Products"
           title="Metallurgy & Steel Raw Materials"
           description="Comprehensive export portfolio for integrated steel plants, foundries, and industrial procurement worldwide."
         />
-        <StaggerGrid className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <StaggerGrid
+          className="
+            grid sm:grid-cols-2 lg:grid-cols-3
+            gap-6
+          "
+        >
           {displayProducts.map((product) => (
             <StaggerItem key={product.slug}>
               <ProductCard product={product} />
@@ -41,7 +57,12 @@ export function ProductsGridSection({
           ))}
         </StaggerGrid>
         {showAllLink && (
-          <div className="mt-12 text-center">
+          <div
+            className="
+              mt-12
+              text-center
+            "
+          >
             <Button size="lg" variant="secondary" asChild>
               <Link href="/products">View All Products</Link>
             </Button>
