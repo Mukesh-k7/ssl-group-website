@@ -256,7 +256,7 @@ export function Footer() {
             </a>
 
             {/* Instagram */}
-            {/* Instagram Gradient Icon */}
+
             <a
               href="https://www.instagram.com/"
               target="_blank"
@@ -264,7 +264,7 @@ export function Footer() {
               className="
                 inline-flex items-center
                 p-[8px] pb-[7px] mx-2 mt-2
-                rounded-[23px] border border-[#b14406]
+                rounded-[23px] border border-[#c96a00]
                 gap-2
               "
               aria-label="Instagram"
@@ -299,7 +299,6 @@ export function Footer() {
               </svg>
             </a>
 
-            {/* Twitter / X */}
             {/* Twitter / X Gradient Icon */}
             <a
               href="https://twitter.com/"
@@ -308,7 +307,7 @@ export function Footer() {
               className="
                 inline-flex items-center
                 p-[8px] pb-[7px] mt-2
-                rounded-[23px] border border-[#b14406]
+                rounded-[23px] border border-[#c96a00]
                 gap-2
               "
               aria-label="Twitter"
@@ -341,7 +340,6 @@ export function Footer() {
             </a>
 
             {/* Facebook */}
-            {/* Facebook Gradient Icon */}
             <a
               href="https://www.facebook.com/"
               target="_blank"
@@ -349,7 +347,7 @@ export function Footer() {
               className="
                 inline-flex items-center
                 p-[8px] pb-[7px] mx-2 mt-2
-                rounded-[23px] border border-[#b14406]
+                rounded-[23px] border border-[#c96a00]
                 gap-2
               "
               aria-label="Facebook"
@@ -382,8 +380,6 @@ export function Footer() {
             </a>
 
             {/* YouTube */}
-            {/* YouTube Gradient Icon */}
-            {/* YouTube Gradient Icon */}
             <a
               href="https://www.youtube.com/"
               target="_blank"
@@ -391,7 +387,7 @@ export function Footer() {
               className="
                 inline-flex items-center
                 p-[8px] pb-[7px] mt-2
-                rounded-[23px] border border-[#b14406]
+                rounded-[23px] border border-[#c96a00]
                 gap-2
               "
               aria-label="YouTube"
