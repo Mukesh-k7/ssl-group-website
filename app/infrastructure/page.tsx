@@ -64,37 +64,99 @@ export default function InfrastructurePage() {
         description="World-class port-side facilities, quality laboratories, and logistics networks engineered for industrial-scale metallurgy exports."
       />
       <StatsCounterSection />
-      <AnimatedSection className="py-24">
-        <div className="container mx-auto px-4 md:px-6">
+      <AnimatedSection
+        className="
+          py-24
+        "
+      >
+        <div
+          className="
+            container
+            mx-auto px-4 md:px-6
+          "
+        >
           <SectionHeader
             title="Operational Facilities"
             description="Strategic infrastructure investments ensuring consistent quality, capacity, and delivery reliability."
             align="center"
           />
-          <div className="grid gap-8 md:grid-cols-2">
+          <div
+            className="
+              grid md:grid-cols-2
+              gap-8
+            "
+          >
             {facilities.map((facility) => (
               <article
                 key={facility.title}
-                className="overflow-hidden rounded-2xl border border-white/10 bg-gunmetal/30"
+                className="
+                  overflow-hidden
+                  bg-gunmetal/30
+                  rounded-2xl border border-white/10
+                "
               >
-                <div className="border-b border-white/10 bg-industrial-blue/10 p-8">
-                  <facility.icon className="mb-4 h-10 w-10 text-industrial-blue" />
-                  <div className="flex items-end justify-between">
-                    <h2 className="font-heading text-2xl font-bold text-white">
+                <div
+                  className="
+                    p-8
+                    bg-industrial-blue/10
+                    border-b border-white/10
+                  "
+                >
+                  <facility
+                    .icon
+                    className="
+                      h-10 w-10
+                      mb-4
+                      text-[#c96a00]
+                    "
+                    /
+                  >
+                  <div
+                    className="
+                      flex items-end justify-between
+                    "
+                  >
+                    <h2
+                      className="
+                        font-heading font-bold text-2xl text-white
+                      "
+                    >
                       {facility.title}
                     </h2>
-                    <span className="font-heading text-3xl font-bold text-industrial-blue">
+                    <span
+                      className="
+                        font-heading font-bold text-3xl text-[#c96a00]
+                      "
+                    >
                       {facility.stats}
                     </span>
                   </div>
                 </div>
-                <div className="p-8">
-                  <p className="text-metallic/90">{facility.description}</p>
-                  <div className="mt-4 flex flex-wrap gap-2">
+                <div
+                  className="
+                    p-8
+                  "
+                >
+                  <p
+                    className="
+                      text-metallic/90
+                    "
+                  >{facility.description}</p>
+                  <div
+                    className="
+                      flex flex-wrap
+                      mt-4
+                      gap-2
+                    "
+                  >
                     {facility.locations.map((loc) => (
                       <span
                         key={loc}
-                        className="rounded-full border border-white/10 px-3 py-1 text-xs text-metallic"
+                        className="
+                          px-3 py-1
+                          text-xs text-metallic
+                          rounded-full border border-white/10
+                        "
                       >
                         {loc}
                       </span>

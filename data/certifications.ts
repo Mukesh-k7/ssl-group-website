@@ -41,7 +41,7 @@ export const certifications: Certification[] = [
 
 export const timeline: TimelineEvent[] = [
   {
-    year: "1998",
+    year: "2000",
     title: "Foundation",
     description: "SSL Group established in Mumbai as a metallurgical raw materials trading firm.",
   },
@@ -66,7 +66,7 @@ export const timeline: TimelineEvent[] = [
     description: "Strategic distributor partnerships formed across Germany, Italy, and Spain.",
   },
   {
-    year: "2024",
+    year: "2026",
     title: "Sustainability Framework",
     description: "ESG reporting and responsible sourcing program launched across mineral supply chains.",
   },

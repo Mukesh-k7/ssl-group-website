@@ -49,32 +49,80 @@ export default function IndustriesPage() {
         title="Industries We Serve"
         description="Tailored metallurgical supply solutions for every segment of the global steel and industrial ecosystem."
       />
-      <AnimatedSection className="py-24">
-        <div className="container mx-auto px-4 md:px-6">
+      <AnimatedSection
+        className="
+          py-24
+        "
+      >
+        <div
+          className="
+            container
+            mx-auto px-4 md:px-6
+          "
+        >
           <SectionHeader
             title="Sector Expertise"
             description="Deep industry knowledge ensures the right grades, packaging, and logistics for your operational requirements."
             align="center"
           />
-          <div className="grid gap-6 md:grid-cols-2">
+          <div
+            className="
+              grid md:grid-cols-2
+              gap-6
+            "
+          >
             {industries.map((industry) => {
               const Icon = iconMap[industry.icon] ?? Factory;
               return (
                 <article
                   key={industry.slug}
-                  className="flex gap-6 rounded-xl border border-white/10 bg-gunmetal/30 p-8"
+                  className="
+                    flex
+                    p-8
+                    bg-gunmetal/30
+                    rounded-xl border border-white/10
+                    gap-6
+                  "
                 >
-                  <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-xl bg-industrial-blue/20">
-                    <Icon className="h-7 w-7 text-industrial-blue" />
+                  <div
+                    className="
+                      flex items-center justify-center
+                      h-14 w-14
+                      bg-industrial-blue/20
+                      rounded-xl
+                      shrink-0
+                    "
+                  >
+                    <Icon
+                      className="
+                        h-7 w-7
+                        text-[#c96a00]
+                      "
+                      /
+                    >
                   </div>
                   <div>
-                    <h2 className="font-heading text-xl font-bold text-white">
+                    <h2
+                      className="
+                        font-heading font-bold text-xl text-white
+                      "
+                    >
                       {industry.name}
                     </h2>
-                    <p className="mt-2 leading-relaxed text-metallic/90">
+                    <p
+                      className="
+                        mt-2
+                        leading-relaxed text-metallic/90
+                      "
+                    >
                       {industry.description}
                     </p>
-                    <p className="mt-4 text-sm text-industrial-blue">
+                    <p
+                      className="
+                        mt-4
+                        text-sm text-[#c96a00]
+                      "
+                    >
                       Key Markets: {industry.regions.join(", ")}
                     </p>
                   </div>

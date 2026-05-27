@@ -16,7 +16,7 @@ export const company = {
     line2: " Uttar Pradesh 201015, India",
   },
   founded: 1998,
-  catalogUrl: getAbsoluteUrl("/catalog/ssl-group-product-catalog.pdf"),
+  catalogUrl: getAbsoluteUrl("/catalog/ssl-brouchser-final.pdf"),
 };
 
 export const navigation: NavItem[] = [

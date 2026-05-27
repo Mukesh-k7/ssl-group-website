@@ -61,38 +61,114 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
           ),
         }}
       />
-      <article className="pt-32 pb-16">
-        <div className="container mx-auto max-w-3xl px-4 md:px-6">
-          <Button variant="ghost" asChild className="mb-8">
+      <article
+        className="
+          pt-32 pb-16
+        "
+      >
+        <div
+          className="
+            container
+            max-w-3xl
+            mx-auto px-4 md:px-6
+          "
+        >
+          <Button
+            variant="ghost" asChild
+            className="
+              mb-8
+            "
+          >
             <Link href="/blog">
-              <ArrowLeft className="h-4 w-4" />
+              <ArrowLeft
+                className="
+                  h-4 w-4
+                "
+                /
+              >
               Back to Insights
             </Link>
           </Button>
-          <span className="text-sm font-semibold uppercase tracking-wider text-industrial-blue">
+          <span
+            className="
+              text-sm text-[#c35303d1] font-semibold uppercase tracking-wider
+            "
+          >
             {post.category}
           </span>
-          <h1 className="font-heading mt-2 text-4xl font-bold text-white md:text-5xl">
+          <h1
+            className="
+              mt-2
+              font-heading font-bold text-4xl text-white md:text-5xl
+            "
+          >
             {post.title}
           </h1>
-          <div className="mt-4 flex gap-4 text-sm text-metallic/70">
-            <span className="flex items-center gap-1">
-              <Calendar className="h-4 w-4" />
+          <div
+            className="
+              flex
+              mt-4
+              text-sm text-metallic/70
+              gap-4
+            "
+          >
+            <span
+              className="
+                flex items-center
+                gap-1
+              "
+            >
+              <Calendar
+                className="
+                  h-4 w-4
+                "
+                /
+              >
               {new Date(post.date).toLocaleDateString("en-US", {
                 year: "numeric",
                 month: "long",
                 day: "numeric",
               })}
             </span>
-            <span className="flex items-center gap-1">
-              <Clock className="h-4 w-4" />
+            <span
+              className="
+                flex items-center
+                gap-1
+              "
+            >
+              <Clock
+                className="
+                  h-4 w-4
+                "
+                /
+              >
               {post.readTime} read
             </span>
           </div>
-          <p className="mt-8 text-xl leading-relaxed text-metallic/90">{post.excerpt}</p>
-          <div className="prose prose-invert mt-8 max-w-none">
-            <p className="text-lg leading-relaxed text-metallic/80">{post.content}</p>
-            <p className="mt-4 text-lg leading-relaxed text-metallic/80">
+          <p
+            className="
+              mt-8
+              text-xl text-metallic/90 leading-relaxed
+            "
+          >{post.excerpt}</p>
+          <div
+            className="
+              max-w-none
+              mt-8
+              prose prose-invert
+            "
+          >
+            <p
+              className="
+                text-lg text-metallic/80 leading-relaxed
+              "
+            >{post.content}</p>
+            <p
+              className="
+                mt-4
+                text-lg text-metallic/80 leading-relaxed
+              "
+            >
               For detailed market reports and procurement consultations, contact our export
               desk at export@sslgroup.in. Our metallurgy specialists provide grade-specific
               guidance tailored to your production requirements.
