@@ -33,6 +33,8 @@ export default function ContactPage() {
       <AnimatedSection
         className="
           py-24
+          bg-[#c35303d1] hover:bg-[#c35303d1]/70
+          transition-colors
         "
       >
         <div

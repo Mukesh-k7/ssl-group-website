@@ -129,7 +129,7 @@ export function Navbar() {
                   activeHref === href
                     ? scrolled
                       ? "text-white"
-                      : "bg-gradient-to-b from-[#FFD27A] via-[#D97A00] to-[#5B2A00] bg-clip-text text-transparent"
+                      : "bg-gradient-to-b from-[#FFD27A] via-[#b16100] to-[#5B2A00] bg-clip-text text-transparent"
                     : scrolled
                       ? "text-white/80 hover:text-white"
                       : "text-black/80 hover:text-black"

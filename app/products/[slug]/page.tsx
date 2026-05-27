@@ -17,7 +17,9 @@ export async function generateStaticParams() {
   return products.map((product) => ({ slug: product.slug }));
 }
 
-export async function generateMetadata({ params }: ProductPageProps): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: ProductPageProps): Promise<Metadata> {
   const { slug } = await params;
   const product = getProductBySlug(slug);
   if (!product) return {};
@@ -51,7 +53,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
               { name: "Home", path: "/" },
               { name: "Products", path: "/products" },
               { name: product.name, path: `/products/${product.slug}` },
-            ])
+            ]),
           ),
         }}
       />
@@ -68,7 +70,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
         <div
           className="
             container
-            mx-auto px-4 md:px-6
+            px-4 md:px-6 mx-auto
           "
         >
           <div
@@ -91,18 +93,23 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
                   aspect-video
                 "
                 style={{
-                  backgroundImage: `linear-gradient(135deg, rgba(30,58,95,0.4), rgba(17,17,17,0.9)), url('${product.image}')`,
-                  backgroundSize: "cover",
+                  background: `linear-gradient(to top, rgba(235,224,224,0) 0%, transparent 50%), url(${product.image})`,
+                  backgroundColor: "#D07A00",
                   backgroundPosition: "center",
-                  backgroundColor: "#2A2A2A",
+                  backgroundRepeat: "no-repeat",
+                  backgroundSize: "460px",
+                  width: "100%",
+                  margin: 0,
                 }}
               /
               >
               <h2
                 className="
-                  font-heading font-bold text-2xl text-white
+                  text-2xl text-white font-heading font-bold
                 "
-              >Overview</h2>
+              >
+                Overview
+              </h2>
               <p
                 className="
                   mt-4
@@ -114,9 +121,11 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
               <h3
                 className="
                   mt-10
-                  font-heading font-bold text-xl text-white
+                  text-xl text-white font-heading font-bold
                 "
-              >Applications</h3>
+              >
+                Applications
+              </h3>
               <ul
                 className="
                   grid sm:grid-cols-2
@@ -135,8 +144,8 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
                   >
                     <CheckCircle
                       className="
-                        h-5 w-5
-                        text-industrial-blue
+                        w-5 h-5
+                        text-[#c35303d1]
                         shrink-0
                       "
                       /
@@ -175,12 +184,16 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
                           className="
                             text-metallic/70
                           "
-                        >{spec.label}</dt>
+                        >
+                          {spec.label}
+                        </dt>
                         <dd
                           className="
-                            font-medium text-white
+                            text-white font-medium
                           "
-                        >{spec.value}</dd>
+                        >
+                          {spec.value}
+                        </dd>
                       </div>
                     ))}
                   </dl>
@@ -195,10 +208,9 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
                       Request Quote
                       <ArrowRight
                         className="
-                          h-4 w-4
+                          w-4 h-4
                         "
-                        /
-                      >
+                      />
                     </Link>
                   </Button>
                 </CardContent>
@@ -218,15 +230,17 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
           <div
             className="
               container
-              mx-auto px-4 md:px-6
+              px-4 md:px-6 mx-auto
             "
           >
             <h2
               className="
                 mb-8
-                font-heading font-bold text-2xl text-white
+                text-2xl text-white font-heading font-bold
               "
-            >Related Products</h2>
+            >
+              Related Products
+            </h2>
             <div
               className="
                 grid sm:grid-cols-3
@@ -247,15 +261,19 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
                 >
                   <p
                     className="
-                      text-xs text-industrial-blue
+                      text-xs text-[#c35303d1]
                     "
-                  >{p.category}</p>
+                  >
+                    {p.category}
+                  </p>
                   <p
                     className="
                       mt-1
-                      font-heading font-semibold text-white
+                      text-white font-heading font-semibold
                     "
-                  >{p.name}</p>
+                  >
+                    {p.name}
+                  </p>
                 </Link>
               ))}
             </div>
@@ -266,17 +284,16 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
       <div
         className="
           container
-          mx-auto px-4 md:px-6 pb-8
+          px-4 md:px-6 pb-8 mx-auto
         "
       >
         <Button variant="ghost" asChild>
           <Link href="/products">
             <ArrowLeft
               className="
-                h-4 w-4
+                w-4 h-4
               "
-              /
-            >
+            />
             Back to Products
           </Link>
         </Button>
