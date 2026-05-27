@@ -240,10 +240,12 @@ export function Navbar() {
           {isOpen ? <X
             className="
               h-6 w-6
+              text-[#0a0300]
             "
           ></X> : <Menu
             className="
               h-6 w-6
+              text-[#0a0300]
             "
           ></Menu>}
         </button>
