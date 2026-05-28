@@ -13,7 +13,7 @@ import { CtaBannerSection } from "@/sections/cta-banner";
 import { createPageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = createPageMetadata({
-  title: "Metallurgy & Steel Raw Materials Exporter",
+  title: "SSL Group",
   description:
     "SSL Group — India's premier exporter of pig iron, ferro alloys, carbon products, and steel industry raw materials. Trusted by manufacturers in 45+ countries.",
   path: "/",
