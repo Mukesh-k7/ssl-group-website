@@ -11,6 +11,13 @@ const nextConfig: NextConfig = {
       },
     ];
   },
+
+  allowedDevOrigins: [
+    'local-origin.dev',
+    '*.local-origin.dev',
+  ],
+  
+  crossOrigin: 'anonymous',
 };
 
 export default nextConfig;
