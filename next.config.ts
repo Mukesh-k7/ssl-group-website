@@ -12,12 +12,17 @@ const nextConfig: NextConfig = {
     ];
   },
 
+  // Allow ALL local network origins for LAN development
   allowedDevOrigins: [
-    'local-origin.dev',
-    '*.local-origin.dev',
+    "192.168.0.0/16",
+    "192.168.1.*",
+    "10.0.0.*",
+    "172.16.*.*",
+    "localhost",
+    "127.0.0.1",
   ],
-  
-  crossOrigin: 'anonymous',
+
+  crossOrigin: "anonymous",
 };
 
 export default nextConfig;
