@@ -70,7 +70,7 @@ export function Navbar() {
       className={cn(
         "fixed left-0 right-0 top-0 z-50 transition-all duration-300",
         scrolled
-          ? "bg-gradient-to-r from-[#7C2D12] via-[#EA580C] to-[#FDBA74] py-3 shadow-2xl shadow-black/40 backdrop-blur-xl"
+          ? "bg-gradient-to-l from-[#7C2D12] via-[#EA580C] to-[#FDBA74] py-3 shadow-2xl shadow-black/40 backdrop-blur-xl"
           : "bg-white py-5 text-black"
       )}
     >
