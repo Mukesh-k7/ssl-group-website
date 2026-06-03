@@ -28,9 +28,9 @@ function getNavHref(pathname: string, itemHref: string) {
     }
   }
 
-  if (pathname === "/about" && itemHref === "/about") {
-    return "#about-content";
-  }
+  // if (pathname === "/about" && itemHref === "/about") {
+  //   return "#about-content";
+  // }
 
   return itemHref;
 }
@@ -43,9 +43,9 @@ function getActiveHref(pathname: string, itemHref: string) {
     }
   }
 
-  if (pathname === "/about" && itemHref === "/about") {
-    return "#about-content";
-  }
+  // if (pathname === "/about" && itemHref === "/about") {
+  //   return "#about-content";
+  // }
 
   return itemHref;
 }
