@@ -43,7 +43,7 @@ export const timeline: TimelineEvent[] = [
   {
     year: "2000",
     title: "Foundation",
-    description: "SSL Group established in Mumbai as a metallurgical raw materials trading firm.",
+    description: "SSL Group established in Delhi as a metallurgical raw materials trading firm.",
   },
   {
     year: "2004",
