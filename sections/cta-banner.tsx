@@ -19,7 +19,7 @@ export function CtaBannerSection({
     <section
       className="
         py-20
-        bg-[#c35303d1]
+        bg-[#9b5600d1]
       "
     >
       <div

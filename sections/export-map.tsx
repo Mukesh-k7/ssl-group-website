@@ -15,7 +15,7 @@ export function ExportMapSection() {
       id="export"
       className="
         py-24
-        bg-[#c35303d1]
+        bg-[#9b5600d1]
       "
     >
       <div
