@@ -28,7 +28,7 @@ export function HeroSection() {
             bg-industrial-grid
             opacity-30
           "
-          /
+        /
         >
         <motion
           .div
@@ -46,7 +46,7 @@ export function HeroSection() {
             h-1/2
             bg-gradient-to-t from-charcoal to-transparent
           "
-          /
+        /
         >
         {/* Steel beam lines */}
         <svg
@@ -127,7 +127,7 @@ export function HeroSection() {
                   h-4 w-4
                   text-industrial-blue
                 "
-                /
+              /
               >
               Exporting to 45+ Countries Since {company.founded}
             </motion.div>
@@ -190,17 +190,26 @@ export function HeroSection() {
                     className="
                       h-5 w-5
                     "
-                    /
+                  /
                   >
                 </Link>
               </Button>
               <Button size="lg" variant="secondary" asChild>
-                <a href={company.catalogUrl}>
+                {/* <a href={company.catalogUrl}>
                   <Download
                     className="
                       h-5 w-5
                     "
                     /
+                  >
+                  Download Catalog
+                </a> */}
+                <a href={"https://www.sslgroup.in/images/ssl-brouchser-final.pdf"} target="_blank" rel="noopener noreferrer">
+                  <Download
+                    className="
+                      h-5 w-5
+                    "
+                  /
                   >
                   Download Catalog
                 </a>
@@ -235,7 +244,7 @@ export function HeroSection() {
                       h-4 w-4
                       text-industrial-blue
                     "
-                    /
+                  /
                   >
                   {label}
                 </div>
@@ -274,7 +283,7 @@ export function HeroSection() {
                 }}
               /
               >
-                
+
               <div
                 className="
                   absolute inset-0 flex flex-col justify-end

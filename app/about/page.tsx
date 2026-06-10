@@ -50,7 +50,7 @@ export default function AboutPage() {
       <PageHero
         eyebrow="About SSL Group"
         title="Forging Global Metallurgy Partnerships"
-        description={`Since ${company.founded}, SSL Group has grown from a Mumbai trading house into a premier international exporter of steel industry raw materials — trusted by manufacturers across 45+ countries.`}
+        description={`Since ${company.founded}, SSL Group has grown from a Delhi trading house into a premier international exporter of steel industry raw materials — trusted by manufacturers across 45+ countries.`}
       />
       <AnimatedSection
         id="about-content"
