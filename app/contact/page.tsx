@@ -224,7 +224,7 @@ export default function ContactPage() {
                     text-sm text-metallic/80
                   "
                 >
-                  Monday – Saturday: 9:00 AM – 7:00 PM IST
+                  Monday – Saturday: 9:30 AM – 6:00 PM IST
                   <br />
                   Sunday: Emergency shipments only
                 </p>
@@ -239,9 +239,22 @@ export default function ContactPage() {
               rounded-2xl border border-white/10
             "
           >
-            <iframe
+            {/* <iframe
               title="SSL Group Delhi Office Location"
               src="https://maps.google.com/maps?q=Ground+Floor+CC-23+AVANTIKA+1+Avantika+Main+Road+Saini+Washing+Center+Avantika+Ghaziabad+Uttar+Pradesh+201015+India&t=&z=15&ie=UTF8&iwloc=&output=embed"
+              className="
+                h-80 w-full
+                bg-gunmetal
+                border-0
+              "
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              allowFullScreen
+            /> */}
+
+            <iframe
+              title="SSL Group Delhi Office Location"
+              src="https://maps.google.com/maps?q=SSL%20Group&t=k&z=15&ie=UTF8&iwloc=&output=embed"
               className="
                 h-80 w-full
                 bg-gunmetal
