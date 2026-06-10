@@ -10,13 +10,15 @@ import { Button } from "@/components/ui/button";
 import { company, navigation } from "@/data/site";
 import { cn } from "@/lib/utils";
 
+
+
 const homeAnchorIds: Record<string, string> = {
   "/": "home",
   "/about": "about-content",
   "/products": "products",
   "/industries": "industries",
   "/export-logistics": "export",
-  "/certifications": "certifications",
+  "/certifications": "certifications-preview",
   "/infrastructure": "infrastructure",
 };
 
@@ -212,7 +214,7 @@ export function Navbar() {
           "
         >
           <Button variant="ghost" size="sm" asChild>
-            <a href={company.catalogUrl} download>
+            <a href={"https://www.sslgroup.in/images/ssl-brouchser-final.pdf"} download>
               <Download
                 className="
                   h-4 w-4
@@ -299,7 +301,7 @@ export function Navbar() {
                 "
               >
                 <Button variant="secondary" asChild>
-                  <a href={company.catalogUrl} download>
+                  <a href={"https://www.sslgroup.in/images/ssl-brouchser-final.pdf"} download>
                     Download Catalog
                   </a>
                 </Button>

@@ -14,6 +14,7 @@ import { certifications } from "@/data/certifications";
 export function CertificationsPreviewSection() {
   return (
     <AnimatedSection
+      id="certifications-preview"
       className="
         py-24
         bg-[#9b5600d1]
@@ -61,7 +62,7 @@ export function CertificationsPreviewSection() {
                       h-6 w-6
                       text-[#c35303d1]
                     "
-                    /
+                  /
                   >
                 </div>
                 <div>

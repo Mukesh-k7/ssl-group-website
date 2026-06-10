@@ -12,6 +12,7 @@ const nextConfig: NextConfig = {
     ];
   },
 
+  devIndicators: false,
   // Allow ALL local network origins for LAN development
   allowedDevOrigins: [
     "192.168.0.0/16",
