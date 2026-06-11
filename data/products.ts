@@ -9,7 +9,7 @@ export const products: Product[] = [
       "Foundry and steel-grade pig iron with controlled silicon and sulfur for blast furnace and casting applications.",
     description:
       "SSL Group exports premium foundry and basic pig iron sourced from ISO-certified integrated steel plants. Our pig iron meets stringent chemistry requirements for automotive castings, ductile iron production, and steelmaking charge materials.",
-    image: "/images/products/images-pig-iron.png",
+    image: "/images/products/pig-iron.png",
     featured: true,
     specifications: [
       { label: "Carbon (C)", value: "3.5 – 4.5%" },
@@ -33,7 +33,7 @@ export const products: Product[] = [
       "Ferro manganese, ferro silicon, ferro chrome, and specialty alloys for steel deoxidation and alloying.",
     description:
       "Comprehensive ferro alloy portfolio for integrated steel plants and mini-mills. We supply low-carbon and high-carbon grades with batch traceability and sieve analysis documentation.",
-    image: "/images/products/images-ferro-silicon.png",
+    image: "/images/products/ferroalloys-1.jpg",
     featured: true,
     specifications: [
       { label: "FeMn (Mn)", value: "75 – 82%" },
@@ -49,15 +49,16 @@ export const products: Product[] = [
       "Welding consumables",
     ],
   },
+
   {
-    slug: "ferro-titanium",
-    name: "Ferro Titanium",
+    slug: "nobal-alloy",
+    name: "Nobal Alloy",
     category: "Specialty Alloys",
     shortDescription:
-      "High-purity ferro titanium for grain refinement and micro-alloying in specialty steel grades.",
+      "High-purity Nobal Alloy for grain refinement and micro-alloying in specialty steel grades.",
     description:
-      "Precision ferro titanium with controlled titanium content for aerospace-grade steels, high-strength low-alloy applications, and critical casting operations requiring grain refinement.",
-    image: "/images/products/images-ferro-titanium.png",
+      "Precision Nobal Alloy with controlled titanium content for aerospace-grade steels, high-strength low-alloy applications, and critical casting operations requiring grain refinement.",
+    image: "/images/products/NOBLE-ALLOYS3.png",
     featured: true,
     specifications: [
       { label: "Titanium (Ti)", value: "30 – 40%" },
@@ -73,6 +74,7 @@ export const products: Product[] = [
       "Specialty castings",
     ],
   },
+
   {
     slug: "carbon-products",
     name: "Carbon Products",
@@ -81,7 +83,7 @@ export const products: Product[] = [
       "Calcined petroleum coke, metallurgical coke, and carbon raisers for steel and foundry operations.",
     description:
       "Export-grade carbon products including CPC, GPC, and anthracite-based carbon raisers with low ash and volatile matter for EAF steelmaking and foundry cupola operations.",
-    image: "/images/products/images-carbon.png",
+    image: "/images/products/carbon-product.jpg",
     specifications: [
       { label: "Fixed Carbon", value: "90 – 99%" },
       { label: "Ash", value: "≤ 1.0%" },
@@ -96,17 +98,18 @@ export const products: Product[] = [
       "Carbon raiser applications",
     ],
   },
+
   {
-    slug: "zinc-ore",
-    name: "Zinc Ore",
+    slug: "carbide-ore",
+    name: "Carbide Ore",
     category: "Industrial Minerals",
     shortDescription:
-      "High-grade zinc concentrate and ore for smelters and galvanizing supply chains.",
+      "High-grade carbide concentrate and ore for smelters and galvanizing supply chains.",
     description:
-      "Direct export of zinc ore and concentrate with consistent Zn content, low impurities, and full assay certificates for smelter and galvanizing industry procurement.",
-    image: "/images/products/zinc-ore.jpg",
+      "Direct export of carbide ore and concentrate with consistent carbide content, low impurities, and full assay certificates for smelter and galvanizing industry procurement.",
+    image: "/images/products/Silicon-Carbide-1.jpg",
     specifications: [
-      { label: "Zinc (Zn)", value: "45 – 55%" },
+      { label: "Carbide (C)", value: "45 – 55%" },
       { label: "Lead (Pb)", value: "≤ 8%" },
       { label: "Iron (Fe)", value: "≤ 12%" },
       { label: "Moisture", value: "≤ 8%" },
@@ -119,6 +122,7 @@ export const products: Product[] = [
       "Chemical processing",
     ],
   },
+
   {
     slug: "natural-graphite",
     name: "Natural Graphite",
@@ -142,6 +146,7 @@ export const products: Product[] = [
       "Gaskets and seals",
     ],
   },
+
   {
     slug: "steel-pipes-tubes",
     name: "Steel Pipes & Tubes",
@@ -165,6 +170,7 @@ export const products: Product[] = [
       "Industrial process lines",
     ],
   },
+
   {
     slug: "industrial-minerals",
     name: "Industrial Minerals",
@@ -188,6 +194,7 @@ export const products: Product[] = [
       "Ceramic manufacturing",
     ],
   },
+
   {
     slug: "steel-raw-materials",
     name: "Steel Industry Raw Materials",
@@ -196,7 +203,7 @@ export const products: Product[] = [
       "Consolidated supply of iron ore, coal, scrap substitutes, and charge materials for steel plants.",
     description:
       "One-window procurement for integrated steel plants — iron ore fines and lumps, PCI coal, metallurgical coke, and alternative charge materials with vessel-level scheduling.",
-    image: "/images/products/images-steel-shot.png",
+    image: "/images/products/steel-product.jpg",
     featured: true,
     specifications: [
       { label: "Iron Ore Fe", value: "62 – 65%" },

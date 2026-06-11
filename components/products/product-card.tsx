@@ -19,7 +19,7 @@ export function ProductCard({ product }: ProductCardProps) {
           overflow-hidden
           h-full
           text-transparent
-          bg-gradient-to-b from-[#FFD27A] via-[#D97A00] to-[#5B2A00]
+          bg-gradient-to-b from-[#5f471b] via-[#a76818] to-[#c96a006b]
           border-white/10 hover:border-industrial-blue/40
           transition-all hover:shadow-2xl hover:shadow-industrial-blue/10
           group
@@ -30,11 +30,12 @@ export function ProductCard({ product }: ProductCardProps) {
             relative overflow-hidden
             text-transparent text-transparent
             bg-gunmetal bg-gradient-to-r bg-clip-text bg-gradient-to-r bg-clip-text
-            from-[#7C2D12] from-[#7C2D12] via-[#EA580C] via-[#EA580C]
-            to-[#FDBA74] to-[#FDBA74]
+            from-[#a75500] via-[#f9884b] to-[#f3d3b0]
             aspect-[4/3]
           "
         >
+          {/* from-[#7C2D12] from-[#7C2D12] via-[#EA580C] via-[#EA580C]
+            to-[#FDBA74] to-[#FDBA74] */}
           <div
             className="
               absolute inset-0
@@ -44,10 +45,9 @@ export function ProductCard({ product }: ProductCardProps) {
             "
             style={{
               background: `linear-gradient(to top, rgba(235,224,224,0) 0%, transparent 50%), url(${product.image})`,
-              backgroundColor: "rgb(223 90 20)",
               backgroundPosition: "center",
               backgroundRepeat: "no-repeat",
-              backgroundSize: "267px",
+              backgroundSize: "cover",
               width: "100%",
               margin: 0,
             }}

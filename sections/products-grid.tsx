@@ -29,7 +29,7 @@ export function ProductsGridSection({
   showAllLink = true,
   items = products,
 }: ProductsGridSectionProps) {
-  const displayProducts = limit ? items.slice(0, limit) : items;
+  const displayProducts = limit ? items.slice(0, 9) : items;
 
   return (
     <AnimatedSection className="py-24" id="products">
@@ -61,10 +61,10 @@ export function ProductsGridSection({
             pagination={{
               clickable: true,
             }}
-            autoplay={{
-              delay: 3000,
-              disableOnInteraction: false,
-            }}
+            // autoplay={{
+            //   delay: 2000,
+            //   disableOnInteraction: false,
+            // }}
             breakpoints={{
               640: {
                 slidesPerView: 2,

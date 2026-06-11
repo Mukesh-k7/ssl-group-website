@@ -97,7 +97,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
                   backgroundColor: "#D07A00",
                   backgroundPosition: "center",
                   backgroundRepeat: "no-repeat",
-                  backgroundSize: "460px",
+                  backgroundSize: "cover",
                   width: "100%",
                   margin: 0,
                 }}
