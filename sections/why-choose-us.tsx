@@ -77,7 +77,7 @@ export function WhyChooseUsSection() {
                     <Icon
                       className="
                         h-6 w-6
-                        hover:text-[#c96a00] text-white
+                        hover:text-[#c96a00] text-[#f38203] text-bold
                         transition-colors duration-200
                       "
                       /

@@ -15,6 +15,7 @@ import { cn } from "@/lib/utils";
 const homeAnchorIds: Record<string, string> = {
   "/": "home",
   "/about": "about-content",
+  "/contact": "contact-us",
   "/products": "products",
   "/industries": "industries",
   "/export-logistics": "export",
