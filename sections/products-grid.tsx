@@ -61,10 +61,10 @@ export function ProductsGridSection({
             pagination={{
               clickable: true,
             }}
-            // autoplay={{
-            //   delay: 2000,
-            //   disableOnInteraction: false,
-            // }}
+            autoplay={{
+              delay: 2000,
+              disableOnInteraction: false,
+            }}
             breakpoints={{
               640: {
                 slidesPerView: 2,
@@ -88,7 +88,7 @@ export function ProductsGridSection({
             <Button
               size="lg"
               variant="secondary"
-              className="bg-[#c35303d1]"
+              className="bg-[#0461cfad] hover:bg-[#0461cf] text-white font-medium"
               asChild
             >
               <Link href="/products">View All Products</Link>

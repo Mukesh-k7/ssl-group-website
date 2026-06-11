@@ -90,7 +90,7 @@ export function InfrastructurePreviewSection() {
           <Button
             variant="secondary"
             className="
-              bg-[#c35303d1]
+              bg-[#0461cfad]
             "
             asChild
           >
