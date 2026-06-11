@@ -93,7 +93,7 @@ export function Footer() {
                 space-y-2
               "
             >
-              {navigation.slice(0, 6).map((item) => (
+              {navigation.slice(0, 10).map((item) => (
                 <li key={item.href}>
                   <Link
                     href={item.href}
@@ -162,15 +162,21 @@ export function Footer() {
                   gap-3
                 "
               >
-                <MapPin
-                  className="
+
+                <Link
+                  href="https://www.google.com/maps/search/?api=1&query=Ground+Floor,+CC-23,+AVANTIKA+1,+Avantika,+Ghaziabad,+Uttar+Pradesh+201015,+India"
+                  target="_blank"
+                >
+                  <MapPin
+                    className="
                     w-4 h-4
                     mt-0.5
                     text-[#c96a00] text-bold
                     shrink-0
                   "
                   /
-                >
+                  >
+                </Link>
                 <span>
                   {company.address.line1}
                   <br />

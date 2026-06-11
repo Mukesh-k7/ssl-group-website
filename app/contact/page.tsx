@@ -99,7 +99,7 @@ export default function ContactPage() {
                         text-[#c96a00] text-bold
                         shrink-0
                       "
-                      /
+                    /
                     >
                     <span>
                       <strong
@@ -127,7 +127,7 @@ export default function ContactPage() {
                           h-5 w-5
                           text-[#c96a00] text-bold
                         "
-                        /
+                      /
                       >
                       {company.phone}
                     </a>
@@ -239,7 +239,7 @@ export default function ContactPage() {
               rounded-2xl border border-white/10
             "
           >
-            <iframe
+            {/* <iframe
               title="SSL Group Delhi Office Location"
               src="https://maps.google.com/maps?q=Ground+Floor+CC-23+AVANTIKA+1+Avantika+Main+Road+Saini+Washing+Center+Avantika+Ghaziabad+Uttar+Pradesh+201015+India&t=&z=15&ie=UTF8&iwloc=&output=embed"
               className="
@@ -247,6 +247,17 @@ export default function ContactPage() {
                 bg-gunmetal
                 border-0
               "
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              allowFullScreen
+            /> */}
+
+            <iframe
+              title="SSL Group Delhi Office Location"
+              src="https://maps.google.com/maps?q=Ground%20Floor,%20CC-23,%20AVANTIKA%201,%20Avantika%20Main%20Road,%20Saini%20Washing%20Center,%20Avantika,%20Ghaziabad,%20Uttar%20Pradesh%20201015,%20India&t=&z=15&ie=UTF8&iwloc=&output=embed"
+              width="100%"
+              height="450"
+              className="rounded-lg"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               allowFullScreen

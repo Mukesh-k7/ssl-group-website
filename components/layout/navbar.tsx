@@ -15,7 +15,6 @@ import { cn } from "@/lib/utils";
 const homeAnchorIds: Record<string, string> = {
   "/": "home",
   "/about": "about-content",
-  "/contact": "contact-us",
   "/products": "products",
   "/industries": "industries",
   "/export-logistics": "export",
@@ -154,7 +153,7 @@ export function Navbar() {
               className="
                 flex items-center
                 px-3 py-2
-                text-sm text-metallic/80 hover:text-white font-medium
+                text-sm text-[#1e3a5f] hover:text-[#1e3a5f] font-medium font-bold
                 rounded-md
                 transition-colors
                 gap-1
@@ -214,7 +213,7 @@ export function Navbar() {
             gap-3
           "
         >
-          <Button variant="ghost" size="sm" asChild>
+          <Button variant="ghost" size="sm" asChild className="text-[#1e3a5f] hover:text-[#1e3a5f] font-medium font-bold">
             <a href={"https://www.sslgroup.in/images/ssl-brouchser-final.pdf"} download>
               <Download
                 className="
