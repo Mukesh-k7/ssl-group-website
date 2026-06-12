@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Mail, MapPin, Phone, MessageCircle } from "lucide-react";
+import Link from "next/link";
 import { PageHero } from "@/components/shared/page-hero";
 import { AnimatedSection } from "@/components/shared/animated-section";
 import { InquiryForm } from "@/sections/inquiry-form";
@@ -33,7 +34,7 @@ export default function ContactPage() {
       <AnimatedSection
         className="
           py-24
-          bg-[#9b5600d1] hover:bg-[#B56825]/[0.78]
+          bg-[#9b5600d1] hover:bg-[#a95500c7]
           transition-colors
         "
       >
@@ -92,15 +93,21 @@ export default function ContactPage() {
                       gap-3
                     "
                   >
-                    <MapPin
-                      className="
+                    <Link
+                      href="https://www.google.com/maps?q=28.67378742741595,77.47962866652804"
+                      target="_blank"
+                    >
+                      <MapPin
+                        className="
                         h-5 w-5
                         mt-0.5
-                        text-[#c96a00] text-bold
+                        text-[#ffa00b]
                         shrink-0
                       "
-                    /
-                    >
+                      /
+                      >
+                    </Link>
+
                     <span>
                       <strong
                         className="
@@ -125,7 +132,7 @@ export default function ContactPage() {
                       <Phone
                         className="
                           h-5 w-5
-                          text-[#c96a00] text-bold
+                          text-[#ffa00b] text-bold
                         "
                       /
                       >
@@ -144,7 +151,7 @@ export default function ContactPage() {
                       <Mail
                         className="
                           h-5 w-5
-                          text-[#c96a00] text-bold
+                          text-[#ffa00b] text-bold
                         "
                       />
                       {company.email}
@@ -162,7 +169,7 @@ export default function ContactPage() {
                       <Mail
                         className="
                           h-5 w-5
-                          text-[#c96a00] text-bold
+                          text-[#ffa00b] text-bold
                         "
                       />
                       {company.salesEmail}
@@ -239,42 +246,20 @@ export default function ContactPage() {
               rounded-2xl border border-white/10
             "
           >
-            {/* <iframe
+            <iframe
               title="SSL Group Delhi Office Location"
-              src="https://maps.google.com/maps?q=Ground+Floor+CC-23+AVANTIKA+1+Avantika+Main+Road+Saini+Washing+Center+Avantika+Ghaziabad+Uttar+Pradesh+201015+India&t=&z=15&ie=UTF8&iwloc=&output=embed"
+              src="https://maps.google.com/maps?q=28.67378742741595,77.47962866652804&z=16&output=embed"
               className="
                 h-80 w-full
                 bg-gunmetal
                 border-0
               "
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              allowFullScreen
-            /> */}
-
-            <iframe
-              title="SSL Group Delhi Office Location"
-              src="https://maps.google.com/maps?q=Ground%20Floor,%20CC-23,%20AVANTIKA%201,%20Avantika%20Main%20Road,%20Saini%20Washing%20Center,%20Avantika,%20Ghaziabad,%20Uttar%20Pradesh%20201015,%20India&t=&z=15&ie=UTF8&iwloc=&output=embed"
-              width="100%"
-              height="450"
-              className="rounded-lg"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               allowFullScreen
             />
 
-            {/* <iframe
-              title="SSL Group Delhi Office Location"
-              src="https://maps.google.com/maps?q=SSL%20Group&t=k&z=15&ie=UTF8&iwloc=&output=embed"
-              className="
-                h-80 w-full
-                bg-gunmetal
-                border-0
-              "
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              allowFullScreen
-            /> */}
+            
           </div>
         </div>
       </AnimatedSection>

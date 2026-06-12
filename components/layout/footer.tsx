@@ -164,7 +164,7 @@ export function Footer() {
               >
 
                 <Link
-                  href="https://www.google.com/maps/search/?api=1&query=Ground+Floor,+CC-23,+AVANTIKA+1,+Avantika,+Ghaziabad,+Uttar+Pradesh+201015,+India"
+                  href="https://www.google.com/maps?q=28.67378742741595,77.47962866652804"
                   target="_blank"
                 >
                   <MapPin

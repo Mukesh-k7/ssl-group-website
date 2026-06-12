@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Mail, MapPin, Phone, MessageCircle } from "lucide-react";
+import Link from "next/link";
 import { AnimatedSection } from "@/components/shared/animated-section";
 import { InquiryForm } from "@/sections/inquiry-form";
 import { company } from "@/data/site";
@@ -30,7 +31,7 @@ export default function ContactPage() {
                 id="contact-us"
                 className="
           py-24
-          bg-[#9b5600d1] hover:bg-[#B56825]/[0.78]
+          bg-[#9b5600d1] hover:bg-[#a95500c7]
           transition-colors
         "
             >
@@ -89,15 +90,21 @@ export default function ContactPage() {
                       gap-3
                     "
                                     >
-                                        <MapPin
-                                            className="
+                                        <Link
+                                            href="https://www.google.com/maps/search/?api=1&query=Ground+Floor,+CC-23,+AVANTIKA+1,+Avantika,+Ghaziabad,+Uttar+Pradesh+201015,+India"
+                                            target="_blank"
+                                        >
+                                            <MapPin
+                                                className="
                         h-5 w-5
                         mt-0.5
-                        text-[#c96a00] text-bold
+                        text-[#ffa00b] text-bold
                         shrink-0
                       "
-                                        /
-                                        >
+                                            /
+                                            >
+                                        </Link>
+
                                         <span>
                                             <strong
                                                 className="
@@ -122,7 +129,7 @@ export default function ContactPage() {
                                             <Phone
                                                 className="
                           h-5 w-5
-                          text-[#c96a00] text-bold
+                          text-[#ffa00b] text-bold
                         "
                                             /
                                             >
@@ -141,7 +148,7 @@ export default function ContactPage() {
                                             <Mail
                                                 className="
                           h-5 w-5
-                          text-[#c96a00] text-bold
+                          text-[#ffa00b] text-bold
                         "
                                             />
                                             {company.email}
@@ -159,7 +166,7 @@ export default function ContactPage() {
                                             <Mail
                                                 className="
                           h-5 w-5
-                          text-[#c96a00] text-bold
+                          text-[#ffa00b] text-bold
                         "
                                             />
                                             {company.salesEmail}
@@ -238,7 +245,7 @@ export default function ContactPage() {
                     >
                         <iframe
                             title="SSL Group Delhi Office Location"
-                            src="https://maps.google.com/maps?q=Ground+Floor+CC-23+AVANTIKA+1+Avantika+Main+Road+Saini+Washing+Center+Avantika+Ghaziabad+Uttar+Pradesh+201015+India&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                            src="https://maps.google.com/maps?q=Ground+Floor+CC-23+AVANTIKA+1+Avantika+Main+Road+SSL+Group+Avantika+Ghaziabad+Uttar+Pradesh+201015+India&t=&z=15&ie=UTF8&iwloc=&output=embed"
                             className="
                 h-80 w-full
                 bg-gunmetal

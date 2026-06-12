@@ -77,7 +77,7 @@ export function CtaBannerSection({
                 gap-4
               "
             >
-              <Button size="lg" asChild>
+              <Button size="lg" asChild className="bg-[#007aff94] hover:bg-[#007affc9]">
                 <Link href="/contact">
                   Submit Export Inquiry
                   <ArrowRight
