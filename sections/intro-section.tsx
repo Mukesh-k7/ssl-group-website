@@ -12,6 +12,7 @@ export function IntroSection() {
       id="about-content"
       className="
         py-24
+        bg-gradient-to-br from-industrial-blue/40 via-gunmetal to-charcoal
       "
     >
       <div

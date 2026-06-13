@@ -29,7 +29,7 @@ export function InfrastructurePreviewSection() {
       id="infrastructure"
       className="
         py-24
-        bg-gunmetal/20
+        bg-gradient-to-br from-industrial-blue/40 via-gunmetal to-charcoal
         border-y border-white/10
       "
     >

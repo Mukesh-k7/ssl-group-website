@@ -67,13 +67,16 @@ export function Navbar() {
     setIsOpen(false);
   }, [pathname]);
 
+  // bg-gradient-to-l from-[#a75500] via-[#f9884b] to-[#f3d3b0] py-3 shadow-2xl shadow-black/40 backdrop-blur-xl  bg-[linear-gradient(135deg,#7B3000_0%,#C25A00_40%,#E8820A_70%,#A84800_100%)]
+
+
   return (
     <header
       className={cn(
         "fixed left-0 right-0 top-0 z-50 transition-all duration-300",
         scrolled
-          ? "bg-gradient-to-l from-[#a75500] via-[#f9884b] to-[#f3d3b0] py-3 shadow-2xl shadow-black/40 backdrop-blur-xl"
-          : "bg-white py-5 text-black"
+          ? "py-3 shadow-2xl shadow-black/40 backdrop-blur-xl bg-[linear-gradient(140deg,#f1edea_0%,#f3892d_40%,#E8820A_70%,#A84800_100%)]"
+          : "bg-white py-5 text-black bg-gradient-to-l from-[#a75500] via-[#f9884b] to-[#f3d3b0] py-3 shadow-2xl shadow-black/40 backdrop-blur-xl"
       )}
     >
       <nav
@@ -92,7 +95,7 @@ export function Navbar() {
           <div
             className="
               flex items-center
-              h-15 w-50
+              h-15 w-40
               ml-[18px]
               from-gunmetal to-charcoal
               rounded-lg
@@ -108,7 +111,9 @@ export function Navbar() {
                 group-hover:brightness-110
               "
               priority
-            ></Image>
+            >
+              
+            </Image>
           </div>
         </Link>
 

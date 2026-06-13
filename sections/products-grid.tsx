@@ -32,7 +32,7 @@ export function ProductsGridSection({
   const displayProducts = limit ? items.slice(0, 9) : items;
 
   return (
-    <AnimatedSection className="py-24" id="products">
+    <AnimatedSection className="py-24 bg-gradient-to-br from-industrial-blue/40 via-gunmetal to-charcoal" id="products">
       <div className="container mx-auto px-4 md:px-6">
         <SectionHeader
           eyebrow="Our Products"

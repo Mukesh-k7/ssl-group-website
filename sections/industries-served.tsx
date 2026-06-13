@@ -39,7 +39,7 @@ export function IndustriesServedSection({ limit }: { limit?: number }) {
       id="industries"
       className="
         py-24
-        bg-gunmetal/20
+        bg-gradient-to-br from-industrial-blue/40 via-gunmetal to-charcoal
       "
     >
       <div
