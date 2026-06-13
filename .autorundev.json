@@ -1,0 +1,6 @@
+{
+  "ssl-group-website": {
+    "path": "./.",
+    "start": "npm run dev"
+  }
+}
