@@ -13,7 +13,7 @@ export function HeroSection() {
       className="
         relative flex items-center overflow-hidden
         min-h-screen
-        bg-[#9b5600d1]
+        [background:linear-gradient(135deg,#3D3F38,#6B8FA0,#9B6E7C,#C8B87A,#9DA09A)]
       "
     >
       {/* Animated industrial background */}

@@ -9,14 +9,23 @@ import {
 } from "@/components/shared/animated-section";
 import { exportRegions } from "@/data/site";
 
+
+// export type AnimatedSectionProps = {
+//   id: string
+//   className?: string
+//   style?: React.CSSProperties
+// }
+
 export function ExportMapSection() {
+
+//   const sectionStyle: React.CSSProperties = {
+//   background: "linear-gradient(135deg, #3D3F38, #6B8FA0, #9B6E7C, #C8B87A, #9DA09A)",
+// };
   return (
     <AnimatedSection
       id="export"
-      className="
-        py-24
-        bg-[#9b5600d1]
-      "
+      className="py-24 [background:linear-gradient(135deg,#3D3F38,#6B8FA0,#9B6E7C,#C8B87A,#9DA09A)]"
+      
     >
       <div
         className="

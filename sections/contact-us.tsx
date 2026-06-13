@@ -31,7 +31,7 @@ export default function ContactPage() {
                 id="contact-us"
                 className="
           py-24
-          bg-[#9b5600d1] hover:bg-[#a95500c7]
+          [background:linear-gradient(135deg,#3D3F38,#6B8FA0,#9B6E7C,#C8B87A,#9DA09A)] hover:bg-[#a95500c7]
           transition-colors
         "
             >
