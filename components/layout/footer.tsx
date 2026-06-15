@@ -4,9 +4,11 @@ import { Mail, MapPin, Phone, ArrowUpRight } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
 import { company, navigation } from "@/data/site";
 import { products } from "@/data/products";
+import { useTranslations } from "next-intl";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
+  const t = useTranslations('navigation');
 
   return (
     <footer
@@ -102,7 +104,7 @@ export function Footer() {
                       transition-colors
                     "
                   >
-                    {item.key}
+                    {t(item.key)}
                   </Link>
                 </li>
               ))}

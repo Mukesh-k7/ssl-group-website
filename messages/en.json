@@ -14,24 +14,25 @@
   },
 
   "hero": {
-    "title": "Leading Global Exporter of Agricultural Products",
-    "subtitle": "Delivering premium quality agricultural products worldwide with trust, quality and excellence.",
-    "button": "Explore Products"
+    "title": "Leading Global Exporter of Metallurgical Products",
+    "subtitle": "Delivering premium quality Metallurgical products worldwide with trust, quality and excellence.",
+    "button": "Explore Products",
+    "description": "India's premier exporter of pig iron, ferro alloys, carbon products, and steel industry raw materials to manufacturers across the Middle East, Africa, and Europe."
   },
 
   "about": {
     "title": "About SSL Group",
-    "description": "SSL Group is a trusted exporter of high-quality agricultural products serving global markets with reliability and excellence."
+    "description": "SSL Group is a trusted exporter of high-quality Metallurgical products serving global markets with reliability and excellence."
   },
 
   "products": {
     "title": "Our Products",
-    "description": "Explore our wide range of premium agricultural products."
+    "description": "Explore our wide range of premium Metallurgical products."
   },
 
   "industries": {
     "title": "Industries We Serve",
-    "description": "Providing solutions for food, agriculture, retail and industrial sectors."
+    "description": "Providing solutions for Raw Materials, Metallurgical, retail and industrial sectors."
   },
 
   "export": {

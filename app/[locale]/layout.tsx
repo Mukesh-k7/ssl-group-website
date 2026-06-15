@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import { Inter, Space_Grotesk } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
-
 import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
 import { WhatsAppButton } from "@/components/shared/whatsapp-button";
 import ScrollToSection from "@/components/shared/scroll-to-top";
+
 
 import {
   defaultMetadata,
@@ -93,6 +93,7 @@ export default async function RootLayout({
           <main>{children}</main>
 
           <Footer />
+         
 
           <div className="flex items-center justify-center">
             <ScrollToSection />

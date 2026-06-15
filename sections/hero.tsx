@@ -172,9 +172,7 @@ export function HeroSection() {
                 text-lg text-metallic/90 md:text-xl leading-relaxed
               "
             >
-              {company.name} — India&apos;s premier exporter of pig iron, ferro alloys,
-              carbon products, and steel industry raw materials to manufacturers
-              across the Middle East, Africa, and Europe.
+              {company.name} — {t("description")}
             </motion.p>
 
             <motion
@@ -220,8 +218,8 @@ export function HeroSection() {
                 </a>
               </Button>
 
-              <h1>{t("title")}</h1>
-              <p>{t("subtitle")}</p>
+              {/* <h1>{t("title")}</h1>
+              <p>{t("subtitle")}</p> */}
             </motion.div>
 
             <motion

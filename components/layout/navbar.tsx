@@ -11,12 +11,9 @@ import { company, navigation } from "@/data/site";
 import { cn } from "@/lib/utils";
 import LanguageSwitcher from "@/components/layout/LanguageSwitcher";
 import {useTranslations} from 'next-intl';
-
-
-
+// import Globe from "./globe";
 
 const locales = ["en", "hi", "ar"];
-
 
 function getLocale(pathname: string) {
   const firstSegment = pathname.split("/")[1];
@@ -253,8 +250,7 @@ export function Navbar() {
             gap-3
           "
         >
-          <LanguageSwitcher />
-
+          
           <Button variant="ghost" size="sm" asChild className="text-[#1e3a5f] hover:text-[#1e3a5f] font-medium font-bold">
             <a href={"https://www.sslgroup.in/images/ssl-brouchser-final.pdf"} download>
               <Download
@@ -293,6 +289,8 @@ export function Navbar() {
             "
           ></Menu>}
         </button>
+        <LanguageSwitcher />
+{/* <Globe /> */}
       </nav>
 
       <AnimatePresence>
@@ -339,10 +337,10 @@ export function Navbar() {
                           : "bg-gradient-to-b from-[#FFD27A] via-[#b16100] to-[#5B2A00] bg-clip-text text-transparent"
                         : scrolled
                           ? "text-white/80 hover:text-white"
-                          : "text-black/80 hover:text-black"
+                          : "text-white/80 hover:text-white"
                     )}
                   >
-                    {item.key}
+                    {t(item.key)}
                   </Link>
                 );
               })}
