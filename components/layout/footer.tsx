@@ -102,7 +102,7 @@ export function Footer() {
                       transition-colors
                     "
                   >
-                    {item.label}
+                    {item.key}
                   </Link>
                 </li>
               ))}

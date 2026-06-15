@@ -3,10 +3,12 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowRight, Download, Globe, Shield } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";
 import { company } from "@/data/site";
 
 export function HeroSection() {
+  const t = useTranslations("hero");
   return (
     <section
       id="home"
@@ -143,6 +145,7 @@ export function HeroSection() {
                 leading-[1.1] tracking-tight
               "
             >
+
               Global Metallurgy.
               <span
                 className="
@@ -154,6 +157,8 @@ export function HeroSection() {
               >
                 Trusted Supply.
               </span>
+
+
             </motion.h1>
 
             <motion
@@ -214,6 +219,9 @@ export function HeroSection() {
                   Download Catalog
                 </a>
               </Button>
+
+              <h1>{t("title")}</h1>
+              <p>{t("subtitle")}</p>
             </motion.div>
 
             <motion

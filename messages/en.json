@@ -1,0 +1,89 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About Us",
+    "products": "Products",
+    "industries": "Industries",
+    "exportLogistics": "Export Logistics",
+    "certifications": "Certifications",
+    "infrastructure": "Infrastructure",
+    "contact": "Contact",
+    "catalog": "Catalog",
+    "getQuote": "Get Quote",
+    "more": "More"
+  },
+
+  "hero": {
+    "title": "Leading Global Exporter of Agricultural Products",
+    "subtitle": "Delivering premium quality agricultural products worldwide with trust, quality and excellence.",
+    "button": "Explore Products"
+  },
+
+  "about": {
+    "title": "About SSL Group",
+    "description": "SSL Group is a trusted exporter of high-quality agricultural products serving global markets with reliability and excellence."
+  },
+
+  "products": {
+    "title": "Our Products",
+    "description": "Explore our wide range of premium agricultural products."
+  },
+
+  "industries": {
+    "title": "Industries We Serve",
+    "description": "Providing solutions for food, agriculture, retail and industrial sectors."
+  },
+
+  "export": {
+    "title": "Export & Logistics",
+    "description": "Efficient global supply chain and logistics management."
+  },
+
+  "certifications": {
+    "title": "Certifications",
+    "description": "Certified quality standards ensuring trust and compliance."
+  },
+
+  "infrastructure": {
+    "title": "Infrastructure",
+    "description": "State-of-the-art manufacturing and processing facilities."
+  },
+
+  "contact": {
+    "title": "Contact Us",
+    "description": "Get in touch with our team for inquiries and quotations.",
+    "name": "Full Name",
+    "email": "Email Address",
+    "phone": "Phone Number",
+    "message": "Message",
+    "submit": "Send Message"
+  },
+
+  "footer": {
+    "copyright": "All Rights Reserved.",
+    "quickLinks": "Quick Links",
+    "contactUs": "Contact Us",
+    "followUs": "Follow Us"
+  },
+
+    "navigation": {
+    "home": "Home",
+    "about": "About",
+    "products": "Products",
+    "industries": "Industries",
+    "export": "Export",
+    "certifications": "Certifications",
+    "infrastructure": "Infrastructure",
+    "globalPresence": "Global Presence",
+    "insights": "Insights",
+    "contact": "Contact",
+    "More": "More"
+  },
+
+  "stats": {
+    "yearsofExcellence": "Years of Excellence",
+    "countriesServed": "Countries Served",
+    "annualExportVolume": "Annual Export Volume",
+    "globalPartners": "Global Partners"
+  }
+}

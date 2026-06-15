@@ -9,6 +9,22 @@ import { ChevronDown, Download, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { company, navigation } from "@/data/site";
 import { cn } from "@/lib/utils";
+import LanguageSwitcher from "@/components/layout/LanguageSwitcher";
+import {useTranslations} from 'next-intl';
+
+
+
+
+const locales = ["en", "hi", "ar"];
+
+
+function getLocale(pathname: string) {
+  const firstSegment = pathname.split("/")[1];
+
+  return locales.includes(firstSegment)
+    ? firstSegment
+    : "en";
+}
 
 
 
@@ -22,19 +38,24 @@ const homeAnchorIds: Record<string, string> = {
   "/infrastructure": "infrastructure",
 };
 
-function getNavHref(pathname: string, itemHref: string) {
-  if (pathname === "/") {
+function getNavHref(
+  pathname: string,
+  itemHref: string,
+  locale: string
+) {
+  const isHomePage =
+    pathname === `/${locale}` ||
+    pathname === `/${locale}/`;
+
+  if (isHomePage) {
     const anchorId = homeAnchorIds[itemHref];
+
     if (anchorId) {
       return `#${anchorId}`;
     }
   }
 
-  // if (pathname === "/about" && itemHref === "/about") {
-  //   return "#about-content";
-  // }
-
-  return itemHref;
+  return `/${locale}${itemHref}`;
 }
 
 function getActiveHref(pathname: string, itemHref: string) {
@@ -52,10 +73,14 @@ function getActiveHref(pathname: string, itemHref: string) {
   return itemHref;
 }
 
+
+
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const pathname = usePathname();
+  const locale = getLocale(pathname);
+  const t = useTranslations('navigation');
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
@@ -76,7 +101,7 @@ export function Navbar() {
         "fixed left-0 right-0 top-0 z-50 transition-all duration-300",
         scrolled
           ? "py-3 shadow-2xl shadow-black/40 backdrop-blur-xl bg-[linear-gradient(140deg,#f1edea_0%,#f3892d_40%,#E8820A_70%,#A84800_100%)]"
-          : "bg-white py-5 text-black bg-gradient-to-l from-[#a75500] via-[#f9884b] to-[#f3d3b0] py-3 shadow-2xl shadow-black/40 backdrop-blur-xl"
+          : "bg-white py-5 text-black"
       )}
     >
       <nav
@@ -112,7 +137,7 @@ export function Navbar() {
               "
               priority
             >
-              
+
             </Image>
           </div>
         </Link>
@@ -124,7 +149,12 @@ export function Navbar() {
           "
         >
           {navigation.slice(0, 8).map((item) => {
-            const href = getNavHref(pathname, item.href);
+            const href = getNavHref(
+              pathname,
+              item.href,
+              locale
+            );
+
             const activeHref = getActiveHref(pathname, item.href);
 
             return (
@@ -142,7 +172,7 @@ export function Navbar() {
                       : "text-black/80 hover:text-black"
                 )}
               >
-                {item.label}
+                {t(item.key)}
               </Link>
             );
           })}
@@ -164,7 +194,7 @@ export function Navbar() {
                 gap-1
               "
             >
-              More
+               {t("More")}
               <ChevronDown
                 className="
                   h-4 w-4
@@ -190,7 +220,11 @@ export function Navbar() {
                 "
               >
                 {navigation.slice(8).map((item) => {
-                  const href = getNavHref(pathname, item.href);
+                  const href = getNavHref(
+                    pathname,
+                    item.href,
+                    locale
+                  );
                   return (
                     <Link
                       key={item.href}
@@ -203,7 +237,8 @@ export function Navbar() {
                         rounded-md
                       "
                     >
-                      {item.label}
+                      {t(item.key)}
+                      
                     </Link>
                   );
                 })}
@@ -218,6 +253,8 @@ export function Navbar() {
             gap-3
           "
         >
+          <LanguageSwitcher />
+
           <Button variant="ghost" size="sm" asChild className="text-[#1e3a5f] hover:text-[#1e3a5f] font-medium font-bold">
             <a href={"https://www.sslgroup.in/images/ssl-brouchser-final.pdf"} download>
               <Download
@@ -229,7 +266,7 @@ export function Navbar() {
             </a>
           </Button>
           <Button asChild>
-            <Link href="/contact">Get Quote</Link>
+            <Link href={`/${locale}/contact`}>Get Quote</Link>
           </Button>
         </div>
 
@@ -242,7 +279,7 @@ export function Navbar() {
             rounded-md
           "
           onClick={() => setIsOpen((value) => !value)}
-          aria-label="Toggle menu"
+
         >
           {isOpen ? <X
             className="
@@ -279,41 +316,62 @@ export function Navbar() {
               "
             >
               {navigation.map((item) => {
-                const href = getNavHref(pathname, item.href);
+                const href = getNavHref(
+                  pathname,
+                  item.href,
+                  locale
+                );
+
+
+
                 const isActive =
-                  pathname === item.href || (pathname === "/" && href.startsWith("#"));
+                  pathname === `/${locale}${item.href}`;
 
                 return (
                   <Link
                     key={item.href}
                     href={href}
                     className={cn(
-                      "rounded-md px-4 py-3 text-base font-medium",
-                      isActive ? "bg-industrial-blue/20 text-white" : "text-metallic hover:bg-white/5"
+                      "rounded-md px-3 py-2 text-sm font-medium transition-colors",
+                      isActive
+                        ? scrolled
+                          ? "text-white"
+                          : "bg-gradient-to-b from-[#FFD27A] via-[#b16100] to-[#5B2A00] bg-clip-text text-transparent"
+                        : scrolled
+                          ? "text-white/80 hover:text-white"
+                          : "text-black/80 hover:text-black"
                     )}
                   >
-                    {item.label}
+                    {item.key}
                   </Link>
                 );
               })}
 
               <div
-                className="
-                  flex flex-col
-                  mt-4 pt-4
-                  border-t border-white/10
-                  gap-2
-                "
-              >
-                <Button variant="secondary" asChild>
-                  <a href={"https://www.sslgroup.in/images/ssl-brouchser-final.pdf"} download>
-                    Download Catalog
-                  </a>
-                </Button>
-                <Button asChild>
-                  <Link href="/contact">Get Export Quote</Link>
-                </Button>
-              </div>
+  className="
+    flex flex-col
+    mt-4 pt-4
+    border-t border-white/10
+    gap-2
+  "
+>
+  <LanguageSwitcher />
+
+  <Button variant="secondary" asChild>
+    <a
+      href="https://www.sslgroup.in/images/ssl-brouchser-final.pdf"
+      download
+    >
+      Download Catalog
+    </a>
+  </Button>
+
+  <Button asChild>
+    <Link href={`/${locale}/contact`}>
+      Get Export Quote
+    </Link>
+  </Button>
+</div>
             </div>
           </motion.div>
         )}

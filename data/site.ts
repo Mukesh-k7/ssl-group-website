@@ -1,4 +1,4 @@
-import type { NavItem, Stat, Testimonial } from "@/types";
+import type { Testimonial } from "@/types";
 import { getAbsoluteUrl } from "@/lib/site-url";
 
 export const company = {
@@ -19,24 +19,37 @@ export const company = {
   catalogUrl: getAbsoluteUrl("/catalog/ssl-product-catalog.pdf"),
 };
 
+
+export type NavItem = {
+  key: string;
+  href: string;
+};
+
+export type Stat = {
+  key: string;
+  value: number;
+  suffix?: string;
+  prefix?: string;
+};
+
 export const navigation: NavItem[] = [
-  { label: "Home", href: "/" },
-  { label: "About", href: "/about" },
-  { label: "Products", href: "/products" },
-  { label: "Industries", href: "/industries" },
-  { label: "Export", href: "/export-logistics" },
-  { label: "Certifications", href: "/certifications" },
-  { label: "Infrastructure", href: "/infrastructure" },
-  { label: "Global Presence", href: "/global-presence" },
-  { label: "Insights", href: "/blog" },
-  { label: "Contact", href: "/contact" },
+  { key: "home", href: "/" },
+  { key: "about", href: "/about" },
+  { key: "products", href: "/products" },
+  { key: "industries", href: "/industries" },
+  { key: "export", href: "/export-logistics" },
+  { key: "certifications", href: "/certifications" },
+  { key: "infrastructure", href: "/infrastructure" },
+  { key: "globalPresence", href: "/global-presence" },
+  { key: "insights", href: "/blog" },
+  { key: "contact", href: "/contact" },
 ];
 
 export const stats: Stat[] = [
-  { label: "Years of Excellence", value: 28, suffix: "+" },
-  { label: "Countries Served", value: 45, suffix: "+" },
-  { label: "Annual Export Volume", value: 2.4, suffix: "M MT", prefix: "" },
-  { label: "Global Partners", value: 320, suffix: "+" },
+  { key: "yearsofExcellence", value: 28, suffix: "+" },
+  { key: "countriesServed", value: 45, suffix: "+" },
+  { key: "annualExportVolume", value: 2.4, suffix: "M MT", prefix: "" },
+  { key: "globalPartners", value: 320, suffix: "+" },
 ];
 
 export const whyChooseUs = [
