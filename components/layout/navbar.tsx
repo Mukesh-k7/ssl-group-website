@@ -105,6 +105,7 @@ export function Navbar() {
         className="
           container flex items-center justify-between
           mx-auto
+         
         "
       >
         <Link
