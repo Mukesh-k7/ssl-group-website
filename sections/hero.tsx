@@ -9,6 +9,21 @@ import { company } from "@/data/site";
 
 export function HeroSection() {
   const t = useTranslations("hero");
+
+  const data = [
+    { icon: Shield, label: t("ISOCertifiedOperations") },
+    { icon: Globe, label: t("45PlusExportMarkets") },
+  ];
+
+    const stats = [
+    { value: "2.4M+", label: t("MTExportedAnnually") },
+    { value: "320+", label: t("GlobalPartners") },
+     { value: "9", label: t("ProductCategories") },
+    { value: "28+", label: t("YearsExcellence") },
+  ];
+
+
+
   return (
     <section
       id="home"
@@ -127,11 +142,11 @@ export function HeroSection() {
               <Globe
                 className="
                   h-4 w-4
-                  text-industrial-blue
+                  text-[#f38203] text-bold
                 "
               /
               >
-              Exporting to 45+ Countries Since {company.founded}
+              {t("ExportingTo45PlusCountriesSince")} {company.founded}
             </motion.div>
 
             <motion
@@ -146,7 +161,7 @@ export function HeroSection() {
               "
             >
 
-              Global Metallurgy.
+              {t("GlobalMetallurgy")}.
               <span
                 className="
                   block
@@ -155,7 +170,7 @@ export function HeroSection() {
                   to-metallic
                 "
               >
-                Trusted Supply.
+                {t("TrustedSupply")}.
               </span>
 
 
@@ -188,7 +203,7 @@ export function HeroSection() {
             >
               <Button size="lg" asChild className="bg-[#007aff94] hover:bg-[#007affc9]">
                 <Link href="/contact">
-                  Request Export Quote
+                  {t("RequestExportQuote")}
                   <ArrowRight
                     className="
                       h-5 w-5
@@ -214,7 +229,7 @@ export function HeroSection() {
                     "
                   /
                   >
-                  Download Catalog
+                  {t("DownloadCatalog")}
                 </a>
               </Button>
 
@@ -233,25 +248,12 @@ export function HeroSection() {
                 gap-6
               "
             >
-              {[
-                { icon: Shield, label: "ISO Certified Operations" },
-                { icon: Globe, label: "45+ Export Markets" },
-              ].map(({ icon: Icon, label }) => (
+              {data.map(({ icon: Icon, label }) => (
                 <div
                   key={label}
-                  className="
-                    flex items-center
-                    text-sm text-metallic
-                    gap-2
-                  "
+                  className="flex items-center text-sm text-metallic gap-2"
                 >
-                  <Icon
-                    className="
-                      h-4 w-4
-                      text-industrial-blue
-                    "
-                  /
-                  >
+                  <Icon className="h-4 w-4 text-[#f38203] font-bold" />
                   {label}
                 </div>
               ))}
@@ -302,12 +304,7 @@ export function HeroSection() {
                     gap-4
                   "
                 >
-                  {[
-                    { value: "2.4M+", label: "MT Exported Annually" },
-                    { value: "320+", label: "Global Partners" },
-                    { value: "9", label: "Product Categories" },
-                    { value: "28+", label: "Years Excellence" },
-                  ].map((stat) => (
+                  {stats.map((stat) => (
                     <div
                       key={stat.label}
                       className="
@@ -328,7 +325,7 @@ export function HeroSection() {
                       </p>
                       <p
                         className="
-                          text-xs text-metallic/80
+                          text-xs text-[#b4c5f7]
                         "
                       >{stat.label}</p>
                     </div>

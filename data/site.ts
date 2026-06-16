@@ -15,7 +15,7 @@ export const company = {
     line1: "Delhi Head Office : Ground Floor, CC-23, AVANTIKA 1, Avantika Main Road, Saini Washing Center, Avantika, Ghaziabad,",
     line2: " Uttar Pradesh 201015, India",
   },
-  founded: 2000,
+  founded: 2018,
   catalogUrl: getAbsoluteUrl("/catalog/ssl-product-catalog.pdf"),
 };
 

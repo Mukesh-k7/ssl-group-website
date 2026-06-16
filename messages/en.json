@@ -17,17 +17,36 @@
     "title": "Leading Global Exporter of Metallurgical Products",
     "subtitle": "Delivering premium quality Metallurgical products worldwide with trust, quality and excellence.",
     "button": "Explore Products",
-    "description": "India's premier exporter of pig iron, ferro alloys, carbon products, and steel industry raw materials to manufacturers across the Middle East, Africa, and Europe."
+    "description": "India's premier exporter of pig iron, ferro alloys, carbon products, and steel industry raw materials to manufacturers across the Middle East, Africa, and Europe.",
+    "ISOCertifiedOperations": "ISO Certified Operations",
+    "45PlusExportMarkets": "45+ Export Markets",
+    "MTExportedAnnually": "MT Exported Annually",
+    "GlobalPartners": "Global Partners",
+    "ProductCategories": "Product Categories",
+    "YearsExcellence": "Years Excellence",
+    "ExportingTo45PlusCountriesSince": "Exporting to 45+ Countries Since",
+    "GlobalMetallurgy": "Global Metallurgy",
+    "TrustedSupply": "Trusted Supply",
+    "RequestExportQuote": "Request Export Quote",
+    "DownloadCatalog": "Download Catalog"
   },
 
   "about": {
     "title": "About SSL Group",
-    "description": "SSL Group is a trusted exporter of high-quality Metallurgical products serving global markets with reliability and excellence."
+    "description": "SSL Group is a trusted exporter of high-quality Metallurgical products serving global markets with reliability and excellence",
+    "IndiaPremierMetallurgyExportHouse": "India's Premier Metallurgy ExportHouse",
+    "description1": "For over two decades, SSL Group has supplied the global steel industry with export-grade pig iron, ferro alloys, carbon products, and industrial minerals. Our integrated sourcing, bonded warehousing, and port-side logistics deliver the consistency that enterprise procurement demands.",
+    "description2": "From Middle East steel giants to African foundries and European distributors, we are the single-window partner for metallurgical raw material excellence.",
+    "OurStory": "Our Story",
+    "Since": "Since",
+    "GhaziabadGlobalExportOperations": "Ghaziabad · Global Export Operations"
   },
 
   "products": {
-    "title": "Our Products",
-    "description": "Explore our wide range of premium Metallurgical products."
+    "Eyebrow": "Our Products",
+    "Title": "Metallurgy & Steel Raw Materials",
+    "Description": "Comprehensive export portfolio for integrated steel plants, foundries, and industrial procurement worldwide.",
+    "ViewAllProducts": "View All Products"
   },
 
   "industries": {
@@ -78,7 +97,11 @@
     "globalPresence": "Global Presence",
     "insights": "Insights",
     "contact": "Contact",
-    "More": "More"
+    "More": "More",
+    "GetQuote": "Get Quote",
+    "DownloadCatalog": "Download Catalog",
+    "GetExportQuote": "Get Export Quote",
+    "Catalog": "Catalog"
   },
 
   "stats": {

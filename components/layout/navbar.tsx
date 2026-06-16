@@ -1,99 +1,195 @@
 "use client";
 
+
+
 import { useEffect, useState } from "react";
+
 import Link from "next/link";
+
 import Image from "next/image";
+
 import { usePathname } from "next/navigation";
+
 import { AnimatePresence, motion } from "framer-motion";
+
 import { ChevronDown, Download, Menu, X } from "lucide-react";
+
 import { Button } from "@/components/ui/button";
+
 import { company, navigation } from "@/data/site";
+
 import { cn } from "@/lib/utils";
+
 import LanguageSwitcher from "@/components/layout/LanguageSwitcher";
-import {useTranslations} from 'next-intl';
+
+import { useTranslations } from 'next-intl';
+
 // import Globe from "./globe";
+
+
 
 const locales = ["en", "hi", "ar"];
 
+
+
 function getLocale(pathname: string) {
+
   const firstSegment = pathname.split("/")[1];
 
+
+
   return locales.includes(firstSegment)
+
     ? firstSegment
+
     : "en";
+
 }
+
+
+
+
 
 
 
 const homeAnchorIds: Record<string, string> = {
+
   "/": "home",
+
   "/about": "about-content",
+
   "/products": "products",
+
   "/industries": "industries",
+
   "/export-logistics": "export",
+
   "/certifications": "certifications-preview",
+
   "/infrastructure": "infrastructure",
+
 };
 
+
+
 function getNavHref(
+
   pathname: string,
+
   itemHref: string,
+
   locale: string
+
 ) {
+
   const isHomePage =
+
     pathname === `/${locale}` ||
+
     pathname === `/${locale}/`;
 
+
+
   if (isHomePage) {
+
     const anchorId = homeAnchorIds[itemHref];
 
+
+
     if (anchorId) {
+
       return `#${anchorId}`;
+
     }
+
   }
+
+
 
   return `/${locale}${itemHref}`;
+
 }
+
+
 
 function getActiveHref(pathname: string, itemHref: string) {
+
   if (pathname === "/") {
+
     const anchorId = homeAnchorIds[itemHref];
+
     if (anchorId) {
+
       return `#${anchorId}`;
+
     }
+
   }
 
+
+
   // if (pathname === "/about" && itemHref === "/about") {
+
   //   return "#about-content";
+
   // }
 
+
+
   return itemHref;
+
 }
+
+
+
+
 
 
 
 export function Navbar() {
+
   const [isOpen, setIsOpen] = useState(false);
+
   const [scrolled, setScrolled] = useState(false);
+
   const pathname = usePathname();
+
   const locale = getLocale(pathname);
+
   const t = useTranslations('navigation');
 
-  useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 20);
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+
 
   useEffect(() => {
+
+    const handleScroll = () => setScrolled(window.scrollY > 20);
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => window.removeEventListener("scroll", handleScroll);
+
+  }, []);
+
+
+
+  useEffect(() => {
+
     setIsOpen(false);
+
   }, [pathname]);
+
+
 
   // bg-gradient-to-l from-[#a75500] via-[#f9884b] to-[#f3d3b0] py-3 shadow-2xl shadow-black/40 backdrop-blur-xl  bg-[linear-gradient(135deg,#7B3000_0%,#C25A00_40%,#E8820A_70%,#A84800_100%)]
 
 
+
+
+
   return (
+
     <header
+
       className={cn(
         "fixed left-0 right-0 top-0 z-50 transition-all duration-300",
         scrolled
@@ -101,11 +197,11 @@ export function Navbar() {
           : "bg-white py-5 text-black"
       )}
     >
+      {/* bg-[linear-gradient(140deg,#f1edea_0%,#f3892d_40%,#E8820A_70%,#A84800_100%)] */}
       <nav
         className="
           container flex items-center justify-between
           mx-auto
-         
         "
       >
         <Link
@@ -115,6 +211,7 @@ export function Navbar() {
             group gap-3
           "
         >
+
           <div
             className="
               flex items-center
@@ -135,11 +232,9 @@ export function Navbar() {
               "
               priority
             >
-
             </Image>
           </div>
         </Link>
-
         <div
           className="
             hidden items-center xl:flex
@@ -152,9 +247,7 @@ export function Navbar() {
               item.href,
               locale
             );
-
             const activeHref = getActiveHref(pathname, item.href);
-
             return (
               <Link
                 key={item.href}
@@ -174,7 +267,6 @@ export function Navbar() {
               </Link>
             );
           })}
-
           <div
             className="
               relative
@@ -192,14 +284,13 @@ export function Navbar() {
                 gap-1
               "
             >
-               {t("More")}
+              {t("More")}
               <ChevronDown
                 className="
                   h-4 w-4
                 "
               ></ChevronDown>
             </button>
-
             <div
               className="
                 invisible absolute right-0 top-full
@@ -236,7 +327,6 @@ export function Navbar() {
                       "
                     >
                       {t(item.key)}
-                      
                     </Link>
                   );
                 })}
@@ -244,14 +334,12 @@ export function Navbar() {
             </div>
           </div>
         </div>
-
         <div
           className="
             hidden items-center lg:flex
             gap-3
           "
         >
-          
           <Button variant="ghost" size="sm" asChild className="text-[#1e3a5f] hover:text-[#1e3a5f] font-medium font-bold">
             <a href={"https://www.sslgroup.in/images/ssl-brouchser-final.pdf"} download>
               <Download
@@ -259,41 +347,42 @@ export function Navbar() {
                   h-4 w-4
                 "
               ></Download>
-              Catalog
+              {t("Catalog")}
             </a>
           </Button>
           <Button asChild>
-            <Link href={`/${locale}/contact`}>Get Quote</Link>
+            <Link href={`/${locale}/contact`}> {t("GetQuote")}</Link>
           </Button>
         </div>
-
-        <button
-          type="button"
-          className="
+        <div className="flex align-center">
+          <div className="mx-2">
+            <LanguageSwitcher />
+          </div>
+          <button
+            type="button"
+            className="
             xl:hidden
             p-2
             text-white
             rounded-md
           "
-          onClick={() => setIsOpen((value) => !value)}
-
-        >
-          {isOpen ? <X
-            className="
+            onClick={() => setIsOpen((value) => !value)}
+          >
+            {isOpen ? <X
+              className="
               h-6 w-6
               text-[#0a0300]
             "
-          ></X> : <Menu
-            className="
+            ></X> : <Menu
+              className="
               h-6 w-6
               text-[#0a0300]
             "
-          ></Menu>}
-        </button>
-        <LanguageSwitcher />
-{/* <Globe /> */}
+            ></Menu>}
+          </button>
+        </div>
+        {/* <Globe /> */}
       </nav>
-
       <AnimatePresence>
         {isOpen && (
           <motion.div
@@ -320,12 +409,8 @@ export function Navbar() {
                   item.href,
                   locale
                 );
-
-
-
                 const isActive =
                   pathname === `/${locale}${item.href}`;
-
                 return (
                   <Link
                     key={item.href}
@@ -345,32 +430,29 @@ export function Navbar() {
                   </Link>
                 );
               })}
-
               <div
-  className="
+                className="
     flex flex-col
     mt-4 pt-4
     border-t border-white/10
     gap-2
   "
->
-  <LanguageSwitcher />
-
-  <Button variant="secondary" asChild>
-    <a
-      href="https://www.sslgroup.in/images/ssl-brouchser-final.pdf"
-      download
-    >
-      Download Catalog
-    </a>
-  </Button>
-
-  <Button asChild>
-    <Link href={`/${locale}/contact`}>
-      Get Export Quote
-    </Link>
-  </Button>
-</div>
+              >
+                {/* <LanguageSwitcher /> */}
+                <Button variant="secondary" asChild>
+                  <a
+                    href="https://www.sslgroup.in/images/ssl-brouchser-final.pdf"
+                    download
+                  >
+                    {t("DownloadCatalog")}
+                  </a>
+                </Button>
+                <Button asChild>
+                  <Link href={`/${locale}/contact`}>
+                    {t("GetExportQuote")}
+                  </Link>
+                </Button>
+              </div>
             </div>
           </motion.div>
         )}
