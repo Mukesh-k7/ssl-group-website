@@ -138,8 +138,8 @@ export function ProductCard({ product }: ProductCardProps) {
             asChild
           >
             <Link href={`/products/${product.slug}`}>
-              {/* {t("ViewAllProducts")}  */}
-              View All Products
+              {t("ViewAllProducts")} 
+              
               <ArrowRight
                 className="
                   w-4 h-4

@@ -225,8 +225,8 @@
       "Integratedsteelmills": "एकीकृत इस्पात मिलें",
       "Pelletplantfeedstock": "पेलेट प्लांट फीडस्टॉक"
     }
-  },
-  "ViewAllProducts": "सभी उत्पाद देखें"
+  }
+ 
 },
 
 
@@ -285,5 +285,5 @@
     "annualExportVolume": "वार्षिक निर्यात मात्रा",
     "globalPartners": "वैश्विक भागीदार"
   },
-  "More": "More"
+   "ViewAllProducts": "उत्पाद देखें"
 }

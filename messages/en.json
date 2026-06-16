@@ -230,7 +230,7 @@
         "Pelletplantfeedstock": "Pellet Plant Feedstock"
       }
     },
-    "ViewAllProducts": "View All Products"
+    "ViewAllProducts": "View Products"
   },
 
   "Product": {
@@ -299,5 +299,7 @@
     "countriesServed": "Countries Served",
     "annualExportVolume": "Annual Export Volume",
     "globalPartners": "Global Partners"
-  }
+  },
+
+  "ViewAllProducts": "View Products"
 }

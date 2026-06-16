@@ -215,8 +215,8 @@
         "Integratedsteelmills": "مصانع الفولاذ المتكاملة",
         "Pelletplantfeedstock": "مواد تغذية مصانع الكريات"
       }
-    },
-    "ViewAllProducts": "عرض جميع المنتجات"
+    }
+   
   },
   "industries": {
     "title": "الصناعات التي نخدمها",
@@ -271,5 +271,6 @@
     "countriesServed": "الدول المخدومة",
     "annualExportVolume": "حجم التصدير السنوي",
     "globalPartners": "الشركاء العالميون"
-  }
+  },
+   "ViewAllProducts": "عرض جميع المنتجات"
 }
