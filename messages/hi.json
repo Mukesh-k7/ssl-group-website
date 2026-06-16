@@ -47,6 +47,190 @@
     "ViewAllProducts": "सभी उत्पाद देखें"
   },
 
+"Products": {
+  "PigIron": {
+    "Name": "पिग आयरन",
+    "Category": "फेरस धातुएँ",
+    "ShortDescription": "ब्लास्ट फर्नेस और कास्टिंग अनुप्रयोगों के लिए नियंत्रित सिलिकॉन और सल्फर युक्त फाउंड्री एवं स्टील ग्रेड पिग आयरन।",
+    "Description": "SSL Group ISO-प्रमाणित एकीकृत इस्पात संयंत्रों से प्राप्त प्रीमियम फाउंड्री और बेसिक पिग आयरन का निर्यात करता है।",
+    "Specifications": {
+      "Carbon": "कार्बन (C)",
+      "Silicon": "सिलिकॉन (Si)",
+      "Sulfur": "सल्फर (S)",
+      "Phosphorus": "फॉस्फोरस (P)"
+    },
+    "Applications": {
+      "FoundryCastings": "फाउंड्री कास्टिंग",
+      "DuctileIronProduction": "डक्टाइल आयरन उत्पादन",
+      "SteelChargeMaterial": "स्टील चार्ज सामग्री",
+      "AutomotiveComponents": "ऑटोमोटिव घटक"
+    }
+  },
+
+  "FerroAlloys": {
+    "Name": "फेरो मिश्रधातुएँ",
+    "Category": "मिश्रधातु सामग्री",
+    "ShortDescription": "स्टील डीऑक्सिडेशन और मिश्रधातु निर्माण के लिए फेरो मैंगनीज, फेरो सिलिकॉन, फेरो क्रोम और विशेष मिश्रधातुएँ।",
+    "Description": "एकीकृत इस्पात संयंत्रों और मिनी मिलों के लिए व्यापक फेरो मिश्रधातु पोर्टफोलियो।",
+    "Specifications": {
+      "FeMn": "FeMn (Mn)",
+      "FeSi": "FeSi (Si)",
+      "FeCr": "FeCr (Cr)",
+      "Packaging": "पैकेजिंग",
+      "Standards": "मानक"
+    },
+    "Applications": {
+      "Steeldeoxidation": "स्टील डीऑक्सिडेशन",
+      "Alloysteelproduction": "मिश्रधातु स्टील उत्पादन",
+      "Stainlesssteelmanufacturing": "स्टेनलेस स्टील निर्माण",
+      "Weldingconsumables": "वेल्डिंग उपभोग्य सामग्री"
+    }
+  },
+
+  "NobalAlloy": {
+    "Name": "नोबल मिश्रधातु",
+    "Category": "विशेष मिश्रधातुएँ",
+    "ShortDescription": "विशेष स्टील ग्रेड में ग्रेन रिफाइनमेंट और माइक्रो-अलॉयिंग के लिए उच्च शुद्धता वाली नोबल मिश्रधातु।",
+    "Description": "एयरोस्पेस ग्रेड स्टील और उच्च शक्ति अनुप्रयोगों के लिए नियंत्रित टाइटेनियम सामग्री वाली सटीक नोबल मिश्रधातु।",
+    "Specifications": {
+      "Titanium": "टाइटेनियम (Ti)",
+      "Aluminum": "एल्युमिनियम (Al)",
+      "Carbon": "कार्बन (C)",
+      "Size": "आकार",
+      "Form": "रूप"
+    },
+    "Applications": {
+      "Grainrefinement": "ग्रेन रिफाइनमेंट",
+      "MicroalloyedHSLAsteel": "माइक्रो-अलॉयड HSLA स्टील",
+      "Aerospacealloysteels": "एयरोस्पेस मिश्रधातु स्टील",
+      "Specialtycastings": "विशेष कास्टिंग"
+    }
+  },
+
+  "CarbonProducts": {
+    "Name": "कार्बन उत्पाद",
+    "Category": "कार्बन सामग्री",
+    "ShortDescription": "स्टील और फाउंड्री संचालन के लिए कैल्साइंड पेट्रोलियम कोक, धातुकर्म कोक और कार्बन रेज़र।",
+    "Description": "कम राख और कम वाष्पशील पदार्थ वाले निर्यात-ग्रेड कार्बन उत्पाद।",
+    "Specifications": {
+      "FixedCarbon": "स्थिर कार्बन",
+      "Ash": "राख",
+      "VolatileMatter": "वाष्पशील पदार्थ",
+      "Sulfur": "सल्फर",
+      "Sizing": "आकार"
+    },
+    "Applications": {
+      "EAFsteelmaking": "EAF स्टील निर्माण",
+      "Foundrycupolacharge": "फाउंड्री कपोला चार्ज",
+      "Anodemanufacturing": "एनोड निर्माण",
+      "Carbonraiserapplications": "कार्बन रेज़र अनुप्रयोग"
+    }
+  },
+
+  "CarbideOre": {
+    "Name": "कार्बाइड अयस्क",
+    "Category": "औद्योगिक खनिज",
+    "ShortDescription": "स्मेल्टर और गैल्वनाइजिंग आपूर्ति श्रृंखलाओं के लिए उच्च-ग्रेड कार्बाइड अयस्क।",
+    "Description": "निरंतर गुणवत्ता और कम अशुद्धियों वाला कार्बाइड अयस्क निर्यात।",
+    "Specifications": {
+      "Carbide": "कार्बाइड (C)",
+      "Lead": "सीसा (Pb)",
+      "Iron": "लोहा (Fe)",
+      "Moisture": "नमी",
+      "Form": "रूप"
+    },
+    "Applications": {
+      "Zincsmelting": "जिंक स्मेल्टिंग",
+      "Galvanizingindustry": "गैल्वनाइजिंग उद्योग",
+      "Diecastingalloys": "डाई कास्टिंग मिश्रधातुएँ",
+      "Chemicalprocessing": "रासायनिक प्रसंस्करण"
+    }
+  },
+
+  "NaturalGraphite": {
+    "Name": "प्राकृतिक ग्रेफाइट",
+    "Category": "औद्योगिक खनिज",
+    "ShortDescription": "रिफ्रैक्टरी, बैटरियों और स्नेहक उद्योगों के लिए फ्लेक और अमॉर्फस ग्रेफाइट।",
+    "Description": "उच्च कार्बन सामग्री और नियंत्रित फ्लेक आकार वाला प्रीमियम प्राकृतिक ग्रेफाइट।",
+    "Specifications": {
+      "FixedCarbon": "स्थिर कार्बन",
+      "Ash": "राख",
+      "FlakeSize": "फ्लेक आकार",
+      "Moisture": "नमी",
+      "Types": "प्रकार"
+    },
+    "Applications": {
+      "Refractorymanufacturing": "रिफ्रैक्टरी निर्माण",
+      "Batteryanodematerials": "बैटरी एनोड सामग्री",
+      "Industriallubricants": "औद्योगिक स्नेहक",
+      "Gasketsandseals": "गास्केट और सील"
+    }
+  },
+
+  "SteelPipesTubes": {
+    "Name": "स्टील पाइप और ट्यूब",
+    "Category": "तैयार स्टील",
+    "ShortDescription": "तेल एवं गैस, बुनियादी ढाँचा और औद्योगिक द्रव परिवहन के लिए सीमलेस और वेल्डेड स्टील पाइप।",
+    "Description": "API और ASTM अनुरूप स्टील पाइप और ट्यूब।",
+    "Specifications": {
+      "Grades": "ग्रेड",
+      "ODRange": "OD रेंज",
+      "WallThickness": "दीवार मोटाई",
+      "Ends": "सिरे",
+      "Coating": "कोटिंग"
+    },
+    "Applications": {
+      "Oilgastransmission": "तेल एवं गैस परिवहन",
+      "Waterinfrastructure": "जल अवसंरचना",
+      "EPCprojectpiping": "EPC परियोजना पाइपिंग",
+      "Industrialprocesslines": "औद्योगिक प्रक्रिया लाइनें"
+    }
+  },
+
+  "IndustrialMinerals": {
+    "Name": "औद्योगिक खनिज",
+    "Category": "औद्योगिक खनिज",
+    "ShortDescription": "स्टील और रासायनिक उद्योगों के लिए बॉक्साइट, फ्लोरस्पार, क्वार्ट्ज और विशेष खनिज।",
+    "Description": "स्टील फ्लक्सिंग, एल्युमिनियम उत्पादन और रासायनिक निर्माण के लिए विविध खनिज पोर्टफोलियो।",
+    "Specifications": {
+      "Products": "उत्पाद",
+      "Purity": "शुद्धता",
+      "Moisture": "नमी",
+      "Packaging": "पैकेजिंग",
+      "Inspection": "निरीक्षण"
+    },
+    "Applications": {
+      "Steelfluxing": "स्टील फ्लक्सिंग",
+      "Aluminumsmelting": "एल्युमिनियम स्मेल्टिंग",
+      "Chemicalfeedstock": "रासायनिक फीडस्टॉक",
+      "Ceramicmanufacturing": "सिरेमिक निर्माण"
+    }
+  },
+
+  "SteelIndustryRawMaterials": {
+    "Name": "इस्पात उद्योग कच्चा माल",
+    "Category": "कच्चा माल",
+    "ShortDescription": "इस्पात संयंत्रों के लिए लौह अयस्क, कोयला और चार्ज सामग्री की समेकित आपूर्ति।",
+    "Description": "एकीकृत इस्पात संयंत्रों के लिए वन-विंडो खरीद समाधान।",
+    "Specifications": {
+      "IronOreFe": "लौह अयस्क Fe",
+      "MetCokeCSR": "मेट कोक CSR",
+      "PCICoal": "PCI कोयला",
+      "Delivery": "डिलीवरी",
+      "Volumes": "मात्रा"
+    },
+    "Applications": {
+      "Blastfurnaceoperations": "ब्लास्ट फर्नेस संचालन",
+      "DRIEAFplants": "DRI / EAF संयंत्र",
+      "Integratedsteelmills": "एकीकृत इस्पात मिलें",
+      "Pelletplantfeedstock": "पेलेट प्लांट फीडस्टॉक"
+    }
+  },
+  "ViewAllProducts": "सभी उत्पाद देखें"
+},
+
+
+
   "industries": {
     "title": "हम जिन उद्योगों की सेवा करते हैं",
     "description": "खाद्य, धातुकर्म, रिटेल और औद्योगिक क्षेत्रों के लिए समाधान।"

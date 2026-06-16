@@ -1,195 +1,87 @@
 "use client";
 
-
-
 import { useEffect, useState } from "react";
-
 import Link from "next/link";
-
 import Image from "next/image";
-
 import { usePathname } from "next/navigation";
-
 import { AnimatePresence, motion } from "framer-motion";
-
 import { ChevronDown, Download, Menu, X } from "lucide-react";
-
 import { Button } from "@/components/ui/button";
-
 import { company, navigation } from "@/data/site";
 
 import { cn } from "@/lib/utils";
-
 import LanguageSwitcher from "@/components/layout/LanguageSwitcher";
-
 import { useTranslations } from 'next-intl';
-
 // import Globe from "./globe";
-
-
 
 const locales = ["en", "hi", "ar"];
 
-
-
 function getLocale(pathname: string) {
-
   const firstSegment = pathname.split("/")[1];
-
-
-
   return locales.includes(firstSegment)
-
     ? firstSegment
-
     : "en";
-
 }
-
-
-
-
-
-
 
 const homeAnchorIds: Record<string, string> = {
-
   "/": "home",
-
   "/about": "about-content",
-
   "/products": "products",
-
   "/industries": "industries",
-
   "/export-logistics": "export",
-
   "/certifications": "certifications-preview",
-
   "/infrastructure": "infrastructure",
-
 };
 
-
-
 function getNavHref(
-
   pathname: string,
-
   itemHref: string,
-
   locale: string
-
 ) {
-
   const isHomePage =
-
     pathname === `/${locale}` ||
-
     pathname === `/${locale}/`;
-
-
-
   if (isHomePage) {
-
     const anchorId = homeAnchorIds[itemHref];
-
-
-
     if (anchorId) {
-
       return `#${anchorId}`;
-
     }
-
   }
-
-
-
   return `/${locale}${itemHref}`;
-
 }
-
-
 
 function getActiveHref(pathname: string, itemHref: string) {
-
   if (pathname === "/") {
-
     const anchorId = homeAnchorIds[itemHref];
-
     if (anchorId) {
-
       return `#${anchorId}`;
-
     }
-
   }
-
-
-
   // if (pathname === "/about" && itemHref === "/about") {
-
   //   return "#about-content";
-
   // }
-
-
-
   return itemHref;
-
 }
-
-
-
-
-
-
-
 export function Navbar() {
-
   const [isOpen, setIsOpen] = useState(false);
-
   const [scrolled, setScrolled] = useState(false);
-
   const pathname = usePathname();
-
   const locale = getLocale(pathname);
-
   const t = useTranslations('navigation');
 
-
-
   useEffect(() => {
-
     const handleScroll = () => setScrolled(window.scrollY > 20);
-
     window.addEventListener("scroll", handleScroll, { passive: true });
-
     return () => window.removeEventListener("scroll", handleScroll);
-
   }, []);
 
-
-
   useEffect(() => {
-
     setIsOpen(false);
-
   }, [pathname]);
-
-
-
   // bg-gradient-to-l from-[#a75500] via-[#f9884b] to-[#f3d3b0] py-3 shadow-2xl shadow-black/40 backdrop-blur-xl  bg-[linear-gradient(135deg,#7B3000_0%,#C25A00_40%,#E8820A_70%,#A84800_100%)]
 
-
-
-
-
   return (
-
     <header
-
       className={cn(
         "fixed left-0 right-0 top-0 z-50 transition-all duration-300",
         scrolled

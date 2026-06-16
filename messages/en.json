@@ -49,6 +49,196 @@
     "ViewAllProducts": "View All Products"
   },
 
+  "Products": {
+    "PigIron": {
+      "Name": "Pig Iron",
+      "Category": "Ferrous Metals",
+      "ShortDescription": "Foundry and steel-grade pig iron with controlled silicon and sulfur for blast furnace and casting applications.",
+      "Description": "SSL Group exports premium foundry and basic pig iron sourced from ISO-certified integrated steel plants.",
+
+      "Specifications": {
+        "Carbon": "Carbon (C)",
+        "Silicon": "Silicon (Si)",
+        "Sulfur": "Sulfur (S)",
+        "Phosphorus": "Phosphorus (P)"
+      },
+
+      "Applications": {
+        "FoundryCastings": "Foundry castings",
+        "DuctileIronProduction": "Ductile iron production",
+        "SteelChargeMaterial": "Steel charge material",
+        "AutomotiveComponents": "Automotive components"
+      }
+    },
+    
+    "FerroAlloys": {
+      "Name": "Ferro Alloys",
+      "Category": "Alloying Materials",
+      "ShortDescription": "Ferro manganese, ferro silicon, ferro chrome, and specialty alloys for steel deoxidation and alloying.",
+      "Description": "Comprehensive ferro alloy portfolio for integrated steel plants and mini-mills. We supply low-carbon and high-carbon grades with batch traceability and sieve analysis documentation.",
+      "Specifications": {
+        "FeMn": "FeMn (Mn)",
+        "FeSi": "FeSi (Si)",
+        "FeCr": "FeCr (Cr)",
+        "Packaging": "Packaging",
+        "Standards": "Standards"
+      },
+      "Applications": {
+        "Steeldeoxidation": "Steel deoxidation",
+        "Alloysteelproduction": "Alloy steel production",
+        "Stainlesssteelmanufacturing": "Stainless steel manufacturing",
+        "Weldingconsumables": "Welding consumables"
+      }
+    },
+
+    "NobalAlloy": {
+      "Name": "Nobal Alloy",
+      "Category": "Specialty Alloys",
+      "ShortDescription": "High-purity Nobal Alloy for grain refinement and micro-alloying in specialty steel grades.",
+      "Description": "Precision Nobal Alloy with controlled titanium content for aerospace-grade steels, high-strength low-alloy applications, and critical casting operations requiring grain refinement.",
+      "Specifications": {
+        "Titanium": "Titanium (Ti)",
+        "Aluminum": "Aluminum (Al)",
+        "Carbon": "Carbon (C)",
+        "Size": "Size",
+        "Form": "Form"
+      },
+      "Applications": {
+        "Grainrefinement": "Grain refinement",
+        "MicroalloyedHSLAsteel": "Micro-alloyed HSLA steel",
+        "Aerospacealloysteels": "Aerospace alloy steels",
+        "Specialtycastings": "Specialty castings"
+      }
+    },
+
+    "CarbonProducts": {
+      "Name": "Carbon Products",
+      "Category": "Carbon Materials",
+      "ShortDescription": "Calcined petroleum coke, metallurgical coke, and carbon raisers for steel and foundry operations.",
+      "Description": "Export-grade carbon products including CPC, GPC, and anthracite-based carbon raisers with low ash and volatile matter for EAF steelmaking and foundry cupola operations.",
+      "Specifications": {
+        "FixedCarbon": "Fixed Carbon",
+        "Ash": "Ash",
+        "VolatileMatter": "Volatile Matter",
+        "Sulfur": "Sulfur",
+        "Sizing": "Sizing"
+      },
+      "Applications": {
+        "EAFsteelmaking": "EAF steelmaking",
+        "Foundrycupolacharge": "Foundry cupola charge",
+        "Anodemanufacturing": "Anode manufacturing",
+        "Carbonraiserapplications": "Carbon raiser applications"
+      }
+    },
+
+    "CarbideOre": {
+      "Name": "Carbide Ore",
+      "Category": "Industrial Minerals",
+      "ShortDescription": "High-grade carbide concentrate and ore for smelters and galvanizing supply chains.",
+      "Description": "Direct export of carbide ore and concentrate with consistent carbide content, low impurities, and full assay certificates for smelter and galvanizing industry procurement.",
+      "Specifications": {
+        "Carbide": "Carbide (C)",
+        "Lead": "Lead (Pb)",
+        "Iron": "Iron (Fe)",
+        "Moisture": "Moisture",
+        "Form": "Form"
+      },
+      "Applications": {
+        "Zincsmelting": "Zinc smelting",
+        "Galvanizingindustry": "Galvanizing industry",
+        "Diecastingalloys": "Die casting alloys",
+        "Chemicalprocessing": "Chemical processing"
+      }
+    },
+
+    "NaturalGraphite": {
+      "Name": "Natural Graphite",
+      "Category": "Industrial Minerals",
+      "ShortDescription": "Flake and amorphous natural graphite for refractories, batteries, and lubricant industries.",
+      "Description": "Premium natural graphite with controlled flake size distribution, high carbon content, and low ash for refractory brick, EV battery anode precursors, and industrial lubricant manufacturing.",
+      "Specifications": {
+        "FixedCarbon": "Fixed Carbon",
+        "Ash": "Ash",
+        "FlakeSize": "Flake Size",
+        "Moisture": "Moisture",
+        "Types": "Types"
+      },
+      "Applications": {
+        "Refractorymanufacturing": "Refractory manufacturing",
+        "Batteryanodematerials": "Battery anode materials",
+        "Industriallubricants": "Industrial lubricants",
+        "Gasketsandseals": "Gaskets and seals"
+      }
+    },
+
+    "SteelPipesTubes": {
+      "Name": "Steel Pipes & Tubes",
+      "Category": "Finished Steel",
+      "ShortDescription": "Seamless and welded steel pipes for oil & gas, infrastructure, and industrial fluid transport.",
+      "Description": "API and ASTM compliant steel pipes and tubes for energy sector, water infrastructure, and industrial process piping with full mill test certification.",
+      "Specifications": {
+        "Grades": "Grades",
+        "ODRange": "OD Range",
+        "WallThickness": "Wall Thickness",
+        "Ends": "Ends",
+        "Coating": "Coating"
+      },
+      "Applications": {
+        "Oilgastransmission": "Oil & Gas Transmission",
+        "Waterinfrastructure": "Water Infrastructure",
+        "EPCprojectpiping": "EPC Project Piping",
+        "Industrialprocesslines": "Industrial Process Lines"
+      }
+    },
+
+    "IndustrialMinerals": {
+      "Name": "Industrial Minerals",
+      "Category": "Industrial Minerals",
+      "ShortDescription": "Bauxite, fluorspar, quartz, and specialty minerals for steel and chemical industries.",
+      "Description": "Diversified industrial minerals portfolio supporting steel fluxing, aluminum production, and chemical manufacturing with consistent quality and export documentation.",
+      "Specifications": {
+        "Products": "Products",
+        "Purity": "Purity",
+        "Moisture": "Moisture",
+        "Packaging": "Packaging",
+        "Inspection": "Inspection"
+      },
+      "Applications": {
+        "Steelfluxing": "Steel fluxing",
+        "Aluminumsmelting": "Aluminum smelting",
+        "Chemicalfeedstock": "Chemical feedstock",
+        "Ceramicmanufacturing": "Ceramic manufacturing"
+      }
+    },
+
+    "SteelIndustryRawMaterials": {
+      "Name": "Steel Industry Raw Materials",
+      "Category": "Raw Materials",
+      "ShortDescription": "Consolidated supply of iron ore, coal, scrap substitutes, and charge materials for steel plants.",
+      "Description": "One-window procurement for integrated steel plants — iron ore fines and lumps, PCI coal, metallurgical coke, and alternative charge materials with vessel-level scheduling.",
+      "Specifications": {
+        "IronOreFe": "Iron Ore Fe",
+        "MetCokeCSR": "Met Coke CSR",
+        "PCICoal": "PCI Coal",
+        "Delivery": "Delivery",
+        "Volumes": "Volumes"
+      },
+      "Applications": {
+        "Blastfurnaceoperations": "Blast Furnace Operations",
+        "DRIEAFplants": "DRI / EAF Plants",
+        "Integratedsteelmills": "Integrated Steel Mills",
+        "Pelletplantfeedstock": "Pellet Plant Feedstock"
+      }
+    },
+    "ViewAllProducts": "View All Products"
+  },
+
+  "Product": {
+    "Overview": "Overview",
+    "Applications": "Applications",
+    "TechnicalSpecifications": "Technical Specifications"
+  },
+
   "industries": {
     "title": "Industries We Serve",
     "description": "Providing solutions for Raw Materials, Metallurgical, retail and industrial sectors."

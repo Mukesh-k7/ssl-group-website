@@ -8,6 +8,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { CtaBannerSection } from "@/sections/cta-banner";
 import { products, getProductBySlug } from "@/data/products";
 import { breadcrumbSchema, createPageMetadata, productSchema } from "@/lib/seo";
+import { getTranslations } from "next-intl/server";
 
 interface ProductPageProps {
   params: Promise<{ slug: string }>;
@@ -21,11 +22,12 @@ export async function generateMetadata({
   params,
 }: ProductPageProps): Promise<Metadata> {
   const { slug } = await params;
+  const t = await getTranslations();
   const product = getProductBySlug(slug);
   if (!product) return {};
   return createPageMetadata({
-    title: product.name,
-    description: product.shortDescription,
+    title: t(`Products.${product.key}.Name`),
+    description: t(`Products.${product.key}.ShortDescription`),
     path: `/products/${product.slug}`,
   });
 }
@@ -34,7 +36,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
   const { slug } = await params;
   const product = getProductBySlug(slug);
   if (!product) notFound();
-
+  const t = await getTranslations();
   const related = products.filter((p) => p.slug !== slug).slice(0, 3);
 
   return (
@@ -42,7 +44,11 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(productSchema(product)),
+          __html: JSON.stringify(productSchema({
+            name: product.key,
+            description: product.description,
+            slug: product.slug,
+          })),
         }}
       />
       <script
@@ -52,15 +58,15 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
             breadcrumbSchema([
               { name: "Home", path: "/" },
               { name: "Products", path: "/products" },
-              { name: product.name, path: `/products/${product.slug}` },
+              { name: product.key, path: `/products/${product.slug}` },
             ]),
           ),
         }}
       />
       <PageHero
-        eyebrow={product.category}
-        title={product.name}
-        description={product.shortDescription}
+        eyebrow={t(`Products.${product.key}.Category`)}
+        title={t(`Products.${product.key}.Name`)}
+        description={t(`Products.${product.key}.ShortDescription`)}
       />
       <section
         className="
@@ -103,20 +109,10 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
                 }}
               /
               >
-              <h2
-                className="
-                  text-2xl text-white font-heading font-bold
-                "
-              >
-                Overview
-              </h2>
-              <p
-                className="
-                  mt-4
-                  text-lg text-metallic/90 leading-relaxed
-                "
-              >
-                {product.description}
+              <h2>Overview</h2>
+
+              <p>
+                {t(`Products.${product.key}.Description`)}
               </p>
               <h3
                 className="
@@ -148,7 +144,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
                         text-[#c35303d1]
                         shrink-0
                       "
-                      /
+                    /
                     >
                     {app}
                   </li>
@@ -172,7 +168,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
                   >
                     {product.specifications.map((spec) => (
                       <div
-                        key={spec.label}
+                        key={spec.labelKey}
                         className="
                           flex justify-between
                           pb-3
@@ -185,7 +181,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
                             text-metallic/70
                           "
                         >
-                          {spec.label}
+                          {spec.labelKey}
                         </dt>
                         <dd
                           className="
@@ -264,7 +260,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
                       text-xs text-[#c35303d1]
                     "
                   >
-                    {p.category}
+                    {t(`Products.${p.key}.Category`)}
                   </p>
                   <p
                     className="
@@ -272,7 +268,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
                       text-white font-heading font-semibold
                     "
                   >
-                    {p.name}
+                    {t(`Products.${p.key}.Name`)}
                   </p>
                 </Link>
               ))}
@@ -294,7 +290,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
                 w-4 h-4
               "
             />
-            Back to Products
+            Back To Products
           </Link>
         </Button>
       </div>

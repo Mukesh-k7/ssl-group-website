@@ -1,11 +1,11 @@
 export interface Product {
   slug: string;
-  name: string;
+  key: string;
   shortDescription: string;
   description: string;
   image: string;
   category: string;
-  specifications: { label: string; value: string }[];
+  specifications: { labelKey: string; value: string }[];
   applications: string[];
   featured?: boolean;
   className?: string

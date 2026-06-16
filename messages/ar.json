@@ -12,7 +12,6 @@
     "getQuote": "طلب عرض سعر",
     "more": "المزيد"
   },
-
   "hero": {
     "title": "مُصدر عالمي رائد للمنتجات علم المعاد",
     "subtitle": "تقديم منتجات زراعية عالية الجودة إلى الأسواق العالمية.",
@@ -30,7 +29,6 @@
     "RequestExportQuote": "طلب عرض سعر للتصدير",
     "DownloadCatalog": "تحميل الكتالوج"
   },
-
   "about": {
     "title": "حول مجموعة SSL",
     "description": "مجموعة SSL هي مُصدر موثوق للمنتجات علم المعاد عالية الجودة.",
@@ -41,34 +39,201 @@
     "Since": "منذ",
     "GhaziabadGlobalExportOperations": "غازي آباد · عمليات التصدير العالمية"
   },
-
   "products": {
     "Eyebrow": "منتجاتنا",
     "Title": "مواد خام المعادن والصلب",
     "Description": "محفظة تصدير شاملة لمصانع الصلب المتكاملة والمسابك والمشتريات الصناعية حول العالم.",
     "ViewAllProducts": "عرض جميع المنتجات"
   },
-
+  "Products": {
+    "PigIron": {
+      "Name": "الحديد الغفل",
+      "Category": "المعادن الحديدية",
+      "ShortDescription": "حديد غفل بدرجة المسابك وصناعة الفولاذ مع تحكم دقيق في السيليكون والكبريت لتطبيقات الأفران العالية والسباكة.",
+      "Description": "تقوم مجموعة SSL بتصدير الحديد الغفل الممتاز للمسابك والصناعات الأساسية من مصانع فولاذ متكاملة حاصلة على شهادات ISO.",
+      "Specifications": {
+        "Carbon": "الكربون (C)",
+        "Silicon": "السيليكون (Si)",
+        "Sulfur": "الكبريت (S)",
+        "Phosphorus": "الفوسفور (P)"
+      },
+      "Applications": {
+        "FoundryCastings": "مسبوكات المسابك",
+        "DuctileIronProduction": "إنتاج الحديد المطيل",
+        "SteelChargeMaterial": "مواد شحن الفولاذ",
+        "AutomotiveComponents": "مكونات السيارات"
+      }
+    },
+    "FerroAlloys": {
+      "Name": "السبائك الحديدية",
+      "Category": "مواد السبائك",
+      "ShortDescription": "فيرو منغنيز، فيرو سيليكون، فيرو كروم وسبائك خاصة لإزالة الأكسدة وسبك الفولاذ.",
+      "Description": "مجموعة شاملة من السبائك الحديدية لمصانع الفولاذ المتكاملة والمصانع الصغيرة.",
+      "Specifications": {
+        "FeMn": "FeMn (Mn)",
+        "FeSi": "FeSi (Si)",
+        "FeCr": "FeCr (Cr)",
+        "Packaging": "التعبئة",
+        "Standards": "المعايير"
+      },
+      "Applications": {
+        "Steeldeoxidation": "إزالة أكسدة الفولاذ",
+        "Alloysteelproduction": "إنتاج الفولاذ السبائكي",
+        "Stainlesssteelmanufacturing": "تصنيع الفولاذ المقاوم للصدأ",
+        "Weldingconsumables": "مستهلكات اللحام"
+      }
+    },
+    "NobalAlloy": {
+      "Name": "سبيكة نوبال",
+      "Category": "السبائك المتخصصة",
+      "ShortDescription": "سبيكة نوبال عالية النقاء لتحسين الحبيبات والسبك الدقيق في درجات الفولاذ الخاصة.",
+      "Description": "سبيكة نوبال دقيقة ذات محتوى تيتانيوم متحكم به لتطبيقات الفولاذ عالية الأداء.",
+      "Specifications": {
+        "Titanium": "التيتانيوم (Ti)",
+        "Aluminum": "الألومنيوم (Al)",
+        "Carbon": "الكربون (C)",
+        "Size": "الحجم",
+        "Form": "الشكل"
+      },
+      "Applications": {
+        "Grainrefinement": "تنقية الحبيبات",
+        "MicroalloyedHSLAsteel": "فولاذ HSLA دقيق السبك",
+        "Aerospacealloysteels": "سبائك الفولاذ للطيران",
+        "Specialtycastings": "المسبوكات المتخصصة"
+      }
+    },
+    "CarbonProducts": {
+      "Name": "منتجات الكربون",
+      "Category": "مواد الكربون",
+      "ShortDescription": "فحم الكوك البترولي المكلس وفحم الكوك المعدني ورافعات الكربون لصناعة الفولاذ والمسابك.",
+      "Description": "منتجات كربونية عالية الجودة للتصدير ذات محتوى رماد منخفض.",
+      "Specifications": {
+        "FixedCarbon": "الكربون الثابت",
+        "Ash": "الرماد",
+        "VolatileMatter": "المواد المتطايرة",
+        "Sulfur": "الكبريت",
+        "Sizing": "الحجم"
+      },
+      "Applications": {
+        "EAFsteelmaking": "صناعة الفولاذ بأفران EAF",
+        "Foundrycupolacharge": "شحن أفران المسابك",
+        "Anodemanufacturing": "تصنيع الأنود",
+        "Carbonraiserapplications": "تطبيقات رافع الكربون"
+      }
+    },
+    "CarbideOre": {
+      "Name": "خام الكربيد",
+      "Category": "المعادن الصناعية",
+      "ShortDescription": "خام ومركزات كربيد عالية الجودة للمصاهر وسلاسل التوريد الخاصة بالجلفنة.",
+      "Description": "تصدير مباشر لخام الكربيد بمحتوى ثابت وشوائب منخفضة.",
+      "Specifications": {
+        "Carbide": "الكربيد (C)",
+        "Lead": "الرصاص (Pb)",
+        "Iron": "الحديد (Fe)",
+        "Moisture": "الرطوبة",
+        "Form": "الشكل"
+      },
+      "Applications": {
+        "Zincsmelting": "صهر الزنك",
+        "Galvanizingindustry": "صناعة الجلفنة",
+        "Diecastingalloys": "سبائك الصب بالقوالب",
+        "Chemicalprocessing": "المعالجة الكيميائية"
+      }
+    },
+    "NaturalGraphite": {
+      "Name": "الجرافيت الطبيعي",
+      "Category": "المعادن الصناعية",
+      "ShortDescription": "جرافيت رقائقي وغير متبلور للصناعات الحرارية والبطاريات ومواد التشحيم.",
+      "Description": "جرافيت طبيعي عالي الجودة بمحتوى كربون مرتفع وحجم رقائق متحكم به.",
+      "Specifications": {
+        "FixedCarbon": "الكربون الثابت",
+        "Ash": "الرماد",
+        "FlakeSize": "حجم الرقائق",
+        "Moisture": "الرطوبة",
+        "Types": "الأنواع"
+      },
+      "Applications": {
+        "Refractorymanufacturing": "تصنيع المواد الحرارية",
+        "Batteryanodematerials": "مواد أنود البطاريات",
+        "Industriallubricants": "مواد التشحيم الصناعية",
+        "Gasketsandseals": "الحشوات والأختام"
+      }
+    },
+    "SteelPipesTubes": {
+      "Name": "أنابيب ومواسير الفولاذ",
+      "Category": "الفولاذ النهائي",
+      "ShortDescription": "أنابيب فولاذية ملحومة وغير ملحومة لقطاع النفط والغاز والبنية التحتية.",
+      "Description": "أنابيب ومواسير فولاذية مطابقة لمعايير API وASTM.",
+      "Specifications": {
+        "Grades": "الدرجات",
+        "ODRange": "نطاق القطر الخارجي",
+        "WallThickness": "سماكة الجدار",
+        "Ends": "النهايات",
+        "Coating": "الطلاء"
+      },
+      "Applications": {
+        "Oilgastransmission": "نقل النفط والغاز",
+        "Waterinfrastructure": "البنية التحتية للمياه",
+        "EPCprojectpiping": "أنابيب مشاريع EPC",
+        "Industrialprocesslines": "خطوط العمليات الصناعية"
+      }
+    },
+    "IndustrialMinerals": {
+      "Name": "المعادن الصناعية",
+      "Category": "المعادن الصناعية",
+      "ShortDescription": "البوكسيت والفلورسبار والكوارتز ومعادن متخصصة لصناعات الفولاذ والكيماويات.",
+      "Description": "مجموعة متنوعة من المعادن الصناعية لدعم إنتاج الفولاذ والألومنيوم والمواد الكيميائية.",
+      "Specifications": {
+        "Products": "المنتجات",
+        "Purity": "النقاء",
+        "Moisture": "الرطوبة",
+        "Packaging": "التعبئة",
+        "Inspection": "الفحص"
+      },
+      "Applications": {
+        "Steelfluxing": "صهر الفولاذ",
+        "Aluminumsmelting": "صهر الألومنيوم",
+        "Chemicalfeedstock": "مواد أولية كيميائية",
+        "Ceramicmanufacturing": "تصنيع السيراميك"
+      }
+    },
+    "SteelIndustryRawMaterials": {
+      "Name": "المواد الخام لصناعة الفولاذ",
+      "Category": "المواد الخام",
+      "ShortDescription": "توريد متكامل لخام الحديد والفحم ومواد الشحن لمصانع الفولاذ.",
+      "Description": "حل متكامل لتوريد المواد الخام لمصانع الفولاذ المتكاملة.",
+      "Specifications": {
+        "IronOreFe": "خام الحديد Fe",
+        "MetCokeCSR": "فحم الكوك المعدني CSR",
+        "PCICoal": "فحم PCI",
+        "Delivery": "التسليم",
+        "Volumes": "الكميات"
+      },
+      "Applications": {
+        "Blastfurnaceoperations": "عمليات الفرن العالي",
+        "DRIEAFplants": "مصانع DRI / EAF",
+        "Integratedsteelmills": "مصانع الفولاذ المتكاملة",
+        "Pelletplantfeedstock": "مواد تغذية مصانع الكريات"
+      }
+    },
+    "ViewAllProducts": "عرض جميع المنتجات"
+  },
   "industries": {
     "title": "الصناعات التي نخدمها",
     "description": "حلول لقطاعات الأغذية والزراعة والتجزئة والصناعة."
   },
-
   "export": {
     "title": "التصدير والخدمات اللوجستية",
     "description": "إدارة فعالة لسلسلة التوريد والخدمات اللوجستية العالمية."
   },
-
   "certifications": {
     "title": "الشهادات",
     "description": "معايير جودة معتمدة تضمن الثقة والامتثال."
   },
-
   "infrastructure": {
     "title": "البنية التحتية",
     "description": "مرافق تصنيع ومعالجة حديثة ومتطورة."
   },
-
   "contact": {
     "title": "اتصل بنا",
     "description": "تواصل مع فريقنا للاستفسارات وطلبات الأسعار.",
@@ -78,14 +243,12 @@
     "message": "الرسالة",
     "submit": "إرسال الرسالة"
   },
-
   "footer": {
     "copyright": "جميع الحقوق محفوظة.",
     "quickLinks": "روابط سريعة",
     "contactUs": "اتصل بنا",
     "followUs": "تابعنا"
   },
-
   "navigation": {
     "home": "الرئيسية",
     "about": "من نحن",
@@ -103,7 +266,6 @@
     "GetExportQuote": "احصل على عرض سعر للتصدير",
     "Catalog": "الكتالوج"
   },
-
   "stats": {
     "yearsofExcellence": "سنوات التميز",
     "countriesServed": "الدول المخدومة",

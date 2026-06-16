@@ -135,7 +135,7 @@ export function Footer() {
                       transition-colors
                     "
                   >
-                    {product.name}
+                    {product.key}
                   </Link>
                 </li>
               ))}

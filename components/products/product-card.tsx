@@ -6,12 +6,16 @@ import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import type { Product } from "@/types";
+import { useTranslations } from "next-intl";
 
 interface ProductCardProps {
   product: Product;
 }
 
 export function ProductCard({ product }: ProductCardProps) {
+
+  const t = useTranslations();
+
   return (
     <motion.div whileHover={{ y: -6 }} transition={{ duration: 0.3 }}>
       <Card
@@ -52,7 +56,7 @@ export function ProductCard({ product }: ProductCardProps) {
               margin: 0,
             }}
             role="img"
-            aria-label={product.name}
+            aria-label={product.key}
           /
           >
           <div
@@ -60,7 +64,7 @@ export function ProductCard({ product }: ProductCardProps) {
               absolute inset-0
               bg-gradient-to-t from-charcoal via-charcoal/20 to-transparent
             "
-            /
+          /
           >
           <span
             className="
@@ -72,7 +76,7 @@ export function ProductCard({ product }: ProductCardProps) {
               backdrop-blur-sm
             "
           >
-            {product.category}
+            {t(`Products.${product.key}.Category`)}
           </span>
         </div>
         <CardContent
@@ -85,7 +89,7 @@ export function ProductCard({ product }: ProductCardProps) {
               text-xl text-white font-heading font-bold
             "
           >
-            {product.name}
+            {t(`Products.${product.key}.Name`)}
           </h3>
           <p
             className="
@@ -93,7 +97,7 @@ export function ProductCard({ product }: ProductCardProps) {
               text-sm text-metallic/80 leading-relaxed line-clamp-2
             "
           >
-            {product.shortDescription}
+            {t(`Products.${product.key}.ShortDescription`)}
           </p>
           <ul
             className="
@@ -102,13 +106,17 @@ export function ProductCard({ product }: ProductCardProps) {
           >
             {product.specifications.slice(0, 2).map((spec) => (
               <li
-                key={spec.label}
+                key={spec.labelKey}
                 className="
                   flex justify-between
                   text-xs text-metallic/70
                 "
               >
-                <span>{spec.label}</span>
+                <span>
+                  {t(
+                    `Products.${product.key}.Specifications.${spec.labelKey}`
+                  )}
+                  </span>
                 <span
                   className="
                     text-metallic font-medium
@@ -130,7 +138,8 @@ export function ProductCard({ product }: ProductCardProps) {
             asChild
           >
             <Link href={`/products/${product.slug}`}>
-              View Specifications
+              {/* {t("ViewAllProducts")}  */}
+              View All Products
               <ArrowRight
                 className="
                   w-4 h-4
