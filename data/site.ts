@@ -54,27 +54,19 @@ export const stats: Stat[] = [
 
 export const whyChooseUs = [
   {
-    title: "Export-Grade Quality Assurance",
-    description:
-      "Every shipment undergoes multi-stage metallurgical testing, third-party inspection, and documented compliance before dispatch.",
+    key: "QualityAssurance",
     icon: "ShieldCheck",
   },
   {
-    title: "Integrated Supply Chain",
-    description:
-      "Direct sourcing from certified mines and smelters, bonded warehousing, and optimized logistics for just-in-time delivery.",
+    key: "SupplyChain",
     icon: "Truck",
   },
   {
-    title: "Global Trade Expertise",
-    description:
-      "Dedicated export desks for Middle East, Africa, and Europe with Incoterms flexibility and trade finance support.",
+    key: "TradeExpertise",
     icon: "Globe2",
   },
   {
-    title: "Technical Metallurgy Support",
-    description:
-      "In-house metallurgists assist procurement teams with grade selection, alloy optimization, and specification alignment.",
+    key: "MetallurgySupport",
     icon: "FlaskConical",
   },
 ];
@@ -108,23 +100,23 @@ export const testimonials: Testimonial[] = [
 
 export const exportRegions = [
   {
-    name: "Middle East",
-    countries: ["UAE", "Saudi Arabia", "Oman", "Qatar", "Kuwait"],
-    description: "Strategic hub for steel and EPC procurement with dedicated Jebel Ali routing.",
+    key: "MiddleEast",
+    countries: "MiddleEast.Countries",
+    descriptionKey: "MiddleEast.Description",
   },
   {
-    name: "Africa",
-    countries: ["Nigeria", "Kenya", "South Africa", "Egypt", "Morocco"],
-    description: "Growing foundry and infrastructure demand served via Mombasa and Lagos corridors.",
+    key: "Africa",
+    countries: "Africa.Countries",
+    description: "Africa.Description",
   },
   {
-    name: "Europe",
-    countries: ["Germany", "Italy", "Spain", "Netherlands", "Poland"],
-    description: "Distributor network for ferro alloys and industrial minerals across EU steel clusters.",
+    key: "Europe",
+    countries: "Europe.Countries",
+    description: "Europe.Description",
   },
   {
-    name: "Asia-Pacific",
-    countries: ["Vietnam", "Indonesia", "Bangladesh", "Thailand"],
-    description: "Expanding partnerships with regional steel manufacturers and pipe producers.",
+    key: "AsiaPacific",
+    countries: "AsiaPacific.Countries",
+    description: "AsiaPacific.Description",
   },
 ];

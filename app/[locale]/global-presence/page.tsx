@@ -7,6 +7,7 @@ import { CtaBannerSection } from "@/sections/cta-banner";
 import { exportRegions } from "@/data/site";
 import { PageBreadcrumbJsonLd } from "@/components/shared/page-breadcrumb-jsonld";
 import { createPageMetadata } from "@/lib/seo";
+import { useTranslations } from "next-intl";
 
 export const metadata: Metadata = createPageMetadata({
   title: "Global Presence",
@@ -16,6 +17,7 @@ export const metadata: Metadata = createPageMetadata({
 });
 
 export default function GlobalPresencePage() {
+  const t = useTranslations('export');
   return (
     <>
       <PageBreadcrumbJsonLd
@@ -25,35 +27,33 @@ export default function GlobalPresencePage() {
         ]}
       />
       <PageHero
-        eyebrow="Worldwide"
-        title="Global Presence"
-        description="Strategic trade corridors connecting Indian metallurgical production to steel manufacturers and industrial buyers across four continents."
+        eyebrow={t("WorldWide")}
+        title={t("GlobalPresence")}
+        description={t("Continents")}
       />
       <StatsCounterSection />
       <ExportMapSection />
       <AnimatedSection className="py-24">
         <div className="container mx-auto px-4 md:px-6">
           <SectionHeader
-            title="Regional Export Desks"
-            description="Dedicated teams with local market knowledge, language support, and timezone-aligned responsiveness."
+            title={t("Regional")}
+            description={t("Teams")}
             align="center"
           />
           <div className="grid gap-6 md:grid-cols-2">
             {exportRegions.map((region) => (
               <div
-                key={region.name}
+                key={region.key}
                 className="rounded-xl border border-white/10 bg-charcoal/50 p-8"
               >
-                <h3 className="font-heading text-2xl font-bold text-white">{region.name}</h3>
-                <p className="mt-2 text-metallic/80">{region.description}</p>
+                <h3 className="font-heading text-2xl font-bold text-white">{t(`${region.key}.Title`)}</h3>
+                <p className="mt-2 text-metallic/80">{t(`${region.key}.Description`)}</p>
                 <ul className="mt-4 flex flex-wrap gap-2">
-                  {region.countries.map((c) => (
-                    <li
-                      key={c}
+
+                  {(t.raw(`${region.key}.Countries`) as string[]).map((country) => (
+                    <li key={country}
                       className="rounded-md bg-gunmetal px-3 py-1 text-sm text-metallic"
-                    >
-                      {c}
-                    </li>
+                    >{country}</li>
                   ))}
                 </ul>
               </div>

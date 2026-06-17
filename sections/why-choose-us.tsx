@@ -14,6 +14,7 @@ import {
   StaggerItem,
 } from "@/components/shared/animated-section";
 import { whyChooseUs } from "@/data/site";
+import { useTranslations } from "next-intl";
 
 const iconMap: Record<string, LucideIcon> = {
   ShieldCheck,
@@ -23,6 +24,8 @@ const iconMap: Record<string, LucideIcon> = {
 };
 
 export function WhyChooseUsSection() {
+  const t = useTranslations("whychooseus");
+
   return (
     <AnimatedSection
       className="
@@ -37,9 +40,9 @@ export function WhyChooseUsSection() {
         "
       >
         <SectionHeader
-          eyebrow="Why SSL Group"
-          title="Enterprise-Grade Export Partnership"
-          description="Decades of metallurgical expertise combined with global logistics infrastructure — built for steel manufacturers and industrial procurement at scale."
+          eyebrow={t("Eyebrow")}
+          title={t("Title")}
+          description={t("Description")}
         />
         <StaggerGrid
           className="
@@ -50,7 +53,7 @@ export function WhyChooseUsSection() {
           {whyChooseUs.map((item) => {
             const Icon = iconMap[item.icon] ?? ShieldCheck;
             return (
-              <StaggerItem key={item.title}>
+              <StaggerItem key={item.key}>
                 <div
                   className="
                     h-full
@@ -88,7 +91,7 @@ export function WhyChooseUsSection() {
                       font-heading font-semibold text-lg text-white
                     "
                   >
-                    {item.title}
+                    {t(`${item.key}.Title`)}
                   </h3>
                   <p
                     className="
@@ -96,7 +99,7 @@ export function WhyChooseUsSection() {
                       text-sm text-metallic/80 leading-relaxed
                     "
                   >
-                    {item.description}
+                    {t(`${item.key}.Description`)}
                   </p>
                 </div>
               </StaggerItem>

@@ -19,6 +19,7 @@ import {
   StaggerItem,
 } from "@/components/shared/animated-section";
 import { industries } from "@/data/industries";
+import { useTranslations } from "next-intl";
 
 const iconMap: Record<string, LucideIcon> = {
   Factory,
@@ -33,6 +34,8 @@ const iconMap: Record<string, LucideIcon> = {
 
 export function IndustriesServedSection({ limit }: { limit?: number }) {
   const items = limit ? industries.slice(0, limit) : industries;
+
+  const t = useTranslations("industries")
 
   return (
     <AnimatedSection
@@ -49,9 +52,9 @@ export function IndustriesServedSection({ limit }: { limit?: number }) {
         "
       >
         <SectionHeader
-          eyebrow="Industries Served"
-          title="Powering Global Industrial Supply Chains"
-          description="From integrated steel plants to EPC contractors — tailored metallurgical supply solutions for every sector."
+          eyebrow={t("Eyebrow")}
+          title={t("Title")}
+          description={t("Description")}
         />
         <StaggerGrid
           className="
@@ -90,7 +93,7 @@ export function IndustriesServedSection({ limit }: { limit?: number }) {
                       font-heading font-semibold text-white
                     "
                   >
-                    {industry.name}
+                    {industry.key}
                   </h3>
                   <p
                     className="

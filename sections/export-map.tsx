@@ -8,6 +8,7 @@ import {
   StaggerItem,
 } from "@/components/shared/animated-section";
 import { exportRegions } from "@/data/site";
+import { useTranslations } from "next-intl";
 
 
 // export type AnimatedSectionProps = {
@@ -18,14 +19,16 @@ import { exportRegions } from "@/data/site";
 
 export function ExportMapSection() {
 
-//   const sectionStyle: React.CSSProperties = {
-//   background: "linear-gradient(135deg, #3D3F38, #6B8FA0, #9B6E7C, #C8B87A, #9DA09A)",
-// };
+  //   const sectionStyle: React.CSSProperties = {
+  //   background: "linear-gradient(135deg, #3D3F38, #6B8FA0, #9B6E7C, #C8B87A, #9DA09A)",
+  // };
+  const t = useTranslations('export');
+
   return (
     <AnimatedSection
       id="export"
       className="py-24 [background:linear-gradient(135deg,#3D3F38,#6B8FA0,#9B6E7C,#C8B87A,#9DA09A)]"
-      
+
     >
       <div
         className="
@@ -34,9 +37,9 @@ export function ExportMapSection() {
         "
       >
         <SectionHeader
-          eyebrow="Global Export Network"
-          title="Strategic Trade Corridors Worldwide"
-          description="Established logistics routes and port partnerships delivering metallurgical raw materials across continents."
+          eyebrow={t("Eyebrow")}
+          title={t("Title")}
+          description={t("Description")}
         />
         <div
           className="
@@ -51,7 +54,7 @@ export function ExportMapSection() {
             "
           >
             {exportRegions.map((region) => (
-              <StaggerItem key={region.name}>
+              <StaggerItem key={region.key}>
                 <div
                   className="
                     p-6
@@ -71,21 +74,21 @@ export function ExportMapSection() {
                         h-5 w-5
                         text-[#f38203] text-bold
                       "
-                      /
+                    /
                     >
                     <h3
                       className="
                         font-heading font-semibold text-lg text-white
                       "
                     >
-                      {region.name}
+                      {t(`${region.key}.Title`)}
                     </h3>
                   </div>
                   <p
                     className="
                       text-sm text-metallic/80
                     "
-                  >{region.description}</p>
+                  >{t(`${region.key}.Description`)}</p>
                   <div
                     className="
                       flex flex-wrap
@@ -93,15 +96,15 @@ export function ExportMapSection() {
                       gap-2
                     "
                   >
-                    {region.countries.map((country) => (
+                    {(t.raw(`${region.key}.Countries`) as string[]).map((country) => (
                       <span
                         key={country}
                         className="
-                          px-3 py-1
-                          text-xs text-metallic
-                          bg-charcoal/60
-                          rounded-full border border-white/10
-                        "
+      px-3 py-1
+      text-xs text-metallic
+      bg-charcoal/60
+      rounded-full border border-white/10
+    "
                       >
                         {country}
                       </span>
@@ -126,7 +129,7 @@ export function ExportMapSection() {
                 bg-industrial-grid
                 opacity-20
               "
-              /
+            /
             >
             {/* Stylized world map placeholder */}
             <svg
@@ -152,7 +155,7 @@ export function ExportMapSection() {
                     className="
                       text-bold
                     "
-                    /
+                  /
                   >
                   <circle cx={point.cx} cy={point.cy} r="16" fill="#fff" opacity="0.3">
                     <animate attributeName="r" values="16;24;16" dur="3s" repeatCount="indefinite" />

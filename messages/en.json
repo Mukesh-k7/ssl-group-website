@@ -12,7 +12,23 @@
     "getQuote": "Get Quote",
     "more": "More"
   },
-
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "products": "Products",
+    "industries": "Industries",
+    "export": "Export",
+    "certifications": "Certifications",
+    "infrastructure": "Infrastructure",
+    "globalPresence": "Global Presence",
+    "insights": "Insights",
+    "contact": "Contact",
+    "More": "More",
+    "GetQuote": "Get Quote",
+    "DownloadCatalog": "Download Catalog",
+    "GetExportQuote": "Get Export Quote",
+    "Catalog": "Catalog"
+  },
   "hero": {
     "title": "Leading Global Exporter of Metallurgical Products",
     "subtitle": "Delivering premium quality Metallurgical products worldwide with trust, quality and excellence.",
@@ -30,7 +46,6 @@
     "RequestExportQuote": "Request Export Quote",
     "DownloadCatalog": "Download Catalog"
   },
-
   "about": {
     "title": "About SSL Group",
     "description": "SSL Group is a trusted exporter of high-quality Metallurgical products serving global markets with reliability and excellence",
@@ -41,28 +56,24 @@
     "Since": "Since",
     "GhaziabadGlobalExportOperations": "Ghaziabad · Global Export Operations"
   },
-
   "products": {
     "Eyebrow": "Our Products",
     "Title": "Metallurgy & Steel Raw Materials",
     "Description": "Comprehensive export portfolio for integrated steel plants, foundries, and industrial procurement worldwide.",
     "ViewAllProducts": "View All Products"
   },
-
   "Products": {
     "PigIron": {
       "Name": "Pig Iron",
       "Category": "Ferrous Metals",
       "ShortDescription": "Foundry and steel-grade pig iron with controlled silicon and sulfur for blast furnace and casting applications.",
       "Description": "SSL Group exports premium foundry and basic pig iron sourced from ISO-certified integrated steel plants.",
-
       "Specifications": {
         "Carbon": "Carbon (C)",
         "Silicon": "Silicon (Si)",
         "Sulfur": "Sulfur (S)",
         "Phosphorus": "Phosphorus (P)"
       },
-
       "Applications": {
         "FoundryCastings": "Foundry castings",
         "DuctileIronProduction": "Ductile iron production",
@@ -70,7 +81,6 @@
         "AutomotiveComponents": "Automotive components"
       }
     },
-    
     "FerroAlloys": {
       "Name": "Ferro Alloys",
       "Category": "Alloying Materials",
@@ -90,7 +100,6 @@
         "Weldingconsumables": "Welding consumables"
       }
     },
-
     "NobalAlloy": {
       "Name": "Nobal Alloy",
       "Category": "Specialty Alloys",
@@ -110,7 +119,6 @@
         "Specialtycastings": "Specialty castings"
       }
     },
-
     "CarbonProducts": {
       "Name": "Carbon Products",
       "Category": "Carbon Materials",
@@ -130,7 +138,6 @@
         "Carbonraiserapplications": "Carbon raiser applications"
       }
     },
-
     "CarbideOre": {
       "Name": "Carbide Ore",
       "Category": "Industrial Minerals",
@@ -150,7 +157,6 @@
         "Chemicalprocessing": "Chemical processing"
       }
     },
-
     "NaturalGraphite": {
       "Name": "Natural Graphite",
       "Category": "Industrial Minerals",
@@ -170,7 +176,6 @@
         "Gasketsandseals": "Gaskets and seals"
       }
     },
-
     "SteelPipesTubes": {
       "Name": "Steel Pipes & Tubes",
       "Category": "Finished Steel",
@@ -190,7 +195,6 @@
         "Industrialprocesslines": "Industrial Process Lines"
       }
     },
-
     "IndustrialMinerals": {
       "Name": "Industrial Minerals",
       "Category": "Industrial Minerals",
@@ -210,7 +214,6 @@
         "Ceramicmanufacturing": "Ceramic manufacturing"
       }
     },
-
     "SteelIndustryRawMaterials": {
       "Name": "Steel Industry Raw Materials",
       "Category": "Raw Materials",
@@ -232,33 +235,98 @@
     },
     "ViewAllProducts": "View Products"
   },
-
   "Product": {
     "Overview": "Overview",
     "Applications": "Applications",
     "TechnicalSpecifications": "Technical Specifications"
   },
-
+  "whychooseus": {
+    "Eyebrow": "Why SSL Group",
+    "Title": "Enterprise-Grade Export Partnership",
+    "Description": "Decades of metallurgical expertise combined with global logistics infrastructure — built for steel manufacturers and industrial procurement at scale.",
+    "QualityAssurance": {
+      "Title": "Export-Grade Quality Assurance",
+      "Description": "Every shipment undergoes multi-stage metallurgical testing, third-party inspection, and documented compliance before dispatch."
+    },
+    "SupplyChain": {
+      "Title": "Integrated Supply Chain",
+      "Description": "Direct sourcing from certified mines and smelters, bonded warehousing, and optimized logistics for just-in-time delivery."
+    },
+    "TradeExpertise": {
+      "Title": "Global Trade Expertise",
+      "Description": "Dedicated export desks for Middle East, Africa, and Europe with Incoterms flexibility and trade finance support."
+    },
+    "MetallurgySupport": {
+      "Title": "Technical Metallurgy Support",
+      "Description": "In-house metallurgists assist procurement teams with grade selection, alloy optimization, and specification alignment."
+    }
+  },
   "industries": {
-    "title": "Industries We Serve",
-    "description": "Providing solutions for Raw Materials, Metallurgical, retail and industrial sectors."
+    "Eyebrow": "Industries Served",
+    "Title": "Powering Global Industrial Supply Chains",
+    "Description": "From integrated steel plants to EPC contractors — tailored metallurgical supply solutions for every sector."
   },
-
   "export": {
-    "title": "Export & Logistics",
-    "description": "Efficient global supply chain and logistics management."
+    "Eyebrow": "Global Export Network",
+    "Title": "Strategic Trade Corridors Worldwide",
+    "Description": "Established logistics routes and port partnerships delivering metallurgical raw materials across continents.",
+    "AsiaPacific": {
+      "Title": "Asia-Pacific",
+      "Description": "Expanding partnerships with regional steel manufacturers and pipe producers.",
+      "Countries": [
+        "Vietnam",
+        "Indonesia",
+        "Bangladesh",
+        "Thailand"
+      ]
+    },
+    "MiddleEast": {
+      "Title": "Middle East",
+      "Description": "Strategic hub for steel and EPC procurement with dedicated Jebel Ali routing.",
+      "Countries": [
+        "UAE",
+        "Saudi Arabia",
+        "Oman",
+        "Qatar",
+        "Kuwait"
+      ]
+    },
+    "Africa": {
+      "Title": "Africa",
+      "Description": "Growing foundry and infrastructure demand served via Mombasa and Lagos corridors.",
+      "Countries": [
+        "Nigeria",
+        "Kenya",
+        "South Africa",
+        "Egypt",
+        "Morocco"
+      ]
+    },
+    "Europe": {
+      "Title": "Europe",
+      "Description": "Distributor network for ferro alloys and industrial minerals across EU steel clusters.",
+      "Countries": [
+        "Germany",
+        "Italy",
+        "Spain",
+        "Netherlands",
+        "Poland"
+      ]
+    },
+    "WorldWide": "World Wide",
+    "GlobalPresence": "Global Presence",
+    "Continents": "Strategic trade corridors connecting Indian metallurgical production to steel manufacturers and industrial buyers across four continents.",
+    "Regional": "Regional Export Desks",
+    "Teams": "Dedicated teams with local market knowledge, language support, and timezone-aligned responsiveness."
   },
-
   "certifications": {
     "title": "Certifications",
     "description": "Certified quality standards ensuring trust and compliance."
   },
-
   "infrastructure": {
     "title": "Infrastructure",
     "description": "State-of-the-art manufacturing and processing facilities."
   },
-
   "contact": {
     "title": "Contact Us",
     "description": "Get in touch with our team for inquiries and quotations.",
@@ -268,38 +336,17 @@
     "message": "Message",
     "submit": "Send Message"
   },
-
   "footer": {
     "copyright": "All Rights Reserved.",
     "quickLinks": "Quick Links",
     "contactUs": "Contact Us",
     "followUs": "Follow Us"
   },
-
-    "navigation": {
-    "home": "Home",
-    "about": "About",
-    "products": "Products",
-    "industries": "Industries",
-    "export": "Export",
-    "certifications": "Certifications",
-    "infrastructure": "Infrastructure",
-    "globalPresence": "Global Presence",
-    "insights": "Insights",
-    "contact": "Contact",
-    "More": "More",
-    "GetQuote": "Get Quote",
-    "DownloadCatalog": "Download Catalog",
-    "GetExportQuote": "Get Export Quote",
-    "Catalog": "Catalog"
-  },
-
   "stats": {
     "yearsofExcellence": "Years of Excellence",
     "countriesServed": "Countries Served",
     "annualExportVolume": "Annual Export Volume",
     "globalPartners": "Global Partners"
   },
-
   "ViewAllProducts": "View Products"
 }

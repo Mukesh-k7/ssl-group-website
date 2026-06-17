@@ -13,7 +13,7 @@ export interface Product {
 
 export interface Industry {
   slug: string;
-  name: string;
+  key: string;
   description: string;
   icon: string;
   regions: string[];
