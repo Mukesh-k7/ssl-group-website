@@ -35,7 +35,8 @@ const iconMap: Record<string, LucideIcon> = {
 export function IndustriesServedSection({ limit }: { limit?: number }) {
   const items = limit ? industries.slice(0, limit) : industries;
 
-  const t = useTranslations("industries")
+  const t = useTranslations("industries");
+
 
   return (
     <AnimatedSection
@@ -64,6 +65,9 @@ export function IndustriesServedSection({ limit }: { limit?: number }) {
         >
           {items.map((industry) => {
             const Icon = iconMap[industry.icon] ?? Factory;
+            const regions = t.raw(
+              `${industry.key}.Regions`
+            ) as string[];
             return (
               <StaggerItem key={industry.slug}>
                 <Link
@@ -93,7 +97,7 @@ export function IndustriesServedSection({ limit }: { limit?: number }) {
                       font-heading font-semibold text-white
                     "
                   >
-                    {industry.key}
+                    {t(`${industry.key}.Title`)}
                   </h3>
                   <p
                     className="
@@ -102,7 +106,7 @@ export function IndustriesServedSection({ limit }: { limit?: number }) {
                       text-sm line-clamp-3
                     "
                   >
-                    {industry.description}
+                    {t(`${industry.key}.Description`)}
                   </p>
                   <p
                     className="
@@ -110,7 +114,11 @@ export function IndustriesServedSection({ limit }: { limit?: number }) {
                       text-xs text-[#c96a00]
                     "
                   >
-                    {industry.regions.join(" · ")}
+                    {regions
+                      .map((region) =>
+                        t(`${industry.key}.RegionLabels.${region}`)
+                      )
+                      .join(" · ")}
                   </p>
                 </Link>
               </StaggerItem>

@@ -60,7 +60,10 @@
     "Eyebrow": "Our Products",
     "Title": "Metallurgy & Steel Raw Materials",
     "Description": "Comprehensive export portfolio for integrated steel plants, foundries, and industrial procurement worldwide.",
-    "ViewAllProducts": "View All Products"
+    "ViewAllProducts": "View All Products",
+    "RawMaterials": "RawMaterials",
+    "ProductPortfolio": "Product Portfolio",
+    "EPCcontractors": "Nine core product categories serving integrated steel plants, foundries, EPC contractors, and global industrial procurement teams."
   },
   "Products": {
     "PigIron": {
@@ -264,7 +267,118 @@
   "industries": {
     "Eyebrow": "Industries Served",
     "Title": "Powering Global Industrial Supply Chains",
-    "Description": "From integrated steel plants to EPC contractors — tailored metallurgical supply solutions for every sector."
+    "Description": "From integrated steel plants to EPC contractors — tailored metallurgical supply solutions for every sector.",
+
+    "SteelManufacturing": {
+      "Title": "Steel Manufacturing",
+      "Description": "Expanding partnerships with regional steel manufacturers and pipe producers.",
+      "RegionLabels": {
+        "Global": "Global",
+        "MiddleEast": "Middle East",
+        "Asia": "Asia"
+      },
+      "Regions": [
+        "Global",
+        "MiddleEast",
+        "Asia"
+      ]
+    },
+    "FoundriesCastings": {
+      "Title": "Foundries & Castings",
+      "Description": "Foundry-grade pig iron, ferro silicon, and inoculants with tight chemistry control for automotive and industrial castings.",
+      "RegionLabels": {
+        "Europe": "Europe",
+        "India": "India",
+        "Africa": "Africa"
+      },
+      
+      "Regions": [
+        "Europe",
+        "India",
+        "Africa"
+      ]
+    },
+    "EPCContractors": {
+      "Title": "EPC Contractors",
+      "Description": "Project-based supply of steel pipes, structural materials, and bulk raw materials aligned with construction milestones.",
+      "RegionLabels": {
+        "MiddleEast": "Middle East",
+        "AsiaPacific": "Asia-Pacific",
+        "Africa": "Africa"
+      },
+      "Regions": [
+        "MiddleEast",
+        "Africa",
+        "AsiaPacific"
+      ]
+    },
+    "Infrastructure": {
+      "Title": "Infrastructure",
+      "Description": "Large-volume procurement for bridges, ports, and energy infrastructure with consolidated logistics management.",
+      "RegionLabels": {
+        "India": "India",
+        "MiddleEast": "Middle East",
+        "Africa": "Africa"
+      },
+      "Regions": [
+        "India",
+        "Africa",
+        "MiddleEast"
+      ]
+    },
+    "IndustrialProcurement":{
+      "Title": "Industrial Procurement",
+      "Description": "Centralized sourcing for multi-site procurement teams with contract pricing and inventory management support.",
+      "RegionLabels": {
+        "Global": "Global"
+      },
+      "Regions": [
+        "Global"
+      ]
+    },
+    "GalvanizingZinc":{
+      "Title": "Galvanizing & Zinc",
+      "Description": "Zinc ore and concentrate supply chains optimized for smelters and hot-dip galvanizing operations.",
+      "RegionLabels": {
+        "Europe": "Europe",
+        "Asia": "Asia"
+      },
+      "Regions": [
+        "Europe",
+        "Asia"
+      ]
+    },
+
+    "Refractories":{
+      "Title": "Refractories",
+      "Description": "Natural graphite, bauxite, and industrial minerals for refractory brick and lining manufacturers.",
+      "RegionLabels": {
+        "Global": "Global"
+      },
+      "Regions": [
+        "Global"
+      ]
+    },
+
+    "OilGas":{
+      "Title": "Oil & Gas",
+      "Description": "Natural graphite, bauxite, and industrial minerals for refractory brick and lining manufacturers.",
+      "RegionLabels": {
+        "MiddleEast": "Middle East",
+        "Africa": "Africa"
+      },
+      "Regions": [
+        "MiddleEast",
+        "Africa"
+      ]
+    },
+
+    "Tailored": "Tailored metallurgical supply solutions for every segment of the global steel and industrial ecosystem.",
+    "Industrie": "Industries",
+    "IndustriesWeServe": "Industries We Serve",
+    "logistics": "Deep industry knowledge ensures the right grades, packaging, and logistics for your operational requirements.",
+    "SectorExpertise": "Sector Expertise",
+    "KeyMarkets": "Key Markets"
   },
   "export": {
     "Eyebrow": "Global Export Network",

@@ -16,7 +16,6 @@ export interface Industry {
   key: string;
   description: string;
   icon: string;
-  regions: string[];
 }
 
 export interface BlogPost {

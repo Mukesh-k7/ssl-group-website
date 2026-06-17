@@ -4,6 +4,7 @@ import { ProductsGridSection } from "@/sections/products-grid";
 import { CtaBannerSection } from "@/sections/cta-banner";
 import { PageBreadcrumbJsonLd } from "@/components/shared/page-breadcrumb-jsonld";
 import { createPageMetadata } from "@/lib/seo";
+import { useTranslations } from "next-intl";
 
 export const metadata: Metadata = createPageMetadata({
   title: "Products",
@@ -13,6 +14,7 @@ export const metadata: Metadata = createPageMetadata({
 });
 
 export default function ProductsPage() {
+  const t = useTranslations("products")
   return (
     <>
       <PageBreadcrumbJsonLd
@@ -22,9 +24,9 @@ export default function ProductsPage() {
         ]}
       />
       <PageHero
-        eyebrow="Product Portfolio"
-        title="Metallurgy & Steel Raw Materials"
-        description="Nine core product categories serving integrated steel plants, foundries, EPC contractors, and global industrial procurement teams."
+        eyebrow= {t("ProductPortfolio")}
+        title={t("RawMaterials")}
+        description={t("EPCcontractors")}
       />
       <ProductsGridSection showAllLink={false} />
       <CtaBannerSection

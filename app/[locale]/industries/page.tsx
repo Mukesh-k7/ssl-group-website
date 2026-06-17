@@ -16,6 +16,7 @@ import { CtaBannerSection } from "@/sections/cta-banner";
 import { industries } from "@/data/industries";
 import { PageBreadcrumbJsonLd } from "@/components/shared/page-breadcrumb-jsonld";
 import { createPageMetadata } from "@/lib/seo";
+import { useTranslations } from "next-intl";
 
 export const metadata: Metadata = createPageMetadata({
   title: "Industries Served",
@@ -36,6 +37,7 @@ const iconMap: Record<string, LucideIcon> = {
 };
 
 export default function IndustriesPage() {
+  const t = useTranslations("industries")
   return (
     <>
       <PageBreadcrumbJsonLd
@@ -45,9 +47,9 @@ export default function IndustriesPage() {
         ]}
       />
       <PageHero
-        eyebrow="Industries"
-        title="Industries We Serve"
-        description="Tailored metallurgical supply solutions for every segment of the global steel and industrial ecosystem."
+        eyebrow={t("Industrie")}
+        title={t("IndustriesWeServe")}
+        description={t("Tailored")}
       />
       <AnimatedSection
         className="
@@ -61,8 +63,8 @@ export default function IndustriesPage() {
           "
         >
           <SectionHeader
-            title="Sector Expertise"
-            description="Deep industry knowledge ensures the right grades, packaging, and logistics for your operational requirements."
+            title={t("SectorExpertise")}
+            description={t("logistics")}
             align="center"
           />
           <div
@@ -73,6 +75,9 @@ export default function IndustriesPage() {
           >
             {industries.map((industry) => {
               const Icon = iconMap[industry.icon] ?? Factory;
+              const regions = t.raw(
+                `${industry.key}.Regions`
+              ) as string[];
               return (
                 <article
                   key={industry.slug}
@@ -98,7 +103,7 @@ export default function IndustriesPage() {
                         h-7 w-7
                         text-[#c96a00]
                       "
-                      /
+                    /
                     >
                   </div>
                   <div>
@@ -107,7 +112,7 @@ export default function IndustriesPage() {
                         font-heading font-bold text-xl text-white
                       "
                     >
-                      {industry.name}
+                      {t(`${industry.key}.Title`)}
                     </h2>
                     <p
                       className="
@@ -115,7 +120,7 @@ export default function IndustriesPage() {
                         leading-relaxed text-metallic/90
                       "
                     >
-                      {industry.description}
+                      {t(`${industry.key}.Description`)}
                     </p>
                     <p
                       className="
@@ -123,7 +128,11 @@ export default function IndustriesPage() {
                         text-sm text-[#c96a00]
                       "
                     >
-                      Key Markets: {industry.regions.join(", ")}
+                       {t("KeyMarkets")}: {regions
+                      .map((region) =>
+                        t(`${industry.key}.RegionLabels.${region}`)
+                      )
+                      .join(" · ")} 
                     </p>
                   </div>
                 </article>

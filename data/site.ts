@@ -101,22 +101,14 @@ export const testimonials: Testimonial[] = [
 export const exportRegions = [
   {
     key: "MiddleEast",
-    countries: "MiddleEast.Countries",
-    descriptionKey: "MiddleEast.Description",
   },
   {
     key: "Africa",
-    countries: "Africa.Countries",
-    description: "Africa.Description",
   },
   {
     key: "Europe",
-    countries: "Europe.Countries",
-    description: "Europe.Description",
   },
   {
     key: "AsiaPacific",
-    countries: "AsiaPacific.Countries",
-    description: "AsiaPacific.Description",
   },
 ];
