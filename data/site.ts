@@ -1,5 +1,6 @@
 import type { Testimonial } from "@/types";
 import { getAbsoluteUrl } from "@/lib/site-url";
+import { Warehouse, Ship, Container } from "lucide-react";
 
 export const company = {
   name: "SSL Group",
@@ -78,15 +79,15 @@ export const testimonials: Testimonial[] = [
     author: "Khalid Al-Rashid",
     role: "Chief Procurement Officer",
     company: "Gulf Steel Industries",
-    region: "UAE",
+    key: "UAE",
   },
   {
     quote:
       "Their pig iron grades meet our foundry specifications without deviation. Documentation and LC compliance are enterprise-grade.",
-    author: "Elena Vasquez",
+    author: "Anirudh Tandon",
     role: "Materials Director",
     company: "EuroCast Foundries",
-    region: "Spain",
+    key: "India",
   },
   {
     quote:
@@ -94,7 +95,7 @@ export const testimonials: Testimonial[] = [
     author: "James Okafor",
     role: "VP Supply Chain",
     company: "Continental Steel Works",
-    region: "Nigeria",
+    key: "Tanzania",
   },
 ];
 
@@ -111,4 +112,20 @@ export const exportRegions = [
   {
     key: "AsiaPacific",
   },
+];
+
+export const facilities = [
+  {
+    icon: Warehouse,
+    key: "BondedWarehousing",
+  },
+  {
+    icon: Ship,
+    key: "VesselLoading",
+  },
+  {
+    icon: Container,
+    key: "ContainerBulk",
+  },
+
 ];

@@ -29,7 +29,7 @@ export interface BlogPost {
 }
 
 export interface Certification {
-  name: string;
+  key: string;
   issuer: string;
   description: string;
   year: string;
@@ -58,11 +58,16 @@ export interface Testimonial {
   author: string;
   role: string;
   company: string;
-  region: string;
+  key: string;
 }
 
 export interface Region {
   name: string;
   countries: string[];
   description: string;
+}
+
+interface CtaBannerProps {
+  title?: string;
+  description?: string;
 }

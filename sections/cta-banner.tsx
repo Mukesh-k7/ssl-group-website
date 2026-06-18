@@ -5,16 +5,12 @@ import { motion } from "framer-motion";
 import { ArrowRight, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { company } from "@/data/site";
+import { useTranslations } from "next-intl";
 
-interface CtaBannerProps {
-  title?: string;
-  description?: string;
-}
+export function CtaBannerSection( ) {
 
-export function CtaBannerSection({
-  title = "Ready to Source Premium Metallurgy Materials?",
-  description = "Connect with our export desk for specifications, pricing, vessel scheduling, and Incoterms consultation.",
-}: CtaBannerProps) {
+
+  const t = useTranslations()
   return (
     <section
       className="
@@ -62,14 +58,14 @@ export function CtaBannerSection({
                 font-heading font-bold text-3xl text-white md:text-4xl
               "
             >
-              {title}
+              {t("title")}
             </h2>
             <p
               className="
                 mt-4
                 text-lg text-metallic/90
               "
-            >{description}</p>
+            >{t("description")}</p>
             <div
               className="
                 flex flex-wrap
@@ -79,7 +75,7 @@ export function CtaBannerSection({
             >
               <Button size="lg" asChild className="bg-[#007aff94] hover:bg-[#007affc9]">
                 <Link href="/contact">
-                  Submit Export Inquiry
+                  {t("SubmitExporInquiry")}
                   <ArrowRight
                     className="
                       h-5 w-5

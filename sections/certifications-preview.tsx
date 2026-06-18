@@ -10,8 +10,10 @@ import {
 } from "@/components/shared/animated-section";
 import { Button } from "@/components/ui/button";
 import { certifications } from "@/data/certifications";
+import { useTranslations } from "next-intl";
 
 export function CertificationsPreviewSection() {
+  const t = useTranslations("Certifications")
   return (
     <AnimatedSection
       id="certifications-preview"
@@ -27,9 +29,9 @@ export function CertificationsPreviewSection() {
         "
       >
         <SectionHeader
-          eyebrow="Certifications"
-          title="Compliance & Quality Assurance"
-          description="Internationally recognized standards underpinning every export shipment and supply chain operation."
+          eyebrow={t("Eyebrow")} 
+          title={t("Title")}
+          description={t("Description")}
         />
         <StaggerGrid
           className="
@@ -38,7 +40,7 @@ export function CertificationsPreviewSection() {
           "
         >
           {certifications.map((cert) => (
-            <StaggerItem key={cert.name}>
+            <StaggerItem key={cert.key}>
               <div
                 className="
                   flex items-start
@@ -70,18 +72,18 @@ export function CertificationsPreviewSection() {
                     className="
                       font-heading font-semibold text-white
                     "
-                  >{cert.name}</h3>
+                  >{t(`${cert.key}.Title`)}</h3>
                   <p
                     className="
                       text-xs
                     "
-                  >{cert.issuer} · {cert.year}</p>
+                  >{t(`${cert.key}.issuer`)} · {cert.year}</p>
                   <p
                     className="
                       mt-1
                       text-sm text-metallic/80
                     "
-                  >{cert.description}</p>
+                  >{t(`${cert.key}.Description`)}</p>
                 </div>
               </div>
             </StaggerItem>
@@ -100,7 +102,7 @@ export function CertificationsPreviewSection() {
             "
             asChild
           >
-            <Link href="/certifications">View All Certifications</Link>
+            <Link href="/certifications"> {t("ViewAllCertifications")}</Link>
           </Button>
         </div>
       </div>

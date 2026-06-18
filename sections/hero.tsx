@@ -156,13 +156,13 @@ export function HeroSection() {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="
                 font-heading font-bold
-                text-4xl text-white sm:text-5xl md:text-6xl lg:text-7xl
-                leading-[1.1] tracking-tight
+                text-4xl text-white sm:text-5xl md:text-6xl lg:text-5xl
+                 tracking-tight 
               "
             >
 
-              {t("GlobalMetallurgy")}.
-              <span
+              {t("GlobalMetallurgy")} {t("TrustedSupply")}
+              {/* <span
                 className="
                   block
                   text-transparent
@@ -170,8 +170,8 @@ export function HeroSection() {
                   to-metallic
                 "
               >
-                {t("TrustedSupply")}.
-              </span>
+                .
+              </span> */}
 
 
             </motion.h1>

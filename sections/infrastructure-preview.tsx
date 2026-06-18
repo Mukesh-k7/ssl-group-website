@@ -1,29 +1,16 @@
 "use client";
 
 import Link from "next/link";
-import { Warehouse, Ship, Container } from "lucide-react";
 import { AnimatedSection, SectionHeader } from "@/components/shared/animated-section";
 import { Button } from "@/components/ui/button";
+import { useTranslations } from "next-intl";
+import { facilities } from "@/data/site";
 
-const facilities = [
-  {
-    icon: Warehouse,
-    title: "Bonded Warehousing",
-    description: "50,000+ MT capacity across Ghaziabad, Kandla, and Vizag port facilities.",
-  },
-  {
-    icon: Ship,
-    title: "Vessel Loading",
-    description: "Dedicated berth access with 5,000–75,000 MT parcel loading capability.",
-  },
-  {
-    icon: Container,
-    title: "Container & Bulk",
-    description: "Flexible packaging — bulk vessels, containers, and jumbo bag dispatch.",
-  },
-];
+
 
 export function InfrastructurePreviewSection() {
+  const t = useTranslations("infrastructure");
+
   return (
     <AnimatedSection
       id="infrastructure"
@@ -40,9 +27,9 @@ export function InfrastructurePreviewSection() {
         "
       >
         <SectionHeader
-          eyebrow="Infrastructure"
-          title="World-Class Export Infrastructure"
-          description="Port-side facilities, quality labs, and logistics networks engineered for industrial-scale shipments."
+          eyebrow= {t("Eyebrow")}
+          title={t("Title")}
+          description={t("Description")}
         />
         <div
           className="
@@ -52,7 +39,7 @@ export function InfrastructurePreviewSection() {
         >
           {facilities.map((item) => (
             <div
-              key={item.title}
+              key={item.key}
               className="
                 p-8
                 text-center
@@ -71,13 +58,13 @@ export function InfrastructurePreviewSection() {
                 className="
                   font-heading font-semibold text-lg text-white
                 "
-              >{item.title}</h3>
+              >{t(`${item.key}.Title`)}</h3>
               <p
                 className="
                   mt-2
                   text-sm text-metallic/80
                 "
-              >{item.description}</p>
+              >{t(`${item.key}.Description`)}</p>
             </div>
           ))}
         </div>
@@ -94,7 +81,7 @@ export function InfrastructurePreviewSection() {
             "
             asChild
           >
-            <Link href="/infrastructure">Explore Infrastructure</Link>
+            <Link href="/infrastructure">{t("ExploreInfrastructure")}</Link>
           </Button>
         </div>
       </div>

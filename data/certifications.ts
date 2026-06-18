@@ -2,37 +2,37 @@ import type { Certification, TimelineEvent } from "@/types";
 
 export const certifications: Certification[] = [
   {
-    name: "ISO 9001:2015",
+    key: "ISO9001:2015",
     issuer: "Bureau Veritas",
     description: "Quality management systems for export operations and supply chain control.",
     year: "2019",
   },
   {
-    name: "ISO 14001:2015",
+    key: "ISO14001:2015",
     issuer: "TÜV SÜD",
     description: "Environmental management across warehousing, logistics, and sourcing operations.",
     year: "2021",
   },
   {
-    name: "OHSAS 45001",
+    key: "OHSAS45001",
     issuer: "DNV",
     description: "Occupational health and safety standards at processing and port facilities.",
     year: "2020",
   },
   {
-    name: "Responsible Minerals Initiative",
+    key: "ResponsibleMineralsInitiative",
     issuer: "RMI",
     description: "Conflict-free sourcing compliance for industrial minerals and ore exports.",
     year: "2022",
   },
   {
-    name: "FIEO Member",
+    key: "FIEOMember",
     issuer: "Federation of Indian Export Organisations",
     description: "Recognized Indian export house with verified trade credentials.",
     year: "2005",
   },
   {
-    name: "DGFT Registered",
+    key: "DGFTRegistered",
     issuer: "Directorate General of Foreign Trade",
     description: "Authorized star export house status with multi-product export licensing.",
     year: "2008",

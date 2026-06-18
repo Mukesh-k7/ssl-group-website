@@ -49,7 +49,7 @@
   "about": {
     "title": "About SSL Group",
     "description": "SSL Group is a trusted exporter of high-quality Metallurgical products serving global markets with reliability and excellence",
-    "IndiaPremierMetallurgyExportHouse": "India's Premier Metallurgy ExportHouse",
+    "IndiaPremierMetallurgyExportHouse": "India's Premier Metallurgy Export House",
     "description1": "For over two decades, SSL Group has supplied the global steel industry with export-grade pig iron, ferro alloys, carbon products, and industrial minerals. Our integrated sourcing, bonded warehousing, and port-side logistics deliver the consistency that enterprise procurement demands.",
     "description2": "From Middle East steel giants to African foundries and European distributors, we are the single-window partner for metallurgical raw material excellence.",
     "OurStory": "Our Story",
@@ -268,7 +268,6 @@
     "Eyebrow": "Industries Served",
     "Title": "Powering Global Industrial Supply Chains",
     "Description": "From integrated steel plants to EPC contractors — tailored metallurgical supply solutions for every sector.",
-
     "SteelManufacturing": {
       "Title": "Steel Manufacturing",
       "Description": "Expanding partnerships with regional steel manufacturers and pipe producers.",
@@ -291,7 +290,6 @@
         "India": "India",
         "Africa": "Africa"
       },
-      
       "Regions": [
         "Europe",
         "India",
@@ -326,7 +324,7 @@
         "MiddleEast"
       ]
     },
-    "IndustrialProcurement":{
+    "IndustrialProcurement": {
       "Title": "Industrial Procurement",
       "Description": "Centralized sourcing for multi-site procurement teams with contract pricing and inventory management support.",
       "RegionLabels": {
@@ -336,7 +334,7 @@
         "Global"
       ]
     },
-    "GalvanizingZinc":{
+    "GalvanizingZinc": {
       "Title": "Galvanizing & Zinc",
       "Description": "Zinc ore and concentrate supply chains optimized for smelters and hot-dip galvanizing operations.",
       "RegionLabels": {
@@ -348,8 +346,7 @@
         "Asia"
       ]
     },
-
-    "Refractories":{
+    "Refractories": {
       "Title": "Refractories",
       "Description": "Natural graphite, bauxite, and industrial minerals for refractory brick and lining manufacturers.",
       "RegionLabels": {
@@ -359,8 +356,7 @@
         "Global"
       ]
     },
-
-    "OilGas":{
+    "OilGas": {
       "Title": "Oil & Gas",
       "Description": "Natural graphite, bauxite, and industrial minerals for refractory brick and lining manufacturers.",
       "RegionLabels": {
@@ -372,7 +368,6 @@
         "Africa"
       ]
     },
-
     "Tailored": "Tailored metallurgical supply solutions for every segment of the global steel and industrial ecosystem.",
     "Industrie": "Industries",
     "IndustriesWeServe": "Industries We Serve",
@@ -433,13 +428,86 @@
     "Regional": "Regional Export Desks",
     "Teams": "Dedicated teams with local market knowledge, language support, and timezone-aligned responsiveness."
   },
-  "certifications": {
-    "title": "Certifications",
-    "description": "Certified quality standards ensuring trust and compliance."
+  "Certifications": {
+    "Eyebrow": "Certifications",
+    "Title": "Compliance & Quality Assurance",
+    "Description": "Internationally recognized standards underpinning every export shipment and supply chain operation.",
+    "ISO9001:2015": {
+      "Title": "ISO 9001:2015",
+      "Description": "Quality management systems for export operations and supply chain control.",
+      "issuer": "Bureau Veritas"
+    },
+    "ISO14001:2015": {
+      "Title": "ISO 14001:2015",
+      "Description": "Environmental management across warehousing, logistics, and sourcing operations.",
+      "issuer": "TÜV SÜD"
+    },
+    "OHSAS45001": {
+      "Title": "OHSAS 45001",
+      "Description": "Occupational health and safety standards at processing and port facilities.",
+      "issuer": "DNV"
+    },
+    "ResponsibleMineralsInitiative": {
+      "Title": "Responsible Minerals Initiative",
+      "Description": "Conflict-free sourcing compliance for industrial minerals and ore exports.",
+      "issuer": "RMI"
+    },
+    "FIEOMember": {
+      "Title": "FIEO Member",
+      "Description": "Recognized Indian export house with verified trade credentials.",
+      "issuer": "Federation of Indian Export Organisations"
+    },
+    "DGFTRegistered": {
+      "Title": "DGFT Registered",
+      "Description": "Authorized star export house status with multi-product export licensing.",
+      "issuer": "Directorate General of Foreign Trade"
+    },
+    "ViewAllCertifications": "View Al Certifications"
   },
   "infrastructure": {
-    "title": "Infrastructure",
-    "description": "State-of-the-art manufacturing and processing facilities."
+    "Eyebrow": "Infrastructure",
+    "Title": "World-Class Export Infrastructure",
+    "Description": "Port-side facilities, quality labs, and logistics networks engineered for industrial-scale shipments.",
+    "BondedWarehousing": {
+      "Title": "Bonded Warehousing",
+      "Description": "50,000+ MT capacity across Ghaziabad, Kandla, and Vizag port facilities."
+    },
+    "VesselLoading": {
+      "Title": "VesselLoading",
+      "Description": "Dedicated berth access with 5,000–75,000 MT parcel loading capability."
+    },
+    "ContainerBulk": {
+      "Title": "Container & Bulk",
+      "Description": "Flexible packaging — bulk vessels, containers, and jumbo bag dispatch."
+    },
+    "ExploreInfrastructure": "Explore Infrastructure"
+  },
+  "testimonials": {
+    "Eyebrow": "Client Trust",
+    "Title": "Trusted by Global Steel Leaders",
+    "Description": "Long-term partnerships with procurement teams across the Middle East, Africa, and Europe.",
+    "UAE": {
+      "Title": "UAE",
+      "quote": "SSL Group has been our primary ferro alloy supplier for three integrated steel plants. Consistency in chemistry and on-time vessel loading is exceptional.",
+      "author": "Khalid Al-Rashid",
+      "role": "Chief Procurement Officer",
+      "company": "Gulf Steel Industries"
+    },
+    "India": {
+      "Title": "India",
+      "author": "Anirudh Tandon",
+      "quote": "Their pig iron grades meet our foundry specifications without deviation. Documentation and LC compliance are enterprise-grade.",
+      "author": "Anirudh Tandon",
+      "role": "Materials Director",
+      "company": "EuroCast Foundries"
+    },
+    "Tanzania": {
+      "Title": "Tanzania",
+      "quote": "From zinc ore to natural graphite, SSL Group consolidates our raw material basket with transparent pricing and reliable African corridor logistics.",
+      "author": "James Okafor",
+      "role": "VP Supply Chain",
+      "company": "Continental Steel Works"
+    }
   },
   "contact": {
     "title": "Contact Us",
@@ -462,5 +530,8 @@
     "annualExportVolume": "Annual Export Volume",
     "globalPartners": "Global Partners"
   },
-  "ViewAllProducts": "View Products"
+  "ViewAllProducts": "View Products",
+  "title": "Ready to Source Premium Metallurgy Materials?",
+  "description": "Connect with our export desk for specifications, pricing, vessel scheduling, and Incoterms consultation.",
+  "SubmitExporInquiry": "Submit Export Inquiry"
 }
