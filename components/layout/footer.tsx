@@ -8,7 +8,8 @@ import { useTranslations } from "next-intl";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
-  const t = useTranslations('navigation');
+  const t = useTranslations();
+
 
   return (
     <footer
@@ -64,8 +65,7 @@ export function Footer() {
                 text-sm text-metallic/80 leading-relaxed
               "
             >
-              India's trusted metallurgy and steel industry raw material
-              exporter. Serving global steel manufacturers since{" "}
+              {t("companyInfo")}{" "}
               {company.founded}.
             </p>
             <a
@@ -88,7 +88,7 @@ export function Footer() {
                 uppercase
               "
             >
-              Company
+              {t("Company")}
             </h3>
             <ul
               className="
@@ -104,7 +104,7 @@ export function Footer() {
                       transition-colors
                     "
                   >
-                    {t(item.key)}
+                    {t(`navigation.${item.key}`)}
                   </Link>
                 </li>
               ))}
@@ -119,7 +119,7 @@ export function Footer() {
                 uppercase
               "
             >
-              Products
+              {t("Productss")}
             </h3>
             <ul
               className="
@@ -135,7 +135,7 @@ export function Footer() {
                       transition-colors
                     "
                   >
-                    {product.key}
+                    {t(`Products.${product.key}.Name`)}
                   </Link>
                 </li>
               ))}
@@ -150,7 +150,7 @@ export function Footer() {
                 uppercase
               "
             >
-              Contact
+              {t("Contactss")}
             </h3>
             <ul
               className="
@@ -229,7 +229,7 @@ export function Footer() {
                 gap-2
               "
             >
-              <h2>Follow on Social Media</h2>
+              <h2>{t("SocialMedia")}</h2>
               <ArrowUpRight
                 className="
                   w-3 h-3
@@ -447,7 +447,7 @@ export function Footer() {
           "
         >
           <p>
-            © {currentYear} {company.legalName}. All rights reserved.
+            © {currentYear} {company.legalName}. {t("Reserved")}
           </p>
           <div
             className="
@@ -461,7 +461,7 @@ export function Footer() {
                 hover:text-white
               "
             >
-              Privacy Policy
+               {t("PrivacyPolicy")}
             </Link>
             <Link
               href="/contact"
@@ -469,7 +469,7 @@ export function Footer() {
                 hover:text-white
               "
             >
-              Terms of Trade
+             {t("Trade")} 
             </Link>
           </div>
         </div>

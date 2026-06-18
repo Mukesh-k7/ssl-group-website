@@ -15,6 +15,7 @@ interface ProductCardProps {
 export function ProductCard({ product }: ProductCardProps) {
 
   const t = useTranslations();
+  
 
   return (
     <motion.div whileHover={{ y: -6 }} transition={{ duration: 0.3 }}>

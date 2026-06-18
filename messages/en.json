@@ -56,6 +56,7 @@
     "Since": "Since",
     "GhaziabadGlobalExportOperations": "Ghaziabad · Global Export Operations"
   },
+
   "products": {
     "Eyebrow": "Our Products",
     "Title": "Metallurgy & Steel Raw Materials",
@@ -65,6 +66,7 @@
     "ProductPortfolio": "Product Portfolio",
     "EPCcontractors": "Nine core product categories serving integrated steel plants, foundries, EPC contractors, and global industrial procurement teams."
   },
+
   "Products": {
     "PigIron": {
       "Name": "Pig Iron",
@@ -238,11 +240,13 @@
     },
     "ViewAllProducts": "View Products"
   },
+
   "Product": {
     "Overview": "Overview",
     "Applications": "Applications",
     "TechnicalSpecifications": "Technical Specifications"
   },
+
   "whychooseus": {
     "Eyebrow": "Why SSL Group",
     "Title": "Enterprise-Grade Export Partnership",
@@ -497,7 +501,6 @@
       "Title": "India",
       "author": "Anirudh Tandon",
       "quote": "Their pig iron grades meet our foundry specifications without deviation. Documentation and LC compliance are enterprise-grade.",
-      "author": "Anirudh Tandon",
       "role": "Materials Director",
       "company": "EuroCast Foundries"
     },
@@ -533,5 +536,13 @@
   "ViewAllProducts": "View Products",
   "title": "Ready to Source Premium Metallurgy Materials?",
   "description": "Connect with our export desk for specifications, pricing, vessel scheduling, and Incoterms consultation.",
-  "SubmitExporInquiry": "Submit Export Inquiry"
+  "SubmitExporInquiry": "Submit Export Inquiry",
+  "companyInfo": "India's trusted metallurgy and steel industry raw material exporter. Serving global steel manufacturers since",
+  "Company": "Company",
+  "Productss": "Products",
+  "Contactss": "Contacts",
+  "SocialMedia": "Follow on Social Media",
+  "Reserved": "All rights reserved.",
+  "PrivacyPolicy": "Privacy Policy",
+  "Trade": "Terms of Trade"
 }
