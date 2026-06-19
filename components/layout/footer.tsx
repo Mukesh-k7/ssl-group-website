@@ -180,9 +180,9 @@ export function Footer() {
                   >
                 </Link>
                 <span>
-                  {company.address.line1}
+                  {t("Address1")}
                   <br />
-                  {company.address.line2}
+                  {t("Address2")}
                 </span>
               </li>
               <li>
@@ -461,7 +461,7 @@ export function Footer() {
                 hover:text-white
               "
             >
-               {t("PrivacyPolicy")}
+              {t("PrivacyPolicy")}
             </Link>
             <Link
               href="/contact"
@@ -469,7 +469,7 @@ export function Footer() {
                 hover:text-white
               "
             >
-             {t("Trade")} 
+              {t("Trade")}
             </Link>
           </div>
         </div>

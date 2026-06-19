@@ -20,7 +20,7 @@ export interface Industry {
 
 export interface BlogPost {
   slug: string;
-  title: string;
+  key: string;
   excerpt: string;
   content: string;
   date: string;

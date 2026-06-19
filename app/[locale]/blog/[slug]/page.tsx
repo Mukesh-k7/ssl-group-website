@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { CtaBannerSection } from "@/sections/cta-banner";
 import { blogPosts, getBlogPostBySlug } from "@/data/blog";
 import { articleSchema, breadcrumbSchema, createPageMetadata } from "@/lib/seo";
+import { getTranslations } from "next-intl/server";
 
 interface BlogPostPageProps {
   params: Promise<{ slug: string }>;
@@ -20,7 +21,7 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
   const post = getBlogPostBySlug(slug);
   if (!post) return {};
   return createPageMetadata({
-    title: post.title,
+    title: post.key,
     description: post.excerpt,
     path: `/blog/${post.slug}`,
     type: "article",
@@ -32,6 +33,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
   const { slug } = await params;
   const post = getBlogPostBySlug(slug);
   if (!post) notFound();
+  const t = await getTranslations("blog");
 
   return (
     <>
@@ -40,7 +42,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(
             articleSchema({
-              title: post.title,
+              title: post.key,
               description: post.excerpt,
               slug: post.slug,
               date: post.date,
@@ -56,7 +58,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
             breadcrumbSchema([
               { name: "Home", path: "/" },
               { name: "Insights", path: "/blog" },
-              { name: post.title, path: `/blog/${post.slug}` },
+              { name: post.key, path: `/blog/${post.slug}` },
             ])
           ),
         }}
@@ -86,7 +88,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                 "
                 /
               >
-              Back to Insights
+               {t("Insights")}
             </Link>
           </Button>
           <span
@@ -94,7 +96,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
               text-sm text-[#c35303d1] font-semibold uppercase tracking-wider
             "
           >
-            {post.category}
+            {t(`${post.key}.category`)}
           </span>
           <h1
             className="
@@ -102,7 +104,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
               font-heading font-bold text-4xl text-white md:text-5xl
             "
           >
-            {post.title}
+            {t(`${post.key}.Title`)}
           </h1>
           <div
             className="
@@ -142,7 +144,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                 "
                 /
               >
-              {post.readTime} read
+             {t(`${post.key}.readTime`)} {t("read")}
             </span>
           </div>
           <p
@@ -150,7 +152,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
               mt-8
               text-xl text-metallic/90 leading-relaxed
             "
-          >{post.excerpt}</p>
+          >{t(`${post.key}.excerpt`)} </p>
           <div
             className="
               max-w-none
@@ -162,16 +164,15 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
               className="
                 text-lg text-metallic/80 leading-relaxed
               "
-            >{post.content}</p>
+            >{t(`${post.key}.content`)} </p>
             <p
               className="
                 mt-4
                 text-lg text-metallic/80 leading-relaxed
               "
             >
-              For detailed market reports and procurement consultations, contact our export
-              desk at export@sslgroup.in. Our metallurgy specialists provide grade-specific
-              guidance tailored to your production requirements.
+              {t("Detailed")}
+              
             </p>
           </div>
         </div>

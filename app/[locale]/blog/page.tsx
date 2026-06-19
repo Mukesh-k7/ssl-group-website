@@ -7,6 +7,7 @@ import { CtaBannerSection } from "@/sections/cta-banner";
 import { blogPosts } from "@/data/blog";
 import { PageBreadcrumbJsonLd } from "@/components/shared/page-breadcrumb-jsonld";
 import { createPageMetadata } from "@/lib/seo";
+import { useTranslations } from "next-intl";
 
 export const metadata: Metadata = createPageMetadata({
   title: "Insights & Blog",
@@ -16,6 +17,7 @@ export const metadata: Metadata = createPageMetadata({
 });
 
 export default function BlogPage() {
+  const t = useTranslations("blog")
   return (
     <>
       <PageBreadcrumbJsonLd
@@ -25,9 +27,9 @@ export default function BlogPage() {
         ]}
       />
       <PageHero
-        eyebrow="Insights"
-        title="Industry Intelligence"
-        description="Market analysis, technical procurement guides, and trade corridor updates for global steel industry professionals."
+        eyebrow={t("Eyebrow")}
+        title={t("Title")}
+        description={t("Description")}
       />
       <AnimatedSection
         className="
@@ -77,7 +79,7 @@ export default function BlogPage() {
                       tracking-wider
                     "
                   >
-                    {post.category}
+                     {t(`${post.key}.category`)}
                   </span>
                   <h2
                     className="
@@ -87,7 +89,7 @@ export default function BlogPage() {
                       group-hover:text-[#c96a00]
                     "
                   >
-                    <Link href={`/blog/${post.slug}`}>{post.title}</Link>
+                    <Link href={`/blog/${post.slug}`}>{t(`${post.key}.Title`)}</Link>
                   </h2>
                   <p
                     className="
@@ -96,7 +98,7 @@ export default function BlogPage() {
                       text-sm text-metallic/80 leading-relaxed
                     "
                   >
-                    {post.excerpt}
+                    {t(`${post.key}.excerpt`)}
                   </p>
                   <div
                     className="
@@ -141,7 +143,7 @@ export default function BlogPage() {
                           "
                           /
                         >
-                        {post.readTime}
+                        {t(`${post.key}.readTime`)}
                       </span>
                     </div>
                     <Link
@@ -152,7 +154,7 @@ export default function BlogPage() {
                         gap-1
                       "
                     >
-                      Read <ArrowRight
+                      {t("Read")} <ArrowRight
                         className="
                           h-4 w-4
                         "

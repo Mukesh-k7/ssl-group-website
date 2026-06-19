@@ -56,17 +56,15 @@
     "Since": "Since",
     "GhaziabadGlobalExportOperations": "Ghaziabad · Global Export Operations"
   },
-
   "products": {
     "Eyebrow": "Our Products",
     "Title": "Metallurgy & Steel Raw Materials",
     "Description": "Comprehensive export portfolio for integrated steel plants, foundries, and industrial procurement worldwide.",
     "ViewAllProducts": "View All Products",
-    "RawMaterials": "RawMaterials",
+    "RawMaterials": "Raw Materials",
     "ProductPortfolio": "Product Portfolio",
     "EPCcontractors": "Nine core product categories serving integrated steel plants, foundries, EPC contractors, and global industrial procurement teams."
   },
-
   "Products": {
     "PigIron": {
       "Name": "Pig Iron",
@@ -240,13 +238,11 @@
     },
     "ViewAllProducts": "View Products"
   },
-
   "Product": {
     "Overview": "Overview",
     "Applications": "Applications",
     "TechnicalSpecifications": "Technical Specifications"
   },
-
   "whychooseus": {
     "Eyebrow": "Why SSL Group",
     "Title": "Enterprise-Grade Export Partnership",
@@ -533,6 +529,46 @@
     "annualExportVolume": "Annual Export Volume",
     "globalPartners": "Global Partners"
   },
+  "blog": {
+    "Eyebrow": "Insights",
+    "Title": "Industry Intelligence",
+    "Description": "Market analysis, technical procurement guides, and trade corridor updates for global steel industry professionals.",
+    "FerroAlloy": {
+      "Title": "Global Ferro Alloy Market Outlook 2026",
+      "excerpt": "Analysis of manganese and silicon alloy pricing dynamics, supply constraints, and implications for steel procurement strategies.",
+      "content": "The global ferro alloy market enters 2026 with continued volatility in energy costs and shifting trade flows from traditional suppliers. Steel manufacturers in the Middle East and Africa are diversifying sourcing to Indian exporters with established quality track records...",
+      "category": "Market Intelligence",
+      "readTime": "6 min"
+    },
+    "PigIron": {
+      "Title": "Pig Iron Specifications: A Foundry Procurement Guide",
+      "excerpt": "Technical breakdown of foundry vs. steelmaking pig iron grades, chemistry windows, and inspection protocols for import buyers.",
+      "content": "Selecting the correct pig iron grade is critical for casting quality and furnace efficiency. This guide covers silicon ranges, sulfur limits, and the documentation required for international shipments...",
+      "category": "Technical",
+      "readTime": "8 min"
+    },
+    "SteelRawMaterials": {
+      "Title": "India–Africa Steel Raw Materials Corridor",
+      "excerpt": "How logistics optimization and trade agreements are accelerating Indian metallurgy exports to African steel markets.",
+      "content": "The India-Africa trade corridor has emerged as a strategic channel for pig iron, ferro alloys, and industrial minerals. Port infrastructure improvements in Mombasa and Lagos are reducing transit times...",
+      "category": "Trade & Logistics",
+      "readTime": "5 min"
+    },
+    "NaturalGraphite": {
+      "Title": "Natural Graphite in the EV Supply Chain",
+      "excerpt": "Flake graphite demand, purification requirements, and export compliance for battery-grade material buyers.",
+      "content": "As battery manufacturers scale production, natural graphite sourcing has become a strategic priority. Indian flake deposits offer competitive carbon content with growing processing capacity...",
+      "category": "Industry Trends",
+      "readTime": "7 min"
+    },
+    "Read": "Read More",
+
+    "Insights": "Back to Insights",
+    "Detailed": "For detailed market reports and procurement consultations, contact our export desk at export@sslgroup.in. Our metallurgy specialists provide grade-specific guidance tailored to your production requirements.",
+    "read": "read"
+  },
+
+
   "ViewAllProducts": "View Products",
   "title": "Ready to Source Premium Metallurgy Materials?",
   "description": "Connect with our export desk for specifications, pricing, vessel scheduling, and Incoterms consultation.",
@@ -544,5 +580,7 @@
   "SocialMedia": "Follow on Social Media",
   "Reserved": "All rights reserved.",
   "PrivacyPolicy": "Privacy Policy",
-  "Trade": "Terms of Trade"
+  "Trade": "Terms of Trade",
+  "Address1": "Delhi Head Office : Ground Floor, CC-23, AVANTIKA 1, Avantika Main Road, Saini Washing Center, Avantika, Ghaziabad,",
+  "Address2": "Uttar Pradesh 201015, India"
 }
