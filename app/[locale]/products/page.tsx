@@ -29,10 +29,7 @@ export default function ProductsPage() {
         description={t("EPCcontractors")}
       />
       <ProductsGridSection showAllLink={false} />
-      <CtaBannerSection
-        title="Need Custom Specifications?"
-        description="Our metallurgy team provides grade recommendations, assay reports, and sample dispatch for evaluation."
-      />
+      <CtaBannerSection />
     </>
   );
 }

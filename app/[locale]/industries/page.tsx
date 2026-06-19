@@ -141,10 +141,7 @@ export default function IndustriesPage() {
           </div>
         </div>
       </AnimatedSection>
-      <CtaBannerSection
-        title="Procurement for Your Industry?"
-        description="Speak with our sector specialists for tailored grade recommendations and contract supply programs."
-      />
+      <CtaBannerSection />
     </>
   );
 }

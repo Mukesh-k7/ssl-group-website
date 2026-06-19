@@ -66,8 +66,8 @@ export function TimelineSection() {
                 >{event.year.slice(2)}</span>
               </div>
               <div
-                className={`ml-12 md:ml-0 md:w-1/2 ${
-                  index % 2 === 0 ? "md:pr-12 md:text-right" : "md:pl-12"
+                className={`ml-12 md:ml-0 md:w-1/2 mr-[45px] p-[0px] ${
+                  index % 2 === 0 ? "md:text-right" : "md:pl-12"
                 }`}
               >
                 <span

@@ -52,7 +52,7 @@ export default function CertificationsPage() {
           >
             {certifications.map((cert) => (
               <article
-                key={cert.name}
+                key={cert.key}
                 className="
                   p-8
                   bg-gunmetal/30
@@ -71,7 +71,7 @@ export default function CertificationsPage() {
                   className="
                     font-heading font-bold text-xl text-white
                   "
-                >{cert.name}</h2>
+                >{cert.key}</h2>
                 <p
                   className="
                     mt-1
