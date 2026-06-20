@@ -296,7 +296,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
                 w-4 h-4
               "
             />
-            Back To Products
+            {t("BackToProducts")}
           </Link>
         </Button>
       </div>
