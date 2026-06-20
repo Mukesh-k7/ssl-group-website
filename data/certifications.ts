@@ -41,33 +41,33 @@ export const certifications: Certification[] = [
 
 export const timeline: TimelineEvent[] = [
   {
-    year: "2000",
-    title: "Foundation",
+    year: "2018",
+    key: "Foundation",
     description: "SSL Group established in Delhi as a metallurgical raw materials trading firm.",
   },
   {
-    year: "2004",
-    title: "Export Operations",
+    year: "2019",
+    key: "Export",
     description: "First international shipments of pig iron and ferro alloys to Middle East markets.",
   },
   {
-    year: "2010",
-    title: "Africa Expansion",
+    year: "2020",
+    key: "Africa",
     description: "Dedicated trade corridor established for West and East African steel manufacturers.",
   },
   {
-    year: "2016",
-    title: "Infrastructure Investment",
+    year: "2021",
+    key: "Infrastructure",
     description: "Bonded warehousing and port-side blending facilities commissioned at major Indian ports.",
   },
   {
-    year: "2020",
-    title: "European Network",
+    year: "2022",
+    key: "European",
     description: "Strategic distributor partnerships formed across Germany, Italy, and Spain.",
   },
   {
-    year: "2026",
-    title: "Sustainability Framework",
+    year: "2024",
+    key: "Sustainability",
     description: "ESG reporting and responsible sourcing program launched across mineral supply chains.",
   },
 ];

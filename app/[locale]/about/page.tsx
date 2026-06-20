@@ -6,7 +6,8 @@ import { StatsCounterSection } from "@/sections/stats-counter";
 import { CtaBannerSection } from "@/sections/cta-banner";
 import { PageBreadcrumbJsonLd } from "@/components/shared/page-breadcrumb-jsonld";
 import { createPageMetadata } from "@/lib/seo";
-import { company } from "@/data/site";
+import { company, Values } from "@/data/site";
+import { useTranslations } from "next-intl";
 
 export const metadata: Metadata = createPageMetadata({
   title: "About Us",
@@ -15,30 +16,10 @@ export const metadata: Metadata = createPageMetadata({
   path: "/about",
 });
 
-const values = [
-  {
-    title: "Integrity in Trade",
-    description:
-      "Transparent pricing, documented compliance, and ethical sourcing across every transaction.",
-  },
-  {
-    title: "Technical Excellence",
-    description:
-      "Metallurgical expertise guiding grade selection, specification alignment, and quality assurance.",
-  },
-  {
-    title: "Global Reliability",
-    description:
-      "On-time vessel loading, consistent chemistry, and responsive export desk support worldwide.",
-  },
-  {
-    title: "Sustainable Growth",
-    description:
-      "Responsible minerals initiative compliance and ESG-aligned supply chain development.",
-  },
-];
+
 
 export default function AboutPage() {
+  const t = useTranslations("about")
   return (
     <>
       <PageBreadcrumbJsonLd
@@ -48,9 +29,9 @@ export default function AboutPage() {
         ]}
       />
       <PageHero
-        eyebrow="About SSL Group"
-        title="Forging Global Metallurgy Partnerships"
-        description={`Since ${company.founded}, SSL Group has grown from a Delhi trading house into a premier international exporter of steel industry raw materials — trusted by manufacturers across 45+ countries.`}
+        eyebrow={t("title")} 
+        title={t("Title")}
+        description={t("SSLGroup")}
       />
       <AnimatedSection
         id="about-content"
@@ -72,8 +53,8 @@ export default function AboutPage() {
           >
             <div>
               <SectionHeader
-                eyebrow="Our Mission"
-                title="Connecting Indian Metallurgy to the World"
+                eyebrow={t("Eyebrow")}
+                title={t("Globals")}
                 align="left"
               />
               <p
@@ -81,10 +62,7 @@ export default function AboutPage() {
                   text-lg text-metallic/90 leading-relaxed
                 "
               >
-                We exist to bridge the gap between India&apos;s world-class metallurgical
-                production capacity and the global steel industry&apos;s demand for reliable,
-                export-grade raw materials. Every shipment reflects our commitment to quality,
-                documentation, and long-term partnership.
+                {t("Documentation")}
               </p>
               <p
                 className="
@@ -92,9 +70,7 @@ export default function AboutPage() {
                   text-lg text-metallic/80 leading-relaxed
                 "
               >
-                Our team of metallurgists, trade specialists, and logistics coordinators
-                work as an extension of your procurement department — from specification
-                review to port delivery.
+                {t("OurTeam")}
               </p>
             </div>
             <div
@@ -103,9 +79,9 @@ export default function AboutPage() {
                 gap-4
               "
             >
-              {values.map((value) => (
+              {Values.map((value) => (
                 <div
-                  key={value.title}
+                  key={value.key}
                   className="
                     p-5
                     bg-gunmetal/30
@@ -116,13 +92,13 @@ export default function AboutPage() {
                     className="
                       font-heading font-semibold text-white
                     "
-                  >{value.title}</h3>
+                  >{value.key}  {t(`${value.key}.Title`)} </h3>
                   <p
                     className="
                       mt-2
                       text-sm text-metallic/80
                     "
-                  >{value.description}</p>
+                  >{t(`${value.key}.Description`)}</p>
                 </div>
               ))}
             </div>

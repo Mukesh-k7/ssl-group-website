@@ -7,6 +7,7 @@ import { InquiryForm } from "@/sections/inquiry-form";
 import { company } from "@/data/site";
 import { PageBreadcrumbJsonLd } from "@/components/shared/page-breadcrumb-jsonld";
 import { createPageMetadata } from "@/lib/seo";
+import { useTranslations } from "next-intl";
 
 export const metadata: Metadata = createPageMetadata({
   title: "Contact Us",
@@ -17,6 +18,7 @@ export const metadata: Metadata = createPageMetadata({
 
 export default function ContactPage() {
   const whatsappUrl = `https://wa.me/${company.whatsapp.replace(/\D/g, "")}`;
+  const t = useTranslations("contact")
 
   return (
     <>
@@ -27,9 +29,9 @@ export default function ContactPage() {
         ]}
       />
       <PageHero
-        eyebrow="Get in Touch"
-        title="Contact Our Export Desk"
-        description="Submit your inquiry for product specifications, pricing, vessel scheduling, or partnership discussions. We respond within 24 business hours."
+        eyebrow={t("Touch")}
+        title={t("Contact")}
+        description={t("Submit")}
       />
       <AnimatedSection
         className="
@@ -56,8 +58,8 @@ export default function ContactPage() {
               "
             >
               <InquiryForm
-                title="Export Inquiry Form"
-                description="Complete the form below for product quotes, specifications, and shipment planning."
+                title={t("Inquiry")}
+                description={t("Specifications")}
                 variant="export"
               />
             </div>
@@ -79,7 +81,7 @@ export default function ContactPage() {
                     font-heading font-semibold text-lg text-white
                   "
                 >
-                  Company Details
+                   {t("CompanyDetails")}
                 </h3>
                 <ul
                   className="
@@ -114,10 +116,10 @@ export default function ContactPage() {
                           block
                           text-white
                         "
-                      >{company.legalName}</strong>
-                      {company.address.line1}
+                      >{t(`${company.key}.legalName`)}</strong>
+                      {t("Address1")}
                       <br />
-                      {company.address.line2}
+                      {t("Address2")}
                     </span>
                   </li>
                   <li>
@@ -202,12 +204,12 @@ export default function ContactPage() {
                     className="
                       font-semibold text-white
                     "
-                  >WhatsApp Export Desk</p>
+                  >{t("WhatsApp")}</p>
                   <p
                     className="
                       text-sm text-metallic/80
                     "
-                  >Instant messaging for urgent inquiries</p>
+                  >{t("Instant")}</p>
                 </div>
               </a>
 
@@ -223,7 +225,7 @@ export default function ContactPage() {
                     font-heading font-semibold text-lg text-white
                   "
                 >
-                  Export Inquiry Hours
+                   {t("Export")}
                 </h3>
                 <p
                   className="
@@ -231,9 +233,9 @@ export default function ContactPage() {
                     text-sm text-metallic/80
                   "
                 >
-                  Monday – Saturday: 9:30 AM – 6:00 PM IST
+                  {t("Timing")} : 9:30 AM – 6:00 PM IST
                   <br />
-                  Sunday: Emergency shipments only
+                  {t("Emergency")}
                 </p>
               </div>
             </div>

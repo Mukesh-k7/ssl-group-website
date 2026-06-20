@@ -176,7 +176,7 @@ export function ExportMapSection() {
                 text-xs text-metallic/50
               "
             >
-              Interactive map integration available
+              {t("Interactive")}
             </p>
           </div>
         </div>

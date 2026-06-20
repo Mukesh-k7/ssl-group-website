@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
-import { Ship, FileCheck, Anchor, Truck } from "lucide-react";
 import { PageHero } from "@/components/shared/page-hero";
 import { ExportMapSection } from "@/sections/export-map";
 import { AnimatedSection, SectionHeader } from "@/components/shared/animated-section";
 import { CtaBannerSection } from "@/sections/cta-banner";
 import { PageBreadcrumbJsonLd } from "@/components/shared/page-breadcrumb-jsonld";
 import { createPageMetadata } from "@/lib/seo";
+import { services } from "@/data/site";
+import { useTranslations } from "next-intl";
 
 export const metadata: Metadata = createPageMetadata({
   title: "Export & Logistics",
@@ -14,36 +15,11 @@ export const metadata: Metadata = createPageMetadata({
   path: "/export-logistics",
 });
 
-const services = [
-  {
-    icon: Ship,
-    title: "Bulk Vessel Chartering",
-    description:
-      "5,000–75,000 MT parcel sizes with FOB, CFR, and CIF terms. Experienced chartering desk for timely laycan scheduling.",
-  },
-  {
-    icon: Anchor,
-    title: "Port Operations",
-    description:
-      "Dedicated operations at Mumbai, Kandla, Vizag, and Haldia with berth access and stevedoring partnerships.",
-  },
-  {
-    icon: FileCheck,
-    title: "Trade Documentation",
-    description:
-      "Full LC compliance, COO, inspection certificates, bill of lading, and customs documentation for seamless clearance.",
-  },
-  {
-    icon: Truck,
-    title: "Inland Logistics",
-    description:
-      "Rail and road connectivity from mine and smelter to port with bonded warehousing for inventory management.",
-  },
-];
 
 const incoterms = ["FOB", "CFR", "CIF", "CIP", "DAP", "EXW"];
 
 export default function ExportLogisticsPage() {
+  const t = useTranslations("services")
   return (
     <>
       <PageBreadcrumbJsonLd
@@ -53,9 +29,9 @@ export default function ExportLogisticsPage() {
         ]}
       />
       <PageHero
-        eyebrow="Export Operations"
-        title="Global Export & Logistics Excellence"
-        description="End-to-end export management from Indian ports to steel plants worldwide — engineered for reliability at industrial scale."
+        eyebrow={t("Eyebrow")}
+        title={t("LogisticsExcellence")}
+        description={t("reliability")}
       />
       <AnimatedSection
         className="
@@ -69,8 +45,8 @@ export default function ExportLogisticsPage() {
           "
         >
           <SectionHeader
-            title="Integrated Export Services"
-            description="Every shipment managed by dedicated export coordinators with real-time tracking and documentation control."
+            title={t("Integrated")}
+            description={t("coordinators")}
             align="center"
           />
           <div
@@ -81,7 +57,7 @@ export default function ExportLogisticsPage() {
           >
             {services.map((service) => (
               <div
-                key={service.title}
+                key={service.key}
                 className="
                   p-6
                   bg-gunmetal/30
@@ -95,19 +71,19 @@ export default function ExportLogisticsPage() {
                     mb-4
                     text-[#c96a00]
                   "
-                  /
+                /
                 >
                 <h3
                   className="
                     font-heading font-semibold text-white
                   "
-                >{service.title}</h3>
+                >{t(`${service.key}.Title`)} </h3>
                 <p
                   className="
                     mt-2
                     text-sm text-metallic/80
                   "
-                >{service.description}</p>
+                >{t(`${service.key}.Description`)} </p>
               </div>
             ))}
           </div>
@@ -122,7 +98,7 @@ export default function ExportLogisticsPage() {
               className="
                 font-heading font-bold text-xl text-white
               "
-            >Supported Incoterms</h3>
+            >{t("Supported")} </h3>
             <div
               className="
                 flex flex-wrap

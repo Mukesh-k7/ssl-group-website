@@ -49,7 +49,7 @@ export interface NavItem {
 
 export interface TimelineEvent {
   year: string;
-  title: string;
+  key: string;
   description: string;
 }
 
@@ -67,7 +67,13 @@ export interface Region {
   description: string;
 }
 
-interface CtaBannerProps {
+export interface CtaBannerProps {
   title?: string;
   description?: string;
 }
+
+export interface Values {
+  title?: string;
+  description?: string;
+}
+

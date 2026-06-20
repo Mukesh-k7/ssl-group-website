@@ -120,7 +120,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
                   text-xl text-white font-heading font-bold
                 "
               >
-                Applications
+                {t("Applications")}
               </h3>
               <ul
                 className="
@@ -146,7 +146,11 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
                       "
                     /
                     >
-                    {app}
+
+
+                    {t(
+                      `Products.${product.key}.Applications.${app}`
+                    )}
                   </li>
                 ))}
               </ul>
@@ -158,7 +162,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
                 "
               >
                 <CardHeader>
-                  <CardTitle>Technical Specifications</CardTitle>
+                  <CardTitle> {t("Specifications")} </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <dl
@@ -181,7 +185,9 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
                             text-metallic/70
                           "
                         >
-                          {spec.labelKey}
+                          {t(
+                            `Products.${product.key}.Specifications.${spec.labelKey}`
+                          )}
                         </dt>
                         <dd
                           className="
@@ -201,7 +207,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
                     asChild
                   >
                     <Link href="/contact">
-                      Request Quote
+                      {t("Request")}
                       <ArrowRight
                         className="
                           w-4 h-4
@@ -235,7 +241,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
                 text-2xl text-white font-heading font-bold
               "
             >
-              Related Products
+              {t("RelatedProducts")}
             </h2>
             <div
               className="

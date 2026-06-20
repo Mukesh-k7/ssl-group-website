@@ -6,6 +6,7 @@ import { CtaBannerSection } from "@/sections/cta-banner";
 import { certifications } from "@/data/certifications";
 import { PageBreadcrumbJsonLd } from "@/components/shared/page-breadcrumb-jsonld";
 import { createPageMetadata } from "@/lib/seo";
+import { useTranslations } from "next-intl";
 
 export const metadata: Metadata = createPageMetadata({
   title: "Certifications",
@@ -15,6 +16,7 @@ export const metadata: Metadata = createPageMetadata({
 });
 
 export default function CertificationsPage() {
+  const t = useTranslations("Certifications")
   return (
     <>
       <PageBreadcrumbJsonLd
@@ -24,9 +26,9 @@ export default function CertificationsPage() {
         ]}
       />
       <PageHero
-        eyebrow="Compliance"
-        title="Certifications & Standards"
-        description="Internationally recognized quality, environmental, and trade certifications underpinning every export operation."
+        eyebrow={t("Complaince")}
+        title={t("Standards")}
+        description={t("Internationally")}
       />
       <AnimatedSection
         className="
@@ -40,8 +42,8 @@ export default function CertificationsPage() {
           "
         >
           <SectionHeader
-            title="Our Credentials"
-            description="Third-party audited systems ensuring consistent quality, responsible sourcing, and export compliance."
+            title={t("Credentials")}
+            description={t("ThirdParty")}
             align="center"
           />
           <div
@@ -71,21 +73,21 @@ export default function CertificationsPage() {
                   className="
                     font-heading font-bold text-xl text-white
                   "
-                >{cert.key}</h2>
+                >{t(`${cert.key}.Title`)}</h2>
                 <p
                   className="
                     mt-1
                     text-sm text-[#c96a00]
                   "
                 >
-                  {cert.issuer} · Certified {cert.year}
+                  {t(`${cert.key}.issuer`)} · {t("Certified")} {cert.year}
                 </p>
                 <p
                   className="
                     mt-4
                     text-metallic/80
                   "
-                >{cert.description}</p>
+                >{t(`${cert.key}.Description`)}</p>
               </article>
             ))}
           </div>
@@ -112,7 +114,7 @@ export default function CertificationsPage() {
                   font-heading font-semibold text-lg text-white
                 "
               >
-                Inspection & Testing Partners
+                 {t("Inspection")}
               </h3>
               <p
                 className="
@@ -120,9 +122,7 @@ export default function CertificationsPage() {
                   text-metallic/80
                 "
               >
-                All export shipments supported by SGS, Bureau Veritas, and Intertek inspection
-                protocols. Mill test certificates, assay reports, and pre-shipment inspection
-                documentation provided as standard.
+                {t("Intertek")}
               </p>
             </div>
           </div>

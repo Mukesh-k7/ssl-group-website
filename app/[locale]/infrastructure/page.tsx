@@ -6,6 +6,8 @@ import { StatsCounterSection } from "@/sections/stats-counter";
 import { CtaBannerSection } from "@/sections/cta-banner";
 import { PageBreadcrumbJsonLd } from "@/components/shared/page-breadcrumb-jsonld";
 import { createPageMetadata } from "@/lib/seo";
+import { useTranslations } from "next-intl";
+import { facilitiess } from "@/data/site";
 
 export const metadata: Metadata = createPageMetadata({
   title: "Infrastructure",
@@ -14,42 +16,10 @@ export const metadata: Metadata = createPageMetadata({
   path: "/infrastructure",
 });
 
-const facilities = [
-  {
-    icon: Warehouse,
-    title: "Bonded Warehousing",
-    stats: "50,000+ MT",
-    description:
-      "Climate-controlled storage at Mumbai, Kandla, and Visakhapatnam with inventory management and blending capabilities.",
-    locations: ["Mumbai Nhava Sheva", "Kandla", "Vizag"],
-  },
-  {
-    icon: FlaskConical,
-    title: "Quality Laboratories",
-    stats: "3 Labs",
-    description:
-      "In-house and partner labs for chemical analysis, sieve testing, and metallurgical property verification before dispatch.",
-    locations: ["Mumbai HQ", "Kandla Port", "Vizag Port"],
-  },
-  {
-    icon: Ship,
-    title: "Port-Side Operations",
-    stats: "4 Major Ports",
-    description:
-      "Dedicated loading berths, stevedoring contracts, and vessel coordination for bulk and break-bulk shipments.",
-    locations: ["JNPT", "Kandla", "Vizag", "Haldia"],
-  },
-  {
-    icon: Container,
-    title: "Packaging & Dispatch",
-    stats: "Multi-Modal",
-    description:
-      "Bulk vessel, containerized, jumbo bag, and break-bulk packaging with customizable sizing and labeling.",
-    locations: ["Pan-India Network"],
-  },
-];
+
 
 export default function InfrastructurePage() {
+  const t = useTranslations("facilitiess")
   return (
     <>
       <PageBreadcrumbJsonLd
@@ -59,9 +29,9 @@ export default function InfrastructurePage() {
         ]}
       />
       <PageHero
-        eyebrow="Facilities"
-        title="Export Infrastructure"
-        description="World-class port-side facilities, quality laboratories, and logistics networks engineered for industrial-scale metallurgy exports."
+        eyebrow={t("Eyebrow")}
+        title={t("Title")}
+        description={t("Facilities")}
       />
       <StatsCounterSection />
       <AnimatedSection
@@ -76,8 +46,8 @@ export default function InfrastructurePage() {
           "
         >
           <SectionHeader
-            title="Operational Facilities"
-            description="Strategic infrastructure investments ensuring consistent quality, capacity, and delivery reliability."
+            title={t("Operational")}
+            description={t("Strategic")}
             align="center"
           />
           <div
@@ -86,9 +56,9 @@ export default function InfrastructurePage() {
               gap-8
             "
           >
-            {facilities.map((facility) => (
+            {facilitiess.map((facility) => (
               <article
-                key={facility.title}
+                key={facility.key}
                 className="
                   overflow-hidden
                   bg-gunmetal/30
@@ -109,7 +79,7 @@ export default function InfrastructurePage() {
                       mb-4
                       text-[#c96a00]
                     "
-                    /
+                  /
                   >
                   <div
                     className="
@@ -121,14 +91,14 @@ export default function InfrastructurePage() {
                         font-heading font-bold text-2xl text-white
                       "
                     >
-                      {facility.title}
+                      {t(`${facility.key}.Title`)}
                     </h2>
                     <span
                       className="
                         font-heading font-bold text-3xl text-[#c96a00]
                       "
                     >
-                      {facility.stats}
+                      {t(`${facility.key}.stats`)}
                     </span>
                   </div>
                 </div>
@@ -141,7 +111,7 @@ export default function InfrastructurePage() {
                     className="
                       text-metallic/90
                     "
-                  >{facility.description}</p>
+                  >{t(`${facility.key}.Description`)}</p>
                   <div
                     className="
                       flex flex-wrap
@@ -149,7 +119,8 @@ export default function InfrastructurePage() {
                       gap-2
                     "
                   >
-                    {facility.locations.map((loc) => (
+
+                    {(t.raw(`${facility.key}.Locations`) as string[]).map((loc) => (
                       <span
                         key={loc}
                         className="

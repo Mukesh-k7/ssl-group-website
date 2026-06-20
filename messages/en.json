@@ -54,7 +54,29 @@
     "description2": "From Middle East steel giants to African foundries and European distributors, we are the single-window partner for metallurgical raw material excellence.",
     "OurStory": "Our Story",
     "Since": "Since",
-    "GhaziabadGlobalExportOperations": "Ghaziabad · Global Export Operations"
+    "GhaziabadGlobalExportOperations": "Ghaziabad · Global Export Operations",
+    "Title": "Forging Global Metallurgy Partnerships",
+    "SSLGroup": "Since 2018, SSL Group has grown from a Delhi trading house into a premier international exporter of steel industry raw materials — trusted by manufacturers across 45+ countries.",
+    "Documentation": "We exist to bridge the gap between India`s world-class metallurgical production capacity and the global steel industry`s demand for reliable, export-grade raw materials. Every shipment reflects our commitment to quality, documentation, and long-term partnership.",
+    "Eyebrow": "Our Mission",
+    "Globals": "Connecting Indian Metallurgy to the World",
+    "OurTeam": "Our team of metallurgists, trade specialists, and logistics coordinators work as an extension of your procurement department — from specification review to port delivery.",
+    "Integrity": {
+      "Title": "Integrity in Trade",
+      "Description": "Transparent pricing, documented compliance, and ethical sourcing across every transaction."
+    },
+    "Technical": {
+      "Title": "Technical Excellence",
+      "Description": "Metallurgical expertise guiding grade selection, specification alignment, and quality assurance."
+    },
+    "Global": {
+      "Title": "Global Reliability",
+      "Description": "On-time vessel loading, consistent chemistry, and responsive export desk support worldwide."
+    },
+    "Sustainable": {
+      "Title": "Sustainable Growth",
+      "Description": "Responsible minerals initiative compliance and ESG-aligned supply chain development."
+    }
   },
   "products": {
     "Eyebrow": "Our Products",
@@ -426,7 +448,8 @@
     "GlobalPresence": "Global Presence",
     "Continents": "Strategic trade corridors connecting Indian metallurgical production to steel manufacturers and industrial buyers across four continents.",
     "Regional": "Regional Export Desks",
-    "Teams": "Dedicated teams with local market knowledge, language support, and timezone-aligned responsiveness."
+    "Teams": "Dedicated teams with local market knowledge, language support, and timezone-aligned responsiveness.",
+    "Interactive": "Interactive map integration available"
   },
   "Certifications": {
     "Eyebrow": "Certifications",
@@ -462,7 +485,15 @@
       "Description": "Authorized star export house status with multi-product export licensing.",
       "issuer": "Directorate General of Foreign Trade"
     },
-    "ViewAllCertifications": "View Al Certifications"
+    "ViewAllCertifications": "View Al Certifications",
+    "Complaince": "Complaince",
+    "Standards": "Certifications & Standards",
+    "Internationally": "Internationally recognized quality, environmental, and trade certifications underpinning every export operation.",
+    "Credentials": "Our Credentials",
+    "ThirdParty": "Third-party audited systems ensuring consistent quality, responsible sourcing, and export compliance.",
+    "Certified": "Certified",
+    "Inspection": "Inspection & Testing Partners",
+    "Intertek": "All export shipments supported by SGS, Bureau Veritas, and Intertek inspection protocols. Mill test certificates, assay reports, and pre-shipment inspection documentation provided as standard."
   },
   "infrastructure": {
     "Eyebrow": "Infrastructure",
@@ -481,6 +512,52 @@
       "Description": "Flexible packaging — bulk vessels, containers, and jumbo bag dispatch."
     },
     "ExploreInfrastructure": "Explore Infrastructure"
+  },
+  "facilitiess": {
+    "Eyebrow": "Facilities",
+    "Title": "Export Infrastructure",
+    "Facilities": "World-class port-side facilities, quality laboratories, and logistics networks engineered for industrial-scale metallurgy exports.",
+    "Operational": "Operational Facilities",
+    "Strategic": "Strategic infrastructure investments ensuring consistent quality, capacity, and delivery reliability.",
+    "Warehousing": {
+      "Title": "Bonded Warehousing",
+      "Description": "Climate-controlled storage at Mumbai, Kandla, and Visakhapatnam with inventory management and blending capabilities.",
+      "stats": "50,000+ MT",
+      "Locations": [
+        "Delhi",
+        "Kolkata",
+        "Vizag"
+      ]
+    },
+    "Laboratories": {
+      "Title": "Quality Laboratories",
+      "Description": "In-house and partner labs for chemical analysis, sieve testing, and metallurgical property verification before dispatch.",
+      "stats": "3 Labs",
+      "Locations": [
+        "Delhi HQ",
+        "Kandla Port",
+        "Vizag Port"
+      ]
+    },
+    "Operations": {
+      "Title": "Port-Side Operations",
+      "Description": "Dedicated loading berths, stevedoring contracts, and vessel coordination for bulk and break-bulk shipments.",
+      "stats": "4 Major Ports",
+      "Locations": [
+        "JNPT",
+        "Kandla",
+        "Vizag",
+        "Haldia"
+      ]
+    },
+    "Dispatch": {
+      "Title": "Packaging & Dispatch",
+      "Description": "Bulk vessel, containerized, jumbo bag, and break-bulk packaging with customizable sizing and labeling.",
+      "stats": "Multi-Modal",
+      "Locations": [
+        "Pan-India Network"
+      ]
+    }
   },
   "testimonials": {
     "Eyebrow": "Client Trust",
@@ -515,7 +592,25 @@
     "email": "Email Address",
     "phone": "Phone Number",
     "message": "Message",
-    "submit": "Send Message"
+    "submit": "Send Message",
+    "Touch": "Get in Touch",
+    "Contact": "Contact Our Export Desk",
+    "Submit": "Submit your inquiry for product specifications, pricing, vessel scheduling, or partnership discussions. We respond within 24 business hours.",
+    "Inquiry": "Export Inquiry Form",
+    "Specifications": "Complete the form below for product quotes, specifications, and shipment planning.",
+    "CompanyDetails": "Company Details",
+    "SSLGroup": {
+      "name": "SSL Group",
+      "tagline": "Global Metallurgy. Trusted Supply.",
+      "legalName": "SSL Group International Trading Pvt. Ltd."
+    },
+    "WhatsApp": "WhatsApp Export Desk",
+    "Instant": "Instant messaging for urgent inquiries",
+    "Export": "Export Inquiry Hours",
+    "Timing": "Monday – Saturday",
+    "Emergency": "Sunday: Emergency shipments only",
+    "Address1": "Delhi Head Office : Ground Floor, CC-23, AVANTIKA 1, Avantika Main Road, Saini Washing Center, Avantika, Ghaziabad,",
+    "Address2": "Uttar Pradesh 201015, India"
   },
   "footer": {
     "copyright": "All Rights Reserved.",
@@ -562,12 +657,63 @@
       "readTime": "7 min"
     },
     "Read": "Read More",
-
     "Insights": "Back to Insights",
     "Detailed": "For detailed market reports and procurement consultations, contact our export desk at export@sslgroup.in. Our metallurgy specialists provide grade-specific guidance tailored to your production requirements.",
     "read": "read"
   },
+  "timeline": {
+    "Title": "Building Global Metallurgy Leadership",
+    "Journey": "Our Journey",
+    "Foundation": {
+      "Title": "Foundation",
+      "Description": "SSL Group established in Delhi as a metallurgical raw materials trading firm."
+    },
+    "Export": {
+      "Title": "Export Operations",
+      "Description": "First international shipments of pig iron and ferro alloys to Middle East markets."
+    },
+    "Africa": {
+      "Title": "Africa Expansion",
+      "Description": "Dedicated trade corridor established for West and East African steel manufacturers."
+    },
+    "Infrastructure": {
+      "Title": "Infrastructure Investment",
+      "Description": "Bonded warehousing and port-side blending facilities commissioned at major Indian ports."
+    },
+    "European": {
+      "Title": "European Network",
+      "Description": "Strategic distributor partnerships formed across Germany, Italy, and Spain."
+    },
+    "Sustainability": {
+      "Title": "Sustainability Framework",
+      "Description": "ESG reporting and responsible sourcing program launched across mineral supply chains."
+    }
+  },
 
+  "services": {
+    "Chartering": {
+      "Title": "Bulk Vessel Chartering",
+      "Description": "5,000–75,000 MT parcel sizes with FOB, CFR, and CIF terms. Experienced chartering desk for timely laycan scheduling."
+    },
+    "Operations": {
+      "Title": "Port Operations",
+      "Description": "Dedicated operations at Mumbai, Kandla, Vizag, and Haldia with berth access and stevedoring partnerships."
+    },
+    "Documentation": {
+      "Title": "Trade Documentation",
+      "Description": "Full LC compliance, COO, inspection certificates, bill of lading, and customs documentation for seamless clearance."
+    },
+    "Logistics": {
+      "Title": "Inland Logistics",
+      "Description": "Rail and road connectivity from mine and smelter to port with bonded warehousing for inventory management."
+    },
+    "Eyebrow": "Export Operations",
+    "LogisticsExcellence": "Global Export & Logistics Excellence",
+    "reliability": "End-to-end export management from Indian ports to steel plants worldwide — engineered for reliability at industrial scale.",
+    "Integrated": "Integrated Export Services",
+    "coordinators": "Every shipment managed by dedicated export coordinators with real-time tracking and documentation control.",
+    "Supported": "Supported Incoterms"
+  },
 
   "ViewAllProducts": "View Products",
   "title": "Ready to Source Premium Metallurgy Materials?",
@@ -582,5 +728,23 @@
   "PrivacyPolicy": "Privacy Policy",
   "Trade": "Terms of Trade",
   "Address1": "Delhi Head Office : Ground Floor, CC-23, AVANTIKA 1, Avantika Main Road, Saini Washing Center, Avantika, Ghaziabad,",
-  "Address2": "Uttar Pradesh 201015, India"
+  "Address2": "Uttar Pradesh 201015, India",
+  "Inquiry": "Inquiry Received",
+  "Thank": "Thank you. Our export desk will contact you shortly.",
+  "Another": "Submit Another Inquiry",
+  "FullName": "Full Name",
+  "Email": "Email",
+  "Media": "Phone / WhatsApp",
+  "ProductInterest": "Product Interest",
+  "Quantity": "Estimated Quantity",
+  "Destination": "Destination Port",
+  "Incoterms": "Preferred Incoterms",
+  "Message": "Message",
+  "SubmitInquiry": "Submit Inquiry",
+  "contacted": "By submitting, you agree to be contacted regarding your inquiry.",
+
+  "Applications": "Applications",
+  "Specifications": "Technical Specifications",
+  "Request": "Request Quote",
+  "RelatedProducts": "Related Products"
 }

@@ -1,15 +1,17 @@
 import type { Testimonial } from "@/types";
 import { getAbsoluteUrl } from "@/lib/site-url";
-import { Warehouse, Ship, Container } from "lucide-react";
+import { Warehouse, Container, FlaskConical } from "lucide-react";
+import { Ship, FileCheck, Anchor, Truck } from "lucide-react";
 
 export const company = {
+  key: "SSLGroup",
   name: "SSL Group",
   tagline: "Global Metallurgy. Trusted Supply.",
   legalName: "SSL Group International Trading Pvt. Ltd.",
   website: "https://www.sslgroup.in/",
   domain: "www.sslgroup.in",
   email: "support@sslgroup.in",
-  salesEmail: "support@sslgroup.in",
+  salesEmail: "abc@sslgroup.in",
   phone: "+91 - 9599053449",
   whatsapp: "+91 - 9599053449",
   address: {
@@ -19,7 +21,6 @@ export const company = {
   founded: 2018,
   catalogUrl: getAbsoluteUrl("/catalog/ssl-product-catalog.pdf"),
 };
-
 
 export type NavItem = {
   key: string;
@@ -128,4 +129,89 @@ export const facilities = [
     key: "ContainerBulk",
   },
 
+];
+
+export const Values = [
+  {
+    key: "Integrity",
+    description:
+      "Transparent pricing, documented compliance, and ethical sourcing across every transaction.",
+  },
+  {
+    key: "Technical",
+    description:
+      "Metallurgical expertise guiding grade selection, specification alignment, and quality assurance.",
+  },
+  {
+    key: "Global",
+    description:
+      "On-time vessel loading, consistent chemistry, and responsive export desk support worldwide.",
+  },
+  {
+    key: "Sustainable",
+    description:
+      "Responsible minerals initiative compliance and ESG-aligned supply chain development.",
+  },
+];
+
+export const facilitiess = [
+  {
+    icon: Warehouse,
+    key: "Warehousing",
+    stats: "50,000+ MT",
+    description:
+      "Climate-controlled storage at Mumbai, Kandla, and Visakhapatnam with inventory management and blending capabilities.",
+    locations: ["Delhi", "Kolkata", "Vizag"],
+  },
+  {
+    icon: FlaskConical,
+    key: "Laboratories",
+    stats: "3 Labs",
+    description:
+      "In-house and partner labs for chemical analysis, sieve testing, and metallurgical property verification before dispatch.",
+    locations: ["Delhi HQ", "Kandla Port", "Vizag Port"],
+  },
+  {
+    icon: Ship,
+    key: "Operations",
+    stats: "4 Major Ports",
+    description:
+      "Dedicated loading berths, stevedoring contracts, and vessel coordination for bulk and break-bulk shipments.",
+    locations: ["JNPT", "Kandla", "Vizag", "Haldia"],
+  },
+  {
+    icon: Container,
+    key: "Dispatch",
+    stats: "Multi-Modal",
+    description:
+      "Bulk vessel, containerized, jumbo bag, and break-bulk packaging with customizable sizing and labeling.",
+    locations: ["Pan-India Network"],
+  },
+];
+
+export const services = [
+  {
+    icon: Ship,
+    key: "Chartering",
+    description:
+      "5,000–75,000 MT parcel sizes with FOB, CFR, and CIF terms. Experienced chartering desk for timely laycan scheduling.",
+  },
+  {
+    icon: Anchor,
+    key: "Operations",
+    description:
+      "Dedicated operations at Mumbai, Kandla, Vizag, and Haldia with berth access and stevedoring partnerships.",
+  },
+  {
+    icon: FileCheck,
+    key: "Documentation",
+    description:
+      "Full LC compliance, COO, inspection certificates, bill of lading, and customs documentation for seamless clearance.",
+  },
+  {
+    icon: Truck,
+    key: "Logistics",
+    description:
+      "Rail and road connectivity from mine and smelter to port with bonded warehousing for inventory management.",
+  },
 ];
