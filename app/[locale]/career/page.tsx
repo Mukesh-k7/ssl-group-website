@@ -433,7 +433,7 @@ export default function CareersPage() {
           {filtered.length === 0 && (
             <div className="text-center py-16 text-[#475569]">
               <svg className="w-12 h-12 mx-auto mb-4 opacity-40" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" className="text-[#fff] fw-[bold]" />
               </svg>
               <p className="text-sm text-[#fff] fw-[bold]">No roles match your search. Try different filters.</p>
             </div>
