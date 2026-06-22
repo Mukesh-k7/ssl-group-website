@@ -746,5 +746,13 @@
   "Request": "Request Quote",
   "RelatedProducts": "Related Products",
   "BackToProducts": "Back To Products",
-  "Overview": "Overview"
+  "Overview": "Overview",
+
+
+  "Careers": "Careers at SSL Group",
+  "Build": "Build your future with SSL Group. Explore open positions and apply online.",
+  "ViewOpen": "View Open Roles",
+  "ContactHR": "Contact HR",
+  "OpenPositions": "Open Positions",
+  "Connect": "Connect this section to your CMS or API."
 }

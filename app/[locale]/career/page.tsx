@@ -276,7 +276,7 @@ export default function CareersPage() {
                 </svg>
               </a>
             </div>
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid lg:grid-cols-2 md:grid-cols-2  sm:grid-cols-1  gap-4">
               {BENEFITS.map((b, i) => (
                 <div
                   key={i}
@@ -348,7 +348,7 @@ export default function CareersPage() {
       {/* JOB OPENINGS */}
       <section id="openings" className="py-24 [background:linear-gradient(135deg,#3D3F38,#6B8FA0,#9B6E7C,#C8B87A,#9DA09A)]">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-12">
+          <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-8">
             <div>
               <div className="text-[#F97316] text-xs font-bold tracking-widest uppercase mb-3">Careers</div>
               <h2 className="text-4xl font-black text-white">
@@ -534,7 +534,7 @@ export default function CareersPage() {
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
                   href="#openings"
-                  className="bg-gradient-to-r from-[#F97316] to-[#EAB308] text-[#080C14] px-8 py-3.5 rounded-lg font-bold text-sm hover:opacity-90 transition-opacity inline-flex items-center justify-center gap-2"
+                  className="bg-gradient-to-r from-[#F97316] to-[#EAB308] text-[#080C14] px-3 py-3.5 rounded-lg font-bold text-sm hover:opacity-90 transition-opacity inline-flex items-center justify-center gap-2"
                 >
                   Browse Open Roles
                   <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
