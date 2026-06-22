@@ -126,7 +126,7 @@ export function Footer() {
                 space-y-2
               "
             >
-              {products.slice(0, 6).map((product) => (
+              {products.slice(0, 9).map((product) => (
                 <li key={product.slug}>
                   <Link
                     href={`/products/${product.slug}`}

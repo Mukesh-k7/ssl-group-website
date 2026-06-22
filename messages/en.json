@@ -22,12 +22,13 @@
     "infrastructure": "Infrastructure",
     "globalPresence": "Global Presence",
     "insights": "Insights",
-    "contact": "Contact",
+    "contact": "Contact Us",
     "More": "More",
     "GetQuote": "Get Quote",
     "DownloadCatalog": "Download Catalog",
     "GetExportQuote": "Get Export Quote",
-    "Catalog": "Catalog"
+    "Catalog": "Catalog",
+    "career": "Career"
   },
   "hero": {
     "title": "Leading Global Exporter of Metallurgical Products",
@@ -689,7 +690,6 @@
       "Description": "ESG reporting and responsible sourcing program launched across mineral supply chains."
     }
   },
-
   "services": {
     "Chartering": {
       "Title": "Bulk Vessel Chartering",
@@ -714,7 +714,6 @@
     "coordinators": "Every shipment managed by dedicated export coordinators with real-time tracking and documentation control.",
     "Supported": "Supported Incoterms"
   },
-
   "ViewAllProducts": "View Products",
   "title": "Ready to Source Premium Metallurgy Materials?",
   "description": "Connect with our export desk for specifications, pricing, vessel scheduling, and Incoterms consultation.",
@@ -742,10 +741,10 @@
   "Message": "Message",
   "SubmitInquiry": "Submit Inquiry",
   "contacted": "By submitting, you agree to be contacted regarding your inquiry.",
-
   "Applications": "Applications",
   "Specifications": "Technical Specifications",
   "Request": "Request Quote",
   "RelatedProducts": "Related Products",
-  "BackToProducts": "Back To Products"
+  "BackToProducts": "Back To Products",
+  "Overview": "Overview"
 }

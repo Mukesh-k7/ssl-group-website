@@ -9,6 +9,7 @@ import { InfrastructurePreviewSection } from "@/sections/infrastructure-preview"
 import { CertificationsPreviewSection } from "@/sections/certifications-preview";
 import { StatsCounterSection } from "@/sections/stats-counter";
 import { TestimonialsSection } from "@/sections/testimonials";
+import OurCareer from "@/sections/our-career";
 import { CtaBannerSection } from "@/sections/cta-banner";
 import { createPageMetadata } from "@/lib/seo";
 
@@ -32,6 +33,7 @@ export default function HomePage() {
       <InfrastructurePreviewSection />
       <CertificationsPreviewSection />
       <TestimonialsSection />
+      <OurCareer />
       <CtaBannerSection />
     </>
   );

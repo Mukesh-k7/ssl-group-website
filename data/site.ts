@@ -12,6 +12,7 @@ export const company = {
   domain: "www.sslgroup.in",
   email: "support@sslgroup.in",
   salesEmail: "abc@sslgroup.in",
+  hrEmail: "shivani.yadav@sslgroup.in",
   phone: "+91 - 9599053449",
   whatsapp: "+91 - 9599053449",
   address: {
@@ -45,6 +46,7 @@ export const navigation: NavItem[] = [
   { key: "globalPresence", href: "/global-presence" },
   { key: "insights", href: "/blog" },
   { key: "contact", href: "/contact" },
+  { key: "career", href: "/career" }
 ];
 
 export const stats: Stat[] = [

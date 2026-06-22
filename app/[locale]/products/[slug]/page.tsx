@@ -109,8 +109,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
                 }}
               /
               >
-              <h2>Overview</h2>
-
+              <h2> {t("Overview")} </h2>
               <p>
                 {t(`Products.${product.key}.Description`)}
               </p>
@@ -146,8 +145,6 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
                       "
                     /
                     >
-
-
                     {t(
                       `Products.${product.key}.Applications.${app}`
                     )}

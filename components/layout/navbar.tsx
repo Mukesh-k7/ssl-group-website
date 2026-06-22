@@ -78,7 +78,7 @@ export function Navbar() {
   useEffect(() => {
     setIsOpen(false);
   }, [pathname]);
-  // bg-gradient-to-l from-[#a75500] via-[#f9884b] to-[#f3d3b0] py-3 shadow-2xl shadow-black/40 backdrop-blur-xl  bg-[linear-gradient(135deg,#7B3000_0%,#C25A00_40%,#E8820A_70%,#A84800_100%)]
+  // bg-gradient-to-l from-[#F97316] to-[#EAB308] text-[#080C14]bg-gradient-to-r from-[#F97316] to-[#EAB308] text-[#080C14]" bg-gradient-to-l from-[#a75500] via-[#f9884b] to-[#f3d3b0] py-3 shadow-2xl shadow-black/40 backdrop-blur-xl  bg-[linear-gradient(135deg,#7B3000_0%,#C25A00_40%,#E8820A_70%,#A84800_100%)]
 
   return (
     <header

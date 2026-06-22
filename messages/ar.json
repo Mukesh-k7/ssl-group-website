@@ -27,7 +27,8 @@
     "GetQuote": "احصل على عرض سعر",
     "DownloadCatalog": "تحميل الكتالوج",
     "GetExportQuote": "احصل على عرض سعر للتصدير",
-    "Catalog": "الكتالوج"
+    "Catalog": "الكتالوج",
+    "career": "الوظائف"
   },
   "stats": {
     "yearsofExcellence": "سنوات التميز",
@@ -738,5 +739,6 @@
   "Specifications": "المواصفات الفنية",
   "Request": "طلب عرض سعر",
   "RelatedProducts": "المنتجات ذات الصلة",
-  "BackToProducts": "العودة إلى المنتجات"
+  "BackToProducts": "العودة إلى المنتجات",
+  "Overview": "نظرة عامة"
 }
