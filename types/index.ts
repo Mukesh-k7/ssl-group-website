@@ -77,3 +77,24 @@ export interface Values {
   description?: string;
 }
 
+export interface Careers{
+  slug: string;
+  key: string;
+  applications: string[];
+  featured?: boolean;
+  className?: string;
+  dept: string;
+  type: string;
+  location: string;
+  value: string;
+  label: string;
+  step: string;
+  body: string;
+  viewBox: string;
+  fill: string;
+  stroke: string;
+  strokeWidth: string;
+  strokeLinecap: string;
+  strokeLinejoin: string;
+  d: string
+}

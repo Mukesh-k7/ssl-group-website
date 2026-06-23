@@ -6,11 +6,11 @@
 import React, { useState } from "react";
 import { StatsCounterSection } from "@/sections/stats-counter"
 import { } from "react/jsx-runtime";
-
-
+import { useTranslations } from "next-intl";
 // Provide a minimal JSX.IntrinsicElements declaration to avoid
 // "JSX element implicitly has type 'any'" when react/jsx-runtime types
 // are not available in the environment.
+
 declare global {
   namespace JSX {
     interface IntrinsicElements {
@@ -18,7 +18,6 @@ declare global {
     }
   }
 }
-
 
 const BENEFITS = [
   {
@@ -76,6 +75,7 @@ const BENEFITS = [
     desc: "Flat hierarchy, cross-border teams, and a culture built on trade expertise and mutual growth.",
   },
 ];
+
 
 const JOB_OPENINGS = [
   { title: "Export Documentation Executive", dept: "Operations", type: "Full-time", location: "Ghaziabad" },
@@ -183,6 +183,9 @@ export default function CareersPage() {
     return matchSearch && matchDept && matchType;
   });
 
+
+  const t = useTranslations("careers")
+
   return (
     <div className="min-h-screen bg-[#080C14] text-[#E8EDF2] font-sans">
       {/* HERO */}
@@ -208,28 +211,27 @@ export default function CareersPage() {
             <div className="inline-flex items-center gap-2 bg-[#F97316]/10 border border-[#F97316]/20 rounded-full px-4 py-1.5 mb-8">
               <div className="w-1.5 h-1.5 bg-[#F97316] rounded-full animate-pulse" />
               <span className="text-[#F97316] text-xs font-semibold tracking-wider uppercase">
-                Now Hiring — {JOB_OPENINGS.length} Positions Open
+                {t("NowHiring")}  — {JOB_OPENINGS.length} {t("PositionsOpen")}
               </span>
             </div>
             <h1 className="text-5xl lg:text-6xl font-black leading-[1.05] mb-6">
-              <span className="text-white">Join the Team Behind</span>
+              <span className="text-white">{t("Team")} </span>
               <br />
               <span className="bg-gradient-to-r from-[#F97316] via-[#EAB308] to-[#F97316] bg-clip-text text-transparent">
-                India's Premier
+                {t("Premier")}
               </span>
               <br />
-              <span className="text-white">Metallurgy Export</span>
+              <span className="text-white">{t("Metallurgy")} </span>
             </h1>
             <p className="text-[#94A3B8] text-lg leading-relaxed mb-10 max-w-lg">
-              Work at the intersection of industrial trade, global logistics, and emerging markets. SSL Group
-              moves millions of metric tons across 45+ countries — be part of that.
+              {t("Intersection")}
             </p>
             <div className="flex flex-wrap gap-4">
               <a
                 href="#openings"
                 className="bg-gradient-to-r from-[#F97316] to-[#EAB308] text-[#080C14] px-8 py-3.5 rounded font-bold text-sm hover:opacity-90 transition-opacity inline-flex items-center gap-2"
               >
-                View All Openings
+                 {t("Openings")}
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
@@ -238,7 +240,7 @@ export default function CareersPage() {
                 href="#life"
                 className="border border-white/10 text-white px-8 py-3.5 rounded font-semibold text-sm hover:bg-white/5 transition-colors"
               >
-                Life at SSL Group
+                 {t("Life")}
               </a>
             </div>
           </div>
@@ -263,8 +265,8 @@ export default function CareersPage() {
                   </svg>
                 </div>
                 <div>
-                  <div className="text-white text-sm font-semibold">Global Operations Since 2018</div>
-                  <div className="text-[#94A3B8] text-xs">Ghaziabad, UP · Africa · Middle East · Europe</div>
+                  <div className="text-white text-sm font-semibold"> {t("GlobalOperations")} </div>
+                  <div className="text-[#94A3B8] text-xs"> {t("Locations")} </div>
                 </div>
               </div>
             </div>
@@ -278,25 +280,23 @@ export default function CareersPage() {
           <div className="grid lg:grid-cols-2 gap-16 items-start">
             <div>
               <div className="text-[#F97316] text-xs font-bold tracking-widest uppercase mb-4">
-                Why SSL Group
+                 {t("whysslgroup")}
               </div>
               <h2 className="text-4xl font-black text-white leading-tight mb-6">
-                Your Career in
+                 {t("Career")}
                 <br />
                 <span className="bg-gradient-to-r from-[#F97316] to-[#EAB308] bg-clip-text text-transparent">
-                  Global Trade
+                  {t("GlobalTrade")}
                 </span>
               </h2>
               <p className="text-[#d6e1f1] leading-relaxed text-base">
-                SSL Group has supplied ferrous and non-ferrous materials to steel plants, foundries, and EPC
-                contractors worldwide since 2018. When you join our team, you become part of supply chains that
-                feed real infrastructure — bridges, factories, and energy grids across continents.
+                {t("Supply")}
               </p>
               <a
                 href="#"
                 className="inline-flex items-center gap-2 mt-8 text-[#f19b5f] font-semibold text-sm hover:gap-3 transition-all"
               >
-                Read Our Story
+                 {t("OurStory")}
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
@@ -326,13 +326,12 @@ export default function CareersPage() {
         <div className="absolute right-0 top-0 w-[500px] h-[500px] bg-[#EAB308]/4 rounded-full blur-[120px]" />
         <div className="relative max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-            <div className="text-[#F97316] text-xs font-bold tracking-widest uppercase mb-4">Culture</div>
+            <div className="text-[#F97316] text-xs font-bold tracking-widest uppercase mb-4">{t("Culture")} </div>
             <h2 className="text-4xl lg:text-5xl font-black text-white mb-6">
-              Life at <span className="bg-gradient-to-r from-[#F97316] to-[#EAB308] bg-clip-text text-transparent">SSL Group</span>
+               {t("LifeAt")} <span className="bg-gradient-to-r from-[#F97316] to-[#EAB308] bg-clip-text text-transparent"> {t("title")} </span>
             </h2>
             <p className="text-[#94A3B8] max-w-2xl mx-auto leading-relaxed">
-              We are a lean, expert-driven organization. Every team member owns a piece of a global operation —
-              there's no bureaucracy between your work and its real-world impact across supply chains worldwide.
+              {t("Bureaucracy")}
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
@@ -354,13 +353,13 @@ export default function CareersPage() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-8">
             <div>
-              <div className="text-[#F97316] text-xs font-bold tracking-widest uppercase mb-3">Careers</div>
+              <div className="text-[#F97316] text-xs font-bold tracking-widest uppercase mb-3"> {t("Careers")} </div>
               <h2 className="text-4xl font-black text-white">
-                Open Positions
+                 {t("Positions")}
               </h2>
             </div>
             <div className="text-[#FFF] text-sm font-medium">
-              <span className="text-[#F97316] font-bold text-lg">{filtered.length}</span> positions available
+              <span className="text-[#F97316] font-bold text-lg">{filtered.length}</span>  {t("Positionsavailable")}
             </div>
           </div>
 
@@ -409,7 +408,7 @@ export default function CareersPage() {
                 <div className="flex items-start justify-between mb-4">
                   <div>
                     <div className="text-white font-bold text-sm mb-1">{job.title}</div>
-                    <div className="text-[#F97316] text-xs font-semibold">SSL Group</div>
+                    <div className="text-[#F97316] text-xs font-semibold">{t("title")} </div>
                   </div>
                   <div className={`w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0 ${i === 1 ? "bg-[#F97316]/20" : "bg-white/5"}`}>
                     <svg className={`w-4 h-4 ${i === 1 ? "text-[#c96a00]" : "text-[#c96a00]"}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -428,7 +427,7 @@ export default function CareersPage() {
                     : "border border-white/10 text-white hover:bg-white/5"
                     }`}
                 >
-                  Apply Now
+                   {t("ApplyNow")}
                 </button>
               </div>
             ))}
@@ -439,13 +438,13 @@ export default function CareersPage() {
               <svg className="w-12 h-12 mx-auto mb-4 opacity-40" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" className="text-[#fff] fw-[bold]" />
               </svg>
-              <p className="text-sm text-[#fff] fw-[bold]">No roles match your search. Try different filters.</p>
+              <p className="text-sm text-[#fff] fw-[bold]"> {t("Rolesmatch")} </p>
             </div>
           )}
 
           <div className="text-center mt-10">
             <button className="border border-white/10 text-white px-8 py-3 rounded-lg text-sm font-semibold hover:bg-white/5 transition-colors bg-[#0461cfad]">
-              View All Openings
+             {t("Openings")}
             </button>
           </div>
         </div>
@@ -458,12 +457,12 @@ export default function CareersPage() {
       <section className="py-24 [background:linear-gradient(135deg,#3D3F38,#6B8FA0,#9B6E7C,#C8B87A,#9DA09A)]">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-            <div className="text-[#F97316] text-xs font-bold tracking-widest uppercase mb-4">How We Hire</div>
+            <div className="text-[#F97316] text-xs font-bold tracking-widest uppercase mb-4">{t("HowWeHire")} </div>
             <h2 className="text-4xl lg:text-5xl font-black text-white mb-4">
-              Our Recruitment <span className="bg-gradient-to-r from-[#F97316] to-[#EAB308] bg-clip-text text-transparent">Process</span>
+               {t("Recruitment")} <span className="bg-gradient-to-r from-[#F97316] to-[#EAB308] bg-clip-text text-transparent"> {t("Process")} </span>
             </h2>
             <p className="text-[rgb(199, 213, 235)] max-w-xl mx-auto text-sm leading-relaxed">
-              A transparent, fast hiring process. Most candidates hear back within 72 hours of applying.
+               {t("Transparent")}
             </p>
           </div>
 
@@ -495,23 +494,23 @@ export default function CareersPage() {
           <div className="bg-gradient-to-r from-[#0D1520] via-[#F97316]/10 to-[#0D1520] border border-[#F97316]/20 rounded-2xl p-12 text-center relative overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#F97316]/5" />
             <div className="relative">
-              <div className="text-[#F97316] text-xs font-bold tracking-widest uppercase mb-4">Ready to Apply?</div>
+              <div className="text-[#F97316] text-xs font-bold tracking-widest uppercase mb-4">{t("ReadytoApply")}?  </div>
               <h2 className="text-3xl lg:text-4xl font-black text-white mb-4">
-                Source Your Career From SSL Group
+                 {t("SourceYour")}
               </h2>
               <p className="text-[#94A3B8] mb-8 max-w-lg mx-auto text-sm leading-relaxed">
-                Send your resume to{" "}
+                {t("SendYour")} {" "} 
                 <a href="mailto:shivani.yadav@sslgroup.in" className="text-[#F97316] hover:underline">
                   careers@sslgroup.in
                 </a>{" "}
-                or apply directly through any of our open positions above.
+                 {t("Directly")}
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
                   href="#openings"
                   className="bg-gradient-to-r from-[#F97316] to-[#EAB308] text-[#080C14] px-3 py-3.5 rounded-lg font-bold text-sm hover:opacity-90 transition-opacity inline-flex items-center justify-center gap-2"
                 >
-                  Browse Open Roles
+                   {t("Browse")}
                   <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
@@ -520,7 +519,7 @@ export default function CareersPage() {
                   href="mailto:shivani.yadav@sslgroup.in"
                   className="border border-white/10 text-white px-8 py-3.5 rounded-lg font-semibold text-sm hover:bg-white/5 transition-colors"
                 >
-                  Email Your CV
+                   {t("EmailYour")}
                 </a>
               </div>
             </div>
