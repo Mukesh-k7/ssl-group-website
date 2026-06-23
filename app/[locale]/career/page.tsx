@@ -4,7 +4,9 @@
 "use client";
 
 import React, { useState } from "react";
+import { StatsCounterSection } from "@/sections/stats-counter"
 import { } from "react/jsx-runtime";
+
 
 // Provide a minimal JSX.IntrinsicElements declaration to avoid
 // "JSX element implicitly has type 'any'" when react/jsx-runtime types
@@ -142,6 +144,30 @@ const RECRUITMENT_STEPS = [
 
 const DEPARTMENTS = ["All Departments", "Operations", "Trade", "Quality", "Logistics", "Sales", "Marketing", "IT", "Legal"];
 const WORK_TYPES = ["All Types", "Full-time", "Contract", "Remote", "Hybrid"];
+
+const Culture = [
+  {
+    label: "Ownership Culture",
+    body:
+      "Junior analysts work directly with senior traders. Your decisions affect real export volumes — you'll feel it from day one.",
+    gradient: "from-[#F97316]/20 to-transparent",
+    accent: "#F97316",
+  },
+  {
+    label: "Global Perspective",
+    body:
+      "Coordinate with counterparts in Dubai, Lagos, Rotterdam, and Seoul. Every week brings a new market, a new conversation.",
+    gradient: "from-[#EAB308]/20 to-transparent",
+    accent: "#EAB308",
+  },
+  {
+    label: "Domain Mastery",
+    body:
+      "Specialize in materials science, trade compliance, logistics, or digital infrastructure — and become the company's best in your space.",
+    gradient: "from-[#F97316]/20 to-transparent",
+    accent: "#F97316",
+  },
+]
 
 export default function CareersPage() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -310,29 +336,7 @@ export default function CareersPage() {
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
-            {[
-              {
-                label: "Ownership Culture",
-                body:
-                  "Junior analysts work directly with senior traders. Your decisions affect real export volumes — you'll feel it from day one.",
-                gradient: "from-[#F97316]/20 to-transparent",
-                accent: "#F97316",
-              },
-              {
-                label: "Global Perspective",
-                body:
-                  "Coordinate with counterparts in Dubai, Lagos, Rotterdam, and Seoul. Every week brings a new market, a new conversation.",
-                gradient: "from-[#EAB308]/20 to-transparent",
-                accent: "#EAB308",
-              },
-              {
-                label: "Domain Mastery",
-                body:
-                  "Specialize in materials science, trade compliance, logistics, or digital infrastructure — and become the company's best in your space.",
-                gradient: "from-[#F97316]/20 to-transparent",
-                accent: "#F97316",
-              },
-            ].map((card) => (
+            {Culture.map((card) => (
               <div key={card.label} className="bg-[#0D1520] border border-white/5 rounded-2xl p-8 relative overflow-hidden group hover:border-white/10 transition-colors">
                 <div className={`absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[${card.accent}] to-transparent`}
                   style={{ background: `linear-gradient(to right, ${card.accent}, transparent)` }}
@@ -448,36 +452,7 @@ export default function CareersPage() {
       </section>
 
       {/* STATS BAR */}
-      <section className="py-0">
-        <div className="bg-[#fff] py-12">
-          <div className="max-w-7xl mx-auto px-6 grid grid-cols-2 lg:grid-cols-4 gap-8">
-            {[
-              { value: "70+", label: "Team Members" },
-              { value: "45+", label: "Export Countries" },
-              { value: "2.4M MT", label: "Annual Volume" },
-              { value: "Since 2018", label: "In Operation" },
-            ].map((s) => (
-              <div key={s.label} className="text-center">
-                <div className="text-3xl lg:text-4xl font-black text-[#080C14] mb-1"
-                  style={{
-                    display: "inline-block",
-                    background:
-                      "linear-gradient(to bottom, #F7941D, #C96A00, #5B2A00)",
-                    WebkitBackgroundClip: "text",
-                    backgroundClip: "text",
-                    color: "transparent",
-                    filter: "drop-shadow(2px 2px 0px rgba(0, 0, 0, 0.25))",
-                  }}
-                >
-                  {s.value}
-
-                </div>
-                <div className="text-[#080C14]/70 text-sm font-semibold">{s.label}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <StatsCounterSection />
 
       {/* RECRUITMENT PROCESS */}
       <section className="py-24 [background:linear-gradient(135deg,#3D3F38,#6B8FA0,#9B6E7C,#C8B87A,#9DA09A)]">

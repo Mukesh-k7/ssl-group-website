@@ -16,8 +16,6 @@ export const metadata: Metadata = createPageMetadata({
   path: "/about",
 });
 
-
-
 export default function AboutPage() {
   const t = useTranslations("about")
   return (
@@ -75,7 +73,7 @@ export default function AboutPage() {
             </div>
             <div
               className="
-                grid grid-cols-2
+                grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1
                 gap-4
               "
             >
@@ -92,7 +90,7 @@ export default function AboutPage() {
                     className="
                       font-heading font-semibold text-white
                     "
-                  >{value.key}  {t(`${value.key}.Title`)} </h3>
+                  > {t(`${value.key}.Title`)} </h3>
                   <p
                     className="
                       mt-2

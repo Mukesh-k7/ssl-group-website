@@ -54,7 +54,9 @@ function AnimatedNumber({
 }
 
 export function StatsCounterSection() {
+  
   const t = useTranslations('stats');
+
   return (
     <section
       className="
