@@ -748,8 +748,166 @@
     "SendYour": "Send your resume to",
     "Directly": "or apply directly through any of our open positions above.",
     "Browse": "Browse Open Roles",
-    "EmailYour": "Email Your CV"
+    "EmailYour": "Email Your CV",
+
+    "benefits": {
+      "globalExposure": {
+        "title": "Global Exposure",
+        "description": "Work with export operations spanning Africa, Middle East, and European markets across 45+ countries."
+      },
+      "industryCertifications": {
+        "title": "Industry Certifications",
+        "description": "Access ISO 9001, BIS, and international trade compliance training to grow your professional credentials."
+      },
+      "ghaziabadHQ": {
+        "title": "Ghaziabad HQ",
+        "description": "Modern office at the heart of India's industrial corridor with excellent NCR connectivity."
+      },
+      "learningDevelopment": {
+        "title": "Learning & Development",
+        "description": "Sponsored certifications, metallurgy domain workshops, and cross-functional rotations."
+      },
+      "performanceRewards": {
+        "title": "Performance Rewards",
+        "description": "Quarterly bonuses tied to trade volumes, ESOPs for senior roles, and annual recognition awards."
+      },
+      "collaborativeCulture": {
+        "title": "Collaborative Culture",
+        "description": "Flat hierarchy, cross-border teams, and a culture built on trade expertise and mutual growth."
+      }
+    },
+
+    "jobs": {
+      "exportDocumentationExecutive":{
+        "title": "Export Documentation Executive",
+        "dept": "Operations",
+        "type": "Full-time",
+        "location": "Ghaziabad" 
+      },
+      "internationalTradeManager": {
+        "title": "International Trade Manager",
+        "dept": "Trade",
+        "type": "Full-time",
+        "location": "Ghaziabad" 
+      },
+      "adminExecutive": {
+        "title": "Admin Executive",
+        "dept": "Admin Office",
+        "type": "Full-time",
+        "location": "Ghaziabad" 
+      },
+      "logisticsCoordinator": {
+        "title": "Logistics Coordinator",
+        "dept": "Logistics",
+        "type": "Full-time",
+        "location": "Ghaziabad" 
+      },
+      "businessDevelopmentExecutive": {
+        "title": "Business Development Executive",
+        "dept": "Sales",
+        "type": "Full-time",
+        "location": "Ghaziabad" 
+      },
+      "accountExecutive": {
+        "title": "Account Executive",
+        "dept": "Account",
+        "type": "Full-time",
+        "location": "Ghaziabad" 
+      },
+      "accountManager": {
+        "title": "Account Manager",
+        "dept": "Account",
+        "type": "Full-time",
+        "location": "Ghaziabad" 
+      },
+      "hrExecutive": {
+        "title": "HR Executive",
+        "dept": "Human Resource",
+        "type": "Full-time",
+        "location": "Ghaziabad" 
+      },
+      "hrManager": {
+        "title": "HR Manager",
+        "dept": "Human Resource",
+        "type": "Full-time",
+        "location": "Ghaziabad" 
+      },
+      "itExecutive": {
+        "title": "IT Executive",
+        "dept": "IT",
+        "type": "Full-time",
+        "location": "Ghaziabad" 
+      },
+      "corporateLawyer": {
+        "title": "Corporate Lawyer",
+        "dept": "Legals",
+        "type": "Full-time",
+        "location": "Ghaziabad" 
+      }
+    },
+
+    "process": {
+      "applicationSubmission": {
+        "title": "Application Submission",
+        "description": "Submit your resume and cover letter through our portal. Our team reviews every application with care."
+      },
+      "domainAssessment": {
+        "title": "Domain Assessment",
+        "description": "A short task or test relevant to your role — trade knowledge, technical skills, or case analysis."
+      },
+      "hrScreeningCall": {
+        "title": "HR Screening Call",
+        "description": "A 20-minute conversation about your background, expectations, and fit with SSL Group's culture."
+      },
+      "finalInterview": {
+        "title": "Final Interview",
+        "description": "Meet with department heads and leadership. Offer letter issued within 5 working days post-interview."
+      }
+    },
+
+    "culture": {
+      "ownershipCulture": {
+        "title": "Ownership Culture",
+        "description": "Junior analysts work directly with senior traders. Your decisions affect real export volumes — you'll feel it from day one."
+      },
+      "globalPerspective": {
+        "title": "Global Perspective",
+        "description": "Coordinate with counterparts in Dubai, Lagos, Rotterdam, and Seoul. Every week brings a new market, a new conversation."
+      },
+      "domainMastery": {
+        "title": "Domain Mastery",
+        "description": "Specialize in materials science, trade compliance, logistics, or digital infrastructure — and become the company's best in your space."
+      }
+    },
+
+    "departments": {
+      "all": "All Departments",
+      "operations": "Operations",
+      "trade": "Trade",
+      "quality": "Quality",
+      "logistics": "Logistics",
+      "sales": "Sales",
+      "marketing": "Marketing",
+      "it": "IT",
+      "legal": "Legal"
+    },
+
+    "workTypes": {
+      "all": "All Types",
+      "fullTime": "Full-time",
+      "contract": "Contract",
+      "remote": "Remote",
+      "hybrid": "Hybrid"
+    },
+
+    "stats": {
+      "yearsOfOperations": "Years of Operations",
+      "countriesServed": "Countries Served",
+      "annualExportVolume": "Annual Export Volume",
+      "globalExportPartners": "Global Export Partners"
+    }
   },
+
   "ViewAllProducts": "View Products",
   "title": "Ready to Source Premium Metallurgy Materials?",
   "description": "Connect with our export desk for specifications, pricing, vessel scheduling, and Incoterms consultation.",

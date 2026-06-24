@@ -96,5 +96,6 @@ export interface Careers{
   strokeWidth: string;
   strokeLinecap: string;
   strokeLinejoin: string;
-  d: string
+  d: string;
+  icon: string
 }
