@@ -16,7 +16,6 @@ export const products: Product[] = [
       { labelKey: "Silicon", value: "1.0 – 3.5%" },
       { labelKey: "Sulfur", value: "≤ 0.06%" },
       { labelKey: "Phosphorus", value: "≤ 0.12%" },
-      { labelKey: "Form", value: "Pigs / Breaker" },
     ],
     applications: [
       "Foundrycastings",

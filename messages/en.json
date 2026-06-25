@@ -101,10 +101,10 @@
         "Phosphorus": "Phosphorus (P)"
       },
       "Applications": {
-        "FoundryCastings": "Foundry castings",
-        "DuctileIronProduction": "Ductile iron production",
-        "SteelChargeMaterial": "Steel charge material",
-        "AutomotiveComponents": "Automotive components"
+        "Foundrycastings": "Foundry castings",
+        "Ductileironproduction": "Ductile iron production",
+        "Steelchargematerial": "Steel charge material",
+        "Automotivecomponents": "Automotive components"
       }
     },
     "FerroAlloys": {
