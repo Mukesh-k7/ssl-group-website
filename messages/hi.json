@@ -716,6 +716,7 @@
     "Metallurgy": "धातुकर्म निर्यात",
     "Intersection": "औद्योगिक व्यापार, वैश्विक लॉजिस्टिक्स और उभरते बाजारों के संगम पर काम करें। SSL Group 45+ देशों में लाखों मीट्रिक टन सामग्री का व्यापार करता है — इसका हिस्सा बनें।",
     "Openings": "सभी रिक्तियां देखें",
+    "ShowLess": "कम दिखाएं",
     "Life": "SSL Group में जीवन",
     "GlobalOperations": "2018 से वैश्विक संचालन",
     "Locations": "गाज़ियाबाद, उत्तर प्रदेश · अफ्रीका · मध्य पूर्व · यूरोप",
@@ -772,70 +773,141 @@
     "jobs": {
       "exportDocumentationExecutive": {
         "title": "निर्यात दस्तावेज़ीकरण कार्यकारी",
-        "dept": "ऑपरेशंस",
+        "dept": "संचालन",
         "type": "पूर्णकालिक",
-        "location": "गाज़ियाबाद"
+        "location": "गाज़ियाबाद",
+        "domain": "अंतरराष्ट्रीय"
       },
       "internationalTradeManager": {
         "title": "अंतरराष्ट्रीय व्यापार प्रबंधक",
         "dept": "व्यापार",
         "type": "पूर्णकालिक",
-        "location": "गाज़ियाबाद"
+        "location": "गाज़ियाबाद",
+        "domain": "अंतरराष्ट्रीय"
       },
       "adminExecutive": {
         "title": "प्रशासनिक कार्यकारी",
-        "dept": "प्रशासन",
+        "dept": "प्रशासन कार्यालय",
         "type": "पूर्णकालिक",
-        "location": "गाज़ियाबाद"
+        "location": "गाज़ियाबाद",
+        "domain": "सभी"
       },
       "logisticsCoordinator": {
         "title": "लॉजिस्टिक्स समन्वयक",
         "dept": "लॉजिस्टिक्स",
         "type": "पूर्णकालिक",
-        "location": "गाज़ियाबाद"
+        "location": "गाज़ियाबाद",
+        "domain": "सभी"
       },
       "businessDevelopmentExecutive": {
-        "title": "बिज़नेस डेवलपमेंट एग्जीक्यूटिव",
-        "dept": "सेल्स",
+        "title": "व्यवसाय विकास कार्यकारी",
+        "dept": "बिक्री एवं विपणन",
         "type": "पूर्णकालिक",
-        "location": "गाज़ियाबाद"
+        "location": "गाज़ियाबाद",
+        "domain": "घरेलू"
       },
       "accountExecutive": {
-        "title": "अकाउंट एग्जीक्यूटिव",
+        "title": "लेखा कार्यकारी",
         "dept": "लेखा",
         "type": "पूर्णकालिक",
-        "location": "गाज़ियाबाद"
+        "location": "गाज़ियाबाद",
+        "domain": "घरेलू"
       },
       "accountManager": {
-        "title": "अकाउंट मैनेजर",
+        "title": "लेखा प्रबंधक",
         "dept": "लेखा",
         "type": "पूर्णकालिक",
-        "location": "गाज़ियाबाद"
+        "location": "गाज़ियाबाद",
+        "domain": "सभी"
       },
       "hrExecutive": {
-        "title": "एचआर एग्जीक्यूटिव",
+        "title": "एचआर कार्यकारी",
         "dept": "मानव संसाधन",
         "type": "पूर्णकालिक",
-        "location": "गाज़ियाबाद"
+        "location": "गाज़ियाबाद",
+        "domain": "सभी"
       },
       "hrManager": {
-        "title": "एचआर मैनेजर",
+        "title": "एचआर प्रबंधक",
         "dept": "मानव संसाधन",
         "type": "पूर्णकालिक",
-        "location": "गाज़ियाबाद"
+        "location": "गाज़ियाबाद",
+        "domain": "सभी"
       },
       "itExecutive": {
-        "title": "आईटी एग्जीक्यूटिव",
+        "title": "आईटी कार्यकारी",
         "dept": "आईटी",
         "type": "पूर्णकालिक",
-        "location": "गाज़ियाबाद"
+        "location": "गाज़ियाबाद",
+        "domain": "सभी"
       },
       "corporateLawyer": {
         "title": "कॉर्पोरेट वकील",
         "dept": "कानूनी विभाग",
         "type": "पूर्णकालिक",
-        "location": "गाज़ियाबाद"
+        "location": "गाज़ियाबाद",
+        "domain": "सभी"
+      },
+      "businessDevelopmentAssistent": {
+        "title": "व्यवसाय विकास सहायक",
+        "dept": "बिक्री एवं विपणन",
+        "type": "पूर्णकालिक",
+        "location": "गाज़ियाबाद",
+        "domain": "घरेलू"
+      },
+      "globalBusinessDevelopment": {
+        "title": "वैश्विक व्यवसाय विकास",
+        "dept": "बिक्री एवं विपणन",
+        "type": "पूर्णकालिक",
+        "location": "गाज़ियाबाद",
+        "domain": "अंतरराष्ट्रीय"
+      },
+      "exportSales": {
+        "title": "निर्यात बिक्री",
+        "dept": "बिक्री एवं विपणन",
+        "type": "पूर्णकालिक",
+        "location": "गाज़ियाबाद",
+        "domain": "अंतरराष्ट्रीय"
+      },
+      "businessDevelopmentManager": {
+        "title": "व्यवसाय विकास प्रबंधक",
+        "dept": "बिक्री एवं विपणन",
+        "type": "पूर्णकालिक",
+        "location": "गाज़ियाबाद",
+        "domain": "घरेलू"
+      },
+      "domesticSales": {
+        "title": "घरेलू बिक्री",
+        "dept": "बिक्री एवं विपणन",
+        "type": "पूर्णकालिक",
+        "location": "गाज़ियाबाद",
+        "domain": "घरेलू"
+      },
+      "exportDocumentationManager": {
+        "title": "निर्यात दस्तावेज़ीकरण प्रबंधक",
+        "dept": "बिक्री एवं विपणन",
+        "type": "पूर्णकालिक",
+        "location": "गाज़ियाबाद",
+        "domain": "अंतरराष्ट्रीय"
       }
+    },
+    "departments": {
+      "all": "सभी विभाग",
+      "operations": "संचालन",
+      "trade": "व्यापार",
+      "quality": "गुणवत्ता",
+      "logistics": "लॉजिस्टिक्स",
+      "sales": "बिक्री एवं विपणन",
+      "it": "आईटी",
+      "legal": "कानूनी विभाग",
+      "adminOffice": "प्रशासन कार्यालय",
+      "account": "लेखा",
+      "humanResource": "मानव संसाधन"
+    },
+    "domains": {
+      "all": "सभी डोमेन",
+      "internatoinal": "अंतरराष्ट्रीय",
+      "domestic": "घरेलू"
     },
     "process": {
       "applicationSubmission": {
@@ -868,17 +940,6 @@
         "title": "क्षेत्र विशेषज्ञता",
         "description": "मटेरियल साइंस, व्यापार अनुपालन, लॉजिस्टिक्स या डिजिटल इंफ्रास्ट्रक्चर में विशेषज्ञ बनें।"
       }
-    },
-    "departments": {
-      "all": "सभी विभाग",
-      "operations": "ऑपरेशंस",
-      "trade": "व्यापार",
-      "quality": "गुणवत्ता",
-      "logistics": "लॉजिस्टिक्स",
-      "sales": "सेल्स",
-      "marketing": "मार्केटिंग",
-      "it": "आईटी",
-      "legal": "कानूनी"
     },
     "workTypes": {
       "all": "सभी प्रकार",

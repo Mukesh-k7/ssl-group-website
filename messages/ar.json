@@ -716,6 +716,7 @@
     "Metallurgy": "تصدير المعادن",
     "Intersection": "اعمل في نقطة التقاء التجارة الصناعية والخدمات اللوجستية العالمية والأسواق الناشئة. تنقل مجموعة SSL ملايين الأطنان المترية عبر أكثر من 45 دولة — كن جزءًا من ذلك.",
     "Openings": "عرض جميع الوظائف",
+    "ShowLess": "عرض أقل",
     "Life": "الحياة في مجموعة SSL",
     "GlobalOperations": "عمليات عالمية منذ عام 2018",
     "Locations": "غازياباد، أوتار براديش · أفريقيا · الشرق الأوسط · أوروبا",
@@ -771,70 +772,123 @@
     },
     "jobs": {
       "exportDocumentationExecutive": {
-        "title": "مسؤول توثيق الصادرات",
+        "title": "تنفيذي توثيق الصادرات",
         "dept": "العمليات",
         "type": "دوام كامل",
-        "location": "غازي آباد"
+        "location": "غازي آباد",
+        "domain": "دولي"
       },
       "internationalTradeManager": {
         "title": "مدير التجارة الدولية",
         "dept": "التجارة",
         "type": "دوام كامل",
-        "location": "غازي آباد"
+        "location": "غازي آباد",
+        "domain": "دولي"
       },
       "adminExecutive": {
-        "title": "مسؤول إداري",
+        "title": "تنفيذي إداري",
         "dept": "الإدارة",
         "type": "دوام كامل",
-        "location": "غازي آباد"
+        "location": "غازي آباد",
+        "domain": "الكل"
       },
       "logisticsCoordinator": {
         "title": "منسق الخدمات اللوجستية",
         "dept": "الخدمات اللوجستية",
         "type": "دوام كامل",
-        "location": "غازي آباد"
+        "location": "غازي آباد",
+        "domain": "الكل"
       },
       "businessDevelopmentExecutive": {
-        "title": "مسؤول تطوير الأعمال",
-        "dept": "المبيعات",
+        "title": "تنفيذي تطوير الأعمال",
+        "dept": "المبيعات والتسويق",
         "type": "دوام كامل",
-        "location": "غازي آباد"
+        "location": "غازي آباد",
+        "domain": "محلي"
       },
       "accountExecutive": {
-        "title": "مسؤول الحسابات",
+        "title": "تنفيذي الحسابات",
         "dept": "الحسابات",
         "type": "دوام كامل",
-        "location": "غازي آباد"
+        "location": "غازي آباد",
+        "domain": "محلي"
       },
       "accountManager": {
         "title": "مدير الحسابات",
         "dept": "الحسابات",
         "type": "دوام كامل",
-        "location": "غازي آباد"
+        "location": "غازي آباد",
+        "domain": "الكل"
       },
       "hrExecutive": {
-        "title": "مسؤول الموارد البشرية",
+        "title": "تنفيذي الموارد البشرية",
         "dept": "الموارد البشرية",
         "type": "دوام كامل",
-        "location": "غازي آباد"
+        "location": "غازي آباد",
+        "domain": "الكل"
       },
       "hrManager": {
         "title": "مدير الموارد البشرية",
         "dept": "الموارد البشرية",
         "type": "دوام كامل",
-        "location": "غازي آباد"
+        "location": "غازي آباد",
+        "domain": "الكل"
       },
       "itExecutive": {
-        "title": "مسؤول تقنية المعلومات",
+        "title": "تنفيذي تقنية المعلومات",
         "dept": "تقنية المعلومات",
         "type": "دوام كامل",
-        "location": "غازي آباد"
+        "location": "غازي آباد",
+        "domain": "الكل"
       },
       "corporateLawyer": {
-        "title": "محامٍ قانوني للشركات",
-        "dept": "القانون",
+        "title": "محامٍ للشركات",
+        "dept": "الشؤون القانونية",
         "type": "دوام كامل",
-        "location": "غازي آباد"
+        "location": "غازي آباد",
+        "domain": "الكل"
+      },
+      "businessDevelopmentAssistent": {
+        "title": "مساعد تطوير الأعمال",
+        "dept": "المبيعات والتسويق",
+        "type": "دوام كامل",
+        "location": "غازي آباد",
+        "domain": "محلي"
+      },
+      "globalBusinessDevelopment": {
+        "title": "تطوير الأعمال العالمية",
+        "dept": "المبيعات والتسويق",
+        "type": "دوام كامل",
+        "location": "غازي آباد",
+        "domain": "دولي"
+      },
+      "exportSales": {
+        "title": "مبيعات التصدير",
+        "dept": "المبيعات والتسويق",
+        "type": "دوام كامل",
+        "location": "غازي آباد",
+        "domain": "دولي"
+      },
+      "businessDevelopmentManager": {
+        "title": "مدير تطوير الأعمال",
+        "dept": "المبيعات والتسويق",
+        "type": "دوام كامل",
+        "location": "غازي آباد",
+        "domain": "محلي"
+      },
+      "domesticSales": {
+        "title": "المبيعات المحلية",
+        "dept": "المبيعات والتسويق",
+        "type": "دوام كامل",
+        "location": "غازي آباد",
+        "domain": "محلي"
+      },
+      "exportDocumentationManager": {
+        "title": "مدير توثيق الصادرات",
+        "dept": "المبيعات والتسويق",
+        "type": "دوام كامل",
+        "location": "غازي آباد",
+        "domain": "دولي"
       }
     },
     "process": {
@@ -875,10 +929,17 @@
       "trade": "التجارة",
       "quality": "الجودة",
       "logistics": "الخدمات اللوجستية",
-      "sales": "المبيعات",
-      "marketing": "التسويق",
+      "sales": "المبيعات والتسويق",
       "it": "تقنية المعلومات",
-      "legal": "القانون"
+      "legal": "الشؤون القانونية",
+      "adminOffice": "الإدارة",
+      "account": "الحسابات",
+      "humanResource": "الموارد البشرية"
+    },
+    "domains": {
+      "all": "جميع المجالات",
+      "internatoinal": "دولي",
+      "domestic": "محلي"
     },
     "workTypes": {
       "all": "جميع الأنواع",

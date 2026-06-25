@@ -2,6 +2,7 @@ import type { Testimonial } from "@/types";
 import { getAbsoluteUrl } from "@/lib/site-url";
 import { Warehouse, Container, FlaskConical } from "lucide-react";
 import { Ship, FileCheck, Anchor, Truck, Globe, BadgeCheck, Building2, GraduationCap, Trophy, Users, BriefcaseBusiness, FileUser, SearchCheck, Phone } from "lucide-react";
+import { title } from "process";
 
 export const company = {
   key: "SSLGroup",
@@ -232,7 +233,7 @@ export const Benefits = [
     desc: "Access ISO 9001, BIS, and international trade compliance training to grow your professional credentials.",
   },
   {
-    key: "ghaziabadHQ", 
+    key: "ghaziabadHQ",
     icon: Building2,
     desc: "Modern office at the heart of India's industrial corridor with excellent NCR connectivity.",
   },
@@ -254,19 +255,52 @@ export const Benefits = [
 ];
 
 export const Jobopening = [
-  { key: "exportDocumentationExecutive", dept: "Operations", type: "Full-time", location: "Ghaziabad" },
-  { key: "internationalTradeManager", dept: "Trade", type: "Full-time", location: "Ghaziabad" },
-  { key: "adminExecutive", dept: "Admin Office", type: "Full-time", location: "Ghaziabad" },
-  { key: "logisticsCoordinator", dept: "Logistics", type: "Full-time", location: "Ghaziabad" },
-  { key: "businessDevelopmentExecutive", dept: "Sales", type: "Full-time", location: "Ghaziabad" },
-  { key: "accountExecutive", dept: "Account", type: "Full-time", location: "Ghaziabad" },
-  { key: "accountManager", dept: "Account", type: "Full-time", location: "Ghaziabad" },
-  { key: "hrExecutive", dept: "Human Resource", type: "Full-time", location: "Ghaziabad" },
-  { key: "hrManager", dept: "Human Resource", type: "Full-time", location: "Ghaziabad" },
-  { key: "itExecutive", dept: "IT", type: "Full-time", location: "Ghaziabad" },
-  { key: "corporateLawyer", dept: "Legal", type: "Full-time", location: "Ghaziabad" },
+  { key: "exportDocumentationExecutive", title: "Export Documentation Executive", dept: "Operations", type: "Full-time", location: "Ghaziabad", domain:"Internatoinal" },
+  { key: "exportDocumentationManager", title: "Export Documentation Manager", dept: "Operations", type: "Full-time", location: "Ghaziabad", domain:"Internatoinal" },
+  { key: "internationalTradeManager", title: "International Trade Manager", dept: "Trade", type: "Full-time", location: "Ghaziabad", domain:"Internatoinal" },
+  { key: "accountExecutive", title: "Account Executive", dept: "Account", type: "Full-time", location: "Ghaziabad", domain:"All" },
+  { key: "accountManager", title: "Account Manager", dept: "Account", type: "Full-time", location: "Ghaziabad", domain:"All" },
+  { key: "hrExecutive", title: "HR Executive", dept: "Human Resource", type: "Full-time", location: "Ghaziabad", domain:"All" },
+  { key: "hrManager", title: "HR Manager", dept: "Human Resource", type: "Full-time", location: "Ghaziabad", domain:"All" },
+  { key: "itExecutive", title: "IT Executive", dept: "IT", type: "Full-time", location: "Ghaziabad", domain:"All" },
+  { key: "corporateLawyer", title: "Corporate Lawyer", dept: "Legal", type: "Full-time", location: "Ghaziabad", domain:"All" },
+  { key: "adminExecutive", title: "Admin Executive", dept: "Admin Office", type: "Full-time", location: "Ghaziabad", domain:"All" },
+  { key: "logisticsCoordinator", title: "Logistics Coordinator", dept: "Logistics", type: "Full-time", location: "Ghaziabad", domain:"All" },
+  { key: "businessDevelopmentExecutive", title: "Business Development Executive", dept: "Sale & Marketing", type: "Full-time", location: "Ghaziabad", domain: "Domestic" },
+  { key: "globalBusinessDevelopment", title: "Global Business Development", dept: "Sale & Marketing", type: "Full-time", location: "Ghaziabad", domain:"Internatoinal" },
+  { key: "exportSales", title: "Export Sales", dept: "Sale & Marketing", type: "Full-time", location: "Ghaziabad", domain:"Internatoinal" },
+  { key: "businessDevelopmentAssistent", title: "Business Development Assistant", dept: "Sale & Marketing", type: "Full-time", location: "Ghaziabad", domain: "Domestic" },
+  { key: "businessDevelopmentManager", title: "Business Development Manager", dept: "Sale & Marketing", type: "Full-time", location: "Ghaziabad", domain: "Domestic" },
+  { key: "domesticSales", title: "Domestic Sales", dept: "Sale & Marketing", type: "Full-time", location: "Ghaziabad", domain: "Domestic" },
+
 ];
 
+export const Domain = [
+  { value: "All Domains", label: "all" },
+  { value: "Internatoinal", label: "internatoinal" },
+  { value: "Domestic", label: "domestic" },
+]
+
+export const Departments = [
+  { value: "All Departments", label: "all" },
+  { value: "Admin Office", label: "adminOffice" },
+  { value: "Human Resource", label: "humanResource" },
+  { value: "IT", label: "it" },
+  { value: "Legal", label: "legal" },
+  { value: "Operations", label: "operations" },
+  { value: "Trade", label: "trade" },
+  { value: "Account", label: "account" },
+  { value: "Logistics", label: "logistics" },
+  { value: "Sale & Marketing", label: "sales" }
+] as const;
+
+export const Worktype = [
+  { value: "All Types", label: "all" },
+  { value: "Full-time", label: "fullTime" },
+  { value: "Contracts", label: "contract" },
+  { value: "Remote", label: "remote" },
+  { value: "Hybrid", label: "hybrid" }
+] as const;
 
 export const Recruitments = [
   {
@@ -319,22 +353,4 @@ export const Culture = [
   },
 ]
 
-export const Departments = [
-  "all",
-  "operations",
-  "trade",
-  "quality",
-  "logistics",
-  "sales",
-  "marketing",
-  "it",
-  "legal",
-] as const;
 
-export const Worktype = [
-  "all",
-  "fullTime",
-  "contract",
-  "remote",
-  "hybrid",
-] as const;

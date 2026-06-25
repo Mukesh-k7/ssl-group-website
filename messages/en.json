@@ -722,6 +722,7 @@
     "Metallurgy": "Metallurgy Export",
     "Intersection": "Work at the intersection of industrial trade, global logistics, and emerging markets. SSL Group moves millions of metric tons across 45+ countries — be part of that.",
     "Openings": "View All Openings",
+    "ShowLess": "Show Less",
     "Life": "Life at SSL Group",
     "GlobalOperations": "Global Operations Since 2018",
     "Locations": "Ghaziabad, UP · Africa · Middle East · Europe",
@@ -749,7 +750,6 @@
     "Directly": "or apply directly through any of our open positions above.",
     "Browse": "Browse Open Roles",
     "EmailYour": "Email Your CV",
-
     "benefits": {
       "globalExposure": {
         "title": "Global Exposure",
@@ -778,74 +778,151 @@
     },
 
     "jobs": {
-      "exportDocumentationExecutive":{
+      "exportDocumentationExecutive": {
         "title": "Export Documentation Executive",
         "dept": "Operations",
         "type": "Full-time",
-        "location": "Ghaziabad" 
+        "location": "Ghaziabad",
+        "domain": "International"
       },
       "internationalTradeManager": {
         "title": "International Trade Manager",
         "dept": "Trade",
         "type": "Full-time",
-        "location": "Ghaziabad" 
+        "location": "Ghaziabad",
+        "domain": "International"
       },
       "adminExecutive": {
         "title": "Admin Executive",
         "dept": "Admin Office",
         "type": "Full-time",
-        "location": "Ghaziabad" 
+        "location": "Ghaziabad",
+        "domain": "All"
       },
       "logisticsCoordinator": {
         "title": "Logistics Coordinator",
         "dept": "Logistics",
         "type": "Full-time",
-        "location": "Ghaziabad" 
+        "location": "Ghaziabad",
+        "domain": "All"
       },
       "businessDevelopmentExecutive": {
         "title": "Business Development Executive",
-        "dept": "Sales",
+        "dept": "Sale & Marketing",
         "type": "Full-time",
-        "location": "Ghaziabad" 
+        "location": "Ghaziabad",
+        "domain": "Domestic"
       },
       "accountExecutive": {
         "title": "Account Executive",
         "dept": "Account",
         "type": "Full-time",
-        "location": "Ghaziabad" 
+        "location": "Ghaziabad",
+        "domain": "Domestic"
       },
       "accountManager": {
         "title": "Account Manager",
         "dept": "Account",
         "type": "Full-time",
-        "location": "Ghaziabad" 
+        "location": "Ghaziabad",
+        "domain": "All"
       },
       "hrExecutive": {
         "title": "HR Executive",
         "dept": "Human Resource",
         "type": "Full-time",
-        "location": "Ghaziabad" 
+        "location": "Ghaziabad",
+        "domain": "All"
       },
       "hrManager": {
         "title": "HR Manager",
         "dept": "Human Resource",
         "type": "Full-time",
-        "location": "Ghaziabad" 
+        "location": "Ghaziabad",
+        "domain": "All"
       },
       "itExecutive": {
         "title": "IT Executive",
         "dept": "IT",
         "type": "Full-time",
-        "location": "Ghaziabad" 
+        "location": "Ghaziabad",
+        "domain": "All"
       },
       "corporateLawyer": {
         "title": "Corporate Lawyer",
         "dept": "Legals",
         "type": "Full-time",
-        "location": "Ghaziabad" 
+        "location": "Ghaziabad",
+        "domain": "All"
+      },
+      "businessDevelopmentAssistent": {
+        "title": "Business Development Assistant",
+        "dept": "Sale & Marketing",
+        "type": "Full-time",
+        "location": "Ghaziabad",
+        "domain": "Domestic"
+      },
+      "globalBusinessDevelopment": {
+        "title": "Global Business Development",
+        "dept": "Sale & Marketing",
+        "type": "Full-time",
+        "location": "Ghaziabad",
+        "domain": "International"
+      },
+      "exportSales": {
+        "title": "Export Sales",
+        "dept": "Sale & Marketing",
+        "type": "Full-time",
+        "location": "Ghaziabad",
+        "domain": "International"
+      },
+      "businessDevelopmentManager": {
+        "title": "Business Development Manager",
+        "dept": "Sale & Marketing",
+        "type": "Full-time",
+        "location": "Ghaziabad",
+        "domain": "Domestic"
+      },
+      "domesticSales": {
+        "title": "Domestic Sales",
+        "dept": "Sale & Marketing",
+        "type": "Full-time",
+        "location": "Ghaziabad",
+        "domain": "Domestic"
+      },
+      "exportDocumentationManager": {
+        "title": "Export Documentation Manager",
+        "dept": "Sale & Marketing",
+        "type": "Full-time",
+        "location": "Ghaziabad",
+        "domain": "International"
       }
     },
-
+    "departments": {
+      "all": "All Departments",
+      "operations": "Operations",
+      "trade": "Trade",
+      "quality": "Quality",
+      "logistics": "Logistics",
+      "sales": "Sale & Marketing",
+      "it": "IT",
+      "legal": "Legals",
+      "adminOffice": "Admin Office",
+      "account": "Account",
+      "humanResource": "Human Resource"
+    },
+    "domains": {
+      "all": "All Domains",
+      "internatoinal": "International",
+      "domestic": "Domestic"
+    },
+    "workTypes": {
+      "all": "All Types",
+      "fullTime": "Full-time",
+      "contract": "Contracts",
+      "remote": "Remote",
+      "hybrid": "Hybrid"
+    },
     "process": {
       "applicationSubmission": {
         "title": "Application Submission",
@@ -864,7 +941,6 @@
         "description": "Meet with department heads and leadership. Offer letter issued within 5 working days post-interview."
       }
     },
-
     "culture": {
       "ownershipCulture": {
         "title": "Ownership Culture",
@@ -879,35 +955,14 @@
         "description": "Specialize in materials science, trade compliance, logistics, or digital infrastructure — and become the company's best in your space."
       }
     },
-
-    "departments": {
-      "all": "All Departments",
-      "operations": "Operations",
-      "trade": "Trade",
-      "quality": "Quality",
-      "logistics": "Logistics",
-      "sales": "Sales",
-      "marketing": "Marketing",
-      "it": "IT",
-      "legal": "Legal"
-    },
-
-    "workTypes": {
-      "all": "All Types",
-      "fullTime": "Full-time",
-      "contract": "Contract",
-      "remote": "Remote",
-      "hybrid": "Hybrid"
-    },
-
     "stats": {
       "yearsOfOperations": "Years of Operations",
       "countriesServed": "Countries Served",
       "annualExportVolume": "Annual Export Volume",
       "globalExportPartners": "Global Export Partners"
     }
-  },
 
+  },
   "ViewAllProducts": "View Products",
   "title": "Ready to Source Premium Metallurgy Materials?",
   "description": "Connect with our export desk for specifications, pricing, vessel scheduling, and Incoterms consultation.",
