@@ -102,5 +102,4 @@ export default async function RootLayout({
         </NextIntlClientProvider>
       </body>
     </html>
-  );
-}
+  )}
