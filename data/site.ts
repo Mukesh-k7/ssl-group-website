@@ -47,7 +47,8 @@ export const navigation: NavItem[] = [
   { key: "globalPresence", href: "/global-presence" },
   { key: "insights", href: "/blog" },
   { key: "contact", href: "/contact" },
-  { key: "career", href: "/career" }
+  { key: "career", href: "/career" },
+  // { key: "media", href: "/media-kit" },
 ];
 
 export const stats: Stat[] = [

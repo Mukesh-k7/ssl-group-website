@@ -238,7 +238,7 @@ export function Footer() {
             </div>
 
             <a
-              href="https://www.linkedin.com/company/ssl-group"
+              href="https://www.linkedin.com/jobs/"
               target="_blank"
               rel="noopener noreferrer"
               className="
@@ -266,7 +266,7 @@ export function Footer() {
             {/* Instagram */}
 
             <a
-              href="https://www.instagram.com/"
+              href="https://www.instagram.com/sslgroup821/"
               target="_blank"
               rel="noopener noreferrer"
               className="

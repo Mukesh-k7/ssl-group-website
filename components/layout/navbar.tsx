@@ -323,12 +323,7 @@ export function Navbar() {
                 );
               })}
               <div
-                className="
-    flex flex-col
-    mt-4 pt-4
-    border-t border-white/10
-    gap-2
-  "
+                className="flex flex-col mt-4 pt-4 border-t border-white/10 gap-2"
               >
                 {/* <LanguageSwitcher /> */}
                 <Button variant="secondary" asChild>
