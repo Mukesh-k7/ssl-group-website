@@ -40,12 +40,10 @@ export default function MediaCenterPage() {
   const pathname = usePathname();
   const locale = getLocale(pathname);
   const t = useTranslations("media");
-
   const [activeCategory, setActiveCategory] = useState("events");
   const [lightbox, setLightbox] = useState<null | { src: string; title: string; date?: string }>(null);
   const [email, setEmail] = useState("");
   const [subscribed, setSubscribed] = useState(false);
-
   const currentCategory = mediaCategories.find((c) => c.id === activeCategory)!;
 
   return (
