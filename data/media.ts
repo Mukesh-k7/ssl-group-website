@@ -20,28 +20,28 @@ export const mediaCategories: MediaCategory[] = [
     id: "events",
     items: [
       {
-        title: "Republic Day Celebration 2024",
-        image: "/images/media/IMG_1198.png",
-        date: "Jan 26, 2024",
+        title: "Republic Day Celebration 2025",
+        image: "/images/festivals/9.jpeg",
+        date: "Jan 26, 2025",
         description: "SSL Group team celebrates Republic Day with patriotic spirit and the tricolor at our Ghaziabad HQ.",
       },
       {
-        title: "Republic Day 2024 — Full Team",
-        image: "/images/media/IMG_1199.png",
-        date: "Jan 26, 2024",
-        description: "Full team assembled to mark India's Republic Day with pride and unity.",
-      },
-      {
-        title: "Holi Celebration 2024 — Team Group",
+        title: "Holi Celebration 2025 — Team Group",
         image: "/images/media/IMG_1506.png",
-        date: "Mar 25, 2024",
+        date: "Mar 25, 2025",
         description: "Colors of joy! The SSL Group Holi bash brought the entire team together.",
       },
       {
-        title: "Holi 2024 — Fun with Colors",
-        image: "/images/media/IMG_1507.png",
-        date: "Mar 25, 2024",
+        title: "Diwali 2025",
+        image: "/images/festivals/3.jpeg",
+        date: "Oct 18, 2025",
         description: "Smiles and colors — Holi celebrations at SSL Group office.",
+      },
+      {
+        title: "Chrishmas Day 2025 — Full Team",
+        image: "/images/festivals/6.jpeg",
+        date: "Dec 25, 2025",
+        description: "Full team assembled to mark Chrishmas Day with pride and unity.",
       },
       {
         title: "Holi 2024 — Group Shot",
@@ -74,25 +74,26 @@ export const mediaCategories: MediaCategory[] = [
   {
     id: "life",
     items: [
+
       {
-        title: "Fun at Office — Holi Edition",
-        image: "/images/media/IMG_1512.png",
-        description: "The SSL Group team letting loose and enjoying the Holi spirit indoors.",
+        title: "Team Bonding — Dinner Celebration",
+        image: "/images/fun-celebrations/1.jpeg",
+        description: "Selfie time during the Dinner celebrations — pure team energy!",
       },
       {
-        title: "Team Bonding — Holi Selfies",
-        image: "/images/media/IMG_1513.png",
-        description: "Selfie time during the Holi celebrations — pure team energy!",
+        title: "New Year Party",
+        image: "/images/fun-celebrations/4.jpeg",
+        description: "The SSL Group team letting loose and enjoying the New Years Celebration outdoors.",
       },
       {
-        title: "Life at SSL — Festive Office Decor",
-        image: "/images/media/IMG_1514.png",
+        title: "Life at SSL — Festive Office Dance",
+        image: "/images/fun-celebrations/IMG_1518.png",
         description: "Our office transforms into a festive space for every celebration.",
       },
       {
         title: "SSL Group Team Moments",
-        image: "/images/media/IMG_1515.png",
-        description: "Capturing joyful moments from daily life at SSL Group.",
+        image: "/images/fun-celebrations/2.jpeg",
+        description: "Capturing joyful moments from outing at SSL Group.",
       },
       {
         title: "Team Fun — Holi Group",
@@ -142,29 +143,30 @@ export const mediaCategories: MediaCategory[] = [
     id: "achievements",
     items: [
       {
+        title: "Achievement Awards",
+        image: "/images/award-achievement/33.jpg",
+        date: "2022",
+        description: "SSL Group team with Desai Group of Companies — sealing a successful business agreement.",
+      },
+      {
         title: "Team Certificate Distribution",
         image: "/images/media/IMG_2720.png",
-        date: "2024",
+        date: "2025",
         description: "SSL Group team members proudly receiving their certificates of recognition and achievement.",
       },
       {
         title: "Performance Awards — SSL Group",
-        image: "/images/media/IMG_2721.png",
-        date: "2024",
+        image: "/images/award-achievement/32.jpeg",
+        date: "2026",
         description: "Celebrating excellence — recognizing outstanding contributions across departments.",
       },
       {
         title: "Client Partnership — DGC Meeting",
         image: "/images/media/IMG_2105.png",
-        date: "2025",
+        date: "2026",
         description: "Formalizing a key partnership with Desai Group of Companies at their stall.",
       },
-      {
-        title: "Business Deal with DGC",
-        image: "/images/media/IMG_2075.png",
-        date: "2025",
-        description: "SSL Group team with Desai Group of Companies — sealing a successful business agreement.",
-      },
+
       {
         title: "Partnership Handshake — DGC",
         image: "/images/media/IMG_2076.png",
@@ -185,21 +187,15 @@ export const mediaCategories: MediaCategory[] = [
     id: "global",
     items: [
       {
-        title: "IFEX 2026 — SSL Group India",
-        image: "/images/media/IMG_2093.png",
-        date: "2026",
+        title: "BIG EXHIBITION 2022 — SSL Group India",
+        image: "/images/global-operations/7.png",
+        date: "2022",
         description: "SSL Group India proudly represented at IFEX 2026 with our international trade banner.",
       },
       {
-        title: "IFEX 2026 — Trade Fair Presence",
-        image: "/images/media/IMG_2094.png",
-        date: "2026",
-        description: "Our team at the IFEX 2026 international trade fair showcasing SSL Group's global reach.",
-      },
-      {
-        title: "IFEX 2026 — SSL Banner Display",
-        image: "/images/media/IMG_2095.png",
-        date: "2026",
+        title: "IFEX 2025 - SSL Product on Port",
+        image: "/images/global-operations/8.jpg",
+        date: "2025",
         description: "SSL Group India banner at IFEX 2026 — connecting with international buyers and traders.",
       },
       {
@@ -209,10 +205,17 @@ export const mediaCategories: MediaCategory[] = [
         description: "Representing SSL Group at one of India's premier international trade exhibitions.",
       },
       {
-        title: "IFEX 2026 — Hall 3 Entry",
-        image: "/images/media/IMG_2087.png",
+        title: "Bombay Exhibition - SSL Group India",
+        image: "/images/global-operations/9.jpeg",
         date: "2026",
         description: "SSL Group team arriving at Hall 3 of IFEX 2026 for global networking.",
+      },
+
+      {
+        title: "IFEX 2026 — Trade Fair Presence",
+        image: "/images/media/IMG_2094.png",
+        date: "2026",
+        description: "Our team at the IFEX 2026 international trade fair showcasing SSL Group's global reach.",
       },
       {
         title: "IFEX 2026 — Exhibition Floor",
@@ -289,23 +292,23 @@ export const mediaCategories: MediaCategory[] = [
     items: [
       {
         title: "Business Trip — Trade Expo Visit",
-        image: "/images/media/IMG_2083.png",
+        image: "/images/media/IMG_2076.png",
         description: "SSL Group team at an industry trade expo — representing India's metallurgy sector.",
       },
       {
         title: "Team Travel — Export Conference",
-        image: "/images/media/IMG_2084.png",
+        image: "/images/team-workplace/3.jpg",
         description: "On the road for business — SSL Group team at an international trade conference.",
-      },
-      {
-        title: "Industry Expo — SSL Team",
-        image: "/images/media/IMG_2085.png",
-        description: "SSL Group professionals at a major industry expo networking with global partners.",
       },
       {
         title: "Trade Event — Group Photo",
         image: "/images/media/IMG_2086.png",
         description: "Team photo at a trade event marking SSL Group's growing international footprint.",
+      },
+      {
+        title: "Industry Expo — SSL Team",
+        image: "/images/team-workplace/2.jpg",
+        description: "SSL Group professionals at a major industry expo networking with global partners.",
       },
       {
         title: "Client Meeting — DGC Stall",
@@ -338,21 +341,21 @@ export const mediaCategories: MediaCategory[] = [
 
 // ─── PHOTO GALLERY (best shots across all categories) ─────────────────────
 export const photoGallery = [
-  { src: "/images/media/IMG_1198.png",  title: "Republic Day 2024" },
-  { src: "/images/media/IMG_1506.png",  title: "Holi Celebration 2024" },
-  { src: "/images/media/IMG_1510.png",  title: "Holi Fun at SSL Office" },
-  { src: "/images/media/IMG_2093.png",  title: "IFEX 2026 — SSL Group India" },
-  { src: "/images/media/IMG_2720.png",  title: "Certificate Distribution" },
-  { src: "/images/media/IMG_2075.png",  title: "DGC Partnership" },
-  { src: "/images/media/IMG_2096.png",  title: "IFEX 2026 Trade Fair" },
-  { src: "/images/media/IMG_1521.png",  title: "Team Celebration" },
-  { src: "/images/media/IMG_2083.png",  title: "Export Conference" },
+  { src: "/images/media/IMG_1198.png", title: "Republic Day 2024" },
+  { src: "/images/media/IMG_1506.png", title: "Holi Celebration 2024" },
+  { src: "/images/media/IMG_1510.png", title: "Holi Fun at SSL Office" },
+  { src: "/images/media/IMG_2093.png", title: "IFEX 2026 — SSL Group India" },
+  { src: "/images/media/IMG_2720.png", title: "Certificate Distribution" },
+  { src: "/images/media/IMG_2075.png", title: "DGC Partnership" },
+  { src: "/images/media/IMG_2096.png", title: "IFEX 2026 Trade Fair" },
+  { src: "/images/media/IMG_1521.png", title: "Team Celebration" },
+  { src: "/images/media/IMG_2083.png", title: "Export Conference" },
 ];
 
 // ─── STATS ────────────────────────────────────────────────────────────────
 export const mediaStats = [
-  { value: "51+",  labelKey: "stats.photos" },
-  { value: "10+",  labelKey: "stats.events" },
-  { value: "12+",  labelKey: "stats.awards" },
-  { value: "45+",  labelKey: "stats.countries" },
+  { value: "51+", labelKey: "stats.photos" },
+  { value: "10+", labelKey: "stats.events" },
+  { value: "12+", labelKey: "stats.awards" },
+  { value: "45+", labelKey: "stats.countries" },
 ];
