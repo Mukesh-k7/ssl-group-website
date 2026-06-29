@@ -28,7 +28,8 @@
     "DownloadCatalog": "Download Catalog",
     "GetExportQuote": "Get Export Quote",
     "Catalog": "Catalog",
-    "career": "Career"
+    "career": "Career",
+    "media": "Media-Center"
   },
   "hero": {
     "title": "Leading Global Exporter of Metallurgical Products",
@@ -776,7 +777,6 @@
         "description": "Flat hierarchy, cross-border teams, and a culture built on trade expertise and mutual growth."
       }
     },
-
     "jobs": {
       "exportDocumentationExecutive": {
         "title": "Export Documentation Executive",
@@ -961,7 +961,56 @@
       "annualExportVolume": "Annual Export Volume",
       "globalExportPartners": "Global Export Partners"
     }
-
+  },
+  "media": {
+    "eyebrow": "Media Center",
+    "title": "Media Center",
+    "description": "Explore SSL Group's journey through events, achievements, team culture, and global operations.",
+    "stats": {
+      "photos": "Photos & Videos",
+      "events": "Events Covered",
+      "awards": "Awards & Recognitions",
+      "countries": "Countries Reached"
+    },
+    "categories": {
+      "events": {
+        "title": "Events & Festivals",
+        "description": "Celebrating festivals and special occasions that bring our team together.",
+        "viewAll": "View All Events"
+      },
+      "life": {
+        "title": "Life at SSL Group",
+        "description": "A glimpse of our fun, team bonding and memorable moments.",
+        "viewAll": "View All Moments"
+      },
+      "achievements": {
+        "title": "Achievements & Awards",
+        "description": "Recognitions and milestones that inspire us to do better.",
+        "viewAll": "View All Awards"
+      },
+      "global": {
+        "title": "Global Operations",
+        "description": "Delivering quality and trust across the globe.",
+        "viewAll": "View All Operations"
+      },
+      "team": {
+        "title": "Team & Workplace",
+        "description": "Our people, our strength. Working together every day.",
+        "viewAll": "View All Photos"
+      }
+    },
+    "gallery": {
+      "title": "Photo Gallery",
+      "subtitle": "More memories from SSL Group",
+      "explore": "Explore Full Gallery"
+    },
+    "newsletter": {
+      "title": "Stay Updated with SSL Group",
+      "description": "Subscribe to our newsletter and never miss an update.",
+      "placeholder": "Enter your email",
+      "button": "Subscribe",
+      "success": "You're subscribed!"
+    }
   },
   "ViewAllProducts": "View Products",
   "title": "Ready to Source Premium Metallurgy Materials?",

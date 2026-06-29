@@ -99,3 +99,8 @@ export interface Careers{
   d: string;
   icon: string
 }
+
+export interface MediaCategory{
+  title: string;
+  
+}
