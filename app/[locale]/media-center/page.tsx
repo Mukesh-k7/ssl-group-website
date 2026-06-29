@@ -62,6 +62,7 @@ export default function MediaCenterPage() {
             src="/images/products/home.jpg"
             alt="SSL Group Media"
             fill
+            sizes=""
             className="object-cover"
           />
         </div>
@@ -87,7 +88,7 @@ export default function MediaCenterPage() {
 
         {/* Stats bar */}
         <div className="container mx-auto px-4 md:px-6 mt-12 relative z-10">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
             {mediaStats.map((stat, i) => (
               <motion.div
                 key={stat.labelKey}
@@ -165,7 +166,7 @@ export default function MediaCenterPage() {
 
             {/* Media Grid */}
             <div className="relative">
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
                 {currentCategory.items.slice(0, 4).map((item, i) => (
                   <motion.div
                     key={item.title}
@@ -183,6 +184,7 @@ export default function MediaCenterPage() {
                         src={item.image}
                         alt={item.title}
                         fill
+                        sizes="290px"
                         className="object-cover transition-transform duration-500 group-hover:scale-105"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
@@ -214,7 +216,7 @@ export default function MediaCenterPage() {
             <section key={cat.id} className={`py-14 ${sectionIdx % 2 === 0 ? "bg-white/[0.02]" : ""}`}>
               <div className="container mx-auto px-4 md:px-6">
                 <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
-                  <div className="flex items-center gap-3">
+                  <div className="flex gap-3">
                     <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#F97316]/20 to-[#EAB308]/10 border border-white/10 flex items-center justify-center">
                       <Icon className="h-5 w-5 text-amber-400" />
                     </div>
@@ -236,7 +238,7 @@ export default function MediaCenterPage() {
                   </Button>
                 </div>
 
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+                <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
                   {cat.items.slice(0, 4).map((item, i) => (
                     <motion.div
                       key={item.title}
@@ -252,6 +254,7 @@ export default function MediaCenterPage() {
                           src={item.image}
                           alt={item.title}
                           fill
+                          sizes="290px"
                           className="object-cover transition-transform duration-500 group-hover:scale-105"
                          
                         />
@@ -284,7 +287,7 @@ export default function MediaCenterPage() {
             <p className="text-metallic/60 text-sm">{t("gallery.subtitle")}</p>
           </div>
 
-          <div className="grid grid-cols-3 md:grid-cols-7 gap-2">
+          <div className="grid sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-2">
             {photoGallery.map((photo, i) => (
               <motion.div
                 key={photo.src}
@@ -302,6 +305,7 @@ export default function MediaCenterPage() {
                     src={photo.src}
                     alt={photo.title}
                     fill
+                    sizes="290px"
                     className="object-cover transition-transform duration-500 group-hover:scale-110 group-hover:brightness-110"
                   />
                   <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity" />
@@ -344,7 +348,7 @@ export default function MediaCenterPage() {
                 <span>{t("newsletter.success")}</span>
               </div>
             ) : (
-              <div className="flex gap-3 w-full md:w-auto">
+              <div className="flex gap-3 w-full md:w-auto flex-wrap">
                 <input
                   type="email"
                   placeholder={t("newsletter.placeholder")}
