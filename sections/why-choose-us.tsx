@@ -30,7 +30,7 @@ export function WhyChooseUsSection() {
     <AnimatedSection
       className="
         py-24
-        [background:linear-gradient(135deg,#3D3F38,#6B8FA0,#9B6E7C,#C8B87A,#9DA09A)]
+        [background:#fff]
       "
     >
       <div
@@ -56,13 +56,11 @@ export function WhyChooseUsSection() {
               <StaggerItem key={item.key}>
                 <div
                   className="
-                    h-full
-                    p-6
-                    bg-gunmetal/30 hover:bg-gunmetal/50
-                    rounded-xl
-                    border border-white/10 hover:border-industrial-blue/40
-                    transition-all
-                    group
+h-full 
+p-6 
+bg-gradient-to-br from-industrial-blue/40 via-gunmetal to-charcoal 
+rounded-xl 
+transition-all group 
                   "
                 >
                   <div
@@ -83,7 +81,7 @@ export function WhyChooseUsSection() {
                         hover:text-[#c96a00] text-[#f38203] text-bold
                         transition-colors duration-200
                       "
-                      /
+                    /
                     >
                   </div>
                   <h3
@@ -96,7 +94,7 @@ export function WhyChooseUsSection() {
                   <p
                     className="
                       mt-2
-                      text-sm text-metallic/80 leading-relaxed
+                      text-sm text-metallic/100 leading-relaxed
                     "
                   >
                     {t(`${item.key}.Description`)}

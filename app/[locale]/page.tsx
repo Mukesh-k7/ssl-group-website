@@ -24,10 +24,10 @@ export default function HomePage() {
   return (
     <>
       <HeroSection />
-      <IntroSection />
       <StatsCounterSection />
-      <ProductsGridSection limit={6} />
+      <IntroSection />
       <WhyChooseUsSection />
+      <ProductsGridSection limit={6} />
       <IndustriesServedSection limit={8} />
       <ExportMapSection />
       <InfrastructurePreviewSection />

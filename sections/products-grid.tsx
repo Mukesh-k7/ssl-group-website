@@ -4,11 +4,9 @@ import Link from "next/link";
 import { ArrowBigRight, ArrowBigLeft } from 'lucide-react';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
-
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-
 import {
   AnimatedSection,
   SectionHeader,
@@ -41,6 +39,9 @@ export function ProductsGridSection({
           eyebrow={t("Eyebrow")}
           title={t("Title")}
           description={t("Description")}
+          titleClassName="text-white"
+          descriptionClassName="text-gray-300"
+          eyebrowClassName="text-blue-500"
         />
 
         <div className="relative">
