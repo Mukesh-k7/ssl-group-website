@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
 import { stats } from "@/data/site";
-import {useTranslations} from 'next-intl';
+import { useTranslations } from 'next-intl';
 
 function AnimatedNumber({
   value,
@@ -54,7 +54,7 @@ function AnimatedNumber({
 }
 
 export function StatsCounterSection() {
-  
+
   const t = useTranslations('stats');
 
   return (
@@ -89,9 +89,7 @@ export function StatsCounterSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="
-                text-center
-              "
+              className="text-center"
             >
               <p
                 className="
@@ -116,10 +114,7 @@ export function StatsCounterSection() {
                 />
               </p>
               <p
-                className="
-                  mt-2
-                  text-sm text-[#e78e03] md:text-base font-bold
-                "
+                className="mt-2 text-sm text-[#e78e03] md:text-base font-bold"
               >
                 {t(stat.key)}
               </p>

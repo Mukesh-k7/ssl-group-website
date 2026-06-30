@@ -102,5 +102,4 @@ export interface Careers{
 
 export interface MediaCategory{
   title: string;
-  
 }
