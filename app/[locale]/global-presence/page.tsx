@@ -33,18 +33,22 @@ export default function GlobalPresencePage() {
       />
       <StatsCounterSection />
       <ExportMapSection />
-      <AnimatedSection className="py-24">
+      <AnimatedSection className="py-24 bg-[#fff] transition-colors">
         <div className="container mx-auto px-4 md:px-6">
           <SectionHeader
             title={t("Regional")}
             description={t("Teams")}
+            titleClassName="font-heading font-bold text-3xl text-black md:text-4xl lg:text-5xl
+          tracking-tight"
+            descriptionClassName="mt-4
+            text-lg text-industrial-blue/70 leading-relaxed"
             align="center"
           />
           <div className="grid gap-6 md:grid-cols-2">
             {exportRegions.map((region) => (
               <div
                 key={region.key}
-                className="rounded-xl border border-white/10 bg-charcoal/50 p-8"
+                className="rounded-xl bg-gradient-to-br from-industrial-blue/40 via-gunmetal to-charcoal p-8"
               >
                 <h3 className="font-heading text-2xl font-bold text-white">{t(`${region.key}.Title`)}</h3>
                 <p className="mt-2 text-metallic/80">{t(`${region.key}.Description`)}</p>

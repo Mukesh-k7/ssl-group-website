@@ -21,7 +21,7 @@ export function TestimonialsSection() {
     <AnimatedSection
       className="
         py-24
-        bg-gradient-to-br from-industrial-blue/40 via-gunmetal to-charcoal
+        [background:#fff]
       "
     >
       <div
@@ -34,6 +34,15 @@ export function TestimonialsSection() {
           eyebrow={t("Eyebrow")}
           title={t("Title")}
           description={t("Description")}
+          eyebrowClassName="mb-3
+            text-lg text-transparent font-bold tracking-[0.2em] uppercase
+            bg-gradient-to-b bg-clip-text from-[#F7941D] via-[#C96A00]
+            to-[#5B2A00]
+            drop-shadow-[2px_2px_0px_rgba(0,0,0,0.25)]"
+          titleClassName="font-heading font-bold text-3xl text-black md:text-4xl lg:text-5xl
+          tracking-tight"
+          descriptionClassName="mt-4
+            text-lg text-industrial-blue/70 leading-relaxed"
         />
         <StaggerGrid
           className=""
@@ -46,10 +55,10 @@ export function TestimonialsSection() {
               pagination={{
                 clickable: true,
               }}
-              // autoplay={{
-              //   delay: 3000,
-              //   disableOnInteraction: false,
-              // }}
+              autoplay={{
+                delay: 3000,
+                disableOnInteraction: false,
+              }}
               breakpoints={{
                 640: {
                   slidesPerView: 1,
@@ -69,8 +78,8 @@ export function TestimonialsSection() {
                   h-full
                   p-6
                   w-[700px]
-                  bg-charcoal/50
-                  rounded-xl border border-white/10
+                  bg-gradient-to-br from-industrial-blue/40 via-gunmetal to-charcoal
+                  rounded-xl 
                 "
                     >
                       <Quote

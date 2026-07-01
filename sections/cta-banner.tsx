@@ -15,7 +15,7 @@ export function CtaBannerSection( ) {
     <section
       className="
         py-20
-        bg-[#9b5600d1]
+        backdrop-blur-xl bg-[linear-gradient(140deg,#f1edea_0%,#f3892d_40%,#E8820A_70%,#A84800_100%)]
       "
     >
       <div
@@ -33,7 +33,7 @@ export function CtaBannerSection( ) {
             relative overflow-hidden
             p-8 md:p-12 lg:p-16
             bg-gradient-to-br from-industrial-blue/40 via-gunmetal to-charcoal
-            rounded-2xl border border-industrial-blue/30
+            rounded-2xl
           "
         >
           <div

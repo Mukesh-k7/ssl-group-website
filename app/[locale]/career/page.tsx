@@ -64,7 +64,7 @@ export default function CareersPage() {
   return (
     <div className="min-h-screen bg-[#080C14] text-[#E8EDF2] font-sans">
       {/* HERO */}
-      <section className="relative min-h-screen flex items-center pt-16 overflow-hidden">
+      <section className="relative min-h-screen flex items-center pt-16 overflow-hidden bg-gradient-to-br from-industrial-blue/40 via-gunmetal to-charcoal">
         {/* bg texture */}
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-gradient-to-br from-[#080C14] via-[#0D1420] to-[#080C14]" />
@@ -149,87 +149,11 @@ export default function CareersPage() {
         </div>
       </section>
 
-      {/* BENEFITS */}
-      <section className="py-24 [background:linear-gradient(135deg,#3D3F38,#6B8FA0,#9B6E7C,#C8B87A,#9DA09A)]">
-        <div className="container mx-auto px-6">
-          <div className="grid lg:grid-cols-2 gap-16 items-start">
-            <div>
-              <div className="text-[#F97316] text-xs font-bold tracking-widest uppercase mb-4">
-                {t("whysslgroup")}
-              </div>
-              <h2 className="text-4xl font-black text-white leading-tight mb-6">
-                {t("Career")}
-                <br />
-                <span className="bg-gradient-to-r from-[#F97316] to-[#EAB308] bg-clip-text text-transparent">
-                  {t("GlobalTrade")}
-                </span>
-              </h2>
-              <p className="text-[#d6e1f1] leading-relaxed text-base">
-                {t("Supply")}
-              </p>
-              <a
-                href="#"
-                className="inline-flex items-center gap-2 mt-8 text-[#f19b5f] font-semibold text-sm hover:gap-3 transition-all"
-              >
-                {t("OurStory")}
-                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
-              </a>
-            </div>
-            <div className="grid lg:grid-cols-2 md:grid-cols-2  sm:grid-cols-1  gap-4">
-              {Benefits.map((b, i) => (
-                <div
-                  key={i}
-                  className={`bg-[#0D1520] border rounded-xl p-5 hover:border-[#F97316]/30 transition-colors group ${i === 1 ? "border-[#F97316]/30 bg-gradient-to-br from-industrial-blue/40 via-gunmetal to-charcoal" : "border-white/5"
-                    }`}
-                >
-                  <div className={`mb-4 ${i === 1 ? "text-[#F97316]" : "text-[#475569]"} group-hover:text-[#F97316] transition-colors`}>
-                    {/* {(() => {
-                      const Icon = b.icon;
-                      return typeof Icon === "function" ? <Icon className="w-8 h-8" /> : Icon;
-                    })()} */}
-                    {/* {b.icon} */}
-                    <b.icon />
-                  </div>
-                  <div className="text-white font-bold text-sm mb-2">{t(`benefits.${b.key}.title`)}</div>
-                  <div className="text-[#64748B] text-xs leading-relaxed">{t(`benefits.${b.key}.description`)}</div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* LIFE AT SSL */}
-      <section id="life" className="py-24 bg-gradient-to-br from-industrial-blue/40 via-gunmetal to-charcoal relative overflow-hidden">
-        <div className="absolute right-0 top-0 w-[500px] h-[500px] bg-[#EAB308]/4 rounded-full blur-[120px]" />
-        <div className="relative container mx-auto px-6">
-          <div className="text-center mb-16">
-            <div className="text-[#F97316] text-xs font-bold tracking-widest uppercase mb-4">{t("Culture")} </div>
-            <h2 className="text-4xl lg:text-5xl font-black text-white mb-6">
-              {t("LifeAt")} <span className="bg-gradient-to-r from-[#F97316] to-[#EAB308] bg-clip-text text-transparent"> {t("title")} </span>
-            </h2>
-            <p className="text-[#94A3B8] max-w-2xl mx-auto leading-relaxed">
-              {t("Bureaucracy")}
-            </p>
-          </div>
-          <div className="grid md:grid-cols-3 gap-6">
-            {Culture.map((card) => (
-              <div key={card.key} className="bg-[#0D1520] border border-white/5 rounded-2xl p-8 relative overflow-hidden group hover:border-white/10 transition-colors">
-                <div className={`absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[${card.accent}] to-transparent`}
-                  style={{ background: `linear-gradient(to right, ${card.accent}, transparent)` }}
-                />
-                <div className="text-white font-black text-xl mb-4">{t(`culture.${card.key}.title`)} </div>
-                <div className="text-[#94A3B8] text-sm leading-relaxed">{t(`culture.${card.key}.description`)} </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* STATS BAR */}
+      <StatsCounterSection />
 
       {/* JOB OPENINGS */}
-      <section id="openings" className="py-24 [background:linear-gradient(135deg,#3D3F38,#6B8FA0,#9B6E7C,#C8B87A,#9DA09A)]">
+      <section id="openings" className="py-24 bg">
         <div className="container mx-auto px-6">
           <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-8">
             <div>
@@ -349,14 +273,87 @@ export default function CareersPage() {
               </div>
             </>
           )}
-
-
-
         </div>
       </section>
 
-      {/* STATS BAR */}
-      <StatsCounterSection />
+      {/* BENEFITS */}
+      <section className="py-24 bg-[#fff] transition-colors">
+        <div className="container mx-auto px-6">
+          <div className="grid lg:grid-cols-2 gap-16 items-start">
+            <div>
+              <div className="text-[#F97316] text-xs font-bold tracking-widest uppercase mb-4">
+                {t("whysslgroup")}
+              </div>
+              <h2 className="text-4xl font-black text-black leading-tight mb-6">
+                {t("Career")}
+                <br />
+                <span className="bg-gradient-to-r from-[#F97316] to-[#EAB308] bg-clip-text text-transparent">
+                  {t("GlobalTrade")}
+                </span>
+              </h2>
+              <p className="text-[#475569] leading-relaxed text-base">
+                {t("Supply")}
+              </p>
+              <a
+                href="#"
+                className="inline-flex items-center gap-2 mt-8 text-[#f19b5f] font-bold text-sm hover:gap-3 transition-all"
+              >
+                {t("OurStory")}
+                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </a>
+            </div>
+            <div className="grid lg:grid-cols-2 md:grid-cols-2  sm:grid-cols-1  gap-4">
+              {Benefits.map((b, i) => (
+                <div
+                  key={i}
+                  className={`bg-gradient-to-br from-industrial-blue/40 via-gunmetal to-charcoal rounded-xl p-5 hover:border-[#F97316]/30 transition-colors group ${i === 1 ? "border-[#F97316]/30 bg-gradient-to-br from-industrial-blue/40 via-gunmetal to-charcoal" : "border-white/5"
+                    }`}
+                >
+                  <div className={`mb-4 ${i === 1 ? "text-[#F97316]" : "text-[#475569]"} group-hover:text-[#F97316] transition-colors`}>
+                    {/* {(() => {
+                      const Icon = b.icon;
+                      return typeof Icon === "function" ? <Icon className="w-8 h-8" /> : Icon;
+                    })()} */}
+                    {/* {b.icon} */}
+                    <b.icon />
+                  </div>
+                  <div className="text-white font-bold text-sm mb-2">{t(`benefits.${b.key}.title`)}</div>
+                  <div className="text-white/60 text-xs leading-relaxed">{t(`benefits.${b.key}.description`)}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* LIFE AT SSL */}
+      <section id="life" className="py-24 bg-gradient-to-br from-industrial-blue/40 via-gunmetal to-charcoal relative overflow-hidden">
+        <div className="absolute right-0 top-0 w-[500px] h-[500px] bg-[#EAB308]/4 rounded-full blur-[120px]" />
+        <div className="relative container mx-auto px-6">
+          <div className="text-center mb-16">
+            <div className="text-[#F97316] text-xs font-bold tracking-widest uppercase mb-4">{t("Culture")} </div>
+            <h2 className="text-4xl lg:text-5xl font-black text-white mb-6">
+              {t("LifeAt")} <span className="bg-gradient-to-r from-[#F97316] to-[#EAB308] bg-clip-text text-transparent"> {t("title")} </span>
+            </h2>
+            <p className="text-[#94A3B8] max-w-2xl mx-auto leading-relaxed">
+              {t("Bureaucracy")}
+            </p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-6">
+            {Culture.map((card) => (
+              <div key={card.key} className="bg-[#0D1520] border border-white/5 rounded-2xl p-8 relative overflow-hidden group hover:border-white/10 transition-colors">
+                <div className={`absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[${card.accent}] to-transparent`}
+                  style={{ background: `linear-gradient(to right, ${card.accent}, transparent)` }}
+                />
+                <div className="text-white font-black text-xl mb-4">{t(`culture.${card.key}.title`)} </div>
+                <div className="text-[#94A3B8] text-sm leading-relaxed">{t(`culture.${card.key}.description`)} </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* RECRUITMENT PROCESS */}
       <section className="py-24 [background:linear-gradient(135deg,#3D3F38,#6B8FA0,#9B6E7C,#C8B87A,#9DA09A)]">

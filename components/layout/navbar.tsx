@@ -114,10 +114,10 @@ export function Navbar() {
             "
           >
             <Image
-              src="/images/products/logo-1.png"
+              src="/images/products/logos1.png"
               alt="SSL Group Logo"
-              width={120}
-              height={110}
+              width={130}
+              height={140}
               className="
                 object-cover
                 group-hover:brightness-110

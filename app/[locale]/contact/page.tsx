@@ -36,7 +36,7 @@ export default function ContactPage() {
       <AnimatedSection
         className="
           py-24
-          bg-[#9b5600d1] hover:bg-[#a95500c7]
+          bg-[#fff]
           transition-colors
         "
       >
@@ -72,7 +72,7 @@ export default function ContactPage() {
               <div
                 className="
                   p-6
-                  bg-gunmetal/30
+                  bg-gradient-to-br from-industrial-blue/40 via-gunmetal to-charcoal border-0
                   rounded-xl border border-white/10
                 "
               >
@@ -187,7 +187,7 @@ export default function ContactPage() {
                 className="
                   flex items-center
                   p-6
-                  bg-[#25D366]/10 hover:bg-[#25D366]/20
+                  bg-[#25D366] hover:bg-[#25D366]/20
                   rounded-xl border border-[#25D366]/30
                   transition-colors
                   gap-4
@@ -196,7 +196,7 @@ export default function ContactPage() {
                 <MessageCircle
                   className="
                     h-8 w-8
-                    text-[#25D366]
+                    text-[#fff]
                   "
                 />
                 <div>
@@ -207,7 +207,7 @@ export default function ContactPage() {
                   >{t("WhatsApp")}</p>
                   <p
                     className="
-                      text-sm text-metallic/80
+                      text-sm text-text/80
                     "
                   >{t("Instant")}</p>
                 </div>
@@ -216,7 +216,7 @@ export default function ContactPage() {
               <div
                 className="
                   p-6
-                  bg-gunmetal/30
+                  bg-gradient-to-br from-industrial-blue/40 via-gunmetal to-charcoal border-0
                   rounded-xl border border-white/10
                 "
               >

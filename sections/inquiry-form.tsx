@@ -68,26 +68,34 @@ export function InquiryForm({
   }
 
   return (
-    <Card>
+    <Card className="bg-gradient-to-br from-industrial-blue/40 via-gunmetal to-charcoal border-0">
       <CardHeader>
         <CardTitle>{title}</CardTitle>
-        <CardDescription>{description}</CardDescription>
+        <CardDescription className="text-white/70">
+          {description}
+        </CardDescription>
       </CardHeader>
       <CardContent>
         <form onSubmit={handleSubmit} className="space-y-5">
           <div className="grid gap-5 sm:grid-cols-2">
             <div className="space-y-2">
-              <Label htmlFor="name">{t("FullName")}*</Label>
+              <Label htmlFor="name" className="text-white">
+                {t("FullName")}*
+              </Label>
               <Input id="name" name="name" required placeholder="Your name" />
             </div>
             <div className="space-y-2">
-              <Label htmlFor="company">{t("Company")} *</Label>
+              <Label htmlFor="company" className="text-white">
+                {t("Company")} *
+              </Label>
               <Input id="company" name="company" required placeholder="Company name" />
             </div>
           </div>
           <div className="grid gap-5 sm:grid-cols-2">
             <div className="space-y-2">
-              <Label htmlFor="email">{t("Email")} *</Label>
+              <Label htmlFor="email" className="text-white">
+                {t("Email")} *
+              </Label>
               <Input
                 id="email"
                 name="email"
@@ -97,7 +105,9 @@ export function InquiryForm({
               />
             </div>
             <div className="space-y-2">
-              <Label htmlFor="phone">{t("Media")}</Label>
+              <Label htmlFor="phone" className="text-white">
+                {t("Media")}
+              </Label>
               <Input id="phone" name="phone" placeholder="+1 234 567 8900" />
             </div>
           </div>
@@ -105,7 +115,9 @@ export function InquiryForm({
             <>
               <div className="grid gap-5 sm:grid-cols-2">
                 <div className="space-y-2">
-                  <Label htmlFor="product">{t("ProductInterest")} </Label>
+                  <Label htmlFor="product" className="text-white">
+                    {t("ProductInterest")} 
+                  </Label>
                   <Input
                     id="product"
                     name="product"
@@ -113,24 +125,32 @@ export function InquiryForm({
                   />
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="quantity">{t("Quantity")} </Label>
+                  <Label htmlFor="quantity" className="text-white">
+                    {t("Quantity")} 
+                  </Label>
                   <Input id="quantity" name="quantity" placeholder="e.g. 5,000 MT" />
                 </div>
               </div>
               <div className="grid gap-5 sm:grid-cols-2">
                 <div className="space-y-2">
-                  <Label htmlFor="destination">{t("Destination")} </Label>
+                  <Label htmlFor="destination" className="text-white">
+                    {t("Destination")} 
+                  </Label>
                   <Input id="destination" name="destination" placeholder="e.g. Jebel Ali" />
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="incoterms">{t("Incoterms")} </Label>
+                  <Label htmlFor="incoterms" className="text-white">
+                    {t("Incoterms")} 
+                  </Label>
                   <Input id="incoterms" name="incoterms" placeholder="e.g. CIF, FOB" />
                 </div>
               </div>
             </>
           )}
           <div className="space-y-2">
-            <Label htmlFor="message">{t("Message")} *</Label>
+            <Label htmlFor="message" className="text-white">
+              {t("Message")} *
+            </Label>
             <Textarea
               id="message"
               name="message"

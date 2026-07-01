@@ -15,14 +15,12 @@ export function HeroSection() {
     { icon: Globe, label: t("45PlusExportMarkets") },
   ];
 
-    const stats = [
+  const stats = [
     { value: "2.4M+", label: t("MTExportedAnnually") },
     { value: "320+", label: t("GlobalPartners") },
-     { value: "9", label: t("ProductCategories") },
+    { value: "9", label: t("ProductCategories") },
     { value: "28+", label: t("YearsExcellence") },
   ];
-
-
 
   return (
     <section
@@ -30,7 +28,7 @@ export function HeroSection() {
       className="
         relative flex items-center overflow-hidden
         min-h-screen
-        [background:linear-gradient(135deg,#3D3F38,#6B8FA0,#9B6E7C,#C8B87A,#9DA09A)]
+        bg-gradient-to-br from-industrial-blue/40 via-gunmetal to-charcoal
       "
     >
       {/* Animated industrial background */}
@@ -110,7 +108,6 @@ export function HeroSection() {
         /
         >
       </div>
-
       <div
         className="
           container relative z-10
@@ -160,7 +157,6 @@ export function HeroSection() {
                  tracking-tight 
               "
             >
-
               {t("GlobalMetallurgy")} {t("TrustedSupply")}
               {/* <span
                 className="
@@ -283,7 +279,7 @@ export function HeroSection() {
                 "
                 style={{
                   backgroundImage:
-                    "linear-gradient(135deg, rgba(30,58,95,0.4) 0%, rgba(17,17,17,0.9) 100%), url('/images/products/banner01.jpg')",
+                    "linear-gradient(135deg, rgba(30,58,95,0.4) 0%, rgba(17,17,17,0.9) 100%), url('/images/products/banner.png')",
                   backgroundColor: "#2A2A2A",
                 }}
               /

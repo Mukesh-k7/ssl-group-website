@@ -36,6 +36,8 @@ export default function ExportLogisticsPage() {
       <AnimatedSection
         className="
           py-24
+          bg-[#fff]
+          transition-colors
         "
       >
         <div
@@ -47,6 +49,10 @@ export default function ExportLogisticsPage() {
           <SectionHeader
             title={t("Integrated")}
             description={t("coordinators")}
+            titleClassName="font-heading font-bold text-3xl text-black md:text-4xl lg:text-5xl
+          tracking-tight"
+            descriptionClassName="mt-4
+            text-lg text-industrial-blue/70 leading-relaxed"
             align="center"
           />
           <div
@@ -60,8 +66,8 @@ export default function ExportLogisticsPage() {
                 key={service.key}
                 className="
                   p-6
-                  bg-gunmetal/30
-                  rounded-xl border border-white/10
+                  bg-gradient-to-br from-industrial-blue/40 via-gunmetal to-charcoal
+                  rounded-xl
                 "
               >
                 <service
@@ -90,8 +96,9 @@ export default function ExportLogisticsPage() {
           <div
             className="
               mt-16 p-8
-              bg-charcoal/50
+              bg-gradient-to-br from-industrial-blue/40 via-gunmetal to-charcoal
               rounded-xl border border-white/10
+              gap-4
             "
           >
             <h3
@@ -113,7 +120,7 @@ export default function ExportLogisticsPage() {
                     px-4 py-2
                     font-mono text-sm text-metallic
                     bg-industrial-blue/10
-                    rounded-lg border border-industrial-blue/30
+                    rounded-lg border border-industrial-blue/60
                   "
                 >
                   {term}

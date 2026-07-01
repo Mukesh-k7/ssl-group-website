@@ -54,6 +54,8 @@ export default function IndustriesPage() {
       <AnimatedSection
         className="
           py-24
+          bg-[#fff]
+          transition-colors
         "
       >
         <div
@@ -65,6 +67,10 @@ export default function IndustriesPage() {
           <SectionHeader
             title={t("SectorExpertise")}
             description={t("logistics")}
+                        titleClassName="font-heading font-bold text-3xl text-black md:text-4xl lg:text-5xl
+          tracking-tight"
+            descriptionClassName="mt-4
+            text-lg text-industrial-blue/70 leading-relaxed"
             align="center"
           />
           <div
@@ -84,8 +90,8 @@ export default function IndustriesPage() {
                   className="
                     flex
                     p-8
-                    bg-gunmetal/30
-                    rounded-xl border border-white/10
+                    bg-gradient-to-br from-industrial-blue/40 via-gunmetal to-charcoal
+                    rounded-xl
                     gap-6
                   "
                 >

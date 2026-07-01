@@ -24,7 +24,7 @@ export function ProductCard({ product }: ProductCardProps) {
           overflow-hidden
           h-full
           text-transparent
-          bg-gradient-to-b from-[#5f471b] via-[#a76818] to-[#c96a006b]
+          bg-gradient-to-br from-industrial-blue/40 via-gunmetal to-charcoal
           border-white/10 hover:border-industrial-blue/40
           transition-all hover:shadow-2xl hover:shadow-industrial-blue/10
           group

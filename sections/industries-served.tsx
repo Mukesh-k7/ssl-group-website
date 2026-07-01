@@ -43,7 +43,7 @@ export function IndustriesServedSection({ limit }: { limit?: number }) {
       id="industries"
       className="
         py-24
-        bg-gradient-to-br from-industrial-blue/40 via-gunmetal to-charcoal
+        [background:#fff]
       "
     >
       <div
@@ -56,6 +56,16 @@ export function IndustriesServedSection({ limit }: { limit?: number }) {
           eyebrow={t("Eyebrow")}
           title={t("Title")}
           description={t("Description")}
+          eyebrowClassName="mb-3
+            text-lg text-transparent font-bold tracking-[0.2em] uppercase
+            bg-gradient-to-b bg-clip-text from-[#F7941D] via-[#C96A00]
+            to-[#5B2A00]
+            drop-shadow-[2px_2px_0px_rgba(0,0,0,0.25)]"
+          titleClassName="font-heading font-bold text-3xl text-black md:text-4xl lg:text-5xl
+          tracking-tight"
+          descriptionClassName="mt-4
+            text-lg text-industrial-blue/70 leading-relaxed"
+
         />
         <StaggerGrid
           className="
@@ -76,7 +86,7 @@ export function IndustriesServedSection({ limit }: { limit?: number }) {
                     flex flex-col
                     h-full
                     p-6
-                    bg-charcoal/50 hover:bg-charcoal
+                    bg-charcoal hover:bg-gradient-to-br from-industrial-blue/40 via-gunmetal to-charcoal
                     rounded-xl
                     border border-white/10 hover:border-industrial-blue/40
                     transition-all

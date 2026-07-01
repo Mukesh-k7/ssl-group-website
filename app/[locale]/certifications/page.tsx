@@ -32,7 +32,8 @@ export default function CertificationsPage() {
       />
       <AnimatedSection
         className="
-          py-24
+          py-24 bg-[#fff]
+          transition-colors
         "
       >
         <div
@@ -44,6 +45,10 @@ export default function CertificationsPage() {
           <SectionHeader
             title={t("Credentials")}
             description={t("ThirdParty")}
+            titleClassName="font-heading font-bold text-3xl text-black md:text-4xl lg:text-5xl
+          tracking-tight"
+            descriptionClassName="mt-4
+            text-lg text-industrial-blue/70 leading-relaxed"
             align="center"
           />
           <div
@@ -57,8 +62,8 @@ export default function CertificationsPage() {
                 key={cert.key}
                 className="
                   p-8
-                  bg-gunmetal/30
-                  rounded-xl border border-white/10
+                  bg-gradient-to-br from-industrial-blue/40 via-gunmetal to-charcoal
+                  rounded-xl
                 "
               >
                 <Award
@@ -67,7 +72,7 @@ export default function CertificationsPage() {
                     mb-4
                     text-[#c96a00]
                   "
-                  /
+                /
                 >
                 <h2
                   className="
@@ -95,8 +100,8 @@ export default function CertificationsPage() {
             className="
               flex items-start
               mt-16 p-8
-              bg-industrial-blue/10
-              rounded-xl border border-industrial-blue/30
+              bg-gradient-to-br from-industrial-blue/40 via-gunmetal to-charcoal
+              rounded-xl
               gap-4
             "
           >
@@ -106,7 +111,7 @@ export default function CertificationsPage() {
                 text-[#c96a00]
                 shrink-0
               "
-              /
+            /
             >
             <div>
               <h3
@@ -114,7 +119,7 @@ export default function CertificationsPage() {
                   font-heading font-semibold text-lg text-white
                 "
               >
-                 {t("Inspection")}
+                {t("Inspection")}
               </h3>
               <p
                 className="

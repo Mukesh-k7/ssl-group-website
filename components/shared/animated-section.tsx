@@ -103,7 +103,7 @@ export function SectionHeader({
         align === "left" && "text-left"
       )}
     >
-      {eyebrow && (
+      {/* {eyebrow && (
         <p
           className="
             mb-3
@@ -130,6 +130,23 @@ export function SectionHeader({
             mt-4
             text-lg text-industrial-blue/70 leading-relaxed
           "
+        >{description}</p>
+      )} */}
+      {eyebrow && (
+        <p
+          className={eyebrowClassName}
+        >
+          {eyebrow}
+        </p>
+      )}
+      <h2
+        className={titleClassName}
+      >
+        {title}
+      </h2>
+      {description && (
+        <p
+          className={descriptionClassName}
         >{description}</p>
       )}
     </div>
