@@ -356,14 +356,17 @@ export default function CareersPage() {
       </section>
 
       {/* RECRUITMENT PROCESS */}
-      <section className="py-24 [background:linear-gradient(135deg,#3D3F38,#6B8FA0,#9B6E7C,#C8B87A,#9DA09A)]">
+      <section className="py-24 bg-[#fff] transition-colors">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <div className="text-[#F97316] text-xs font-bold tracking-widest uppercase mb-4">{t("HowWeHire")} </div>
-            <h2 className="text-4xl lg:text-5xl font-black text-white mb-4">
+            <div className="text-lg text-transparent font-bold tracking-[0.2em] uppercase
+            bg-gradient-to-b bg-clip-text from-[#F7941D] via-[#C96A00]
+            to-[#5B2A00]
+            drop-shadow-[2px_2px_0px_rgba(0,0,0,0.25)] font-bold tracking-widest mb-4">{t("HowWeHire")} </div>
+            <h2 className="text-4xl lg:text-5xl font-black text-black mb-4">
               {t("Recruitment")} <span className="bg-gradient-to-r from-[#F97316] to-[#EAB308] bg-clip-text text-transparent"> {t("Process")} </span>
             </h2>
-            <p className="text-[rgb(199, 213, 235)] max-w-xl mx-auto text-sm leading-relaxed">
+            <p className="text-[#64748B] max-w-xl mx-auto text-sm leading-relaxed">
               {t("Transparent")}
             </p>
           </div>
@@ -374,7 +377,7 @@ export default function CareersPage() {
                 {i < Recruitments.length - 1 && (
                   <div className="hidden lg:block absolute top-8 left-[calc(100%-12px)] w-6 h-px bg-gradient-to-r from-[#F97316]/40 to-transparent z-10" />
                 )}
-                <div className="bg-[#0D1520] border border-white/5 rounded-2xl p-6 hover:border-[#F97316]/20 transition-colors group">
+                <div className="bg-gradient-to-br from-industrial-blue/40 via-gunmetal to-charcoal rounded-2xl p-6 hover:border-[#F97316]/20 transition-colors group">
                   <div className="flex items-center gap-3 mb-5">
                     <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#F97316]/20 to-[#EAB308]/10 border border-[#F97316]/20 flex items-center justify-center text-[#F97316] group-hover:from-[#F97316]/30 transition-colors">
                       <step.icon />
