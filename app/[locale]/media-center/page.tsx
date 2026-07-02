@@ -57,7 +57,7 @@ export default function MediaCenterPage() {
         {/* Background image overlay */}
         <div className="absolute inset-0 opacity-10">
           <Image
-            src="/images/products/home.jpg"
+            src="/images/award-achievements/28.jpeg"
             alt="SSL Group Media"
             fill
             sizes=""
