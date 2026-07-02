@@ -27,7 +27,7 @@ export default function AboutPage() {
         ]}
       />
       <PageHero
-        eyebrow={t("title")} 
+        eyebrow={t("title")}
         title={t("Title")}
         description={t("SSLGroup")}
       />
@@ -53,6 +53,12 @@ export default function AboutPage() {
               <SectionHeader
                 eyebrow={t("Eyebrow")}
                 title={t("Globals")}
+                titleClassName="font-heading font-bold text-3xl text-white md:text-4xl lg:text-5xl
+                  tracking-tight"
+                eyebrowClassName="mb-3
+                  text-lg text-transparent font-bold tracking-[0.2em] uppercase
+                bg-gradient-to-b bg-clip-text from-[#F7941D] via-[#C96A00]
+                to-[#5B2A00] drop-shadow-[2px_2px_0px_rgba(0,0,0,0.25)]"
                 align="left"
               />
               <p
