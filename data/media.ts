@@ -306,8 +306,8 @@ export const mediaCategories: MediaCategory[] = [
         description: "Team photo at a trade event marking SSL Group's growing international footprint.",
       },
       {
-        title: "Industry Expo — SSL Team",
-        image: "/images/team-workplace/2.jpg",
+        title: "Presentation — SSL Team",
+        image: "/images/team-workplace/9.png",
         description: "SSL Group professionals at a major industry expo networking with global partners.",
       },
       {
@@ -349,7 +349,6 @@ export const photoGallery = [
   { src: "/images/media/IMG_2075.png", title: "DGC Partnership" },
   { src: "/images/media/IMG_2096.png", title: "IFEX 2026 Trade Fair" },
   { src: "/images/media/IMG_1521.png", title: "Team Celebration" },
-  { src: "/images/media/IMG_2083.png", title: "Export Conference" },
 ];
 
 // ─── STATS ────────────────────────────────────────────────────────────────
