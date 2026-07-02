@@ -51,13 +51,13 @@ export default function MediaCenterPage() {
       {/* Hero */}
       <section className="relative overflow-hidden pt-32 pb-20 bg-charcoal border-b border-white/10">
         <div className="absolute inset-0 bg-industrial-grid opacity-40" />
-        <div className="absolute inset-0 bg-gradient-to-b from-industrial-blue/20 via-transparent to-charcoal" />
+        <div className="absolute inset-0 bg-gradient-to-b from-industrial-blue/10 via-transparent to-charcoal" />
         <div className="absolute top-0 h-96 w-96 bg-industrial-blue/10 rounded-full blur-3xl -right-32" />
 
         {/* Background image overlay */}
         <div className="absolute inset-0 opacity-10">
           <Image
-            src="/images/award-achievements/28.jpeg"
+            src="/images/products/7.jpg"
             alt="SSL Group Media"
             fill
             sizes=""
