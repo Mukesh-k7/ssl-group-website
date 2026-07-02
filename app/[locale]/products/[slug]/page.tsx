@@ -9,6 +9,7 @@ import { CtaBannerSection } from "@/sections/cta-banner";
 import { products, getProductBySlug } from "@/data/products";
 import { breadcrumbSchema, createPageMetadata, productSchema } from "@/lib/seo";
 import { getTranslations } from "next-intl/server";
+import  ProductListing  from "./../../product-listing/page";
 
 interface ProductPageProps {
   params: Promise<{ slug: string }>;
@@ -218,6 +219,8 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
           </div>
         </div>
       </section>
+
+      <ProductListing />
 
       {related.length > 0 && (
         <section
