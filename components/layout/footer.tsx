@@ -266,6 +266,7 @@ export function Footer() {
             {/* Instagram */}
 
             <a
+
               href="https://www.instagram.com/sslgroup821/?hl=en"
               target="_blank"
               rel="noopener noreferrer"

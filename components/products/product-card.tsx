@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import type { Product } from "@/types";
 import { useTranslations } from "next-intl";
-import { log } from "console";
+
 
 interface ProductCardProps {
   product: Product;
@@ -16,7 +16,8 @@ interface ProductCardProps {
 export function ProductCard({ product }: ProductCardProps) {
   const t = useTranslations("Products");
   console.log(product.key);
-  
+
+
   return (
     <motion.div whileHover={{ y: -6 }} transition={{ duration: 0.3 }}>
       <Card
@@ -77,9 +78,11 @@ export function ProductCard({ product }: ProductCardProps) {
               backdrop-blur-sm
             "
           >
-            {t(`${product.key}.Category`)}
-          </span>
-        </div>
+
+            {product.category}
+
+          </span >
+        </div >
         <CardContent
           className="
             p-6
@@ -90,7 +93,9 @@ export function ProductCard({ product }: ProductCardProps) {
               text-xl text-white font-heading font-bold
             "
           >
-            {t(`${product.key}.Name`)}
+
+           {product.key}
+
           </h3>
           <p
             className="
@@ -98,7 +103,9 @@ export function ProductCard({ product }: ProductCardProps) {
               text-sm text-metallic/80 leading-relaxed line-clamp-2
             "
           >
-            {t(`${product.key}.ShortDescription`)}
+
+            {product.shortDescription}
+
           </p>
           <ul
             className="
@@ -107,15 +114,20 @@ export function ProductCard({ product }: ProductCardProps) {
           >
             {product.specification.slice(0, 3).map((spec) => (
               <li
+
                 key={spec.key}
+
                 className="
                   flex justify-between
                   text-xs text-metallic/70
                 "
               >
                 <span>
-                  {spec.key}
-                  </span>
+
+                  
+                    {spec.key}
+                  
+                </span>
                 <span
                   className="
                     text-metallic font-medium
@@ -137,8 +149,8 @@ export function ProductCard({ product }: ProductCardProps) {
             asChild
           >
             <Link href={`/products/${product.slug}`}>
-              {t("ViewAllProducts")} 
-              
+              {t("ViewAllProducts")}
+
               <ArrowRight
                 className="
                   w-4 h-4
@@ -149,7 +161,7 @@ export function ProductCard({ product }: ProductCardProps) {
             </Link>
           </Button>
         </CardContent>
-      </Card>
-    </motion.div>
+      </Card >
+    </motion.div >
   );
 }

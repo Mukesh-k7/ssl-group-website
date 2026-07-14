@@ -136,7 +136,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
                       text-xs text-[#c35303d1]
                     "
                   >
-                    {t(`Products.${p.key}.Category`)}
+                    {p.category}
                   </p>
                   <p
                     className="
@@ -144,7 +144,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
                       text-white font-heading font-semibold
                     "
                   >
-                    {t(`Products.${p.key}.Name`)}
+                    {p.key}
                   </p>
                 </Link>
               ))}
