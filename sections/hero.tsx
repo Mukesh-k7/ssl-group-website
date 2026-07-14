@@ -3,17 +3,32 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowRight, Download, Globe, Shield } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";
 import { company } from "@/data/site";
 
 export function HeroSection() {
+  const t = useTranslations("hero");
+
+  const data = [
+    { icon: Shield, label: t("ISOCertifiedOperations") },
+    { icon: Globe, label: t("45PlusExportMarkets") },
+  ];
+
+  const stats = [
+    { value: "2.4M+", label: t("MTExportedAnnually") },
+    { value: "320+", label: t("GlobalPartners") },
+    { value: "9", label: t("ProductCategories") },
+    { value: "28+", label: t("YearsExcellence") },
+  ];
+
   return (
     <section
       id="home"
       className="
         relative flex items-center overflow-hidden
         min-h-screen
-        [background:linear-gradient(135deg,#3D3F38,#6B8FA0,#9B6E7C,#C8B87A,#9DA09A)]
+        bg-gradient-to-br from-industrial-blue/40 via-gunmetal to-charcoal
       "
     >
       {/* Animated industrial background */}
@@ -93,7 +108,6 @@ export function HeroSection() {
         /
         >
       </div>
-
       <div
         className="
           container relative z-10
@@ -125,11 +139,11 @@ export function HeroSection() {
               <Globe
                 className="
                   h-4 w-4
-                  text-industrial-blue
+                  text-[#f38203] text-bold
                 "
               /
               >
-              Exporting to 45+ Countries Since {company.founded}
+              {t("ExportingTo45PlusCountriesSince")} {company.founded}
             </motion.div>
 
             <motion
@@ -139,12 +153,12 @@ export function HeroSection() {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="
                 font-heading font-bold
-                text-4xl text-white sm:text-5xl md:text-6xl lg:text-7xl
-                leading-[1.1] tracking-tight
+                text-4xl text-white sm:text-5xl md:text-6xl lg:text-5xl
+                 tracking-tight 
               "
             >
-              Global Metallurgy.
-              <span
+              {t("GlobalMetallurgy")} {t("TrustedSupply")}
+              {/* <span
                 className="
                   block
                   text-transparent
@@ -152,10 +166,9 @@ export function HeroSection() {
                   to-metallic
                 "
               >
-                Trusted Supply.
-              </span>
+                .
+              </span> */}
             </motion.h1>
-
             <motion
               .p
               initial={{ opacity: 0, y: 30 }}
@@ -167,9 +180,7 @@ export function HeroSection() {
                 text-lg text-metallic/90 md:text-xl leading-relaxed
               "
             >
-              {company.name} — India&apos;s premier exporter of pig iron, ferro alloys,
-              carbon products, and steel industry raw materials to manufacturers
-              across the Middle East, Africa, and Europe.
+              {company.name} — {t("description")}
             </motion.p>
 
             <motion
@@ -185,7 +196,7 @@ export function HeroSection() {
             >
               <Button size="lg" asChild className="bg-[#007aff94] hover:bg-[#007affc9]">
                 <Link href="/contact">
-                  Request Export Quote
+                  {t("RequestExportQuote")}
                   <ArrowRight
                     className="
                       h-5 w-5
@@ -211,9 +222,12 @@ export function HeroSection() {
                     "
                   /
                   >
-                  Download Catalog
+                  {t("DownloadCatalog")}
                 </a>
               </Button>
+
+              {/* <h1>{t("title")}</h1>
+              <p>{t("subtitle")}</p> */}
             </motion.div>
 
             <motion
@@ -227,25 +241,12 @@ export function HeroSection() {
                 gap-6
               "
             >
-              {[
-                { icon: Shield, label: "ISO Certified Operations" },
-                { icon: Globe, label: "45+ Export Markets" },
-              ].map(({ icon: Icon, label }) => (
+              {data.map(({ icon: Icon, label }) => (
                 <div
                   key={label}
-                  className="
-                    flex items-center
-                    text-sm text-metallic
-                    gap-2
-                  "
+                  className="flex items-center text-sm text-metallic gap-2"
                 >
-                  <Icon
-                    className="
-                      h-4 w-4
-                      text-industrial-blue
-                    "
-                  /
-                  >
+                  <Icon className="h-4 w-4 text-[#f38203] font-bold" />
                   {label}
                 </div>
               ))}
@@ -278,7 +279,7 @@ export function HeroSection() {
                 "
                 style={{
                   backgroundImage:
-                    "linear-gradient(135deg, rgba(30,58,95,0.4) 0%, rgba(17,17,17,0.9) 100%), url('/images/products/banner01.jpg')",
+                    "linear-gradient(135deg, rgba(30,58,95,0.4) 0%, rgba(17,17,17,0.9) 100%), url('/images/products/banner.png')",
                   backgroundColor: "#2A2A2A",
                 }}
               /
@@ -296,12 +297,7 @@ export function HeroSection() {
                     gap-4
                   "
                 >
-                  {[
-                    { value: "2.4M+", label: "MT Exported Annually" },
-                    { value: "320+", label: "Global Partners" },
-                    { value: "9", label: "Product Categories" },
-                    { value: "28+", label: "Years Excellence" },
-                  ].map((stat) => (
+                  {stats.map((stat) => (
                     <div
                       key={stat.label}
                       className="
@@ -322,7 +318,7 @@ export function HeroSection() {
                       </p>
                       <p
                         className="
-                          text-xs text-metallic/80
+                          text-xs text-[#b4c5f7]
                         "
                       >{stat.label}</p>
                     </div>

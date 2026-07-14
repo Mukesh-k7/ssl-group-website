@@ -2,8 +2,10 @@
 
 import { AnimatedSection, SectionHeader } from "@/components/shared/animated-section";
 import { timeline } from "@/data/certifications";
+import { useTranslations } from "next-intl";
 
 export function TimelineSection() {
+  const t = useTranslations("timeline")
   return (
     <AnimatedSection
       className="
@@ -17,8 +19,8 @@ export function TimelineSection() {
         "
       >
         <SectionHeader
-          eyebrow="Our Journey"
-          title="Building Global Metallurgy Leadership"
+          eyebrow={t("Journey")}
+          title={t("Title")}
           align="center"
         />
         <div
@@ -66,8 +68,8 @@ export function TimelineSection() {
                 >{event.year.slice(2)}</span>
               </div>
               <div
-                className={`ml-12 md:ml-0 md:w-1/2 ${
-                  index % 2 === 0 ? "md:pr-12 md:text-right" : "md:pl-12"
+                className={`ml-12 md:ml-0 md:w-1/2 mr-[45px] p-[0px] ${
+                  index % 2 === 0 ? "md:text-right" : "md:pl-12"
                 }`}
               >
                 <span
@@ -75,7 +77,7 @@ export function TimelineSection() {
                     font-heading font-bold text-2xl text-[#c96a00]
                   "
                 >
-                  {event.year}
+                  {event.year} 
                 </span>
                 <h3
                   className="
@@ -83,14 +85,14 @@ export function TimelineSection() {
                     font-heading font-semibold text-lg text-white
                   "
                 >
-                  {event.title}
+                  {t(`${event.key}.Title`)}
                 </h3>
                 <p
                   className="
                     mt-2
                     text-sm text-metallic/80
                   "
-                >{event.description}</p>
+                >{t(`${event.key}.Description`)}</p>
               </div>
             </div>
           ))}

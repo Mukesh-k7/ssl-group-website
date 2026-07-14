@@ -14,6 +14,7 @@ import {
   StaggerItem,
 } from "@/components/shared/animated-section";
 import { whyChooseUs } from "@/data/site";
+import { useTranslations } from "next-intl";
 
 const iconMap: Record<string, LucideIcon> = {
   ShieldCheck,
@@ -23,11 +24,13 @@ const iconMap: Record<string, LucideIcon> = {
 };
 
 export function WhyChooseUsSection() {
+  const t = useTranslations("whychooseus");
+
   return (
     <AnimatedSection
       className="
         py-24
-        [background:linear-gradient(135deg,#3D3F38,#6B8FA0,#9B6E7C,#C8B87A,#9DA09A)]
+        [background:#fff]
       "
     >
       <div
@@ -37,9 +40,19 @@ export function WhyChooseUsSection() {
         "
       >
         <SectionHeader
-          eyebrow="Why SSL Group"
-          title="Enterprise-Grade Export Partnership"
-          description="Decades of metallurgical expertise combined with global logistics infrastructure — built for steel manufacturers and industrial procurement at scale."
+          eyebrow={t("Eyebrow")}
+          title={t("Title")}
+          description={t("Description")}
+          eyebrowClassName="mb-3
+            text-lg text-transparent font-bold tracking-[0.2em] uppercase
+            bg-gradient-to-b bg-clip-text from-[#F7941D] via-[#C96A00]
+            to-[#5B2A00]
+            drop-shadow-[2px_2px_0px_rgba(0,0,0,0.25)]"
+          titleClassName="font-heading font-bold text-3xl text-black md:text-4xl lg:text-5xl
+          tracking-tight"
+          descriptionClassName="mt-4
+            text-lg text-industrial-blue/70 leading-relaxed"
+
         />
         <StaggerGrid
           className="
@@ -50,16 +63,14 @@ export function WhyChooseUsSection() {
           {whyChooseUs.map((item) => {
             const Icon = iconMap[item.icon] ?? ShieldCheck;
             return (
-              <StaggerItem key={item.title}>
+              <StaggerItem key={item.key}>
                 <div
                   className="
-                    h-full
-                    p-6
-                    bg-gunmetal/30 hover:bg-gunmetal/50
-                    rounded-xl
-                    border border-white/10 hover:border-industrial-blue/40
-                    transition-all
-                    group
+h-full 
+p-6 
+bg-charcoal hover:bg-gradient-to-br from-industrial-blue/40 via-gunmetal to-charcoal
+rounded-xl 
+transition-all group 
                   "
                 >
                   <div
@@ -80,7 +91,7 @@ export function WhyChooseUsSection() {
                         hover:text-[#c96a00] text-[#f38203] text-bold
                         transition-colors duration-200
                       "
-                      /
+                    /
                     >
                   </div>
                   <h3
@@ -88,15 +99,15 @@ export function WhyChooseUsSection() {
                       font-heading font-semibold text-lg text-white
                     "
                   >
-                    {item.title}
+                    {t(`${item.key}.Title`)}
                   </h3>
                   <p
                     className="
                       mt-2
-                      text-sm text-metallic/80 leading-relaxed
+                      text-sm text-metallic/100 leading-relaxed
                     "
                   >
-                    {item.description}
+                    {t(`${item.key}.Description`)}
                   </p>
                 </div>
               </StaggerItem>

@@ -3,7 +3,7 @@ import type { BlogPost } from "@/types";
 export const blogPosts: BlogPost[] = [
   {
     slug: "global-ferro-alloy-market-outlook-2026",
-    title: "Global Ferro Alloy Market Outlook 2026",
+    key: "FerroAlloy",
     excerpt:
       "Analysis of manganese and silicon alloy pricing dynamics, supply constraints, and implications for steel procurement strategies.",
     content:
@@ -12,9 +12,10 @@ export const blogPosts: BlogPost[] = [
     category: "Market Intelligence",
     readTime: "6 min",
   },
+
   {
     slug: "pig-iron-specifications-foundry-guide",
-    title: "Pig Iron Specifications: A Foundry Procurement Guide",
+    key: "PigIron",
     excerpt:
       "Technical breakdown of foundry vs. steelmaking pig iron grades, chemistry windows, and inspection protocols for import buyers.",
     content:
@@ -23,9 +24,10 @@ export const blogPosts: BlogPost[] = [
     category: "Technical",
     readTime: "8 min",
   },
+
   {
     slug: "india-steel-export-corridor-africa",
-    title: "India–Africa Steel Raw Materials Corridor",
+    key: "SteelRawMaterials",
     excerpt:
       "How logistics optimization and trade agreements are accelerating Indian metallurgy exports to African steel markets.",
     content:
@@ -34,9 +36,10 @@ export const blogPosts: BlogPost[] = [
     category: "Trade & Logistics",
     readTime: "5 min",
   },
+
   {
     slug: "natural-graphite-ev-supply-chain",
-    title: "Natural Graphite in the EV Supply Chain",
+    key: "NaturalGraphite",
     excerpt:
       "Flake graphite demand, purification requirements, and export compliance for battery-grade material buyers.",
     content:
@@ -45,6 +48,7 @@ export const blogPosts: BlogPost[] = [
     category: "Industry Trends",
     readTime: "7 min",
   },
+
 ];
 
 export function getBlogPostBySlug(slug: string): BlogPost | undefined {

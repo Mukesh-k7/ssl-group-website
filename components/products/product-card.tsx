@@ -6,12 +6,17 @@ import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import type { Product } from "@/types";
+import { useTranslations } from "next-intl";
+import { log } from "console";
 
 interface ProductCardProps {
   product: Product;
 }
 
 export function ProductCard({ product }: ProductCardProps) {
+  const t = useTranslations("Products");
+  console.log(product.key);
+  
   return (
     <motion.div whileHover={{ y: -6 }} transition={{ duration: 0.3 }}>
       <Card
@@ -19,7 +24,7 @@ export function ProductCard({ product }: ProductCardProps) {
           overflow-hidden
           h-full
           text-transparent
-          bg-gradient-to-b from-[#5f471b] via-[#a76818] to-[#c96a006b]
+          bg-gradient-to-br from-industrial-blue/40 via-gunmetal to-charcoal
           border-white/10 hover:border-industrial-blue/40
           transition-all hover:shadow-2xl hover:shadow-industrial-blue/10
           group
@@ -52,7 +57,7 @@ export function ProductCard({ product }: ProductCardProps) {
               margin: 0,
             }}
             role="img"
-            aria-label={product.name}
+            aria-label={product.key}
           /
           >
           <div
@@ -60,7 +65,7 @@ export function ProductCard({ product }: ProductCardProps) {
               absolute inset-0
               bg-gradient-to-t from-charcoal via-charcoal/20 to-transparent
             "
-            /
+          /
           >
           <span
             className="
@@ -72,7 +77,7 @@ export function ProductCard({ product }: ProductCardProps) {
               backdrop-blur-sm
             "
           >
-            {product.category}
+            {t(`${product.key}.Category`)}
           </span>
         </div>
         <CardContent
@@ -85,7 +90,7 @@ export function ProductCard({ product }: ProductCardProps) {
               text-xl text-white font-heading font-bold
             "
           >
-            {product.name}
+            {t(`${product.key}.Name`)}
           </h3>
           <p
             className="
@@ -93,22 +98,24 @@ export function ProductCard({ product }: ProductCardProps) {
               text-sm text-metallic/80 leading-relaxed line-clamp-2
             "
           >
-            {product.shortDescription}
+            {t(`${product.key}.ShortDescription`)}
           </p>
           <ul
             className="
               space-y-1 mt-4
             "
           >
-            {product.specifications.slice(0, 2).map((spec) => (
+            {product.specification.slice(0, 3).map((spec) => (
               <li
-                key={spec.label}
+                key={spec.key}
                 className="
                   flex justify-between
                   text-xs text-metallic/70
                 "
               >
-                <span>{spec.label}</span>
+                <span>
+                  {spec.key}
+                  </span>
                 <span
                   className="
                     text-metallic font-medium
@@ -130,7 +137,8 @@ export function ProductCard({ product }: ProductCardProps) {
             asChild
           >
             <Link href={`/products/${product.slug}`}>
-              View Specifications
+              {t("ViewAllProducts")} 
+              
               <ArrowRight
                 className="
                   w-4 h-4

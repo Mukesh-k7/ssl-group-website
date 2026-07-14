@@ -4,19 +4,18 @@ import Link from "next/link";
 import { ArrowBigRight, ArrowBigLeft } from 'lucide-react';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
-
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-
 import {
   AnimatedSection,
   SectionHeader,
 } from "@/components/shared/animated-section";
-import { ProductCard } from "@/components/products/product-card";
+import { ProductCard }  from "@/components/products/product-card";
 import { Button } from "@/components/ui/button";
 import { products } from "@/data/products";
 import type { Product } from "@/types";
+import { useTranslations } from "next-intl";
 
 interface ProductsGridSectionProps {
   limit?: number;
@@ -31,13 +30,25 @@ export function ProductsGridSection({
 }: ProductsGridSectionProps) {
   const displayProducts = limit ? items.slice(0, 9) : items;
 
+  const t = useTranslations('products');
+
   return (
     <AnimatedSection className="py-24 bg-gradient-to-br from-industrial-blue/40 via-gunmetal to-charcoal" id="products">
       <div className="container mx-auto px-4 md:px-6">
         <SectionHeader
-          eyebrow="Our Products"
-          title="Metallurgy & Steel Raw Materials"
-          description="Comprehensive export portfolio for integrated steel plants, foundries, and industrial procurement worldwide."
+          eyebrow={t("Eyebrow")}
+          title={t("Title")}
+          description={t("Description")}
+          eyebrowClassName="mb-3
+            text-lg text-transparent font-bold tracking-[0.2em] uppercase
+            bg-gradient-to-b bg-clip-text from-[#F7941D] via-[#C96A00]
+            to-[#5B2A00]
+            drop-shadow-[2px_2px_0px_rgba(0,0,0,0.25)]"
+          titleClassName="font-heading font-bold text-3xl text-white md:text-4xl lg:text-5xl
+          tracking-tight"
+          descriptionClassName="mt-4
+            text-lg text-industrial-white/70 leading-relaxed"
+
         />
 
         <div className="relative">
@@ -91,7 +102,7 @@ export function ProductsGridSection({
               className="bg-[#0461cfad] hover:bg-[#0461cf] text-white font-medium"
               asChild
             >
-              <Link href="/products">View All Products</Link>
+              <Link href="/products"> {t("ViewAllProducts")}</Link>
             </Button>
           </div>
         )}

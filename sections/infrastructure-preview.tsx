@@ -1,35 +1,22 @@
 "use client";
 
 import Link from "next/link";
-import { Warehouse, Ship, Container } from "lucide-react";
 import { AnimatedSection, SectionHeader } from "@/components/shared/animated-section";
 import { Button } from "@/components/ui/button";
+import { useTranslations } from "next-intl";
+import { facilities } from "@/data/site";
 
-const facilities = [
-  {
-    icon: Warehouse,
-    title: "Bonded Warehousing",
-    description: "50,000+ MT capacity across Ghaziabad, Kandla, and Vizag port facilities.",
-  },
-  {
-    icon: Ship,
-    title: "Vessel Loading",
-    description: "Dedicated berth access with 5,000–75,000 MT parcel loading capability.",
-  },
-  {
-    icon: Container,
-    title: "Container & Bulk",
-    description: "Flexible packaging — bulk vessels, containers, and jumbo bag dispatch.",
-  },
-];
+
 
 export function InfrastructurePreviewSection() {
+  const t = useTranslations("infrastructure");
+
   return (
     <AnimatedSection
       id="infrastructure"
       className="
         py-24
-        bg-gradient-to-br from-industrial-blue/40 via-gunmetal to-charcoal
+        [background:#fff]
         border-y border-white/10
       "
     >
@@ -40,9 +27,18 @@ export function InfrastructurePreviewSection() {
         "
       >
         <SectionHeader
-          eyebrow="Infrastructure"
-          title="World-Class Export Infrastructure"
-          description="Port-side facilities, quality labs, and logistics networks engineered for industrial-scale shipments."
+          eyebrow={t("Eyebrow")}
+          title={t("Title")}
+          description={t("Description")}
+          eyebrowClassName="mb-3
+            text-lg text-transparent font-bold tracking-[0.2em] uppercase
+            bg-gradient-to-b bg-clip-text from-[#F7941D] via-[#C96A00]
+            to-[#5B2A00]
+            drop-shadow-[2px_2px_0px_rgba(0,0,0,0.25)]"
+          titleClassName="font-heading font-bold text-3xl text-black md:text-4xl lg:text-5xl
+          tracking-tight"
+          descriptionClassName="mt-4
+            text-lg text-industrial-blue/70 leading-relaxed"
         />
         <div
           className="
@@ -52,11 +48,11 @@ export function InfrastructurePreviewSection() {
         >
           {facilities.map((item) => (
             <div
-              key={item.title}
+              key={item.key}
               className="
                 p-8
                 text-center
-                bg-charcoal/50
+                bg-charcoal hover:bg-gradient-to-br from-industrial-blue/40 via-gunmetal to-charcoal
                 rounded-xl border border-white/10
               "
             >
@@ -71,13 +67,13 @@ export function InfrastructurePreviewSection() {
                 className="
                   font-heading font-semibold text-lg text-white
                 "
-              >{item.title}</h3>
+              >{t(`${item.key}.Title`)}</h3>
               <p
                 className="
                   mt-2
                   text-sm text-metallic/80
                 "
-              >{item.description}</p>
+              >{t(`${item.key}.Description`)}</p>
             </div>
           ))}
         </div>
@@ -90,11 +86,13 @@ export function InfrastructurePreviewSection() {
           <Button
             variant="secondary"
             className="
-              bg-[#0461cfad]
+              bg-[#0461cf]
+              font-bold text-white
+              hover:bg-[#0461cfad]
             "
             asChild
           >
-            <Link href="/infrastructure">Explore Infrastructure</Link>
+            <Link href="/infrastructure" >{t("ExploreInfrastructure")}</Link>
           </Button>
         </div>
       </div>

@@ -1,0 +1,1161 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About Us",
+    "products": "Products",
+    "industries": "Industries",
+    "exportLogistics": "Export Logistics",
+    "certifications": "Certifications",
+    "infrastructure": "Infrastructure",
+    "contact": "Contact",
+    "catalog": "Catalog",
+    "getQuote": "Get Quote",
+    "more": "More"
+  },
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "products": "Products",
+    "industries": "Industries",
+    "export": "Export",
+    "certifications": "Certifications",
+    "infrastructure": "Infrastructure",
+    "globalPresence": "Global Presence",
+    "insights": "Insights",
+    "contact": "Contact Us",
+    "More": "More",
+    "GetQuote": "Get Quote",
+    "DownloadCatalog": "Download Catalog",
+    "GetExportQuote": "Get Export Quote",
+    "Catalog": "Catalog",
+    "career": "Career",
+    "media": "Media-Center"
+  },
+  "hero": {
+    "title": "Leading Global Exporter of Metallurgical Products",
+    "subtitle": "Delivering premium quality Metallurgical products worldwide with trust, quality and excellence.",
+    "button": "Explore Products",
+    "description": "India's premier exporter of pig iron, ferro alloys, carbon products, and steel industry raw materials to manufacturers across the Middle East, Africa, and Europe.",
+    "ISOCertifiedOperations": "ISO Certified Operations",
+    "45PlusExportMarkets": "45+ Export Markets",
+    "MTExportedAnnually": "MT Exported Annually",
+    "GlobalPartners": "Global Partners",
+    "ProductCategories": "Product Categories",
+    "YearsExcellence": "Years Excellence",
+    "ExportingTo45PlusCountriesSince": "Exporting to 45+ Countries Since",
+    "GlobalMetallurgy": "Global Metallurgy",
+    "TrustedSupply": "Trusted Supply",
+    "RequestExportQuote": "Request Export Quote",
+    "DownloadCatalog": "Download Catalog"
+  },
+  "about": {
+    "title": "About SSL Group",
+    "description": "SSL Group is a trusted exporter of high-quality Metallurgical products serving global markets with reliability and excellence",
+    "IndiaPremierMetallurgyExportHouse": "India's Premier Metallurgy Export House",
+    "description1": "For over two decades, SSL Group has supplied the global steel industry with export-grade pig iron, ferro alloys, carbon products, and industrial minerals. Our integrated sourcing, bonded warehousing, and port-side logistics deliver the consistency that enterprise procurement demands.",
+    "description2": "From Middle East steel giants to African foundries and European distributors, we are the single-window partner for metallurgical raw material excellence.",
+    "OurStory": "Our Story",
+    "Since": "Since",
+    "GhaziabadGlobalExportOperations": "Ghaziabad · Global Export Operations",
+    "Title": "Forging Global Metallurgy Partnerships",
+    "SSLGroup": "Since 2018, SSL Group has grown from a Delhi trading house into a premier international exporter of steel industry raw materials — trusted by manufacturers across 45+ countries.",
+    "Documentation": "We exist to bridge the gap between India`s world-class metallurgical production capacity and the global steel industry`s demand for reliable, export-grade raw materials. Every shipment reflects our commitment to quality, documentation, and long-term partnership.",
+    "Eyebrow": "Our Mission",
+    "Globals": "Connecting Indian Metallurgy to the World",
+    "OurTeam": "Our team of metallurgists, trade specialists, and logistics coordinators work as an extension of your procurement department — from specification review to port delivery.",
+    "Integrity": {
+      "Title": "Integrity in Trade",
+      "Description": "Transparent pricing, documented compliance, and ethical sourcing across every transaction."
+    },
+    "Technical": {
+      "Title": "Technical Excellence",
+      "Description": "Metallurgical expertise guiding grade selection, specification alignment, and quality assurance."
+    },
+    "Global": {
+      "Title": "Global Reliability",
+      "Description": "On-time vessel loading, consistent chemistry, and responsive export desk support worldwide."
+    },
+    "Sustainable": {
+      "Title": "Sustainable Growth",
+      "Description": "Responsible minerals initiative compliance and ESG-aligned supply chain development."
+    }
+  },
+  "products": {
+    "Eyebrow": "Our Products",
+    "Title": "Metallurgy & Steel Raw Materials",
+    "Description": "Comprehensive export portfolio for integrated steel plants, foundries, and industrial procurement worldwide.",
+    "ViewAllProducts": "View All Products",
+    "RawMaterials": "Raw Materials",
+    "ProductPortfolio": "Product Portfolio",
+    "EPCcontractors": "Nine core product categories serving integrated steel plants, foundries, EPC contractors, and global industrial procurement teams."
+  },
+  "Products": {
+    "PigIron": {
+      "Name": "Pig Iron",
+      "Category": "Ferrous Metals",
+      "ShortDescription": "Foundry and steel-grade pig iron with controlled silicon and sulfur for blast furnace and casting applications.",
+      "Description": "SSL Group exports premium foundry and basic pig iron sourced from ISO-certified integrated steel plants.",
+      "Specification": {
+        "Carbon": "Carbon (C)",
+        "Silicon": "Silicon (Si)",
+        "Sulfur": "Sulfur (S)",
+        "Phosphorus": "Phosphorus (P)"
+      },
+      "Variants": {
+        "FoundryGradePigIron": {
+          "Name": "Foundry Grade Pig Iron",
+          "Description": "Foundry Grade Pig Iron is used in the production of grey iron castings, ductile iron, and malleable iron. It has controlled silicon and sulfur content for optimal casting properties.",
+          "Specifications": {
+            "Grade": "Grade",
+            "Packing": "Packing",
+            "Standard": "Standard",
+            "Origin": "Origin",
+            "GradeValue": "Foundry Grade Pig Iron",
+            "PackingValue": "Loose / 1 MT Jumbo Bag",
+            "StandardValue": "IS / ASTM / ISO Equivalent",
+            "OriginValue": "India"
+          },
+          "TechnicalTables": {
+            "ChemicalComposition": "Chemical Composition",
+            "PhysicalProperties": "Physical Properties",
+            "ChemicalHeaders": {
+              "Grade": "Grade",
+              "C": "C",
+              "Si": "Si",
+              "Mn": "Mn",
+              "P": "P",
+              "S": "S"
+            },
+            "PhysicalHeaders": {
+              "Property": "Property",
+              "Value": "Value"
+            },
+            "PhysicalPropertiesRows": {
+              "Appearance": "Appearance",
+              "GreyMetallic": "Grey Metallic",
+              "Shape": "Shape",
+              "PigBlocks": "Pig / Blocks",
+              "Color": "Color",
+              "DarkGrey": "Dark Grey",
+              "Density": "Density",
+              "SpecificGravity": "Specific Gravity",
+              "MeltingPoint": "Melting Point",
+              "StandardWeight": "Standard Weight",
+              "Packing": "Packing",
+              "Storage": "Storage",
+              "StoreDryCoveredArea": "Store in a dry and covered area"
+            }
+          },
+          "Applications": {
+            "GreyIronCastings": "Grey Iron Castings",
+            "AutomotiveComponents": "Automotive Components",
+            "MachinePartsManufacturing": "Machine Parts Manufacturing",
+            "PipeAndPipeFittings": "Pipe & Pipe Fittings",
+            "ManholeCoversAndDrainageCastings": "Manhole Covers & Drainage Castings",
+            "AgriculturalEquipment": "Agricultural Equipment",
+            "EngineeringIndustrialCastings": "Engineering & Industrial Castings",
+            "FoundryIndustry": "Foundry Industry"
+          },
+          "FAQ": {
+            "WhatIsFoundryPigIronQuestion": "What is Foundry Pig Iron?",
+            "WhatIsFoundryPigIronAnswer": "Foundry Pig Iron is a high-quality raw material used in the production of grey iron castings. It offers excellent fluidity, machinability, and consistent chemical composition for foundry applications.",
+            "GradesQuestion": "What grades of Foundry Pig Iron do you supply?",
+            "GradesAnswer": "We supply various Foundry Pig Iron grades, including L1, L2, L3, L4, L5, L6, and L5–L6 Low Mn, based on customer requirements.",
+            "ApplicationsQuestion": "What are the applications of Foundry Pig Iron?",
+            "ApplicationsAnswer": "Foundry Pig Iron is widely used for manufacturing grey iron castings, automotive components, machine parts, pipes, manhole covers, agricultural equipment, and engineering castings.",
+            "PackingQuestion": "What packing options are available?",
+            "PackingAnswer": "The product is supplied in loose bulk, palletized loads, or 1 MT jumbo bags, depending on customer and export requirements.",
+            "CustomizedQuestion": "Can you provide customized grades and specifications?",
+            "CustomizedAnswer": "Yes. We can supply different Foundry Pig Iron grades and specifications according to customer requirements and applicable industry standards.",
+            "ExportQuestion": "Do you export Foundry Pig Iron internationally?",
+            "ExportAnswer": "Yes. We supply and export Foundry Pig Iron to domestic and international markets with reliable sourcing, quality assurance, and timely delivery."
+          }
+        }
+      },
+      "Overview": "Overview",
+      "Applications": "Applications",
+      "TechnicalSpecifications": "Technical Specifications"
+    },
+    "FerroAlloys": {
+      "Name": "Ferro Alloys",
+      "Category": "Alloying Materials",
+      "ShortDescription": "Ferro manganese, ferro silicon, ferro chrome, and specialty alloys for steel deoxidation and alloying.",
+      "Description": "Comprehensive ferro alloy portfolio for integrated steel plants and mini-mills. We supply low-carbon and high-carbon grades with batch traceability and sieve analysis documentation.",
+      "Specifications": {
+        "FeMn": "FeMn (Mn)",
+        "FeSi": "FeSi (Si)",
+        "FeCr": "FeCr (Cr)",
+        "FeSiMn": "FeSiMn (Si + Mn)",
+        "Packaging": "Packaging",
+        "Standards": "Standards"
+      },
+      "Applications": {
+        "Steeldeoxidation": "Steel deoxidation",
+        "Alloysteelproduction": "Alloy steel production",
+        "Stainlesssteelmanufacturing": "Stainless steel manufacturing",
+        "Weldingconsumables": "Welding consumables"
+      }
+    },
+    "NobalAlloy": {
+      "Name": "Nobal Alloy",
+      "Category": "Specialty Alloys",
+      "ShortDescription": "High-purity Nobal Alloy for grain refinement and micro-alloying in specialty steel grades.",
+      "Description": "Precision Nobal Alloy with controlled titanium content for aerospace-grade steels, high-strength low-alloy applications, and critical casting operations requiring grain refinement.",
+      "Specifications": {
+        "Titanium": "Titanium (Ti)",
+        "Aluminum": "Aluminum (Al)",
+        "Carbon": "Carbon (C)",
+        "Size": "Size",
+        "Form": "Form"
+      },
+      "Applications": {
+        "Grainrefinement": "Grain refinement",
+        "MicroalloyedHSLAsteel": "Micro-alloyed HSLA steel",
+        "Aerospacealloysteels": "Aerospace alloy steels",
+        "Specialtycastings": "Specialty castings"
+      }
+    },
+    "CarbonProducts": {
+      "Name": "Carbon Products",
+      "Category": "Carbon Materials",
+      "ShortDescription": "Calcined petroleum coke, metallurgical coke, and carbon raisers for steel and foundry operations.",
+      "Description": "Export-grade carbon products including CPC, GPC, and anthracite-based carbon raisers with low ash and volatile matter for EAF steelmaking and foundry cupola operations.",
+      "Specifications": {
+        "FixedCarbon": "Fixed Carbon",
+        "Ash": "Ash",
+        "VolatileMatter": "Volatile Matter",
+        "Sulfur": "Sulfur",
+        "Sizing": "Sizing"
+      },
+      "Applications": {
+        "EAFsteelmaking": "EAF steelmaking",
+        "Foundrycupolacharge": "Foundry cupola charge",
+        "Anodemanufacturing": "Anode manufacturing",
+        "Carbonraiserapplications": "Carbon raiser applications"
+      }
+    },
+    "CarbideOre": {
+      "Name": "Carbide Ore",
+      "Category": "Industrial Minerals",
+      "ShortDescription": "High-grade carbide concentrate and ore for smelters and galvanizing supply chains.",
+      "Description": "Direct export of carbide ore and concentrate with consistent carbide content, low impurities, and full assay certificates for smelter and galvanizing industry procurement.",
+      "Specifications": {
+        "Carbide": "Carbide (C)",
+        "Lead": "Lead (Pb)",
+        "Iron": "Iron (Fe)",
+        "Moisture": "Moisture",
+        "Form": "Form"
+      },
+      "Applications": {
+        "Zincsmelting": "Zinc smelting",
+        "Galvanizingindustry": "Galvanizing industry",
+        "Diecastingalloys": "Die casting alloys",
+        "Chemicalprocessing": "Chemical processing"
+      }
+    },
+    "NaturalGraphite": {
+      "Name": "Natural Graphite",
+      "Category": "Industrial Minerals",
+      "ShortDescription": "Flake and amorphous natural graphite for refractories, batteries, and lubricant industries.",
+      "Description": "Premium natural graphite with controlled flake size distribution, high carbon content, and low ash for refractory brick, EV battery anode precursors, and industrial lubricant manufacturing.",
+      "Specifications": {
+        "FixedCarbon": "Fixed Carbon",
+        "Ash": "Ash",
+        "FlakeSize": "Flake Size",
+        "Moisture": "Moisture",
+        "Types": "Types"
+      },
+      "Applications": {
+        "Refractorymanufacturing": "Refractory manufacturing",
+        "Batteryanodematerials": "Battery anode materials",
+        "Industriallubricants": "Industrial lubricants",
+        "Gasketsandseals": "Gaskets and seals"
+      }
+    },
+    "SteelPipesTubes": {
+      "Name": "Steel Pipes & Tubes",
+      "Category": "Finished Steel",
+      "ShortDescription": "Seamless and welded steel pipes for oil & gas, infrastructure, and industrial fluid transport.",
+      "Description": "API and ASTM compliant steel pipes and tubes for energy sector, water infrastructure, and industrial process piping with full mill test certification.",
+      "Specifications": {
+        "Grades": "Grades",
+        "ODRange": "OD Range",
+        "WallThickness": "Wall Thickness",
+        "Ends": "Ends",
+        "Coating": "Coating"
+      },
+      "Applications": {
+        "Oilgastransmission": "Oil & Gas Transmission",
+        "Waterinfrastructure": "Water Infrastructure",
+        "EPCprojectpiping": "EPC Project Piping",
+        "Industrialprocesslines": "Industrial Process Lines"
+      }
+    },
+    "IndustrialMinerals": {
+      "Name": "Industrial Minerals",
+      "Category": "Industrial Minerals",
+      "ShortDescription": "Bauxite, fluorspar, quartz, and specialty minerals for steel and chemical industries.",
+      "Description": "Diversified industrial minerals portfolio supporting steel fluxing, aluminum production, and chemical manufacturing with consistent quality and export documentation.",
+      "Specifications": {
+        "Products": "Products",
+        "Purity": "Purity",
+        "Moisture": "Moisture",
+        "Packaging": "Packaging",
+        "Inspection": "Inspection"
+      },
+      "Applications": {
+        "Steelfluxing": "Steel fluxing",
+        "Aluminumsmelting": "Aluminum smelting",
+        "Chemicalfeedstock": "Chemical feedstock",
+        "Ceramicmanufacturing": "Ceramic manufacturing"
+      }
+    },
+    "SteelIndustryRawMaterials": {
+      "Name": "Steel Industry Raw Materials",
+      "Category": "Raw Materials",
+      "ShortDescription": "Consolidated supply of iron ore, coal, scrap substitutes, and charge materials for steel plants.",
+      "Description": "One-window procurement for integrated steel plants — iron ore fines and lumps, PCI coal, metallurgical coke, and alternative charge materials with vessel-level scheduling.",
+      "Specifications": {
+        "IronOreFe": "Iron Ore Fe",
+        "MetCokeCSR": "Met Coke CSR",
+        "PCICoal": "PCI Coal",
+        "Delivery": "Delivery",
+        "Volumes": "Volumes"
+      },
+      "Applications": {
+        "Blastfurnaceoperations": "Blast Furnace Operations",
+        "DRIEAFplants": "DRI / EAF Plants",
+        "Integratedsteelmills": "Integrated Steel Mills",
+        "Pelletplantfeedstock": "Pellet Plant Feedstock"
+      }
+    },
+    "Coal": {
+      "Name": "Coal",
+      "Category": "Industrial Minerals",
+      "ShortDescription": "High-grade carbide concentrate and ore for smelters and galvanizing supply chains.",
+      "Description": "Direct export of carbide ore and concentrate with consistent carbide content, low impurities, and full assay certificates for smelter and galvanizing industry procurement.",
+      "Specifications": {
+        "Carbide": "Carbide (C)",
+        "Lead": "Lead (Pb)",
+        "Iron": "Iron (Fe)",
+        "Moisture": "Moisture",
+        "Form": "Form"
+      },
+      "Applications": {
+        "Zincsmelting": "Zinc smelting",
+        "Galvanizingindustry": "Galvanizing industry",
+        "Diecastingalloys": "Die casting alloys",
+        "Chemicalprocessing": "Chemical processing"
+      }
+    },
+    "LimeStone": {
+      "Name": "Lime Stone",
+      "Category": "Industrial Minerals",
+      "ShortDescription": "High-grade carbide concentrate and ore for smelters and galvanizing supply chains.",
+      "Description": "Direct export of carbide ore and concentrate with consistent carbide content, low impurities, and full assay certificates for smelter and galvanizing industry procurement.",
+      "Specifications": {
+        "Carbide": "Carbide (C)",
+        "Lead": "Lead (Pb)",
+        "Iron": "Iron (Fe)",
+        "Moisture": "Moisture",
+        "Form": "Form"
+      },
+      "Applications": {
+        "Zincsmelting": "Zinc smelting",
+        "Galvanizingindustry": "Galvanizing industry",
+        "Diecastingalloys": "Die casting alloys",
+        "Chemicalprocessing": "Chemical processing"
+      }
+    },
+    "ViewAllProducts": "View Products"
+  },
+  "Product": {
+    "Overview": "Overview",
+    "Applications": "Applications",
+    "TechnicalSpecifications": "Technical Specifications"
+  },
+  "whychooseus": {
+    "Eyebrow": "Why SSL Group",
+    "Title": "Enterprise-Grade Export Partnership",
+    "Description": "Decades of metallurgical expertise combined with global logistics infrastructure — built for steel manufacturers and industrial procurement at scale.",
+    "QualityAssurance": {
+      "Title": "Export-Grade Quality Assurance",
+      "Description": "Every shipment undergoes multi-stage metallurgical testing, third-party inspection, and documented compliance before dispatch."
+    },
+    "SupplyChain": {
+      "Title": "Integrated Supply Chain",
+      "Description": "Direct sourcing from certified mines and smelters, bonded warehousing, and optimized logistics for just-in-time delivery."
+    },
+    "TradeExpertise": {
+      "Title": "Global Trade Expertise",
+      "Description": "Dedicated export desks for Middle East, Africa, and Europe with Incoterms flexibility and trade finance support."
+    },
+    "MetallurgySupport": {
+      "Title": "Technical Metallurgy Support",
+      "Description": "In-house metallurgists assist procurement teams with grade selection, alloy optimization, and specification alignment."
+    }
+  },
+  "industries": {
+    "Eyebrow": "Industries Served",
+    "Title": "Powering Global Industrial Supply Chains",
+    "Description": "From integrated steel plants to EPC contractors — tailored metallurgical supply solutions for every sector.",
+    "SteelManufacturing": {
+      "Title": "Steel Manufacturing",
+      "Description": "Expanding partnerships with regional steel manufacturers and pipe producers.",
+      "RegionLabels": {
+        "Global": "Global",
+        "MiddleEast": "Middle East",
+        "Asia": "Asia"
+      },
+      "Regions": [
+        "Global",
+        "MiddleEast",
+        "Asia"
+      ]
+    },
+    "FoundriesCastings": {
+      "Title": "Foundries & Castings",
+      "Description": "Foundry-grade pig iron, ferro silicon, and inoculants with tight chemistry control for automotive and industrial castings.",
+      "RegionLabels": {
+        "Europe": "Europe",
+        "India": "India",
+        "Africa": "Africa"
+      },
+      "Regions": [
+        "Europe",
+        "India",
+        "Africa"
+      ]
+    },
+    "EPCContractors": {
+      "Title": "EPC Contractors",
+      "Description": "Project-based supply of steel pipes, structural materials, and bulk raw materials aligned with construction milestones.",
+      "RegionLabels": {
+        "MiddleEast": "Middle East",
+        "AsiaPacific": "Asia-Pacific",
+        "Africa": "Africa"
+      },
+      "Regions": [
+        "MiddleEast",
+        "Africa",
+        "AsiaPacific"
+      ]
+    },
+    "Infrastructure": {
+      "Title": "Infrastructure",
+      "Description": "Large-volume procurement for bridges, ports, and energy infrastructure with consolidated logistics management.",
+      "RegionLabels": {
+        "India": "India",
+        "MiddleEast": "Middle East",
+        "Africa": "Africa"
+      },
+      "Regions": [
+        "India",
+        "Africa",
+        "MiddleEast"
+      ]
+    },
+    "IndustrialProcurement": {
+      "Title": "Industrial Procurement",
+      "Description": "Centralized sourcing for multi-site procurement teams with contract pricing and inventory management support.",
+      "RegionLabels": {
+        "Global": "Global"
+      },
+      "Regions": [
+        "Global"
+      ]
+    },
+    "GalvanizingZinc": {
+      "Title": "Galvanizing & Zinc",
+      "Description": "Zinc ore and concentrate supply chains optimized for smelters and hot-dip galvanizing operations.",
+      "RegionLabels": {
+        "Europe": "Europe",
+        "Asia": "Asia"
+      },
+      "Regions": [
+        "Europe",
+        "Asia"
+      ]
+    },
+    "Refractories": {
+      "Title": "Refractories",
+      "Description": "Natural graphite, bauxite, and industrial minerals for refractory brick and lining manufacturers.",
+      "RegionLabels": {
+        "Global": "Global"
+      },
+      "Regions": [
+        "Global"
+      ]
+    },
+    "OilGas": {
+      "Title": "Oil & Gas",
+      "Description": "Natural graphite, bauxite, and industrial minerals for refractory brick and lining manufacturers.",
+      "RegionLabels": {
+        "MiddleEast": "Middle East",
+        "Africa": "Africa"
+      },
+      "Regions": [
+        "MiddleEast",
+        "Africa"
+      ]
+    },
+    "Tailored": "Tailored metallurgical supply solutions for every segment of the global steel and industrial ecosystem.",
+    "Industrie": "Industries",
+    "IndustriesWeServe": "Industries We Serve",
+    "logistics": "Deep industry knowledge ensures the right grades, packaging, and logistics for your operational requirements.",
+    "SectorExpertise": "Sector Expertise",
+    "KeyMarkets": "Key Markets"
+  },
+  "export": {
+    "Eyebrow": "Global Export Network",
+    "Title": "Strategic Trade Corridors Worldwide",
+    "Description": "Established logistics routes and port partnerships delivering metallurgical raw materials across continents.",
+    "AsiaPacific": {
+      "Title": "Asia-Pacific",
+      "Description": "Expanding partnerships with regional steel manufacturers and pipe producers.",
+      "Countries": [
+        "Vietnam",
+        "Indonesia",
+        "Bangladesh",
+        "Thailand"
+      ]
+    },
+    "MiddleEast": {
+      "Title": "Middle East",
+      "Description": "Strategic hub for steel and EPC procurement with dedicated Jebel Ali routing.",
+      "Countries": [
+        "UAE",
+        "Saudi Arabia",
+        "Oman",
+        "Qatar",
+        "Kuwait"
+      ]
+    },
+    "Africa": {
+      "Title": "Africa",
+      "Description": "Growing foundry and infrastructure demand served via Mombasa and Lagos corridors.",
+      "Countries": [
+        "Nigeria",
+        "Kenya",
+        "South Africa",
+        "Egypt",
+        "Morocco"
+      ]
+    },
+    "Europe": {
+      "Title": "Europe",
+      "Description": "Distributor network for ferro alloys and industrial minerals across EU steel clusters.",
+      "Countries": [
+        "Germany",
+        "Italy",
+        "Spain",
+        "Netherlands",
+        "Poland"
+      ]
+    },
+    "WorldWide": "World Wide",
+    "GlobalPresence": "Global Presence",
+    "Continents": "Strategic trade corridors connecting Indian metallurgical production to steel manufacturers and industrial buyers across four continents.",
+    "Regional": "Regional Export Desks",
+    "Teams": "Dedicated teams with local market knowledge, language support, and timezone-aligned responsiveness.",
+    "Interactive": "Interactive map integration available"
+  },
+  "Certifications": {
+    "Eyebrow": "Certifications",
+    "Title": "Compliance & Quality Assurance",
+    "Description": "Internationally recognized standards underpinning every export shipment and supply chain operation.",
+    "ISO9001:2015": {
+      "Title": "ISO 9001:2015",
+      "Description": "Quality management systems for export operations and supply chain control.",
+      "issuer": "Bureau Veritas"
+    },
+    "ISO14001:2015": {
+      "Title": "ISO 14001:2015",
+      "Description": "Environmental management across warehousing, logistics, and sourcing operations.",
+      "issuer": "TÜV SÜD"
+    },
+    "OHSAS45001": {
+      "Title": "OHSAS 45001",
+      "Description": "Occupational health and safety standards at processing and port facilities.",
+      "issuer": "DNV"
+    },
+    "ResponsibleMineralsInitiative": {
+      "Title": "Responsible Minerals Initiative",
+      "Description": "Conflict-free sourcing compliance for industrial minerals and ore exports.",
+      "issuer": "RMI"
+    },
+    "FIEOMember": {
+      "Title": "FIEO Member",
+      "Description": "Recognized Indian export house with verified trade credentials.",
+      "issuer": "Federation of Indian Export Organisations"
+    },
+    "DGFTRegistered": {
+      "Title": "DGFT Registered",
+      "Description": "Authorized star export house status with multi-product export licensing.",
+      "issuer": "Directorate General of Foreign Trade"
+    },
+    "ViewAllCertifications": "View All Certifications",
+    "Complaince": "Complaince",
+    "Standards": "Certifications & Standards",
+    "Internationally": "Internationally recognized quality, environmental, and trade certifications underpinning every export operation.",
+    "Credentials": "Our Credentials",
+    "ThirdParty": "Third-party audited systems ensuring consistent quality, responsible sourcing, and export compliance.",
+    "Certified": "Certified",
+    "Inspection": "Inspection & Testing Partners",
+    "Intertek": "All export shipments supported by SGS, Bureau Veritas, and Intertek inspection protocols. Mill test certificates, assay reports, and pre-shipment inspection documentation provided as standard."
+  },
+  "infrastructure": {
+    "Eyebrow": "Infrastructure",
+    "Title": "World-Class Export Infrastructure",
+    "Description": "Port-side facilities, quality labs, and logistics networks engineered for industrial-scale shipments.",
+    "BondedWarehousing": {
+      "Title": "Bonded Warehousing",
+      "Description": "50,000+ MT capacity across Ghaziabad, Kandla, and Vizag port facilities."
+    },
+    "VesselLoading": {
+      "Title": "Vessel Loading",
+      "Description": "Dedicated berth access with 5,000–75,000 MT parcel loading capability."
+    },
+    "ContainerBulk": {
+      "Title": "Container & Bulk",
+      "Description": "Flexible packaging — bulk vessels, containers, and jumbo bag dispatch."
+    },
+    "ExploreInfrastructure": "Explore Infrastructure"
+  },
+  "facilitiess": {
+    "Eyebrow": "Facilities",
+    "Title": "Export Infrastructure",
+    "Facilities": "World-class port-side facilities, quality laboratories, and logistics networks engineered for industrial-scale metallurgy exports.",
+    "Operational": "Operational Facilities",
+    "Strategic": "Strategic infrastructure investments ensuring consistent quality, capacity, and delivery reliability.",
+    "Warehousing": {
+      "Title": "Bonded Warehousing",
+      "Description": "Climate-controlled storage at Mumbai, Kandla, and Visakhapatnam with inventory management and blending capabilities.",
+      "stats": "50,000+ MT",
+      "Locations": [
+        "Delhi",
+        "Kolkata",
+        "Vizag"
+      ]
+    },
+    "Laboratories": {
+      "Title": "Quality Laboratories",
+      "Description": "In-house and partner labs for chemical analysis, sieve testing, and metallurgical property verification before dispatch.",
+      "stats": "3 Labs",
+      "Locations": [
+        "Delhi HQ",
+        "Kandla Port",
+        "Vizag Port"
+      ]
+    },
+    "Operations": {
+      "Title": "Port-Side Operations",
+      "Description": "Dedicated loading berths, stevedoring contracts, and vessel coordination for bulk and break-bulk shipments.",
+      "stats": "4 Major Ports",
+      "Locations": [
+        "JNPT",
+        "Kandla",
+        "Vizag",
+        "Haldia"
+      ]
+    },
+    "Dispatch": {
+      "Title": "Packaging & Dispatch",
+      "Description": "Bulk vessel, containerized, jumbo bag, and break-bulk packaging with customizable sizing and labeling.",
+      "stats": "Multi-Modal",
+      "Locations": [
+        "Pan-India Network"
+      ]
+    }
+  },
+  "testimonials": {
+    "Eyebrow": "Client Trust",
+    "Title": "Trusted by Global Steel Leaders",
+    "Description": "Long-term partnerships with procurement teams across the Middle East, Africa, and Europe.",
+    "UAE": {
+      "Title": "UAE",
+      "quote": "SSL Group has been our primary ferro alloy supplier for three integrated steel plants. Consistency in chemistry and on-time vessel loading is exceptional.",
+      "author": "Khalid Al-Rashid",
+      "role": "Chief Procurement Officer",
+      "company": "Gulf Steel Industries"
+    },
+    "India": {
+      "Title": "India",
+      "author": "Anirudh Tandon",
+      "quote": "Their pig iron grades meet our foundry specifications without deviation. Documentation and LC compliance are enterprise-grade.",
+      "role": "Materials Director",
+      "company": "EuroCast Foundries"
+    },
+    "Tanzania": {
+      "Title": "Tanzania",
+      "quote": "From zinc ore to natural graphite, SSL Group consolidates our raw material basket with transparent pricing and reliable African corridor logistics.",
+      "author": "James Okafor",
+      "role": "VP Supply Chain",
+      "company": "Continental Steel Works"
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "description": "Get in touch with our team for inquiries and quotations.",
+    "name": "Full Name",
+    "email": "Email Address",
+    "phone": "Phone Number",
+    "message": "Message",
+    "submit": "Send Message",
+    "Touch": "Get in Touch",
+    "Contact": "Contact Our Export Desk",
+    "Submit": "Submit your inquiry for product specifications, pricing, vessel scheduling, or partnership discussions. We respond within 24 business hours.",
+    "Inquiry": "Export Inquiry Form",
+    "Specifications": "Complete the form below for product quotes, specifications, and shipment planning.",
+    "CompanyDetails": "Company Details",
+    "SSLGroup": {
+      "name": "SSL Group",
+      "tagline": "Global Metallurgy. Trusted Supply.",
+      "legalName": "SSL Group International Trading Pvt. Ltd."
+    },
+    "WhatsApp": "WhatsApp Export Desk",
+    "Instant": "Instant messaging for urgent inquiries",
+    "Export": "Export Inquiry Hours",
+    "Timing": "Monday – Saturday",
+    "Emergency": "Sunday: Emergency shipments only",
+    "Address1": "Delhi Head Office : Ground Floor, CC-23, AVANTIKA 1, Avantika Main Road, Saini Washing Center, Avantika, Ghaziabad,",
+    "Address2": "Uttar Pradesh 201015, India"
+  },
+  "footer": {
+    "copyright": "All Rights Reserved.",
+    "quickLinks": "Quick Links",
+    "contactUs": "Contact Us",
+    "followUs": "Follow Us"
+  },
+  "stats": {
+    "yearsofExcellence": "Years of Excellence",
+    "countriesServed": "Countries Served",
+    "annualExportVolume": "Annual Export Volume",
+    "globalPartners": "Global Partners"
+  },
+  "blog": {
+    "Eyebrow": "Insights",
+    "Title": "Industry Intelligence",
+    "Description": "Market analysis, technical procurement guides, and trade corridor updates for global steel industry professionals.",
+    "FerroAlloy": {
+      "Title": "Global Ferro Alloy Market Outlook 2026",
+      "excerpt": "Analysis of manganese and silicon alloy pricing dynamics, supply constraints, and implications for steel procurement strategies.",
+      "content": "The global ferro alloy market enters 2026 with continued volatility in energy costs and shifting trade flows from traditional suppliers. Steel manufacturers in the Middle East and Africa are diversifying sourcing to Indian exporters with established quality track records...",
+      "category": "Market Intelligence",
+      "readTime": "6 min"
+    },
+    "PigIron": {
+      "Title": "Pig Iron Specifications: A Foundry Procurement Guide",
+      "excerpt": "Technical breakdown of foundry vs. steelmaking pig iron grades, chemistry windows, and inspection protocols for import buyers.",
+      "content": "Selecting the correct pig iron grade is critical for casting quality and furnace efficiency. This guide covers silicon ranges, sulfur limits, and the documentation required for international shipments...",
+      "category": "Technical",
+      "readTime": "8 min"
+    },
+    "SteelRawMaterials": {
+      "Title": "India–Africa Steel Raw Materials Corridor",
+      "excerpt": "How logistics optimization and trade agreements are accelerating Indian metallurgy exports to African steel markets.",
+      "content": "The India-Africa trade corridor has emerged as a strategic channel for pig iron, ferro alloys, and industrial minerals. Port infrastructure improvements in Mombasa and Lagos are reducing transit times...",
+      "category": "Trade & Logistics",
+      "readTime": "5 min"
+    },
+    "NaturalGraphite": {
+      "Title": "Natural Graphite in the EV Supply Chain",
+      "excerpt": "Flake graphite demand, purification requirements, and export compliance for battery-grade material buyers.",
+      "content": "As battery manufacturers scale production, natural graphite sourcing has become a strategic priority. Indian flake deposits offer competitive carbon content with growing processing capacity...",
+      "category": "Industry Trends",
+      "readTime": "7 min"
+    },
+    "Read": "Read More",
+    "Insights": "Back to Insights",
+    "Detailed": "For detailed market reports and procurement consultations, contact our export desk at export@sslgroup.in. Our metallurgy specialists provide grade-specific guidance tailored to your production requirements.",
+    "read": "read"
+  },
+  "timeline": {
+    "Title": "Building Global Metallurgy Leadership",
+    "Journey": "Our Journey",
+    "Foundation": {
+      "Title": "Foundation",
+      "Description": "SSL Group established in Delhi as a metallurgical raw materials trading firm."
+    },
+    "Export": {
+      "Title": "Export Operations",
+      "Description": "First international shipments of pig iron and ferro alloys to Middle East markets."
+    },
+    "Africa": {
+      "Title": "Africa Expansion",
+      "Description": "Dedicated trade corridor established for West and East African steel manufacturers."
+    },
+    "Infrastructure": {
+      "Title": "Infrastructure Investment",
+      "Description": "Bonded warehousing and port-side blending facilities commissioned at major Indian ports."
+    },
+    "European": {
+      "Title": "European Network",
+      "Description": "Strategic distributor partnerships formed across Germany, Italy, and Spain."
+    },
+    "Sustainability": {
+      "Title": "Sustainability Framework",
+      "Description": "ESG reporting and responsible sourcing program launched across mineral supply chains."
+    }
+  },
+  "services": {
+    "Chartering": {
+      "Title": "Bulk Vessel Chartering",
+      "Description": "5,000–75,000 MT parcel sizes with FOB, CFR, and CIF terms. Experienced chartering desk for timely laycan scheduling."
+    },
+    "Operations": {
+      "Title": "Port Operations",
+      "Description": "Dedicated operations at Mumbai, Kandla, Vizag, and Haldia with berth access and stevedoring partnerships."
+    },
+    "Documentation": {
+      "Title": "Trade Documentation",
+      "Description": "Full LC compliance, COO, inspection certificates, bill of lading, and customs documentation for seamless clearance."
+    },
+    "Logistics": {
+      "Title": "Inland Logistics",
+      "Description": "Rail and road connectivity from mine and smelter to port with bonded warehousing for inventory management."
+    },
+    "Eyebrow": "Export Operations",
+    "LogisticsExcellence": "Global Export & Logistics Excellence",
+    "reliability": "End-to-end export management from Indian ports to steel plants worldwide — engineered for reliability at industrial scale.",
+    "Integrated": "Integrated Export Services",
+    "coordinators": "Every shipment managed by dedicated export coordinators with real-time tracking and documentation control.",
+    "Supported": "Supported Incoterms"
+  },
+  "careers": {
+    "NowHiring": "Now Hiring",
+    "PositionsOpen": "Positions Open",
+    "Team": "Join the Team Behind",
+    "Premier": "India's Premier",
+    "Metallurgy": "Metallurgy Export",
+    "Intersection": "Work at the intersection of industrial trade, global logistics, and emerging markets. SSL Group moves millions of metric tons across 45+ countries — be part of that.",
+    "Openings": "View All Openings",
+    "ShowLess": "Show Less",
+    "Life": "Life at SSL Group",
+    "GlobalOperations": "Global Operations Since 2018",
+    "Locations": "Ghaziabad, UP · Africa · Middle East · Europe",
+    "whysslgroup": "Why SSL Group",
+    "Career": "Your Career in",
+    "GlobalTrade": "Global Trade",
+    "Supply": "SSL Group has supplied ferrous and non-ferrous materials to steel plants, foundries, and EPC contractors worldwide since 2018. When you join our team, you become part of supply chains that feed real infrastructure — bridges, factories, and energy grids across continents.",
+    "OurStory": "Read Our Story",
+    "Culture": "Culture",
+    "LifeAt": "Life at",
+    "title": "SSL Group",
+    "Bureaucracy": "We are a lean, expert-driven organization. Every team member owns a piece of a global operation — there's no bureaucracy between your work and its real-world impact across supply chains worldwide.",
+    "Careers": "Careers",
+    "Positions": "Open Positions",
+    "Positionsavailable": "Positions Available",
+    "ApplyNow": "Apply Now",
+    "Rolesmatch": "No roles match your search. Try different filters.",
+    "HowWeHire": "How We Hire",
+    "Recruitment": "Our Recruitment",
+    "Process": "Process",
+    "Transparent": "A transparent, fast hiring process. Most candidates hear back within 72 hours of applying.",
+    "ReadytoApply": "Ready to Apply",
+    "SourceYour": "Source Your Career From SSL Group",
+    "SendYour": "Send your resume to",
+    "Directly": "or apply directly through any of our open positions above.",
+    "Browse": "Browse Open Roles",
+    "EmailYour": "Email Your CV",
+    "benefits": {
+      "globalExposure": {
+        "title": "Global Exposure",
+        "description": "Work with export operations spanning Africa, Middle East, and European markets across 45+ countries."
+      },
+      "industryCertifications": {
+        "title": "Industry Certifications",
+        "description": "Access ISO 9001, BIS, and international trade compliance training to grow your professional credentials."
+      },
+      "ghaziabadHQ": {
+        "title": "Ghaziabad HQ",
+        "description": "Modern office at the heart of India's industrial corridor with excellent NCR connectivity."
+      },
+      "learningDevelopment": {
+        "title": "Learning & Development",
+        "description": "Sponsored certifications, metallurgy domain workshops, and cross-functional rotations."
+      },
+      "performanceRewards": {
+        "title": "Performance Rewards",
+        "description": "Quarterly bonuses tied to trade volumes, ESOPs for senior roles, and annual recognition awards."
+      },
+      "collaborativeCulture": {
+        "title": "Collaborative Culture",
+        "description": "Flat hierarchy, cross-border teams, and a culture built on trade expertise and mutual growth."
+      }
+    },
+    "jobs": {
+      "exportDocumentationExecutive": {
+        "title": "Export Documentation Executive",
+        "dept": "Operations",
+        "type": "Full-time",
+        "location": "Ghaziabad",
+        "domain": "International"
+      },
+      "internationalTradeManager": {
+        "title": "International Trade Manager",
+        "dept": "Trade",
+        "type": "Full-time",
+        "location": "Ghaziabad",
+        "domain": "International"
+      },
+      "adminExecutive": {
+        "title": "Admin Executive",
+        "dept": "Admin Office",
+        "type": "Full-time",
+        "location": "Ghaziabad",
+        "domain": "All"
+      },
+      "logisticsCoordinator": {
+        "title": "Logistics Coordinator",
+        "dept": "Logistics",
+        "type": "Full-time",
+        "location": "Ghaziabad",
+        "domain": "All"
+      },
+      "businessDevelopmentExecutive": {
+        "title": "Business Development Executive",
+        "dept": "Sale & Marketing",
+        "type": "Full-time",
+        "location": "Ghaziabad",
+        "domain": "Domestic"
+      },
+      "accountExecutive": {
+        "title": "Account Executive",
+        "dept": "Account",
+        "type": "Full-time",
+        "location": "Ghaziabad",
+        "domain": "Domestic"
+      },
+      "accountManager": {
+        "title": "Account Manager",
+        "dept": "Account",
+        "type": "Full-time",
+        "location": "Ghaziabad",
+        "domain": "All"
+      },
+      "hrExecutive": {
+        "title": "HR Executive",
+        "dept": "Human Resource",
+        "type": "Full-time",
+        "location": "Ghaziabad",
+        "domain": "All"
+      },
+      "hrManager": {
+        "title": "HR Manager",
+        "dept": "Human Resource",
+        "type": "Full-time",
+        "location": "Ghaziabad",
+        "domain": "All"
+      },
+      "itExecutive": {
+        "title": "IT Executive",
+        "dept": "IT",
+        "type": "Full-time",
+        "location": "Ghaziabad",
+        "domain": "All"
+      },
+      "corporateLawyer": {
+        "title": "Corporate Lawyer",
+        "dept": "Legals",
+        "type": "Full-time",
+        "location": "Ghaziabad",
+        "domain": "All"
+      },
+      "businessDevelopmentAssistent": {
+        "title": "Business Development Assistant",
+        "dept": "Sale & Marketing",
+        "type": "Full-time",
+        "location": "Ghaziabad",
+        "domain": "Domestic"
+      },
+      "globalBusinessDevelopment": {
+        "title": "Global Business Development",
+        "dept": "Sale & Marketing",
+        "type": "Full-time",
+        "location": "Ghaziabad",
+        "domain": "International"
+      },
+      "exportSales": {
+        "title": "Export Sales",
+        "dept": "Sale & Marketing",
+        "type": "Full-time",
+        "location": "Ghaziabad",
+        "domain": "International"
+      },
+      "businessDevelopmentManager": {
+        "title": "Business Development Manager",
+        "dept": "Sale & Marketing",
+        "type": "Full-time",
+        "location": "Ghaziabad",
+        "domain": "Domestic"
+      },
+      "domesticSales": {
+        "title": "Domestic Sales",
+        "dept": "Sale & Marketing",
+        "type": "Full-time",
+        "location": "Ghaziabad",
+        "domain": "Domestic"
+      },
+      "exportDocumentationManager": {
+        "title": "Export Documentation Manager",
+        "dept": "Sale & Marketing",
+        "type": "Full-time",
+        "location": "Ghaziabad",
+        "domain": "International"
+      }
+    },
+    "departments": {
+      "all": "All Departments",
+      "operations": "Operations",
+      "trade": "Trade",
+      "quality": "Quality",
+      "logistics": "Logistics",
+      "sales": "Sale & Marketing",
+      "it": "IT",
+      "legal": "Legals",
+      "adminOffice": "Admin Office",
+      "account": "Account",
+      "humanResource": "Human Resource"
+    },
+    "domains": {
+      "all": "All Domains",
+      "internatoinal": "International",
+      "domestic": "Domestic"
+    },
+    "workTypes": {
+      "all": "All Types",
+      "fullTime": "Full-time",
+      "contract": "Contracts",
+      "remote": "Remote",
+      "hybrid": "Hybrid"
+    },
+    "process": {
+      "applicationSubmission": {
+        "title": "Application Submission",
+        "description": "Submit your resume and cover letter through our portal. Our team reviews every application with care."
+      },
+      "domainAssessment": {
+        "title": "Domain Assessment",
+        "description": "A short task or test relevant to your role — trade knowledge, technical skills, or case analysis."
+      },
+      "hrScreeningCall": {
+        "title": "HR Screening Call",
+        "description": "A 20-minute conversation about your background, expectations, and fit with SSL Group's culture."
+      },
+      "finalInterview": {
+        "title": "Final Interview",
+        "description": "Meet with department heads and leadership. Offer letter issued within 5 working days post-interview."
+      }
+    },
+    "culture": {
+      "ownershipCulture": {
+        "title": "Ownership Culture",
+        "description": "Junior analysts work directly with senior traders. Your decisions affect real export volumes — you'll feel it from day one."
+      },
+      "globalPerspective": {
+        "title": "Global Perspective",
+        "description": "Coordinate with counterparts in Dubai, Lagos, Rotterdam, and Seoul. Every week brings a new market, a new conversation."
+      },
+      "domainMastery": {
+        "title": "Domain Mastery",
+        "description": "Specialize in materials science, trade compliance, logistics, or digital infrastructure — and become the company's best in your space."
+      }
+    },
+    "stats": {
+      "yearsOfOperations": "Years of Operations",
+      "countriesServed": "Countries Served",
+      "annualExportVolume": "Annual Export Volume",
+      "globalExportPartners": "Global Export Partners"
+    }
+  },
+  "media": {
+    "eyebrow": "Media Center",
+    "title": "Media Center",
+    "description": "Explore SSL Group's journey through events, achievements, team culture, and global operations.",
+    "stats": {
+      "photos": "Photos & Videos",
+      "events": "Events Covered",
+      "awards": "Awards & Recognitions",
+      "countries": "Countries Reached"
+    },
+    "categories": {
+      "events": {
+        "title": "Events & Festivals",
+        "description": "Celebrating festivals and special occasions that bring our team together.",
+        "viewAll": "View All Events"
+      },
+      "life": {
+        "title": "Life at SSL Group",
+        "description": "A glimpse of our fun, team bonding and memorable moments.",
+        "viewAll": "View All Moments"
+      },
+      "achievements": {
+        "title": "Achievements & Awards",
+        "description": "Recognitions and milestones that inspire us to do better.",
+        "viewAll": "View All Awards"
+      },
+      "global": {
+        "title": "Global Operations",
+        "description": "Delivering quality and trust across the globe.",
+        "viewAll": "View All Operations"
+      },
+      "team": {
+        "title": "Team & Workplace",
+        "description": "Our people, our strength. Working together every day.",
+        "viewAll": "View All Photos"
+      }
+    },
+    "gallery": {
+      "title": "Photo Gallery",
+      "subtitle": "More memories from SSL Group",
+      "explore": "Explore Full Gallery"
+    },
+    "newsletter": {
+      "title": "Stay Updated with SSL Group",
+      "description": "Subscribe to our newsletter and never miss an update.",
+      "placeholder": "Enter your email",
+      "button": "Subscribe",
+      "success": "You're subscribed!"
+    }
+  },
+  "ViewAllProducts": "View Products",
+  "title": "Ready to Source Premium Metallurgy Materials?",
+  "description": "Connect with our export desk for specifications, pricing, vessel scheduling, and Incoterms consultation.",
+  "SubmitExporInquiry": "Submit Export Inquiry",
+  "companyInfo": "India's trusted metallurgy and steel industry raw material exporter. Serving global steel manufacturers since",
+  "Company": "Company",
+  "Productss": "Products",
+  "Contactss": "Contacts",
+  "SocialMedia": "Follow on Social Media",
+  "Reserved": "All rights reserved.",
+  "PrivacyPolicy": "Privacy Policy",
+  "Trade": "Terms of Trade",
+  "Address1": "Delhi Head Office : Ground Floor, CC-23, AVANTIKA 1, Avantika Main Road, Saini Washing Center, Avantika, Ghaziabad,",
+  "Address2": "Uttar Pradesh 201015, India",
+  "Inquiry": "Inquiry Received",
+  "Thank": "Thank you. Our export desk will contact you shortly.",
+  "Another": "Submit Another Inquiry",
+  "FullName": "Full Name",
+  "Email": "Email",
+  "Media": "Phone / WhatsApp",
+  "ProductInterest": "Product Interest",
+  "Quantity": "Estimated Quantity",
+  "Destination": "Destination Port",
+  "Incoterms": "Preferred Incoterms",
+  "Message": "Message",
+  "SubmitInquiry": "Submit Inquiry",
+  "contacted": "By submitting, you agree to be contacted regarding your inquiry.",
+  "Applications": "Applications",
+  "Specifications": "Technical Specifications",
+  "Request": "Request Quote",
+  "RelatedProducts": "Related Products",
+  "BackToProducts": "Back To Products",
+  "Overview": "Overview",
+  "Careers": "Careers at SSL Group",
+  "Build": "Build your future with SSL Group. Explore open positions and apply online.",
+  "ViewOpen": "View Open Roles",
+  "ContactHR": "Contact HR",
+  "OpenPositions": "Open Positions",
+  "Connect": "Connect this section to your CMS or API."
+}

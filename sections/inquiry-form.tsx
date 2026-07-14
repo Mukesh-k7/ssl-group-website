@@ -7,6 +7,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
+import { useTranslations } from "next-intl";
 
 interface InquiryFormProps {
   title?: string;
@@ -41,6 +42,8 @@ export function InquiryForm({
     form.reset();
   };
 
+  const t = useTranslations()
+
   if (submitted) {
     return (
       <Card className="border-industrial-blue/30">
@@ -48,16 +51,16 @@ export function InquiryForm({
           <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-industrial-blue/20">
             <Send className="h-8 w-8 text-industrial-blue" />
           </div>
-          <h3 className="font-heading text-xl font-bold text-white">Inquiry Received</h3>
+          <h3 className="font-heading text-xl font-bold text-white">{t("Inquiry")} </h3>
           <p className="mt-2 text-metallic/80">
-            Thank you. Our export desk will contact you shortly.
+             {t("Thank")}
           </p>
           <Button
             variant="secondary"
             className="mt-6"
             onClick={() => setSubmitted(false)}
           >
-            Submit Another Inquiry
+            {t("Another")}
           </Button>
         </CardContent>
       </Card>
@@ -65,26 +68,34 @@ export function InquiryForm({
   }
 
   return (
-    <Card>
+    <Card className="bg-gradient-to-br from-industrial-blue/40 via-gunmetal to-charcoal border-0">
       <CardHeader>
         <CardTitle>{title}</CardTitle>
-        <CardDescription>{description}</CardDescription>
+        <CardDescription className="text-white/70">
+          {description}
+        </CardDescription>
       </CardHeader>
       <CardContent>
         <form onSubmit={handleSubmit} className="space-y-5">
           <div className="grid gap-5 sm:grid-cols-2">
             <div className="space-y-2">
-              <Label htmlFor="name">Full Name *</Label>
+              <Label htmlFor="name" className="text-white">
+                {t("FullName")}*
+              </Label>
               <Input id="name" name="name" required placeholder="Your name" />
             </div>
             <div className="space-y-2">
-              <Label htmlFor="company">Company *</Label>
+              <Label htmlFor="company" className="text-white">
+                {t("Company")} *
+              </Label>
               <Input id="company" name="company" required placeholder="Company name" />
             </div>
           </div>
           <div className="grid gap-5 sm:grid-cols-2">
             <div className="space-y-2">
-              <Label htmlFor="email">Email *</Label>
+              <Label htmlFor="email" className="text-white">
+                {t("Email")} *
+              </Label>
               <Input
                 id="email"
                 name="email"
@@ -94,7 +105,9 @@ export function InquiryForm({
               />
             </div>
             <div className="space-y-2">
-              <Label htmlFor="phone">Phone / WhatsApp</Label>
+              <Label htmlFor="phone" className="text-white">
+                {t("Media")}
+              </Label>
               <Input id="phone" name="phone" placeholder="+1 234 567 8900" />
             </div>
           </div>
@@ -102,7 +115,9 @@ export function InquiryForm({
             <>
               <div className="grid gap-5 sm:grid-cols-2">
                 <div className="space-y-2">
-                  <Label htmlFor="product">Product Interest</Label>
+                  <Label htmlFor="product" className="text-white">
+                    {t("ProductInterest")} 
+                  </Label>
                   <Input
                     id="product"
                     name="product"
@@ -110,24 +125,32 @@ export function InquiryForm({
                   />
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="quantity">Estimated Quantity</Label>
+                  <Label htmlFor="quantity" className="text-white">
+                    {t("Quantity")} 
+                  </Label>
                   <Input id="quantity" name="quantity" placeholder="e.g. 5,000 MT" />
                 </div>
               </div>
               <div className="grid gap-5 sm:grid-cols-2">
                 <div className="space-y-2">
-                  <Label htmlFor="destination">Destination Port</Label>
+                  <Label htmlFor="destination" className="text-white">
+                    {t("Destination")} 
+                  </Label>
                   <Input id="destination" name="destination" placeholder="e.g. Jebel Ali" />
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="incoterms">Preferred Incoterms</Label>
+                  <Label htmlFor="incoterms" className="text-white">
+                    {t("Incoterms")} 
+                  </Label>
                   <Input id="incoterms" name="incoterms" placeholder="e.g. CIF, FOB" />
                 </div>
               </div>
             </>
           )}
           <div className="space-y-2">
-            <Label htmlFor="message">Message *</Label>
+            <Label htmlFor="message" className="text-white">
+              {t("Message")} *
+            </Label>
             <Textarea
               id="message"
               name="message"
@@ -138,10 +161,10 @@ export function InquiryForm({
           </div>
           <Button type="submit" size="lg" className="w-full">
             <Send className="h-4 w-4" />
-            Submit Inquiry
+             {t("SubmitInquiry")}
           </Button>
           <p className="text-center text-xs text-metallic/60">
-            By submitting, you agree to be contacted regarding your inquiry.
+            {t("contacted")}
             {/* Wire to: POST /api/inquiry → Resend/SendGrid/Nodemailer */}
           </p>
         </form>

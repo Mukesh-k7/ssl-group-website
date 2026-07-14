@@ -19,6 +19,7 @@ import {
   StaggerItem,
 } from "@/components/shared/animated-section";
 import { industries } from "@/data/industries";
+import { useTranslations } from "next-intl";
 
 const iconMap: Record<string, LucideIcon> = {
   Factory,
@@ -34,12 +35,15 @@ const iconMap: Record<string, LucideIcon> = {
 export function IndustriesServedSection({ limit }: { limit?: number }) {
   const items = limit ? industries.slice(0, limit) : industries;
 
+  const t = useTranslations("industries");
+
+
   return (
     <AnimatedSection
       id="industries"
       className="
         py-24
-        bg-gradient-to-br from-industrial-blue/40 via-gunmetal to-charcoal
+        [background:#fff]
       "
     >
       <div
@@ -49,9 +53,19 @@ export function IndustriesServedSection({ limit }: { limit?: number }) {
         "
       >
         <SectionHeader
-          eyebrow="Industries Served"
-          title="Powering Global Industrial Supply Chains"
-          description="From integrated steel plants to EPC contractors — tailored metallurgical supply solutions for every sector."
+          eyebrow={t("Eyebrow")}
+          title={t("Title")}
+          description={t("Description")}
+          eyebrowClassName="mb-3
+            text-lg text-transparent font-bold tracking-[0.2em] uppercase
+            bg-gradient-to-b bg-clip-text from-[#F7941D] via-[#C96A00]
+            to-[#5B2A00]
+            drop-shadow-[2px_2px_0px_rgba(0,0,0,0.25)]"
+          titleClassName="font-heading font-bold text-3xl text-black md:text-4xl lg:text-5xl
+          tracking-tight"
+          descriptionClassName="mt-4
+            text-lg text-industrial-blue/70 leading-relaxed"
+
         />
         <StaggerGrid
           className="
@@ -61,6 +75,9 @@ export function IndustriesServedSection({ limit }: { limit?: number }) {
         >
           {items.map((industry) => {
             const Icon = iconMap[industry.icon] ?? Factory;
+            const regions = t.raw(
+              `${industry.key}.Regions`
+            ) as string[];
             return (
               <StaggerItem key={industry.slug}>
                 <Link
@@ -69,7 +86,7 @@ export function IndustriesServedSection({ limit }: { limit?: number }) {
                     flex flex-col
                     h-full
                     p-6
-                    bg-charcoal/50 hover:bg-charcoal
+                    bg-charcoal hover:bg-gradient-to-br from-industrial-blue/40 via-gunmetal to-charcoal
                     rounded-xl
                     border border-white/10 hover:border-industrial-blue/40
                     transition-all
@@ -90,7 +107,7 @@ export function IndustriesServedSection({ limit }: { limit?: number }) {
                       font-heading font-semibold text-white
                     "
                   >
-                    {industry.name}
+                    {t(`${industry.key}.Title`)}
                   </h3>
                   <p
                     className="
@@ -99,7 +116,7 @@ export function IndustriesServedSection({ limit }: { limit?: number }) {
                       text-sm line-clamp-3
                     "
                   >
-                    {industry.description}
+                    {t(`${industry.key}.Description`)}
                   </p>
                   <p
                     className="
@@ -107,7 +124,11 @@ export function IndustriesServedSection({ limit }: { limit?: number }) {
                       text-xs text-[#c96a00]
                     "
                   >
-                    {industry.regions.join(" · ")}
+                    {regions
+                      .map((region) =>
+                        t(`${industry.key}.RegionLabels.${region}`)
+                      )
+                      .join(" · ")}
                   </p>
                 </Link>
               </StaggerItem>

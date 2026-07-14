@@ -8,9 +8,20 @@ import { AnimatePresence, motion } from "framer-motion";
 import { ChevronDown, Download, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { company, navigation } from "@/data/site";
+
 import { cn } from "@/lib/utils";
+import LanguageSwitcher from "@/components/layout/LanguageSwitcher";
+import { useTranslations } from 'next-intl';
+// import Globe from "./globe";
 
+const locales = ["en", "hi", "ar"];
 
+function getLocale(pathname: string) {
+  const firstSegment = pathname.split("/")[1];
+  return locales.includes(firstSegment)
+    ? firstSegment
+    : "en";
+}
 
 const homeAnchorIds: Record<string, string> = {
   "/": "home",
@@ -22,19 +33,21 @@ const homeAnchorIds: Record<string, string> = {
   "/infrastructure": "infrastructure",
 };
 
-function getNavHref(pathname: string, itemHref: string) {
-  if (pathname === "/") {
+function getNavHref(
+  pathname: string,
+  itemHref: string,
+  locale: string
+) {
+  const isHomePage =
+    pathname === `/${locale}` ||
+    pathname === `/${locale}/`;
+  if (isHomePage) {
     const anchorId = homeAnchorIds[itemHref];
     if (anchorId) {
       return `#${anchorId}`;
     }
   }
-
-  // if (pathname === "/about" && itemHref === "/about") {
-  //   return "#about-content";
-  // }
-
-  return itemHref;
+  return `/${locale}${itemHref}`;
 }
 
 function getActiveHref(pathname: string, itemHref: string) {
@@ -44,18 +57,17 @@ function getActiveHref(pathname: string, itemHref: string) {
       return `#${anchorId}`;
     }
   }
-
   // if (pathname === "/about" && itemHref === "/about") {
   //   return "#about-content";
   // }
-
   return itemHref;
 }
-
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const pathname = usePathname();
+  const locale = getLocale(pathname);
+  const t = useTranslations('navigation');
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
@@ -66,9 +78,7 @@ export function Navbar() {
   useEffect(() => {
     setIsOpen(false);
   }, [pathname]);
-
-  // bg-gradient-to-l from-[#a75500] via-[#f9884b] to-[#f3d3b0] py-3 shadow-2xl shadow-black/40 backdrop-blur-xl  bg-[linear-gradient(135deg,#7B3000_0%,#C25A00_40%,#E8820A_70%,#A84800_100%)]
-
+  // bg-gradient-to-l from-[#F97316] to-[#EAB308] text-[#080C14]bg-gradient-to-r from-[#F97316] to-[#EAB308] text-[#080C14]" bg-gradient-to-l from-[#a75500] via-[#f9884b] to-[#f3d3b0] py-3 shadow-2xl shadow-black/40 backdrop-blur-xl  bg-[linear-gradient(135deg,#7B3000_0%,#C25A00_40%,#E8820A_70%,#A84800_100%)]
 
   return (
     <header
@@ -76,9 +86,10 @@ export function Navbar() {
         "fixed left-0 right-0 top-0 z-50 transition-all duration-300",
         scrolled
           ? "py-3 shadow-2xl shadow-black/40 backdrop-blur-xl bg-[linear-gradient(140deg,#f1edea_0%,#f3892d_40%,#E8820A_70%,#A84800_100%)]"
-          : "bg-white py-5 text-black bg-gradient-to-l from-[#a75500] via-[#f9884b] to-[#f3d3b0] py-3 shadow-2xl shadow-black/40 backdrop-blur-xl"
+          : "bg-white py-5 text-black"
       )}
     >
+      {/* bg-[linear-gradient(140deg,#f1edea_0%,#f3892d_40%,#E8820A_70%,#A84800_100%)] */}
       <nav
         className="
           container flex items-center justify-between
@@ -92,6 +103,7 @@ export function Navbar() {
             group gap-3
           "
         >
+
           <div
             className="
               flex items-center
@@ -102,21 +114,19 @@ export function Navbar() {
             "
           >
             <Image
-              src="/images/products/logo-1.png"
+              src="/images/products/logos1.png"
               alt="SSL Group Logo"
-              width={120}
-              height={110}
+              width={130}
+              height={140}
               className="
                 object-cover
                 group-hover:brightness-110
               "
               priority
             >
-              
             </Image>
           </div>
         </Link>
-
         <div
           className="
             hidden items-center xl:flex
@@ -124,9 +134,12 @@ export function Navbar() {
           "
         >
           {navigation.slice(0, 8).map((item) => {
-            const href = getNavHref(pathname, item.href);
+            const href = getNavHref(
+              pathname,
+              item.href,
+              locale
+            );
             const activeHref = getActiveHref(pathname, item.href);
-
             return (
               <Link
                 key={item.href}
@@ -142,11 +155,10 @@ export function Navbar() {
                       : "text-black/80 hover:text-black"
                 )}
               >
-                {item.label}
+                {t(item.key)}
               </Link>
             );
           })}
-
           <div
             className="
               relative
@@ -164,14 +176,13 @@ export function Navbar() {
                 gap-1
               "
             >
-              More
+              {t("More")}
               <ChevronDown
                 className="
                   h-4 w-4
                 "
               ></ChevronDown>
             </button>
-
             <div
               className="
                 invisible absolute right-0 top-full
@@ -190,7 +201,11 @@ export function Navbar() {
                 "
               >
                 {navigation.slice(8).map((item) => {
-                  const href = getNavHref(pathname, item.href);
+                  const href = getNavHref(
+                    pathname,
+                    item.href,
+                    locale
+                  );
                   return (
                     <Link
                       key={item.href}
@@ -203,7 +218,7 @@ export function Navbar() {
                         rounded-md
                       "
                     >
-                      {item.label}
+                      {t(item.key)}
                     </Link>
                   );
                 })}
@@ -211,7 +226,6 @@ export function Navbar() {
             </div>
           </div>
         </div>
-
         <div
           className="
             hidden items-center lg:flex
@@ -225,39 +239,42 @@ export function Navbar() {
                   h-4 w-4
                 "
               ></Download>
-              Catalog
+              {t("Catalog")}
             </a>
           </Button>
           <Button asChild>
-            <Link href="/contact">Get Quote</Link>
+            <Link href={`/${locale}/contact`}> {t("GetQuote")}</Link>
           </Button>
         </div>
-
-        <button
-          type="button"
-          className="
+        <div className="flex align-center">
+          <div className="mx-2">
+            <LanguageSwitcher />
+          </div>
+          <button
+            type="button"
+            className="
             xl:hidden
             p-2
             text-white
             rounded-md
           "
-          onClick={() => setIsOpen((value) => !value)}
-          aria-label="Toggle menu"
-        >
-          {isOpen ? <X
-            className="
+            onClick={() => setIsOpen((value) => !value)}
+          >
+            {isOpen ? <X
+              className="
               h-6 w-6
               text-[#0a0300]
             "
-          ></X> : <Menu
-            className="
+            ></X> : <Menu
+              className="
               h-6 w-6
               text-[#0a0300]
             "
-          ></Menu>}
-        </button>
+            ></Menu>}
+          </button>
+        </div>
+        {/* <Globe /> */}
       </nav>
-
       <AnimatePresence>
         {isOpen && (
           <motion.div
@@ -279,39 +296,48 @@ export function Navbar() {
               "
             >
               {navigation.map((item) => {
-                const href = getNavHref(pathname, item.href);
+                const href = getNavHref(
+                  pathname,
+                  item.href,
+                  locale
+                );
                 const isActive =
-                  pathname === item.href || (pathname === "/" && href.startsWith("#"));
-
+                  pathname === `/${locale}${item.href}`;
                 return (
                   <Link
                     key={item.href}
                     href={href}
                     className={cn(
-                      "rounded-md px-4 py-3 text-base font-medium",
-                      isActive ? "bg-industrial-blue/20 text-white" : "text-metallic hover:bg-white/5"
+                      "rounded-md px-3 py-2 text-sm font-medium transition-colors",
+                      isActive
+                        ? scrolled
+                          ? "text-white"
+                          : "bg-gradient-to-b from-[#FFD27A] via-[#b16100] to-[#5B2A00] bg-clip-text text-transparent"
+                        : scrolled
+                          ? "text-white/80 hover:text-white"
+                          : "text-white/80 hover:text-white"
                     )}
                   >
-                    {item.label}
+                    {t(item.key)}
                   </Link>
                 );
               })}
-
               <div
-                className="
-                  flex flex-col
-                  mt-4 pt-4
-                  border-t border-white/10
-                  gap-2
-                "
+                className="flex flex-col mt-4 pt-4 border-t border-white/10 gap-2"
               >
+                {/* <LanguageSwitcher /> */}
                 <Button variant="secondary" asChild>
-                  <a href={"https://www.sslgroup.in/images/ssl-brouchser-final.pdf"} download>
-                    Download Catalog
+                  <a
+                    href="https://www.sslgroup.in/images/ssl-brouchser-final.pdf"
+                    download
+                  >
+                    {t("DownloadCatalog")}
                   </a>
                 </Button>
                 <Button asChild>
-                  <Link href="/contact">Get Export Quote</Link>
+                  <Link href={`/${locale}/contact`}>
+                    {t("GetExportQuote")}
+                  </Link>
                 </Button>
               </div>
             </div>

@@ -4,9 +4,12 @@ import { Mail, MapPin, Phone, ArrowUpRight } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
 import { company, navigation } from "@/data/site";
 import { products } from "@/data/products";
+import { useTranslations } from "next-intl";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
+  const t = useTranslations();
+
 
   return (
     <footer
@@ -62,8 +65,7 @@ export function Footer() {
                 text-sm text-metallic/80 leading-relaxed
               "
             >
-              India's trusted metallurgy and steel industry raw material
-              exporter. Serving global steel manufacturers since{" "}
+              {t("companyInfo")}{" "}
               {company.founded}.
             </p>
             <a
@@ -86,7 +88,7 @@ export function Footer() {
                 uppercase
               "
             >
-              Company
+              {t("Company")}
             </h3>
             <ul
               className="
@@ -102,7 +104,7 @@ export function Footer() {
                       transition-colors
                     "
                   >
-                    {item.label}
+                    {t(`navigation.${item.key}`)}
                   </Link>
                 </li>
               ))}
@@ -117,14 +119,14 @@ export function Footer() {
                 uppercase
               "
             >
-              Products
+              {t("Productss")}
             </h3>
             <ul
               className="
                 space-y-2
               "
             >
-              {products.slice(0, 6).map((product) => (
+              {products.slice(0, 9).map((product) => (
                 <li key={product.slug}>
                   <Link
                     href={`/products/${product.slug}`}
@@ -133,7 +135,7 @@ export function Footer() {
                       transition-colors
                     "
                   >
-                    {product.name}
+                    {t(`Products.${product.key}.Name`)}
                   </Link>
                 </li>
               ))}
@@ -148,7 +150,7 @@ export function Footer() {
                 uppercase
               "
             >
-              Contact
+              {t("Contactss")}
             </h3>
             <ul
               className="
@@ -178,9 +180,9 @@ export function Footer() {
                   >
                 </Link>
                 <span>
-                  {company.address.line1}
+                  {t("Address1")}
                   <br />
-                  {company.address.line2}
+                  {t("Address2")}
                 </span>
               </li>
               <li>
@@ -227,7 +229,7 @@ export function Footer() {
                 gap-2
               "
             >
-              <h2>Follow on Social Media</h2>
+              <h2>{t("SocialMedia")}</h2>
               <ArrowUpRight
                 className="
                   w-3 h-3
@@ -236,7 +238,7 @@ export function Footer() {
             </div>
 
             <a
-              href="https://www.linkedin.com/company/ssl-group"
+              href="https://www.linkedin.com/jobs/"
               target="_blank"
               rel="noopener noreferrer"
               className="
@@ -264,7 +266,7 @@ export function Footer() {
             {/* Instagram */}
 
             <a
-              href="https://www.instagram.com/"
+              href="https://www.instagram.com/sslgroup821/?hl=en"
               target="_blank"
               rel="noopener noreferrer"
               className="
@@ -351,7 +353,7 @@ export function Footer() {
 
             {/* Facebook */}
             <a
-              href="https://www.facebook.com/"
+              href="https://www.facebook.com/profile.php?id=61574509632129"
               target="_blank"
               rel="noopener noreferrer"
               className="
@@ -391,7 +393,7 @@ export function Footer() {
 
             {/* YouTube */}
             <a
-              href="https://www.youtube.com/"
+              href="https://www.youtube.com/channel/UC87hjunejmBwY-aI2qI1zSw"
               target="_blank"
               rel="noopener noreferrer"
               className="
@@ -445,7 +447,7 @@ export function Footer() {
           "
         >
           <p>
-            © {currentYear} {company.legalName}. All rights reserved.
+            © {currentYear} {company.legalName}. {t("Reserved")}
           </p>
           <div
             className="
@@ -459,7 +461,7 @@ export function Footer() {
                 hover:text-white
               "
             >
-              Privacy Policy
+              {t("PrivacyPolicy")}
             </Link>
             <Link
               href="/contact"
@@ -467,7 +469,7 @@ export function Footer() {
                 hover:text-white
               "
             >
-              Terms of Trade
+              {t("Trade")}
             </Link>
           </div>
         </div>

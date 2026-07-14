@@ -5,8 +5,30 @@ import { ArrowRight } from "lucide-react";
 import { AnimatedSection } from "@/components/shared/animated-section";
 import { Button } from "@/components/ui/button";
 import { company } from "@/data/site";
+import { useTranslations } from 'next-intl';
+
+export const company1 = {
+  name: "SSL Group",
+  tagline: "Global Metallurgy. Trusted Supply.",
+  legalName: "SSL Group International Trading Pvt. Ltd.",
+  website: "https://www.sslgroup.in/",
+  domain: "www.sslgroup.in",
+  email: "support@sslgroup.in",
+  salesEmail: "support@sslgroup.in",
+  phone: "+91 - 9599053449",
+  whatsapp: "+91 - 9599053449",
+  address: {
+    line1: "Delhi Head Office : Ground Floor, CC-23, AVANTIKA 1, Avantika Main Road, Saini Washing Center, Avantika, Ghaziabad,",
+    line2: " Uttar Pradesh 201015, India",
+  },
+  founded: 2018,
+  // catalogUrl: getAbsoluteUrl("/catalog/ssl-product-catalog.pdf"),
+};
 
 export function IntroSection() {
+
+  const t = useTranslations('about');
+
   return (
     <AnimatedSection
       id="about-content"
@@ -37,7 +59,7 @@ export function IntroSection() {
                 drop-shadow-[2px_2px_0px_rgba(0,0,0,0.25)]
               "
             >
-              About {company.name}
+              {t("title")}
             </p>
             <h2
               className="
@@ -45,7 +67,7 @@ export function IntroSection() {
                 font-heading font-bold
               "
             >
-              India&apos;s Premier Metallurgy Export House
+               {t("IndiaPremierMetallurgyExportHouse")}
             </h2>
             <p
               className="
@@ -53,11 +75,8 @@ export function IntroSection() {
                 text-lg text-metallic/90 leading-relaxed
               "
             >
-              For over two decades, SSL Group has supplied the global steel
-              industry with export-grade pig iron, ferro alloys, carbon
-              products, and industrial minerals. Our integrated sourcing, bonded
-              warehousing, and port-side logistics deliver the consistency that
-              enterprise procurement demands.
+              {t("description1")}
+             
             </p>
             <p
               className="
@@ -65,9 +84,8 @@ export function IntroSection() {
                 text-lg text-metallic/80 leading-relaxed
               "
             >
-              From Middle East steel giants to African foundries and European
-              distributors, we are the single-window partner for metallurgical
-              raw material excellence.
+              {t("description2")}
+              
             </p>
             <Button
               className="
@@ -76,7 +94,7 @@ export function IntroSection() {
               asChild
             >
               <Link href="#about-content">
-                Our Story
+                 {t("OurStory")}
                 <ArrowRight
                   className="
                     w-4 h-4
@@ -124,14 +142,14 @@ export function IntroSection() {
                     text-2xl text-white font-heading font-bold
                   "
                 >
-                  Since {company.founded}
+                  {t("Since")} {company.founded}
                 </p>
                 <p
                   className="
                     text-sm text-metallic
                   "
                 >
-                  Ghaziabad · Global Export Operations
+                   {t("GhaziabadGlobalExportOperations")}
                 </p>
               </div>
             </div>

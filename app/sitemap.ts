@@ -14,6 +14,7 @@ const staticRoutes = [
   "/global-presence",
   "/blog",
   "/contact",
+  "/career"
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

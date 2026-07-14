@@ -14,7 +14,7 @@ export function PageHero({ title, description, eyebrow }: PageHeroProps) {
       className="
         relative overflow-hidden
         pt-32 pb-20
-        bg-charcoal
+        bg-gradient-to-b from-industrial-blue/40 via-transparent to-charcoal
         border-b border-white/10
       "
     >
