@@ -36,8 +36,7 @@ export const products: Product[] = [
         id: 1,
         translationKey: "FoundryGradePigIron",
         image: "/images/products/Foundary-Grade.jpg",
-        description:
-          "Foundry Grade Pig Iron is used in the production of grey iron castings, ductile iron, and malleable iron. It has controlled silicon and sulfur content for optimal casting properties.",
+        description: "Description",
         specifications: [
           {
             key: "Grade",
@@ -133,12 +132,111 @@ export const products: Product[] = [
         ]
       },
 
-       {
+      {
         id: 2,
-        translationKey: "FoundryGradePigIron",
-        image: "/images/products/Foundary-Grade.jpg",
-        description:
-          "Foundry Grade Pig Iron is used in the production of grey iron castings, ductile iron, and malleable iron. It has controlled silicon and sulfur content for optimal casting properties.",
+        translationKey: "BasicGradePigIron",
+        image: "/images/products/Basic-Grade.jpg",
+        description: "Description",
+        specifications: [
+          {
+            key: "Grade",
+            value: "GradeValue",
+          },
+          {
+            key: "Packing",
+            value: "PackingValue",
+          },
+          {
+            key: "Standard",
+            value: "StandardValue",
+          },
+          {
+            key: "Origin",
+            value: "OriginValue",
+          },
+        ],
+        technicalTables: [
+          {
+            title: "ChemicalComposition",
+            headers: ["Grade", "C", "Si", "Mn", "P", "S"],
+            rows: [
+              ["Low Mn", "3.50–4.50%", "1.20% max", "0.099% max", "0.08% max", "0.05% max"],
+              ["PL1 / PL2", "3.50–4.50%", "0.60–1.20%", "0.40–0.80%", "0.08% max", "0.05% max"]
+            ]
+          },
+          {
+            title: "PhysicalProperties",
+            headers: ["Property", "Value"],
+            rows: [
+              ["Appearance", "Grey Metallic"],
+              ["Shape", "Pig / Blocks"],
+              ["Color", "Dark Grey"],
+              ["Density", "6.9–7.3 g/cm³"],
+              ["Specific Gravity", "6.9–7.3"],
+              ["Melting Point", "1150–1250°C"],
+              ["Standard Weight", "10–20 Kg per Pig"],
+              ["Packing", "Loose, Bulk, or 1 MT Jumbo Bags"],
+              ["Storage", "Store in a dry and covered area"]
+            ]
+          },
+        ],
+        applications: [
+          "SteelMaking",
+          "ElectricArcFurnaces",
+          "InductionFurnaces",
+          "SteelFoundries",
+          "AlloySteelProduction",
+          "CarbonSteelManufacturing",
+          "CastingIndustry",
+          "EngineeringApplications"
+        ],
+        downloads: [
+          {
+            title: "Technical Datasheet",
+            file: "/downloads/femn.pdf",
+          },
+        ],
+
+        faq: [
+          {
+            question: "WhatIsBasicPigIronQuestion",
+            answer: "WhatIsBasicPigIronAnswer"
+          },
+          {
+            question: "GradesQuestion",
+            answer: "GradesAnswer"
+          },
+          {
+            question: "ApplicationsQuestion",
+            answer: "GradesAnswer"
+          },
+          {
+            question: "ApplicationsQuestion",
+            answer: "ApplicationsAnswer"
+          },
+          {
+            question: "PackingQuestion",
+            answer: "PackingAnswer"
+          },
+
+          {
+            question: "CustomizedQuestion",
+            answer: "CustomizedAnswer"
+          },
+
+          {
+            question: "ExportQuestion",
+            answer: "ExportAnswer"
+          }
+        ]
+      },
+
+      {
+        id: 3,
+        translationKey: "SteelGradePigIron",
+        image: "/images/products/Steel-Grade.jpg",
+        description: "Description",
+
         specifications: [
           {
             key: "Grade",
@@ -157,59 +255,48 @@ export const products: Product[] = [
             value: "OriginValue"
           }
         ],
+
         technicalTables: [
           {
-
             title: "ChemicalComposition",
             headers: ["Grade", "C", "Si", "Mn", "P", "S"],
             rows: [
-              ["L1", "3.50–4.50%", "3.20–3.60%", "0.40–0.80%", "0.08% max", "0.04% max"],
-              ["L2", "3.50–4.50%", "2.80–3.20%", "0.40–0.80%", "0.08% max", "0.04% max"],
-              ["L3", "3.50–4.50%", "2.40–2.80%", "0.40–0.80%", "0.08% max", "0.04% max"],
-              ["L4", "3.50–4.50%", "2.00–2.40%", "0.40–0.80%", "0.08% max", "0.04% max"],
-              ["L5", "3.50–4.50%", "1.60–2.00%", "0.40–0.80%", "0.08% max", "0.04% max"],
-              ["L6", "3.50–4.50%", "1.20–1.60%", "0.40–0.80%", "0.08% max", "0.04% max"],
-              ["L5–L6 Low Mn", "3.50–4.50%", "1.00–2.00%", "0.099% max", "0.08% max", "0.04% max"]
+              ["SG-1", "3.80–4.50%", "0.50–1.20%", "0.30–1.00%", "0.15% Max", "0.05% Max"],
+              ["SG-2", "3.80–4.50%", "0.70–1.50%", "0.30–1.00%", "0.20% Max", "0.05% Max"]
             ]
           },
-
           {
             title: "PhysicalProperties",
             headers: ["Property", "Value"],
             rows: [
-              ["Appearance", "Grey Metallic"],
-              ["Shape", "Pig / Blocks"],
-              ["Color", "Dark Grey"],
+              ["Appearance", "GreyMetallic"],
+              ["Shape", "PigBlocks"],
+              ["Color", "DarkGrey"],
               ["Density", "6.9–7.3 g/cm³"],
-              ["Specific Gravity", "6.9–7.3"],
-              ["Melting Point", "1150–1250°C"],
-              ["Standard Weight", "10–20 Kg per Pig"],
+              ["SpecificGravity", "6.9–7.3"],
+              ["MeltingPoint", "1150–1250°C"],
+              ["StandardWeight", "10–20 Kg per Pig"],
               ["Packing", "Loose, Bulk, or 1 MT Jumbo Bags"],
-              ["Storage", "Store in a dry and covered area"]
+              ["Storage", "StoreDryCoveredArea"]
             ]
-          },
+          }
         ],
+
         applications: [
-          "GreyIronCastings",
-          "AutomotiveComponents",
-          "MachinePartsManufacturing",
-          "PipePipeFittings",
-          "ManholeCoversDrainageCastings",
-          "AgriculturalEquipment",
-          "EngineeringIndustrialCastings",
+          "SteelMaking",
+          "ElectricArcFurnaces",
+          "InductionFurnaces",
+          "CarbonSteelProduction",
+          "AlloySteelManufacturing",
           "FoundryIndustry",
-        ],
-        downloads: [
-          {
-            title: "Technical Datasheet",
-            file: "/downloads/fesi-datasheet.pdf",
-          },
+          "EngineeringApplications",
+          "CastingIndustry"
         ],
 
         faq: [
           {
-            question: "WhatIsFoundryPigIronQuestion",
-            answer: "WhatIsFoundryPigIronAnswer"
+            question: "WhatIsSteelPigIronQuestion",
+            answer: "WhatIsSteelPigIronAnswer"
           },
           {
             question: "GradesQuestion",
@@ -231,1002 +318,796 @@ export const products: Product[] = [
             question: "ExportQuestion",
             answer: "ExportAnswer"
           }
-        ]
+        ],
+
+        downloads: [
+          {
+            title: "Technical Datasheet",
+            file: "/downloads/fecr.pdf"
+          }
+        ],
       },
 
-      // {
-      //   id: 2,
-      //   translationKey: "Basic Grade Pig Iron",
-      //   image: "/images/products/Basic-Grade.jpg",
-      //   description:
-      //     "Basic Pig Iron is a premium-quality raw material used in steel production. It offers controlled chemical composition, excellent melting properties, and consistent quality, making it ideal for BOF, EAF, and induction furnace applications.",
-      //   specifications: [
-      //     {
-      //       key: "Grade",
-      //     },
+      {
+        id: 4,
+        translationKey: "NodularPigIron",
+        image: "/images/products/Nodular-Grade.jpg",
+        description:
+          "Nodular Grade Pig Iron, also known as SG Grade Pig Iron, is a premium-quality raw material used in the production of ductile (SG) iron castings. It is characterized by low sulfur and phosphorus content, excellent melting characteristics, and a controlled chemical composition, ensuring superior mechanical properties and consistent casting performance. SSL Group supplies high-quality Nodular Grade Pig Iron sourced from trusted producers for domestic and international customers.",
 
-      //     {
-      //       key: "Packing",
-      //     },
+        specifications: [
+          {
+            key: "Grade",
+            value: "GradeValue"
+          },
+          {
+            key: "Packing",
+            value: "PackingValue"
+          },
+          {
+            key: "Standard",
+            value: "StandardValue"
+          },
+          {
+            key: "Origin",
+            value: "OriginValue"
+          }
+        ],
 
-      //     {
-      //       key: "Standard",
-      //     },
+        technicalTables: [
+          {
+            title: "ChemicalComposition",
+            headers: ["Grade", "C", "Si", "Mn", "P", "S"],
+            rows: [
+              ["N1", "3.60–4.30%", "1.20–2.20%", "0.20–0.60%", "0.08% Max", "0.02% Max"],
+              ["N2", "3.60–4.30%", "1.50–2.50%", "0.20–0.60%", "0.08% Max", "0.02% Max"]
+            ]
+          },
+          {
+            title: "PhysicalProperties",
+            headers: ["Property", "Value"],
+            rows: [
+              ["Appearance", "GreyMetallic"],
+              ["Shape", "PigBlocks"],
+              ["Color", "DarkGrey"],
+              ["Density", "6.9–7.3 g/cm³"],
+              ["SpecificGravity", "6.9–7.3"],
+              ["MeltingPoint", "1150–1250°C"],
+              ["StandardWeight", "10–20 Kg per Pig"],
+              ["Packing", "Loose, Bulk, or 1 MT Jumbo Bags"],
+              ["Storage", "StoreDryCoveredArea"]
+            ]
+          }
+        ],
 
-      //     {
-      //       key: "Origin",
-      //     },
+        applications: [
+          "DuctileIronCastings",
+          "AutomotiveComponents",
+          "PipePipeFittings",
+          "ValvesPumps",
+          "MachineComponents",
+          "AgriculturalEquipment",
+          "EngineeringCastings",
+          "FoundryIndustry"
+        ],
 
-      //     {
-      //       key: "GradeValue",
-      //     },
-
-      //     {
-      //       key: "PackingValue",
-      //     },
-
-      //     {
-      //       key: "StandardValue"
-      //     },
-
-      //     {
-      //       key: "OriginValue"
-      //     }
-      //   ],
-      //   technicalTables: [
-      //     {
-      //       title: "Chemical Composition",
-      //       headers: ["Grade", "C", "Si", "Mn", "P", "S"],
-      //       rows: [
-      //         ["Low Mn", "3.50–4.50%", "1.20% max", "0.099% max", "0.08% max", "0.05% max"],
-      //         ["PL1 / PL2", "3.50–4.50%", "0.60–1.20%", "0.40–0.80%", "0.08% max", "0.05% max"]
-      //       ]
-      //     },
-      //     {
-      //       title: "Physical Properties",
-      //       headers: ["Property", "Value"],
-      //       rows: [
-      //         ["Appearance", "Grey Metallic"],
-      //         ["Shape", "Pig / Blocks"],
-      //         ["Color", "Dark Grey"],
-      //         ["Density", "6.9–7.3 g/cm³"],
-      //         ["Specific Gravity", "6.9–7.3"],
-      //         ["Melting Point", "1150–1250°C"],
-      //         ["Standard Weight", "10–20 Kg per Pig"],
-      //         ["Packing", "Loose, Bulk, or 1 MT Jumbo Bags"],
-      //         ["Storage", "Store in a dry and covered area"]
-      //       ]
-      //     },
-      //   ],
-      //   applications: [
-      //     "Steel Manufacturing",
-      //     "Basic Oxygen Furnaces (BOF)",
-      //     "Electric Arc Furnaces (EAF)",
-      //     "Alloy Steel Production",
-      //   ],
-      //   downloads: [
-      //     {
-      //       title: "Technical Datasheet",
-      //       file: "/downloads/femn.pdf",
-      //     },
-      //   ],
-
-      //   faq: [
-      //     {
-      //       question: "What is Basic Pig Iron?",
-      //       answer:
-      //         "Basic Pig Iron is a high-quality raw material used primarily in steel manufacturing. It is produced with controlled levels of silicon, phosphorus, and sulfur to ensure consistent performance in steelmaking processes."
-      //     },
-      //     {
-      //       question: "Which grades of Basic Pig Iron do you supply?",
-      //       answer:
-      //         "We supply Basic Pig Iron in Low Mn and PL1 / PL2 grades with consistent chemical composition to meet diverse steelmaking requirements."
-      //     },
-      //     {
-      //       question: "What are the applications of Basic Pig Iron?",
-      //       answer:
-      //         "Basic Pig Iron is widely used in Basic Oxygen Furnaces (BOF), Electric Arc Furnaces (EAF), induction furnaces, steel manufacturing, and engineering industries."
-      //     },
-      //     {
-      //       question: "What packing options are available?",
-      //       answer:
-      //         "The product is supplied in loose bulk, palletized loads, or 1 MT jumbo bags based on customer and export requirements."
-      //     },
-      //     {
-      //       question: "Can you provide customized specifications?",
-      //       answer:
-      //         "Yes. We can supply Basic Pig Iron with customized grades, chemical compositions, and packaging to meet specific customer requirements."
-      //     },
-      //     {
-      //       question: "Do you export Basic Pig Iron internationally?",
-      //       answer:
-      //         "Yes. We supply and export Basic Pig Iron to domestic and international markets with reliable sourcing, quality assurance, and timely delivery."
-      //     }
-      //   ]
-      // },
-
-      // {
-      //   id: 3,
-      //   translationKey: "Steel Grade Pig Iron",
-      //   image: "/images/products/Steel-Grade.jpg",
-      //   description:
-      //     "Steel Grade Pig Iron is a high-quality raw material primarily used in steel manufacturing. It offers a controlled chemical composition, excellent melting characteristics, and low impurity levels, making it suitable for Electric Arc Furnaces (EAF), Induction Furnaces, and steel casting applications. SSL Group supplies premium Steel Grade Pig Iron sourced from trusted producers to meet domestic and international industry requirements.",
-
-      //   specifications: [
-      //     {
-      //       key: "Grade",
-      //     },
-
-      //     {
-      //       key: "Packing",
-      //     },
-
-      //     {
-      //       key: "Standard",
-      //     },
-
-      //     {
-      //       key: "Origin",
-      //     },
-
-      //     {
-      //       key: "GradeValue",
-      //     },
-
-      //     {
-      //       key: "PackingValue",
-      //     },
-
-      //     {
-      //       key: "StandardValue"
-      //     },
-
-      //     {
-      //       key: "OriginValue"
-      //     }
-      //   ],
-
-      //   technicalTables: [
-      //     {
-      //       title: "Chemical Composition",
-      //       headers: ["Grade", "C", "Si", "Mn", "P", "S"],
-      //       rows: [
-      //         ["SG1", "3.80–4.50%", "0.50–1.00%", "0.30–1.00%", "0.20% max", "0.05% max"],
-      //         ["SG2", "3.80–4.50%", "0.30–0.80%", "0.30–1.00%", "0.20% max", "0.05% max"]
-      //       ]
-      //     },
-      //     {
-      //       title: "Physical Properties",
-      //       headers: ["Property", "Value"],
-      //       rows: [
-      //         ["Appearance", "Grey Metallic"],
-      //         ["Shape", "Pig / Blocks"],
-      //         ["Color", "Dark Grey"],
-      //         ["Surface Finish", "Smooth Cast Surface"],
-      //         ["Density", "Approx. 6.9–7.3 g/cm³"],
-      //         ["Specific Gravity", "6.9–7.3"],
-      //         ["Melting Point", "1150–1250°C"],
-      //         ["Standard Weight", "10–20 Kg per Pig"],
-      //         ["Packing", "Loose, Bulk, or 1 MT Jumbo Bags"],
-      //         ["Storage", "Store in a dry and covered area"]
-      //       ]
-      //     }
-      //   ],
-
-      //   applications: [
-      //     "Steel Manufacturing",
-      //     "Electric Arc Furnaces (EAF)",
-      //     "Induction Furnaces",
-      //     "Steel Casting",
-      //     "Alloy Steel Production",
-      //     "Engineering Industries"
-      //   ],
-
-      //   faq: [
-      //     {
-      //       question: "What is Steel Grade Pig Iron?",
-      //       answer:
-      //         "Steel Grade Pig Iron is a high-quality raw material used in steel manufacturing. It provides a controlled chemical composition and excellent melting characteristics for consistent steel production."
-      //     },
-      //     {
-      //       question: "Which grades of Steel Grade Pig Iron do you supply?",
-      //       answer:
-      //         "We supply Steel Grade Pig Iron in various grades and specifications to meet the requirements of steel manufacturers and engineering industries."
-      //     },
-      //     {
-      //       question: "What are the applications of Steel Grade Pig Iron?",
-      //       answer:
-      //         "Steel Grade Pig Iron is widely used in steel plants, Electric Arc Furnaces (EAF), induction furnaces, alloy steel production, steel casting, and engineering applications."
-      //     },
-      //     {
-      //       question: "What packing options are available?",
-      //       answer:
-      //         "The product is supplied in loose bulk, palletized loads, or 1 MT jumbo bags according to customer and export requirements."
-      //     },
-      //     {
-      //       question: "Can you provide customized specifications?",
-      //       answer:
-      //         "Yes. We supply Steel Grade Pig Iron in customized grades, chemical compositions, and packaging based on customer requirements."
-      //     },
-      //     {
-      //       question: "Do you export Steel Grade Pig Iron internationally?",
-      //       answer:
-      //         "Yes. SSL Group supplies and exports Steel Grade Pig Iron to domestic and international markets with reliable sourcing, quality assurance, and timely delivery."
-      //     }
-      //   ],
-
-      //   downloads: [
-      //     {
-      //       title: "Technical Datasheet",
-      //       file: "/downloads/fecr.pdf"
-      //     }
-      //   ],
-      // },
-
-      // {
-      //   id: 4,
-      //   translationKey: "Nodular Pig Iron",
-      //   image: "/images/products/Nodular-Grade.jpg",
-      //   description:
-      //     "Nodular Grade Pig Iron, also known as SG Grade Pig Iron, is a premium-quality raw material used in the production of ductile (SG) iron castings. It is characterized by low sulfur and phosphorus content, excellent melting characteristics, and a controlled chemical composition, ensuring superior mechanical properties and consistent casting performance. SSL Group supplies high-quality Nodular Grade Pig Iron sourced from trusted producers for domestic and international customers.",
-
-      //   specifications: [
-      //     {
-      //       key: "Grade",
-      //     },
-
-      //     {
-      //       key: "Packing",
-      //     },
-
-      //     {
-      //       key: "Standard",
-      //     },
-
-      //     {
-      //       key: "Origin",
-      //     },
-
-      //     {
-      //       key: "GradeValue",
-      //     },
-
-      //     {
-      //       key: "PackingValue",
-      //     },
-
-      //     {
-      //       key: "StandardValue"
-      //     },
-
-      //     {
-      //       key: "OriginValue"
-      //     }
-      //   ],
-
-      //   technicalTables: [
-      //     {
-      //       title: "ChemicalComposition",
-      //       headers: ["Grade", "C", "Si", "Mn", "P", "S"],
-      //       rows: [
-      //         ["NODULAR", "3.50–4.50%", "1.0% max", "0.05% max", "0.05% max", "0.015% max"],
-      //         ["NODULAR HP", "3.50–4.50%", "1.0% max", "0.04% max", "0.04% max", "0.010% max"]
-      //       ]
-      //     },
-      //     {
-      //       title: "PhysicalProperties",
-      //       headers: ["Property", "Value"],
-      //       rows: [
-      //         ["Appearance", "Grey Metallic"],
-      //         ["Shape", "Pig / Blocks"],
-      //         ["Color", "Dark Grey"],
-      //         ["Surface Finish", "Smooth Cast Surface"],
-      //         ["Density", "Approx. 6.9–7.3 g/cm³"],
-      //         ["Specific Gravity", "6.9–7.3"],
-      //         ["Melting Point", "1150–1250°C"],
-      //         ["Standard Weight", "10–20 Kg per Pig"],
-      //         ["Packing", "Loose, Bulk, or 1 MT Jumbo Bags"],
-      //         ["Storage", "Store in a dry and covered area"]
-      //       ]
-      //     }
-      //   ],
-
-      //   applications: [
-      //     "Ductile (SG) Iron Castings",
-      //     "Automotive Components",
-      //     "Water & Sewer Pipes",
-      //     "Valves and Pipe Fittings",
-      //     "Heavy Engineering Components",
-      //     "Agricultural Machinery",
-      //     "Wind Energy Components",
-      //     "General Foundry Industry"
-      //   ],
-
-      //   faq: [
-      //     {
-      //       question: "What is Nodular Grade Pig Iron?",
-      //       answer:
-      //         "Nodular Grade Pig Iron, also known as SG Grade Pig Iron, is a high-quality raw material used to manufacture ductile (SG) iron castings with superior strength, toughness, and ductility."
-      //     },
-      //     {
-      //       question: "What are the applications of Nodular Grade Pig Iron?",
-      //       answer:
-      //         "It is widely used in the production of automotive components, pipes, valves, heavy engineering parts, agricultural equipment, and ductile iron castings."
-      //     },
-      //     {
-      //       question: "What packing options are available?",
-      //       answer:
-      //         "The product is supplied in loose bulk, palletized loads, or 1 MT jumbo bags according to customer and export requirements."
-      //     },
-      //     {
-      //       question: "Can you provide customized specifications?",
-      //       answer:
-      //         "Yes. We supply Nodular Grade Pig Iron in customized grades, chemical compositions, and packaging to meet specific customer requirements."
-      //     },
-      //     {
-      //       question: "Do you export Nodular Grade Pig Iron internationally?",
-      //       answer:
-      //         "Yes. SSL Group supplies and exports Nodular Grade Pig Iron to domestic and international markets with reliable sourcing and timely delivery."
-      //     }
-      //   ],
-      //   downloads: [
-      //     {
-      //       title: "Technical Datasheet",
-      //       file: "/downloads/fecr.pdf"
-      //     }
-      //   ],
-      // },
+        faq: [
+          {
+            question: "WhatIsNodularPigIronQuestion",
+            answer: "WhatIsNodularPigIronAnswer"
+          },
+          {
+            question: "GradesQuestion",
+            answer: "GradesAnswer"
+          },
+          {
+            question: "ApplicationsQuestion",
+            answer: "ApplicationsAnswer"
+          },
+          {
+            question: "PackingQuestion",
+            answer: "PackingAnswer"
+          },
+          {
+            question: "CustomizedQuestion",
+            answer: "CustomizedAnswer"
+          },
+          {
+            question: "ExportQuestion",
+            answer: "ExportAnswer"
+          }
+        ],
+        downloads: [
+          {
+            title: "Technical Datasheet",
+            file: "/downloads/fecr.pdf"
+          }
+        ],
+      },
     ],
   },
 
-  // {
-  //   slug: "ferro-alloys",
-  //   key: "FerroAlloys",
-  //   category: "Alloying Materials",
-  //   shortDescription:
-  //     "Ferro manganese, ferro silicon, ferro chrome, and specialty alloys for steel deoxidation and alloying.",
-  //   description:
-  //     "Comprehensive ferro alloy portfolio for integrated steel plants and mini-mills. We supply low-carbon and high-carbon grades with batch traceability and sieve analysis documentation.",
-  //   imageAlt: "Ferro Alloys",
-  //   image: "/images/products/ferro-alloys-1.jpg",
-  //   featured: true,
+  {
+    slug: "ferro-alloys",
+    key: "FerroAlloys",
+    category: "Alloying Materials",
+    shortDescription:
+      "Ferro manganese, ferro silicon, ferro chrome, and specialty alloys for steel deoxidation and alloying.",
+    description:
+      "Comprehensive ferro alloy portfolio for integrated steel plants and mini-mills. We supply low-carbon and high-carbon grades with batch traceability and sieve analysis documentation.",
+    imageAlt: "Ferro Alloys",
+    image: "/images/products/ferro-alloys-1.jpg",
+    featured: true,
 
-  //   specification: [
-  //     {
-  //       key: "FeMn(75)",
-  //       value: "70 – 75%",
-  //     },
-  //     {
-  //       key: "FeSi",
-  //       value: "70 – 75%",
-  //     },
-  //     {
-  //       key: "FeCr",
-  //       value: "60 – 70%",
-  //     },
-  //   ],
-  //   variants: [
-  //     {
-  //       id: 1,
-  //       translationKey: "Ferro Silicon",
-  //       image: "/images/products/ferro-silicon-1.webp",
-  //       description:
-  //         "Ferro Silicon is an alloy of iron and silicon used as a deoxidizer and alloying agent in steel manufacturing.It improves hardness, strength, and corrosion resistance of steel.",
-  //       specifications: [
-  //         { key: "FeSi", value: "70 – 75%" },
-  //         {
-  //           key: "Packing",
-  //           value: "1 MT Jumbo Bag",
-  //         },
-  //         {
-  //           key: "Standard",
-  //           value: "ASTM / ISO Equivalent",
-  //         },
-  //         {
-  //           key: "Origin",
-  //           value: "India / Worldwide",
-  //         },
-  //       ],
-  //       technicalTables: [
-  //         {
-  //           title: "Chemical Composition",
-  //           headers: [
-  //             "Grade",
-  //             "Si",
-  //             "Al",
-  //             "C",
-  //             "P",
-  //             "S",
-  //           ],
-  //           rows: [
-  //             [
-  //               "FeSi 45 %",
-  //               "45% min",
-  //               "2% max",
-  //               "0.20% max",
-  //               "0.03% max",
-  //               "0.02% max",
-  //             ],
-  //             [
-  //               "FeSi 65 %",
-  //               "65% min",
-  //               "1.5% max",
-  //               "0.15% max",
-  //               "0.03% max",
-  //               "0.02% max",
-  //             ],
-  //             [
-  //               "FeSi 75 %",
-  //               "75% min",
-  //               "1% max",
-  //               "0.10% max",
-  //               "0.02% max",
-  //               "0.02% max",
-  //             ],
+    specification: [
+      {
+        key: "FeMn",
+        value: "70 – 75%",
+      },
+      {
+        key: "FeSi",
+        value: "70 – 75%",
+      },
+      {
+        key: "FeCr",
+        value: "60 – 70%",
+      },
 
-  //             [
-  //               "FeSi 75 % Low Al",
-  //               "75% min",
-  //               "1% max",
-  //               "0.10% max",
-  //               "0.02% max",
-  //               "0.02% max",
-  //             ],
+      {
+        key: "FeSiMn",
+        value: "70 – 75%",
+      },
+    ],
+    variants: [
+      {
+        id: 1,
+        translationKey: "FerroSilicon",
+        image: "/images/products/ferro-silicon-1.webp",
+        description:
+          "Ferro Silicon is an alloy of iron and silicon used as a deoxidizer and alloying agent in steel manufacturing.It improves hardness, strength, and corrosion resistance of steel.",
+        specifications: [
+          {
+            key: "Grade",
+            value: "GradeValue"
+          },
+          {
+            key: "Packing",
+            value: "PackingValue"
+          },
+          {
+            key: "Standard",
+            value: "StandardValue"
+          },
+          {
+            key: "Origin",
+            value: "OriginValue"
+          }
+        ],
+        technicalTables: [
+          {
+            title: "ChemicalComposition",
+            headers: [
+              "Grade",
+              "Si",
+              "Al",
+              "C",
+              "P",
+              "S",
+            ],
+            rows: [
+              [
+                "FeSi 45 %",
+                "45% min",
+                "2% max",
+                "0.20% max",
+                "0.03% max",
+                "0.02% max",
+              ],
+              [
+                "FeSi 65 %",
+                "65% min",
+                "1.5% max",
+                "0.15% max",
+                "0.03% max",
+                "0.02% max",
+              ],
+              [
+                "FeSi 75 %",
+                "75% min",
+                "1% max",
+                "0.10% max",
+                "0.02% max",
+                "0.02% max",
+              ],
 
-  //             [
-  //               "FeSi 75 % High Purity",
-  //               "75% min",
-  //               "1% max",
-  //               "0.10% max",
-  //               "0.02% max",
-  //               "0.02% max",
-  //             ],
-  //           ],
-  //         },
+              [
+                "FeSi 75 % Low Al",
+                "75% min",
+                "1% max",
+                "0.10% max",
+                "0.02% max",
+                "0.02% max",
+              ],
 
-  //         {
-  //           title: "Physical Properties",
-  //           headers: [
-  //             "Property",
-  //             "Value",
-  //           ],
-  //           rows: [
-  //             ["Appearance", "Silver Grey"],
-  //             ["Shape", "Lumps"],
-  //             ["Size", "1-3 mm / 3-10 mm / 10-50 mm / 10-100 mm As For Customer Requirements"],
-  //             ["Density", "6.8 g/cm³"],
-  //             ["Packing", "1 MT Jumbo Bag"],
-  //           ],
-  //         },
-  //       ],
-  //       applications: [
-  //         "Steel Making",
-  //         "Foundry",
-  //         "Welding Electrodes",
-  //         "Casting",
-  //       ],
-  //       downloads: [
-  //         {
-  //           title: "Technical Datasheet",
-  //           file: "/downloads/fesi-datasheet.pdf",
-  //         },
+              [
+                "FeSi 75 % High Purity",
+                "75% min",
+                "1% max",
+                "0.10% max",
+                "0.02% max",
+                "0.02% max",
+              ],
+            ],
+          },
 
-  //         {
-  //           title: "MSDS",
-  //           file: "/downloads/fesi-msds.pdf",
-  //         },
+          {
+            title: "PhysicalProperties",
+            headers: [
+              "Property",
+              "Value",
+            ],
+            rows: [
+              ["Appearance", "Silver Grey"],
+              ["Shape", "Lumps"],
+              ["Size", "1-3 mm / 3-10 mm / 10-50 mm / 10-100 mm As For Customer Requirements"],
+              ["Density", "6.8 g/cm³"],
+              ["Packing", "1 MT Jumbo Bag"],
+            ],
+          },
+        ],
+        applications: [
+          "SteelMaking",
+          "Deoxidizer",
+          "FoundryIndustry",
+          "CastIron",
+          "AlloySteel",
+          "StainlessSteel",
+          "WeldingElectrodes",
+          "MetalManufacturing"
+        ],
+        downloads: [
+          {
+            title: "Technical Datasheet",
+            file: "/downloads/fesi-datasheet.pdf",
+          },
 
-  //         {
-  //           title: "Test Certificate",
-  //           file: "/downloads/fesi-test.pdf",
-  //         },
-  //       ],
+          {
+            title: "MSDS",
+            file: "/downloads/fesi-msds.pdf",
+          },
 
-  //       faq: [
-  //         {
-  //           question: "What is Ferro Silicon?",
-  //           answer:
-  //             "Ferro Silicon is an alloy of iron and silicon used as a deoxidizer and alloying agent in steel manufacturing.",
-  //         },
-  //         {
-  //           question: "What grades are available?",
-  //           answer:
-  //             "We supply FeSi 45%, FeSi 65%, and FeSi 75% grades according to customer requirements.",
-  //         },
-  //         {
-  //           question: "What packing options are available?",
-  //           answer:
-  //             "Products are available in 25 Kg bags, 1 MT Jumbo Bags, and bulk packing.",
-  //         },
-  //         {
-  //           question: "Which industries use Ferro Silicon?",
-  //           answer:
-  //             "Steel plants, foundries, casting industries, and welding electrode manufacturers.",
-  //         },
-  //         {
-  //           question: "Do you export internationally?",
-  //           answer:
-  //             "Yes. SSL Group exports Ferro Silicon and other ferro alloys worldwide.",
-  //         },
-  //       ],
-  //     },
+          {
+            title: "Test Certificate",
+            file: "/downloads/fesi-test.pdf",
+          },
+        ],
 
-  //     {
-  //       id: 2,
-  //       translationKey: "Ferro Manganese",
-  //       image: "/images/products/ferro-manganese.jpg",
-  //       description:
-  //         "Ferro Manganese improves hardness and strength of steel. It is used in carbon steel, alloy steel, stainless steel, foundries, and welding electrode manufacturing.",
-  //       specifications: [
-  //         {
-  //           key: "FeMn(75)",
-  //           value: "70 – 75%",
-  //         },
-  //         {
-  //           key: "Packing",
-  //           value: "1 MT bags / Bulk",
-  //         },
-  //         {
-  //           key: "Standard",
-  //           value: "ASTM / ISO equivalent",
-  //         },
-  //         {
-  //           key: "Origin",
-  //           value: "India / Worldwide",
-  //         },
-  //       ],
-  //       technicalTables: [
-  //         {
-  //           title: "Chemical Composition",
-  //           headers: ["Grade", "Mn", "C", "Si", "P", "S"],
-  //           rows: [
-  //             ["FeMn HC", "75% min", "6–8%", "1.50% max", "0.25% max", "0.03% max"],
-  //             ["FeMn HC Low P", "76/78% min", "6–8%", "1.50% max", "0.10% max", "0.03% max"],
-  //             ["FeMn MC", "80% min", "1.50% max", "1.50% max", "0.20% max", "0.03% max"],
-  //             ["FeMn LC", "80% min", "0.50% max", "0.50% max", "0.025% max", "0.03% max"]
-  //           ]
-  //         },
-  //         {
-  //           title: "Physical Properties",
-  //           headers: ["Property", "Value"],
-  //           rows: [
-  //             ["Appearance", "Silver Grey Metallic"],
-  //             ["Shape", "Lumps / Granules"],
-  //             ["Color", "Grey to Silver Grey"],
-  //             ["Density", "7.0–7.5 g/cm³"],
-  //             ["Specific Gravity", "7.0–7.5"],
-  //             ["Melting Point", "Approx. 1200–1300°C"],
-  //             ["Magnetic Properties", "Magnetic"],
-  //             ["Standard Size", "10–50 mm, 10–80 mm, 10–100 mm"],
-  //             ["Packing", "25 Kg Bags, 1 MT Jumbo Bags or Bulk"],
-  //             ["Shelf Life", "Unlimited when stored in a dry place"]
-  //           ]
-  //         },
-  //       ],
-  //       applications: [
-  //         "Steel Plants",
-  //         "Casting Foundries",
-  //         "Alloy Steel Production",
-  //         "Welding Electrode Manufacturing",
-  //       ],
-  //       downloads: [
-  //         {
-  //           title: "Technical Datasheet",
-  //           file: "/downloads/femn.pdf",
-  //         },
-  //       ],
+        faq: [
+          {
+            question: "WhatIsFerroSiliconQuestion",
+            answer: "WhatIsFerroSiliconAnswer"
+          },
+          {
+            question: "GradesQuestion",
+            answer: "GradesAnswer"
+          },
+          {
+            question: "ApplicationsQuestion",
+            answer: "ApplicationsAnswer"
+          },
+          {
+            question: "PackingQuestion",
+            answer: "PackingAnswer"
+          },
+          {
+            question: "CustomizedQuestion",
+            answer: "CustomizedAnswer"
+          },
+          {
+            question: "ExportQuestion",
+            answer: "ExportAnswer"
+          }
+        ],
+      },
 
-  //       faq: [
-  //         {
-  //           question: "What is Ferro Manganese?",
-  //           answer:
-  //             "Ferro Manganese is an iron alloy containing a high percentage of manganese. It is widely used as a deoxidizer and alloying element in steel manufacturing."
-  //         },
-  //         {
-  //           question: "What are the different grades available?",
-  //           answer:
-  //             "Common grades include High Carbon (HC), High Carbon Low Phosphorus (HC Low P), Medium Carbon (MC), and Low Carbon (LC) Ferro Manganese."
-  //         },
-  //         {
-  //           question: "What is Ferro Manganese used for?",
-  //           answer:
-  //             "It is primarily used in carbon steel, alloy steel, stainless steel, foundries, and welding electrode manufacturing."
-  //         },
-  //         {
-  //           question: "What sizes are available?",
-  //           answer:
-  //             "Standard sizes include 10–50 mm, 10–80 mm, and 10–100 mm. Custom sizes can also be supplied."
-  //         },
-  //         {
-  //           question: "What packing options do you provide?",
-  //           answer:
-  //             "Products are packed in 25 Kg bags, 1 MT jumbo bags, or supplied in bulk as per customer requirements."
-  //         },
-  //         {
-  //           question: "Can you supply customized chemical compositions?",
-  //           answer:
-  //             "Yes. We can supply customized grades and specifications based on customer requirements and international standards."
-  //         }
-  //       ],
-  //     },
+      {
+        id: 2,
+        translationKey: "FerroManganese",
+        image: "/images/products/ferro-manganese.jpg",
+        description:
+          "Ferro Manganese improves hardness and strength of steel. It is used in carbon steel, alloy steel, stainless steel, foundries, and welding electrode manufacturing.",
+        specifications: [
+          {
+            key: "Grade",
+            value: "GradeValue"
+          },
+          {
+            key: "Packing",
+            value: "PackingValue"
+          },
+          {
+            key: "Standard",
+            value: "StandardValue"
+          },
+          {
+            key: "Origin",
+            value: "OriginValue"
+          }
+        ],
 
-  //     {
-  //       id: 3,
-  //       translationKey: "Ferro Chrome",
-  //       image: "/images/products/ferro-chrome-2.webp",
-  //       description: "Used for stainless steel production. Ferro Chrome is an alloy of iron and chromium used as a deoxidizer and alloying agent in steel manufacturing. It improves corrosion resistance, hardness, and strength of steel.",
-  //       specifications: [
-  //         {
-  //           key: "FeCr(75)",
-  //           value: "70 – 75%",
-  //         },
-  //         {
-  //           key: "Packing",
-  //           value: "1 MT bags / Bulk",
-  //         },
-  //         {
-  //           key: "Standard",
-  //           value: "ASTM / ISO equivalent",
-  //         },
-  //         {
-  //           key: "Origin",
-  //           value: "India / Worldwide",
-  //         }
-  //       ],
-  //       technicalTables: [
-  //         {
-  //           title: "Chemical Composition",
-  //           headers: ["Grade", "Cr", "C", "Si", "P", "S"],
-  //           rows: [
-  //             ["FeCr HC - Charge Chrome", "55–60%", "6–8%", "3.0% max", "0.03% max", "0.04% max"],
-  //             ["FeCr HC", "60–65%", "6–8%", "1.5% max", "0.02% max", "0.02% max"],
-  //             ["FeCr MC", "60–65%", "0.5–1.0% max", "1.0% max", "0.03% max", "0.03% max"],
-  //             ["FeCr LC", "65–70%", "0.10–0.25% max", "1.0% max", "0.03% max", "0.03% max"],
-  //             ["FeCr LC High Purity", "65–70%", "0.03–0.06% max", "1.0% max", "0.03% max", "0.03% max"]
-  //           ]
-  //         },
-  //         {
-  //           title: "Physical Properties",
-  //           headers: ["Property", "Value"],
-  //           rows: [
-  //             ["Appearance", "Silver Grey Metallic"],
-  //             ["Shape", "Lumps / Granules"],
-  //             ["Color", "Grey to Silver Grey"],
-  //             ["Density", "6.8–7.2 g/cm³"],
-  //             ["Specific Gravity", "6.8–7.2"],
-  //             ["Melting Point", "Approx. 1550–1650°C"],
-  //             ["Magnetic Properties", "Magnetic"],
-  //             ["Standard Size", "10–50 mm, 10–80 mm, 10–100 mm"],
-  //             ["Packing", "25 Kg Bags, 1 MT Jumbo Bags or Bulk"],
-  //             ["Storage", "Store in a dry, moisture-free environment"]
-  //           ]
-  //         }
-  //       ],
-  //       applications: [
-  //         "Stainless Steel Production",
-  //         "Foundries",
-  //         "Special Alloy Steels",
-  //         "Welding Consumables",
-  //         "Wear-Resistant Steel Production"
-  //       ],
-  //       downloads: [
-  //         {
-  //           title: "Technical Datasheet",
-  //           file: "/downloads/fecr.pdf"
-  //         }
-  //       ],
-  //       faq: [
-  //         {
-  //           question: "What is Ferro Chrome?",
-  //           answer:
-  //             "Ferro Chrome is an iron-chromium alloy used mainly in the production of stainless steel and alloy steels to improve corrosion resistance, hardness, and strength."
-  //         },
-  //         {
-  //           question: "What grades of Ferro Chrome do you supply?",
-  //           answer:
-  //             "We supply Charge Chrome (HC), High Carbon (HC), Medium Carbon (MC), Low Carbon (LC), and Low Carbon High Purity grades."
-  //         },
-  //         {
-  //           question: "What are the applications of Ferro Chrome?",
-  //           answer:
-  //             "Ferro Chrome is widely used in stainless steel manufacturing, special alloy steels, foundries, welding consumables, and wear-resistant steel production."
-  //         },
-  //         {
-  //           question: "What particle sizes are available?",
-  //           answer:
-  //             "Standard sizes include 10–50 mm, 10–80 mm, and 10–100 mm. Custom sizes are available on request."
-  //         },
-  //         {
-  //           question: "What packing options do you provide?",
-  //           answer:
-  //             "Products are packed in 25 Kg bags, 1 MT jumbo bags, or bulk packaging as per customer requirements."
-  //         },
-  //         {
-  //           question: "Do you provide customized specifications?",
-  //           answer:
-  //             "Yes. We offer customized chemical composition, particle size, and packaging to meet specific customer and industry requirements."
-  //         }
-  //       ],
-  //     },
+        technicalTables: [
+          {
+            title: "ChemicalComposition",
+            headers: ["Grade", "Mn", "C", "Si", "P", "S"],
+            rows: [
+              ["HC FeMn", "75–80%", "6–8%", "≤1.5%", "≤0.30%", "≤0.03%"]
+            ]
+          },
+          {
+            title: "PhysicalProperties",
+            headers: ["Property", "Value"],
+            rows: [
+              ["Appearance", "GreyMetallic"],
+              ["Shape", "Lumps"],
+              ["Color", "SilverGrey"],
+              ["Density", "7.2–7.4 g/cm³"],
+              ["SpecificGravity", "7.3"],
+              ["MeltingPoint", "1240–1300°C"],
+              ["Packing", "Loose / 1 MT Jumbo Bag"],
+              ["Storage", "StoreDryCoveredArea"]
+            ]
+          }
+        ],
 
-  //     {
-  //       id: 4,
-  //       translationKey: "Ferro Silicon Manganese",
-  //       image: "/images/products/ferro-silicon-manganese-2.webp",
-  //       description: "Used for stainless steel production. Ferro Silicon Manganese is an alloy of iron, silicon, and manganese used as a deoxidizer and alloying agent in steel manufacturing.",
-  //       specifications: [
-  //         { key: "FeSiMn", value: "70 – 75%" },
-  //         {
-  //           key: "Packing",
-  //           value: "1 MT Jumbo Bag",
-  //         },
-  //         {
-  //           key: "Standard",
-  //           value: "ASTM / ISO Equivalent",
-  //         },
-  //         {
-  //           key: "Origin",
-  //           value: "India / Worldwide",
-  //         },
-  //       ],
-  //       technicalTables: [
-  //         {
-  //           title: "Chemical Composition",
-  //           headers: ["Grade", "Mn", "Si", "C", "P", "S"],
-  //           rows: [
-  //             ["FeSiMn 6014", "60% min", "14% min", "2.0% max", "0.30% max", "0.05% max"],
-  //             ["FeSiMn 6517", "65% min", "17% min", "2.0% max", "0.30% max", "0.03% max"],
-  //             ["FeSiMn 7018", "70% min", "17% min", "2.0% max", "0.30/0.50% max", "0.03% max"],
-  //           ]
-  //         },
+        applications: [
+          "SteelMaking",
+          "AlloySteel",
+          "CarbonSteel",
+          "FoundryIndustry",
+          "RailwayComponents",
+          "EngineeringComponents",
+          "ConstructionSteel",
+          "MetalManufacturing"
+        ],
 
-  //         {
-  //           title: "Physical Properties",
-  //           headers: ["Property", "Value"],
-  //           rows: [
-  //             ["Appearance", "Silver Grey Metallic"],
-  //             ["Shape", "Lumps / Granules"],
-  //             ["Color", "Grey to Silver Grey"],
-  //             ["Density", "6.0–7.2 g/cm³"],
-  //             ["Specific Gravity", "6.0–7.0"],
-  //             ["Melting Point", "Approx. 1050–1250°C"],
-  //             ["Magnetic Properties", "Slightly Magnetic"],
-  //             ["Particle Size", "10–50 mm, 10–100 mm or as required"],
-  //             ["Packing", "25 Kg Bags, 1 MT Jumbo Bags, Bulk"]
-  //           ]
-  //         }
+        faq: [
+          {
+            question: "WhatIsFerroManganeseQuestion",
+            answer: "WhatIsFerroManganeseAnswer"
+          },
+          {
+            question: "GradesQuestion",
+            answer: "GradesAnswer"
+          },
+          {
+            question: "ApplicationsQuestion",
+            answer: "ApplicationsAnswer"
+          },
+          {
+            question: "PackingQuestion",
+            answer: "PackingAnswer"
+          },
+          {
+            question: "CustomizedQuestion",
+            answer: "CustomizedAnswer"
+          },
+          {
+            question: "ExportQuestion",
+            answer: "ExportAnswer"
+          }
+        ],
+        downloads: [
+          {
+            title: "Technical Datasheet",
+            file: "/downloads/femn.pdf",
+          },
+        ],
+      },
 
-  //       ],
-  //       applications: [
-  //         "Stainless Steel",
-  //         "Foundry"
-  //       ],
-  //       downloads: [
-  //         {
-  //           title: "Technical Datasheet",
-  //           file: "/downloads/fecr.pdf"
-  //         }
-  //       ],
-  //       faq: [
-  //         {
-  //           question: "What is Ferro Silicon Manganese?",
-  //           answer:
-  //             "Ferro Silicon Manganese (FeSiMn) is a ferro alloy containing manganese and silicon. It is widely used as a deoxidizer and alloying agent in steel manufacturing."
-  //         },
-  //         {
-  //           question: "What grades of Ferro Silicon Manganese do you supply?",
-  //           answer:
-  //             "We supply FeSiMn 6014, FeSiMn 6517, and FeSiMn 7018 grades with customized specifications as per customer requirements."
-  //         },
-  //         {
-  //           question: "What are the applications of Ferro Silicon Manganese?",
-  //           answer:
-  //             "It is used in the production of carbon steel, alloy steel, structural steel, spring steel, and foundry applications to improve strength, toughness, and wear resistance."
-  //         },
-  //         {
-  //           question: "What particle sizes are available?",
-  //           answer:
-  //             "Standard sizes include 10–50 mm, 10–80 mm, and 10–100 mm. Customized sizes are available upon request."
-  //         },
-  //         {
-  //           question: "What packing options do you provide?",
-  //           answer:
-  //             "Products are packed in 25 Kg bags, 1 MT jumbo bags, or bulk packaging according to customer requirements."
-  //         },
-  //         {
-  //           question: "Can you supply customized specifications?",
-  //           answer:
-  //             "Yes. We offer customized chemical composition, particle size, and packaging to meet specific customer and international standards."
-  //         }
-  //       ],
-  //     },
+      {
+        id: 3,
+        translationKey: "FerroChrome",
+        image: "/images/products/ferro-chrome-2.webp",
+        description: "Description",
+        specifications: [
+          {
+            key: "Grade",
+            value: "GradeValue"
+          },
+          {
+            key: "Packing",
+            value: "PackingValue"
+          },
+          {
+            key: "Standard",
+            value: "StandardValue"
+          },
+          {
+            key: "Origin",
+            value: "OriginValue"
+          }
+        ],
 
-  //     {
-  //       id: 5,
-  //       translationKey: "Ferro Silicon Magnesium",
-  //       image: "/images/products/ferro-silicon-magnesium-3.webp",
-  //       description: "Ferro Silicon Magnesium is an alloy of iron, silicon, and magnesium used as a deoxidizer and alloying agent in steel manufacturing. It improves corrosion resistance, strength, and hardness of steel.It is widely used in stainless steel production, foundries, and welding electrode manufacturing.",
-  //       specifications: [
-  //         { key: "FeSiMg", value: "70 – 75%" },
-  //         {
-  //           key: "Packing",
-  //           value: "1 MT Jumbo Bag",
-  //         },
-  //         {
-  //           key: "Standard",
-  //           value: "ASTM / ISO Equivalent",
-  //         },
-  //         {
-  //           key: "Origin",
-  //           value: "India / Worldwide",
-  //         },
-  //       ],
-  //       technicalTables: [
-  //         {
-  //           title: "Chemical Composition",
-  //           headers: ["Grade", "Mg", "Si", "Ca", "TRE", "La", "Al"],
-  //           rows: [
-  //             ["FeSiMg", "5.50–6.50%", "43.0–48.0%", "0.80–1.20%", "0.80–1.20%", "-", "0.40–0.80%"],
-  //             ["FeSiMgMCa", "5.50–6.50%", "43.0–48.0%", "1.80–2.00%", "0.80–1.20%", "-", "0.40–0.80%"],
-  //             ["FeSiMgHMg", "8.00–10.00%", "43.0–48.0%", "0.80–1.20%", "0.80–1.20%", "-", "0.40–0.80%"],
-  //             ["FeSiMgLa", "5.50–6.50%", "43.0–48.0%", "0.80–1.20%", "-", "0.35–0.45%", "0.40–0.80%"]
-  //           ]
-  //         },
-  //         {
-  //           title: "Physical Properties",
-  //           headers: ["Property", "Value"],
-  //           rows: [
-  //             ["Appearance", "Silver Grey Metallic"],
-  //             ["Shape", "Lumps"],
-  //             ["Color", "Grey to Silver Grey"],
-  //             ["Density", "Approx. 3.8–4.5 g/cm³"],
-  //             ["Specific Gravity", "3.8–4.5"],
-  //             ["Melting Point", "Approx. 1200–1300°C"],
-  //             ["Magnetic Properties", "Slightly Magnetic"],
-  //             ["Standard Size", "5–25 mm, 10–50 mm, or as required"],
-  //             ["Packing", "25 Kg Bags, 1 MT Jumbo Bags or Bulk"],
-  //             ["Storage", "Store in a dry, moisture-free environment"]
-  //           ]
-  //         }
-  //       ],
-  //       applications: [
-  //         "Stainless Steel",
-  //         "Foundry"
-  //       ],
-  //       downloads: [
-  //         {
-  //           title: "Technical Datasheet",
-  //           file: "/downloads/fecr.pdf"
-  //         }
-  //       ],
-  //       faq: [
-  //         {
-  //           question: "What is Ferro Silicon Magnesium?",
-  //           answer:
-  //             "Ferro Silicon Magnesium (FeSiMg) is a magnesium-bearing ferro alloy used primarily as a nodularizing agent in ductile iron production."
-  //         },
-  //         {
-  //           question: "What are the applications of FeSiMg?",
-  //           answer:
-  //             "It is widely used in ductile iron and SG iron foundries to improve graphite nodularity, mechanical strength, toughness, and machinability."
-  //         },
-  //         {
-  //           question: "Which grades do you supply?",
-  //           answer:
-  //             "We supply various FeSiMg grades with different magnesium and rare earth contents, including customized compositions as per customer requirements."
-  //         },
-  //         {
-  //           question: "What particle sizes are available?",
-  //           answer:
-  //             "Standard sizes include 5–25 mm, 10–50 mm, and customized sizes according to customer specifications."
-  //         },
-  //         {
-  //           question: "What packing options do you provide?",
-  //           answer:
-  //             "Products are available in 25 Kg bags, 1 MT jumbo bags, or bulk packing as per customer requirements."
-  //         },
-  //         {
-  //           question: "Can you manufacture customized grades?",
-  //           answer:
-  //             "Yes. We manufacture and supply customized FeSiMg grades, particle sizes, and packaging according to international standards and customer specifications."
-  //         }
-  //       ],
-  //     },
+        technicalTables: [
+          {
+            title: "ChemicalComposition",
 
-  //     {
-  //       id: 6,
-  //       translationKey: "Inoculants",
-  //       image: "/images/products/inoculants.jpg",
-  //       description: "Inoculants are specialized additives used in foundries to modify the microstructure of cast iron, enhancing its mechanical properties and machinability. They promote the formation of graphite nodules in ductile iron and improve the overall quality of castings.",
-  //       specifications: [
-  //         { key: "Inoculant", value: "70 – 75%" },
-  //         {
-  //           key: "Packing",
-  //           value: "1 MT Jumbo Bag",
-  //         },
-  //         {
-  //           key: "Standard",
-  //           value: "ASTM / ISO Equivalent",
-  //         },
-  //         {
-  //           key: "Origin",
-  //           value: "India / Worldwide",
-  //         },
-  //       ],
-  //       technicalTables: [
-  //         {
-  //           title: "Chemical Composition",
-  //           headers: ["Grade", "Si", "Ca", "Al", "Ba", "Zr", "Mn", "La", "Sr"],
-  //           rows: [
-  //             ["FeSiBa", "65.0–75.0%", "1.50–2.25%", "0.60–1.00%", "2.50–3.75%", "-", "-", "-", "-"],
-  //             ["FeSiZrMn", "60.0–65.0%", "1.50% max", "0.60–1.25%", "-", "3.00–3.50%", "3.50–4.00%", "-", "-"],
-  //             ["FeSiLa", "70.0–75.0%", "1.50–2.00%", "-", "1.50–2.00%", "-", "-", "1.50–2.00%", "-"],
-  //             ["FeSiSr", "70.0–75.0%", "2.00%", "1.00% max", "-", "-", "-", "-", "1.00–1.50%"]
-  //           ]
-  //         },
-  //         {
-  //           title: "Physical Properties",
-  //           headers: ["Property", "Value"],
-  //           rows: [
-  //             ["Appearance", "Silver Grey Metallic"],
-  //             ["Shape", "Lumps / Granules"],
-  //             ["Color", "Grey to Silver Grey"],
-  //             ["Density", "Approx. 2.8–3.2 g/cm³"],
-  //             ["Specific Gravity", "2.8–3.2"],
-  //             ["Melting Point", "Approx. 1200–1350°C"],
-  //             ["Magnetic Properties", "Slightly Magnetic"],
-  //             ["Standard Size", "0.2–0.7 mm, 0.7–3 mm, 3–10 mm, 10–50 mm"],
-  //             ["Packing", "25 Kg Bags, 1 MT Jumbo Bags or Bulk"],
-  //             ["Storage", "Store in a dry, moisture-free environment"]
-  //           ]
-  //         }
-  //       ],
-  //       applications: [
-  //         "Stainless Steel",
-  //         "Foundry"
-  //       ],
-  //       downloads: [
-  //         {
-  //           title: "Technical Datasheet",
-  //           file: "/downloads/fecr.pdf"
-  //         }
-  //       ],
-  //       faq: [
-  //         {
-  //           question: "What are Inoculants?",
-  //           answer:
-  //             "Inoculants are ferro silicon-based alloys containing elements such as barium, zirconium, lanthanum, or strontium. They are added to molten iron to improve graphite formation and enhance the quality of cast iron."
-  //         },
-  //         {
-  //           question: "Which types of Inoculants do you supply?",
-  //           answer:
-  //             "We supply FeSiBa, FeSiZrMn, FeSiLa, and FeSiSr inoculants in various grades and particle sizes to meet customer requirements."
-  //         },
-  //         {
-  //           question: "What are the applications of Inoculants?",
-  //           answer:
-  //             "Inoculants are widely used in grey iron, ductile iron (SG iron), compacted graphite iron (CGI), automotive castings, pipe fittings, machinery parts, and general foundry applications."
-  //         },
-  //         {
-  //           question: "What particle sizes are available?",
-  //           answer:
-  //             "Standard particle sizes include 0.2–0.7 mm, 0.7–3 mm, 3–10 mm, and 10–50 mm. Custom sizes can also be supplied."
-  //         },
-  //         {
-  //           question: "What packing options do you provide?",
-  //           answer:
-  //             "Products are available in 25 Kg bags, 1 MT jumbo bags, or bulk packing as per customer requirements."
-  //         },
-  //         {
-  //           question: "Can you supply customized grades and specifications?",
-  //           answer:
-  //             "Yes. We offer customized chemical compositions, particle sizes, and packaging according to customer specifications and international quality standards."
-  //         }
-  //       ]
-  //     },
-  //   ],
+            headers: ["Grade", "Cr", "C", "Si", "P", "S"],
 
-  // },
+            rows: [
+              ["High Carbon FeCr", "60–68%", "6–8%", "≤3.0%", "≤0.04%", "≤0.03%"],
+              ["Low Carbon FeCr", "65–70%", "≤0.10%", "≤1.5%", "≤0.03%", "≤0.03%"]
+            ]
+          },
+
+          {
+            title: "PhysicalProperties",
+
+            headers: ["Property", "Value"],
+
+            rows: [
+              ["Appearance", "GreyMetallic"],
+              ["Shape", "Lumps"],
+              ["Color", "SilverGrey"],
+              ["Density", "6.8–7.2 g/cm³"],
+              ["SpecificGravity", "7.0"],
+              ["MeltingPoint", "1550–1650°C"],
+              ["Packing", "Loose / 1 MT Jumbo Bag"],
+              ["Storage", "StoreDryCoveredArea"]
+            ]
+          }
+        ],
+
+        applications: [
+          "StainlessSteel",
+          "AlloySteel",
+          "ToolSteel",
+          "FoundryIndustry",
+          "WearResistantSteel",
+          "EngineeringComponents",
+          "MetalManufacturing",
+          "SpecialSteels"
+        ],
+
+        faq: [
+          {
+            question: "WhatIsFerroChromeQuestion",
+            answer: "WhatIsFerroChromeAnswer"
+          },
+          {
+            question: "GradesQuestion",
+            answer: "GradesAnswer"
+          },
+          {
+            question: "ApplicationsQuestion",
+            answer: "ApplicationsAnswer"
+          },
+          {
+            question: "PackingQuestion",
+            answer: "PackingAnswer"
+          },
+          {
+            question: "CustomizedQuestion",
+            answer: "CustomizedAnswer"
+          },
+          {
+            question: "ExportQuestion",
+            answer: "ExportAnswer"
+          }
+        ],
+
+        downloads: [
+          {
+            title: "Technical Datasheet",
+            file: "/downloads/fecr.pdf"
+          }
+        ],
+      },
+
+      {
+        id: 4,
+        translationKey: "FerroSiliconManganese",
+        image: "/images/products/ferro-silicon-manganese-2.webp",
+        description: "Description",
+
+
+        specifications: [
+          {
+            key: "Grade",
+            value: "GradeValue"
+          },
+          {
+            key: "Packing",
+            value: "PackingValue"
+          },
+          {
+            key: "Standard",
+            value: "StandardValue"
+          },
+          {
+            key: "Origin",
+            value: "OriginValue"
+          }
+        ],
+
+        technicalTables: [
+          {
+            title: "ChemicalComposition",
+
+            headers: ["Grade", "Si", "Mg", "Ca", "RE", "Fe"],
+
+            rows: [
+              ["FeSiMg 5-8", "42–48%", "5–8%", "0.5–2.0%", "1–2%", "Balance"],
+              ["FeSiMg 8-10", "42–48%", "8–10%", "0.5–2.0%", "1–2%", "Balance"]
+            ]
+          },
+
+          {
+            title: "PhysicalProperties",
+
+            headers: ["Property", "Value"],
+
+            rows: [
+              ["Appearance", "GreyMetallic"],
+              ["Shape", "Lumps"],
+              ["Color", "SilverGrey"],
+              ["Density", "3.8–4.5 g/cm³"],
+              ["SpecificGravity", "4.2"],
+              ["MeltingPoint", "1200–1300°C"],
+              ["Packing", "Loose / 1 MT Jumbo Bag"],
+              ["Storage", "StoreDryCoveredArea"]
+            ]
+          }
+        ],
+
+        applications: [
+          "DuctileIron",
+          "NodularCastIron",
+          "FoundryIndustry",
+          "CastIronProduction",
+          "SteelMaking",
+          "AutomotiveComponents",
+          "EngineeringCastings",
+          "MetalManufacturing"
+        ],
+
+        faq: [
+          {
+            question: "WhatIsFerroSiliconMagnesiumQuestion",
+            answer: "WhatIsFerroSiliconMagnesiumAnswer"
+          },
+          {
+            question: "GradesQuestion",
+            answer: "GradesAnswer"
+          },
+          {
+            question: "ApplicationsQuestion",
+            answer: "ApplicationsAnswer"
+          },
+          {
+            question: "PackingQuestion",
+            answer: "PackingAnswer"
+          },
+          {
+            question: "CustomizedQuestion",
+            answer: "CustomizedAnswer"
+          },
+          {
+            question: "ExportQuestion",
+            answer: "ExportAnswer"
+          }
+        ],
+
+        downloads: [
+          {
+            title: "Technical Datasheet",
+            file: "/downloads/fecr.pdf"
+          }
+        ],
+      },
+
+      {
+        id: 5,
+        translationKey: "FerroSiliconMagnesium",
+        image: "/images/products/ferro-silicon-magnesium-3.webp",
+        description: "Description",
+        specifications: [
+          {
+            key: "Grade",
+            value: "GradeValue"
+          },
+          {
+            key: "Packing",
+            value: "PackingValue"
+          },
+          {
+            key: "Standard",
+            value: "StandardValue"
+          },
+          {
+            key: "Origin",
+            value: "OriginValue"
+          }
+        ],
+
+        technicalTables: [
+          {
+            title: "ChemicalComposition",
+
+            headers: ["Grade", "Si", "Mg", "Ca", "RE", "Fe"],
+
+            rows: [
+              ["FeSiMg 5-8", "42–48%", "5–8%", "0.5–2.0%", "1–2%", "Balance"],
+              ["FeSiMg 8-10", "42–48%", "8–10%", "0.5–2.0%", "1–2%", "Balance"]
+            ]
+          },
+
+          {
+            title: "PhysicalProperties",
+
+            headers: ["Property", "Value"],
+
+            rows: [
+              ["Appearance", "GreyMetallic"],
+              ["Shape", "Lumps"],
+              ["Color", "SilverGrey"],
+              ["Density", "3.8–4.5 g/cm³"],
+              ["SpecificGravity", "4.2"],
+              ["MeltingPoint", "1200–1300°C"],
+              ["Packing", "Loose / 1 MT Jumbo Bag"],
+              ["Storage", "StoreDryCoveredArea"]
+            ]
+          }
+        ],
+
+        applications: [
+          "DuctileIron",
+          "NodularCastIron",
+          "FoundryIndustry",
+          "CastIronProduction",
+          "SteelMaking",
+          "AutomotiveComponents",
+          "EngineeringCastings",
+          "MetalManufacturing"
+        ],
+
+        faq: [
+          {
+            question: "WhatIsFerroSiliconMagnesiumQuestion",
+            answer: "WhatIsFerroSiliconMagnesiumAnswer"
+          },
+          {
+            question: "GradesQuestion",
+            answer: "GradesAnswer"
+          },
+          {
+            question: "ApplicationsQuestion",
+            answer: "ApplicationsAnswer"
+          },
+          {
+            question: "PackingQuestion",
+            answer: "PackingAnswer"
+          },
+          {
+            question: "CustomizedQuestion",
+            answer: "CustomizedAnswer"
+          },
+          {
+            question: "ExportQuestion",
+            answer: "ExportAnswer"
+          }
+        ],
+
+        downloads: [
+          {
+            title: "Technical Datasheet",
+            file: "/downloads/fecr.pdf"
+          }
+        ],
+      },
+
+      {
+        id: 6,
+        translationKey: "Inoculants",
+        image: "/images/products/inoculants.jpg",
+        description: "Description",
+        specifications: [
+          {
+            key: "Grade",
+            value: "GradeValue"
+          },
+          {
+            key: "Packing",
+            value: "PackingValue"
+          },
+          {
+            key: "Standard",
+            value: "StandardValue"
+          },
+          {
+            key: "Origin",
+            value: "OriginValue"
+          }
+        ],
+
+        technicalTables: [
+          {
+            title: "ChemicalComposition",
+
+            headers: ["Grade", "Si", "Ca", "Al", "Ba", "Fe"],
+
+            rows: [
+              ["FeSi 75 Inoculant", "72–75%", "0.5–1.5%", "≤1.5%", "0–2%", "Balance"],
+              ["Ba Inoculant", "70–75%", "0.5–1.5%", "≤1.5%", "2–6%", "Balance"]
+            ]
+          },
+
+          {
+            title: "PhysicalProperties",
+
+            headers: ["Property", "Value"],
+
+            rows: [
+              ["Appearance", "GreyMetallic"],
+              ["Shape", "Lumps"],
+              ["Color", "SilverGrey"],
+              ["Density", "6.5–7.0 g/cm³"],
+              ["SpecificGravity", "6.8"],
+              ["MeltingPoint", "1200–1300°C"],
+              ["Packing", "Loose / 1 MT Jumbo Bag"],
+              ["Storage", "StoreDryCoveredArea"]
+            ]
+          }
+        ],
+
+        applications: [
+          "GreyCastIron",
+          "DuctileIron",
+          "FoundryIndustry",
+          "CastIronProduction",
+          "AutomotiveCastings",
+          "EngineeringCastings",
+          "PipeCastings",
+          "MetalManufacturing"
+        ],
+
+        faq: [
+          {
+            question: "WhatIsInoculantsQuestion",
+            answer: "WhatIsInoculantsAnswer"
+          },
+          {
+            question: "GradesQuestion",
+            answer: "GradesAnswer"
+          },
+          {
+            question: "ApplicationsQuestion",
+            answer: "ApplicationsAnswer"
+          },
+          {
+            question: "PackingQuestion",
+            answer: "PackingAnswer"
+          },
+          {
+            question: "CustomizedQuestion",
+            answer: "CustomizedAnswer"
+          },
+          {
+            question: "ExportQuestion",
+            answer: "ExportAnswer"
+          }
+        ],
+        downloads: [
+          {
+            title: "Technical Datasheet",
+            file: "/downloads/fecr.pdf"
+          }
+        ],
+
+      },
+    ],
+
+  },
 
   // {
   //   slug: "nobal-alloy",

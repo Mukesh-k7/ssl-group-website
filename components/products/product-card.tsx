@@ -15,7 +15,7 @@ interface ProductCardProps {
 
 export function ProductCard({ product }: ProductCardProps) {
   const t = useTranslations("Products");
-  
+
 
 
   return (
@@ -91,7 +91,7 @@ export function ProductCard({ product }: ProductCardProps) {
               text-xl text-white font-heading font-bold
             "
           >
-           {t(`${product.key}.Name`)}
+            {t(`${product.key}.Name`)}
           </h3>
           <p
             className="
@@ -109,19 +109,15 @@ export function ProductCard({ product }: ProductCardProps) {
             {product.specification.slice(0, 3).map((spec) => (
               <li
                 key={spec.key}
-                className="
-                  flex justify-between
-                  text-xs text-metallic/70
-                "
+                className="flex justify-between text-xs text-metallic/70"
               >
                 <span>
-                  {t(`${product.key}.Specification.${spec.key}`)}
+                  {t.has(`${product.key}.Specification.${spec.key}` as any)
+                    ? t(`${product.key}.Specification.${spec.key}` as any)
+                    : spec.key}
                 </span>
-                <span
-                  className="
-                    text-metallic font-medium
-                  "
-                >
+
+                <span className="text-metallic font-medium">
                   {spec.value}
                 </span>
               </li>

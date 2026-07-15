@@ -170,6 +170,213 @@
             "ExportQuestion": "Do you export Foundry Pig Iron internationally?",
             "ExportAnswer": "Yes. We supply and export Foundry Pig Iron to domestic and international markets with reliable sourcing, quality assurance, and timely delivery."
           }
+        },
+        "BasicGradePigIron": {
+          "Name": "Basic Grade Pig Iron",
+          "Description": "Basic Grade Pig Iron is primarily used in steelmaking, electric arc furnaces, induction furnaces, and steel foundries. It has low silicon content and controlled phosphorus and sulfur levels for efficient steel production.",
+          "Specifications": {
+            "Grade": "Grade",
+            "Packing": "Packing",
+            "Standard": "Standard",
+            "Origin": "Origin",
+            "GradeValue": "Basic Grade Pig Iron",
+            "PackingValue": "Loose / 1 MT Jumbo Bag",
+            "StandardValue": "IS / ASTM / ISO Equivalent",
+            "OriginValue": "India"
+          },
+          "TechnicalTables": {
+            "ChemicalComposition": "Chemical Composition",
+            "PhysicalProperties": "Physical Properties",
+            "ChemicalHeaders": {
+              "Grade": "Grade",
+              "C": "C",
+              "Si": "Si",
+              "Mn": "Mn",
+              "P": "P",
+              "S": "S"
+            },
+            "PhysicalHeaders": {
+              "Property": "Property",
+              "Value": "Value"
+            },
+            "PhysicalPropertiesRows": {
+              "Appearance": "Appearance",
+              "GreyMetallic": "Grey Metallic",
+              "Shape": "Shape",
+              "PigBlocks": "Pig / Blocks",
+              "Color": "Color",
+              "DarkGrey": "Dark Grey",
+              "Density": "Density",
+              "SpecificGravity": "Specific Gravity",
+              "MeltingPoint": "Melting Point",
+              "StandardWeight": "Standard Weight",
+              "Packing": "Packing",
+              "Storage": "Storage",
+              "StoreDryCoveredArea": "Store in a dry and covered area"
+            }
+          },
+          "Applications": {
+            "SteelMaking": "Steel Making",
+            "ElectricArcFurnaces": "Electric Arc Furnaces (EAF)",
+            "InductionFurnaces": "Induction Furnaces",
+            "SteelFoundries": "Steel Foundries",
+            "AlloySteelProduction": "Alloy Steel Production",
+            "CarbonSteelManufacturing": "Carbon Steel Manufacturing",
+            "CastingIndustry": "Casting Industry",
+            "EngineeringApplications": "Engineering Applications"
+          },
+          "FAQ": {
+            "WhatIsBasicPigIronQuestion": "What is Basic Grade Pig Iron?",
+            "WhatIsBasicPigIronAnswer": "Basic Grade Pig Iron is a high-quality iron product mainly used as a raw material in steelmaking and foundry applications. It contains low silicon and controlled phosphorus and sulfur levels.",
+            "GradesQuestion": "What grades of Basic Grade Pig Iron do you supply?",
+            "GradesAnswer": "We supply Basic Grade Pig Iron in different chemical compositions based on customer specifications and applicable industry standards.",
+            "ApplicationsQuestion": "What are the applications of Basic Grade Pig Iron?",
+            "ApplicationsAnswer": "Basic Grade Pig Iron is widely used in steel plants, electric arc furnaces, induction furnaces, alloy steel production, and engineering industries.",
+            "PackingQuestion": "What packing options are available?",
+            "PackingAnswer": "The product is supplied in loose bulk, palletized loads, or 1 MT jumbo bags according to customer and export requirements.",
+            "CustomizedQuestion": "Can you provide customized grades and specifications?",
+            "CustomizedAnswer": "Yes. We can supply customized Basic Grade Pig Iron grades and chemical compositions according to customer requirements.",
+            "ExportQuestion": "Do you export Basic Grade Pig Iron internationally?",
+            "ExportAnswer": "Yes. We export Basic Grade Pig Iron to customers worldwide with consistent quality, reliable sourcing, and timely delivery."
+          }
+        },
+        "SteelGradePigIron": {
+          "Name": "Steel Grade Pig Iron",
+          "Description": "Steel Grade Pig Iron is a premium raw material used in steelmaking through electric arc furnaces, induction furnaces, and basic oxygen furnaces. It provides controlled chemistry, low impurities, and excellent melting performance for high-quality steel production.",
+          "Specifications": {
+            "Grade": "Grade",
+            "Packing": "Packing",
+            "Standard": "Standard",
+            "Origin": "Origin",
+            "GradeValue": "Steel Grade Pig Iron",
+            "PackingValue": "Loose / 1 MT Jumbo Bag",
+            "StandardValue": "IS / ASTM / ISO Equivalent",
+            "OriginValue": "India"
+          },
+          "TechnicalTables": {
+            "ChemicalComposition": "Chemical Composition",
+            "PhysicalProperties": "Physical Properties",
+            "ChemicalHeaders": {
+              "Grade": "Grade",
+              "C": "C",
+              "Si": "Si",
+              "Mn": "Mn",
+              "P": "P",
+              "S": "S"
+            },
+            "PhysicalHeaders": {
+              "Property": "Property",
+              "Value": "Value"
+            },
+            "PhysicalPropertiesRows": {
+              "Appearance": "Appearance",
+              "GreyMetallic": "Grey Metallic",
+              "Shape": "Shape",
+              "PigBlocks": "Pig / Blocks",
+              "Color": "Color",
+              "DarkGrey": "Dark Grey",
+              "Density": "Density",
+              "SpecificGravity": "Specific Gravity",
+              "MeltingPoint": "Melting Point",
+              "StandardWeight": "Standard Weight",
+              "Packing": "Packing",
+              "Storage": "Storage",
+              "StoreDryCoveredArea": "Store in a dry and covered area"
+            }
+          },
+          "Applications": {
+            "SteelMaking": "Steel Making",
+            "ElectricArcFurnaces": "Electric Arc Furnaces",
+            "InductionFurnaces": "Induction Furnaces",
+            "CarbonSteelProduction": "Carbon Steel Production",
+            "AlloySteelManufacturing": "Alloy Steel Manufacturing",
+            "FoundryIndustry": "Foundry Industry",
+            "EngineeringApplications": "Engineering Applications",
+            "CastingIndustry": "Casting Industry"
+          },
+          "FAQ": {
+            "WhatIsSteelPigIronQuestion": "What is Steel Grade Pig Iron?",
+            "WhatIsSteelPigIronAnswer": "Steel Grade Pig Iron is a high-quality pig iron used primarily as a raw material in steel production. It offers controlled silicon, phosphorus, and sulfur levels to ensure consistent steel quality.",
+            "GradesQuestion": "What grades of Steel Grade Pig Iron do you supply?",
+            "GradesAnswer": "We supply Steel Grade Pig Iron in multiple grades with customized chemical compositions to meet customer and industry requirements.",
+            "ApplicationsQuestion": "What are the applications of Steel Grade Pig Iron?",
+            "ApplicationsAnswer": "Steel Grade Pig Iron is widely used in electric arc furnaces, induction furnaces, alloy steel manufacturing, carbon steel production, and engineering industries.",
+            "PackingQuestion": "What packing options are available?",
+            "PackingAnswer": "The product is supplied in loose bulk, palletized loads, or 1 MT jumbo bags based on customer requirements.",
+            "CustomizedQuestion": "Can you provide customized grades and specifications?",
+            "CustomizedAnswer": "Yes. We provide customized Steel Grade Pig Iron grades and chemical compositions according to customer specifications.",
+            "ExportQuestion": "Do you export Steel Grade Pig Iron internationally?",
+            "ExportAnswer": "Yes. We export Steel Grade Pig Iron to domestic and international markets with strict quality control, reliable sourcing, and timely delivery."
+          }
+        },
+        "NodularPigIron": {
+          "Name": "Nodular Pig Iron",
+          "Description": "Nodular Pig Iron is specially manufactured for producing ductile (SG) iron castings. It features low sulfur, controlled phosphorus, and optimized silicon content to ensure superior nodularity, strength, and machinability.",
+          "Specifications": {
+            "Grade": "Grade",
+            "Packing": "Packing",
+            "Standard": "Standard",
+            "Origin": "Origin",
+            "GradeValue": "Nodular Pig Iron",
+            "PackingValue": "Loose / 1 MT Jumbo Bag",
+            "StandardValue": "IS / ASTM / ISO Equivalent",
+            "OriginValue": "India"
+          },
+          "TechnicalTables": {
+            "ChemicalComposition": "Chemical Composition",
+            "PhysicalProperties": "Physical Properties",
+            "ChemicalHeaders": {
+              "Grade": "Grade",
+              "C": "C",
+              "Si": "Si",
+              "Mn": "Mn",
+              "P": "P",
+              "S": "S"
+            },
+            "PhysicalHeaders": {
+              "Property": "Property",
+              "Value": "Value"
+            },
+            "PhysicalPropertiesRows": {
+              "Appearance": "Appearance",
+              "GreyMetallic": "Grey Metallic",
+              "Shape": "Shape",
+              "PigBlocks": "Pig / Blocks",
+              "Color": "Color",
+              "DarkGrey": "Dark Grey",
+              "Density": "Density",
+              "SpecificGravity": "Specific Gravity",
+              "MeltingPoint": "Melting Point",
+              "StandardWeight": "Standard Weight",
+              "Packing": "Packing",
+              "Storage": "Storage",
+              "StoreDryCoveredArea": "Store in a dry and covered area"
+            }
+          },
+          "Applications": {
+            "DuctileIronCastings": "Ductile Iron Castings",
+            "AutomotiveComponents": "Automotive Components",
+            "PipePipeFittings": "Pipe & Pipe Fittings",
+            "ValvesPumps": "Valves & Pumps",
+            "MachineComponents": "Machine Components",
+            "AgriculturalEquipment": "Agricultural Equipment",
+            "EngineeringCastings": "Engineering Castings",
+            "FoundryIndustry": "Foundry Industry"
+          },
+          "FAQ": {
+            "WhatIsNodularPigIronQuestion": "What is Nodular Pig Iron?",
+            "WhatIsNodularPigIronAnswer": "Nodular Pig Iron is a premium pig iron specially produced for manufacturing ductile (SG) iron castings. It offers low sulfur content, controlled chemistry, and excellent casting performance.",
+            "GradesQuestion": "What grades of Nodular Pig Iron do you supply?",
+            "GradesAnswer": "We supply various Nodular Pig Iron grades with customized chemical compositions to meet customer and international industry standards.",
+            "ApplicationsQuestion": "What are the applications of Nodular Pig Iron?",
+            "ApplicationsAnswer": "Nodular Pig Iron is widely used in ductile iron castings, automotive parts, pipes, valves, pumps, engineering castings, and agricultural equipment.",
+            "PackingQuestion": "What packing options are available?",
+            "PackingAnswer": "The product is supplied in loose bulk, palletized loads, or 1 MT jumbo bags according to customer and export requirements.",
+            "CustomizedQuestion": "Can you provide customized grades and specifications?",
+            "CustomizedAnswer": "Yes. We manufacture and supply customized Nodular Pig Iron grades according to customer specifications and international standards.",
+            "ExportQuestion": "Do you export Nodular Pig Iron internationally?",
+            "ExportAnswer": "Yes. We export Nodular Pig Iron worldwide with strict quality control, reliable sourcing, and timely delivery."
+          }
         }
       }
     },
@@ -182,15 +389,417 @@
         "FeMn": "FeMn (Mn)",
         "FeSi": "FeSi (Si)",
         "FeCr": "FeCr (Cr)",
-        "FeSiMn": "FeSiMn (Si + Mn)",
-        "Packaging": "Packaging",
-        "Standards": "Standards"
+        "FeSiMn": "FeSiMn (Si + Mn)"
       },
-      "Applications": {
-        "Steeldeoxidation": "Steel deoxidation",
-        "Alloysteelproduction": "Alloy steel production",
-        "Stainlesssteelmanufacturing": "Stainless steel manufacturing",
-        "Weldingconsumables": "Welding consumables"
+      "Variants": {
+        "FerroSilicon": {
+          "Name": "Ferro Silicon",
+          "Description": "Ferro Silicon 75% is a high-quality ferro alloy widely used as a deoxidizer and alloying agent in steelmaking and foundry industries.",
+          "Specifications": {
+            "Grade": "Grade",
+            "Packing": "Packing",
+            "Standard": "Standard",
+            "Origin": "Origin",
+            "GradeValue": "FeSi 75%",
+            "PackingValue": "Loose / 1 MT Jumbo Bag",
+            "StandardValue": "IS / ASTM / ISO Equivalent",
+            "OriginValue": "India"
+          },
+          "TechnicalTables": {
+            "ChemicalComposition": "Chemical Composition",
+            "PhysicalProperties": "Physical Properties",
+            "ChemicalHeaders": {
+              "Grade": "Grade",
+              "Si": "Si",
+              "Al": "Al",
+              "C": "C",
+              "P": "P",
+              "S": "S"
+            },
+            "PhysicalHeaders": {
+              "Property": "Property",
+              "Value": "Value"
+            },
+            "PhysicalPropertiesRows": {
+              "Appearance": "Appearance",
+              "GreyMetallic": "Grey Metallic",
+              "Shape": "Shape",
+              "Lumps": "Lumps",
+              "Color": "Color",
+              "SilverGrey": "Silver Grey",
+              "Density": "Density",
+              "SpecificGravity": "Specific Gravity",
+              "MeltingPoint": "Melting Point",
+              "Packing": "Packing",
+              "Storage": "Storage",
+              "StoreDryCoveredArea": "Store in a dry and covered area"
+            }
+          },
+          "Applications": {
+            "SteelMaking": "Steel Making",
+            "Deoxidizer": "Steel Deoxidizer",
+            "FoundryIndustry": "Foundry Industry",
+            "CastIron": "Cast Iron Production",
+            "AlloySteel": "Alloy Steel Manufacturing",
+            "StainlessSteel": "Stainless Steel Production",
+            "WeldingElectrodes": "Welding Electrodes",
+            "MetalManufacturing": "Metal Manufacturing"
+          },
+          "FAQ": {
+            "WhatIsFerroSiliconQuestion": "What is Ferro Silicon?",
+            "WhatIsFerroSiliconAnswer": "Ferro Silicon is an iron-silicon alloy widely used as a deoxidizer and alloying element in steelmaking and cast iron production.",
+            "GradesQuestion": "What grades of Ferro Silicon do you supply?",
+            "GradesAnswer": "We supply FeSi 75%, FeSi 72%, and customized grades according to customer requirements.",
+            "ApplicationsQuestion": "What are the applications of Ferro Silicon?",
+            "ApplicationsAnswer": "Ferro Silicon is widely used in steelmaking, foundries, alloy steel manufacturing, cast iron production, and welding electrodes.",
+            "PackingQuestion": "What packing options are available?",
+            "PackingAnswer": "Available in loose bulk, palletized loads, and 1 MT jumbo bags.",
+            "CustomizedQuestion": "Can you provide customized grades?",
+            "CustomizedAnswer": "Yes. We provide customized grades, particle sizes, and chemical compositions.",
+            "ExportQuestion": "Do you export Ferro Silicon internationally?",
+            "ExportAnswer": "Yes. We export Ferro Silicon worldwide with strict quality control and timely delivery."
+          }
+        },
+        "FerroManganese": {
+          "Name": "Ferro Manganese",
+          "Description": "Ferro Manganese is an essential ferro alloy used as a deoxidizer and alloying agent in steelmaking. It improves strength, hardness, wear resistance, and toughness in carbon and alloy steels.",
+          "Specifications": {
+            "Grade": "Grade",
+            "Packing": "Packing",
+            "Standard": "Standard",
+            "Origin": "Origin",
+            "GradeValue": "High Carbon Ferro Manganese",
+            "PackingValue": "Loose / 1 MT Jumbo Bag",
+            "StandardValue": "IS / ASTM / ISO Equivalent",
+            "OriginValue": "India"
+          },
+          "TechnicalTables": {
+            "ChemicalComposition": "Chemical Composition",
+            "PhysicalProperties": "Physical Properties",
+            "ChemicalHeaders": {
+              "Grade": "Grade",
+              "Mn": "Mn",
+              "C": "C",
+              "Si": "Si",
+              "P": "P",
+              "S": "S"
+            },
+            "PhysicalHeaders": {
+              "Property": "Property",
+              "Value": "Value"
+            },
+            "PhysicalPropertiesRows": {
+              "Appearance": "Appearance",
+              "GreyMetallic": "Grey Metallic",
+              "Shape": "Shape",
+              "Lumps": "Lumps",
+              "Color": "Color",
+              "SilverGrey": "Silver Grey",
+              "Density": "Density",
+              "SpecificGravity": "Specific Gravity",
+              "MeltingPoint": "Melting Point",
+              "Packing": "Packing",
+              "Storage": "Storage",
+              "StoreDryCoveredArea": "Store in a dry and covered area"
+            }
+          },
+          "Applications": {
+            "SteelMaking": "Steel Making",
+            "AlloySteel": "Alloy Steel Manufacturing",
+            "CarbonSteel": "Carbon Steel Production",
+            "FoundryIndustry": "Foundry Industry",
+            "RailwayComponents": "Railway Components",
+            "EngineeringComponents": "Engineering Components",
+            "ConstructionSteel": "Construction Steel",
+            "MetalManufacturing": "Metal Manufacturing"
+          },
+          "FAQ": {
+            "WhatIsFerroManganeseQuestion": "What is Ferro Manganese?",
+            "WhatIsFerroManganeseAnswer": "Ferro Manganese is an iron-manganese alloy used in steelmaking as a deoxidizer and alloying agent.",
+            "GradesQuestion": "What grades do you supply?",
+            "GradesAnswer": "We supply High Carbon, Medium Carbon, and Low Carbon Ferro Manganese.",
+            "ApplicationsQuestion": "What are the applications?",
+            "ApplicationsAnswer": "Used in steelmaking, foundries, alloy steel, engineering, and construction industries.",
+            "PackingQuestion": "What packing options are available?",
+            "PackingAnswer": "Loose, palletized, or 1 MT jumbo bags.",
+            "CustomizedQuestion": "Can you supply customized grades?",
+            "CustomizedAnswer": "Yes. We supply customized grades and sizes as per customer requirements.",
+            "ExportQuestion": "Do you export internationally?",
+            "ExportAnswer": "Yes. We export Ferro Manganese worldwide."
+          }
+        },
+        "FerroChrome": {
+          "Name": "Ferro Chrome",
+          "Description": "Ferro Chrome is a chromium-rich ferro alloy primarily used in stainless steel and alloy steel manufacturing. It enhances corrosion resistance, hardness, wear resistance, and high-temperature strength.",
+          "Specifications": {
+            "Grade": "Grade",
+            "Packing": "Packing",
+            "Standard": "Standard",
+            "Origin": "Origin",
+            "GradeValue": "High Carbon / Low Carbon Ferro Chrome",
+            "PackingValue": "Loose / 1 MT Jumbo Bag",
+            "StandardValue": "IS / ASTM / ISO Equivalent",
+            "OriginValue": "India"
+          },
+          "TechnicalTables": {
+            "ChemicalComposition": "Chemical Composition",
+            "PhysicalProperties": "Physical Properties",
+            "ChemicalHeaders": {
+              "Grade": "Grade",
+              "Cr": "Cr",
+              "C": "C",
+              "Si": "Si",
+              "P": "P",
+              "S": "S"
+            },
+            "PhysicalHeaders": {
+              "Property": "Property",
+              "Value": "Value"
+            },
+            "PhysicalPropertiesRows": {
+              "Appearance": "Appearance",
+              "GreyMetallic": "Grey Metallic",
+              "Shape": "Shape",
+              "Lumps": "Lumps",
+              "Color": "Color",
+              "SilverGrey": "Silver Grey",
+              "Density": "Density",
+              "SpecificGravity": "Specific Gravity",
+              "MeltingPoint": "Melting Point",
+              "Packing": "Packing",
+              "Storage": "Storage",
+              "StoreDryCoveredArea": "Store in a dry and covered area"
+            }
+          },
+          "Applications": {
+            "StainlessSteel": "Stainless Steel Manufacturing",
+            "AlloySteel": "Alloy Steel Production",
+            "ToolSteel": "Tool Steel",
+            "FoundryIndustry": "Foundry Industry",
+            "WearResistantSteel": "Wear Resistant Steel",
+            "EngineeringComponents": "Engineering Components",
+            "MetalManufacturing": "Metal Manufacturing",
+            "SpecialSteels": "Special Steels"
+          },
+          "FAQ": {
+            "WhatIsFerroChromeQuestion": "What is Ferro Chrome?",
+            "WhatIsFerroChromeAnswer": "Ferro Chrome is an alloy of chromium and iron used primarily in stainless steel and alloy steel production to improve corrosion resistance, hardness, and durability.",
+            "GradesQuestion": "What grades of Ferro Chrome do you supply?",
+            "GradesAnswer": "We supply High Carbon, Medium Carbon, and Low Carbon Ferro Chrome in various sizes and specifications.",
+            "ApplicationsQuestion": "What are the applications of Ferro Chrome?",
+            "ApplicationsAnswer": "Ferro Chrome is widely used in stainless steel manufacturing, alloy steels, tool steels, foundries, wear-resistant components, and engineering industries.",
+            "PackingQuestion": "What packing options are available?",
+            "PackingAnswer": "Available in loose bulk, palletized loads, and 1 MT jumbo bags.",
+            "CustomizedQuestion": "Can you provide customized grades and sizes?",
+            "CustomizedAnswer": "Yes. We supply customized grades, particle sizes, and chemical compositions according to customer specifications.",
+            "ExportQuestion": "Do you export Ferro Chrome internationally?",
+            "ExportAnswer": "Yes. We export Ferro Chrome to domestic and international markets with consistent quality, reliable sourcing, and timely delivery."
+          }
+        },
+        "FerroSiliconManganese": {
+          "Name": "Ferro Silicon Manganese",
+          "Description": "Ferro Silicon Manganese (Silico Manganese) is a premium ferro alloy used as a deoxidizer and alloying agent in steelmaking. It improves strength, toughness, wear resistance, and overall steel quality.",
+          "Specifications": {
+            "Grade": "Grade",
+            "Packing": "Packing",
+            "Standard": "Standard",
+            "Origin": "Origin",
+            "GradeValue": "SiMn 65/15 & SiMn 60/14",
+            "PackingValue": "Loose / 1 MT Jumbo Bag",
+            "StandardValue": "IS / ASTM / ISO Equivalent",
+            "OriginValue": "India"
+          },
+          "TechnicalTables": {
+            "ChemicalComposition": "Chemical Composition",
+            "PhysicalProperties": "Physical Properties",
+            "ChemicalHeaders": {
+              "Grade": "Grade",
+              "Mn": "Mn",
+              "Si": "Si",
+              "C": "C",
+              "P": "P",
+              "S": "S"
+            },
+            "PhysicalHeaders": {
+              "Property": "Property",
+              "Value": "Value"
+            },
+            "PhysicalPropertiesRows": {
+              "Appearance": "Appearance",
+              "GreyMetallic": "Grey Metallic",
+              "Shape": "Shape",
+              "Lumps": "Lumps",
+              "Color": "Color",
+              "SilverGrey": "Silver Grey",
+              "Density": "Density",
+              "SpecificGravity": "Specific Gravity",
+              "MeltingPoint": "Melting Point",
+              "Packing": "Packing",
+              "Storage": "Storage",
+              "StoreDryCoveredArea": "Store in a dry and covered area"
+            }
+          },
+          "Applications": {
+            "SteelMaking": "Steel Making",
+            "AlloySteel": "Alloy Steel Manufacturing",
+            "StructuralSteel": "Structural Steel",
+            "ConstructionSteel": "Construction Steel",
+            "FoundryIndustry": "Foundry Industry",
+            "EngineeringComponents": "Engineering Components",
+            "RailwayComponents": "Railway Components",
+            "MetalManufacturing": "Metal Manufacturing"
+          },
+          "FAQ": {
+            "WhatIsFerroSiliconManganeseQuestion": "What is Ferro Silicon Manganese?",
+            "WhatIsFerroSiliconManganeseAnswer": "Ferro Silicon Manganese (Silico Manganese) is a ferro alloy containing manganese and silicon, widely used in steelmaking as a deoxidizer and alloying agent to improve strength, toughness, and wear resistance.",
+            "GradesQuestion": "What grades of Ferro Silicon Manganese do you supply?",
+            "GradesAnswer": "We supply SiMn 65/15, SiMn 60/14, and customized grades according to customer specifications.",
+            "ApplicationsQuestion": "What are the applications of Ferro Silicon Manganese?",
+            "ApplicationsAnswer": "It is widely used in steelmaking, alloy steel production, structural steel, foundries, railway components, and engineering industries.",
+            "PackingQuestion": "What packing options are available?",
+            "PackingAnswer": "Available in loose bulk, palletized loads, and 1 MT jumbo bags.",
+            "CustomizedQuestion": "Can you provide customized grades and sizes?",
+            "CustomizedAnswer": "Yes. We provide customized grades, particle sizes, and chemical compositions according to customer requirements.",
+            "ExportQuestion": "Do you export Ferro Silicon Manganese internationally?",
+            "ExportAnswer": "Yes. We export Ferro Silicon Manganese worldwide with reliable quality assurance and timely delivery."
+          }
+        },
+        "FerroSiliconMagnesium": {
+          "Name": "Ferro Silicon Magnesium",
+          "Description": "Ferro Silicon Magnesium (FeSiMg) is a high-performance ferro alloy used as a nodulizing and inoculating agent in ductile iron production. It improves graphite spheroidization, mechanical strength, and casting quality.",
+          "Specifications": {
+            "Grade": "Grade",
+            "Packing": "Packing",
+            "Standard": "Standard",
+            "Origin": "Origin",
+            "GradeValue": "FeSiMg 5-8 / FeSiMg 8-10",
+            "PackingValue": "Loose / 1 MT Jumbo Bag",
+            "StandardValue": "IS / ASTM / ISO Equivalent",
+            "OriginValue": "India"
+          },
+          "TechnicalTables": {
+            "ChemicalComposition": "Chemical Composition",
+            "PhysicalProperties": "Physical Properties",
+            "ChemicalHeaders": {
+              "Grade": "Grade",
+              "Si": "Si",
+              "Mg": "Mg",
+              "Ca": "Ca",
+              "RE": "Rare Earth",
+              "Fe": "Fe"
+            },
+            "PhysicalHeaders": {
+              "Property": "Property",
+              "Value": "Value"
+            },
+            "PhysicalPropertiesRows": {
+              "Appearance": "Appearance",
+              "GreyMetallic": "Grey Metallic",
+              "Shape": "Shape",
+              "Lumps": "Lumps",
+              "Color": "Color",
+              "SilverGrey": "Silver Grey",
+              "Density": "Density",
+              "SpecificGravity": "Specific Gravity",
+              "MeltingPoint": "Melting Point",
+              "Packing": "Packing",
+              "Storage": "Storage",
+              "StoreDryCoveredArea": "Store in a dry and covered area"
+            }
+          },
+          "Applications": {
+            "DuctileIron": "Ductile Iron Production",
+            "NodularCastIron": "Nodular Cast Iron",
+            "FoundryIndustry": "Foundry Industry",
+            "CastIronProduction": "Cast Iron Production",
+            "SteelMaking": "Steel Making",
+            "AutomotiveComponents": "Automotive Components",
+            "EngineeringCastings": "Engineering Castings",
+            "MetalManufacturing": "Metal Manufacturing"
+          },
+          "FAQ": {
+            "WhatIsFerroSiliconMagnesiumQuestion": "What is Ferro Silicon Magnesium?",
+            "WhatIsFerroSiliconMagnesiumAnswer": "Ferro Silicon Magnesium (FeSiMg) is a ferro alloy used as a nodulizer in ductile iron manufacturing. It promotes spheroidal graphite formation and enhances the mechanical properties of cast iron.",
+            "GradesQuestion": "What grades of Ferro Silicon Magnesium do you supply?",
+            "GradesAnswer": "We supply FeSiMg 5-8, FeSiMg 8-10, and customized grades according to customer specifications.",
+            "ApplicationsQuestion": "What are the applications of Ferro Silicon Magnesium?",
+            "ApplicationsAnswer": "It is widely used in ductile iron production, nodular cast iron, foundries, automotive castings, engineering castings, and metal manufacturing industries.",
+            "PackingQuestion": "What packing options are available?",
+            "PackingAnswer": "Available in loose bulk, palletized loads, and 1 MT jumbo bags.",
+            "CustomizedQuestion": "Can you provide customized grades and sizes?",
+            "CustomizedAnswer": "Yes. We provide customized grades, particle sizes, and chemical compositions according to customer requirements.",
+            "ExportQuestion": "Do you export Ferro Silicon Magnesium internationally?",
+            "ExportAnswer": "Yes. We export Ferro Silicon Magnesium worldwide with consistent quality, reliable sourcing, and timely delivery."
+          }
+        },
+        "Inoculants": {
+          "Name": "Inoculants",
+          "Description": "Inoculants are specially formulated ferro alloys used in grey iron and ductile iron production to improve graphite formation, enhance mechanical properties, reduce chill, and produce high-quality castings.",
+          "Specifications": {
+            "Grade": "Grade",
+            "Packing": "Packing",
+            "Standard": "Standard",
+            "Origin": "Origin",
+            "GradeValue": "FeSi Based Inoculants",
+            "PackingValue": "Loose / 1 MT Jumbo Bag",
+            "StandardValue": "IS / ASTM / ISO Equivalent",
+            "OriginValue": "India"
+          },
+          "TechnicalTables": {
+            "ChemicalComposition": "Chemical Composition",
+            "PhysicalProperties": "Physical Properties",
+            "ChemicalHeaders": {
+              "Grade": "Grade",
+              "Si": "Si",
+              "Ca": "Ca",
+              "Al": "Al",
+              "Ba": "Ba",
+              "Fe": "Fe"
+            },
+            "PhysicalHeaders": {
+              "Property": "Property",
+              "Value": "Value"
+            },
+            "PhysicalPropertiesRows": {
+              "Appearance": "Appearance",
+              "GreyMetallic": "Grey Metallic",
+              "Shape": "Shape",
+              "Lumps": "Lumps",
+              "Color": "Color",
+              "SilverGrey": "Silver Grey",
+              "Density": "Density",
+              "SpecificGravity": "Specific Gravity",
+              "MeltingPoint": "Melting Point",
+              "Packing": "Packing",
+              "Storage": "Storage",
+              "StoreDryCoveredArea": "Store in a dry and covered area"
+            }
+          },
+          "Applications": {
+            "GreyCastIron": "Grey Cast Iron",
+            "DuctileIron": "Ductile Iron",
+            "FoundryIndustry": "Foundry Industry",
+            "CastIronProduction": "Cast Iron Production",
+            "AutomotiveCastings": "Automotive Castings",
+            "EngineeringCastings": "Engineering Castings",
+            "PipeCastings": "Pipe Castings",
+            "MetalManufacturing": "Metal Manufacturing"
+          },
+          "FAQ": {
+            "WhatIsInoculantsQuestion": "What are Inoculants?",
+            "WhatIsInoculantsAnswer": "Inoculants are ferro alloy additives used during cast iron production to improve graphite structure, reduce carbide formation, and enhance the quality and machinability of castings.",
+            "GradesQuestion": "What types of Inoculants do you supply?",
+            "GradesAnswer": "We supply FeSi-based inoculants, Barium inoculants, Calcium inoculants, and customized inoculant grades according to customer requirements.",
+            "ApplicationsQuestion": "What are the applications of Inoculants?",
+            "ApplicationsAnswer": "Inoculants are widely used in grey iron, ductile iron, foundries, automotive castings, pipe fittings, engineering castings, and metal manufacturing industries.",
+            "PackingQuestion": "What packing options are available?",
+            "PackingAnswer": "Available in loose bulk, palletized loads, and 1 MT jumbo bags.",
+            "CustomizedQuestion": "Can you provide customized grades?",
+            "CustomizedAnswer": "Yes. We provide customized inoculant compositions, particle sizes, and packaging according to customer requirements.",
+            "ExportQuestion": "Do you export Inoculants internationally?",
+            "ExportAnswer": "Yes. We export high-quality inoculants worldwide with reliable quality assurance and timely delivery."
+          }
+        }
       }
     },
     "NobalAlloy": {
