@@ -10,11 +10,9 @@ import { breadcrumbSchema, createPageMetadata, productSchema } from "@/lib/seo";
 import { getTranslations } from "next-intl/server";
 import ProductGallery from "@/components/products/product-gallary";
 
-
 interface ProductPageProps {
   params: Promise<{ slug: string }>;
 }
-
 
 export async function generateStaticParams() {
   return products.map((product) => ({ slug: product.slug }));
@@ -45,7 +43,6 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
   if (!product) notFound();
   const t = await getTranslations();
   const related = products.filter((p) => p.slug !== slug).slice(0, 6);
-
 
   return (
     <>
@@ -87,8 +84,6 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
         "
       >
         <ProductGallery product={product} />
-
-
         {/* <ProductFAQ faq={product.variants[0].faq} /> */}
       </section>
 

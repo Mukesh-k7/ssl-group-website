@@ -15,7 +15,7 @@ interface ProductCardProps {
 
 export function ProductCard({ product }: ProductCardProps) {
   const t = useTranslations("Products");
-  console.log(product.key);
+  
 
 
   return (
@@ -78,9 +78,7 @@ export function ProductCard({ product }: ProductCardProps) {
               backdrop-blur-sm
             "
           >
-
-            {product.category}
-
+            <span>{t(`${product.key}.Category`)}</span>
           </span >
         </div >
         <CardContent
@@ -93,9 +91,7 @@ export function ProductCard({ product }: ProductCardProps) {
               text-xl text-white font-heading font-bold
             "
           >
-
-           {product.key}
-
+           {t(`${product.key}.Name`)}
           </h3>
           <p
             className="
@@ -103,9 +99,7 @@ export function ProductCard({ product }: ProductCardProps) {
               text-sm text-metallic/80 leading-relaxed line-clamp-2
             "
           >
-
-            {product.shortDescription}
-
+            {t(`${product.key}.ShortDescription`)}
           </p>
           <ul
             className="
@@ -114,19 +108,14 @@ export function ProductCard({ product }: ProductCardProps) {
           >
             {product.specification.slice(0, 3).map((spec) => (
               <li
-
                 key={spec.key}
-
                 className="
                   flex justify-between
                   text-xs text-metallic/70
                 "
               >
                 <span>
-
-                  
-                    {spec.key}
-                  
+                  {t(`${product.key}.Specification.${spec.key}`)}
                 </span>
                 <span
                   className="
@@ -150,7 +139,6 @@ export function ProductCard({ product }: ProductCardProps) {
           >
             <Link href={`/products/${product.slug}`}>
               {t("ViewAllProducts")}
-
               <ArrowRight
                 className="
                   w-4 h-4

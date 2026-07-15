@@ -96,10 +96,10 @@
       "ShortDescription": "Foundry and steel-grade pig iron with controlled silicon and sulfur for blast furnace and casting applications.",
       "Description": "SSL Group exports premium foundry and basic pig iron sourced from ISO-certified integrated steel plants.",
       "Specification": {
-        "Carbon": "Carbon (C)",
-        "Silicon": "Silicon (Si)",
-        "Sulfur": "Sulfur (S)",
-        "Phosphorus": "Phosphorus (P)"
+        "FoundryPigIron": "Foundry Pig Iron",
+        "BasicPigIron": "Basic Pig Iron",
+        "NodularPigIron": "Nodular (SG) Pig Iron",
+        "SteelPigIron": "Steel Pig Iron"
       },
       "Variants": {
         "FoundryGradePigIron": {
@@ -150,8 +150,8 @@
             "GreyIronCastings": "Grey Iron Castings",
             "AutomotiveComponents": "Automotive Components",
             "MachinePartsManufacturing": "Machine Parts Manufacturing",
-            "PipeAndPipeFittings": "Pipe & Pipe Fittings",
-            "ManholeCoversAndDrainageCastings": "Manhole Covers & Drainage Castings",
+            "PipePipeFittings": "Pipe & Pipe Fittings",
+            "ManholeCoversDrainageCastings": "Manhole Covers & Drainage Castings",
             "AgriculturalEquipment": "Agricultural Equipment",
             "EngineeringIndustrialCastings": "Engineering & Industrial Castings",
             "FoundryIndustry": "Foundry Industry"
@@ -171,10 +171,7 @@
             "ExportAnswer": "Yes. We supply and export Foundry Pig Iron to domestic and international markets with reliable sourcing, quality assurance, and timely delivery."
           }
         }
-      },
-      "Overview": "Overview",
-      "Applications": "Applications",
-      "TechnicalSpecifications": "Technical Specifications"
+      }
     },
     "FerroAlloys": {
       "Name": "Ferro Alloys",
@@ -368,6 +365,13 @@
       }
     },
     "ViewAllProducts": "View Products"
+  },
+  "Common": {
+    "Overview": "Overview",
+    "Applications": "Applications",
+    "TechnicalSpecifications": "Technical Specifications",
+    "RequestQuote": "Request Quote",
+    "FrequentlyAskedQuestions": "Frequently Asked Questions"
   },
   "Product": {
     "Overview": "Overview",

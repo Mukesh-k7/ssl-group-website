@@ -1,3 +1,10 @@
+import { useTranslations } from "next-intl";
+import { useState } from "react";
+import { Product } from "@/types";
+
+interface Props {
+  product: Product;
+}
 interface Props {
   title: string;
   headers: string[];
@@ -8,7 +15,13 @@ export default function TechnicalTable({
   title,
   headers,
   rows,
+  product
 }: Props) {
+
+  const t = useTranslations("Products.PigIron.Variants");
+  const [selectedVariant, setSelectedVariant] = useState(
+    product.variants[0]
+  );
   return (
     <div className="mt-10 overflow-hidden rounded-xl border p-2">
 

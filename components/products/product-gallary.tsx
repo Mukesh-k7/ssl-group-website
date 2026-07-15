@@ -9,16 +9,22 @@ import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Product } from "@/types";
 import { useRouter } from "next/navigation";
+import { useTranslations } from "next-intl";
 
 interface Props {
     product: Product;
 }
 
 export default function ProductGallery({ product }: Props) {
+    const commonT = useTranslations("Common");
+const variantT = useTranslations(`Products.${product.key}.Variants` as any);
     const [selectedVariant, setSelectedVariant] = useState(
         product.variants[0]
     );
 
+    console.log(
+        variantT(`${selectedVariant.translationKey}.Name` as any)
+    );
     const router = useRouter();
 
     return (
@@ -38,13 +44,13 @@ export default function ProductGallery({ product }: Props) {
                         >
                             <Image
                                 src={variant.image}
-                                alt={variant.translationKey}
+                                alt={variantT(`${variant.translationKey}.Name` as any)}
                                 width={200}
                                 height={109}
                                 className="w-full h-[109px] object-cover rounded-lg"
                             />
                             <p className="p-1 text-[11px] font-medium">
-                                {variant.translationKey}
+                                {variantT(`${variant.translationKey}.Name` as any)}
                             </p>
                         </button>
                     ))}
@@ -62,17 +68,17 @@ export default function ProductGallery({ product }: Props) {
                 {/* Overview */}
                 <div className="mt-8">
                     <h2 className="text-2xl font-bold">
-                        Overview
+                        {commonT("Overview")}
                     </h2>
                     <p className="mt-3 text-muted-foreground">
-                        {selectedVariant.description}
+                        {variantT(`${selectedVariant.translationKey}.Description` as any)}
                     </p>
                 </div>
 
                 {/* Applications */}
                 <div className="mt-10">
                     <h2 className="text-2xl font-bold mb-4">
-                        Applications
+                        {commonT("Applications")}
                     </h2>
                     <ul className="grid grid-cols-2 gap-3">
                         {selectedVariant.applications.map((item) => (
@@ -81,7 +87,7 @@ export default function ProductGallery({ product }: Props) {
                                 className="flex items-center gap-2"
                             >
                                 <CheckCircle className="h-5 w-5 text-orange-500" />
-                                {item}
+                                {variantT(`${selectedVariant.translationKey}.Applications.${item}` as any)}
                             </li>
                         ))}
                     </ul>
@@ -92,15 +98,22 @@ export default function ProductGallery({ product }: Props) {
                     {selectedVariant.technicalTables.map((table) => (
                         <TechnicalTable
                             key={table.title}
-                            title={table.title}
+                            title={variantT(
+                                `${selectedVariant.translationKey}.TechnicalTables.${table.title}` as any
+                            )}
                             headers={table.headers}
                             rows={table.rows}
+                            product={product}
                         />
                     ))}
                 </div>
 
                 <div className="mt-12 space-y-10">
-                    <ProductFAQ faq={selectedVariant.faq} />
+                    <ProductFAQ
+                        translationKey={selectedVariant.translationKey}
+                        faq={selectedVariant.faq}
+                        product={product}
+                    />
                 </div>
 
             </div>
@@ -111,7 +124,7 @@ export default function ProductGallery({ product }: Props) {
                     <Card className="rounded-xl">
                         <CardHeader>
                             <CardTitle>
-                                Technical Specifications
+                                {commonT("TechnicalSpecifications")}
                             </CardTitle>
                         </CardHeader>
                         <CardContent>
@@ -122,17 +135,17 @@ export default function ProductGallery({ product }: Props) {
                                         className="flex items-center justify-between border-b pb-3 last:border-none"
                                     >
                                         <span className="text-muted-foreground">
-                                            {spec.key}
+                                            {variantT(`${selectedVariant.translationKey}.Specifications.${spec.key}` as any)}
+                                        </span>
+                                        <span className="text-muted-foreground">
+                                            {variantT(`${selectedVariant.translationKey}.Specifications.${spec.value}` as any)}
                                         </span>
 
-                                        <span className="font-semibold">
-                                            {spec.value}
-                                        </span>
                                     </div>
                                 ))}
                             </div>
                             <Button className="mt-6 w-full cursor-pointer" onClick={() => router.push("/contact")}>
-                                Request Quote
+                                {commonT("RequestQuote")}
                             </Button>
                         </CardContent>
                     </Card>

@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
+import { useTranslations } from "next-intl";
+import { Product } from "@/types";
 
 interface FAQItem {
   question: string;
@@ -9,22 +11,31 @@ interface FAQItem {
 }
 
 interface Props {
+  translationKey: string;
   faq: FAQItem[];
+  product: Product;
 }
 
-export default function ProductFAQ({ faq }: Props) {
+export default function ProductFAQ({
+  translationKey,
+  faq,
+  product
+}: Props) {
+  const t = useTranslations("Products.PigIron.Variants");
+  const commonT = useTranslations("Common");
+  const variantT = useTranslations(`Products.${product.key}.Variants` as any);
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
     <section className="mt-12">
       <h2 className="mb-6 text-3xl font-bold">
-        Frequently Asked Questions
+        {commonT("FrequentlyAskedQuestions")}
       </h2>
 
       <div className="space-y-4">
         {faq.map((item, index) => (
           <div
-            key={index}
+            key={item.question}
             className="rounded-xl border border-gray-200 dark:border-gray-700"
           >
             <button
@@ -33,18 +44,17 @@ export default function ProductFAQ({ faq }: Props) {
               }
               className="flex w-full items-center justify-between p-5 text-left font-semibold"
             >
-              {item.question}
+              {variantT(`${translationKey}.FAQ.${item.question}` as any)}
 
               <ChevronDown
-                className={`h-5 w-5 transition-transform ${
-                  openIndex === index ? "rotate-180" : ""
-                }`}
+                className={`h-5 w-5 transition-transform ${openIndex === index ? "rotate-180" : ""
+                  }`}
               />
             </button>
 
             {openIndex === index && (
               <div className="border-t px-5 py-4 text-gray-600 dark:text-gray-400">
-                {item.answer}
+                {variantT(`${translationKey}.FAQ.${item.answer}` as any)}
               </div>
             )}
           </div>
