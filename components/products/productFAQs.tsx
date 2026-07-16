@@ -35,7 +35,7 @@ export default function ProductFAQ({
       <div className="space-y-4">
         {faq.map((item, index) => (
           <div
-            key={item.question}
+            key={index}
             className="rounded-xl border border-gray-200 dark:border-gray-700"
           >
             <button

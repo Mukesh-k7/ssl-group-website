@@ -136,19 +136,291 @@
     "PigIron": {
       "Name": "पिग आयरन",
       "Category": "फेरस धातुएँ",
-      "ShortDescription": "ब्लास्ट फर्नेस और कास्टिंग अनुप्रयोगों के लिए नियंत्रित सिलिकॉन और सल्फर युक्त फाउंड्री एवं स्टील ग्रेड पिग आयरन।",
-      "Description": "SSL Group ISO-प्रमाणित एकीकृत इस्पात संयंत्रों से प्राप्त प्रीमियम फाउंड्री और बेसिक पिग आयरन का निर्यात करता है।",
-      "Specifications": {
-        "Carbon": "कार्बन (C)",
-        "Silicon": "सिलिकॉन (Si)",
-        "Sulfur": "सल्फर (S)",
-        "Phosphorus": "फॉस्फोरस (P)"
+      "ShortDescription": "ब्लास्ट फर्नेस और कास्टिंग अनुप्रयोगों के लिए नियंत्रित सिलिकॉन और सल्फर सामग्री वाला फाउंड्री एवं स्टील-ग्रेड पिग आयरन।",
+      "Description": "SSL Group ISO-प्रमाणित एकीकृत स्टील संयंत्रों से प्राप्त उच्च गुणवत्ता वाले फाउंड्री और बेसिक पिग आयरन का निर्यात करता है।",
+      "Specification": {
+        "FoundryPigIron": "फाउंड्री ग्रेड पिग आयरन",
+        "BasicPigIron": "बेसिक ग्रेड पिग आयरन",
+        "NodularPigIron": "नोड्यूलर (SG) पिग आयरन",
+        "SteelPigIron": "स्टील ग्रेड पिग आयरन"
       },
-      "Applications": {
-        "FoundryCastings": "फाउंड्री कास्टिंग",
-        "DuctileIronProduction": "डक्टाइल आयरन उत्पादन",
-        "SteelChargeMaterial": "स्टील चार्ज सामग्री",
-        "AutomotiveComponents": "ऑटोमोटिव घटक"
+      "Variants": {
+        "FoundryGradePigIron": {
+          "Name": "फाउंड्री ग्रेड पिग आयरन",
+          "Description": "फाउंड्री ग्रेड पिग आयरन का उपयोग ग्रे आयरन कास्टिंग, डक्टाइल आयरन और मैलेबल आयरन के निर्माण में किया जाता है। इसमें सिलिकॉन और सल्फर की नियंत्रित मात्रा होती है, जिससे उत्कृष्ट कास्टिंग गुणवत्ता प्राप्त होती है।",
+          "Specifications": {
+            "Grade": "ग्रेड",
+            "Packing": "पैकिंग",
+            "Standard": "मानक",
+            "Origin": "मूल देश",
+            "GradeValue": "फाउंड्री ग्रेड पिग आयरन",
+            "PackingValue": "लूज़ / 1 एमटी जंबो बैग",
+            "StandardValue": "IS / ASTM / ISO समकक्ष",
+            "OriginValue": "भारत"
+          },
+          "TechnicalTables": {
+            "ChemicalComposition": "रासायनिक संरचना",
+            "PhysicalProperties": "भौतिक गुण",
+            "ChemicalHeaders": {
+              "Grade": "ग्रेड",
+              "C": "कार्बन (C)",
+              "Si": "सिलिकॉन (Si)",
+              "Mn": "मैंगनीज (Mn)",
+              "P": "फॉस्फोरस (P)",
+              "S": "सल्फर (S)"
+            },
+            "PhysicalHeaders": {
+              "Property": "गुण",
+              "Value": "मान"
+            },
+            "PhysicalPropertiesRows": {
+              "Appearance": "दिखावट",
+              "GreyMetallic": "धूसर धात्विक",
+              "Shape": "आकार",
+              "PigBlocks": "पिग / ब्लॉक",
+              "Color": "रंग",
+              "DarkGrey": "गहरा धूसर",
+              "Density": "घनत्व",
+              "SpecificGravity": "विशिष्ट गुरुत्व",
+              "MeltingPoint": "गलनांक",
+              "StandardWeight": "मानक वजन",
+              "Packing": "पैकिंग",
+              "Storage": "भंडारण",
+              "StoreDryCoveredArea": "सूखी एवं ढकी हुई जगह पर रखें"
+            }
+          },
+          "Applications": {
+            "GreyIronCastings": "ग्रे आयरन कास्टिंग",
+            "AutomotiveComponents": "ऑटोमोटिव कंपोनेंट्स",
+            "MachinePartsManufacturing": "मशीन पार्ट्स निर्माण",
+            "PipePipeFittings": "पाइप एवं पाइप फिटिंग्स",
+            "ManholeCoversDrainageCastings": "मैनहोल कवर एवं ड्रेनेज कास्टिंग",
+            "AgriculturalEquipment": "कृषि उपकरण",
+            "EngineeringIndustrialCastings": "इंजीनियरिंग एवं औद्योगिक कास्टिंग",
+            "FoundryIndustry": "फाउंड्री उद्योग"
+          },
+          "FAQ": {
+            "WhatIsFoundryPigIronQuestion": "फाउंड्री ग्रेड पिग आयरन क्या है?",
+            "WhatIsFoundryPigIronAnswer": "फाउंड्री ग्रेड पिग आयरन एक उच्च गुणवत्ता वाला कच्चा माल है, जिसका उपयोग ग्रे आयरन कास्टिंग के निर्माण में किया जाता है। यह उत्कृष्ट फ्लूडिटी, मशीनिंग क्षमता और स्थिर रासायनिक संरचना प्रदान करता है।",
+            "GradesQuestion": "आप कौन-कौन से फाउंड्री ग्रेड पिग आयरन उपलब्ध कराते हैं?",
+            "GradesAnswer": "हम ग्राहक की आवश्यकता के अनुसार L1, L2, L3, L4, L5, L6 तथा L5–L6 लो Mn ग्रेड उपलब्ध कराते हैं।",
+            "ApplicationsQuestion": "फाउंड्री ग्रेड पिग आयरन का उपयोग कहाँ किया जाता है?",
+            "ApplicationsAnswer": "इसका उपयोग ग्रे आयरन कास्टिंग, ऑटोमोटिव कंपोनेंट्स, मशीन पार्ट्स, पाइप, मैनहोल कवर, कृषि उपकरण और इंजीनियरिंग कास्टिंग के निर्माण में किया जाता है।",
+            "PackingQuestion": "कौन-कौन से पैकिंग विकल्प उपलब्ध हैं?",
+            "PackingAnswer": "उत्पाद लूज़ बल्क, पैलेटाइज्ड लोड या 1 एमटी जंबो बैग में ग्राहक एवं निर्यात आवश्यकताओं के अनुसार उपलब्ध कराया जाता है।",
+            "CustomizedQuestion": "क्या आप कस्टमाइज्ड ग्रेड और स्पेसिफिकेशन उपलब्ध कराते हैं?",
+            "CustomizedAnswer": "हाँ, हम ग्राहक की आवश्यकता और उद्योग मानकों के अनुसार विभिन्न ग्रेड एवं स्पेसिफिकेशन उपलब्ध कराते हैं।",
+            "ExportQuestion": "क्या आप फाउंड्री ग्रेड पिग आयरन का निर्यात करते हैं?",
+            "ExportAnswer": "हाँ, हम उच्च गुणवत्ता, विश्वसनीय सोर्सिंग और समय पर डिलीवरी के साथ घरेलू एवं अंतरराष्ट्रीय बाजारों में फाउंड्री ग्रेड पिग आयरन की आपूर्ति और निर्यात करते हैं।"
+          }
+        },
+        "BasicGradePigIron": {
+          "Name": "बेसिक ग्रेड पिग आयरन",
+          "Description": "बेसिक ग्रेड पिग आयरन मुख्य रूप से स्टील निर्माण और बेसिक ऑक्सीजन फर्नेस (BOF), इलेक्ट्रिक आर्क फर्नेस (EAF) तथा इंडक्शन फर्नेस में चार्ज मटेरियल के रूप में उपयोग किया जाता है। इसमें कम सिलिकॉन और नियंत्रित फॉस्फोरस एवं सल्फर की मात्रा होती है, जिससे उच्च गुणवत्ता वाले स्टील का उत्पादन संभव होता है।",
+          "Specifications": {
+            "Grade": "ग्रेड",
+            "Packing": "पैकिंग",
+            "Standard": "मानक",
+            "Origin": "मूल देश",
+            "GradeValue": "बेसिक ग्रेड पिग आयरन",
+            "PackingValue": "लूज़ / 1 एमटी जंबो बैग",
+            "StandardValue": "IS / ASTM / ISO समकक्ष",
+            "OriginValue": "भारत"
+          },
+          "TechnicalTables": {
+            "ChemicalComposition": "रासायनिक संरचना",
+            "PhysicalProperties": "भौतिक गुण",
+            "ChemicalHeaders": {
+              "Grade": "ग्रेड",
+              "C": "कार्बन (C)",
+              "Si": "सिलिकॉन (Si)",
+              "Mn": "मैंगनीज (Mn)",
+              "P": "फॉस्फोरस (P)",
+              "S": "सल्फर (S)"
+            },
+            "PhysicalHeaders": {
+              "Property": "गुण",
+              "Value": "मान"
+            },
+            "PhysicalPropertiesRows": {
+              "Appearance": "दिखावट",
+              "GreyMetallic": "धूसर धात्विक",
+              "Shape": "पिग / ब्लॉक",
+              "PigBlocks": "पिग / ब्लॉक",
+              "Color": "रंग",
+              "DarkGrey": "गहरा धूसर",
+              "Density": "घनत्व",
+              "SpecificGravity": "विशिष्ट गुरुत्व",
+              "MeltingPoint": "गलनांक",
+              "StandardWeight": "मानक वजन",
+              "Packing": "पैकिंग",
+              "Storage": "भंडारण",
+              "StoreDryCoveredArea": "सूखी एवं ढकी हुई जगह पर रखें"
+            }
+          },
+          "Applications": {
+            "SteelMaking": "स्टील निर्माण",
+            "ElectricArcFurnace": "इलेक्ट्रिक आर्क फर्नेस (EAF)",
+            "InductionFurnaces": "इंडक्शन फर्नेस",
+            "SteelFoundries": "स्टील फाउंड्री",
+            "AlloySteelProduction": "अलॉय स्टील उत्पादन",
+            "CarbonSteelManufacturing": "कार्बन स्टील निर्माण",
+            "CastingIndustry": "कास्टिंग उद्योग",
+            "EngineeringApplications": "इंजीनियरिंग अनुप्रयोग"
+          },
+          "FAQ": {
+            "WhatIsBasicPigIronQuestion": "बेसिक ग्रेड पिग आयरन क्या है?",
+            "WhatIsBasicPigIronAnswer": "बेसिक ग्रेड पिग आयरन एक उच्च गुणवत्ता वाला कच्चा माल है जिसका उपयोग मुख्य रूप से स्टील निर्माण में किया जाता है। इसमें कम सिलिकॉन और नियंत्रित फॉस्फोरस व सल्फर की मात्रा होती है।",
+            "GradesQuestion": "आप कौन-कौन से बेसिक ग्रेड पिग आयरन उपलब्ध कराते हैं?",
+            "GradesAnswer": "हम ग्राहक की आवश्यकता के अनुसार विभिन्न बेसिक ग्रेड पिग आयरन उपलब्ध कराते हैं।",
+            "ApplicationsQuestion": "बेसिक ग्रेड पिग आयरन का उपयोग कहाँ किया जाता है?",
+            "ApplicationsAnswer": "इसका उपयोग स्टील प्लांट, BOF, EAF, इंडक्शन फर्नेस, स्टील कास्टिंग और इंजीनियरिंग उद्योगों में किया जाता है।",
+            "PackingQuestion": "कौन-कौन से पैकिंग विकल्प उपलब्ध हैं?",
+            "PackingAnswer": "उत्पाद लूज़ बल्क, पैलेटाइज्ड लोड या 1 एमटी जंबो बैग में उपलब्ध कराया जाता है।",
+            "CustomizedQuestion": "क्या आप कस्टमाइज्ड स्पेसिफिकेशन उपलब्ध कराते हैं?",
+            "CustomizedAnswer": "हाँ, हम ग्राहक की आवश्यकता और अंतरराष्ट्रीय मानकों के अनुसार विभिन्न ग्रेड एवं स्पेसिफिकेशन उपलब्ध कराते हैं।",
+            "ExportQuestion": "क्या आप बेसिक ग्रेड पिग आयरन का निर्यात करते हैं?",
+            "ExportAnswer": "हाँ, हम विश्वभर में उच्च गुणवत्ता वाले बेसिक ग्रेड पिग आयरन का निर्यात करते हैं।"
+          }
+        },
+        "SteelGradePigIron": {
+          "Name": "स्टील ग्रेड पिग आयरन",
+          "Description": "स्टील ग्रेड पिग आयरन का उपयोग स्टील निर्माण में उच्च गुणवत्ता वाले चार्ज मटेरियल के रूप में किया जाता है। इसमें कम सिलिकॉन तथा नियंत्रित फॉस्फोरस और सल्फर की मात्रा होती है, जिससे बेहतर धातुकर्म गुण और उच्च गुणवत्ता वाला स्टील प्राप्त होता है।",
+          "Specifications": {
+            "Grade": "ग्रेड",
+            "Packing": "पैकिंग",
+            "Standard": "मानक",
+            "Origin": "मूल देश",
+            "GradeValue": "स्टील ग्रेड पिग आयरन",
+            "PackingValue": "लूज़ / 1 एमटी जंबो बैग",
+            "StandardValue": "IS / ASTM / ISO समकक्ष",
+            "OriginValue": "भारत"
+          },
+          "TechnicalTables": {
+            "ChemicalComposition": "रासायनिक संरचना",
+            "PhysicalProperties": "भौतिक गुण",
+            "ChemicalHeaders": {
+              "Grade": "ग्रेड",
+              "C": "कार्बन (C)",
+              "Si": "सिलिकॉन (Si)",
+              "Mn": "मैंगनीज (Mn)",
+              "P": "फॉस्फोरस (P)",
+              "S": "सल्फर (S)"
+            },
+            "PhysicalHeaders": {
+              "Property": "गुण",
+              "Value": "मान"
+            },
+            "PhysicalPropertiesRows": {
+              "Appearance": "दिखावट",
+              "GreyMetallic": "धूसर धात्विक",
+              "Shape": "पिग / ब्लॉक",
+              "PigBlocks": "पिग / ब्लॉक",
+              "Color": "रंग",
+              "DarkGrey": "गहरा धूसर",
+              "Density": "घनत्व",
+              "SpecificGravity": "विशिष्ट गुरुत्व",
+              "MeltingPoint": "गलनांक",
+              "StandardWeight": "मानक वजन",
+              "Packing": "पैकिंग",
+              "Storage": "भंडारण",
+              "StoreDryCoveredArea": "सूखी एवं ढकी हुई जगह पर रखें"
+            }
+          },
+          "Applications": {
+            "SteelMaking": "स्टील निर्माण",
+            "ElectricArcFurnaces": "इलेक्ट्रिक आर्क फर्नेस",
+            "InductionFurnaces": "इंडक्शन फर्नेस",
+            "CarbonSteelProduction": "कार्बन स्टील उत्पादन",
+            "AlloySteelManufacturing": "अलॉय स्टील निर्माण",
+            "FoundryIndustry": "फाउंड्री उद्योग",
+            "EngineeringApplications": "इंजीनियरिंग अनुप्रयोग",
+            "CastingIndustry": "कास्टिंग उद्योग"
+          },
+          "FAQ": {
+            "WhatIsSteelPigIronQuestion": "स्टील ग्रेड पिग आयरन क्या है?",
+            "WhatIsSteelPigIronAnswer": "स्टील ग्रेड पिग आयरन एक उच्च गुणवत्ता वाला कच्चा माल है जिसका उपयोग स्टील निर्माण में चार्ज मटेरियल के रूप में किया जाता है।",
+            "GradesQuestion": "क्या आप विभिन्न स्टील ग्रेड पिग आयरन उपलब्ध कराते हैं?",
+            "GradesAnswer": "हाँ, हम ग्राहक की आवश्यकताओं और अंतरराष्ट्रीय मानकों के अनुसार विभिन्न स्टील ग्रेड उपलब्ध कराते हैं।",
+            "ApplicationsQuestion": "स्टील ग्रेड पिग आयरन का उपयोग कहाँ किया जाता है?",
+            "ApplicationsAnswer": "इसका उपयोग स्टील प्लांट, BOF, EAF, इंडक्शन फर्नेस, कंटीन्युअस कास्टिंग और अलॉय स्टील निर्माण में किया जाता है।",
+            "PackingQuestion": "पैकिंग के विकल्प क्या हैं?",
+            "PackingAnswer": "उत्पाद लूज़ बल्क, पैलेटाइज्ड लोड या 1 एमटी जंबो बैग में उपलब्ध कराया जाता है।",
+            "CustomizedQuestion": "क्या आप कस्टम स्पेसिफिकेशन प्रदान करते हैं?",
+            "CustomizedAnswer": "हाँ, हम ग्राहक की आवश्यकताओं के अनुसार विभिन्न ग्रेड और स्पेसिफिकेशन उपलब्ध कराते हैं।",
+            "ExportQuestion": "क्या आप स्टील ग्रेड पिग आयरन का निर्यात करते हैं?",
+            "ExportAnswer": "हाँ, हम उच्च गुणवत्ता वाले स्टील ग्रेड पिग आयरन का विश्वभर में निर्यात करते हैं।"
+          }
+        },
+        "NodularPigIron": {
+          "Name": "नोड्यूलर (SG) पिग आयरन",
+          "Description": "नोड्यूलर (SG) पिग आयरन विशेष रूप से डक्टाइल (स्फेरॉइडल ग्रेफाइट) आयरन कास्टिंग के उत्पादन के लिए विकसित किया गया है। इसमें नियंत्रित सिलिकॉन, मैंगनीज, फॉस्फोरस और सल्फर की मात्रा होती है, जिससे उच्च शक्ति, उत्कृष्ट लचीलापन और बेहतर यांत्रिक गुण प्राप्त होते हैं।",
+          "Specifications": {
+            "Grade": "ग्रेड",
+            "Packing": "पैकिंग",
+            "Standard": "मानक",
+            "Origin": "मूल देश",
+            "GradeValue": "नोड्यूलर (SG) पिग आयरन",
+            "PackingValue": "लूज़ / 1 एमटी जंबो बैग",
+            "StandardValue": "IS / ASTM / ISO समकक्ष",
+            "OriginValue": "भारत"
+          },
+          "TechnicalTables": {
+            "ChemicalComposition": "रासायनिक संरचना",
+            "PhysicalProperties": "भौतिक गुण",
+            "ChemicalHeaders": {
+              "Grade": "ग्रेड",
+              "C": "कार्बन (C)",
+              "Si": "सिलिकॉन (Si)",
+              "Mn": "मैंगनीज (Mn)",
+              "P": "फॉस्फोरस (P)",
+              "S": "सल्फर (S)"
+            },
+            "PhysicalHeaders": {
+              "Property": "गुण",
+              "Value": "मान"
+            },
+            "PhysicalPropertiesRows": {
+              "Appearance": "दिखावट",
+              "GreyMetallic": "धूसर धात्विक",
+              "Shape": "पिग / ब्लॉक",
+              "PigBlocks": "पिग / ब्लॉक",
+              "Color": "रंग",
+              "DarkGrey": "गहरा धूसर",
+              "Density": "घनत्व",
+              "SpecificGravity": "विशिष्ट गुरुत्व",
+              "MeltingPoint": "गलनांक",
+              "StandardWeight": "मानक वजन",
+              "Packing": "पैकिंग",
+              "Storage": "भंडारण",
+              "StoreDryCoveredArea": "सूखी एवं ढकी हुई जगह पर रखें"
+            }
+          },
+          "Applications": {
+            "DuctileIronCastings": "डक्टाइल आयरन कास्टिंग",
+            "AutomotiveComponents": "ऑटोमोटिव कंपोनेंट्स",
+            "PipePipeFittings": "पाइप एवं पाइप फिटिंग्स",
+            "ValvesPumps": "वाल्व एवं पंप",
+            "MachineComponents": "मशीन कंपोनेंट्स",
+            "AgriculturalEquipment": "कृषि उपकरण",
+            "EngineeringCastings": "इंजीनियरिंग कास्टिंग",
+            "FoundryIndustry": "फाउंड्री उद्योग"
+          },
+          "FAQ": {
+            "WhatIsNodularPigIronQuestion": "नोड्यूलर (SG) पिग आयरन क्या है?",
+            "WhatIsNodularPigIronAnswer": "नोड्यूलर (SG) पिग आयरन एक उच्च गुणवत्ता वाला कच्चा माल है जिसका उपयोग डक्टाइल (स्फेरॉइडल ग्रेफाइट) आयरन कास्टिंग के निर्माण में किया जाता है।",
+            "GradesQuestion": "क्या आप विभिन्न ग्रेड उपलब्ध कराते हैं?",
+            "GradesAnswer": "हाँ, हम ग्राहक की आवश्यकता और अंतरराष्ट्रीय मानकों के अनुसार विभिन्न ग्रेड उपलब्ध कराते हैं।",
+            "ApplicationsQuestion": "नोड्यूलर पिग आयरन का उपयोग कहाँ किया जाता है?",
+            "ApplicationsAnswer": "इसका उपयोग डक्टाइल आयरन पाइप, ऑटोमोटिव पार्ट्स, वाल्व, पंप बॉडी, कृषि उपकरण और भारी इंजीनियरिंग कास्टिंग के निर्माण में किया जाता है।",
+            "PackingQuestion": "कौन-कौन से पैकिंग विकल्प उपलब्ध हैं?",
+            "PackingAnswer": "उत्पाद लूज़ बल्क, पैलेटाइज्ड लोड या 1 एमटी जंबो बैग में उपलब्ध कराया जाता है।",
+            "CustomizedQuestion": "क्या आप कस्टम स्पेसिफिकेशन प्रदान करते हैं?",
+            "CustomizedAnswer": "हाँ, हम ग्राहक की आवश्यकता के अनुसार विभिन्न ग्रेड और स्पेसिफिकेशन उपलब्ध कराते हैं।",
+            "ExportQuestion": "क्या आप नोड्यूलर (SG) पिग आयरन का निर्यात करते हैं?",
+            "ExportAnswer": "हाँ, हम विश्वभर में उच्च गुणवत्ता वाले नोड्यूलर (SG) पिग आयरन का निर्यात करते हैं।"
+          }
+        }
       }
     },
     "FerroAlloys": {
@@ -247,6 +519,571 @@
         "Gasketsandseals": "गास्केट और सील"
       }
     },
+    "Coal": {
+      "Name": "Coal",
+      "Category": "Industrial Minerals",
+      "ShortDescription": "SSL Group supplies high-quality industrial coal with controlled moisture, ash content, and calorific value to ensure efficient combustion, reduced operating costs, and dependable performance across metallurgical and industrial applications.",
+      "Description": "Coal is a naturally occurring carbon-rich fuel widely used in steel manufacturing, foundries, power generation, cement production, and various industrial heating applications.",
+      "Specification": {
+        "FixedCarbon": "Fixed Carbon (FC)",
+        "AshContent": "Ash Content",
+        "VolatileMatter": "Volatile Matter (VM)",
+        "Moisture": "Moisture",
+        "Sulphur": "Sulphur (S)"
+      },
+      "Variants": {
+        "Anthracite": {
+          "Name": "Anthracite",
+          "Description": "Anthracite is a premium-grade hard coal with high fixed carbon, low ash, and low volatile matter. It is widely used as a carbon additive in steelmaking, foundries, metallurgy, water filtration, and industrial heating applications.",
+          "Specifications": {
+            "Grade": "Grade",
+            "Packing": "Packing",
+            "Standard": "Standard",
+            "Origin": "Origin",
+            "GradeValue": "AC 85 / AC 90 / AC 95",
+            "PackingValue": "25 Kg Bags / 1 MT Jumbo Bag",
+            "StandardValue": "IS / ASTM / ISO Equivalent",
+            "OriginValue": "India / Imported"
+          },
+          "TechnicalTables": {
+            "ChemicalComposition": "Chemical Composition",
+            "PhysicalProperties": "Physical Properties",
+            "ChemicalHeaders": {
+              "Grade": "Grade",
+              "FC": "Fixed Carbon",
+              "Ash": "Ash",
+              "VM": "Volatile Matter",
+              "Moisture": "Moisture",
+              "Sulfur": "Sulfur"
+            },
+            "PhysicalHeaders": {
+              "Property": "Property",
+              "Value": "Value"
+            },
+            "PhysicalPropertiesRows": {
+              "Appearance": "Appearance",
+              "Black": "Black",
+              "Shape": "Shape",
+              "Lumps": "Lumps",
+              "Color": "Color",
+              "Density": "Density",
+              "SpecificGravity": "Specific Gravity",
+              "CalorificValue": "Calorific Value",
+              "Packing": "Packing",
+              "Storage": "Storage",
+              "StoreDryCoveredArea": "Store in a dry and covered area"
+            }
+          },
+          "Applications": {
+            "SteelMaking": "Steel Making",
+            "FoundryIndustry": "Foundry Industry",
+            "CarbonAdditive": "Carbon Additive",
+            "MetallurgicalIndustry": "Metallurgical Industry",
+            "WaterFiltration": "Water Filtration",
+            "PowerGeneration": "Power Generation",
+            "ChemicalIndustry": "Chemical Industry",
+            "IndustrialHeating": "Industrial Heating"
+          },
+          "FAQ": {
+            "WhatIsAnthraciteQuestion": "What is Anthracite?",
+            "WhatIsAnthraciteAnswer": "Anthracite is the highest-grade natural coal with high carbon content, low sulfur, and low volatile matter. It is widely used as a carbon additive, fuel, and filtration media in industrial applications.",
+            "GradesQuestion": "What grades of Anthracite do you supply?",
+            "GradesAnswer": "We supply Anthracite with fixed carbon ranging from 85% to 95%, along with customized grades based on customer specifications.",
+            "ApplicationsQuestion": "What are the applications of Anthracite?",
+            "ApplicationsAnswer": "Anthracite is widely used in steel plants, foundries, metallurgical industries, water filtration systems, power plants, and industrial heating applications.",
+            "PackingQuestion": "What packing options are available?",
+            "PackingAnswer": "Available in 25 kg bags, 1 MT jumbo bags, and customized export packaging.",
+            "CustomizedQuestion": "Can you provide customized grades and sizes?",
+            "CustomizedAnswer": "Yes. We provide customized fixed carbon content, particle sizes, and packaging according to customer requirements.",
+            "ExportQuestion": "Do you export Anthracite internationally?",
+            "ExportAnswer": "Yes. We export premium-quality Anthracite to domestic and international markets with consistent quality, competitive pricing, and timely delivery."
+          }
+        },
+        "SteamCoal": {
+          "Name": "Steam Coal",
+          "Description": "Steam Coal, also known as Thermal Coal, is a high-quality fuel used for electricity generation, industrial boilers, cement plants, and various manufacturing industries. It offers consistent calorific value, low moisture, and reliable combustion efficiency.",
+          "Specifications": {
+            "Grade": "Grade",
+            "Packing": "Packing",
+            "Standard": "Standard",
+            "Origin": "Origin",
+            "GradeValue": "5500 / 6000 / 6500 GCV",
+            "PackingValue": "Loose Bulk / 1 MT Jumbo Bag",
+            "StandardValue": "IS / ASTM / ISO Equivalent",
+            "OriginValue": "India / Indonesia / South Africa"
+          },
+          "TechnicalTables": {
+            "ChemicalComposition": "Chemical Composition",
+            "PhysicalProperties": "Physical Properties",
+            "ChemicalHeaders": {
+              "Grade": "Grade",
+              "GCV": "Gross Calorific Value",
+              "Ash": "Ash",
+              "VM": "Volatile Matter",
+              "Moisture": "Moisture",
+              "Sulfur": "Sulfur"
+            },
+            "PhysicalHeaders": {
+              "Property": "Property",
+              "Value": "Value"
+            },
+            "PhysicalPropertiesRows": {
+              "Appearance": "Appearance",
+              "Black": "Black",
+              "Shape": "Shape",
+              "Lumps": "Lumps",
+              "Color": "Color",
+              "Density": "Density",
+              "SpecificGravity": "Specific Gravity",
+              "CalorificValue": "Calorific Value",
+              "Packing": "Packing",
+              "Storage": "Storage",
+              "StoreDryCoveredArea": "Store in a dry and covered area"
+            }
+          },
+          "Applications": {
+            "PowerGeneration": "Power Generation",
+            "CementIndustry": "Cement Industry",
+            "SteelIndustry": "Steel Industry",
+            "PaperIndustry": "Paper Industry",
+            "TextileIndustry": "Textile Industry",
+            "IndustrialBoilers": "Industrial Boilers",
+            "BrickKilns": "Brick Kilns",
+            "ChemicalIndustry": "Chemical Industry"
+          },
+          "FAQ": {
+            "WhatIsSteamCoalQuestion": "What is Steam Coal?",
+            "WhatIsSteamCoalAnswer": "Steam Coal, also known as Thermal Coal, is a type of coal primarily used for electricity generation and industrial heating applications because of its high calorific value and efficient combustion.",
+            "GradesQuestion": "What grades of Steam Coal do you supply?",
+            "GradesAnswer": "We supply Steam Coal in various grades ranging from 4200 GCV to 7000 GCV, including Indonesian, South African, and Indian origins.",
+            "ApplicationsQuestion": "What are the applications of Steam Coal?",
+            "ApplicationsAnswer": "Steam Coal is widely used in thermal power plants, cement plants, steel industries, paper mills, textile industries, industrial boilers, brick kilns, and chemical manufacturing.",
+            "PackingQuestion": "What packing options are available?",
+            "PackingAnswer": "Available in loose bulk, 1 MT jumbo bags, and customized export packaging.",
+            "CustomizedQuestion": "Can you provide customized grades and sizing?",
+            "CustomizedAnswer": "Yes. We provide customized GCV ranges, sizing, moisture levels, and packaging according to customer requirements.",
+            "ExportQuestion": "Do you export Steam Coal internationally?",
+            "ExportAnswer": "Yes. We export premium-quality Steam Coal worldwide with consistent quality, competitive pricing, and reliable logistics."
+          }
+        },
+        "PulverizedCoalInjection": {
+          "Name": "Pulverized Coal Injection (PCI)",
+          "Description": "Pulverized Coal Injection (PCI) is a finely ground coal used as an auxiliary fuel in blast furnaces to reduce coke consumption and improve furnace efficiency. It provides high calorific value, low ash, and consistent combustion performance.",
+          "Specifications": {
+            "Grade": "Grade",
+            "Packing": "Packing",
+            "Standard": "Standard",
+            "Origin": "Origin",
+            "GradeValue": "PCI 70 / PCI 75 / PCI 80",
+            "PackingValue": "25 Kg Bags / 1 MT Jumbo Bag",
+            "StandardValue": "IS / ASTM / ISO Equivalent",
+            "OriginValue": "India / Imported"
+          },
+          "TechnicalTables": {
+            "ChemicalComposition": "Chemical Composition",
+            "PhysicalProperties": "Physical Properties",
+            "ChemicalHeaders": {
+              "Grade": "Grade",
+              "FC": "Fixed Carbon",
+              "Ash": "Ash",
+              "VM": "Volatile Matter",
+              "Moisture": "Moisture",
+              "Sulfur": "Sulfur"
+            },
+            "PhysicalHeaders": {
+              "Property": "Property",
+              "Value": "Value"
+            },
+            "PhysicalPropertiesRows": {
+              "Appearance": "Appearance",
+              "Black": "Black",
+              "Shape": "Shape",
+              "Fine Powder": "Fine Powder",
+              "Color": "Color",
+              "Density": "Density",
+              "SpecificGravity": "Specific Gravity",
+              "ParticleSize": "Particle Size",
+              "Packing": "Packing",
+              "Storage": "Storage",
+              "StoreDryCoveredArea": "Store in a dry and covered area"
+            }
+          },
+          "Applications": {
+            "BlastFurnace": "Blast Furnace Injection",
+            "SteelMaking": "Steel Making",
+            "IronMaking": "Iron Making",
+            "MetallurgicalIndustry": "Metallurgical Industry",
+            "FoundryIndustry": "Foundry Industry",
+            "FuelSubstitution": "Coke Replacement",
+            "IndustrialHeating": "Industrial Heating",
+            "EnergyEfficiency": "Energy Efficiency Improvement"
+          },
+          "FAQ": {
+            "WhatIsPulverizedCoalInjectionQuestion": "What is Pulverized Coal Injection (PCI)?",
+            "WhatIsPulverizedCoalInjectionAnswer": "Pulverized Coal Injection (PCI) is finely pulverized coal injected into blast furnaces as a substitute for coke, reducing production costs and improving furnace productivity.",
+            "GradesQuestion": "What grades of PCI Coal do you supply?",
+            "GradesAnswer": "We supply PCI coal with fixed carbon ranging from 70% to 80%, along with customized grades as per customer requirements.",
+            "ApplicationsQuestion": "What are the applications of PCI Coal?",
+            "ApplicationsAnswer": "PCI coal is widely used in blast furnaces, iron making, steel production, metallurgical plants, and energy-efficient industrial processes.",
+            "PackingQuestion": "What packing options are available?",
+            "PackingAnswer": "Available in 25 kg bags, 1 MT jumbo bags, bulk supply, and customized export packaging.",
+            "CustomizedQuestion": "Can you provide customized specifications?",
+            "CustomizedAnswer": "Yes. We provide customized fixed carbon, ash content, particle size, and packaging according to customer requirements.",
+            "ExportQuestion": "Do you export PCI Coal internationally?",
+            "ExportAnswer": "Yes. We export premium-quality Pulverized Coal Injection (PCI) worldwide with consistent quality, competitive pricing, and reliable delivery."
+          }
+        },
+        "CokingCoal": {
+          "Name": "Coking Coal",
+          "Description": "Coking Coal, also known as Metallurgical Coal, is a premium-grade coal used for manufacturing coke in blast furnaces. It offers excellent coking properties, high carbon content, low ash, and low sulfur, making it ideal for iron and steel production.",
+          "Specifications": {
+            "Grade": "Grade",
+            "Packing": "Packing",
+            "Standard": "Standard",
+            "Origin": "Origin",
+            "GradeValue": "Prime Hard / Medium Coking / Semi Soft",
+            "PackingValue": "Loose Bulk / 1 MT Jumbo Bag",
+            "StandardValue": "IS / ASTM / ISO Equivalent",
+            "OriginValue": "Australia / India / Imported"
+          },
+          "TechnicalTables": {
+            "ChemicalComposition": "Chemical Composition",
+            "PhysicalProperties": "Physical Properties",
+            "ChemicalHeaders": {
+              "Grade": "Grade",
+              "FC": "Fixed Carbon",
+              "Ash": "Ash",
+              "VM": "Volatile Matter",
+              "Moisture": "Moisture",
+              "Sulfur": "Sulfur"
+            },
+            "PhysicalHeaders": {
+              "Property": "Property",
+              "Value": "Value"
+            },
+            "PhysicalPropertiesRows": {
+              "Appearance": "Appearance",
+              "Black": "Black",
+              "Shape": "Shape",
+              "Lumps": "Lumps",
+              "Color": "Color",
+              "Density": "Density",
+              "SpecificGravity": "Specific Gravity",
+              "CalorificValue": "Calorific Value",
+              "Packing": "Packing",
+              "Storage": "Storage",
+              "StoreDryCoveredArea": "Store in a dry and covered area"
+            }
+          },
+          "Applications": {
+            "BlastFurnace": "Blast Furnace",
+            "CokeManufacturing": "Coke Manufacturing",
+            "SteelMaking": "Steel Making",
+            "IronMaking": "Iron Making",
+            "MetallurgicalIndustry": "Metallurgical Industry",
+            "FoundryIndustry": "Foundry Industry",
+            "IndustrialFuel": "Industrial Fuel",
+            "ChemicalIndustry": "Chemical Industry"
+          },
+          "FAQ": {
+            "WhatIsCokingCoalQuestion": "What is Coking Coal?",
+            "WhatIsCokingCoalAnswer": "Coking Coal is a high-grade metallurgical coal used to manufacture coke for blast furnaces in the iron and steel industry. It possesses excellent coking characteristics and high carbon content.",
+            "GradesQuestion": "What grades of Coking Coal do you supply?",
+            "GradesAnswer": "We supply Prime Hard Coking Coal, Medium Coking Coal, Semi Soft Coking Coal, and customized grades according to customer specifications.",
+            "ApplicationsQuestion": "What are the applications of Coking Coal?",
+            "ApplicationsAnswer": "Coking Coal is widely used in coke ovens, blast furnaces, steel plants, foundries, metallurgical industries, and chemical manufacturing.",
+            "PackingQuestion": "What packing options are available?",
+            "PackingAnswer": "Available in loose bulk, 1 MT jumbo bags, and customized export packaging.",
+            "CustomizedQuestion": "Can you provide customized grades and specifications?",
+            "CustomizedAnswer": "Yes. We supply customized ash content, volatile matter, sulfur levels, sizing, and packaging according to customer requirements.",
+            "ExportQuestion": "Do you export Coking Coal internationally?",
+            "ExportAnswer": "Yes. We export premium-quality Coking Coal worldwide with consistent quality, competitive pricing, and reliable delivery."
+          }
+        }
+      }
+    },
+    "LimeStone": {
+      "Name": "Lime Stone",
+      "Category": "Industrial Minerals",
+      "ShortDescription": "Premium-quality Limestone with high calcium content, widely used in steel plants, cement manufacturing, construction, chemical processing, glass production, and water treatment applications.",
+      "Description": "Limestone is a naturally occurring sedimentary rock primarily composed of calcium carbonate (CaCO₃). It is one of the most widely used industrial minerals due to its high calcium content, excellent fluxing properties, and chemical stability.",
+      "Specifications": {
+        "CalciumCarbonate": "Calcium Carbonate (CaCO₃)",
+        "CalciumOxide": "Calcium Oxide (CaO)",
+        "MagnesiumOxide": "Magnesium Oxide (MgO)",
+        "Silica": "Silica (SiO₂)"
+      },
+      "Variants": {
+        "SteelGradeLimestone": {
+          "Name": "Steel Grade Limestone",
+          "Description": "Steel Grade Limestone is a premium-quality flux used in iron and steel manufacturing. With high calcium carbonate content and low silica and magnesium impurities, it efficiently removes impurities during steelmaking and improves slag formation.",
+          "Specifications": {
+            "Grade": "Grade",
+            "Packing": "Packing",
+            "Standard": "Standard",
+            "Origin": "Origin",
+            "GradeValue": "LS-90 / LS-92 / LS-95",
+            "PackingValue": "Loose Bulk / 1 MT Jumbo Bag",
+            "StandardValue": "IS / ASTM / ISO Equivalent",
+            "OriginValue": "India"
+          },
+          "TechnicalTables": {
+            "ChemicalComposition": "Chemical Composition",
+            "PhysicalProperties": "Physical Properties",
+            "ChemicalHeaders": {
+              "Grade": "Grade",
+              "CaCO₃": "Calcium Carbonate",
+              "CaO": "Calcium Oxide",
+              "MgO": "Magnesium Oxide",
+              "SiO₂": "Silica",
+              "Size": "Size"
+            },
+            "PhysicalHeaders": {
+              "Property": "Property",
+              "Value": "Value"
+            },
+            "PhysicalPropertiesRows": {
+              "Appearance": "Appearance",
+              "WhiteGrey": "White Grey",
+              "Shape": "Shape",
+              "Lumps": "Lumps",
+              "Color": "Color",
+              "Density": "Density",
+              "SpecificGravity": "Specific Gravity",
+              "Hardness": "Hardness",
+              "Packing": "Packing",
+              "Storage": "Storage",
+              "StoreDryCoveredArea": "Store in a dry and covered area"
+            }
+          },
+          "Applications": {
+            "SteelMaking": "Steel Making",
+            "BlastFurnace": "Blast Furnace",
+            "BOFConverter": "Basic Oxygen Furnace (BOF)",
+            "ElectricArcFurnace": "Electric Arc Furnace (EAF)",
+            "FluxMaterial": "Flux Material",
+            "IronMaking": "Iron Making",
+            "MetallurgicalIndustry": "Metallurgical Industry",
+            "FoundryIndustry": "Foundry Industry"
+          },
+          "FAQ": {
+            "WhatIsSteelGradeLimestoneQuestion": "What is Steel Grade Limestone?",
+            "WhatIsSteelGradeLimestoneAnswer": "Steel Grade Limestone is a high-purity limestone used as a flux in iron and steel production. It removes impurities such as silica, sulfur, and phosphorus while improving slag formation and furnace efficiency.",
+            "GradesQuestion": "What grades of Steel Grade Limestone do you supply?",
+            "GradesAnswer": "We supply LS-90, LS-92, LS-95, and customized grades with different calcium carbonate content and particle sizes.",
+            "ApplicationsQuestion": "What are the applications of Steel Grade Limestone?",
+            "ApplicationsAnswer": "Steel Grade Limestone is widely used in blast furnaces, BOF converters, electric arc furnaces, iron making, foundries, and metallurgical industries as a fluxing agent.",
+            "PackingQuestion": "What packing options are available?",
+            "PackingAnswer": "Available in loose bulk, 1 MT jumbo bags, and customized export packaging as per customer requirements.",
+            "CustomizedQuestion": "Can you provide customized grades and sizes?",
+            "CustomizedAnswer": "Yes. We provide customized purity levels, lump sizes, and packaging to meet specific steel plant and foundry requirements.",
+            "ExportQuestion": "Do you export Steel Grade Limestone internationally?",
+            "ExportAnswer": "Yes. We export premium-quality Steel Grade Limestone to domestic and international markets with consistent quality, competitive pricing, and reliable logistics."
+          }
+        },
+        "ChemicalGradeLimestone": {
+          "Name": "Chemical Grade Limestone",
+          "Description": "Chemical Grade Limestone is a high-purity limestone with excellent calcium carbonate content and low impurities. It is widely used in chemical processing, glass manufacturing, paper production, sugar refining, water treatment, and industrial mineral applications.",
+          "Specifications": {
+            "Grade": "Grade",
+            "Packing": "Packing",
+            "Standard": "Standard",
+            "Origin": "Origin",
+            "GradeValue": "CG-95 / CG-97 / CG-98",
+            "PackingValue": "25 Kg Bags / 1 MT Jumbo Bag",
+            "StandardValue": "IS / ASTM / ISO Equivalent",
+            "OriginValue": "India"
+          },
+          "TechnicalTables": {
+            "ChemicalComposition": "Chemical Composition",
+            "PhysicalProperties": "Physical Properties",
+            "ChemicalHeaders": {
+              "Grade": "Grade",
+              "CaCO₃": "Calcium Carbonate",
+              "CaO": "Calcium Oxide",
+              "MgO": "Magnesium Oxide",
+              "SiO₂": "Silica",
+              "Fe₂O₃": "Iron Oxide"
+            },
+            "PhysicalHeaders": {
+              "Property": "Property",
+              "Value": "Value"
+            },
+            "PhysicalPropertiesRows": {
+              "Appearance": "Appearance",
+              "WhiteGrey": "White Grey",
+              "Shape": "Shape",
+              "LumpsPowder": "Lumps / Powder",
+              "Color": "Color",
+              "Density": "Density",
+              "SpecificGravity": "Specific Gravity",
+              "Hardness": "Hardness",
+              "Packing": "Packing",
+              "Storage": "Storage",
+              "StoreDryCoveredArea": "Store in a dry and covered area"
+            }
+          },
+          "Applications": {
+            "ChemicalIndustry": "Chemical Industry",
+            "GlassIndustry": "Glass Industry",
+            "PaperIndustry": "Paper Industry",
+            "SugarIndustry": "Sugar Industry",
+            "PaintIndustry": "Paint Industry",
+            "WaterTreatment": "Water Treatment",
+            "CalciumCarbonateProduction": "Calcium Carbonate Production",
+            "IndustrialMinerals": "Industrial Minerals"
+          },
+          "FAQ": {
+            "WhatIsChemicalGradeLimestoneQuestion": "What is Chemical Grade Limestone?",
+            "WhatIsChemicalGradeLimestoneAnswer": "Chemical Grade Limestone is a high-purity limestone containing high calcium carbonate and low silica, magnesium, and iron impurities. It is widely used in chemical and industrial manufacturing processes.",
+            "GradesQuestion": "What grades of Chemical Grade Limestone do you supply?",
+            "GradesAnswer": "We supply CG-95, CG-97, CG-98, and customized grades with different purity levels and particle sizes according to customer requirements.",
+            "ApplicationsQuestion": "What are the applications of Chemical Grade Limestone?",
+            "ApplicationsAnswer": "Chemical Grade Limestone is used in chemical plants, glass manufacturing, paper mills, sugar refineries, paint production, water treatment, and calcium carbonate manufacturing.",
+            "PackingQuestion": "What packing options are available?",
+            "PackingAnswer": "Available in 25 kg bags, 1 MT jumbo bags, bulk supply, and customized export packaging.",
+            "CustomizedQuestion": "Can you provide customized grades and sizes?",
+            "CustomizedAnswer": "Yes. We provide customized purity levels, particle sizes, and packaging according to customer specifications.",
+            "ExportQuestion": "Do you export Chemical Grade Limestone internationally?",
+            "ExportAnswer": "Yes. We export premium-quality Chemical Grade Limestone worldwide with reliable quality, competitive pricing, and timely delivery."
+          }
+        },
+        "CementGradeLimestone": {
+          "Name": "Cement Grade Limestone",
+          "Description": "Cement Grade Limestone is a high-quality raw material used in the production of cement and clinker. It provides the required calcium content for efficient cement manufacturing while maintaining low levels of impurities for consistent product quality.",
+          "Specifications": {
+            "Grade": "Grade",
+            "Packing": "Packing",
+            "Standard": "Standard",
+            "Origin": "Origin",
+            "GradeValue": "CG-80 / CG-85 / CG-90",
+            "PackingValue": "Loose Bulk / 1 MT Jumbo Bag",
+            "StandardValue": "IS / ASTM / ISO Equivalent",
+            "OriginValue": "India"
+          },
+          "TechnicalTables": {
+            "ChemicalComposition": "Chemical Composition",
+            "PhysicalProperties": "Physical Properties",
+            "ChemicalHeaders": {
+              "Grade": "Grade",
+              "CaCO₃": "Calcium Carbonate",
+              "CaO": "Calcium Oxide",
+              "MgO": "Magnesium Oxide",
+              "SiO₂": "Silica",
+              "Size": "Size"
+            },
+            "PhysicalHeaders": {
+              "Property": "Property",
+              "Value": "Value"
+            },
+            "PhysicalPropertiesRows": {
+              "Appearance": "Appearance",
+              "WhiteGrey": "White Grey",
+              "Shape": "Shape",
+              "Lumps": "Lumps",
+              "Color": "Color",
+              "Density": "Density",
+              "SpecificGravity": "Specific Gravity",
+              "Hardness": "Hardness",
+              "Packing": "Packing",
+              "Storage": "Storage",
+              "StoreDryCoveredArea": "Store in a dry and covered area"
+            }
+          },
+          "Applications": {
+            "CementManufacturing": "Cement Manufacturing",
+            "ClinkerProduction": "Clinker Production",
+            "ConstructionIndustry": "Construction Industry",
+            "ReadyMixConcrete": "Ready-Mix Concrete",
+            "InfrastructureProjects": "Infrastructure Projects",
+            "BuildingMaterials": "Building Materials",
+            "IndustrialMinerals": "Industrial Minerals",
+            "LimeProduction": "Lime Production"
+          },
+          "FAQ": {
+            "WhatIsCementGradeLimestoneQuestion": "What is Cement Grade Limestone?",
+            "WhatIsCementGradeLimestoneAnswer": "Cement Grade Limestone is a naturally occurring sedimentary rock with high calcium carbonate content used as the primary raw material in cement and clinker manufacturing.",
+            "GradesQuestion": "What grades of Cement Grade Limestone do you supply?",
+            "GradesAnswer": "We supply CG-80, CG-85, CG-90, and customized grades with different calcium carbonate content and particle sizes to meet cement plant requirements.",
+            "ApplicationsQuestion": "What are the applications of Cement Grade Limestone?",
+            "ApplicationsAnswer": "Cement Grade Limestone is widely used in cement manufacturing, clinker production, ready-mix concrete plants, lime production, and construction material industries.",
+            "PackingQuestion": "What packing options are available?",
+            "PackingAnswer": "Available in loose bulk, 1 MT jumbo bags, and customized export packaging according to customer requirements.",
+            "CustomizedQuestion": "Can you provide customized grades and sizes?",
+            "CustomizedAnswer": "Yes. We provide customized chemical composition, lump sizes, and packaging based on customer specifications.",
+            "ExportQuestion": "Do you export Cement Grade Limestone internationally?",
+            "ExportAnswer": "Yes. We export premium-quality Cement Grade Limestone worldwide with consistent quality, competitive pricing, and reliable logistics."
+          }
+        },
+        "ConstuctionGradeLimestone": {
+          "Name": "Construction Grade Limestone",
+          "Description": "Construction Grade Limestone is a durable and high-quality natural stone widely used in construction, infrastructure, road building, concrete production, and civil engineering projects. It offers excellent strength, durability, and weather resistance.",
+          "Specifications": {
+            "Grade": "Grade",
+            "Packing": "Packing",
+            "Standard": "Standard",
+            "Origin": "Origin",
+            "GradeValue": "CG-75 / CG-80 / CG-85",
+            "PackingValue": "Loose Bulk / 1 MT Jumbo Bag",
+            "StandardValue": "IS / ASTM / ISO Equivalent",
+            "OriginValue": "India"
+          },
+          "TechnicalTables": {
+            "ChemicalComposition": "Chemical Composition",
+            "PhysicalProperties": "Physical Properties",
+            "ChemicalHeaders": {
+              "Grade": "Grade",
+              "CaCO₃": "Calcium Carbonate",
+              "CaO": "Calcium Oxide",
+              "MgO": "Magnesium Oxide",
+              "SiO₂": "Silica",
+              "Size": "Size"
+            },
+            "PhysicalHeaders": {
+              "Property": "Property",
+              "Value": "Value"
+            },
+            "PhysicalPropertiesRows": {
+              "Appearance": "Appearance",
+              "WhiteGrey": "White Grey",
+              "Shape": "Shape",
+              "Lumps": "Lumps",
+              "Color": "Color",
+              "Density": "Density",
+              "SpecificGravity": "Specific Gravity",
+              "Hardness": "Hardness",
+              "Packing": "Packing",
+              "Storage": "Storage",
+              "StoreDryCoveredArea": "Store in a dry and covered area"
+            }
+          },
+          "Applications": {
+            "RoadConstruction": "Road Construction",
+            "BuildingConstruction": "Building Construction",
+            "ConcreteProduction": "Concrete Production",
+            "AsphaltMix": "Asphalt Mix",
+            "RailwayBallast": "Railway Ballast",
+            "InfrastructureProjects": "Infrastructure Projects",
+            "Aggregates": "Construction Aggregates",
+            "CivilEngineering": "Civil Engineering"
+          },
+          "FAQ": {
+            "WhatIsConstructionGradeLimestoneQuestion": "What is Construction Grade Limestone?",
+            "WhatIsConstructionGradeLimestoneAnswer": "Construction Grade Limestone is a natural stone used as aggregate and base material for roads, buildings, bridges, concrete, and infrastructure projects due to its strength and durability.",
+            "GradesQuestion": "What grades of Construction Grade Limestone do you supply?",
+            "GradesAnswer": "We supply CG-75, CG-80, CG-85, and customized grades with various sizes and chemical compositions to meet construction requirements.",
+            "ApplicationsQuestion": "What are the applications of Construction Grade Limestone?",
+            "ApplicationsAnswer": "Construction Grade Limestone is widely used in road construction, concrete manufacturing, asphalt production, railway ballast, civil engineering, and infrastructure development.",
+            "PackingQuestion": "What packing options are available?",
+            "PackingAnswer": "Available in loose bulk, 1 MT jumbo bags, and customized packaging according to customer requirements.",
+            "CustomizedQuestion": "Can you provide customized grades and sizes?",
+            "CustomizedAnswer": "Yes. We provide customized particle sizes, chemical composition, and packaging to meet specific construction project requirements.",
+            "ExportQuestion": "Do you export Construction Grade Limestone internationally?",
+            "ExportAnswer": "Yes. We export premium-quality Construction Grade Limestone to domestic and international markets with reliable quality, competitive pricing, and timely delivery."
+          }
+        }
+      }
+    },
     "SteelPipesTubes": {
       "Name": "स्टील पाइप और ट्यूब",
       "Category": "तैयार स्टील",
@@ -304,6 +1141,13 @@
         "Pelletplantfeedstock": "पेलेट प्लांट फीडस्टॉक"
       }
     }
+  },
+  "Common": {
+    "Overview": "अवलोकन",
+    "Applications": "अनुप्रयोग",
+    "TechnicalSpecifications": "तकनीकी विनिर्देश",
+    "RequestQuote": "कोटेशन का अनुरोध करें",
+    "FrequentlyAskedQuestions": "अक्सर पूछे जाने वाले प्रश्न"
   },
   "whychooseus": {
     "Eyebrow": "एसएसएल ग्रुप क्यों",

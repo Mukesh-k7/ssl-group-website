@@ -217,7 +217,7 @@
           },
           "Applications": {
             "SteelMaking": "Steel Making",
-            "ElectricArcFurnaces": "Electric Arc Furnaces (EAF)",
+            "ElectricArcFurnace": "Electric Arc Furnaces (EAF)",
             "InductionFurnaces": "Induction Furnaces",
             "SteelFoundries": "Steel Foundries",
             "AlloySteelProduction": "Alloy Steel Production",
@@ -807,18 +807,216 @@
       "Category": "Specialty Alloys",
       "ShortDescription": "High-purity Nobal Alloy for grain refinement and micro-alloying in specialty steel grades.",
       "Description": "Precision Nobal Alloy with controlled titanium content for aerospace-grade steels, high-strength low-alloy applications, and critical casting operations requiring grain refinement.",
-      "Specifications": {
-        "Titanium": "Titanium (Ti)",
-        "Aluminum": "Aluminum (Al)",
-        "Carbon": "Carbon (C)",
-        "Size": "Size",
-        "Form": "Form"
+      "Specification": {
+        "FerroMolybdenum": "Ferro Molybdenum",
+        "FerroVanadium": "Ferro Vanadium",
+        "FerroTungsten": "Ferro Tungsten"
       },
-      "Applications": {
-        "Grainrefinement": "Grain refinement",
-        "MicroalloyedHSLAsteel": "Micro-alloyed HSLA steel",
-        "Aerospacealloysteels": "Aerospace alloy steels",
-        "Specialtycastings": "Specialty castings"
+      "Variants": {
+        "FerroMolybdenum": {
+          "Name": "Ferro Molybdenum",
+          "Description": "Ferro Molybdenum (FeMo) is a premium ferro alloy used to improve the strength, hardness, corrosion resistance, and heat resistance of alloy and stainless steels. It is widely used in steelmaking and engineering applications.",
+          "Specifications": {
+            "Grade": "Grade",
+            "Packing": "Packing",
+            "Standard": "Standard",
+            "Origin": "Origin",
+            "GradeValue": "FeMo 60 / FeMo 70",
+            "PackingValue": "Loose / 1 MT Jumbo Bag",
+            "StandardValue": "IS / ASTM / ISO Equivalent",
+            "OriginValue": "India"
+          },
+          "TechnicalTables": {
+            "ChemicalComposition": "Chemical Composition",
+            "PhysicalProperties": "Physical Properties",
+            "ChemicalHeaders": {
+              "Grade": "Grade",
+              "Mo": "Mo",
+              "C": "C",
+              "Si": "Si",
+              "P": "P",
+              "S": "S"
+            },
+            "PhysicalHeaders": {
+              "Property": "Property",
+              "Value": "Value"
+            },
+            "PhysicalPropertiesRows": {
+              "Appearance": "Appearance",
+              "GreyMetallic": "Grey Metallic",
+              "Shape": "Shape",
+              "Lumps": "Lumps",
+              "Color": "Color",
+              "SilverGrey": "Silver Grey",
+              "Density": "Density",
+              "SpecificGravity": "Specific Gravity",
+              "MeltingPoint": "Melting Point",
+              "Packing": "Packing",
+              "Storage": "Storage",
+              "StoreDryCoveredArea": "Store in a dry and covered area"
+            }
+          },
+          "Applications": {
+            "StainlessSteel": "Stainless Steel",
+            "AlloySteel": "Alloy Steel",
+            "ToolSteel": "Tool Steel",
+            "HighSpeedSteel": "High Speed Steel",
+            "EngineeringComponents": "Engineering Components",
+            "OilGasIndustry": "Oil & Gas Industry",
+            "PowerPlants": "Power Plants",
+            "MetalManufacturing": "Metal Manufacturing"
+          },
+          "FAQ": {
+            "WhatIsFerroMolybdenumQuestion": "What is Ferro Molybdenum?",
+            "WhatIsFerroMolybdenumAnswer": "Ferro Molybdenum is an iron-molybdenum alloy used as an alloying agent in stainless steel, alloy steel, and high-strength steel to improve hardness, corrosion resistance, and high-temperature performance.",
+            "GradesQuestion": "What grades of Ferro Molybdenum do you supply?",
+            "GradesAnswer": "We supply FeMo 60, FeMo 70, and customized grades according to customer specifications.",
+            "ApplicationsQuestion": "What are the applications of Ferro Molybdenum?",
+            "ApplicationsAnswer": "Ferro Molybdenum is widely used in stainless steel, alloy steel, tool steel, high-speed steel, oil & gas equipment, power plants, and engineering industries.",
+            "PackingQuestion": "What packing options are available?",
+            "PackingAnswer": "Available in loose bulk, palletized loads, and 1 MT jumbo bags.",
+            "CustomizedQuestion": "Can you provide customized grades and sizes?",
+            "CustomizedAnswer": "Yes. We provide customized grades, particle sizes, and chemical compositions according to customer requirements.",
+            "ExportQuestion": "Do you export Ferro Molybdenum internationally?",
+            "ExportAnswer": "Yes. We export Ferro Molybdenum worldwide with consistent quality, reliable sourcing, and timely delivery."
+          }
+        },
+        "FerroVanadium": {
+          "Name": "Ferro Vanadium",
+          "Description": "Ferro Vanadium (FeV) is a premium ferro alloy used to increase the strength, toughness, wear resistance, and fatigue resistance of alloy steels. It is widely used in high-strength structural steels, tool steels, aerospace, and automotive industries.",
+          "Specifications": {
+            "Grade": "Grade",
+            "Packing": "Packing",
+            "Standard": "Standard",
+            "Origin": "Origin",
+            "GradeValue": "FeV 50 / FeV 80",
+            "PackingValue": "Loose / 1 MT Jumbo Bag",
+            "StandardValue": "IS / ASTM / ISO Equivalent",
+            "OriginValue": "India"
+          },
+          "TechnicalTables": {
+            "ChemicalComposition": "Chemical Composition",
+            "PhysicalProperties": "Physical Properties",
+            "ChemicalHeaders": {
+              "Grade": "Grade",
+              "V": "V",
+              "C": "C",
+              "Si": "Si",
+              "P": "P",
+              "S": "S"
+            },
+            "PhysicalHeaders": {
+              "Property": "Property",
+              "Value": "Value"
+            },
+            "PhysicalPropertiesRows": {
+              "Appearance": "Appearance",
+              "GreyMetallic": "Grey Metallic",
+              "Shape": "Shape",
+              "Lumps": "Lumps",
+              "Color": "Color",
+              "SilverGrey": "Silver Grey",
+              "Density": "Density",
+              "SpecificGravity": "Specific Gravity",
+              "MeltingPoint": "Melting Point",
+              "Packing": "Packing",
+              "Storage": "Storage",
+              "StoreDryCoveredArea": "Store in a dry and covered area"
+            }
+          },
+          "Applications": {
+            "HighStrengthSteel": "High Strength Steel",
+            "ToolSteel": "Tool Steel",
+            "SpringSteel": "Spring Steel",
+            "AlloySteel": "Alloy Steel",
+            "AutomotiveIndustry": "Automotive Industry",
+            "AerospaceIndustry": "Aerospace Industry",
+            "ConstructionSteel": "Construction Steel",
+            "MetalManufacturing": "Metal Manufacturing"
+          },
+          "FAQ": {
+            "WhatIsFerroVanadiumQuestion": "What is Ferro Vanadium?",
+            "WhatIsFerroVanadiumAnswer": "Ferro Vanadium is an iron-vanadium alloy used as an alloying element in high-strength steels to improve hardness, toughness, fatigue resistance, and wear resistance.",
+            "GradesQuestion": "What grades of Ferro Vanadium do you supply?",
+            "GradesAnswer": "We supply FeV 50, FeV 80, and customized grades according to customer specifications.",
+            "ApplicationsQuestion": "What are the applications of Ferro Vanadium?",
+            "ApplicationsAnswer": "Ferro Vanadium is widely used in high-strength structural steel, tool steel, spring steel, aerospace components, automotive parts, and engineering applications.",
+            "PackingQuestion": "What packing options are available?",
+            "PackingAnswer": "Available in loose bulk, palletized loads, and 1 MT jumbo bags.",
+            "CustomizedQuestion": "Can you provide customized grades and sizes?",
+            "CustomizedAnswer": "Yes. We provide customized grades, particle sizes, and chemical compositions according to customer requirements.",
+            "ExportQuestion": "Do you export Ferro Vanadium internationally?",
+            "ExportAnswer": "Yes. We export Ferro Vanadium worldwide with consistent quality, reliable sourcing, and timely delivery."
+          }
+        },
+        "FerroTungsten": {
+          "Name": "Ferro Tungsten",
+          "Description": "Ferro Tungsten (FeW) is a high-performance ferro alloy used to improve hardness, wear resistance, heat resistance, and toughness in alloy steels and high-speed steels. It is widely used in tool manufacturing, mining, aerospace, and heavy engineering industries.",
+          "Specifications": {
+            "Grade": "Grade",
+            "Packing": "Packing",
+            "Standard": "Standard",
+            "Origin": "Origin",
+            "GradeValue": "FeW 70 / FeW 80",
+            "PackingValue": "Loose / 1 MT Jumbo Bag",
+            "StandardValue": "IS / ASTM / ISO Equivalent",
+            "OriginValue": "India"
+          },
+          "TechnicalTables": {
+            "ChemicalComposition": "Chemical Composition",
+            "PhysicalProperties": "Physical Properties",
+            "ChemicalHeaders": {
+              "Grade": "Grade",
+              "W": "W",
+              "C": "C",
+              "Si": "Si",
+              "P": "P",
+              "S": "S"
+            },
+            "PhysicalHeaders": {
+              "Property": "Property",
+              "Value": "Value"
+            },
+            "PhysicalPropertiesRows": {
+              "Appearance": "Appearance",
+              "GreyMetallic": "Grey Metallic",
+              "Shape": "Shape",
+              "Lumps": "Lumps",
+              "Color": "Color",
+              "SilverGrey": "Silver Grey",
+              "Density": "Density",
+              "SpecificGravity": "Specific Gravity",
+              "MeltingPoint": "Melting Point",
+              "Packing": "Packing",
+              "Storage": "Storage",
+              "StoreDryCoveredArea": "Store in a dry and covered area"
+            }
+          },
+          "Applications": {
+            "ToolSteel": "Tool Steel",
+            "HighSpeedSteel": "High Speed Steel",
+            "AlloySteel": "Alloy Steel",
+            "MiningEquipment": "Mining Equipment",
+            "AerospaceIndustry": "Aerospace Industry",
+            "EngineeringComponents": "Engineering Components",
+            "WearResistantParts": "Wear Resistant Parts",
+            "MetalManufacturing": "Metal Manufacturing"
+          },
+          "FAQ": {
+            "WhatIsFerroTungstenQuestion": "What is Ferro Tungsten?",
+            "WhatIsFerroTungstenAnswer": "Ferro Tungsten is an iron-tungsten alloy used in high-speed steels and alloy steels to improve hardness, wear resistance, toughness, and high-temperature performance.",
+            "GradesQuestion": "What grades of Ferro Tungsten do you supply?",
+            "GradesAnswer": "We supply FeW 70, FeW 80, and customized grades according to customer specifications.",
+            "ApplicationsQuestion": "What are the applications of Ferro Tungsten?",
+            "ApplicationsAnswer": "Ferro Tungsten is widely used in tool steel, high-speed steel, mining equipment, aerospace components, engineering parts, and wear-resistant applications.",
+            "PackingQuestion": "What packing options are available?",
+            "PackingAnswer": "Available in loose bulk, palletized loads, and 1 MT jumbo bags.",
+            "CustomizedQuestion": "Can you provide customized grades and sizes?",
+            "CustomizedAnswer": "Yes. We provide customized grades, particle sizes, and chemical compositions according to customer requirements.",
+            "ExportQuestion": "Do you export Ferro Tungsten internationally?",
+            "ExportAnswer": "Yes. We export Ferro Tungsten worldwide with reliable quality assurance, competitive pricing, and timely delivery."
+          }
+        }
       }
     },
     "CarbonProducts": {
@@ -826,18 +1024,147 @@
       "Category": "Carbon Materials",
       "ShortDescription": "Calcined petroleum coke, metallurgical coke, and carbon raisers for steel and foundry operations.",
       "Description": "Export-grade carbon products including CPC, GPC, and anthracite-based carbon raisers with low ash and volatile matter for EAF steelmaking and foundry cupola operations.",
-      "Specifications": {
-        "FixedCarbon": "Fixed Carbon",
-        "Ash": "Ash",
-        "VolatileMatter": "Volatile Matter",
-        "Sulfur": "Sulfur",
-        "Sizing": "Sizing"
+      "Specification": {
+        "GraphitePetroleumCoke": "Graphite Petroleum Coke",
+        "CalcinedPetroleumCoke": "Calcined Petroleum Coke",
+        "CarbonRaiser": "Carbon Raiser",
+        "ElectrodePaste": "Electrode Paste"
       },
-      "Applications": {
-        "EAFsteelmaking": "EAF steelmaking",
-        "Foundrycupolacharge": "Foundry cupola charge",
-        "Anodemanufacturing": "Anode manufacturing",
-        "Carbonraiserapplications": "Carbon raiser applications"
+      "Variants": {
+        "InjectionCarbon": {
+          "Name": "Injection Carbon",
+          "Description": "Injection Carbon is a high-purity carbon additive used in steelmaking and foundry industries for carbon adjustment during molten metal processing. It offers excellent carbon recovery, low sulfur, and consistent performance.",
+          "Specifications": {
+            "Grade": "Grade",
+            "Packing": "Packing",
+            "Standard": "Standard",
+            "Origin": "Origin",
+            "GradeValue": "IC 98 / IC 99",
+            "PackingValue": "Loose / 1 MT Jumbo Bag",
+            "StandardValue": "IS / ASTM / ISO Equivalent",
+            "OriginValue": "India"
+          },
+          "TechnicalTables": {
+            "ChemicalComposition": "Chemical Composition",
+            "PhysicalProperties": "Physical Properties",
+            "ChemicalHeaders": {
+              "Grade": "Grade",
+              "FC": "Fixed Carbon",
+              "Ash": "Ash",
+              "VM": "Volatile Matter",
+              "Moisture": "Moisture",
+              "S": "Sulfur"
+            },
+            "PhysicalHeaders": {
+              "Property": "Property",
+              "Value": "Value"
+            },
+            "PhysicalPropertiesRows": {
+              "Appearance": "Appearance",
+              "Black": "Black",
+              "Shape": "Shape",
+              "Granules": "Granules",
+              "Color": "Color",
+              "Density": "Density",
+              "SpecificGravity": "Specific Gravity",
+              "ParticleSize": "Particle Size",
+              "Packing": "Packing",
+              "Storage": "Storage",
+              "StoreDryCoveredArea": "Store in a dry and covered area"
+            }
+          },
+          "Applications": {
+            "SteelMaking": "Steel Making",
+            "FoundryIndustry": "Foundry Industry",
+            "CastIronProduction": "Cast Iron Production",
+            "ElectricArcFurnace": "Electric Arc Furnace",
+            "InductionFurnace": "Induction Furnace",
+            "CarbonAdjustment": "Carbon Adjustment",
+            "MetallurgicalIndustry": "Metallurgical Industry",
+            "MetalManufacturing": "Metal Manufacturing"
+          },
+          "FAQ": {
+            "WhatIsInjectionCarbonQuestion": "What is Injection Carbon?",
+            "WhatIsInjectionCarbonAnswer": "Injection Carbon is a high-carbon additive injected into molten metal to increase carbon content efficiently during steelmaking and foundry operations.",
+            "GradesQuestion": "What grades of Injection Carbon do you supply?",
+            "GradesAnswer": "We supply IC 98, IC 99, and customized grades based on customer specifications.",
+            "ApplicationsQuestion": "What are the applications of Injection Carbon?",
+            "ApplicationsAnswer": "Injection Carbon is widely used in steel plants, foundries, induction furnaces, electric arc furnaces, and metallurgical industries for carbon adjustment.",
+            "PackingQuestion": "What packing options are available?",
+            "PackingAnswer": "Available in loose bulk, 25 kg bags, and 1 MT jumbo bags.",
+            "CustomizedQuestion": "Can you provide customized grades and particle sizes?",
+            "CustomizedAnswer": "Yes. We provide customized carbon content, particle sizes, and packaging according to customer requirements.",
+            "ExportQuestion": "Do you export Injection Carbon internationally?",
+            "ExportAnswer": "Yes. We export premium-quality Injection Carbon worldwide with reliable quality assurance and timely delivery."
+          }
+        },
+        "ChargeCarbon": {
+          "Name": "Charge Carbon",
+          "Description": "Charge Carbon is a premium carbon additive used in steelmaking and foundry industries to increase carbon content during melting. It provides high fixed carbon, low ash, low sulfur, and excellent recovery for efficient metallurgical operations.",
+          "Specifications": {
+            "Grade": "Grade",
+            "Packing": "Packing",
+            "Standard": "Standard",
+            "Origin": "Origin",
+            "GradeValue": "CC 95 / CC 98",
+            "PackingValue": "Loose / 1 MT Jumbo Bag",
+            "StandardValue": "IS / ASTM / ISO Equivalent",
+            "OriginValue": "India"
+          },
+          "TechnicalTables": {
+            "ChemicalComposition": "Chemical Composition",
+            "PhysicalProperties": "Physical Properties",
+            "ChemicalHeaders": {
+              "Grade": "Grade",
+              "FC": "Fixed Carbon",
+              "Ash": "Ash",
+              "VM": "Volatile Matter",
+              "Moisture": "Moisture",
+              "S": "Sulfur"
+            },
+            "PhysicalHeaders": {
+              "Property": "Property",
+              "Value": "Value"
+            },
+            "PhysicalPropertiesRows": {
+              "Appearance": "Appearance",
+              "Black": "Black",
+              "Shape": "Shape",
+              "Granules": "Granules",
+              "Color": "Color",
+              "Density": "Density",
+              "SpecificGravity": "Specific Gravity",
+              "ParticleSize": "Particle Size",
+              "Packing": "Packing",
+              "Storage": "Storage",
+              "StoreDryCoveredArea": "Store in a dry and covered area"
+            }
+          },
+          "Applications": {
+            "SteelMaking": "Steel Making",
+            "FoundryIndustry": "Foundry Industry",
+            "CastIronProduction": "Cast Iron Production",
+            "InductionFurnace": "Induction Furnace",
+            "ElectricArcFurnace": "Electric Arc Furnace",
+            "CarbonAddition": "Carbon Addition",
+            "MetallurgicalIndustry": "Metallurgical Industry",
+            "MetalManufacturing": "Metal Manufacturing"
+          },
+          "FAQ": {
+            "WhatIsChargeCarbonQuestion": "What is Charge Carbon?",
+            "WhatIsChargeCarbonAnswer": "Charge Carbon is a high-purity carbon additive used during steelmaking and foundry melting to increase carbon content, improve recovery, and enhance metal quality.",
+            "GradesQuestion": "What grades of Charge Carbon do you supply?",
+            "GradesAnswer": "We supply CC 95, CC 98, and customized grades based on customer specifications.",
+            "ApplicationsQuestion": "What are the applications of Charge Carbon?",
+            "ApplicationsAnswer": "Charge Carbon is widely used in steel plants, foundries, induction furnaces, electric arc furnaces, and metallurgical industries for carbon addition during metal melting.",
+            "PackingQuestion": "What packing options are available?",
+            "PackingAnswer": "Available in loose bulk, 25 kg bags, and 1 MT jumbo bags.",
+            "CustomizedQuestion": "Can you provide customized grades and particle sizes?",
+            "CustomizedAnswer": "Yes. We provide customized carbon content, particle sizes, and packaging according to customer requirements.",
+            "ExportQuestion": "Do you export Charge Carbon internationally?",
+            "ExportAnswer": "Yes. We export high-quality Charge Carbon to customers worldwide with consistent quality, competitive pricing, and timely delivery."
+          }
+        }
       }
     },
     "CarbideOre": {
@@ -845,18 +1172,983 @@
       "Category": "Industrial Minerals",
       "ShortDescription": "High-grade carbide concentrate and ore for smelters and galvanizing supply chains.",
       "Description": "Direct export of carbide ore and concentrate with consistent carbide content, low impurities, and full assay certificates for smelter and galvanizing industry procurement.",
-      "Specifications": {
-        "Carbide": "Carbide (C)",
-        "Lead": "Lead (Pb)",
-        "Iron": "Iron (Fe)",
+      "Specification": {
+        "CalciumCarbide": "Calcium Carbide(CaC₂)",
+        "FixedCarbon": "Fixed Carbon",
+        "AshContent": "Ash Content",
         "Moisture": "Moisture",
-        "Form": "Form"
+        "Size": "Size"
       },
-      "Applications": {
-        "Zincsmelting": "Zinc smelting",
-        "Galvanizingindustry": "Galvanizing industry",
-        "Diecastingalloys": "Die casting alloys",
-        "Chemicalprocessing": "Chemical processing"
+      "Variants": {
+        "SteelShot": {
+          "Name": "Steel Shot",
+          "Description": "Steel Shot is a high-quality spherical abrasive media used for shot blasting, surface preparation, cleaning, descaling, and peening applications. It offers excellent durability, uniform hardness, and long service life.",
+          "Specifications": {
+            "Grade": "Grade",
+            "Packing": "Packing",
+            "Standard": "Standard",
+            "Origin": "Origin",
+            "GradeValue": "S230 / S330 / S460",
+            "PackingValue": "25 Kg Bags / 1 MT Jumbo Bag",
+            "StandardValue": "SAE J444 / ISO 11124",
+            "OriginValue": "India"
+          },
+          "TechnicalTables": {
+            "ChemicalComposition": "Chemical Composition",
+            "PhysicalProperties": "Physical Properties",
+            "ChemicalHeaders": {
+              "Grade": "Grade",
+              "C": "C",
+              "Si": "Si",
+              "Mn": "Mn",
+              "S": "S",
+              "P": "P"
+            },
+            "PhysicalHeaders": {
+              "Property": "Property",
+              "Value": "Value"
+            },
+            "PhysicalPropertiesRows": {
+              "Appearance": "Appearance",
+              "GreyMetallic": "Grey Metallic",
+              "Shape": "Shape",
+              "Spherical": "Spherical",
+              "Color": "Color",
+              "DarkGrey": "Dark Grey",
+              "Hardness": "Hardness",
+              "Density": "Density",
+              "SpecificGravity": "Specific Gravity",
+              "Packing": "Packing",
+              "Storage": "Storage",
+              "StoreDryCoveredArea": "Store in a dry and covered area"
+            }
+          },
+          "Applications": {
+            "ShotBlasting": "Shot Blasting",
+            "SurfacePreparation": "Surface Preparation",
+            "MetalCleaning": "Metal Cleaning",
+            "FoundryIndustry": "Foundry Industry",
+            "SteelIndustry": "Steel Industry",
+            "AutomotiveIndustry": "Automotive Industry",
+            "Shipbuilding": "Shipbuilding",
+            "EngineeringComponents": "Engineering Components"
+          },
+          "FAQ": {
+            "WhatIsSteelShotQuestion": "What is Steel Shot?",
+            "WhatIsSteelShotAnswer": "Steel Shot is a spherical metallic abrasive used for shot blasting, cleaning, descaling, and strengthening metal surfaces. It provides excellent durability and consistent blasting performance.",
+            "GradesQuestion": "What grades of Steel Shot do you supply?",
+            "GradesAnswer": "We supply Steel Shot in various sizes including S230, S330, S390, S460, S550, S660, and customized grades based on customer requirements.",
+            "ApplicationsQuestion": "What are the applications of Steel Shot?",
+            "ApplicationsAnswer": "Steel Shot is widely used in foundries, steel plants, automotive manufacturing, shipbuilding, aerospace, engineering industries, and surface preparation before coating or painting.",
+            "PackingQuestion": "What packing options are available?",
+            "PackingAnswer": "Available in 25 kg bags, 1 MT jumbo bags, and customized export packaging.",
+            "CustomizedQuestion": "Can you provide customized sizes and grades?",
+            "CustomizedAnswer": "Yes. We supply customized Steel Shot sizes, hardness ranges, and packaging according to customer specifications.",
+            "ExportQuestion": "Do you export Steel Shot internationally?",
+            "ExportAnswer": "Yes. We export premium-quality Steel Shot worldwide with consistent quality, competitive pricing, and timely delivery."
+          }
+        },
+        "SteelGrit": {
+          "Name": "Steel Grit",
+          "Description": "Steel Grit is a high-quality angular metallic abrasive used for surface preparation, rust removal, descaling, and shot blasting. It provides excellent cleaning efficiency, surface roughness, and long service life for industrial applications.",
+          "Specifications": {
+            "Grade": "Grade",
+            "Packing": "Packing",
+            "Standard": "Standard",
+            "Origin": "Origin",
+            "GradeValue": "G18 / G25 / G40",
+            "PackingValue": "25 Kg Bags / 1 MT Jumbo Bag",
+            "StandardValue": "SAE J444 / ISO 11124",
+            "OriginValue": "India"
+          },
+          "TechnicalTables": {
+            "ChemicalComposition": "Chemical Composition",
+            "PhysicalProperties": "Physical Properties",
+            "ChemicalHeaders": {
+              "Grade": "Grade",
+              "C": "C",
+              "Si": "Si",
+              "Mn": "Mn",
+              "S": "S",
+              "P": "P"
+            },
+            "PhysicalHeaders": {
+              "Property": "Property",
+              "Value": "Value"
+            },
+            "PhysicalPropertiesRows": {
+              "Appearance": "Appearance",
+              "GreyMetallic": "Grey Metallic",
+              "Shape": "Shape",
+              "Angular": "Angular",
+              "Color": "Color",
+              "DarkGrey": "Dark Grey",
+              "Hardness": "Hardness",
+              "Density": "Density",
+              "SpecificGravity": "Specific Gravity",
+              "Packing": "Packing",
+              "Storage": "Storage",
+              "StoreDryCoveredArea": "Store in a dry and covered area"
+            }
+          },
+          "Applications": {
+            "SurfacePreparation": "Surface Preparation",
+            "RustRemoval": "Rust Removal",
+            "ShotBlasting": "Shot Blasting",
+            "SteelFabrication": "Steel Fabrication",
+            "Shipbuilding": "Shipbuilding",
+            "BridgeConstruction": "Bridge Construction",
+            "FoundryIndustry": "Foundry Industry",
+            "EngineeringComponents": "Engineering Components"
+          },
+          "FAQ": {
+            "WhatIsSteelGritQuestion": "What is Steel Grit?",
+            "WhatIsSteelGritAnswer": "Steel Grit is an angular metallic abrasive produced by crushing high-quality steel shot. It is widely used for aggressive surface cleaning, rust removal, and surface preparation before painting or coating.",
+            "GradesQuestion": "What grades of Steel Grit do you supply?",
+            "GradesAnswer": "We supply Steel Grit in various grades including G10, G12, G14, G16, G18, G25, G40, G50, G80, and customized sizes as per customer requirements.",
+            "ApplicationsQuestion": "What are the applications of Steel Grit?",
+            "ApplicationsAnswer": "Steel Grit is widely used for shot blasting, rust removal, descaling, surface preparation, steel fabrication, shipbuilding, bridge construction, foundries, and heavy engineering industries.",
+            "PackingQuestion": "What packing options are available?",
+            "PackingAnswer": "Available in 25 kg bags, 1 MT jumbo bags, and customized export packaging.",
+            "CustomizedQuestion": "Can you provide customized grades and sizes?",
+            "CustomizedAnswer": "Yes. We supply customized grit sizes, hardness ranges, and packaging according to customer requirements.",
+            "ExportQuestion": "Do you export Steel Grit internationally?",
+            "ExportAnswer": "Yes. We export premium-quality Steel Grit worldwide with consistent quality, competitive pricing, and timely delivery."
+          }
+        },
+        "StainlessSteelShot": {
+          "Name": "Stainless Steel Shot",
+          "Description": "Stainless Steel Shot is a premium spherical blasting media used for cleaning, deburring, surface finishing, shot peening, and strengthening stainless steel, aluminum, and non-ferrous metal components. It provides excellent durability, corrosion resistance, and long service life.",
+          "Specifications": {
+            "Grade": "Grade",
+            "Packing": "Packing",
+            "Standard": "Standard",
+            "Origin": "Origin",
+            "GradeValue": "SS 304 / SS 430",
+            "PackingValue": "25 Kg Bags / 1 MT Jumbo Bag",
+            "StandardValue": "SAE J444 / ISO 11124",
+            "OriginValue": "India"
+          },
+          "TechnicalTables": {
+            "ChemicalComposition": "Chemical Composition",
+            "PhysicalProperties": "Physical Properties",
+            "ChemicalHeaders": {
+              "Grade": "Grade",
+              "Cr": "Cr",
+              "Ni": "Ni",
+              "C": "C",
+              "Si": "Si",
+              "Mn": "Mn"
+            },
+            "PhysicalHeaders": {
+              "Property": "Property",
+              "Value": "Value"
+            },
+            "PhysicalPropertiesRows": {
+              "Appearance": "Appearance",
+              "GreyMetallic": "Grey Metallic",
+              "Shape": "Shape",
+              "Spherical": "Spherical",
+              "Color": "Color",
+              "SilverGrey": "Silver Grey",
+              "Hardness": "Hardness",
+              "Density": "Density",
+              "SpecificGravity": "Specific Gravity",
+              "Packing": "Packing",
+              "Storage": "Storage",
+              "StoreDryCoveredArea": "Store in a dry and covered area"
+            }
+          },
+          "Applications": {
+            "SurfaceFinishing": "Surface Finishing",
+            "ShotPeening": "Shot Peening",
+            "Deburring": "Deburring",
+            "Descaling": "Descaling",
+            "AerospaceIndustry": "Aerospace Industry",
+            "AutomotiveIndustry": "Automotive Industry",
+            "MedicalEquipment": "Medical Equipment",
+            "PrecisionEngineering": "Precision Engineering"
+          },
+          "FAQ": {
+            "WhatIsStainlessSteelShotQuestion": "What is Stainless Steel Shot?",
+            "WhatIsStainlessSteelShotAnswer": "Stainless Steel Shot is a spherical metallic blasting media manufactured from high-quality stainless steel. It is used for cleaning, polishing, peening, and surface finishing without contaminating stainless or non-ferrous metals.",
+            "GradesQuestion": "What grades of Stainless Steel Shot do you supply?",
+            "GradesAnswer": "We supply Stainless Steel Shot in SS 304, SS 430, and customized grades and sizes based on customer requirements.",
+            "ApplicationsQuestion": "What are the applications of Stainless Steel Shot?",
+            "ApplicationsAnswer": "Stainless Steel Shot is widely used for surface finishing, shot peening, deburring, descaling, aerospace components, automotive parts, medical instruments, and precision engineering applications.",
+            "PackingQuestion": "What packing options are available?",
+            "PackingAnswer": "Available in 25 kg bags, 1 MT jumbo bags, and customized export packaging.",
+            "CustomizedQuestion": "Can you provide customized grades and sizes?",
+            "CustomizedAnswer": "Yes. We supply customized shot sizes, hardness ranges, and packaging according to customer specifications.",
+            "ExportQuestion": "Do you export Stainless Steel Shot internationally?",
+            "ExportAnswer": "Yes. We export premium-quality Stainless Steel Shot worldwide with consistent quality, competitive pricing, and reliable delivery."
+          }
+        },
+        "SiliconCarbidePowder": {
+          "Name": "Silicon Carbide Powder",
+          "Description": "Silicon Carbide Powder is a high-purity synthetic material widely used in steelmaking, foundries, refractory production, abrasives, and ceramics. It provides excellent deoxidation, carburization, high thermal conductivity, and superior wear resistance.",
+          "Specifications": {
+            "Grade": "Grade",
+            "Packing": "Packing",
+            "Standard": "Standard",
+            "Origin": "Origin",
+            "GradeValue": "SiC 88 / SiC 90 / SiC 95 / SiC 98",
+            "PackingValue": "25 Kg Bags / 1 MT Jumbo Bag",
+            "StandardValue": "IS / ASTM / ISO Equivalent",
+            "OriginValue": "India"
+          },
+          "TechnicalTables": {
+            "ChemicalComposition": "Chemical Composition",
+            "PhysicalProperties": "Physical Properties",
+            "ChemicalHeaders": {
+              "Grade": "Grade",
+              "SiC": "Silicon Carbide",
+              "FC": "Fixed Carbon",
+              "Fe₂O₃": "Iron Oxide",
+              "Moisture": "Moisture"
+            },
+            "PhysicalHeaders": {
+              "Property": "Property",
+              "Value": "Value"
+            },
+            "PhysicalPropertiesRows": {
+              "Appearance": "Appearance",
+              "BlackGreen": "Black / Green",
+              "Shape": "Shape",
+              "Powder": "Powder",
+              "Color": "Color",
+              "Black": "Black",
+              "Hardness": "Hardness",
+              "Density": "Density",
+              "SpecificGravity": "Specific Gravity",
+              "Packing": "Packing",
+              "Storage": "Storage",
+              "StoreDryCoveredArea": "Store in a dry and covered area"
+            }
+          },
+          "Applications": {
+            "SteelMaking": "Steel Making",
+            "FoundryIndustry": "Foundry Industry",
+            "RefractoryIndustry": "Refractory Industry",
+            "AbrasiveManufacturing": "Abrasive Manufacturing",
+            "CeramicIndustry": "Ceramic Industry",
+            "MetallurgicalIndustry": "Metallurgical Industry",
+            "Deoxidizer": "Deoxidizer",
+            "CarbonAdditive": "Carbon Additive"
+          },
+          "FAQ": {
+            "WhatIsSiliconCarbidePowderQuestion": "What is Silicon Carbide Powder?",
+            "WhatIsSiliconCarbidePowderAnswer": "Silicon Carbide Powder is a premium synthetic material used as a deoxidizer, carburizer, refractory raw material, and abrasive. It offers high hardness, excellent thermal conductivity, and superior chemical stability.",
+            "GradesQuestion": "What grades of Silicon Carbide Powder do you supply?",
+            "GradesAnswer": "We supply SiC 88%, SiC 90%, SiC 95%, SiC 98%, and customized grades according to customer specifications.",
+            "ApplicationsQuestion": "What are the applications of Silicon Carbide Powder?",
+            "ApplicationsAnswer": "Silicon Carbide Powder is widely used in steel plants, foundries, refractory manufacturing, abrasives, ceramics, metallurgical industries, and as a deoxidizer and carbon additive.",
+            "PackingQuestion": "What packing options are available?",
+            "PackingAnswer": "Available in 25 kg bags, 500 kg bags, 1 MT jumbo bags, and customized export packaging.",
+            "CustomizedQuestion": "Can you provide customized grades and particle sizes?",
+            "CustomizedAnswer": "Yes. We provide customized purity levels, particle sizes, and packaging based on customer requirements.",
+            "ExportQuestion": "Do you export Silicon Carbide Powder internationally?",
+            "ExportAnswer": "Yes. We export premium-quality Silicon Carbide Powder to customers worldwide with consistent quality, competitive pricing, and timely delivery."
+          }
+        },
+        "SiliconCarbideBriquette": {
+          "Name": "Silicon Carbide Briquette",
+          "Description": "Silicon Carbide Briquette is a high-performance metallurgical additive used in steelmaking and foundries for deoxidation, carburization, and improving molten metal quality. It offers excellent strength, high silicon carbide content, and efficient recovery.",
+          "Specifications": {
+            "Grade": "Grade",
+            "Packing": "Packing",
+            "Standard": "Standard",
+            "Origin": "Origin",
+            "GradeValue": "SiC 88 / SiC 90 / SiC 95",
+            "PackingValue": "25 Kg Bags / 1 MT Jumbo Bag",
+            "StandardValue": "IS / ASTM / ISO Equivalent",
+            "OriginValue": "India"
+          },
+          "TechnicalTables": {
+            "ChemicalComposition": "Chemical Composition",
+            "PhysicalProperties": "Physical Properties",
+            "ChemicalHeaders": {
+              "Grade": "Grade",
+              "SiC": "Silicon Carbide",
+              "FC": "Fixed Carbon",
+              "Fe₂O₃": "Iron Oxide",
+              "Moisture": "Moisture"
+            },
+            "PhysicalHeaders": {
+              "Property": "Property",
+              "Value": "Value"
+            },
+            "PhysicalPropertiesRows": {
+              "Appearance": "Appearance",
+              "BlackGrey": "Black Grey",
+              "Shape": "Shape",
+              "Briquette": "Briquette",
+              "Color": "Color",
+              "DarkGrey": "Dark Grey",
+              "Density": "Density",
+              "SpecificGravity": "Specific Gravity",
+              "Hardness": "Hardness",
+              "Packing": "Packing",
+              "Storage": "Storage",
+              "StoreDryCoveredArea": "Store in a dry and covered area"
+            }
+          },
+          "Applications": {
+            "SteelMaking": "Steel Making",
+            "FoundryIndustry": "Foundry Industry",
+            "RefractoryIndustry": "Refractory Industry",
+            "Deoxidizer": "Deoxidizer",
+            "CarbonAddition": "Carbon Addition",
+            "InductionFurnace": "Induction Furnace",
+            "ElectricArcFurnace": "Electric Arc Furnace",
+            "MetallurgicalIndustry": "Metallurgical Industry"
+          },
+          "FAQ": {
+            "WhatIsSiliconCarbideBriquetteQuestion": "What is Silicon Carbide Briquette?",
+            "WhatIsSiliconCarbideBriquetteAnswer": "Silicon Carbide Briquette is a compressed metallurgical product manufactured from high-purity silicon carbide. It is widely used as a deoxidizer and carburizer in steelmaking and foundry applications.",
+            "GradesQuestion": "What grades of Silicon Carbide Briquette do you supply?",
+            "GradesAnswer": "We supply SiC 88%, SiC 90%, SiC 95%, and customized grades based on customer requirements.",
+            "ApplicationsQuestion": "What are the applications of Silicon Carbide Briquette?",
+            "ApplicationsAnswer": "Silicon Carbide Briquette is used in steel plants, foundries, induction furnaces, electric arc furnaces, refractory manufacturing, and metallurgical industries for deoxidation and carbon addition.",
+            "PackingQuestion": "What packing options are available?",
+            "PackingAnswer": "Available in 25 kg bags, 500 kg bags, 1 MT jumbo bags, and customized export packaging.",
+            "CustomizedQuestion": "Can you provide customized grades and briquette sizes?",
+            "CustomizedAnswer": "Yes. We supply customized silicon carbide purity, briquette sizes, and packaging according to customer requirements.",
+            "ExportQuestion": "Do you export Silicon Carbide Briquette internationally?",
+            "ExportAnswer": "Yes. We export premium-quality Silicon Carbide Briquettes worldwide with consistent quality, competitive pricing, and timely delivery."
+          }
+        },
+        "CalciumCarbide": {
+          "Name": "Calcium Carbide",
+          "Description": "Calcium Carbide is a high-quality industrial chemical widely used in steelmaking, foundries, acetylene gas production, and metallurgical processes. It provides excellent desulphurization efficiency and consistent gas yield for industrial applications.",
+          "Specifications": {
+            "Grade": "Grade",
+            "Packing": "Packing",
+            "Standard": "Standard",
+            "Origin": "Origin",
+            "GradeValue": "CaC₂ 80 / CaC₂ 85 / CaC₂ 88",
+            "PackingValue": "50 Kg Steel Drums",
+            "StandardValue": "IS / ASTM / ISO Equivalent",
+            "OriginValue": "India"
+          },
+          "TechnicalTables": {
+            "ChemicalComposition": "Chemical Composition",
+            "PhysicalProperties": "Physical Properties",
+            "ChemicalHeaders": {
+              "Grade": "Grade",
+              "CaC₂": "Calcium Carbide",
+              "GasYield": "Gas Yield",
+              "PH₃": "PH₃",
+              "H₂S": "H₂S"
+            },
+            "PhysicalHeaders": {
+              "Property": "Property",
+              "Value": "Value"
+            },
+            "PhysicalPropertiesRows": {
+              "Appearance": "Appearance",
+              "GreyBlack": "Grey Black",
+              "Shape": "Shape",
+              "Lumps": "Lumps",
+              "Color": "Color",
+              "Density": "Density",
+              "SpecificGravity": "Specific Gravity",
+              "ParticleSize": "Particle Size",
+              "Packing": "Packing",
+              "Storage": "Storage",
+              "StoreDryCoveredArea": "Store in a dry and covered area"
+            }
+          },
+          "Applications": {
+            "SteelMaking": "Steel Making",
+            "FoundryIndustry": "Foundry Industry",
+            "AcetyleneGasProduction": "Acetylene Gas Production",
+            "Desulphurization": "Desulphurization",
+            "ChemicalIndustry": "Chemical Industry",
+            "MetallurgicalIndustry": "Metallurgical Industry",
+            "WeldingIndustry": "Welding Industry",
+            "IndustrialManufacturing": "Industrial Manufacturing"
+          },
+          "FAQ": {
+            "WhatIsCalciumCarbideQuestion": "What is Calcium Carbide?",
+            "WhatIsCalciumCarbideAnswer": "Calcium Carbide is a chemical compound primarily used for acetylene gas production, steel desulphurization, and various metallurgical applications. It offers high gas yield and excellent performance.",
+            "GradesQuestion": "What grades of Calcium Carbide do you supply?",
+            "GradesAnswer": "We supply Calcium Carbide in CaC₂ 80%, CaC₂ 85%, CaC₂ 88%, and customized grades according to customer specifications.",
+            "ApplicationsQuestion": "What are the applications of Calcium Carbide?",
+            "ApplicationsAnswer": "Calcium Carbide is widely used in steel plants, foundries, acetylene gas generation, welding, chemical processing, and metallurgical industries.",
+            "PackingQuestion": "What packing options are available?",
+            "PackingAnswer": "Available in 50 kg steel drums, sealed moisture-proof containers, and customized export packaging.",
+            "CustomizedQuestion": "Can you provide customized grades and particle sizes?",
+            "CustomizedAnswer": "Yes. We supply customized purity levels, lump sizes, and packaging according to customer requirements.",
+            "ExportQuestion": "Do you export Calcium Carbide internationally?",
+            "ExportAnswer": "Yes. We export premium-quality Calcium Carbide worldwide with strict quality control, competitive pricing, and timely delivery."
+          }
+        }
+      }
+    },
+    "Coal": {
+      "Name": "Coal",
+      "Category": "Industrial Minerals",
+      "ShortDescription": "SSL Group supplies high-quality industrial coal with controlled moisture, ash content, and calorific value to ensure efficient combustion, reduced operating costs, and dependable performance across metallurgical and industrial applications.",
+      "Description": "Coal is a naturally occurring carbon-rich fuel widely used in steel manufacturing, foundries, power generation, cement production, and various industrial heating applications.",
+      "Specification": {
+        "FixedCarbon": "Fixed Carbon (FC)",
+        "AshContent": "Ash Content",
+        "VolatileMatter": "Volatile Matter (VM)",
+        "Moisture": "Moisture",
+        "Sulphur": "Sulphur (S)"
+      },
+      "Variants": {
+        "Anthracite": {
+          "Name": "Anthracite",
+          "Description": "Anthracite is a premium-grade hard coal with high fixed carbon, low ash, and low volatile matter. It is widely used as a carbon additive in steelmaking, foundries, metallurgy, water filtration, and industrial heating applications.",
+          "Specifications": {
+            "Grade": "Grade",
+            "Packing": "Packing",
+            "Standard": "Standard",
+            "Origin": "Origin",
+            "GradeValue": "AC 85 / AC 90 / AC 95",
+            "PackingValue": "25 Kg Bags / 1 MT Jumbo Bag",
+            "StandardValue": "IS / ASTM / ISO Equivalent",
+            "OriginValue": "India / Imported"
+          },
+          "TechnicalTables": {
+            "ChemicalComposition": "Chemical Composition",
+            "PhysicalProperties": "Physical Properties",
+            "ChemicalHeaders": {
+              "Grade": "Grade",
+              "FC": "Fixed Carbon",
+              "Ash": "Ash",
+              "VM": "Volatile Matter",
+              "Moisture": "Moisture",
+              "Sulfur": "Sulfur"
+            },
+            "PhysicalHeaders": {
+              "Property": "Property",
+              "Value": "Value"
+            },
+            "PhysicalPropertiesRows": {
+              "Appearance": "Appearance",
+              "Black": "Black",
+              "Shape": "Shape",
+              "Lumps": "Lumps",
+              "Color": "Color",
+              "Density": "Density",
+              "SpecificGravity": "Specific Gravity",
+              "CalorificValue": "Calorific Value",
+              "Packing": "Packing",
+              "Storage": "Storage",
+              "StoreDryCoveredArea": "Store in a dry and covered area"
+            }
+          },
+          "Applications": {
+            "SteelMaking": "Steel Making",
+            "FoundryIndustry": "Foundry Industry",
+            "CarbonAdditive": "Carbon Additive",
+            "MetallurgicalIndustry": "Metallurgical Industry",
+            "WaterFiltration": "Water Filtration",
+            "PowerGeneration": "Power Generation",
+            "ChemicalIndustry": "Chemical Industry",
+            "IndustrialHeating": "Industrial Heating"
+          },
+          "FAQ": {
+            "WhatIsAnthraciteQuestion": "What is Anthracite?",
+            "WhatIsAnthraciteAnswer": "Anthracite is the highest-grade natural coal with high carbon content, low sulfur, and low volatile matter. It is widely used as a carbon additive, fuel, and filtration media in industrial applications.",
+            "GradesQuestion": "What grades of Anthracite do you supply?",
+            "GradesAnswer": "We supply Anthracite with fixed carbon ranging from 85% to 95%, along with customized grades based on customer specifications.",
+            "ApplicationsQuestion": "What are the applications of Anthracite?",
+            "ApplicationsAnswer": "Anthracite is widely used in steel plants, foundries, metallurgical industries, water filtration systems, power plants, and industrial heating applications.",
+            "PackingQuestion": "What packing options are available?",
+            "PackingAnswer": "Available in 25 kg bags, 1 MT jumbo bags, and customized export packaging.",
+            "CustomizedQuestion": "Can you provide customized grades and sizes?",
+            "CustomizedAnswer": "Yes. We provide customized fixed carbon content, particle sizes, and packaging according to customer requirements.",
+            "ExportQuestion": "Do you export Anthracite internationally?",
+            "ExportAnswer": "Yes. We export premium-quality Anthracite to domestic and international markets with consistent quality, competitive pricing, and timely delivery."
+          }
+        },
+        "SteamCoal": {
+          "Name": "Steam Coal",
+          "Description": "Steam Coal, also known as Thermal Coal, is a high-quality fuel used for electricity generation, industrial boilers, cement plants, and various manufacturing industries. It offers consistent calorific value, low moisture, and reliable combustion efficiency.",
+          "Specifications": {
+            "Grade": "Grade",
+            "Packing": "Packing",
+            "Standard": "Standard",
+            "Origin": "Origin",
+            "GradeValue": "5500 / 6000 / 6500 GCV",
+            "PackingValue": "Loose Bulk / 1 MT Jumbo Bag",
+            "StandardValue": "IS / ASTM / ISO Equivalent",
+            "OriginValue": "India / Indonesia / South Africa"
+          },
+          "TechnicalTables": {
+            "ChemicalComposition": "Chemical Composition",
+            "PhysicalProperties": "Physical Properties",
+            "ChemicalHeaders": {
+              "Grade": "Grade",
+              "GCV": "Gross Calorific Value",
+              "Ash": "Ash",
+              "VM": "Volatile Matter",
+              "Moisture": "Moisture",
+              "Sulfur": "Sulfur"
+            },
+            "PhysicalHeaders": {
+              "Property": "Property",
+              "Value": "Value"
+            },
+            "PhysicalPropertiesRows": {
+              "Appearance": "Appearance",
+              "Black": "Black",
+              "Shape": "Shape",
+              "Lumps": "Lumps",
+              "Color": "Color",
+              "Density": "Density",
+              "SpecificGravity": "Specific Gravity",
+              "CalorificValue": "Calorific Value",
+              "Packing": "Packing",
+              "Storage": "Storage",
+              "StoreDryCoveredArea": "Store in a dry and covered area"
+            }
+          },
+          "Applications": {
+            "PowerGeneration": "Power Generation",
+            "CementIndustry": "Cement Industry",
+            "SteelIndustry": "Steel Industry",
+            "PaperIndustry": "Paper Industry",
+            "TextileIndustry": "Textile Industry",
+            "IndustrialBoilers": "Industrial Boilers",
+            "BrickKilns": "Brick Kilns",
+            "ChemicalIndustry": "Chemical Industry"
+          },
+          "FAQ": {
+            "WhatIsSteamCoalQuestion": "What is Steam Coal?",
+            "WhatIsSteamCoalAnswer": "Steam Coal, also known as Thermal Coal, is a type of coal primarily used for electricity generation and industrial heating applications because of its high calorific value and efficient combustion.",
+            "GradesQuestion": "What grades of Steam Coal do you supply?",
+            "GradesAnswer": "We supply Steam Coal in various grades ranging from 4200 GCV to 7000 GCV, including Indonesian, South African, and Indian origins.",
+            "ApplicationsQuestion": "What are the applications of Steam Coal?",
+            "ApplicationsAnswer": "Steam Coal is widely used in thermal power plants, cement plants, steel industries, paper mills, textile industries, industrial boilers, brick kilns, and chemical manufacturing.",
+            "PackingQuestion": "What packing options are available?",
+            "PackingAnswer": "Available in loose bulk, 1 MT jumbo bags, and customized export packaging.",
+            "CustomizedQuestion": "Can you provide customized grades and sizing?",
+            "CustomizedAnswer": "Yes. We provide customized GCV ranges, sizing, moisture levels, and packaging according to customer requirements.",
+            "ExportQuestion": "Do you export Steam Coal internationally?",
+            "ExportAnswer": "Yes. We export premium-quality Steam Coal worldwide with consistent quality, competitive pricing, and reliable logistics."
+          }
+        },
+        "PulverizedCoalInjection": {
+          "Name": "Pulverized Coal Injection (PCI)",
+          "Description": "Pulverized Coal Injection (PCI) is a finely ground coal used as an auxiliary fuel in blast furnaces to reduce coke consumption and improve furnace efficiency. It provides high calorific value, low ash, and consistent combustion performance.",
+          "Specifications": {
+            "Grade": "Grade",
+            "Packing": "Packing",
+            "Standard": "Standard",
+            "Origin": "Origin",
+            "GradeValue": "PCI 70 / PCI 75 / PCI 80",
+            "PackingValue": "25 Kg Bags / 1 MT Jumbo Bag",
+            "StandardValue": "IS / ASTM / ISO Equivalent",
+            "OriginValue": "India / Imported"
+          },
+          "TechnicalTables": {
+            "ChemicalComposition": "Chemical Composition",
+            "PhysicalProperties": "Physical Properties",
+            "ChemicalHeaders": {
+              "Grade": "Grade",
+              "FC": "Fixed Carbon",
+              "Ash": "Ash",
+              "VM": "Volatile Matter",
+              "Moisture": "Moisture",
+              "Sulfur": "Sulfur"
+            },
+            "PhysicalHeaders": {
+              "Property": "Property",
+              "Value": "Value"
+            },
+            "PhysicalPropertiesRows": {
+              "Appearance": "Appearance",
+              "Black": "Black",
+              "Shape": "Shape",
+              "Fine Powder": "Fine Powder",
+              "Color": "Color",
+              "Density": "Density",
+              "SpecificGravity": "Specific Gravity",
+              "ParticleSize": "Particle Size",
+              "Packing": "Packing",
+              "Storage": "Storage",
+              "StoreDryCoveredArea": "Store in a dry and covered area"
+            }
+          },
+          "Applications": {
+            "BlastFurnace": "Blast Furnace Injection",
+            "SteelMaking": "Steel Making",
+            "IronMaking": "Iron Making",
+            "MetallurgicalIndustry": "Metallurgical Industry",
+            "FoundryIndustry": "Foundry Industry",
+            "FuelSubstitution": "Coke Replacement",
+            "IndustrialHeating": "Industrial Heating",
+            "EnergyEfficiency": "Energy Efficiency Improvement"
+          },
+          "FAQ": {
+            "WhatIsPulverizedCoalInjectionQuestion": "What is Pulverized Coal Injection (PCI)?",
+            "WhatIsPulverizedCoalInjectionAnswer": "Pulverized Coal Injection (PCI) is finely pulverized coal injected into blast furnaces as a substitute for coke, reducing production costs and improving furnace productivity.",
+            "GradesQuestion": "What grades of PCI Coal do you supply?",
+            "GradesAnswer": "We supply PCI coal with fixed carbon ranging from 70% to 80%, along with customized grades as per customer requirements.",
+            "ApplicationsQuestion": "What are the applications of PCI Coal?",
+            "ApplicationsAnswer": "PCI coal is widely used in blast furnaces, iron making, steel production, metallurgical plants, and energy-efficient industrial processes.",
+            "PackingQuestion": "What packing options are available?",
+            "PackingAnswer": "Available in 25 kg bags, 1 MT jumbo bags, bulk supply, and customized export packaging.",
+            "CustomizedQuestion": "Can you provide customized specifications?",
+            "CustomizedAnswer": "Yes. We provide customized fixed carbon, ash content, particle size, and packaging according to customer requirements.",
+            "ExportQuestion": "Do you export PCI Coal internationally?",
+            "ExportAnswer": "Yes. We export premium-quality Pulverized Coal Injection (PCI) worldwide with consistent quality, competitive pricing, and reliable delivery."
+          }
+        },
+        "CokingCoal": {
+          "Name": "Coking Coal",
+          "Description": "Coking Coal, also known as Metallurgical Coal, is a premium-grade coal used for manufacturing coke in blast furnaces. It offers excellent coking properties, high carbon content, low ash, and low sulfur, making it ideal for iron and steel production.",
+          "Specifications": {
+            "Grade": "Grade",
+            "Packing": "Packing",
+            "Standard": "Standard",
+            "Origin": "Origin",
+            "GradeValue": "Prime Hard / Medium Coking / Semi Soft",
+            "PackingValue": "Loose Bulk / 1 MT Jumbo Bag",
+            "StandardValue": "IS / ASTM / ISO Equivalent",
+            "OriginValue": "Australia / India / Imported"
+          },
+          "TechnicalTables": {
+            "ChemicalComposition": "Chemical Composition",
+            "PhysicalProperties": "Physical Properties",
+            "ChemicalHeaders": {
+              "Grade": "Grade",
+              "FC": "Fixed Carbon",
+              "Ash": "Ash",
+              "VM": "Volatile Matter",
+              "Moisture": "Moisture",
+              "Sulfur": "Sulfur"
+            },
+            "PhysicalHeaders": {
+              "Property": "Property",
+              "Value": "Value"
+            },
+            "PhysicalPropertiesRows": {
+              "Appearance": "Appearance",
+              "Black": "Black",
+              "Shape": "Shape",
+              "Lumps": "Lumps",
+              "Color": "Color",
+              "Density": "Density",
+              "SpecificGravity": "Specific Gravity",
+              "CalorificValue": "Calorific Value",
+              "Packing": "Packing",
+              "Storage": "Storage",
+              "StoreDryCoveredArea": "Store in a dry and covered area"
+            }
+          },
+          "Applications": {
+            "BlastFurnace": "Blast Furnace",
+            "CokeManufacturing": "Coke Manufacturing",
+            "SteelMaking": "Steel Making",
+            "IronMaking": "Iron Making",
+            "MetallurgicalIndustry": "Metallurgical Industry",
+            "FoundryIndustry": "Foundry Industry",
+            "IndustrialFuel": "Industrial Fuel",
+            "ChemicalIndustry": "Chemical Industry"
+          },
+          "FAQ": {
+            "WhatIsCokingCoalQuestion": "What is Coking Coal?",
+            "WhatIsCokingCoalAnswer": "Coking Coal is a high-grade metallurgical coal used to manufacture coke for blast furnaces in the iron and steel industry. It possesses excellent coking characteristics and high carbon content.",
+            "GradesQuestion": "What grades of Coking Coal do you supply?",
+            "GradesAnswer": "We supply Prime Hard Coking Coal, Medium Coking Coal, Semi Soft Coking Coal, and customized grades according to customer specifications.",
+            "ApplicationsQuestion": "What are the applications of Coking Coal?",
+            "ApplicationsAnswer": "Coking Coal is widely used in coke ovens, blast furnaces, steel plants, foundries, metallurgical industries, and chemical manufacturing.",
+            "PackingQuestion": "What packing options are available?",
+            "PackingAnswer": "Available in loose bulk, 1 MT jumbo bags, and customized export packaging.",
+            "CustomizedQuestion": "Can you provide customized grades and specifications?",
+            "CustomizedAnswer": "Yes. We supply customized ash content, volatile matter, sulfur levels, sizing, and packaging according to customer requirements.",
+            "ExportQuestion": "Do you export Coking Coal internationally?",
+            "ExportAnswer": "Yes. We export premium-quality Coking Coal worldwide with consistent quality, competitive pricing, and reliable delivery."
+          }
+        }
+      }
+    },
+    "LimeStone": {
+      "Name": "Lime Stone",
+      "Category": "Industrial Minerals",
+      "ShortDescription": "Premium-quality Limestone with high calcium content, widely used in steel plants, cement manufacturing, construction, chemical processing, glass production, and water treatment applications.",
+      "Description": "Limestone is a naturally occurring sedimentary rock primarily composed of calcium carbonate (CaCO₃). It is one of the most widely used industrial minerals due to its high calcium content, excellent fluxing properties, and chemical stability.",
+      "Specifications": {
+        "CalciumCarbonate": "Calcium Carbonate (CaCO₃)",
+        "CalciumOxide": "Calcium Oxide (CaO)",
+        "MagnesiumOxide": "Magnesium Oxide (MgO)",
+        "Silica": "Silica (SiO₂)"
+      },
+      "Variants": {
+        "SteelGradeLimestone": {
+          "Name": "Steel Grade Limestone",
+          "Description": "Steel Grade Limestone is a premium-quality flux used in iron and steel manufacturing. With high calcium carbonate content and low silica and magnesium impurities, it efficiently removes impurities during steelmaking and improves slag formation.",
+          "Specifications": {
+            "Grade": "Grade",
+            "Packing": "Packing",
+            "Standard": "Standard",
+            "Origin": "Origin",
+            "GradeValue": "LS-90 / LS-92 / LS-95",
+            "PackingValue": "Loose Bulk / 1 MT Jumbo Bag",
+            "StandardValue": "IS / ASTM / ISO Equivalent",
+            "OriginValue": "India"
+          },
+          "TechnicalTables": {
+            "ChemicalComposition": "Chemical Composition",
+            "PhysicalProperties": "Physical Properties",
+            "ChemicalHeaders": {
+              "Grade": "Grade",
+              "CaCO₃": "Calcium Carbonate",
+              "CaO": "Calcium Oxide",
+              "MgO": "Magnesium Oxide",
+              "SiO₂": "Silica",
+              "Size": "Size"
+            },
+            "PhysicalHeaders": {
+              "Property": "Property",
+              "Value": "Value"
+            },
+            "PhysicalPropertiesRows": {
+              "Appearance": "Appearance",
+              "WhiteGrey": "White Grey",
+              "Shape": "Shape",
+              "Lumps": "Lumps",
+              "Color": "Color",
+              "Density": "Density",
+              "SpecificGravity": "Specific Gravity",
+              "Hardness": "Hardness",
+              "Packing": "Packing",
+              "Storage": "Storage",
+              "StoreDryCoveredArea": "Store in a dry and covered area"
+            }
+          },
+          "Applications": {
+            "SteelMaking": "Steel Making",
+            "BlastFurnace": "Blast Furnace",
+            "BOFConverter": "Basic Oxygen Furnace (BOF)",
+            "ElectricArcFurnace": "Electric Arc Furnace (EAF)",
+            "FluxMaterial": "Flux Material",
+            "IronMaking": "Iron Making",
+            "MetallurgicalIndustry": "Metallurgical Industry",
+            "FoundryIndustry": "Foundry Industry"
+          },
+          "FAQ": {
+            "WhatIsSteelGradeLimestoneQuestion": "What is Steel Grade Limestone?",
+            "WhatIsSteelGradeLimestoneAnswer": "Steel Grade Limestone is a high-purity limestone used as a flux in iron and steel production. It removes impurities such as silica, sulfur, and phosphorus while improving slag formation and furnace efficiency.",
+            "GradesQuestion": "What grades of Steel Grade Limestone do you supply?",
+            "GradesAnswer": "We supply LS-90, LS-92, LS-95, and customized grades with different calcium carbonate content and particle sizes.",
+            "ApplicationsQuestion": "What are the applications of Steel Grade Limestone?",
+            "ApplicationsAnswer": "Steel Grade Limestone is widely used in blast furnaces, BOF converters, electric arc furnaces, iron making, foundries, and metallurgical industries as a fluxing agent.",
+            "PackingQuestion": "What packing options are available?",
+            "PackingAnswer": "Available in loose bulk, 1 MT jumbo bags, and customized export packaging as per customer requirements.",
+            "CustomizedQuestion": "Can you provide customized grades and sizes?",
+            "CustomizedAnswer": "Yes. We provide customized purity levels, lump sizes, and packaging to meet specific steel plant and foundry requirements.",
+            "ExportQuestion": "Do you export Steel Grade Limestone internationally?",
+            "ExportAnswer": "Yes. We export premium-quality Steel Grade Limestone to domestic and international markets with consistent quality, competitive pricing, and reliable logistics."
+          }
+        },
+        "ChemicalGradeLimestone": {
+          "Name": "Chemical Grade Limestone",
+          "Description": "Chemical Grade Limestone is a high-purity limestone with excellent calcium carbonate content and low impurities. It is widely used in chemical processing, glass manufacturing, paper production, sugar refining, water treatment, and industrial mineral applications.",
+          "Specifications": {
+            "Grade": "Grade",
+            "Packing": "Packing",
+            "Standard": "Standard",
+            "Origin": "Origin",
+            "GradeValue": "CG-95 / CG-97 / CG-98",
+            "PackingValue": "25 Kg Bags / 1 MT Jumbo Bag",
+            "StandardValue": "IS / ASTM / ISO Equivalent",
+            "OriginValue": "India"
+          },
+          "TechnicalTables": {
+            "ChemicalComposition": "Chemical Composition",
+            "PhysicalProperties": "Physical Properties",
+            "ChemicalHeaders": {
+              "Grade": "Grade",
+              "CaCO₃": "Calcium Carbonate",
+              "CaO": "Calcium Oxide",
+              "MgO": "Magnesium Oxide",
+              "SiO₂": "Silica",
+              "Fe₂O₃": "Iron Oxide"
+            },
+            "PhysicalHeaders": {
+              "Property": "Property",
+              "Value": "Value"
+            },
+            "PhysicalPropertiesRows": {
+              "Appearance": "Appearance",
+              "WhiteGrey": "White Grey",
+              "Shape": "Shape",
+              "LumpsPowder": "Lumps / Powder",
+              "Color": "Color",
+              "Density": "Density",
+              "SpecificGravity": "Specific Gravity",
+              "Hardness": "Hardness",
+              "Packing": "Packing",
+              "Storage": "Storage",
+              "StoreDryCoveredArea": "Store in a dry and covered area"
+            }
+          },
+          "Applications": {
+            "ChemicalIndustry": "Chemical Industry",
+            "GlassIndustry": "Glass Industry",
+            "PaperIndustry": "Paper Industry",
+            "SugarIndustry": "Sugar Industry",
+            "PaintIndustry": "Paint Industry",
+            "WaterTreatment": "Water Treatment",
+            "CalciumCarbonateProduction": "Calcium Carbonate Production",
+            "IndustrialMinerals": "Industrial Minerals"
+          },
+          "FAQ": {
+            "WhatIsChemicalGradeLimestoneQuestion": "What is Chemical Grade Limestone?",
+            "WhatIsChemicalGradeLimestoneAnswer": "Chemical Grade Limestone is a high-purity limestone containing high calcium carbonate and low silica, magnesium, and iron impurities. It is widely used in chemical and industrial manufacturing processes.",
+            "GradesQuestion": "What grades of Chemical Grade Limestone do you supply?",
+            "GradesAnswer": "We supply CG-95, CG-97, CG-98, and customized grades with different purity levels and particle sizes according to customer requirements.",
+            "ApplicationsQuestion": "What are the applications of Chemical Grade Limestone?",
+            "ApplicationsAnswer": "Chemical Grade Limestone is used in chemical plants, glass manufacturing, paper mills, sugar refineries, paint production, water treatment, and calcium carbonate manufacturing.",
+            "PackingQuestion": "What packing options are available?",
+            "PackingAnswer": "Available in 25 kg bags, 1 MT jumbo bags, bulk supply, and customized export packaging.",
+            "CustomizedQuestion": "Can you provide customized grades and sizes?",
+            "CustomizedAnswer": "Yes. We provide customized purity levels, particle sizes, and packaging according to customer specifications.",
+            "ExportQuestion": "Do you export Chemical Grade Limestone internationally?",
+            "ExportAnswer": "Yes. We export premium-quality Chemical Grade Limestone worldwide with reliable quality, competitive pricing, and timely delivery."
+          }
+        },
+        "CementGradeLimestone": {
+          "Name": "Cement Grade Limestone",
+          "Description": "Cement Grade Limestone is a high-quality raw material used in the production of cement and clinker. It provides the required calcium content for efficient cement manufacturing while maintaining low levels of impurities for consistent product quality.",
+          "Specifications": {
+            "Grade": "Grade",
+            "Packing": "Packing",
+            "Standard": "Standard",
+            "Origin": "Origin",
+            "GradeValue": "CG-80 / CG-85 / CG-90",
+            "PackingValue": "Loose Bulk / 1 MT Jumbo Bag",
+            "StandardValue": "IS / ASTM / ISO Equivalent",
+            "OriginValue": "India"
+          },
+          "TechnicalTables": {
+            "ChemicalComposition": "Chemical Composition",
+            "PhysicalProperties": "Physical Properties",
+            "ChemicalHeaders": {
+              "Grade": "Grade",
+              "CaCO₃": "Calcium Carbonate",
+              "CaO": "Calcium Oxide",
+              "MgO": "Magnesium Oxide",
+              "SiO₂": "Silica",
+              "Size": "Size"
+            },
+            "PhysicalHeaders": {
+              "Property": "Property",
+              "Value": "Value"
+            },
+            "PhysicalPropertiesRows": {
+              "Appearance": "Appearance",
+              "WhiteGrey": "White Grey",
+              "Shape": "Shape",
+              "Lumps": "Lumps",
+              "Color": "Color",
+              "Density": "Density",
+              "SpecificGravity": "Specific Gravity",
+              "Hardness": "Hardness",
+              "Packing": "Packing",
+              "Storage": "Storage",
+              "StoreDryCoveredArea": "Store in a dry and covered area"
+            }
+          },
+          "Applications": {
+            "CementManufacturing": "Cement Manufacturing",
+            "ClinkerProduction": "Clinker Production",
+            "ConstructionIndustry": "Construction Industry",
+            "ReadyMixConcrete": "Ready-Mix Concrete",
+            "InfrastructureProjects": "Infrastructure Projects",
+            "BuildingMaterials": "Building Materials",
+            "IndustrialMinerals": "Industrial Minerals",
+            "LimeProduction": "Lime Production"
+          },
+          "FAQ": {
+            "WhatIsCementGradeLimestoneQuestion": "What is Cement Grade Limestone?",
+            "WhatIsCementGradeLimestoneAnswer": "Cement Grade Limestone is a naturally occurring sedimentary rock with high calcium carbonate content used as the primary raw material in cement and clinker manufacturing.",
+            "GradesQuestion": "What grades of Cement Grade Limestone do you supply?",
+            "GradesAnswer": "We supply CG-80, CG-85, CG-90, and customized grades with different calcium carbonate content and particle sizes to meet cement plant requirements.",
+            "ApplicationsQuestion": "What are the applications of Cement Grade Limestone?",
+            "ApplicationsAnswer": "Cement Grade Limestone is widely used in cement manufacturing, clinker production, ready-mix concrete plants, lime production, and construction material industries.",
+            "PackingQuestion": "What packing options are available?",
+            "PackingAnswer": "Available in loose bulk, 1 MT jumbo bags, and customized export packaging according to customer requirements.",
+            "CustomizedQuestion": "Can you provide customized grades and sizes?",
+            "CustomizedAnswer": "Yes. We provide customized chemical composition, lump sizes, and packaging based on customer specifications.",
+            "ExportQuestion": "Do you export Cement Grade Limestone internationally?",
+            "ExportAnswer": "Yes. We export premium-quality Cement Grade Limestone worldwide with consistent quality, competitive pricing, and reliable logistics."
+          }
+        },
+        "ConstuctionGradeLimestone": {
+          "Name": "Construction Grade Limestone",
+          "Description": "Construction Grade Limestone is a durable and high-quality natural stone widely used in construction, infrastructure, road building, concrete production, and civil engineering projects. It offers excellent strength, durability, and weather resistance.",
+          "Specifications": {
+            "Grade": "Grade",
+            "Packing": "Packing",
+            "Standard": "Standard",
+            "Origin": "Origin",
+            "GradeValue": "CG-75 / CG-80 / CG-85",
+            "PackingValue": "Loose Bulk / 1 MT Jumbo Bag",
+            "StandardValue": "IS / ASTM / ISO Equivalent",
+            "OriginValue": "India"
+          },
+          "TechnicalTables": {
+            "ChemicalComposition": "Chemical Composition",
+            "PhysicalProperties": "Physical Properties",
+            "ChemicalHeaders": {
+              "Grade": "Grade",
+              "CaCO₃": "Calcium Carbonate",
+              "CaO": "Calcium Oxide",
+              "MgO": "Magnesium Oxide",
+              "SiO₂": "Silica",
+              "Size": "Size"
+            },
+            "PhysicalHeaders": {
+              "Property": "Property",
+              "Value": "Value"
+            },
+            "PhysicalPropertiesRows": {
+              "Appearance": "Appearance",
+              "WhiteGrey": "White Grey",
+              "Shape": "Shape",
+              "Lumps": "Lumps",
+              "Color": "Color",
+              "Density": "Density",
+              "SpecificGravity": "Specific Gravity",
+              "Hardness": "Hardness",
+              "Packing": "Packing",
+              "Storage": "Storage",
+              "StoreDryCoveredArea": "Store in a dry and covered area"
+            }
+          },
+          "Applications": {
+            "RoadConstruction": "Road Construction",
+            "BuildingConstruction": "Building Construction",
+            "ConcreteProduction": "Concrete Production",
+            "AsphaltMix": "Asphalt Mix",
+            "RailwayBallast": "Railway Ballast",
+            "InfrastructureProjects": "Infrastructure Projects",
+            "Aggregates": "Construction Aggregates",
+            "CivilEngineering": "Civil Engineering"
+          },
+          "FAQ": {
+            "WhatIsConstructionGradeLimestoneQuestion": "What is Construction Grade Limestone?",
+            "WhatIsConstructionGradeLimestoneAnswer": "Construction Grade Limestone is a natural stone used as aggregate and base material for roads, buildings, bridges, concrete, and infrastructure projects due to its strength and durability.",
+            "GradesQuestion": "What grades of Construction Grade Limestone do you supply?",
+            "GradesAnswer": "We supply CG-75, CG-80, CG-85, and customized grades with various sizes and chemical compositions to meet construction requirements.",
+            "ApplicationsQuestion": "What are the applications of Construction Grade Limestone?",
+            "ApplicationsAnswer": "Construction Grade Limestone is widely used in road construction, concrete manufacturing, asphalt production, railway ballast, civil engineering, and infrastructure development.",
+            "PackingQuestion": "What packing options are available?",
+            "PackingAnswer": "Available in loose bulk, 1 MT jumbo bags, and customized packaging according to customer requirements.",
+            "CustomizedQuestion": "Can you provide customized grades and sizes?",
+            "CustomizedAnswer": "Yes. We provide customized particle sizes, chemical composition, and packaging to meet specific construction project requirements.",
+            "ExportQuestion": "Do you export Construction Grade Limestone internationally?",
+            "ExportAnswer": "Yes. We export premium-quality Construction Grade Limestone to domestic and international markets with reliable quality, competitive pricing, and timely delivery."
+          }
+        }
       }
     },
     "NaturalGraphite": {
@@ -871,11 +2163,205 @@
         "Moisture": "Moisture",
         "Types": "Types"
       },
-      "Applications": {
-        "Refractorymanufacturing": "Refractory manufacturing",
-        "Batteryanodematerials": "Battery anode materials",
-        "Industriallubricants": "Industrial lubricants",
-        "Gasketsandseals": "Gaskets and seals"
+      "Variants": {
+        "NaturalGraphiteLumps": {
+          "Name": "Natural Graphite Lumps",
+          "Description": "Natural Graphite Lumps are high-purity crystalline carbon products widely used in steelmaking, foundries, refractory manufacturing, batteries, lubricants, and metallurgical industries. They offer excellent thermal conductivity, chemical stability, and high fixed carbon content.",
+          "Specifications": {
+            "Grade": "Grade",
+            "Packing": "Packing",
+            "Standard": "Standard",
+            "Origin": "Origin",
+            "GradeValue": "FC 85 / FC 90 / FC 95",
+            "PackingValue": "25 Kg Bags / 1 MT Jumbo Bag",
+            "StandardValue": "IS / ASTM / ISO Equivalent",
+            "OriginValue": "India / Madagascar / China"
+          },
+          "TechnicalTables": {
+            "ChemicalComposition": "Chemical Composition",
+            "PhysicalProperties": "Physical Properties",
+            "ChemicalHeaders": {
+              "Grade": "Grade",
+              "Fixed Carbon": "Fixed Carbon",
+              "Ash": "Ash",
+              "Moisture": "Moisture",
+              "Volatile Matter": "Volatile Matter"
+            },
+            "PhysicalHeaders": {
+              "Property": "Property",
+              "Value": "Value"
+            },
+            "PhysicalPropertiesRows": {
+              "Appearance": "Appearance",
+              "Black Grey": "Black Grey",
+              "Shape": "Shape",
+              "Lumps": "Lumps",
+              "Color": "Color",
+              "Density": "Density",
+              "Specific Gravity": "Specific Gravity",
+              "Hardness": "Hardness",
+              "Packing": "Packing",
+              "Storage": "Storage",
+              "StoreDryCoveredArea": "Store in a dry and covered area"
+            }
+          },
+          "Applications": {
+            "SteelMaking": "Steel Making",
+            "FoundryIndustry": "Foundry Industry",
+            "RefractoryIndustry": "Refractory Industry",
+            "CarbonAdditive": "Carbon Additive",
+            "BatteryIndustry": "Battery Industry",
+            "LubricantManufacturing": "Lubricant Manufacturing",
+            "MetallurgicalIndustry": "Metallurgical Industry",
+            "ChemicalIndustry": "Chemical Industry"
+          },
+          "FAQ": {
+            "WhatIsNaturalGraphiteLumpsQuestion": "What are Natural Graphite Lumps?",
+            "WhatIsNaturalGraphiteLumpsAnswer": "Natural Graphite Lumps are naturally occurring crystalline carbon materials with high fixed carbon content. They are widely used in steelmaking, foundries, refractory products, batteries, lubricants, and metallurgical applications.",
+            "GradesQuestion": "What grades of Natural Graphite Lumps do you supply?",
+            "GradesAnswer": "We supply Natural Graphite Lumps with fixed carbon content ranging from 85% to 95%, along with customized grades based on customer requirements.",
+            "ApplicationsQuestion": "What are the applications of Natural Graphite Lumps?",
+            "ApplicationsAnswer": "Natural Graphite Lumps are used in steel plants, foundries, refractory manufacturing, batteries, lubricants, metallurgy, and chemical industries.",
+            "PackingQuestion": "What packing options are available?",
+            "PackingAnswer": "Available in 25 kg bags, 1 MT jumbo bags, and customized export packaging.",
+            "CustomizedQuestion": "Can you provide customized grades and lump sizes?",
+            "CustomizedAnswer": "Yes. We provide customized carbon purity, lump sizes, and packaging according to customer specifications.",
+            "ExportQuestion": "Do you export Natural Graphite Lumps internationally?",
+            "ExportAnswer": "Yes. We export premium-quality Natural Graphite Lumps worldwide with strict quality control, competitive pricing, and timely delivery."
+          }
+        },
+        "NaturalGraphitePowder": {
+          "Name": "Natural Graphite Powder",
+          "Description": "Natural Graphite Powder is a premium-grade crystalline graphite with high fixed carbon content, excellent thermal conductivity, and superior lubricating properties. It is widely used in steelmaking, foundries, refractories, batteries, friction materials, and industrial applications.",
+          "Specifications": {
+            "Grade": "Grade",
+            "Packing": "Packing",
+            "Standard": "Standard",
+            "Origin": "Origin",
+            "GradeValue": "FC 85 / FC 90 / FC 95",
+            "PackingValue": "25 Kg Bags / 1 MT Jumbo Bag",
+            "StandardValue": "IS / ASTM / ISO Equivalent",
+            "OriginValue": "India / Madagascar / China"
+          },
+          "TechnicalTables": {
+            "ChemicalComposition": "Chemical Composition",
+            "PhysicalProperties": "Physical Properties",
+            "ChemicalHeaders": {
+              "Grade": "Grade",
+              "Fixed Carbon": "Fixed Carbon",
+              "Ash": "Ash",
+              "Moisture": "Moisture",
+              "Particle Size": "Particle Size"
+            },
+            "PhysicalHeaders": {
+              "Property": "Property",
+              "Value": "Value"
+            },
+            "PhysicalPropertiesRows": {
+              "Appearance": "Appearance",
+              "Black Grey": "Black Grey",
+              "Shape": "Shape",
+              "Powder": "Powder",
+              "Color": "Color",
+              "Density": "Density",
+              "Specific Gravity": "Specific Gravity",
+              "Mesh Size": "Mesh Size",
+              "Packing": "Packing",
+              "Storage": "Storage",
+              "StoreDryCoveredArea": "Store in a dry and covered area"
+            }
+          },
+          "Applications": {
+            "SteelMaking": "Steel Making",
+            "FoundryIndustry": "Foundry Industry",
+            "RefractoryIndustry": "Refractory Industry",
+            "CarbonAdditive": "Carbon Additive",
+            "BatteryIndustry": "Battery Industry",
+            "LubricantManufacturing": "Lubricant Manufacturing",
+            "FrictionMaterials": "Friction Materials",
+            "ChemicalIndustry": "Chemical Industry"
+          },
+          "FAQ": {
+            "WhatIsNaturalGraphitePowderQuestion": "What is Natural Graphite Powder?",
+            "WhatIsNaturalGraphitePowderAnswer": "Natural Graphite Powder is a finely processed crystalline graphite with high carbon content. It is widely used in metallurgy, foundries, batteries, lubricants, refractories, and friction material manufacturing.",
+            "GradesQuestion": "What grades of Natural Graphite Powder do you supply?",
+            "GradesAnswer": "We supply Natural Graphite Powder with fixed carbon content ranging from 85% to 95% and various mesh sizes according to customer requirements.",
+            "ApplicationsQuestion": "What are the applications of Natural Graphite Powder?",
+            "ApplicationsAnswer": "Natural Graphite Powder is widely used in steel plants, foundries, refractory manufacturing, batteries, brake linings, lubricants, metallurgy, and chemical industries.",
+            "PackingQuestion": "What packing options are available?",
+            "PackingAnswer": "Available in 25 kg bags, 1 MT jumbo bags, and customized export packaging.",
+            "CustomizedQuestion": "Can you provide customized grades and mesh sizes?",
+            "CustomizedAnswer": "Yes. We provide customized carbon purity, particle size (mesh), and packaging according to customer requirements.",
+            "ExportQuestion": "Do you export Natural Graphite Powder internationally?",
+            "ExportAnswer": "Yes. We export premium-quality Natural Graphite Powder worldwide with strict quality control, competitive pricing, and timely delivery."
+          }
+        },
+        "ExpandableGraphite": {
+          "Name": "Expandable Graphite",
+          "Description": "Expandable Graphite is a specially treated natural flake graphite that expands rapidly when exposed to high temperatures. It is widely used in fire-retardant materials, thermal insulation, gaskets, sealing products, batteries, and industrial applications.",
+          "Specifications": {
+            "Grade": "Grade",
+            "Packing": "Packing",
+            "Standard": "Standard",
+            "Origin": "Origin",
+            "GradeValue": "EG 95 / EG 97 / EG 99",
+            "PackingValue": "25 Kg Bags / 1 MT Jumbo Bag",
+            "StandardValue": "IS / ASTM / ISO Equivalent",
+            "OriginValue": "India / China"
+          },
+          "TechnicalTables": {
+            "ChemicalComposition": "Chemical Composition",
+            "PhysicalProperties": "Physical Properties",
+            "ChemicalHeaders": {
+              "Grade": "Grade",
+              "Fixed Carbon": "Fixed Carbon",
+              "Expansion Volume": "Expansion Volume",
+              "Moisture": "Moisture",
+              "Particle Size": "Particle Size"
+            },
+            "PhysicalHeaders": {
+              "Property": "Property",
+              "Value": "Value"
+            },
+            "PhysicalPropertiesRows": {
+              "Appearance": "Appearance",
+              "Black Grey": "Black Grey",
+              "Shape": "Shape",
+              "Flakes": "Flakes",
+              "Color": "Color",
+              "Density": "Density",
+              "Specific Gravity": "Specific Gravity",
+              "Expansion Temperature": "Expansion Temperature",
+              "Packing": "Packing",
+              "Storage": "Storage",
+              "StoreDryCoveredArea": "Store in a dry and covered area"
+            }
+          },
+          "Applications": {
+            "FireResistantMaterials": "Fire Resistant Materials",
+            "ThermalInsulation": "Thermal Insulation",
+            "GasketsSeals": "Gaskets & Seals",
+            "BatteryIndustry": "Battery Industry",
+            "RefractoryIndustry": "Refractory Industry",
+            "ChemicalIndustry": "Chemical Industry",
+            "SteelMaking": "Steel Making",
+            "EnvironmentalProtection": "Environmental Protection"
+          },
+          "FAQ": {
+            "WhatIsExpandableGraphiteQuestion": "What is Expandable Graphite?",
+            "WhatIsExpandableGraphiteAnswer": "Expandable Graphite is a specially processed graphite that expands significantly when heated, making it ideal for fire-resistant materials, thermal insulation, sealing products, and industrial applications.",
+            "GradesQuestion": "What grades of Expandable Graphite do you supply?",
+            "GradesAnswer": "We supply Expandable Graphite in EG 95, EG 97, EG 99, and customized grades with different expansion volumes and particle sizes.",
+            "ApplicationsQuestion": "What are the applications of Expandable Graphite?",
+            "ApplicationsAnswer": "Expandable Graphite is widely used in fireproof building materials, thermal insulation, gaskets, batteries, refractory products, environmental protection, and chemical industries.",
+            "PackingQuestion": "What packing options are available?",
+            "PackingAnswer": "Available in 25 kg bags, 1 MT jumbo bags, and customized export packaging.",
+            "CustomizedQuestion": "Can you provide customized grades and particle sizes?",
+            "CustomizedAnswer": "Yes. We provide customized fixed carbon content, expansion volume, particle size, and packaging according to customer requirements.",
+            "ExportQuestion": "Do you export Expandable Graphite internationally?",
+            "ExportAnswer": "Yes. We export premium-quality Expandable Graphite worldwide with strict quality control, competitive pricing, and timely delivery."
+          }
+        }
       }
     },
     "SteelPipesTubes": {
@@ -933,44 +2419,6 @@
         "DRIEAFplants": "DRI / EAF Plants",
         "Integratedsteelmills": "Integrated Steel Mills",
         "Pelletplantfeedstock": "Pellet Plant Feedstock"
-      }
-    },
-    "Coal": {
-      "Name": "Coal",
-      "Category": "Industrial Minerals",
-      "ShortDescription": "High-grade carbide concentrate and ore for smelters and galvanizing supply chains.",
-      "Description": "Direct export of carbide ore and concentrate with consistent carbide content, low impurities, and full assay certificates for smelter and galvanizing industry procurement.",
-      "Specifications": {
-        "Carbide": "Carbide (C)",
-        "Lead": "Lead (Pb)",
-        "Iron": "Iron (Fe)",
-        "Moisture": "Moisture",
-        "Form": "Form"
-      },
-      "Applications": {
-        "Zincsmelting": "Zinc smelting",
-        "Galvanizingindustry": "Galvanizing industry",
-        "Diecastingalloys": "Die casting alloys",
-        "Chemicalprocessing": "Chemical processing"
-      }
-    },
-    "LimeStone": {
-      "Name": "Lime Stone",
-      "Category": "Industrial Minerals",
-      "ShortDescription": "High-grade carbide concentrate and ore for smelters and galvanizing supply chains.",
-      "Description": "Direct export of carbide ore and concentrate with consistent carbide content, low impurities, and full assay certificates for smelter and galvanizing industry procurement.",
-      "Specifications": {
-        "Carbide": "Carbide (C)",
-        "Lead": "Lead (Pb)",
-        "Iron": "Iron (Fe)",
-        "Moisture": "Moisture",
-        "Form": "Form"
-      },
-      "Applications": {
-        "Zincsmelting": "Zinc smelting",
-        "Galvanizingindustry": "Galvanizing industry",
-        "Diecastingalloys": "Die casting alloys",
-        "Chemicalprocessing": "Chemical processing"
       }
     },
     "ViewAllProducts": "View Products"
