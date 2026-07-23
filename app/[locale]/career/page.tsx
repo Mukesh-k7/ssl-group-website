@@ -213,7 +213,6 @@ export default function CareersPage() {
 
           {/* Job Cards Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-
             {visibleJobs.map((job, i) => (
               <div
                 key={i}
@@ -222,8 +221,8 @@ export default function CareersPage() {
               >
                 <div className="flex items-start justify-between mb-4">
                   <div>
-                    <div className="text-white font-bold text-sm mb-1">{t(`jobs.${job.key}.title`)} </div>
-                    <div className="text-[#F97316] text-xs font-semibold">{t("title")} </div>
+                    <div className="text-white font-bold text-sm mb-1">{t(`jobs.${job.key}.title`)}</div>
+                    <div className="text-[#F97316] text-xs font-semibold">{t("title")}</div>
                   </div>
                   <div className={`w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0 ${i === 0 ? "bg-[#F97316]/20" : "bg-white/5"}`}>
                     <svg className={`w-4 h-4 ${i === 1 ? "text-[#c96a00]" : "text-[#c96a00]"}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>

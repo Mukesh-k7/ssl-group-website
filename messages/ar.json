@@ -260,13 +260,13 @@
           },
           "Applications": {
             "SteelMaking": "صناعة الفولاذ",
-            "ElectricArcFurnaces": "أفران القوس الكهربائي",
+            "ElectricArcFurnace": "أفران القوس الكهربائي (EAF)",
             "InductionFurnaces": "أفران الحث",
-            "CarbonSteelProduction": "إنتاج الفولاذ الكربوني",
-            "AlloySteelManufacturing": "تصنيع الفولاذ السبائكي",
-            "FoundryIndustry": "صناعة المسابك",
-            "EngineeringApplications": "التطبيقات الهندسية",
-            "CastingIndustry": "صناعة المسبوكات"
+            "SteelFoundries": "مسابك الفولاذ",
+            "AlloySteelProduction": "إنتاج الفولاذ السبائكي",
+            "CarbonSteelManufacturing": "تصنيع الفولاذ الكربوني",
+            "CastingIndustry": "صناعة المسبوكات",
+            "EngineeringApplications": "التطبيقات الهندسية"
           },
           "FAQ": {
             "WhatIsBasicPigIronQuestion": "ما هو حديد الزهر بدرجة أساسية؟",
@@ -329,13 +329,13 @@
           },
           "Applications": {
             "SteelMaking": "صناعة الفولاذ",
-            "ElectricArcFurnace": "أفران القوس الكهربائي",
-            "BasicOxygenFurnace": "أفران الأكسجين الأساسية",
-            "InductionFurnace": "أفران الحث",
-            "ContinuousCasting": "الصب المستمر",
-            "AlloySteelProduction": "إنتاج الفولاذ السبائكي",
-            "SpecialSteelManufacturing": "تصنيع الفولاذ الخاص",
-            "MetallurgicalIndustry": "الصناعة المعدنية"
+            "ElectricArcFurnaces": "أفران القوس الكهربائي",
+            "InductionFurnaces": "أفران الحث",
+            "CarbonSteelProduction": "إنتاج الفولاذ الكربوني",
+            "AlloySteelManufacturing": "تصنيع الفولاذ السبائكي",
+            "FoundryIndustry": "صناعة المسابك",
+            "EngineeringApplications": "التطبيقات الهندسية",
+            "CastingIndustry": "صناعة المسبوكات"
           },
           "FAQ": {
             "WhatIsSteelPigIronQuestion": "ما هو حديد الزهر بدرجة صناعة الفولاذ؟",
@@ -424,23 +424,990 @@
       }
     },
     "FerroAlloys": {
-      "Name": "السبائك الحديدية",
+      "Name": "سبائك الحديد (فيرو ألويز)",
       "Category": "مواد السبائك",
-      "ShortDescription": "فيرو منغنيز، فيرو سيليكون، فيرو كروم وسبائك خاصة لإزالة الأكسدة وسبك الفولاذ.",
-      "Description": "مجموعة شاملة من السبائك الحديدية لمصانع الفولاذ المتكاملة والمصانع الصغيرة.",
+      "ShortDescription": "فيرو منجنيز، فيرو سيليكون، فيرو كروم، وسبائك متخصصة لإزالة أكسدة الصلب وإضافة العناصر السبائكية.",
+      "Description": "مجموعة شاملة من سبائك الحديد لمصانع الصلب المتكاملة والمصانع الصغيرة. نورّد درجات منخفضة ومرتفعة الكربون مع توثيق تتبع الدفعات وتحليل الغربلة.",
       "Specifications": {
         "FeMn": "FeMn (Mn)",
         "FeSi": "FeSi (Si)",
         "FeCr": "FeCr (Cr)",
-        "FeSiMn": "FeSiMn (Si + Mn)",
-        "Packaging": "التعبئة",
-        "Standards": "المعايير"
+        "FeSiMn": "FeSiMn (Si + Mn)"
       },
-      "Applications": {
-        "Steeldeoxidation": "إزالة أكسدة الفولاذ",
-        "Alloysteelproduction": "إنتاج الفولاذ السبائكي",
-        "Stainlesssteelmanufacturing": "تصنيع الفولاذ المقاوم للصدأ",
-        "Weldingconsumables": "مستهلكات اللحام"
+      "Variants": {
+        "FerroSilicon": {
+          "Name": "فيرو سيليكون",
+          "Description": "فيرو سيليكون 75% هو سبيكة حديدية عالية الجودة تُستخدم على نطاق واسع كعامل إزالة أكسدة وعنصر سبائكي في صناعة الصلب والمسابك.",
+          "Specifications": {
+            "Grade": "الدرجة",
+            "Packing": "التعبئة",
+            "Standard": "المعيار",
+            "Origin": "المنشأ",
+            "GradeValue": "FeSi 75%",
+            "PackingValue": "سائب / أكياس جامبو سعة 1 طن متري",
+            "StandardValue": "معادل IS / ASTM / ISO",
+            "OriginValue": "الهند"
+          },
+          "TechnicalTables": {
+            "ChemicalComposition": "التركيب الكيميائي",
+            "PhysicalProperties": "الخصائص الفيزيائية",
+            "ChemicalHeaders": {
+              "Grade": "الدرجة",
+              "Si": "Si",
+              "Al": "Al",
+              "C": "C",
+              "P": "P",
+              "S": "S"
+            },
+            "PhysicalHeaders": {
+              "Property": "الخاصية",
+              "Value": "القيمة"
+            },
+            "PhysicalPropertiesRows": {
+              "Appearance": "المظهر",
+              "GreyMetallic": "رمادي معدني",
+              "Shape": "الشكل",
+              "Lumps": "كتل",
+              "Color": "اللون",
+              "SilverGrey": "رمادي فضي",
+              "Density": "الكثافة",
+              "SpecificGravity": "الوزن النوعي",
+              "MeltingPoint": "نقطة الانصهار",
+              "Packing": "التعبئة",
+              "Storage": "التخزين",
+              "StoreDryCoveredArea": "يُخزَّن في مكان جاف ومغطى"
+            }
+          },
+          "Applications": {
+            "SteelMaking": "صناعة الصلب",
+            "Deoxidizer": "عامل إزالة أكسدة الصلب",
+            "FoundryIndustry": "صناعة المسابك",
+            "CastIron": "إنتاج الحديد الزهر",
+            "AlloySteel": "تصنيع الصلب السبائكي",
+            "StainlessSteel": "إنتاج الصلب المقاوم للصدأ",
+            "WeldingElectrodes": "أقطاب اللحام",
+            "MetalManufacturing": "تصنيع المعادن"
+          },
+          "FAQ": {
+            "WhatIsFerroSiliconQuestion": "ما هو فيرو سيليكون؟",
+            "WhatIsFerroSiliconAnswer": "فيرو سيليكون هو سبيكة من الحديد والسيليكون تُستخدم على نطاق واسع كعامل إزالة أكسدة وعنصر سبائكي في صناعة الصلب وإنتاج الحديد الزهر.",
+            "GradesQuestion": "ما هي درجات فيرو سيليكون التي تورّدونها؟",
+            "GradesAnswer": "نورّد FeSi 75%، وFeSi 72%، ودرجات مخصصة حسب متطلبات العميل.",
+            "ApplicationsQuestion": "ما هي تطبيقات فيرو سيليكون؟",
+            "ApplicationsAnswer": "يُستخدم فيرو سيليكون على نطاق واسع في صناعة الصلب، والمسابك، وتصنيع الصلب السبائكي، وإنتاج الحديد الزهر، وأقطاب اللحام.",
+            "PackingQuestion": "ما هي خيارات التعبئة المتاحة؟",
+            "PackingAnswer": "متوفر بشكل سائب، وعلى منصات نقالة، وفي أكياس جامبو سعة 1 طن متري.",
+            "CustomizedQuestion": "هل يمكنكم توفير درجات مخصصة؟",
+            "CustomizedAnswer": "نعم. نوفر درجات وأحجام جزيئات وتركيبات كيميائية مخصصة.",
+            "ExportQuestion": "هل تصدّرون فيرو سيليكون دوليًا؟",
+            "ExportAnswer": "نعم. نصدّر فيرو سيليكون إلى جميع أنحاء العالم مع رقابة صارمة على الجودة وتسليم في الوقت المحدد."
+          }
+        },
+        "FerroManganese": {
+          "Name": "فيرو منجنيز",
+          "Description": "فيرو منجنيز هو سبيكة حديدية أساسية تُستخدم كعامل إزالة أكسدة وعنصر سبائكي في صناعة الصلب. يعمل على تحسين القوة والصلابة ومقاومة التآكل والمتانة في الصلب الكربوني والسبائكي.",
+          "Specifications": {
+            "Grade": "الدرجة",
+            "Packing": "التعبئة",
+            "Standard": "المعيار",
+            "Origin": "المنشأ",
+            "GradeValue": "فيرو منجنيز عالي الكربون",
+            "PackingValue": "سائب / أكياس جامبو سعة 1 طن متري",
+            "StandardValue": "معادل IS / ASTM / ISO",
+            "OriginValue": "الهند"
+          },
+          "TechnicalTables": {
+            "ChemicalComposition": "التركيب الكيميائي",
+            "PhysicalProperties": "الخصائص الفيزيائية",
+            "ChemicalHeaders": {
+              "Grade": "الدرجة",
+              "Mn": "Mn",
+              "C": "C",
+              "Si": "Si",
+              "P": "P",
+              "S": "S"
+            },
+            "PhysicalHeaders": {
+              "Property": "الخاصية",
+              "Value": "القيمة"
+            },
+            "PhysicalPropertiesRows": {
+              "Appearance": "المظهر",
+              "GreyMetallic": "رمادي معدني",
+              "Shape": "الشكل",
+              "Lumps": "كتل",
+              "Color": "اللون",
+              "SilverGrey": "رمادي فضي",
+              "Density": "الكثافة",
+              "SpecificGravity": "الوزن النوعي",
+              "MeltingPoint": "نقطة الانصهار",
+              "Packing": "التعبئة",
+              "Storage": "التخزين",
+              "StoreDryCoveredArea": "يُخزَّن في مكان جاف ومغطى"
+            }
+          },
+          "Applications": {
+            "SteelMaking": "صناعة الصلب",
+            "AlloySteel": "تصنيع الصلب السبائكي",
+            "CarbonSteel": "إنتاج الصلب الكربوني",
+            "FoundryIndustry": "صناعة المسابك",
+            "RailwayComponents": "مكونات السكك الحديدية",
+            "EngineeringComponents": "المكونات الهندسية",
+            "ConstructionSteel": "صلب البناء",
+            "MetalManufacturing": "تصنيع المعادن"
+          },
+          "FAQ": {
+            "WhatIsFerroManganeseQuestion": "ما هو فيرو منجنيز؟",
+            "WhatIsFerroManganeseAnswer": "فيرو منجنيز هو سبيكة من الحديد والمنجنيز تُستخدم في صناعة الصلب كعامل إزالة أكسدة وعنصر سبائكي.",
+            "GradesQuestion": "ما هي الدرجات التي تورّدونها؟",
+            "GradesAnswer": "نورّد فيرو منجنيز عالي الكربون، ومتوسط الكربون، ومنخفض الكربون.",
+            "ApplicationsQuestion": "ما هي التطبيقات؟",
+            "ApplicationsAnswer": "يُستخدم في صناعة الصلب، والمسابك، والصلب السبائكي، والصناعات الهندسية والإنشائية.",
+            "PackingQuestion": "ما هي خيارات التعبئة المتاحة؟",
+            "PackingAnswer": "سائب، أو على منصات نقالة، أو في أكياس جامبو سعة 1 طن متري.",
+            "CustomizedQuestion": "هل يمكنكم توريد درجات مخصصة؟",
+            "CustomizedAnswer": "نعم. نورّد درجات وأحجامًا مخصصة حسب متطلبات العميل.",
+            "ExportQuestion": "هل تصدّرون دوليًا؟",
+            "ExportAnswer": "نعم. نصدّر فيرو منجنيز إلى جميع أنحاء العالم."
+          }
+        },
+        "FerroChrome": {
+          "Name": "فيرو كروم",
+          "Description": "فيرو كروم هو سبيكة حديدية غنية بالكروم تُستخدم بشكل أساسي في تصنيع الصلب المقاوم للصدأ والصلب السبائكي. يعزز مقاومة التآكل والصلابة ومقاومة البلى والقوة في درجات الحرارة العالية.",
+          "Specifications": {
+            "Grade": "الدرجة",
+            "Packing": "التعبئة",
+            "Standard": "المعيار",
+            "Origin": "المنشأ",
+            "GradeValue": "فيرو كروم عالي / منخفض الكربون",
+            "PackingValue": "سائب / أكياس جامبو سعة 1 طن متري",
+            "StandardValue": "معادل IS / ASTM / ISO",
+            "OriginValue": "الهند"
+          },
+          "TechnicalTables": {
+            "ChemicalComposition": "التركيب الكيميائي",
+            "PhysicalProperties": "الخصائص الفيزيائية",
+            "ChemicalHeaders": {
+              "Grade": "الدرجة",
+              "Cr": "Cr",
+              "C": "C",
+              "Si": "Si",
+              "P": "P",
+              "S": "S"
+            },
+            "PhysicalHeaders": {
+              "Property": "الخاصية",
+              "Value": "القيمة"
+            },
+            "PhysicalPropertiesRows": {
+              "Appearance": "المظهر",
+              "GreyMetallic": "رمادي معدني",
+              "Shape": "الشكل",
+              "Lumps": "كتل",
+              "Color": "اللون",
+              "SilverGrey": "رمادي فضي",
+              "Density": "الكثافة",
+              "SpecificGravity": "الوزن النوعي",
+              "MeltingPoint": "نقطة الانصهار",
+              "Packing": "التعبئة",
+              "Storage": "التخزين",
+              "StoreDryCoveredArea": "يُخزَّن في مكان جاف ومغطى"
+            }
+          },
+          "Applications": {
+            "StainlessSteel": "تصنيع الصلب المقاوم للصدأ",
+            "AlloySteel": "إنتاج الصلب السبائكي",
+            "ToolSteel": "صلب الأدوات",
+            "FoundryIndustry": "صناعة المسابك",
+            "WearResistantSteel": "الصلب المقاوم للبلى",
+            "EngineeringComponents": "المكونات الهندسية",
+            "MetalManufacturing": "تصنيع المعادن",
+            "SpecialSteels": "أنواع الصلب الخاصة"
+          },
+          "FAQ": {
+            "WhatIsFerroChromeQuestion": "ما هو فيرو كروم؟",
+            "WhatIsFerroChromeAnswer": "فيرو كروم هو سبيكة من الكروم والحديد تُستخدم بشكل أساسي في إنتاج الصلب المقاوم للصدأ والصلب السبائكي لتحسين مقاومة التآكل والصلابة والمتانة.",
+            "GradesQuestion": "ما هي درجات فيرو كروم التي تورّدونها؟",
+            "GradesAnswer": "نورّد فيرو كروم عالي ومتوسط ومنخفض الكربون بأحجام ومواصفات مختلفة.",
+            "ApplicationsQuestion": "ما هي تطبيقات فيرو كروم؟",
+            "ApplicationsAnswer": "يُستخدم فيرو كروم على نطاق واسع في تصنيع الصلب المقاوم للصدأ، والصلب السبائكي، وصلب الأدوات، والمسابك، والمكونات المقاومة للبلى، والصناعات الهندسية.",
+            "PackingQuestion": "ما هي خيارات التعبئة المتاحة؟",
+            "PackingAnswer": "متوفر بشكل سائب، وعلى منصات نقالة، وفي أكياس جامبو سعة 1 طن متري.",
+            "CustomizedQuestion": "هل يمكنكم توفير درجات وأحجام مخصصة؟",
+            "CustomizedAnswer": "نعم. نورّد درجات وأحجام جزيئات وتركيبات كيميائية مخصصة حسب مواصفات العميل.",
+            "ExportQuestion": "هل تصدّرون فيرو كروم دوليًا؟",
+            "ExportAnswer": "نعم. نصدّر فيرو كروم إلى الأسواق المحلية والدولية بجودة ثابتة وتوريد موثوق وتسليم في الوقت المحدد."
+          }
+        },
+        "FerroSiliconManganese": {
+          "Name": "فيرو سيليكون منجنيز",
+          "Description": "فيرو سيليكون منجنيز (سيليكو منجنيز) هو سبيكة حديدية متميزة تُستخدم كعامل إزالة أكسدة وعنصر سبائكي في صناعة الصلب. يحسّن القوة والمتانة ومقاومة البلى وجودة الصلب بشكل عام.",
+          "Specifications": {
+            "Grade": "الدرجة",
+            "Packing": "التعبئة",
+            "Standard": "المعيار",
+            "Origin": "المنشأ",
+            "GradeValue": "SiMn 65/15 وSiMn 60/14",
+            "PackingValue": "سائب / أكياس جامبو سعة 1 طن متري",
+            "StandardValue": "معادل IS / ASTM / ISO",
+            "OriginValue": "الهند"
+          },
+          "TechnicalTables": {
+            "ChemicalComposition": "التركيب الكيميائي",
+            "PhysicalProperties": "الخصائص الفيزيائية",
+            "ChemicalHeaders": {
+              "Grade": "الدرجة",
+              "Mn": "Mn",
+              "Si": "Si",
+              "C": "C",
+              "P": "P",
+              "S": "S"
+            },
+            "PhysicalHeaders": {
+              "Property": "الخاصية",
+              "Value": "القيمة"
+            },
+            "PhysicalPropertiesRows": {
+              "Appearance": "المظهر",
+              "GreyMetallic": "رمادي معدني",
+              "Shape": "الشكل",
+              "Lumps": "كتل",
+              "Color": "اللون",
+              "SilverGrey": "رمادي فضي",
+              "Density": "الكثافة",
+              "SpecificGravity": "الوزن النوعي",
+              "MeltingPoint": "نقطة الانصهار",
+              "Packing": "التعبئة",
+              "Storage": "التخزين",
+              "StoreDryCoveredArea": "يُخزَّن في مكان جاف ومغطى"
+            }
+          },
+          "Applications": {
+            "SteelMaking": "صناعة الفولاذ",
+            "AlloySteel": "تصنيع الفولاذ السبائكي",
+            "StructuralSteel": "الفولاذ الإنشائي",
+            "ConstructionSteel": "فولاذ البناء",
+            "FoundryIndustry": "صناعة المسابك",
+            "EngineeringComponents": "المكونات الهندسية",
+            "RailwayComponents": "مكونات السكك الحديدية",
+            "MetalManufacturing": "تصنيع المعادن"
+          },
+          "FAQ": {
+            "WhatIsFerroSiliconMagnesiumQuestion": "ما هو فيرو سيليكون مغنيسيوم (FeSiMg)؟",
+            "WhatIsFerroSiliconMagnesiumAnswer": "فيرو سيليكون مغنيسيوم (FeSiMg) هو سبيكة معالجة تُستخدم في إنتاج مصبوبات الحديد المطيل (SG). تساعد على تكوين الجرافيت الكروي، وتحسن الخواص الميكانيكية، وتضمن جودة صب عالية.",
+            "GradesQuestion": "ما هي درجات فيرو سيليكون مغنيسيوم التي توفرونها؟",
+            "GradesAnswer": "نوفر درجات مختلفة من فيرو سيليكون مغنيسيوم بمحتويات متنوعة من المغنيسيوم والسيليكون والعناصر الأرضية النادرة وفقًا لمتطلبات العملاء والمعايير الدولية.",
+            "ApplicationsQuestion": "ما هي استخدامات فيرو سيليكون مغنيسيوم؟",
+            "ApplicationsAnswer": "يستخدم على نطاق واسع في مسابك الحديد المطيل، ومسبوكات السيارات، والأنابيب ووصلاتها، والصمامات، والمضخات، والمكونات الهندسية، ومسبوكات الآلات الثقيلة.",
+            "PackingQuestion": "ما هي خيارات التعبئة المتوفرة؟",
+            "PackingAnswer": "يتم توريد المنتج في أكياس 25 كجم، أو أكياس جامبو سعة 1 طن متري، أو بتغليف مخصص للتصدير حسب متطلبات العملاء.",
+            "CustomizedQuestion": "هل يمكنكم توفير درجات ومواصفات مخصصة؟",
+            "CustomizedAnswer": "نعم، نوفر درجات وأحجام حبيبات مخصصة من فيرو سيليكون مغنيسيوم وفقًا لمواصفات العملاء والمعايير الصناعية.",
+            "ExportQuestion": "هل تقومون بتصدير فيرو سيليكون مغنيسيوم دوليًا؟",
+            "ExportAnswer": "نعم، نقوم بتصدير فيرو سيليكون مغنيسيوم عالي الجودة إلى الأسواق العالمية مع ضمان الجودة والأسعار التنافسية والتسليم في الوقت المحدد."
+          }
+        },
+        "FerroSiliconMagnesium": {
+          "Name": "فيرو سيليكون مغنيسيوم",
+          "Description": "فيرو سيليكون مغنيسيوم (FeSiMg) هو سبيكة حديدية عالية الأداء تُستخدم كعامل تكوير وتلقيح في إنتاج الحديد المطاوع (الدوكتايل). يحسّن تكوّر الغرافيت والقوة الميكانيكية وجودة الصب.",
+          "Specifications": {
+            "Grade": "الدرجة",
+            "Packing": "التعبئة",
+            "Standard": "المعيار",
+            "Origin": "المنشأ",
+            "GradeValue": "FeSiMg 5-8 / FeSiMg 8-10",
+            "PackingValue": "سائب / أكياس جامبو سعة 1 طن متري",
+            "StandardValue": "معادل IS / ASTM / ISO",
+            "OriginValue": "الهند"
+          },
+          "TechnicalTables": {
+            "ChemicalComposition": "التركيب الكيميائي",
+            "PhysicalProperties": "الخصائص الفيزيائية",
+            "ChemicalHeaders": {
+              "Grade": "الدرجة",
+              "Si": "Si",
+              "Mg": "Mg",
+              "Ca": "Ca",
+              "RE": "العناصر الأرضية النادرة",
+              "Fe": "Fe"
+            },
+            "PhysicalHeaders": {
+              "Property": "الخاصية",
+              "Value": "القيمة"
+            },
+            "PhysicalPropertiesRows": {
+              "Appearance": "المظهر",
+              "GreyMetallic": "رمادي معدني",
+              "Shape": "الشكل",
+              "Lumps": "كتل",
+              "Color": "اللون",
+              "SilverGrey": "رمادي فضي",
+              "Density": "الكثافة",
+              "SpecificGravity": "الوزن النوعي",
+              "MeltingPoint": "نقطة الانصهار",
+              "Packing": "التعبئة",
+              "Storage": "التخزين",
+              "StoreDryCoveredArea": "يُخزَّن في مكان جاف ومغطى"
+            }
+          },
+          "Applications": {
+            "DuctileIron": "إنتاج الحديد المطاوع",
+            "NodularCastIron": "الحديد الزهر الكروي",
+            "FoundryIndustry": "صناعة المسابك",
+            "CastIronProduction": "إنتاج الحديد الزهر",
+            "SteelMaking": "صناعة الصلب",
+            "AutomotiveComponents": "مكونات السيارات",
+            "EngineeringCastings": "المسبوكات الهندسية",
+            "MetalManufacturing": "تصنيع المعادن"
+          },
+          "FAQ": {
+            "WhatIsFerroSiliconMagnesiumQuestion": "ما هو فيرو سيليكون مغنيسيوم؟",
+            "WhatIsFerroSiliconMagnesiumAnswer": "فيرو سيليكون مغنيسيوم (FeSiMg) هو سبيكة حديدية تُستخدم كعامل تكوير في تصنيع الحديد المطاوع. يعزز تكوّن الغرافيت الكروي ويحسّن الخصائص الميكانيكية للحديد الزهر.",
+            "GradesQuestion": "ما هي درجات فيرو سيليكون مغنيسيوم التي تورّدونها؟",
+            "GradesAnswer": "نورّد FeSiMg 5-8، وFeSiMg 8-10، ودرجات مخصصة حسب مواصفات العميل.",
+            "ApplicationsQuestion": "ما هي تطبيقات فيرو سيليكون مغنيسيوم؟",
+            "ApplicationsAnswer": "يُستخدم على نطاق واسع في إنتاج الحديد المطاوع، والحديد الزهر الكروي، والمسابك، ومسبوكات السيارات، والمسبوكات الهندسية، وصناعات تصنيع المعادن.",
+            "PackingQuestion": "ما هي خيارات التعبئة المتاحة؟",
+            "PackingAnswer": "متوفر بشكل سائب، وعلى منصات نقالة، وفي أكياس جامبو سعة 1 طن متري.",
+            "CustomizedQuestion": "هل يمكنكم توفير درجات وأحجام مخصصة؟",
+            "CustomizedAnswer": "نعم. نوفر درجات وأحجام جزيئات وتركيبات كيميائية مخصصة حسب متطلبات العميل.",
+            "ExportQuestion": "هل تصدّرون فيرو سيليكون مغنيسيوم دوليًا؟",
+            "ExportAnswer": "نعم. نصدّر فيرو سيليكون مغنيسيوم إلى جميع أنحاء العالم بجودة ثابتة وتوريد موثوق وتسليم في الوقت المحدد."
+          }
+        },
+        "Inoculants": {
+          "Name": "المُلقِّحات",
+          "Description": "المُلقِّحات هي سبائك حديدية مُركّبة خصيصًا تُستخدم في إنتاج الحديد الرمادي والحديد المطاوع لتحسين تكوّن الغرافيت، وتعزيز الخصائص الميكانيكية، وتقليل التصلب السطحي، وإنتاج مسبوكات عالية الجودة.",
+          "Specifications": {
+            "Grade": "الدرجة",
+            "Packing": "التعبئة",
+            "Standard": "المعيار",
+            "Origin": "المنشأ",
+            "GradeValue": "ملقِّحات قائمة على FeSi",
+            "PackingValue": "سائب / أكياس جامبو سعة 1 طن متري",
+            "StandardValue": "معادل IS / ASTM / ISO",
+            "OriginValue": "الهند"
+          },
+          "TechnicalTables": {
+            "ChemicalComposition": "التركيب الكيميائي",
+            "PhysicalProperties": "الخصائص الفيزيائية",
+            "ChemicalHeaders": {
+              "Grade": "الدرجة",
+              "Si": "Si",
+              "Ca": "Ca",
+              "Al": "Al",
+              "Ba": "Ba",
+              "Fe": "Fe"
+            },
+            "PhysicalHeaders": {
+              "Property": "الخاصية",
+              "Value": "القيمة"
+            },
+            "PhysicalPropertiesRows": {
+              "Appearance": "المظهر",
+              "GreyMetallic": "رمادي معدني",
+              "Shape": "الشكل",
+              "Lumps": "كتل",
+              "Color": "اللون",
+              "SilverGrey": "رمادي فضي",
+              "Density": "الكثافة",
+              "SpecificGravity": "الوزن النوعي",
+              "MeltingPoint": "نقطة الانصهار",
+              "Packing": "التعبئة",
+              "Storage": "التخزين",
+              "StoreDryCoveredArea": "يُخزَّن في مكان جاف ومغطى"
+            }
+          },
+          "Applications": {
+            "GreyCastIron": "الحديد الزهر الرمادي",
+            "DuctileIron": "الحديد المطاوع",
+            "FoundryIndustry": "صناعة المسابك",
+            "CastIronProduction": "إنتاج الحديد الزهر",
+            "AutomotiveCastings": "مسبوكات السيارات",
+            "EngineeringCastings": "المسبوكات الهندسية",
+            "PipeCastings": "مسبوكات الأنابيب",
+            "MetalManufacturing": "تصنيع المعادن"
+          },
+          "FAQ": {
+            "WhatIsInoculantsQuestion": "ما هي المُلقِّحات؟",
+            "WhatIsInoculantsAnswer": "المُلقِّحات هي إضافات من سبائك الحديد تُستخدم أثناء إنتاج الحديد الزهر لتحسين بنية الغرافيت، وتقليل تكوّن الكربيد، وتعزيز جودة المسبوكات وقابليتها للتشغيل الآلي.",
+            "GradesQuestion": "ما هي أنواع المُلقِّحات التي تورّدونها؟",
+            "GradesAnswer": "نورّد ملقِّحات قائمة على FeSi، وملقِّحات الباريوم، وملقِّحات الكالسيوم، ودرجات ملقِّحات مخصصة حسب متطلبات العميل.",
+            "ApplicationsQuestion": "ما هي تطبيقات المُلقِّحات؟",
+            "ApplicationsAnswer": "تُستخدم المُلقِّحات على نطاق واسع في الحديد الرمادي، والحديد المطاوع، والمسابك، ومسبوكات السيارات، ووصلات الأنابيب، والمسبوكات الهندسية، وصناعات تصنيع المعادن.",
+            "PackingQuestion": "ما هي خيارات التعبئة المتاحة؟",
+            "PackingAnswer": "متوفر بشكل سائب، وعلى منصات نقالة، وفي أكياس جامبو سعة 1 طن متري.",
+            "CustomizedQuestion": "هل يمكنكم توفير درجات مخصصة؟",
+            "CustomizedAnswer": "نعم. نوفر تركيبات وأحجام جزيئات وتغليفًا مخصصًا للملقِّحات حسب متطلبات العميل.",
+            "ExportQuestion": "هل تصدّرون المُلقِّحات دوليًا؟",
+            "ExportAnswer": "نعم. نصدّر ملقِّحات عالية الجودة إلى جميع أنحاء العالم مع ضمان جودة موثوق وتسليم في الوقت المحدد."
+          }
+        }
+      }
+    },
+    "Coal": {
+      "Name": "الفحم",
+      "Category": "المعادن الصناعية",
+      "ShortDescription": "توفر مجموعة SSL فحمًا صناعيًا عالي الجودة يتميز بمحتوى رطوبة ورماد وقيمة حرارية مضبوطة، مما يضمن احتراقًا فعالًا، وتقليل تكاليف التشغيل، وأداءً موثوقًا في التطبيقات المعدنية والصناعية.",
+      "Description": "الفحم هو وقود طبيعي غني بالكربون يُستخدم على نطاق واسع في صناعة الفولاذ، والمسابك، وتوليد الطاقة، وصناعة الأسمنت، والعديد من تطبيقات التسخين الصناعية.",
+      "Specification": {
+        "FixedCarbon": "الكربون الثابت (FC)",
+        "AshContent": "محتوى الرماد",
+        "VolatileMatter": "المواد المتطايرة (VM)",
+        "Moisture": "الرطوبة",
+        "Sulphur": "الكبريت (S)"
+      },
+      "Variants": {
+        "Anthracite": {
+          "Name": "أنثراسيت",
+          "Description": "الأنثراسيت هو فحم صلب عالي الجودة يتميز بنسبة عالية من الكربون الثابت وانخفاض محتوى الرماد والمواد المتطايرة. ويستخدم على نطاق واسع كمادة مضافة للكربون في صناعة الفولاذ، والمسابك، والصناعات المعدنية، وترشيح المياه، والتطبيقات الصناعية للتسخين.",
+          "Specifications": {
+            "Grade": "الدرجة",
+            "Packing": "التعبئة",
+            "Standard": "المعيار",
+            "Origin": "بلد المنشأ",
+            "GradeValue": "AC 85 / AC 90 / AC 95",
+            "PackingValue": "أكياس 25 كجم / كيس جامبو 1 طن متري",
+            "StandardValue": "مكافئ IS / ASTM / ISO",
+            "OriginValue": "الهند / مستورد"
+          },
+          "TechnicalTables": {
+            "ChemicalComposition": "التركيب الكيميائي",
+            "PhysicalProperties": "الخواص الفيزيائية",
+            "ChemicalHeaders": {
+              "Grade": "الدرجة",
+              "FC": "الكربون الثابت",
+              "Ash": "الرماد",
+              "VM": "المواد المتطايرة",
+              "Moisture": "الرطوبة",
+              "Sulfur": "الكبريت"
+            },
+            "PhysicalHeaders": {
+              "Property": "الخاصية",
+              "Value": "القيمة"
+            },
+            "PhysicalPropertiesRows": {
+              "Appearance": "المظهر",
+              "Black": "أسود",
+              "Shape": "الشكل",
+              "Lumps": "كتل",
+              "Color": "اللون",
+              "Density": "الكثافة",
+              "SpecificGravity": "الثقل النوعي",
+              "CalorificValue": "القيمة الحرارية",
+              "Packing": "التعبئة",
+              "Storage": "التخزين",
+              "StoreDryCoveredArea": "يُخزن في مكان جاف ومغطى"
+            }
+          },
+          "Applications": {
+            "SteelMaking": "صناعة الفولاذ",
+            "FoundryIndustry": "صناعة المسابك",
+            "CarbonAdditive": "مادة مضافة للكربون",
+            "MetallurgicalIndustry": "الصناعة المعدنية",
+            "WaterFiltration": "ترشيح المياه",
+            "PowerGeneration": "توليد الطاقة",
+            "ChemicalIndustry": "الصناعة الكيميائية",
+            "IndustrialHeating": "التسخين الصناعي"
+          },
+          "FAQ": {
+            "WhatIsAnthraciteQuestion": "ما هو الأنثراسيت؟",
+            "WhatIsAnthraciteAnswer": "الأنثراسيت هو أعلى درجات الفحم الطبيعي، ويتميز بنسبة عالية من الكربون، وانخفاض نسبة الكبريت والمواد المتطايرة. ويستخدم كمادة مضافة للكربون، ووقود، ووسيط للترشيح في التطبيقات الصناعية.",
+            "GradesQuestion": "ما هي درجات الأنثراسيت التي توفرونها؟",
+            "GradesAnswer": "نوفر أنثراسيت بنسبة كربون ثابت تتراوح بين 85% و95%، بالإضافة إلى درجات مخصصة حسب متطلبات العملاء.",
+            "ApplicationsQuestion": "ما هي استخدامات الأنثراسيت؟",
+            "ApplicationsAnswer": "يستخدم الأنثراسيت في مصانع الفولاذ، والمسابك، والصناعات المعدنية، وأنظمة ترشيح المياه، ومحطات الطاقة، والتطبيقات الصناعية للتسخين.",
+            "PackingQuestion": "ما هي خيارات التعبئة المتوفرة؟",
+            "PackingAnswer": "متوفر في أكياس 25 كجم، وأكياس جامبو سعة 1 طن متري، بالإضافة إلى عبوات تصدير مخصصة.",
+            "CustomizedQuestion": "هل يمكنكم توفير درجات وأحجام مخصصة؟",
+            "CustomizedAnswer": "نعم، نوفر نسب كربون ثابت، وأحجام حبيبات، وخيارات تعبئة مخصصة وفقًا لمتطلبات العملاء.",
+            "ExportQuestion": "هل تقومون بتصدير الأنثراسيت إلى الأسواق الدولية؟",
+            "ExportAnswer": "نعم، نقوم بتصدير أنثراسيت عالي الجودة إلى الأسواق المحلية والعالمية مع ضمان الجودة والأسعار التنافسية والتسليم في الوقت المحدد."
+          }
+        },
+        "SteamCoal": {
+          "Name": "الفحم الحراري",
+          "Description": "الفحم الحراري، المعروف أيضًا باسم فحم البخار، هو وقود عالي الجودة يُستخدم في توليد الكهرباء، والغلايات الصناعية، ومصانع الأسمنت، والعديد من الصناعات التحويلية. ويوفر قيمة حرارية ثابتة، ومحتوى منخفضًا من الرطوبة، وكفاءة احتراق عالية.",
+          "Specifications": {
+            "Grade": "الدرجة",
+            "Packing": "التعبئة",
+            "Standard": "المعيار",
+            "Origin": "بلد المنشأ",
+            "GradeValue": "5500 / 6000 / 6500 GCV",
+            "PackingValue": "سائب / كيس جامبو 1 طن متري",
+            "StandardValue": "مطابق لمعايير IS / ASTM / ISO",
+            "OriginValue": "الهند / إندونيسيا / جنوب أفريقيا"
+          },
+          "TechnicalTables": {
+            "ChemicalComposition": "التركيب الكيميائي",
+            "PhysicalProperties": "الخصائص الفيزيائية",
+            "ChemicalHeaders": {
+              "Grade": "الدرجة",
+              "GCV": "القيمة الحرارية الإجمالية (GCV)",
+              "Ash": "الرماد",
+              "VM": "المواد المتطايرة",
+              "Moisture": "الرطوبة",
+              "Sulfur": "الكبريت"
+            },
+            "PhysicalHeaders": {
+              "Property": "الخاصية",
+              "Value": "القيمة"
+            },
+            "PhysicalPropertiesRows": {
+              "Appearance": "المظهر",
+              "Black": "أسود",
+              "Shape": "الشكل",
+              "Lumps": "كتل",
+              "Color": "اللون",
+              "Density": "الكثافة",
+              "SpecificGravity": "الثقل النوعي",
+              "CalorificValue": "القيمة الحرارية",
+              "Packing": "التعبئة",
+              "Storage": "التخزين",
+              "StoreDryCoveredArea": "يُحفظ في مكان جاف ومغطى"
+            }
+          },
+          "Applications": {
+            "PowerGeneration": "توليد الكهرباء",
+            "CementIndustry": "صناعة الأسمنت",
+            "SteelIndustry": "صناعة الفولاذ",
+            "PaperIndustry": "صناعة الورق",
+            "TextileIndustry": "صناعة النسيج",
+            "IndustrialBoilers": "الغلايات الصناعية",
+            "BrickKilns": "أفران الطوب",
+            "ChemicalIndustry": "الصناعة الكيميائية"
+          },
+          "FAQ": {
+            "WhatIsSteamCoalQuestion": "ما هو الفحم الحراري؟",
+            "WhatIsSteamCoalAnswer": "الفحم الحراري، المعروف أيضًا باسم فحم البخار، هو نوع من الفحم يُستخدم بشكل رئيسي في توليد الكهرباء والتسخين الصناعي بفضل قيمته الحرارية العالية وكفاءة احتراقه الممتازة.",
+            "GradesQuestion": "ما هي درجات الفحم الحراري التي توفرونها؟",
+            "GradesAnswer": "نوفر الفحم الحراري بدرجات مختلفة تتراوح من 4200 إلى 7000 GCV، بما في ذلك الفحم الإندونيسي والجنوب أفريقي والهندي.",
+            "ApplicationsQuestion": "ما هي استخدامات الفحم الحراري؟",
+            "ApplicationsAnswer": "يُستخدم الفحم الحراري في محطات توليد الكهرباء، ومصانع الأسمنت، وصناعة الفولاذ، ومصانع الورق، وصناعة النسيج، والغلايات الصناعية، وأفران الطوب، والصناعة الكيميائية.",
+            "PackingQuestion": "ما هي خيارات التعبئة المتوفرة؟",
+            "PackingAnswer": "يتوفر المنتج سائبًا، أو في أكياس جامبو سعة 1 طن متري، أو بتغليف تصدير مخصص حسب متطلبات العميل.",
+            "CustomizedQuestion": "هل يمكنكم توفير درجات وأحجام مخصصة؟",
+            "CustomizedAnswer": "نعم، نوفر قيم GCV، وأحجام الحبيبات، ومستويات الرطوبة، وخيارات التعبئة وفقًا لمتطلبات العملاء.",
+            "ExportQuestion": "هل تقومون بتصدير الفحم الحراري دوليًا؟",
+            "ExportAnswer": "نعم، نقوم بتصدير الفحم الحراري عالي الجودة إلى مختلف أنحاء العالم مع ضمان الجودة، والأسعار التنافسية، والخدمات اللوجستية الموثوقة."
+          }
+        },
+        "PulverizedCoalInjection": {
+          "Name": "حقن الفحم المسحوق (PCI)",
+          "Description": "حقن الفحم المسحوق (PCI) هو فحم مطحون ناعم يُستخدم كوقود مساعد في الأفران العالية لتقليل استهلاك فحم الكوك، وخفض تكاليف الإنتاج، وتحسين كفاءة الفرن. ويوفر قيمة حرارية مرتفعة، ومحتوى منخفضًا من الرماد، وأداء احتراق ثابتًا.",
+          "Specifications": {
+            "Grade": "الدرجة",
+            "Packing": "التعبئة",
+            "Standard": "المعيار",
+            "Origin": "بلد المنشأ",
+            "GradeValue": "PCI 70 / PCI 75 / PCI 80",
+            "PackingValue": "أكياس 25 كجم / كيس جامبو 1 طن متري",
+            "StandardValue": "مطابق لمعايير IS / ASTM / ISO",
+            "OriginValue": "الهند / مستورد"
+          },
+          "TechnicalTables": {
+            "ChemicalComposition": "التركيب الكيميائي",
+            "PhysicalProperties": "الخصائص الفيزيائية",
+            "ChemicalHeaders": {
+              "Grade": "الدرجة",
+              "FC": "الكربون الثابت",
+              "Ash": "الرماد",
+              "VM": "المواد المتطايرة",
+              "Moisture": "الرطوبة",
+              "Sulfur": "الكبريت"
+            },
+            "PhysicalHeaders": {
+              "Property": "الخاصية",
+              "Value": "القيمة"
+            },
+            "PhysicalPropertiesRows": {
+              "Appearance": "المظهر",
+              "Black": "أسود",
+              "Shape": "الشكل",
+              "Fine Powder": "مسحوق ناعم",
+              "Color": "اللون",
+              "Density": "الكثافة",
+              "SpecificGravity": "الثقل النوعي",
+              "ParticleSize": "حجم الجسيمات",
+              "Packing": "التعبئة",
+              "Storage": "التخزين",
+              "StoreDryCoveredArea": "يُحفظ في مكان جاف ومغطى"
+            }
+          },
+          "Applications": {
+            "BlastFurnace": "الحقن في الأفران العالية",
+            "SteelMaking": "صناعة الفولاذ",
+            "IronMaking": "إنتاج الحديد",
+            "MetallurgicalIndustry": "الصناعة المعدنية",
+            "FoundryIndustry": "صناعة المسابك",
+            "FuelSubstitution": "استبدال فحم الكوك",
+            "IndustrialHeating": "التسخين الصناعي",
+            "EnergyEfficiency": "تحسين كفاءة الطاقة"
+          },
+          "FAQ": {
+            "WhatIsPulverizedCoalInjectionQuestion": "ما هو حقن الفحم المسحوق (PCI)؟",
+            "WhatIsPulverizedCoalInjectionAnswer": "حقن الفحم المسحوق (PCI) هو فحم مطحون بدقة يتم حقنه في الأفران العالية كبديل لفحم الكوك، مما يقلل تكاليف الإنتاج ويزيد من إنتاجية الفرن.",
+            "GradesQuestion": "ما هي درجات فحم PCI التي توفرونها؟",
+            "GradesAnswer": "نوفر فحم PCI بنسبة كربون ثابت تتراوح بين 70% و80%، بالإضافة إلى درجات مخصصة وفقًا لمتطلبات العملاء.",
+            "ApplicationsQuestion": "ما هي استخدامات فحم PCI؟",
+            "ApplicationsAnswer": "يُستخدم فحم PCI في الأفران العالية، وإنتاج الحديد، وصناعة الفولاذ، والمصانع المعدنية، والعمليات الصناعية الموفرة للطاقة.",
+            "PackingQuestion": "ما هي خيارات التعبئة المتوفرة؟",
+            "PackingAnswer": "يتوفر في أكياس 25 كجم، وأكياس جامبو سعة 1 طن متري، والتوريد السائب، بالإضافة إلى عبوات تصدير مخصصة.",
+            "CustomizedQuestion": "هل يمكنكم توفير مواصفات مخصصة؟",
+            "CustomizedAnswer": "نعم، نوفر نسب الكربون الثابت، ومحتوى الرماد، وحجم الجسيمات، وخيارات التعبئة وفقًا لمتطلبات العملاء.",
+            "ExportQuestion": "هل تقومون بتصدير فحم PCI إلى الأسواق الدولية؟",
+            "ExportAnswer": "نعم، نقوم بتصدير فحم حقن الفحم المسحوق (PCI) عالي الجودة إلى جميع أنحاء العالم مع ضمان الجودة والأسعار التنافسية والتسليم الموثوق."
+          }
+        },
+        "CokingCoal": {
+          "Name": "فحم الكوك",
+          "Description": "فحم الكوك، المعروف أيضًا باسم الفحم المعدني، هو فحم عالي الجودة يُستخدم في إنتاج الكوك للأفران العالية. ويتميز بخصائص تكويك ممتازة، ونسبة كربون مرتفعة، وانخفاض محتوى الرماد والكبريت، مما يجعله مثاليًا لصناعة الحديد والصلب.",
+          "Specifications": {
+            "Grade": "الدرجة",
+            "Packing": "التعبئة",
+            "Standard": "المعيار",
+            "Origin": "بلد المنشأ",
+            "GradeValue": "Prime Hard / Medium Coking / Semi Soft",
+            "PackingValue": "سائب / كيس جامبو 1 طن متري",
+            "StandardValue": "مطابق لمعايير IS / ASTM / ISO",
+            "OriginValue": "أستراليا / الهند / مستورد"
+          },
+          "TechnicalTables": {
+            "ChemicalComposition": "التركيب الكيميائي",
+            "PhysicalProperties": "الخصائص الفيزيائية",
+            "ChemicalHeaders": {
+              "Grade": "الدرجة",
+              "FC": "الكربون الثابت",
+              "Ash": "الرماد",
+              "VM": "المواد المتطايرة",
+              "Moisture": "الرطوبة",
+              "Sulfur": "الكبريت"
+            },
+            "PhysicalHeaders": {
+              "Property": "الخاصية",
+              "Value": "القيمة"
+            },
+            "PhysicalPropertiesRows": {
+              "Appearance": "المظهر",
+              "Black": "أسود",
+              "Shape": "الشكل",
+              "Lumps": "كتل",
+              "Color": "اللون",
+              "Density": "الكثافة",
+              "SpecificGravity": "الثقل النوعي",
+              "CalorificValue": "القيمة الحرارية",
+              "Packing": "التعبئة",
+              "Storage": "التخزين",
+              "StoreDryCoveredArea": "يُحفظ في مكان جاف ومغطى"
+            }
+          },
+          "Applications": {
+            "BlastFurnace": "الأفران العالية",
+            "CokeManufacturing": "إنتاج الكوك",
+            "SteelMaking": "صناعة الفولاذ",
+            "IronMaking": "إنتاج الحديد",
+            "MetallurgicalIndustry": "الصناعة المعدنية",
+            "FoundryIndustry": "صناعة المسابك",
+            "IndustrialFuel": "وقود صناعي",
+            "ChemicalIndustry": "الصناعة الكيميائية"
+          },
+          "FAQ": {
+            "WhatIsCokingCoalQuestion": "ما هو فحم الكوك؟",
+            "WhatIsCokingCoalAnswer": "فحم الكوك هو فحم معدني عالي الجودة يُستخدم في إنتاج الكوك للأفران العالية في صناعة الحديد والصلب، ويتميز بخصائص تكويك ممتازة ونسبة كربون مرتفعة.",
+            "GradesQuestion": "ما هي درجات فحم الكوك التي توفرونها؟",
+            "GradesAnswer": "نوفر فحم الكوك بدرجات Prime Hard وMedium Coking وSemi Soft، بالإضافة إلى درجات مخصصة وفقًا لمتطلبات العملاء.",
+            "ApplicationsQuestion": "ما هي استخدامات فحم الكوك؟",
+            "ApplicationsAnswer": "يُستخدم فحم الكوك في أفران الكوك، والأفران العالية، ومصانع الصلب، والمسابك، والصناعات المعدنية، والصناعة الكيميائية.",
+            "PackingQuestion": "ما هي خيارات التعبئة المتوفرة؟",
+            "PackingAnswer": "يتوفر المنتج سائبًا، أو في أكياس جامبو سعة 1 طن متري، أو بتغليف تصدير مخصص حسب متطلبات العميل.",
+            "CustomizedQuestion": "هل يمكنكم توفير درجات ومواصفات مخصصة؟",
+            "CustomizedAnswer": "نعم، نوفر محتوى رماد، ومواد متطايرة، ومستويات كبريت، وأحجام حبيبات، وخيارات تعبئة مخصصة وفقًا لمتطلبات العملاء.",
+            "ExportQuestion": "هل تقومون بتصدير فحم الكوك إلى الأسواق الدولية؟",
+            "ExportAnswer": "نعم، نقوم بتصدير فحم الكوك عالي الجودة إلى مختلف أنحاء العالم مع ضمان الجودة، والأسعار التنافسية، والتسليم الموثوق."
+          }
+        }
+      }
+    },
+    "LimeStone": {
+      "Name": "الحجر الجيري",
+      "Category": "المعادن الصناعية",
+      "ShortDescription": "حجر جيري عالي الجودة يتميز بنسبة مرتفعة من الكالسيوم، ويُستخدم على نطاق واسع في مصانع الفولاذ، وصناعة الأسمنت، والإنشاءات، والصناعات الكيميائية، وصناعة الزجاج، ومعالجة المياه.",
+      "Description": "الحجر الجيري هو صخر رسوبي طبيعي يتكون بشكل أساسي من كربونات الكالسيوم (CaCO₃). ويُعد من أكثر المعادن الصناعية استخدامًا بفضل محتواه العالي من الكالسيوم، وخصائصه الممتازة كعامل صهر، واستقراره الكيميائي.",
+      "Specification": {
+        "CalciumCarbonate": "كربونات الكالسيوم (CaCO₃)",
+        "CalciumOxide": "أكسيد الكالسيوم (CaO)",
+        "MagnesiumOxide": "أكسيد المغنيسيوم (MgO)",
+        "Silica": "السيليكا (SiO₂)"
+      },
+      "Variants": {
+        "SteelGradeLimestone": {
+          "Name": "الحجر الجيري بدرجة صناعة الفولاذ",
+          "Description": "الحجر الجيري بدرجة صناعة الفولاذ هو مادة صهارة عالية الجودة تُستخدم في صناعة الحديد والصلب. يتميز بنسبة عالية من كربونات الكالسيوم وانخفاض محتوى السيليكا وأكسيد المغنيسيوم، مما يساعد على إزالة الشوائب وتحسين تكوين الخبث أثناء صناعة الفولاذ.",
+          "Specifications": {
+            "Grade": "الدرجة",
+            "Packing": "التعبئة",
+            "Standard": "المعيار",
+            "Origin": "بلد المنشأ",
+            "GradeValue": "LS-90 / LS-92 / LS-95",
+            "PackingValue": "سائب / كيس جامبو 1 طن متري",
+            "StandardValue": "مطابق لمعايير IS / ASTM / ISO",
+            "OriginValue": "الهند"
+          },
+          "TechnicalTables": {
+            "ChemicalComposition": "التركيب الكيميائي",
+            "PhysicalProperties": "الخصائص الفيزيائية",
+            "ChemicalHeaders": {
+              "Grade": "الدرجة",
+              "CaCO₃": "كربونات الكالسيوم",
+              "CaO": "أكسيد الكالسيوم",
+              "MgO": "أكسيد المغنيسيوم",
+              "SiO₂": "السيليكا",
+              "Size": "الحجم"
+            },
+            "PhysicalHeaders": {
+              "Property": "الخاصية",
+              "Value": "القيمة"
+            },
+            "PhysicalPropertiesRows": {
+              "Appearance": "المظهر",
+              "WhiteGrey": "أبيض مائل إلى الرمادي",
+              "Shape": "الشكل",
+              "Lumps": "كتل",
+              "Color": "اللون",
+              "Density": "الكثافة",
+              "SpecificGravity": "الثقل النوعي",
+              "Hardness": "الصلادة",
+              "Packing": "التعبئة",
+              "Storage": "التخزين",
+              "StoreDryCoveredArea": "يُحفظ في مكان جاف ومغطى"
+            }
+          },
+          "Applications": {
+            "SteelMaking": "صناعة الفولاذ",
+            "BlastFurnace": "الفرن العالي",
+            "BOFConverter": "فرن الأكسجين الأساسي (BOF)",
+            "ElectricArcFurnace": "فرن القوس الكهربائي (EAF)",
+            "FluxMaterial": "مادة صهارة",
+            "IronMaking": "إنتاج الحديد",
+            "MetallurgicalIndustry": "الصناعة المعدنية",
+            "FoundryIndustry": "صناعة المسابك"
+          },
+          "FAQ": {
+            "WhatIsSteelGradeLimestoneQuestion": "ما هو الحجر الجيري بدرجة صناعة الفولاذ؟",
+            "WhatIsSteelGradeLimestoneAnswer": "الحجر الجيري بدرجة صناعة الفولاذ هو حجر جيري عالي النقاء يُستخدم كمادة صهارة في صناعة الحديد والصلب، حيث يساعد على إزالة الشوائب مثل السيليكا والكبريت والفوسفور، ويحسن تكوين الخبث وكفاءة الأفران.",
+            "GradesQuestion": "ما هي درجات الحجر الجيري التي توفرونها؟",
+            "GradesAnswer": "نوفر درجات LS-90 وLS-92 وLS-95 بالإضافة إلى درجات مخصصة بمحتوى مختلف من كربونات الكالسيوم وأحجام حبيبات متنوعة.",
+            "ApplicationsQuestion": "ما هي استخدامات الحجر الجيري بدرجة صناعة الفولاذ؟",
+            "ApplicationsAnswer": "يُستخدم في الأفران العالية، وأفران الأكسجين الأساسي (BOF)، وأفران القوس الكهربائي (EAF)، وإنتاج الحديد، والمسابك، والصناعات المعدنية كمادة صهارة.",
+            "PackingQuestion": "ما هي خيارات التعبئة المتوفرة؟",
+            "PackingAnswer": "يتوفر المنتج سائبًا، أو في أكياس جامبو سعة 1 طن متري، أو بتغليف تصدير مخصص وفقًا لمتطلبات العملاء.",
+            "CustomizedQuestion": "هل يمكنكم توفير درجات وأحجام مخصصة؟",
+            "CustomizedAnswer": "نعم، نوفر مستويات نقاء، وأحجام كتل، وخيارات تعبئة مخصصة لتلبية متطلبات مصانع الصلب والمسابك.",
+            "ExportQuestion": "هل تقومون بتصدير الحجر الجيري بدرجة صناعة الفولاذ دوليًا؟",
+            "ExportAnswer": "نعم، نقوم بتصدير الحجر الجيري عالي الجودة بدرجة صناعة الفولاذ إلى الأسواق المحلية والعالمية مع ضمان الجودة والأسعار التنافسية والخدمات اللوجستية الموثوقة."
+          }
+        },
+        "ChemicalGradeLimestone": {
+          "Name": "الحجر الجيري بدرجة كيميائية",
+          "Description": "الحجر الجيري بدرجة كيميائية هو حجر جيري عالي النقاء يتميز بنسبة مرتفعة من كربونات الكالسيوم وانخفاض مستوى الشوائب. ويُستخدم على نطاق واسع في الصناعات الكيميائية، وصناعة الزجاج، وإنتاج الورق، وتكرير السكر، ومعالجة المياه، وتطبيقات المعادن الصناعية.",
+          "Specifications": {
+            "Grade": "الدرجة",
+            "Packing": "التعبئة",
+            "Standard": "المعيار",
+            "Origin": "بلد المنشأ",
+            "GradeValue": "CG-95 / CG-97 / CG-98",
+            "PackingValue": "أكياس 25 كجم / كيس جامبو 1 طن متري",
+            "StandardValue": "مطابق لمعايير IS / ASTM / ISO",
+            "OriginValue": "الهند"
+          },
+          "TechnicalTables": {
+            "ChemicalComposition": "التركيب الكيميائي",
+            "PhysicalProperties": "الخصائص الفيزيائية",
+            "ChemicalHeaders": {
+              "Grade": "الدرجة",
+              "CaCO₃": "كربونات الكالسيوم",
+              "CaO": "أكسيد الكالسيوم",
+              "MgO": "أكسيد المغنيسيوم",
+              "SiO₂": "السيليكا",
+              "Fe₂O₃": "أكسيد الحديد"
+            },
+            "PhysicalHeaders": {
+              "Property": "الخاصية",
+              "Value": "القيمة"
+            },
+            "PhysicalPropertiesRows": {
+              "Appearance": "المظهر",
+              "WhiteGrey": "أبيض مائل إلى الرمادي",
+              "Shape": "الشكل",
+              "LumpsPowder": "كتل / مسحوق",
+              "Color": "اللون",
+              "Density": "الكثافة",
+              "SpecificGravity": "الثقل النوعي",
+              "Hardness": "الصلادة",
+              "Packing": "التعبئة",
+              "Storage": "التخزين",
+              "StoreDryCoveredArea": "يُحفظ في مكان جاف ومغطى"
+            }
+          },
+          "Applications": {
+            "ChemicalIndustry": "الصناعة الكيميائية",
+            "GlassIndustry": "صناعة الزجاج",
+            "PaperIndustry": "صناعة الورق",
+            "SugarIndustry": "صناعة السكر",
+            "PaintIndustry": "صناعة الدهانات",
+            "WaterTreatment": "معالجة المياه",
+            "CalciumCarbonateProduction": "إنتاج كربونات الكالسيوم",
+            "IndustrialMinerals": "المعادن الصناعية"
+          },
+          "FAQ": {
+            "WhatIsChemicalGradeLimestoneQuestion": "ما هو الحجر الجيري بدرجة كيميائية؟",
+            "WhatIsChemicalGradeLimestoneAnswer": "الحجر الجيري بدرجة كيميائية هو حجر جيري عالي النقاء يحتوي على نسبة مرتفعة من كربونات الكالسيوم مع انخفاض محتوى السيليكا والمغنيسيوم والحديد، ويُستخدم على نطاق واسع في العمليات الكيميائية والصناعية.",
+            "GradesQuestion": "ما هي درجات الحجر الجيري الكيميائي التي توفرونها؟",
+            "GradesAnswer": "نوفر درجات CG-95 وCG-97 وCG-98 بالإضافة إلى درجات مخصصة بمستويات نقاء وأحجام حبيبات مختلفة وفقًا لمتطلبات العملاء.",
+            "ApplicationsQuestion": "ما هي استخدامات الحجر الجيري بدرجة كيميائية؟",
+            "ApplicationsAnswer": "يُستخدم في الصناعات الكيميائية، وصناعة الزجاج، ومصانع الورق، ومصافي السكر، وإنتاج الدهانات، ومعالجة المياه، وإنتاج كربونات الكالسيوم.",
+            "PackingQuestion": "ما هي خيارات التعبئة المتوفرة؟",
+            "PackingAnswer": "يتوفر المنتج في أكياس 25 كجم، وأكياس جامبو سعة 1 طن متري، والتوريد السائب، بالإضافة إلى تغليف تصدير مخصص.",
+            "CustomizedQuestion": "هل يمكنكم توفير درجات وأحجام مخصصة؟",
+            "CustomizedAnswer": "نعم، نوفر مستويات نقاء، وأحجام حبيبات، وخيارات تعبئة مخصصة وفقًا لمواصفات العملاء.",
+            "ExportQuestion": "هل تقومون بتصدير الحجر الجيري بدرجة كيميائية دوليًا؟",
+            "ExportAnswer": "نعم، نقوم بتصدير الحجر الجيري عالي الجودة بدرجة كيميائية إلى الأسواق العالمية مع جودة موثوقة وأسعار تنافسية وتسليم في الوقت المحدد."
+          }
+        },
+        "CementGradeLimestone": {
+          "Name": "الحجر الجيري بدرجة صناعة الأسمنت",
+          "Description": "الحجر الجيري بدرجة صناعة الأسمنت هو مادة خام عالية الجودة تُستخدم في إنتاج الأسمنت والكلنكر. ويوفر المحتوى المطلوب من الكالسيوم مع انخفاض نسبة الشوائب لضمان إنتاج أسمنت عالي الجودة بشكل مستمر.",
+          "Specifications": {
+            "Grade": "الدرجة",
+            "Packing": "التعبئة",
+            "Standard": "المعيار",
+            "Origin": "بلد المنشأ",
+            "GradeValue": "CG-80 / CG-85 / CG-90",
+            "PackingValue": "سائب / كيس جامبو 1 طن متري",
+            "StandardValue": "مطابق لمعايير IS / ASTM / ISO",
+            "OriginValue": "الهند"
+          },
+          "TechnicalTables": {
+            "ChemicalComposition": "التركيب الكيميائي",
+            "PhysicalProperties": "الخصائص الفيزيائية",
+            "ChemicalHeaders": {
+              "Grade": "الدرجة",
+              "CaCO₃": "كربونات الكالسيوم",
+              "CaO": "أكسيد الكالسيوم",
+              "MgO": "أكسيد المغنيسيوم",
+              "SiO₂": "السيليكا",
+              "Size": "الحجم"
+            },
+            "PhysicalHeaders": {
+              "Property": "الخاصية",
+              "Value": "القيمة"
+            },
+            "PhysicalPropertiesRows": {
+              "Appearance": "المظهر",
+              "WhiteGrey": "أبيض مائل إلى الرمادي",
+              "Shape": "الشكل",
+              "Lumps": "كتل",
+              "Color": "اللون",
+              "Density": "الكثافة",
+              "SpecificGravity": "الثقل النوعي",
+              "Hardness": "الصلادة",
+              "Packing": "التعبئة",
+              "Storage": "التخزين",
+              "StoreDryCoveredArea": "يُحفظ في مكان جاف ومغطى"
+            }
+          },
+          "Applications": {
+            "CementManufacturing": "تصنيع الأسمنت",
+            "ClinkerProduction": "إنتاج الكلنكر",
+            "ConstructionIndustry": "صناعة البناء",
+            "ReadyMixConcrete": "الخرسانة الجاهزة",
+            "InfrastructureProjects": "مشاريع البنية التحتية",
+            "BuildingMaterials": "مواد البناء",
+            "IndustrialMinerals": "المعادن الصناعية",
+            "LimeProduction": "إنتاج الجير"
+          },
+          "FAQ": {
+            "WhatIsCementGradeLimestoneQuestion": "ما هو الحجر الجيري بدرجة صناعة الأسمنت؟",
+            "WhatIsCementGradeLimestoneAnswer": "الحجر الجيري بدرجة صناعة الأسمنت هو صخر رسوبي طبيعي غني بكربونات الكالسيوم، ويُستخدم كمادة خام أساسية في إنتاج الأسمنت والكلنكر.",
+            "GradesQuestion": "ما هي درجات الحجر الجيري التي توفرونها؟",
+            "GradesAnswer": "نوفر درجات CG-80 وCG-85 وCG-90 بالإضافة إلى درجات مخصصة بمحتوى مختلف من كربونات الكالسيوم وأحجام حبيبات متنوعة لتلبية متطلبات مصانع الأسمنت.",
+            "ApplicationsQuestion": "ما هي استخدامات الحجر الجيري بدرجة صناعة الأسمنت؟",
+            "ApplicationsAnswer": "يُستخدم في تصنيع الأسمنت، وإنتاج الكلنكر، ومصانع الخرسانة الجاهزة، وإنتاج الجير، وصناعة مواد البناء.",
+            "PackingQuestion": "ما هي خيارات التعبئة المتوفرة؟",
+            "PackingAnswer": "يتوفر المنتج سائبًا، أو في أكياس جامبو سعة 1 طن متري، أو بتغليف تصدير مخصص وفقًا لمتطلبات العملاء.",
+            "CustomizedQuestion": "هل يمكنكم توفير درجات وأحجام مخصصة؟",
+            "CustomizedAnswer": "نعم، نوفر تركيبًا كيميائيًا، وأحجام كتل، وخيارات تعبئة مخصصة وفقًا لمواصفات العملاء.",
+            "ExportQuestion": "هل تقومون بتصدير الحجر الجيري بدرجة صناعة الأسمنت دوليًا؟",
+            "ExportAnswer": "نعم، نقوم بتصدير الحجر الجيري عالي الجودة بدرجة صناعة الأسمنت إلى الأسواق العالمية مع جودة ثابتة وأسعار تنافسية وخدمات لوجستية موثوقة."
+          }
+        },
+        "ConstuctionGradeLimestone": {
+          "Name": "الحجر الجيري بدرجة الإنشاءات",
+          "Description": "الحجر الجيري بدرجة الإنشاءات هو حجر طبيعي عالي الجودة والمتانة، يُستخدم على نطاق واسع في أعمال البناء، ومشاريع البنية التحتية، وإنشاء الطرق، وإنتاج الخرسانة، ومشاريع الهندسة المدنية. ويتميز بالقوة العالية والمتانة ومقاومة العوامل الجوية.",
+          "Specifications": {
+            "Grade": "الدرجة",
+            "Packing": "التعبئة",
+            "Standard": "المعيار",
+            "Origin": "بلد المنشأ",
+            "GradeValue": "CG-75 / CG-80 / CG-85",
+            "PackingValue": "سائب / كيس جامبو 1 طن متري",
+            "StandardValue": "مطابق لمعايير IS / ASTM / ISO",
+            "OriginValue": "الهند"
+          },
+          "TechnicalTables": {
+            "ChemicalComposition": "التركيب الكيميائي",
+            "PhysicalProperties": "الخصائص الفيزيائية",
+            "ChemicalHeaders": {
+              "Grade": "الدرجة",
+              "CaCO₃": "كربونات الكالسيوم",
+              "CaO": "أكسيد الكالسيوم",
+              "MgO": "أكسيد المغنيسيوم",
+              "SiO₂": "السيليكا",
+              "Size": "الحجم"
+            },
+            "PhysicalHeaders": {
+              "Property": "الخاصية",
+              "Value": "القيمة"
+            },
+            "PhysicalPropertiesRows": {
+              "Appearance": "المظهر",
+              "WhiteGrey": "أبيض مائل إلى الرمادي",
+              "Shape": "الشكل",
+              "Lumps": "كتل",
+              "Color": "اللون",
+              "Density": "الكثافة",
+              "SpecificGravity": "الثقل النوعي",
+              "Hardness": "الصلادة",
+              "Packing": "التعبئة",
+              "Storage": "التخزين",
+              "StoreDryCoveredArea": "يُحفظ في مكان جاف ومغطى"
+            }
+          },
+          "Applications": {
+            "RoadConstruction": "إنشاء الطرق",
+            "BuildingConstruction": "تشييد المباني",
+            "ConcreteProduction": "إنتاج الخرسانة",
+            "AsphaltMix": "خلطات الأسفلت",
+            "RailwayBallast": "حصى السكك الحديدية",
+            "InfrastructureProjects": "مشاريع البنية التحتية",
+            "Aggregates": "ركام البناء",
+            "CivilEngineering": "الهندسة المدنية"
+          },
+          "FAQ": {
+            "WhatIsConstructionGradeLimestoneQuestion": "ما هو الحجر الجيري بدرجة الإنشاءات؟",
+            "WhatIsConstructionGradeLimestoneAnswer": "الحجر الجيري بدرجة الإنشاءات هو حجر طبيعي يُستخدم كركام وطبقة أساس في الطرق، والمباني، والجسور، والخرسانة، ومشاريع البنية التحتية بفضل قوته العالية ومتانته.",
+            "GradesQuestion": "ما هي درجات الحجر الجيري التي توفرونها؟",
+            "GradesAnswer": "نوفر درجات CG-75 وCG-80 وCG-85 بالإضافة إلى درجات مخصصة بأحجام وتركيبات كيميائية مختلفة لتلبية متطلبات مشاريع البناء.",
+            "ApplicationsQuestion": "ما هي استخدامات الحجر الجيري بدرجة الإنشاءات؟",
+            "ApplicationsAnswer": "يُستخدم في إنشاء الطرق، وإنتاج الخرسانة، وتصنيع الأسفلت، وحصى السكك الحديدية، والهندسة المدنية، ومشاريع تطوير البنية التحتية.",
+            "PackingQuestion": "ما هي خيارات التعبئة المتوفرة؟",
+            "PackingAnswer": "يتوفر المنتج سائبًا، أو في أكياس جامبو سعة 1 طن متري، أو بتغليف مخصص وفقًا لمتطلبات العملاء.",
+            "CustomizedQuestion": "هل يمكنكم توفير درجات وأحجام مخصصة؟",
+            "CustomizedAnswer": "نعم، نوفر أحجام حبيبات، وتركيبًا كيميائيًا، وخيارات تعبئة مخصصة لتلبية متطلبات مشاريع البناء المختلفة.",
+            "ExportQuestion": "هل تقومون بتصدير الحجر الجيري بدرجة الإنشاءات دوليًا؟",
+            "ExportAnswer": "نعم، نقوم بتصدير الحجر الجيري عالي الجودة بدرجة الإنشاءات إلى الأسواق المحلية والعالمية مع جودة موثوقة وأسعار تنافسية وتسليم في الوقت المحدد."
+          }
+        }
       }
     },
     "NobalAlloy": {
@@ -448,18 +1415,216 @@
       "Category": "السبائك المتخصصة",
       "ShortDescription": "سبيكة نوبال عالية النقاء لتحسين الحبيبات والسبك الدقيق في درجات الفولاذ الخاصة.",
       "Description": "سبيكة نوبال دقيقة ذات محتوى تيتانيوم متحكم به لتطبيقات الفولاذ عالية الأداء.",
-      "Specifications": {
-        "Titanium": "التيتانيوم (Ti)",
-        "Aluminum": "الألومنيوم (Al)",
-        "Carbon": "الكربون (C)",
-        "Size": "الحجم",
-        "Form": "الشكل"
+      "Specification": {
+        "FerroMolybdenum": "فيرو موليبدينوم",
+        "FerroVanadium": "فيرو فاناديوم",
+        "FerroTungsten": "فيرو تنغستن"
       },
-      "Applications": {
-        "Grainrefinement": "تنقية الحبيبات",
-        "MicroalloyedHSLAsteel": "فولاذ HSLA دقيق السبك",
-        "Aerospacealloysteels": "سبائك الفولاذ للطيران",
-        "Specialtycastings": "المسبوكات المتخصصة"
+      "Variants": {
+        "FerroMolybdenum": {
+          "Name": "فيرو موليبدينوم",
+          "Description": "فيرو موليبدينوم (FeMo) هو سبيكة حديدية عالية الجودة تُستخدم لتحسين القوة والصلادة ومقاومة التآكل ومقاومة الحرارة في الفولاذ السبائكي والفولاذ المقاوم للصدأ. ويُستخدم على نطاق واسع في صناعة الفولاذ والتطبيقات الهندسية.",
+          "Specifications": {
+            "Grade": "الدرجة",
+            "Packing": "التعبئة",
+            "Standard": "المعيار",
+            "Origin": "بلد المنشأ",
+            "GradeValue": "FeMo 60 / FeMo 70",
+            "PackingValue": "سائب / كيس جامبو 1 طن متري",
+            "StandardValue": "مطابق لمعايير IS / ASTM / ISO",
+            "OriginValue": "الهند"
+          },
+          "TechnicalTables": {
+            "ChemicalComposition": "التركيب الكيميائي",
+            "PhysicalProperties": "الخصائص الفيزيائية",
+            "ChemicalHeaders": {
+              "Grade": "الدرجة",
+              "Mo": "الموليبدينوم (Mo)",
+              "C": "الكربون (C)",
+              "Si": "السيليكون (Si)",
+              "P": "الفوسفور (P)",
+              "S": "الكبريت (S)"
+            },
+            "PhysicalHeaders": {
+              "Property": "الخاصية",
+              "Value": "القيمة"
+            },
+            "PhysicalPropertiesRows": {
+              "Appearance": "المظهر",
+              "GreyMetallic": "رمادي معدني",
+              "Shape": "الشكل",
+              "Lumps": "كتل",
+              "Color": "اللون",
+              "SilverGrey": "رمادي فضي",
+              "Density": "الكثافة",
+              "SpecificGravity": "الثقل النوعي",
+              "MeltingPoint": "درجة الانصهار",
+              "Packing": "التعبئة",
+              "Storage": "التخزين",
+              "StoreDryCoveredArea": "يُحفظ في مكان جاف ومغطى"
+            }
+          },
+          "Applications": {
+            "StainlessSteel": "الفولاذ المقاوم للصدأ",
+            "AlloySteel": "الفولاذ السبائكي",
+            "ToolSteel": "فولاذ الأدوات",
+            "HighSpeedSteel": "الفولاذ عالي السرعة",
+            "EngineeringComponents": "المكونات الهندسية",
+            "OilGasIndustry": "صناعة النفط والغاز",
+            "PowerPlants": "محطات الطاقة",
+            "MetalManufacturing": "تصنيع المعادن"
+          },
+          "FAQ": {
+            "WhatIsFerroMolybdenumQuestion": "ما هو فيرو موليبدينوم؟",
+            "WhatIsFerroMolybdenumAnswer": "فيرو موليبدينوم هو سبيكة من الحديد والموليبدينوم تُستخدم كمادة سبائكية في الفولاذ المقاوم للصدأ والفولاذ السبائكي والفولاذ عالي المقاومة لتحسين الصلادة ومقاومة التآكل والأداء في درجات الحرارة العالية.",
+            "GradesQuestion": "ما هي درجات فيرو موليبدينوم التي توفرونها؟",
+            "GradesAnswer": "نوفر FeMo 60 وFeMo 70 بالإضافة إلى درجات مخصصة وفقًا لمتطلبات العملاء.",
+            "ApplicationsQuestion": "ما هي استخدامات فيرو موليبدينوم؟",
+            "ApplicationsAnswer": "يُستخدم فيرو موليبدينوم في الفولاذ المقاوم للصدأ، والفولاذ السبائكي، وفولاذ الأدوات، والفولاذ عالي السرعة، ومعدات النفط والغاز، ومحطات الطاقة، والصناعات الهندسية.",
+            "PackingQuestion": "ما هي خيارات التعبئة المتوفرة؟",
+            "PackingAnswer": "يتوفر سائبًا، وعلى منصات تحميل، وفي أكياس جامبو سعة 1 طن متري.",
+            "CustomizedQuestion": "هل يمكنكم توفير درجات وأحجام مخصصة؟",
+            "CustomizedAnswer": "نعم، نوفر درجات مخصصة، وأحجام حبيبات، وتركيبات كيميائية وفقًا لمتطلبات العملاء.",
+            "ExportQuestion": "هل تقومون بتصدير فيرو موليبدينوم دوليًا؟",
+            "ExportAnswer": "نعم، نقوم بتصدير فيرو موليبدينوم عالي الجودة إلى مختلف أنحاء العالم مع جودة ثابتة وتوريد موثوق وتسليم في الوقت المحدد."
+          }
+        },
+        "FerroVanadium": {
+          "Name": "فيرو فاناديوم",
+          "Description": "فيرو فاناديوم (FeV) هو سبيكة حديدية عالية الجودة تُستخدم لزيادة القوة والصلادة ومقاومة التآكل ومقاومة الإجهاد في الفولاذ السبائكي. ويُستخدم على نطاق واسع في الفولاذ الإنشائي عالي المقاومة، وفولاذ الأدوات، وصناعات الطيران والسيارات.",
+          "Specifications": {
+            "Grade": "الدرجة",
+            "Packing": "التعبئة",
+            "Standard": "المعيار",
+            "Origin": "بلد المنشأ",
+            "GradeValue": "FeV 50 / FeV 80",
+            "PackingValue": "سائب / كيس جامبو 1 طن متري",
+            "StandardValue": "مطابق لمعايير IS / ASTM / ISO",
+            "OriginValue": "الهند"
+          },
+          "TechnicalTables": {
+            "ChemicalComposition": "التركيب الكيميائي",
+            "PhysicalProperties": "الخصائص الفيزيائية",
+            "ChemicalHeaders": {
+              "Grade": "الدرجة",
+              "V": "الفاناديوم (V)",
+              "C": "الكربون (C)",
+              "Si": "السيليكون (Si)",
+              "P": "الفوسفور (P)",
+              "S": "الكبريت (S)"
+            },
+            "PhysicalHeaders": {
+              "Property": "الخاصية",
+              "Value": "القيمة"
+            },
+            "PhysicalPropertiesRows": {
+              "Appearance": "المظهر",
+              "GreyMetallic": "رمادي معدني",
+              "Shape": "الشكل",
+              "Lumps": "كتل",
+              "Color": "اللون",
+              "SilverGrey": "رمادي فضي",
+              "Density": "الكثافة",
+              "SpecificGravity": "الثقل النوعي",
+              "MeltingPoint": "درجة الانصهار",
+              "Packing": "التعبئة",
+              "Storage": "التخزين",
+              "StoreDryCoveredArea": "يُحفظ في مكان جاف ومغطى"
+            }
+          },
+          "Applications": {
+            "HighStrengthSteel": "الفولاذ عالي المقاومة",
+            "ToolSteel": "فولاذ الأدوات",
+            "SpringSteel": "فولاذ النوابض",
+            "AlloySteel": "الفولاذ السبائكي",
+            "AutomotiveIndustry": "صناعة السيارات",
+            "AerospaceIndustry": "صناعة الطيران",
+            "ConstructionSteel": "فولاذ الإنشاءات",
+            "MetalManufacturing": "تصنيع المعادن"
+          },
+          "FAQ": {
+            "WhatIsFerroVanadiumQuestion": "ما هو فيرو فاناديوم؟",
+            "WhatIsFerroVanadiumAnswer": "فيرو فاناديوم هو سبيكة من الحديد والفاناديوم تُستخدم كعنصر سبائكي في الفولاذ عالي المقاومة لتحسين الصلادة والمتانة ومقاومة الإجهاد ومقاومة التآكل.",
+            "GradesQuestion": "ما هي درجات فيرو فاناديوم التي توفرونها؟",
+            "GradesAnswer": "نوفر FeV 50 وFeV 80 بالإضافة إلى درجات مخصصة وفقًا لمتطلبات العملاء.",
+            "ApplicationsQuestion": "ما هي استخدامات فيرو فاناديوم؟",
+            "ApplicationsAnswer": "يُستخدم فيرو فاناديوم في الفولاذ الإنشائي عالي المقاومة، وفولاذ الأدوات، وفولاذ النوابض، ومكونات الطيران، وقطع غيار السيارات، والتطبيقات الهندسية.",
+            "PackingQuestion": "ما هي خيارات التعبئة المتوفرة؟",
+            "PackingAnswer": "يتوفر سائبًا، وعلى منصات تحميل، وفي أكياس جامبو سعة 1 طن متري.",
+            "CustomizedQuestion": "هل يمكنكم توفير درجات وأحجام مخصصة؟",
+            "CustomizedAnswer": "نعم، نوفر درجات مخصصة، وأحجام حبيبات، وتركيبات كيميائية وفقًا لمتطلبات العملاء.",
+            "ExportQuestion": "هل تقومون بتصدير فيرو فاناديوم دوليًا؟",
+            "ExportAnswer": "نعم، نقوم بتصدير فيرو فاناديوم عالي الجودة إلى مختلف أنحاء العالم مع جودة ثابتة وتوريد موثوق وتسليم في الوقت المحدد."
+          }
+        },
+        "FerroTungsten": {
+          "Name": "فيرو تنغستن",
+          "Description": "فيرو تنغستن (FeW) هو سبيكة حديدية عالية الأداء تُستخدم لتحسين الصلادة، ومقاومة التآكل، ومقاومة الحرارة، والمتانة في الفولاذ السبائكي والفولاذ عالي السرعة. ويُستخدم على نطاق واسع في تصنيع الأدوات، وصناعة التعدين، والطيران، والهندسة الثقيلة.",
+          "Specifications": {
+            "Grade": "الدرجة",
+            "Packing": "التعبئة",
+            "Standard": "المعيار",
+            "Origin": "بلد المنشأ",
+            "GradeValue": "FeW 70 / FeW 80",
+            "PackingValue": "سائب / كيس جامبو 1 طن متري",
+            "StandardValue": "مطابق لمعايير IS / ASTM / ISO",
+            "OriginValue": "الهند"
+          },
+          "TechnicalTables": {
+            "ChemicalComposition": "التركيب الكيميائي",
+            "PhysicalProperties": "الخصائص الفيزيائية",
+            "ChemicalHeaders": {
+              "Grade": "الدرجة",
+              "W": "التنغستن (W)",
+              "C": "الكربون (C)",
+              "Si": "السيليكون (Si)",
+              "P": "الفوسفور (P)",
+              "S": "الكبريت (S)"
+            },
+            "PhysicalHeaders": {
+              "Property": "الخاصية",
+              "Value": "القيمة"
+            },
+            "PhysicalPropertiesRows": {
+              "Appearance": "المظهر",
+              "GreyMetallic": "رمادي معدني",
+              "Shape": "الشكل",
+              "Lumps": "كتل",
+              "Color": "اللون",
+              "SilverGrey": "رمادي فضي",
+              "Density": "الكثافة",
+              "SpecificGravity": "الثقل النوعي",
+              "MeltingPoint": "درجة الانصهار",
+              "Packing": "التعبئة",
+              "Storage": "التخزين",
+              "StoreDryCoveredArea": "يُحفظ في مكان جاف ومغطى"
+            }
+          },
+          "Applications": {
+            "ToolSteel": "فولاذ الأدوات",
+            "HighSpeedSteel": "الفولاذ عالي السرعة",
+            "AlloySteel": "الفولاذ السبائكي",
+            "MiningEquipment": "معدات التعدين",
+            "AerospaceIndustry": "صناعة الطيران",
+            "EngineeringComponents": "المكونات الهندسية",
+            "WearResistantParts": "الأجزاء المقاومة للتآكل",
+            "MetalManufacturing": "تصنيع المعادن"
+          },
+          "FAQ": {
+            "WhatIsFerroTungstenQuestion": "ما هو فيرو تنغستن؟",
+            "WhatIsFerroTungstenAnswer": "فيرو تنغستن هو سبيكة من الحديد والتنغستن تُستخدم في الفولاذ عالي السرعة والفولاذ السبائكي لتحسين الصلادة، ومقاومة التآكل، والمتانة، والأداء في درجات الحرارة المرتفعة.",
+            "GradesQuestion": "ما هي درجات فيرو تنغستن التي توفرونها؟",
+            "GradesAnswer": "نوفر FeW 70 وFeW 80 بالإضافة إلى درجات مخصصة وفقًا لمتطلبات العملاء.",
+            "ApplicationsQuestion": "ما هي استخدامات فيرو تنغستن؟",
+            "ApplicationsAnswer": "يُستخدم فيرو تنغستن في فولاذ الأدوات، والفولاذ عالي السرعة، ومعدات التعدين، ومكونات الطيران، والأجزاء الهندسية، والتطبيقات المقاومة للتآكل.",
+            "PackingQuestion": "ما هي خيارات التعبئة المتوفرة؟",
+            "PackingAnswer": "يتوفر سائبًا، وعلى منصات تحميل، وفي أكياس جامبو سعة 1 طن متري.",
+            "CustomizedQuestion": "هل يمكنكم توفير درجات وأحجام مخصصة؟",
+            "CustomizedAnswer": "نعم، نوفر درجات مخصصة، وأحجام حبيبات، وتركيبات كيميائية وفقًا لمتطلبات العملاء.",
+            "ExportQuestion": "هل تقومون بتصدير فيرو تنغستن دوليًا؟",
+            "ExportAnswer": "نعم، نقوم بتصدير فيرو تنغستن عالي الجودة إلى جميع أنحاء العالم مع ضمان الجودة، وأسعار تنافسية، وتسليم في الوقت المحدد."
+          }
+        }
       }
     },
     "CarbonProducts": {
@@ -467,18 +1632,147 @@
       "Category": "مواد الكربون",
       "ShortDescription": "فحم الكوك البترولي المكلس وفحم الكوك المعدني ورافعات الكربون لصناعة الفولاذ والمسابك.",
       "Description": "منتجات كربونية عالية الجودة للتصدير ذات محتوى رماد منخفض.",
-      "Specifications": {
-        "FixedCarbon": "الكربون الثابت",
-        "Ash": "الرماد",
-        "VolatileMatter": "المواد المتطايرة",
-        "Sulfur": "الكبريت",
-        "Sizing": "الحجم"
+      "Specification": {
+        "GraphitePetroleumCoke": "فحم الكوك البترولي الجرافيتي",
+        "CalcinedPetroleumCoke": "فحم الكوك البترولي المكلسن",
+        "CarbonRaiser": "رافع الكربون",
+        "ElectrodePaste": "عجينة الأقطاب"
       },
-      "Applications": {
-        "EAFsteelmaking": "صناعة الفولاذ بأفران EAF",
-        "Foundrycupolacharge": "شحن أفران المسابك",
-        "Anodemanufacturing": "تصنيع الأنود",
-        "Carbonraiserapplications": "تطبيقات رافع الكربون"
+      "Variants": {
+        "InjectionCarbon": {
+          "Name": "حقن الكربون",
+          "Description": "حقن الكربون هو مادة مضافة عالية النقاء من الكربون تُستخدم في صناعات صناعة الفولاذ والمسابك لضبط محتوى الكربون أثناء معالجة المعدن المنصهر. يتميز بنسبة استرداد كربون عالية، وانخفاض نسبة الكبريت، وأداء ثابت.",
+          "Specifications": {
+            "Grade": "الدرجة",
+            "Packing": "التعبئة",
+            "Standard": "المعيار",
+            "Origin": "بلد المنشأ",
+            "GradeValue": "IC 98 / IC 99",
+            "PackingValue": "سائب / كيس جامبو 1 طن متري",
+            "StandardValue": "مكافئ IS / ASTM / ISO",
+            "OriginValue": "الهند"
+          },
+          "TechnicalTables": {
+            "ChemicalComposition": "التركيب الكيميائي",
+            "PhysicalProperties": "الخواص الفيزيائية",
+            "ChemicalHeaders": {
+              "Grade": "الدرجة",
+              "FC": "الكربون الثابت",
+              "Ash": "الرماد",
+              "VM": "المواد المتطايرة",
+              "Moisture": "الرطوبة",
+              "S": "الكبريت"
+            },
+            "PhysicalHeaders": {
+              "Property": "الخاصية",
+              "Value": "القيمة"
+            },
+            "PhysicalPropertiesRows": {
+              "Appearance": "المظهر",
+              "Black": "أسود",
+              "Shape": "الشكل",
+              "Granules": "حبيبات",
+              "Color": "اللون",
+              "Density": "الكثافة",
+              "SpecificGravity": "الثقل النوعي",
+              "ParticleSize": "حجم الجسيمات",
+              "Packing": "التعبئة",
+              "Storage": "التخزين",
+              "StoreDryCoveredArea": "يُخزن في مكان جاف ومغطى"
+            }
+          },
+          "Applications": {
+            "SteelMaking": "صناعة الفولاذ",
+            "FoundryIndustry": "صناعة المسابك",
+            "CastIronProduction": "إنتاج الحديد الزهر",
+            "ElectricArcFurnace": "فرن القوس الكهربائي",
+            "InductionFurnace": "فرن الحث",
+            "CarbonAdjustment": "ضبط نسبة الكربون",
+            "MetallurgicalIndustry": "الصناعة المعدنية",
+            "MetalManufacturing": "تصنيع المعادن"
+          },
+          "FAQ": {
+            "WhatIsInjectionCarbonQuestion": "ما هو حقن الكربون؟",
+            "WhatIsInjectionCarbonAnswer": "حقن الكربون هو مادة مضافة عالية الكربون يتم حقنها في المعدن المنصهر لزيادة محتوى الكربون بكفاءة أثناء عمليات صناعة الفولاذ والمسابك.",
+            "GradesQuestion": "ما هي درجات حقن الكربون التي توفرونها؟",
+            "GradesAnswer": "نوفر درجات IC 98 وIC 99 بالإضافة إلى درجات مخصصة وفقًا لمتطلبات العملاء.",
+            "ApplicationsQuestion": "ما هي استخدامات حقن الكربون؟",
+            "ApplicationsAnswer": "يستخدم حقن الكربون على نطاق واسع في مصانع الفولاذ، والمسابك، وأفران الحث، وأفران القوس الكهربائي، والصناعات المعدنية لضبط نسبة الكربون.",
+            "PackingQuestion": "ما هي خيارات التعبئة المتوفرة؟",
+            "PackingAnswer": "يتوفر في صورة سائبة، وأكياس 25 كجم، وأكياس جامبو سعة 1 طن متري.",
+            "CustomizedQuestion": "هل يمكنكم توفير درجات وأحجام جسيمات مخصصة؟",
+            "CustomizedAnswer": "نعم، نوفر نسب كربون، وأحجام جسيمات، وخيارات تعبئة مخصصة وفقًا لمتطلبات العملاء.",
+            "ExportQuestion": "هل تقومون بتصدير حقن الكربون إلى الأسواق الدولية؟",
+            "ExportAnswer": "نعم، نقوم بتصدير حقن الكربون عالي الجودة إلى مختلف أنحاء العالم مع ضمان الجودة والتسليم في الوقت المحدد."
+          }
+        },
+        "ChargeCarbon": {
+          "Name": "كربون الشحن",
+          "Description": "كربون الشحن هو مادة مضافة كربونية عالية الجودة تُستخدم في صناعات صناعة الفولاذ والمسابك لزيادة محتوى الكربون أثناء صهر المعادن. يتميز بنسبة عالية من الكربون الثابت، وانخفاض محتوى الرماد والكبريت، مع معدل استرداد ممتاز يضمن كفاءة العمليات المعدنية.",
+          "Specifications": {
+            "Grade": "الدرجة",
+            "Packing": "التعبئة",
+            "Standard": "المعيار",
+            "Origin": "بلد المنشأ",
+            "GradeValue": "CC 95 / CC 98",
+            "PackingValue": "سائب / كيس جامبو 1 طن متري",
+            "StandardValue": "مكافئ IS / ASTM / ISO",
+            "OriginValue": "الهند"
+          },
+          "TechnicalTables": {
+            "ChemicalComposition": "التركيب الكيميائي",
+            "PhysicalProperties": "الخواص الفيزيائية",
+            "ChemicalHeaders": {
+              "Grade": "الدرجة",
+              "FC": "الكربون الثابت",
+              "Ash": "الرماد",
+              "VM": "المواد المتطايرة",
+              "Moisture": "الرطوبة",
+              "S": "الكبريت"
+            },
+            "PhysicalHeaders": {
+              "Property": "الخاصية",
+              "Value": "القيمة"
+            },
+            "PhysicalPropertiesRows": {
+              "Appearance": "المظهر",
+              "Black": "أسود",
+              "Shape": "الشكل",
+              "Granules": "حبيبات",
+              "Color": "اللون",
+              "Density": "الكثافة",
+              "SpecificGravity": "الثقل النوعي",
+              "ParticleSize": "حجم الجسيمات",
+              "Packing": "التعبئة",
+              "Storage": "التخزين",
+              "StoreDryCoveredArea": "يُخزن في مكان جاف ومغطى"
+            }
+          },
+          "Applications": {
+            "SteelMaking": "صناعة الفولاذ",
+            "FoundryIndustry": "صناعة المسابك",
+            "CastIronProduction": "إنتاج الحديد الزهر",
+            "InductionFurnace": "فرن الحث",
+            "ElectricArcFurnace": "فرن القوس الكهربائي",
+            "CarbonAddition": "إضافة الكربون",
+            "MetallurgicalIndustry": "الصناعة المعدنية",
+            "MetalManufacturing": "تصنيع المعادن"
+          },
+          "FAQ": {
+            "WhatIsChargeCarbonQuestion": "ما هو كربون الشحن؟",
+            "WhatIsChargeCarbonAnswer": "كربون الشحن هو مادة مضافة عالية النقاء من الكربون تُستخدم أثناء صناعة الفولاذ وصهر المعادن في المسابك لزيادة محتوى الكربون، وتحسين معدل الاسترداد، وتعزيز جودة المعدن.",
+            "GradesQuestion": "ما هي درجات كربون الشحن التي توفرونها؟",
+            "GradesAnswer": "نوفر درجات CC 95 وCC 98، بالإضافة إلى درجات مخصصة وفقًا لمتطلبات العملاء.",
+            "ApplicationsQuestion": "ما هي استخدامات كربون الشحن؟",
+            "ApplicationsAnswer": "يُستخدم كربون الشحن على نطاق واسع في مصانع الفولاذ، والمسابك، وأفران الحث، وأفران القوس الكهربائي، والصناعات المعدنية لإضافة الكربون أثناء صهر المعادن.",
+            "PackingQuestion": "ما هي خيارات التعبئة المتوفرة؟",
+            "PackingAnswer": "يتوفر في صورة سائبة، وأكياس 25 كجم، وأكياس جامبو سعة 1 طن متري.",
+            "CustomizedQuestion": "هل يمكنكم توفير درجات وأحجام جسيمات مخصصة؟",
+            "CustomizedAnswer": "نعم، نوفر نسب كربون، وأحجام جسيمات، وخيارات تعبئة مخصصة وفقًا لمتطلبات العملاء.",
+            "ExportQuestion": "هل تقومون بتصدير كربون الشحن إلى الأسواق الدولية؟",
+            "ExportAnswer": "نعم، نقوم بتصدير كربون الشحن عالي الجودة إلى مختلف أنحاء العالم مع ضمان الجودة، والأسعار التنافسية، والتسليم في الوقت المحدد."
+          }
+        }
       }
     },
     "CarbideOre": {
@@ -486,18 +1780,418 @@
       "Category": "المعادن الصناعية",
       "ShortDescription": "خام ومركزات كربيد عالية الجودة للمصاهر وسلاسل التوريد الخاصة بالجلفنة.",
       "Description": "تصدير مباشر لخام الكربيد بمحتوى ثابت وشوائب منخفضة.",
-      "Specifications": {
-        "Carbide": "الكربيد (C)",
-        "Lead": "الرصاص (Pb)",
-        "Iron": "الحديد (Fe)",
+      "Specification": {
+        "CalciumCarbide": "كربيد الكالسيوم (CaC₂)",
+        "FixedCarbon": "الكربون الثابت",
+        "AshContent": "محتوى الرماد",
         "Moisture": "الرطوبة",
-        "Form": "الشكل"
+        "Size": "الحجم"
       },
-      "Applications": {
-        "Zincsmelting": "صهر الزنك",
-        "Galvanizingindustry": "صناعة الجلفنة",
-        "Diecastingalloys": "سبائك الصب بالقوالب",
-        "Chemicalprocessing": "المعالجة الكيميائية"
+      "Variants": {
+        "SteelShot": {
+          "Name": "طلقات فولاذية",
+          "Description": "الطلقات الفولاذية هي مادة كاشطة معدنية كروية عالية الجودة تُستخدم في عمليات السفع بالخردق، وتحضير الأسطح، وتنظيف المعادن، وإزالة القشور، والتقسية بالخرط (Shot Peening). وتتميز بمتانة عالية، وصلابة متجانسة، وعمر تشغيلي طويل.",
+          "Specifications": {
+            "Grade": "الدرجة",
+            "Packing": "التعبئة",
+            "Standard": "المعيار",
+            "Origin": "بلد المنشأ",
+            "GradeValue": "S230 / S330 / S460",
+            "PackingValue": "أكياس 25 كجم / كيس جامبو 1 طن متري",
+            "StandardValue": "SAE J444 / ISO 11124",
+            "OriginValue": "الهند"
+          },
+          "TechnicalTables": {
+            "ChemicalComposition": "التركيب الكيميائي",
+            "PhysicalProperties": "الخواص الفيزيائية",
+            "ChemicalHeaders": {
+              "Grade": "الدرجة",
+              "C": "الكربون (C)",
+              "Si": "السيليكون (Si)",
+              "Mn": "المنغنيز (Mn)",
+              "S": "الكبريت (S)",
+              "P": "الفوسفور (P)"
+            },
+            "PhysicalHeaders": {
+              "Property": "الخاصية",
+              "Value": "القيمة"
+            },
+            "PhysicalPropertiesRows": {
+              "Appearance": "المظهر",
+              "GreyMetallic": "رمادي معدني",
+              "Shape": "الشكل",
+              "Spherical": "كروي",
+              "Color": "اللون",
+              "DarkGrey": "رمادي داكن",
+              "Hardness": "الصلادة",
+              "Density": "الكثافة",
+              "SpecificGravity": "الثقل النوعي",
+              "Packing": "التعبئة",
+              "Storage": "التخزين",
+              "StoreDryCoveredArea": "يُخزن في مكان جاف ومغطى"
+            }
+          },
+          "Applications": {
+            "ShotBlasting": "السفع بالخردق",
+            "SurfacePreparation": "تحضير الأسطح",
+            "MetalCleaning": "تنظيف المعادن",
+            "FoundryIndustry": "صناعة المسابك",
+            "SteelIndustry": "صناعة الفولاذ",
+            "AutomotiveIndustry": "صناعة السيارات",
+            "Shipbuilding": "بناء السفن",
+            "EngineeringComponents": "المكونات الهندسية"
+          },
+          "FAQ": {
+            "WhatIsSteelShotQuestion": "ما هي الطلقات الفولاذية؟",
+            "WhatIsSteelShotAnswer": "الطلقات الفولاذية هي مادة كاشطة معدنية كروية تُستخدم في عمليات السفع بالخردق، والتنظيف، وإزالة القشور، وتقوية الأسطح المعدنية. وتوفر متانة عالية وأداءً ثابتًا في عمليات السفع.",
+            "GradesQuestion": "ما هي درجات الطلقات الفولاذية التي توفرونها؟",
+            "GradesAnswer": "نوفر الطلقات الفولاذية بمقاسات مختلفة مثل S230 وS330 وS390 وS460 وS550 وS660، بالإضافة إلى مقاسات مخصصة حسب متطلبات العملاء.",
+            "ApplicationsQuestion": "ما هي استخدامات الطلقات الفولاذية؟",
+            "ApplicationsAnswer": "تُستخدم الطلقات الفولاذية على نطاق واسع في المسابك، ومصانع الفولاذ، وصناعة السيارات، وبناء السفن، وصناعة الطيران، والهندسة، وتحضير الأسطح قبل الطلاء أو الطلاء الواقي.",
+            "PackingQuestion": "ما هي خيارات التعبئة المتوفرة؟",
+            "PackingAnswer": "متوفرة في أكياس 25 كجم، وأكياس جامبو سعة 1 طن متري، بالإضافة إلى عبوات تصدير مخصصة.",
+            "CustomizedQuestion": "هل يمكنكم توفير مقاسات ودرجات مخصصة؟",
+            "CustomizedAnswer": "نعم، نوفر مقاسات، ودرجات صلادة، وخيارات تعبئة مخصصة وفقًا لمتطلبات العملاء.",
+            "ExportQuestion": "هل تقومون بتصدير الطلقات الفولاذية إلى الأسواق الدولية؟",
+            "ExportAnswer": "نعم، نقوم بتصدير الطلقات الفولاذية عالية الجودة إلى مختلف أنحاء العالم مع ضمان الجودة، والأسعار التنافسية، والتسليم في الوقت المحدد."
+          }
+        },
+        "SteelGrit": {
+          "Name": "حصى الفولاذ",
+          "Description": "حصى الفولاذ هو مادة كاشطة معدنية زاوية عالية الجودة تُستخدم في تجهيز الأسطح، وإزالة الصدأ، وإزالة القشور، وعمليات السفع بالخردق. يتميز بكفاءة تنظيف عالية، وخشونة سطح ممتازة، وعمر تشغيلي طويل، مما يجعله مثاليًا للتطبيقات الصناعية.",
+          "Specifications": {
+            "Grade": "الدرجة",
+            "Packing": "التعبئة",
+            "Standard": "المعيار",
+            "Origin": "بلد المنشأ",
+            "GradeValue": "G18 / G25 / G40",
+            "PackingValue": "أكياس 25 كجم / كيس جامبو 1 طن متري",
+            "StandardValue": "SAE J444 / ISO 11124",
+            "OriginValue": "الهند"
+          },
+          "TechnicalTables": {
+            "ChemicalComposition": "التركيب الكيميائي",
+            "PhysicalProperties": "الخواص الفيزيائية",
+            "ChemicalHeaders": {
+              "Grade": "الدرجة",
+              "C": "الكربون (C)",
+              "Si": "السيليكون (Si)",
+              "Mn": "المنغنيز (Mn)",
+              "S": "الكبريت (S)",
+              "P": "الفوسفور (P)"
+            },
+            "PhysicalHeaders": {
+              "Property": "الخاصية",
+              "Value": "القيمة"
+            },
+            "PhysicalPropertiesRows": {
+              "Appearance": "المظهر",
+              "GreyMetallic": "رمادي معدني",
+              "Shape": "الشكل",
+              "Angular": "زاوي",
+              "Color": "اللون",
+              "DarkGrey": "رمادي داكن",
+              "Hardness": "الصلادة",
+              "Density": "الكثافة",
+              "SpecificGravity": "الثقل النوعي",
+              "Packing": "التعبئة",
+              "Storage": "التخزين",
+              "StoreDryCoveredArea": "يُخزن في مكان جاف ومغطى"
+            }
+          },
+          "Applications": {
+            "SurfacePreparation": "تجهيز الأسطح",
+            "RustRemoval": "إزالة الصدأ",
+            "ShotBlasting": "السفع بالخردق",
+            "SteelFabrication": "تصنيع الهياكل الفولاذية",
+            "Shipbuilding": "بناء السفن",
+            "BridgeConstruction": "بناء الجسور",
+            "FoundryIndustry": "صناعة المسابك",
+            "EngineeringComponents": "المكونات الهندسية"
+          },
+          "FAQ": {
+            "WhatIsSteelGritQuestion": "ما هو حصى الفولاذ؟",
+            "WhatIsSteelGritAnswer": "حصى الفولاذ هو مادة كاشطة معدنية زاوية يتم إنتاجها عن طريق تكسير كريات الفولاذ عالية الجودة. ويُستخدم على نطاق واسع لتنظيف الأسطح بقوة، وإزالة الصدأ، وتجهيز الأسطح قبل الطلاء أو الطلاء الواقي.",
+            "GradesQuestion": "ما هي درجات حصى الفولاذ التي توفرونها؟",
+            "GradesAnswer": "نوفر درجات مختلفة تشمل G10 وG12 وG14 وG16 وG18 وG25 وG40 وG50 وG80، بالإضافة إلى مقاسات مخصصة حسب متطلبات العملاء.",
+            "ApplicationsQuestion": "ما هي استخدامات حصى الفولاذ؟",
+            "ApplicationsAnswer": "يُستخدم حصى الفولاذ في السفع بالخردق، وإزالة الصدأ، وإزالة القشور، وتجهيز الأسطح، وتصنيع الفولاذ، وبناء السفن، وبناء الجسور، وصناعة المسابك، والهندسة الثقيلة.",
+            "PackingQuestion": "ما هي خيارات التعبئة المتوفرة؟",
+            "PackingAnswer": "متوفر في أكياس 25 كجم، وأكياس جامبو سعة 1 طن متري، بالإضافة إلى عبوات تصدير مخصصة.",
+            "CustomizedQuestion": "هل يمكنكم توفير درجات وأحجام مخصصة؟",
+            "CustomizedAnswer": "نعم، نوفر أحجام حصى، ومستويات صلادة، وخيارات تعبئة مخصصة وفقًا لمتطلبات العملاء.",
+            "ExportQuestion": "هل تقومون بتصدير حصى الفولاذ إلى الأسواق الدولية؟",
+            "ExportAnswer": "نعم، نقوم بتصدير حصى الفولاذ عالي الجودة إلى مختلف أنحاء العالم مع ضمان الجودة والأسعار التنافسية والتسليم في الوقت المحدد."
+          }
+        },
+        "StainlessSteelShot": {
+          "Name": "كرات الفولاذ المقاوم للصدأ",
+          "Description": "كرات الفولاذ المقاوم للصدأ هي وسائط سفع كروية عالية الجودة تُستخدم في التنظيف، وإزالة الزوائد، وتشطيب الأسطح، والمعالجة بالكرات (Shot Peening)، وتقوية مكونات الفولاذ المقاوم للصدأ والألمنيوم والمعادن غير الحديدية. تتميز بمتانة عالية، ومقاومة ممتازة للتآكل، وعمر تشغيلي طويل.",
+          "Specifications": {
+            "Grade": "الدرجة",
+            "Packing": "التعبئة",
+            "Standard": "المعيار",
+            "Origin": "بلد المنشأ",
+            "GradeValue": "SS 304 / SS 430",
+            "PackingValue": "أكياس 25 كجم / كيس جامبو 1 طن متري",
+            "StandardValue": "SAE J444 / ISO 11124",
+            "OriginValue": "الهند"
+          },
+          "TechnicalTables": {
+            "ChemicalComposition": "التركيب الكيميائي",
+            "PhysicalProperties": "الخواص الفيزيائية",
+            "ChemicalHeaders": {
+              "Grade": "الدرجة",
+              "Cr": "الكروم (Cr)",
+              "Ni": "النيكل (Ni)",
+              "C": "الكربون (C)",
+              "Si": "السيليكون (Si)",
+              "Mn": "المنغنيز (Mn)"
+            },
+            "PhysicalHeaders": {
+              "Property": "الخاصية",
+              "Value": "القيمة"
+            },
+            "PhysicalPropertiesRows": {
+              "Appearance": "المظهر",
+              "GreyMetallic": "رمادي معدني",
+              "Shape": "الشكل",
+              "Spherical": "كروي",
+              "Color": "اللون",
+              "SilverGrey": "رمادي فضي",
+              "Hardness": "الصلادة",
+              "Density": "الكثافة",
+              "SpecificGravity": "الثقل النوعي",
+              "Packing": "التعبئة",
+              "Storage": "التخزين",
+              "StoreDryCoveredArea": "يُخزن في مكان جاف ومغطى"
+            }
+          },
+          "Applications": {
+            "SurfaceFinishing": "تشطيب الأسطح",
+            "ShotPeening": "المعالجة بالكرات",
+            "Deburring": "إزالة الزوائد",
+            "Descaling": "إزالة القشور",
+            "AerospaceIndustry": "صناعة الطيران والفضاء",
+            "AutomotiveIndustry": "صناعة السيارات",
+            "MedicalEquipment": "المعدات الطبية",
+            "PrecisionEngineering": "الهندسة الدقيقة"
+          },
+          "FAQ": {
+            "WhatIsStainlessSteelShotQuestion": "ما هي كرات الفولاذ المقاوم للصدأ؟",
+            "WhatIsStainlessSteelShotAnswer": "كرات الفولاذ المقاوم للصدأ هي وسائط سفع معدنية كروية مصنوعة من فولاذ مقاوم للصدأ عالي الجودة. تُستخدم في التنظيف، والتلميع، والمعالجة بالكرات، وتشطيب الأسطح دون تلويث الفولاذ المقاوم للصدأ أو المعادن غير الحديدية.",
+            "GradesQuestion": "ما هي درجات كرات الفولاذ المقاوم للصدأ التي توفرونها؟",
+            "GradesAnswer": "نوفر كرات الفولاذ المقاوم للصدأ بدرجات SS 304 وSS 430، بالإضافة إلى درجات ومقاسات مخصصة وفقًا لمتطلبات العملاء.",
+            "ApplicationsQuestion": "ما هي استخدامات كرات الفولاذ المقاوم للصدأ؟",
+            "ApplicationsAnswer": "تُستخدم كرات الفولاذ المقاوم للصدأ في تشطيب الأسطح، والمعالجة بالكرات، وإزالة الزوائد، وإزالة القشور، ومكونات الطيران، وقطع غيار السيارات، والمعدات الطبية، وتطبيقات الهندسة الدقيقة.",
+            "PackingQuestion": "ما هي خيارات التعبئة المتوفرة؟",
+            "PackingAnswer": "متوفرة في أكياس 25 كجم، وأكياس جامبو سعة 1 طن متري، بالإضافة إلى عبوات تصدير مخصصة.",
+            "CustomizedQuestion": "هل يمكنكم توفير درجات ومقاسات مخصصة؟",
+            "CustomizedAnswer": "نعم، نوفر مقاسات كرات مختلفة، ومستويات صلادة، وخيارات تعبئة مخصصة وفقًا لمتطلبات العملاء.",
+            "ExportQuestion": "هل تقومون بتصدير كرات الفولاذ المقاوم للصدأ إلى الأسواق الدولية؟",
+            "ExportAnswer": "نعم، نقوم بتصدير كرات الفولاذ المقاوم للصدأ عالية الجودة إلى مختلف أنحاء العالم مع ضمان الجودة، والأسعار التنافسية، والتسليم الموثوق وفي الوقت المحدد."
+          }
+        },
+        "SiliconCarbidePowder": {
+          "Name": "مسحوق كربيد السيليكون",
+          "Description": "مسحوق كربيد السيليكون هو مادة صناعية عالية النقاء تُستخدم على نطاق واسع في صناعة الفولاذ، والمسابك، وإنتاج المواد الحرارية، والمواد الكاشطة، وصناعة السيراميك. ويوفر كفاءة ممتازة في إزالة الأكسدة، وإضافة الكربون، وموصلية حرارية عالية، ومقاومة فائقة للتآكل.",
+          "Specifications": {
+            "Grade": "الدرجة",
+            "Packing": "التعبئة",
+            "Standard": "المعيار",
+            "Origin": "بلد المنشأ",
+            "GradeValue": "SiC 88 / SiC 90 / SiC 95 / SiC 98",
+            "PackingValue": "أكياس 25 كجم / كيس جامبو 1 طن متري",
+            "StandardValue": "مكافئ IS / ASTM / ISO",
+            "OriginValue": "الهند"
+          },
+          "TechnicalTables": {
+            "ChemicalComposition": "التركيب الكيميائي",
+            "PhysicalProperties": "الخواص الفيزيائية",
+            "ChemicalHeaders": {
+              "Grade": "الدرجة",
+              "SiC": "كربيد السيليكون",
+              "FC": "الكربون الثابت",
+              "Fe₂O₃": "أكسيد الحديد",
+              "Moisture": "الرطوبة"
+            },
+            "PhysicalHeaders": {
+              "Property": "الخاصية",
+              "Value": "القيمة"
+            },
+            "PhysicalPropertiesRows": {
+              "Appearance": "المظهر",
+              "BlackGreen": "أسود / أخضر",
+              "Shape": "الشكل",
+              "Powder": "مسحوق",
+              "Color": "اللون",
+              "Black": "أسود",
+              "Hardness": "الصلادة",
+              "Density": "الكثافة",
+              "SpecificGravity": "الثقل النوعي",
+              "Packing": "التعبئة",
+              "Storage": "التخزين",
+              "StoreDryCoveredArea": "يُخزن في مكان جاف ومغطى"
+            }
+          },
+          "Applications": {
+            "SteelMaking": "صناعة الفولاذ",
+            "FoundryIndustry": "صناعة المسابك",
+            "RefractoryIndustry": "صناعة المواد الحرارية",
+            "AbrasiveManufacturing": "تصنيع المواد الكاشطة",
+            "CeramicIndustry": "صناعة السيراميك",
+            "MetallurgicalIndustry": "الصناعة المعدنية",
+            "Deoxidizer": "مزيل للأكسدة",
+            "CarbonAdditive": "مادة مضافة للكربون"
+          },
+          "FAQ": {
+            "WhatIsSiliconCarbidePowderQuestion": "ما هو مسحوق كربيد السيليكون؟",
+            "WhatIsSiliconCarbidePowderAnswer": "مسحوق كربيد السيليكون هو مادة صناعية عالية الجودة تُستخدم كمزيل للأكسدة، ومادة لإضافة الكربون، ومادة خام للمواد الحرارية، ومادة كاشطة. ويتميز بصلادة عالية، وموصلية حرارية ممتازة، واستقرار كيميائي فائق.",
+            "GradesQuestion": "ما هي درجات مسحوق كربيد السيليكون التي توفرونها؟",
+            "GradesAnswer": "نوفر درجات SiC 88% وSiC 90% وSiC 95% وSiC 98%، بالإضافة إلى درجات مخصصة وفقًا لمتطلبات العملاء.",
+            "ApplicationsQuestion": "ما هي استخدامات مسحوق كربيد السيليكون؟",
+            "ApplicationsAnswer": "يُستخدم مسحوق كربيد السيليكون في مصانع الفولاذ، والمسابك، وتصنيع المواد الحرارية، والمواد الكاشطة، والسيراميك، والصناعات المعدنية، وكمزيل للأكسدة ومادة مضافة للكربون.",
+            "PackingQuestion": "ما هي خيارات التعبئة المتوفرة؟",
+            "PackingAnswer": "متوفر في أكياس 25 كجم، وأكياس 500 كجم، وأكياس جامبو سعة 1 طن متري، بالإضافة إلى عبوات تصدير مخصصة.",
+            "CustomizedQuestion": "هل يمكنكم توفير درجات وأحجام حبيبات مخصصة؟",
+            "CustomizedAnswer": "نعم، نوفر مستويات نقاء، وأحجام حبيبات، وخيارات تعبئة مخصصة وفقًا لمتطلبات العملاء.",
+            "ExportQuestion": "هل تقومون بتصدير مسحوق كربيد السيليكون إلى الأسواق الدولية؟",
+            "ExportAnswer": "نعم، نقوم بتصدير مسحوق كربيد السيليكون عالي الجودة إلى مختلف أنحاء العالم مع ضمان الجودة والأسعار التنافسية والتسليم في الوقت المحدد."
+          }
+        },
+        "SiliconCarbideBriquette": {
+          "Name": "قوالب كربيد السيليكون",
+          "Description": "قوالب كربيد السيليكون هي مادة مضافة معدنية عالية الأداء تُستخدم في صناعة الفولاذ والمسابك لإزالة الأكسدة، وزيادة محتوى الكربون، وتحسين جودة المعدن المنصهر. تتميز بنسبة عالية من كربيد السيليكون، وقوة ممتازة، وكفاءة استرجاع عالية.",
+          "Specifications": {
+            "Grade": "الدرجة",
+            "Packing": "التعبئة",
+            "Standard": "المعيار",
+            "Origin": "بلد المنشأ",
+            "GradeValue": "SiC 88 / SiC 90 / SiC 95",
+            "PackingValue": "أكياس 25 كجم / كيس جامبو 1 طن متري",
+            "StandardValue": "مكافئ IS / ASTM / ISO",
+            "OriginValue": "الهند"
+          },
+          "TechnicalTables": {
+            "ChemicalComposition": "التركيب الكيميائي",
+            "PhysicalProperties": "الخواص الفيزيائية",
+            "ChemicalHeaders": {
+              "Grade": "الدرجة",
+              "SiC": "كربيد السيليكون",
+              "FC": "الكربون الثابت",
+              "Fe₂O₃": "أكسيد الحديد",
+              "Moisture": "الرطوبة"
+            },
+            "PhysicalHeaders": {
+              "Property": "الخاصية",
+              "Value": "القيمة"
+            },
+            "PhysicalPropertiesRows": {
+              "Appearance": "المظهر",
+              "BlackGrey": "أسود رمادي",
+              "Shape": "الشكل",
+              "Briquette": "قوالب مضغوطة",
+              "Color": "اللون",
+              "DarkGrey": "رمادي داكن",
+              "Density": "الكثافة",
+              "SpecificGravity": "الثقل النوعي",
+              "Hardness": "الصلادة",
+              "Packing": "التعبئة",
+              "Storage": "التخزين",
+              "StoreDryCoveredArea": "يُخزن في مكان جاف ومغطى"
+            }
+          },
+          "Applications": {
+            "SteelMaking": "صناعة الفولاذ",
+            "FoundryIndustry": "صناعة المسابك",
+            "RefractoryIndustry": "صناعة المواد الحرارية",
+            "Deoxidizer": "مزيل للأكسدة",
+            "CarbonAddition": "إضافة الكربون",
+            "InductionFurnace": "فرن الحث",
+            "ElectricArcFurnace": "فرن القوس الكهربائي",
+            "MetallurgicalIndustry": "الصناعة المعدنية"
+          },
+          "FAQ": {
+            "WhatIsSiliconCarbideBriquetteQuestion": "ما هي قوالب كربيد السيليكون؟",
+            "WhatIsSiliconCarbideBriquetteAnswer": "قوالب كربيد السيليكون هي منتج معدني مضغوط مصنوع من كربيد السيليكون عالي النقاء. يُستخدم على نطاق واسع كمزيل للأكسدة ومادة لإضافة الكربون في صناعة الفولاذ والمسابك.",
+            "GradesQuestion": "ما هي درجات قوالب كربيد السيليكون التي توفرونها؟",
+            "GradesAnswer": "نوفر درجات SiC 88% وSiC 90% وSiC 95%، بالإضافة إلى درجات مخصصة وفقًا لمتطلبات العملاء.",
+            "ApplicationsQuestion": "ما هي استخدامات قوالب كربيد السيليكون؟",
+            "ApplicationsAnswer": "تُستخدم في مصانع الفولاذ، والمسابك، وأفران الحث، وأفران القوس الكهربائي، وتصنيع المواد الحرارية، والصناعات المعدنية لإزالة الأكسدة وإضافة الكربون.",
+            "PackingQuestion": "ما هي خيارات التعبئة المتوفرة؟",
+            "PackingAnswer": "متوفرة في أكياس 25 كجم، وأكياس 500 كجم، وأكياس جامبو سعة 1 طن متري، بالإضافة إلى عبوات تصدير مخصصة.",
+            "CustomizedQuestion": "هل يمكنكم توفير درجات وأحجام قوالب مخصصة؟",
+            "CustomizedAnswer": "نعم، نوفر درجات نقاء مختلفة، وأحجام قوالب، وخيارات تعبئة مخصصة وفقًا لمتطلبات العملاء.",
+            "ExportQuestion": "هل تقومون بتصدير قوالب كربيد السيليكون إلى الأسواق الدولية؟",
+            "ExportAnswer": "نعم، نقوم بتصدير قوالب كربيد السيليكون عالية الجودة إلى مختلف أنحاء العالم مع ضمان الجودة، والأسعار التنافسية، والتسليم في الوقت المحدد."
+          }
+        },
+        "CalciumCarbide": {
+          "Name": "كربيد الكالسيوم",
+          "Description": "كربيد الكالسيوم هو مركب كيميائي صناعي عالي الجودة يُستخدم على نطاق واسع في صناعة الفولاذ، والمسابك، وإنتاج غاز الأسيتيلين، والعمليات المعدنية. يتميز بكفاءة عالية في إزالة الكبريت، وإنتاج غاز ثابت، وأداء موثوق في التطبيقات الصناعية.",
+          "Specifications": {
+            "Grade": "الدرجة",
+            "Packing": "التعبئة",
+            "Standard": "المعيار",
+            "Origin": "بلد المنشأ",
+            "GradeValue": "CaC₂ 80 / CaC₂ 85 / CaC₂ 88",
+            "PackingValue": "براميل فولاذية 50 كجم",
+            "StandardValue": "مطابق لمعايير IS / ASTM / ISO",
+            "OriginValue": "الهند"
+          },
+          "TechnicalTables": {
+            "ChemicalComposition": "التركيب الكيميائي",
+            "PhysicalProperties": "الخواص الفيزيائية",
+            "ChemicalHeaders": {
+              "Grade": "الدرجة",
+              "CaC₂": "كربيد الكالسيوم",
+              "GasYield": "إنتاج الغاز",
+              "PH₃": "الفوسفين (PH₃)",
+              "H₂S": "كبريتيد الهيدروجين (H₂S)"
+            },
+            "PhysicalHeaders": {
+              "Property": "الخاصية",
+              "Value": "القيمة"
+            },
+            "PhysicalPropertiesRows": {
+              "Appearance": "المظهر",
+              "GreyBlack": "رمادي مائل إلى الأسود",
+              "Shape": "الشكل",
+              "Lumps": "كتل",
+              "Color": "اللون",
+              "Density": "الكثافة",
+              "SpecificGravity": "الثقل النوعي",
+              "ParticleSize": "حجم الجسيمات",
+              "Packing": "التعبئة",
+              "Storage": "التخزين",
+              "StoreDryCoveredArea": "يُحفظ في مكان جاف ومغطى"
+            }
+          },
+          "Applications": {
+            "SteelMaking": "صناعة الفولاذ",
+            "FoundryIndustry": "صناعة المسابك",
+            "AcetyleneGasProduction": "إنتاج غاز الأسيتيلين",
+            "Desulphurization": "إزالة الكبريت",
+            "ChemicalIndustry": "الصناعة الكيميائية",
+            "MetallurgicalIndustry": "الصناعة المعدنية",
+            "WeldingIndustry": "صناعة اللحام",
+            "IndustrialManufacturing": "التصنيع الصناعي"
+          },
+          "FAQ": {
+            "WhatIsCalciumCarbideQuestion": "ما هو كربيد الكالسيوم؟",
+            "WhatIsCalciumCarbideAnswer": "كربيد الكالسيوم هو مركب كيميائي يُستخدم بشكل أساسي في إنتاج غاز الأسيتيلين، وإزالة الكبريت من الفولاذ، والعديد من التطبيقات المعدنية. يتميز بإنتاج غاز مرتفع وأداء ممتاز في العمليات الصناعية.",
+            "GradesQuestion": "ما هي درجات كربيد الكالسيوم التي توفرونها؟",
+            "GradesAnswer": "نوفر كربيد الكالسيوم بدرجات CaC₂ 80% وCaC₂ 85% وCaC₂ 88%، بالإضافة إلى درجات مخصصة وفقًا لمتطلبات العملاء.",
+            "ApplicationsQuestion": "ما هي استخدامات كربيد الكالسيوم؟",
+            "ApplicationsAnswer": "يُستخدم كربيد الكالسيوم على نطاق واسع في مصانع الفولاذ، والمسابك، وإنتاج غاز الأسيتيلين، وصناعة اللحام، والمعالجة الكيميائية، والصناعات المعدنية.",
+            "PackingQuestion": "ما هي خيارات التعبئة المتوفرة؟",
+            "PackingAnswer": "يتوفر في براميل فولاذية سعة 50 كجم، وحاويات محكمة مقاومة للرطوبة، بالإضافة إلى عبوات تصدير مخصصة.",
+            "CustomizedQuestion": "هل يمكنكم توفير درجات وأحجام مخصصة؟",
+            "CustomizedAnswer": "نعم، نوفر درجات نقاء، وأحجام كتل، وخيارات تعبئة مخصصة وفقًا لمتطلبات العملاء.",
+            "ExportQuestion": "هل تقومون بتصدير كربيد الكالسيوم إلى الأسواق الدولية؟",
+            "ExportAnswer": "نعم، نقوم بتصدير كربيد الكالسيوم عالي الجودة إلى مختلف أنحاء العالم مع تطبيق رقابة صارمة على الجودة، وأسعار تنافسية، وتسليم في الوقت المحدد."
+          }
+        }
       }
     },
     "NaturalGraphite": {
@@ -505,642 +2199,643 @@
       "Category": "المعادن الصناعية",
       "ShortDescription": "جرافيت رقائقي وغير متبلور للصناعات الحرارية والبطاريات ومواد التشحيم.",
       "Description": "جرافيت طبيعي عالي الجودة بمحتوى كربون مرتفع وحجم رقائق متحكم به.",
-      "Specifications": {
+      "Specification": {
         "FixedCarbon": "الكربون الثابت",
         "Ash": "الرماد",
         "FlakeSize": "حجم الرقائق",
         "Moisture": "الرطوبة",
         "Types": "الأنواع"
       },
-      "Applications": {
-        "Refractorymanufacturing": "تصنيع المواد الحرارية",
-        "Batteryanodematerials": "مواد أنود البطاريات",
-        "Industriallubricants": "مواد التشحيم الصناعية",
-        "Gasketsandseals": "الحشوات والأختام"
+      "Variants": {
+        "NaturalGraphiteLumps": {
+          "Name": "كتل الجرافيت الطبيعي",
+          "Description": "كتل الجرافيت الطبيعي هي منتجات كربونية بلورية عالية النقاء تُستخدم على نطاق واسع في صناعة الفولاذ، والمسابك، والمواد الحرارية، والبطاريات، ومواد التشحيم، والصناعات المعدنية. تتميز بموصلية حرارية ممتازة، واستقرار كيميائي عالٍ، ونسبة مرتفعة من الكربون الثابت.",
+          "Specifications": {
+            "Grade": "الدرجة",
+            "Packing": "التعبئة",
+            "Standard": "المعيار",
+            "Origin": "بلد المنشأ",
+            "GradeValue": "FC 85 / FC 90 / FC 95",
+            "PackingValue": "أكياس 25 كجم / كيس جامبو 1 طن متري",
+            "StandardValue": "مكافئ IS / ASTM / ISO",
+            "OriginValue": "الهند / مدغشقر / الصين"
+          },
+          "TechnicalTables": {
+            "ChemicalComposition": "التركيب الكيميائي",
+            "PhysicalProperties": "الخواص الفيزيائية",
+            "ChemicalHeaders": {
+              "Grade": "الدرجة",
+              "Fixed Carbon": "الكربون الثابت",
+              "Ash": "الرماد",
+              "Moisture": "الرطوبة",
+              "Volatile Matter": "المواد المتطايرة"
+            },
+            "PhysicalHeaders": {
+              "Property": "الخاصية",
+              "Value": "القيمة"
+            },
+            "PhysicalPropertiesRows": {
+              "Appearance": "المظهر",
+              "Black Grey": "أسود رمادي",
+              "Shape": "الشكل",
+              "Lumps": "كتل",
+              "Color": "اللون",
+              "Density": "الكثافة",
+              "Specific Gravity": "الثقل النوعي",
+              "Hardness": "الصلادة",
+              "Packing": "التعبئة",
+              "Storage": "التخزين",
+              "StoreDryCoveredArea": "يُحفظ في مكان جاف ومغطى"
+            }
+          },
+          "Applications": {
+            "SteelMaking": "صناعة الفولاذ",
+            "FoundryIndustry": "صناعة المسابك",
+            "RefractoryIndustry": "صناعة المواد الحرارية",
+            "CarbonAdditive": "مادة مضافة للكربون",
+            "BatteryIndustry": "صناعة البطاريات",
+            "LubricantManufacturing": "تصنيع مواد التشحيم",
+            "MetallurgicalIndustry": "الصناعة المعدنية",
+            "ChemicalIndustry": "الصناعة الكيميائية"
+          },
+          "FAQ": {
+            "WhatIsNaturalGraphiteLumpsQuestion": "ما هي كتل الجرافيت الطبيعي؟",
+            "WhatIsNaturalGraphiteLumpsAnswer": "كتل الجرافيت الطبيعي هي مواد كربونية بلورية طبيعية ذات نسبة عالية من الكربون الثابت، وتُستخدم على نطاق واسع في صناعة الفولاذ، والمسابك، والمواد الحرارية، والبطاريات، ومواد التشحيم، والتطبيقات المعدنية.",
+            "GradesQuestion": "ما هي درجات كتل الجرافيت الطبيعي التي توفرونها؟",
+            "GradesAnswer": "نوفر درجات FC 85% وFC 90% وFC 95%، بالإضافة إلى درجات مخصصة وفقًا لمتطلبات العملاء.",
+            "ApplicationsQuestion": "ما هي استخدامات كتل الجرافيت الطبيعي؟",
+            "ApplicationsAnswer": "تُستخدم في مصانع الفولاذ، والمسابك، وتصنيع المواد الحرارية، وصناعة البطاريات، ومواد التشحيم، والصناعات المعدنية والكيميائية.",
+            "PackingQuestion": "ما هي خيارات التعبئة المتوفرة؟",
+            "PackingAnswer": "متوفرة في أكياس 25 كجم، وأكياس جامبو سعة 1 طن متري، بالإضافة إلى عبوات تصدير مخصصة.",
+            "CustomizedQuestion": "هل يمكنكم توفير درجات وأحجام مخصصة؟",
+            "CustomizedAnswer": "نعم، نوفر درجات نقاء الكربون، وأحجام الكتل، وخيارات التعبئة حسب متطلبات العملاء.",
+            "ExportQuestion": "هل تقومون بتصدير كتل الجرافيت الطبيعي إلى الأسواق الدولية؟",
+            "ExportAnswer": "نعم، نقوم بتصدير كتل الجرافيت الطبيعي عالية الجودة إلى جميع أنحاء العالم مع ضمان الجودة، وأسعار تنافسية، وتسليم في الوقت المحدد."
+          }
+        },
+        "NaturalGraphitePowder": {
+          "Name": "مسحوق الجرافيت الطبيعي",
+          "Description": "مسحوق الجرافيت الطبيعي هو جرافيت بلوري عالي الجودة يتميز بنسبة عالية من الكربون الثابت، وموصلية حرارية ممتازة، وخصائص تشحيم فائقة. يُستخدم على نطاق واسع في صناعة الفولاذ، والمسابك، والمواد الحرارية، والبطاريات، ومواد الاحتكاك، والتطبيقات الصناعية المختلفة.",
+          "Specifications": {
+            "Grade": "الدرجة",
+            "Packing": "التعبئة",
+            "Standard": "المعيار",
+            "Origin": "بلد المنشأ",
+            "GradeValue": "FC 85 / FC 90 / FC 95",
+            "PackingValue": "أكياس 25 كجم / كيس جامبو 1 طن متري",
+            "StandardValue": "مكافئ IS / ASTM / ISO",
+            "OriginValue": "الهند / مدغشقر / الصين"
+          },
+          "TechnicalTables": {
+            "ChemicalComposition": "التركيب الكيميائي",
+            "PhysicalProperties": "الخواص الفيزيائية",
+            "ChemicalHeaders": {
+              "Grade": "الدرجة",
+              "Fixed Carbon": "الكربون الثابت",
+              "Ash": "الرماد",
+              "Moisture": "الرطوبة",
+              "Particle Size": "حجم الجسيمات"
+            },
+            "PhysicalHeaders": {
+              "Property": "الخاصية",
+              "Value": "القيمة"
+            },
+            "PhysicalPropertiesRows": {
+              "Appearance": "المظهر",
+              "Black Grey": "أسود رمادي",
+              "Shape": "الشكل",
+              "Powder": "مسحوق",
+              "Color": "اللون",
+              "Density": "الكثافة",
+              "Specific Gravity": "الثقل النوعي",
+              "Mesh Size": "حجم الشبكة",
+              "Packing": "التعبئة",
+              "Storage": "التخزين",
+              "StoreDryCoveredArea": "يُحفظ في مكان جاف ومغطى"
+            }
+          },
+          "Applications": {
+            "SteelMaking": "صناعة الفولاذ",
+            "FoundryIndustry": "صناعة المسابك",
+            "RefractoryIndustry": "صناعة المواد الحرارية",
+            "CarbonAdditive": "مادة مضافة للكربون",
+            "BatteryIndustry": "صناعة البطاريات",
+            "LubricantManufacturing": "تصنيع مواد التشحيم",
+            "FrictionMaterials": "مواد الاحتكاك",
+            "ChemicalIndustry": "الصناعة الكيميائية"
+          },
+          "FAQ": {
+            "WhatIsNaturalGraphitePowderQuestion": "ما هو مسحوق الجرافيت الطبيعي؟",
+            "WhatIsNaturalGraphitePowderAnswer": "مسحوق الجرافيت الطبيعي هو جرافيت بلوري ناعم يحتوي على نسبة عالية من الكربون. ويُستخدم على نطاق واسع في الصناعات المعدنية، والمسابك، والبطاريات، ومواد التشحيم، والمواد الحرارية، وتصنيع مواد الاحتكاك.",
+            "GradesQuestion": "ما هي درجات مسحوق الجرافيت الطبيعي التي توفرونها؟",
+            "GradesAnswer": "نوفر مسحوق الجرافيت الطبيعي بنسبة كربون ثابت تتراوح بين 85% و95%، مع أحجام شبكية مختلفة حسب متطلبات العملاء.",
+            "ApplicationsQuestion": "ما هي استخدامات مسحوق الجرافيت الطبيعي؟",
+            "ApplicationsAnswer": "يُستخدم في مصانع الفولاذ، والمسابك، وتصنيع المواد الحرارية، والبطاريات، وبطانات الفرامل، ومواد التشحيم، والصناعات المعدنية والكيميائية.",
+            "PackingQuestion": "ما هي خيارات التعبئة المتوفرة؟",
+            "PackingAnswer": "متوفر في أكياس 25 كجم، وأكياس جامبو سعة 1 طن متري، بالإضافة إلى عبوات تصدير مخصصة.",
+            "CustomizedQuestion": "هل يمكنكم توفير درجات وأحجام شبكية مخصصة؟",
+            "CustomizedAnswer": "نعم، نوفر درجات نقاء الكربون، وأحجام الجسيمات (Mesh)، وخيارات التعبئة وفقًا لمتطلبات العملاء.",
+            "ExportQuestion": "هل تقومون بتصدير مسحوق الجرافيت الطبيعي إلى الأسواق الدولية؟",
+            "ExportAnswer": "نعم، نقوم بتصدير مسحوق الجرافيت الطبيعي عالي الجودة إلى جميع أنحاء العالم مع ضمان الجودة، وأسعار تنافسية، وتسليم في الوقت المحدد."
+          }
+        },
+        "ExpandableGraphite": {
+          "Name": "الجرافيت القابل للتمدد",
+          "Description": "الجرافيت القابل للتمدد هو جرافيت طبيعي رقائقي تمت معالجته خصيصًا ليتمدد بسرعة عند تعرضه لدرجات حرارة عالية. ويُستخدم على نطاق واسع في المواد المقاومة للحريق، والعزل الحراري، والحشيات، ومنتجات العزل، والبطاريات، والتطبيقات الصناعية المختلفة.",
+          "Specifications": {
+            "Grade": "الدرجة",
+            "Packing": "التعبئة",
+            "Standard": "المعيار",
+            "Origin": "بلد المنشأ",
+            "GradeValue": "EG 95 / EG 97 / EG 99",
+            "PackingValue": "أكياس 25 كجم / كيس جامبو 1 طن متري",
+            "StandardValue": "مكافئ IS / ASTM / ISO",
+            "OriginValue": "الهند / الصين"
+          },
+          "TechnicalTables": {
+            "ChemicalComposition": "التركيب الكيميائي",
+            "PhysicalProperties": "الخواص الفيزيائية",
+            "ChemicalHeaders": {
+              "Grade": "الدرجة",
+              "Fixed Carbon": "الكربون الثابت",
+              "Expansion Volume": "حجم التمدد",
+              "Moisture": "الرطوبة",
+              "Particle Size": "حجم الجسيمات"
+            },
+            "PhysicalHeaders": {
+              "Property": "الخاصية",
+              "Value": "القيمة"
+            },
+            "PhysicalPropertiesRows": {
+              "Appearance": "المظهر",
+              "Black Grey": "أسود رمادي",
+              "Shape": "الشكل",
+              "Flakes": "رقائق",
+              "Color": "اللون",
+              "Density": "الكثافة",
+              "Specific Gravity": "الثقل النوعي",
+              "Expansion Temperature": "درجة حرارة التمدد",
+              "Packing": "التعبئة",
+              "Storage": "التخزين",
+              "StoreDryCoveredArea": "يُحفظ في مكان جاف ومغطى"
+            }
+          },
+          "Applications": {
+            "FireResistantMaterials": "المواد المقاومة للحريق",
+            "ThermalInsulation": "العزل الحراري",
+            "GasketsSeals": "الحشيات ومواد الإحكام",
+            "BatteryIndustry": "صناعة البطاريات",
+            "RefractoryIndustry": "صناعة المواد الحرارية",
+            "ChemicalIndustry": "الصناعة الكيميائية",
+            "SteelMaking": "صناعة الفولاذ",
+            "EnvironmentalProtection": "حماية البيئة"
+          },
+          "FAQ": {
+            "WhatIsExpandableGraphiteQuestion": "ما هو الجرافيت القابل للتمدد؟",
+            "WhatIsExpandableGraphiteAnswer": "الجرافيت القابل للتمدد هو جرافيت تمت معالجته خصيصًا ليتمدد بشكل كبير عند التسخين، مما يجعله مثاليًا للمواد المقاومة للحريق، والعزل الحراري، ومنتجات الإحكام، والتطبيقات الصناعية.",
+            "GradesQuestion": "ما هي درجات الجرافيت القابل للتمدد التي توفرونها؟",
+            "GradesAnswer": "نوفر درجات EG 95 وEG 97 وEG 99، بالإضافة إلى درجات مخصصة بأحجام تمدد وأحجام جسيمات مختلفة حسب متطلبات العملاء.",
+            "ApplicationsQuestion": "ما هي استخدامات الجرافيت القابل للتمدد؟",
+            "ApplicationsAnswer": "يُستخدم في مواد البناء المقاومة للحريق، والعزل الحراري، والحشيات، والبطاريات، والمواد الحرارية، وحماية البيئة، والصناعات الكيميائية.",
+            "PackingQuestion": "ما هي خيارات التعبئة المتوفرة؟",
+            "PackingAnswer": "متوفر في أكياس 25 كجم، وأكياس جامبو سعة 1 طن متري، بالإضافة إلى عبوات تصدير مخصصة.",
+            "CustomizedQuestion": "هل يمكنكم توفير درجات وأحجام جسيمات مخصصة؟",
+            "CustomizedAnswer": "نعم، نوفر نسب الكربون الثابت، وحجم التمدد، وأحجام الجسيمات، وخيارات التعبئة وفقًا لمتطلبات العملاء.",
+            "ExportQuestion": "هل تقومون بتصدير الجرافيت القابل للتمدد إلى الأسواق الدولية؟",
+            "ExportAnswer": "نعم، نقوم بتصدير الجرافيت القابل للتمدد عالي الجودة إلى جميع أنحاء العالم مع ضمان الجودة، وأسعار تنافسية، وتسليم في الوقت المحدد."
+          }
+        }
       }
     },
-    "Coal": {
-      "Name": "Coal",
-      "Category": "Industrial Minerals",
-      "ShortDescription": "SSL Group supplies high-quality industrial coal with controlled moisture, ash content, and calorific value to ensure efficient combustion, reduced operating costs, and dependable performance across metallurgical and industrial applications.",
-      "Description": "Coal is a naturally occurring carbon-rich fuel widely used in steel manufacturing, foundries, power generation, cement production, and various industrial heating applications.",
+    "SteelProducts": {
+      "Name": "منتجات الصلب",
+      "Category": "الصلب النهائي",
+      "ShortDescription": "منتجات صلب عالية الجودة مصممة لتوفير قوة فائقة ومتانة وموثوقية للاستخدام في البناء والبنية التحتية والتصنيع والهندسة.",
+      "Description": "يُعد الصلب من أكثر المواد الهندسية استخدامًا وتنوعًا في العالم، ويتميز بقوته الفائقة ومتانته وقابليته لإعادة التدوير. ويُستخدم على نطاق واسع في المباني والجسور والآلات الصناعية ومكونات السيارات وخطوط الأنابيب ومشاريع التصنيع المعدني.",
       "Specification": {
-        "FixedCarbon": "Fixed Carbon (FC)",
-        "AshContent": "Ash Content",
-        "VolatileMatter": "Volatile Matter (VM)",
-        "Moisture": "Moisture",
-        "Sulphur": "Sulphur (S)"
-      },
-      "Variants": {
-        "Anthracite": {
-          "Name": "Anthracite",
-          "Description": "Anthracite is a premium-grade hard coal with high fixed carbon, low ash, and low volatile matter. It is widely used as a carbon additive in steelmaking, foundries, metallurgy, water filtration, and industrial heating applications.",
-          "Specifications": {
-            "Grade": "Grade",
-            "Packing": "Packing",
-            "Standard": "Standard",
-            "Origin": "Origin",
-            "GradeValue": "AC 85 / AC 90 / AC 95",
-            "PackingValue": "25 Kg Bags / 1 MT Jumbo Bag",
-            "StandardValue": "IS / ASTM / ISO Equivalent",
-            "OriginValue": "India / Imported"
-          },
-          "TechnicalTables": {
-            "ChemicalComposition": "Chemical Composition",
-            "PhysicalProperties": "Physical Properties",
-            "ChemicalHeaders": {
-              "Grade": "Grade",
-              "FC": "Fixed Carbon",
-              "Ash": "Ash",
-              "VM": "Volatile Matter",
-              "Moisture": "Moisture",
-              "Sulfur": "Sulfur"
-            },
-            "PhysicalHeaders": {
-              "Property": "Property",
-              "Value": "Value"
-            },
-            "PhysicalPropertiesRows": {
-              "Appearance": "Appearance",
-              "Black": "Black",
-              "Shape": "Shape",
-              "Lumps": "Lumps",
-              "Color": "Color",
-              "Density": "Density",
-              "SpecificGravity": "Specific Gravity",
-              "CalorificValue": "Calorific Value",
-              "Packing": "Packing",
-              "Storage": "Storage",
-              "StoreDryCoveredArea": "Store in a dry and covered area"
-            }
-          },
-          "Applications": {
-            "SteelMaking": "Steel Making",
-            "FoundryIndustry": "Foundry Industry",
-            "CarbonAdditive": "Carbon Additive",
-            "MetallurgicalIndustry": "Metallurgical Industry",
-            "WaterFiltration": "Water Filtration",
-            "PowerGeneration": "Power Generation",
-            "ChemicalIndustry": "Chemical Industry",
-            "IndustrialHeating": "Industrial Heating"
-          },
-          "FAQ": {
-            "WhatIsAnthraciteQuestion": "What is Anthracite?",
-            "WhatIsAnthraciteAnswer": "Anthracite is the highest-grade natural coal with high carbon content, low sulfur, and low volatile matter. It is widely used as a carbon additive, fuel, and filtration media in industrial applications.",
-            "GradesQuestion": "What grades of Anthracite do you supply?",
-            "GradesAnswer": "We supply Anthracite with fixed carbon ranging from 85% to 95%, along with customized grades based on customer specifications.",
-            "ApplicationsQuestion": "What are the applications of Anthracite?",
-            "ApplicationsAnswer": "Anthracite is widely used in steel plants, foundries, metallurgical industries, water filtration systems, power plants, and industrial heating applications.",
-            "PackingQuestion": "What packing options are available?",
-            "PackingAnswer": "Available in 25 kg bags, 1 MT jumbo bags, and customized export packaging.",
-            "CustomizedQuestion": "Can you provide customized grades and sizes?",
-            "CustomizedAnswer": "Yes. We provide customized fixed carbon content, particle sizes, and packaging according to customer requirements.",
-            "ExportQuestion": "Do you export Anthracite internationally?",
-            "ExportAnswer": "Yes. We export premium-quality Anthracite to domestic and international markets with consistent quality, competitive pricing, and timely delivery."
-          }
-        },
-        "SteamCoal": {
-          "Name": "Steam Coal",
-          "Description": "Steam Coal, also known as Thermal Coal, is a high-quality fuel used for electricity generation, industrial boilers, cement plants, and various manufacturing industries. It offers consistent calorific value, low moisture, and reliable combustion efficiency.",
-          "Specifications": {
-            "Grade": "Grade",
-            "Packing": "Packing",
-            "Standard": "Standard",
-            "Origin": "Origin",
-            "GradeValue": "5500 / 6000 / 6500 GCV",
-            "PackingValue": "Loose Bulk / 1 MT Jumbo Bag",
-            "StandardValue": "IS / ASTM / ISO Equivalent",
-            "OriginValue": "India / Indonesia / South Africa"
-          },
-          "TechnicalTables": {
-            "ChemicalComposition": "Chemical Composition",
-            "PhysicalProperties": "Physical Properties",
-            "ChemicalHeaders": {
-              "Grade": "Grade",
-              "GCV": "Gross Calorific Value",
-              "Ash": "Ash",
-              "VM": "Volatile Matter",
-              "Moisture": "Moisture",
-              "Sulfur": "Sulfur"
-            },
-            "PhysicalHeaders": {
-              "Property": "Property",
-              "Value": "Value"
-            },
-            "PhysicalPropertiesRows": {
-              "Appearance": "Appearance",
-              "Black": "Black",
-              "Shape": "Shape",
-              "Lumps": "Lumps",
-              "Color": "Color",
-              "Density": "Density",
-              "SpecificGravity": "Specific Gravity",
-              "CalorificValue": "Calorific Value",
-              "Packing": "Packing",
-              "Storage": "Storage",
-              "StoreDryCoveredArea": "Store in a dry and covered area"
-            }
-          },
-          "Applications": {
-            "PowerGeneration": "Power Generation",
-            "CementIndustry": "Cement Industry",
-            "SteelIndustry": "Steel Industry",
-            "PaperIndustry": "Paper Industry",
-            "TextileIndustry": "Textile Industry",
-            "IndustrialBoilers": "Industrial Boilers",
-            "BrickKilns": "Brick Kilns",
-            "ChemicalIndustry": "Chemical Industry"
-          },
-          "FAQ": {
-            "WhatIsSteamCoalQuestion": "What is Steam Coal?",
-            "WhatIsSteamCoalAnswer": "Steam Coal, also known as Thermal Coal, is a type of coal primarily used for electricity generation and industrial heating applications because of its high calorific value and efficient combustion.",
-            "GradesQuestion": "What grades of Steam Coal do you supply?",
-            "GradesAnswer": "We supply Steam Coal in various grades ranging from 4200 GCV to 7000 GCV, including Indonesian, South African, and Indian origins.",
-            "ApplicationsQuestion": "What are the applications of Steam Coal?",
-            "ApplicationsAnswer": "Steam Coal is widely used in thermal power plants, cement plants, steel industries, paper mills, textile industries, industrial boilers, brick kilns, and chemical manufacturing.",
-            "PackingQuestion": "What packing options are available?",
-            "PackingAnswer": "Available in loose bulk, 1 MT jumbo bags, and customized export packaging.",
-            "CustomizedQuestion": "Can you provide customized grades and sizing?",
-            "CustomizedAnswer": "Yes. We provide customized GCV ranges, sizing, moisture levels, and packaging according to customer requirements.",
-            "ExportQuestion": "Do you export Steam Coal internationally?",
-            "ExportAnswer": "Yes. We export premium-quality Steam Coal worldwide with consistent quality, competitive pricing, and reliable logistics."
-          }
-        },
-        "PulverizedCoalInjection": {
-          "Name": "Pulverized Coal Injection (PCI)",
-          "Description": "Pulverized Coal Injection (PCI) is a finely ground coal used as an auxiliary fuel in blast furnaces to reduce coke consumption and improve furnace efficiency. It provides high calorific value, low ash, and consistent combustion performance.",
-          "Specifications": {
-            "Grade": "Grade",
-            "Packing": "Packing",
-            "Standard": "Standard",
-            "Origin": "Origin",
-            "GradeValue": "PCI 70 / PCI 75 / PCI 80",
-            "PackingValue": "25 Kg Bags / 1 MT Jumbo Bag",
-            "StandardValue": "IS / ASTM / ISO Equivalent",
-            "OriginValue": "India / Imported"
-          },
-          "TechnicalTables": {
-            "ChemicalComposition": "Chemical Composition",
-            "PhysicalProperties": "Physical Properties",
-            "ChemicalHeaders": {
-              "Grade": "Grade",
-              "FC": "Fixed Carbon",
-              "Ash": "Ash",
-              "VM": "Volatile Matter",
-              "Moisture": "Moisture",
-              "Sulfur": "Sulfur"
-            },
-            "PhysicalHeaders": {
-              "Property": "Property",
-              "Value": "Value"
-            },
-            "PhysicalPropertiesRows": {
-              "Appearance": "Appearance",
-              "Black": "Black",
-              "Shape": "Shape",
-              "Fine Powder": "Fine Powder",
-              "Color": "Color",
-              "Density": "Density",
-              "SpecificGravity": "Specific Gravity",
-              "ParticleSize": "Particle Size",
-              "Packing": "Packing",
-              "Storage": "Storage",
-              "StoreDryCoveredArea": "Store in a dry and covered area"
-            }
-          },
-          "Applications": {
-            "BlastFurnace": "Blast Furnace Injection",
-            "SteelMaking": "Steel Making",
-            "IronMaking": "Iron Making",
-            "MetallurgicalIndustry": "Metallurgical Industry",
-            "FoundryIndustry": "Foundry Industry",
-            "FuelSubstitution": "Coke Replacement",
-            "IndustrialHeating": "Industrial Heating",
-            "EnergyEfficiency": "Energy Efficiency Improvement"
-          },
-          "FAQ": {
-            "WhatIsPulverizedCoalInjectionQuestion": "What is Pulverized Coal Injection (PCI)?",
-            "WhatIsPulverizedCoalInjectionAnswer": "Pulverized Coal Injection (PCI) is finely pulverized coal injected into blast furnaces as a substitute for coke, reducing production costs and improving furnace productivity.",
-            "GradesQuestion": "What grades of PCI Coal do you supply?",
-            "GradesAnswer": "We supply PCI coal with fixed carbon ranging from 70% to 80%, along with customized grades as per customer requirements.",
-            "ApplicationsQuestion": "What are the applications of PCI Coal?",
-            "ApplicationsAnswer": "PCI coal is widely used in blast furnaces, iron making, steel production, metallurgical plants, and energy-efficient industrial processes.",
-            "PackingQuestion": "What packing options are available?",
-            "PackingAnswer": "Available in 25 kg bags, 1 MT jumbo bags, bulk supply, and customized export packaging.",
-            "CustomizedQuestion": "Can you provide customized specifications?",
-            "CustomizedAnswer": "Yes. We provide customized fixed carbon, ash content, particle size, and packaging according to customer requirements.",
-            "ExportQuestion": "Do you export PCI Coal internationally?",
-            "ExportAnswer": "Yes. We export premium-quality Pulverized Coal Injection (PCI) worldwide with consistent quality, competitive pricing, and reliable delivery."
-          }
-        },
-        "CokingCoal": {
-          "Name": "Coking Coal",
-          "Description": "Coking Coal, also known as Metallurgical Coal, is a premium-grade coal used for manufacturing coke in blast furnaces. It offers excellent coking properties, high carbon content, low ash, and low sulfur, making it ideal for iron and steel production.",
-          "Specifications": {
-            "Grade": "Grade",
-            "Packing": "Packing",
-            "Standard": "Standard",
-            "Origin": "Origin",
-            "GradeValue": "Prime Hard / Medium Coking / Semi Soft",
-            "PackingValue": "Loose Bulk / 1 MT Jumbo Bag",
-            "StandardValue": "IS / ASTM / ISO Equivalent",
-            "OriginValue": "Australia / India / Imported"
-          },
-          "TechnicalTables": {
-            "ChemicalComposition": "Chemical Composition",
-            "PhysicalProperties": "Physical Properties",
-            "ChemicalHeaders": {
-              "Grade": "Grade",
-              "FC": "Fixed Carbon",
-              "Ash": "Ash",
-              "VM": "Volatile Matter",
-              "Moisture": "Moisture",
-              "Sulfur": "Sulfur"
-            },
-            "PhysicalHeaders": {
-              "Property": "Property",
-              "Value": "Value"
-            },
-            "PhysicalPropertiesRows": {
-              "Appearance": "Appearance",
-              "Black": "Black",
-              "Shape": "Shape",
-              "Lumps": "Lumps",
-              "Color": "Color",
-              "Density": "Density",
-              "SpecificGravity": "Specific Gravity",
-              "CalorificValue": "Calorific Value",
-              "Packing": "Packing",
-              "Storage": "Storage",
-              "StoreDryCoveredArea": "Store in a dry and covered area"
-            }
-          },
-          "Applications": {
-            "BlastFurnace": "Blast Furnace",
-            "CokeManufacturing": "Coke Manufacturing",
-            "SteelMaking": "Steel Making",
-            "IronMaking": "Iron Making",
-            "MetallurgicalIndustry": "Metallurgical Industry",
-            "FoundryIndustry": "Foundry Industry",
-            "IndustrialFuel": "Industrial Fuel",
-            "ChemicalIndustry": "Chemical Industry"
-          },
-          "FAQ": {
-            "WhatIsCokingCoalQuestion": "What is Coking Coal?",
-            "WhatIsCokingCoalAnswer": "Coking Coal is a high-grade metallurgical coal used to manufacture coke for blast furnaces in the iron and steel industry. It possesses excellent coking characteristics and high carbon content.",
-            "GradesQuestion": "What grades of Coking Coal do you supply?",
-            "GradesAnswer": "We supply Prime Hard Coking Coal, Medium Coking Coal, Semi Soft Coking Coal, and customized grades according to customer specifications.",
-            "ApplicationsQuestion": "What are the applications of Coking Coal?",
-            "ApplicationsAnswer": "Coking Coal is widely used in coke ovens, blast furnaces, steel plants, foundries, metallurgical industries, and chemical manufacturing.",
-            "PackingQuestion": "What packing options are available?",
-            "PackingAnswer": "Available in loose bulk, 1 MT jumbo bags, and customized export packaging.",
-            "CustomizedQuestion": "Can you provide customized grades and specifications?",
-            "CustomizedAnswer": "Yes. We supply customized ash content, volatile matter, sulfur levels, sizing, and packaging according to customer requirements.",
-            "ExportQuestion": "Do you export Coking Coal internationally?",
-            "ExportAnswer": "Yes. We export premium-quality Coking Coal worldwide with consistent quality, competitive pricing, and reliable delivery."
-          }
-        }
-      }
-    },
-    "LimeStone": {
-      "Name": "Lime Stone",
-      "Category": "Industrial Minerals",
-      "ShortDescription": "Premium-quality Limestone with high calcium content, widely used in steel plants, cement manufacturing, construction, chemical processing, glass production, and water treatment applications.",
-      "Description": "Limestone is a naturally occurring sedimentary rock primarily composed of calcium carbonate (CaCO₃). It is one of the most widely used industrial minerals due to its high calcium content, excellent fluxing properties, and chemical stability.",
-      "Specifications": {
-        "CalciumCarbonate": "Calcium Carbonate (CaCO₃)",
-        "CalciumOxide": "Calcium Oxide (CaO)",
-        "MagnesiumOxide": "Magnesium Oxide (MgO)",
-        "Silica": "Silica (SiO₂)"
-      },
-      "Variants": {
-        "SteelGradeLimestone": {
-          "Name": "Steel Grade Limestone",
-          "Description": "Steel Grade Limestone is a premium-quality flux used in iron and steel manufacturing. With high calcium carbonate content and low silica and magnesium impurities, it efficiently removes impurities during steelmaking and improves slag formation.",
-          "Specifications": {
-            "Grade": "Grade",
-            "Packing": "Packing",
-            "Standard": "Standard",
-            "Origin": "Origin",
-            "GradeValue": "LS-90 / LS-92 / LS-95",
-            "PackingValue": "Loose Bulk / 1 MT Jumbo Bag",
-            "StandardValue": "IS / ASTM / ISO Equivalent",
-            "OriginValue": "India"
-          },
-          "TechnicalTables": {
-            "ChemicalComposition": "Chemical Composition",
-            "PhysicalProperties": "Physical Properties",
-            "ChemicalHeaders": {
-              "Grade": "Grade",
-              "CaCO₃": "Calcium Carbonate",
-              "CaO": "Calcium Oxide",
-              "MgO": "Magnesium Oxide",
-              "SiO₂": "Silica",
-              "Size": "Size"
-            },
-            "PhysicalHeaders": {
-              "Property": "Property",
-              "Value": "Value"
-            },
-            "PhysicalPropertiesRows": {
-              "Appearance": "Appearance",
-              "WhiteGrey": "White Grey",
-              "Shape": "Shape",
-              "Lumps": "Lumps",
-              "Color": "Color",
-              "Density": "Density",
-              "SpecificGravity": "Specific Gravity",
-              "Hardness": "Hardness",
-              "Packing": "Packing",
-              "Storage": "Storage",
-              "StoreDryCoveredArea": "Store in a dry and covered area"
-            }
-          },
-          "Applications": {
-            "SteelMaking": "Steel Making",
-            "BlastFurnace": "Blast Furnace",
-            "BOFConverter": "Basic Oxygen Furnace (BOF)",
-            "ElectricArcFurnace": "Electric Arc Furnace (EAF)",
-            "FluxMaterial": "Flux Material",
-            "IronMaking": "Iron Making",
-            "MetallurgicalIndustry": "Metallurgical Industry",
-            "FoundryIndustry": "Foundry Industry"
-          },
-          "FAQ": {
-            "WhatIsSteelGradeLimestoneQuestion": "What is Steel Grade Limestone?",
-            "WhatIsSteelGradeLimestoneAnswer": "Steel Grade Limestone is a high-purity limestone used as a flux in iron and steel production. It removes impurities such as silica, sulfur, and phosphorus while improving slag formation and furnace efficiency.",
-            "GradesQuestion": "What grades of Steel Grade Limestone do you supply?",
-            "GradesAnswer": "We supply LS-90, LS-92, LS-95, and customized grades with different calcium carbonate content and particle sizes.",
-            "ApplicationsQuestion": "What are the applications of Steel Grade Limestone?",
-            "ApplicationsAnswer": "Steel Grade Limestone is widely used in blast furnaces, BOF converters, electric arc furnaces, iron making, foundries, and metallurgical industries as a fluxing agent.",
-            "PackingQuestion": "What packing options are available?",
-            "PackingAnswer": "Available in loose bulk, 1 MT jumbo bags, and customized export packaging as per customer requirements.",
-            "CustomizedQuestion": "Can you provide customized grades and sizes?",
-            "CustomizedAnswer": "Yes. We provide customized purity levels, lump sizes, and packaging to meet specific steel plant and foundry requirements.",
-            "ExportQuestion": "Do you export Steel Grade Limestone internationally?",
-            "ExportAnswer": "Yes. We export premium-quality Steel Grade Limestone to domestic and international markets with consistent quality, competitive pricing, and reliable logistics."
-          }
-        },
-        "ChemicalGradeLimestone": {
-          "Name": "Chemical Grade Limestone",
-          "Description": "Chemical Grade Limestone is a high-purity limestone with excellent calcium carbonate content and low impurities. It is widely used in chemical processing, glass manufacturing, paper production, sugar refining, water treatment, and industrial mineral applications.",
-          "Specifications": {
-            "Grade": "Grade",
-            "Packing": "Packing",
-            "Standard": "Standard",
-            "Origin": "Origin",
-            "GradeValue": "CG-95 / CG-97 / CG-98",
-            "PackingValue": "25 Kg Bags / 1 MT Jumbo Bag",
-            "StandardValue": "IS / ASTM / ISO Equivalent",
-            "OriginValue": "India"
-          },
-          "TechnicalTables": {
-            "ChemicalComposition": "Chemical Composition",
-            "PhysicalProperties": "Physical Properties",
-            "ChemicalHeaders": {
-              "Grade": "Grade",
-              "CaCO₃": "Calcium Carbonate",
-              "CaO": "Calcium Oxide",
-              "MgO": "Magnesium Oxide",
-              "SiO₂": "Silica",
-              "Fe₂O₃": "Iron Oxide"
-            },
-            "PhysicalHeaders": {
-              "Property": "Property",
-              "Value": "Value"
-            },
-            "PhysicalPropertiesRows": {
-              "Appearance": "Appearance",
-              "WhiteGrey": "White Grey",
-              "Shape": "Shape",
-              "LumpsPowder": "Lumps / Powder",
-              "Color": "Color",
-              "Density": "Density",
-              "SpecificGravity": "Specific Gravity",
-              "Hardness": "Hardness",
-              "Packing": "Packing",
-              "Storage": "Storage",
-              "StoreDryCoveredArea": "Store in a dry and covered area"
-            }
-          },
-          "Applications": {
-            "ChemicalIndustry": "Chemical Industry",
-            "GlassIndustry": "Glass Industry",
-            "PaperIndustry": "Paper Industry",
-            "SugarIndustry": "Sugar Industry",
-            "PaintIndustry": "Paint Industry",
-            "WaterTreatment": "Water Treatment",
-            "CalciumCarbonateProduction": "Calcium Carbonate Production",
-            "IndustrialMinerals": "Industrial Minerals"
-          },
-          "FAQ": {
-            "WhatIsChemicalGradeLimestoneQuestion": "What is Chemical Grade Limestone?",
-            "WhatIsChemicalGradeLimestoneAnswer": "Chemical Grade Limestone is a high-purity limestone containing high calcium carbonate and low silica, magnesium, and iron impurities. It is widely used in chemical and industrial manufacturing processes.",
-            "GradesQuestion": "What grades of Chemical Grade Limestone do you supply?",
-            "GradesAnswer": "We supply CG-95, CG-97, CG-98, and customized grades with different purity levels and particle sizes according to customer requirements.",
-            "ApplicationsQuestion": "What are the applications of Chemical Grade Limestone?",
-            "ApplicationsAnswer": "Chemical Grade Limestone is used in chemical plants, glass manufacturing, paper mills, sugar refineries, paint production, water treatment, and calcium carbonate manufacturing.",
-            "PackingQuestion": "What packing options are available?",
-            "PackingAnswer": "Available in 25 kg bags, 1 MT jumbo bags, bulk supply, and customized export packaging.",
-            "CustomizedQuestion": "Can you provide customized grades and sizes?",
-            "CustomizedAnswer": "Yes. We provide customized purity levels, particle sizes, and packaging according to customer specifications.",
-            "ExportQuestion": "Do you export Chemical Grade Limestone internationally?",
-            "ExportAnswer": "Yes. We export premium-quality Chemical Grade Limestone worldwide with reliable quality, competitive pricing, and timely delivery."
-          }
-        },
-        "CementGradeLimestone": {
-          "Name": "Cement Grade Limestone",
-          "Description": "Cement Grade Limestone is a high-quality raw material used in the production of cement and clinker. It provides the required calcium content for efficient cement manufacturing while maintaining low levels of impurities for consistent product quality.",
-          "Specifications": {
-            "Grade": "Grade",
-            "Packing": "Packing",
-            "Standard": "Standard",
-            "Origin": "Origin",
-            "GradeValue": "CG-80 / CG-85 / CG-90",
-            "PackingValue": "Loose Bulk / 1 MT Jumbo Bag",
-            "StandardValue": "IS / ASTM / ISO Equivalent",
-            "OriginValue": "India"
-          },
-          "TechnicalTables": {
-            "ChemicalComposition": "Chemical Composition",
-            "PhysicalProperties": "Physical Properties",
-            "ChemicalHeaders": {
-              "Grade": "Grade",
-              "CaCO₃": "Calcium Carbonate",
-              "CaO": "Calcium Oxide",
-              "MgO": "Magnesium Oxide",
-              "SiO₂": "Silica",
-              "Size": "Size"
-            },
-            "PhysicalHeaders": {
-              "Property": "Property",
-              "Value": "Value"
-            },
-            "PhysicalPropertiesRows": {
-              "Appearance": "Appearance",
-              "WhiteGrey": "White Grey",
-              "Shape": "Shape",
-              "Lumps": "Lumps",
-              "Color": "Color",
-              "Density": "Density",
-              "SpecificGravity": "Specific Gravity",
-              "Hardness": "Hardness",
-              "Packing": "Packing",
-              "Storage": "Storage",
-              "StoreDryCoveredArea": "Store in a dry and covered area"
-            }
-          },
-          "Applications": {
-            "CementManufacturing": "Cement Manufacturing",
-            "ClinkerProduction": "Clinker Production",
-            "ConstructionIndustry": "Construction Industry",
-            "ReadyMixConcrete": "Ready-Mix Concrete",
-            "InfrastructureProjects": "Infrastructure Projects",
-            "BuildingMaterials": "Building Materials",
-            "IndustrialMinerals": "Industrial Minerals",
-            "LimeProduction": "Lime Production"
-          },
-          "FAQ": {
-            "WhatIsCementGradeLimestoneQuestion": "What is Cement Grade Limestone?",
-            "WhatIsCementGradeLimestoneAnswer": "Cement Grade Limestone is a naturally occurring sedimentary rock with high calcium carbonate content used as the primary raw material in cement and clinker manufacturing.",
-            "GradesQuestion": "What grades of Cement Grade Limestone do you supply?",
-            "GradesAnswer": "We supply CG-80, CG-85, CG-90, and customized grades with different calcium carbonate content and particle sizes to meet cement plant requirements.",
-            "ApplicationsQuestion": "What are the applications of Cement Grade Limestone?",
-            "ApplicationsAnswer": "Cement Grade Limestone is widely used in cement manufacturing, clinker production, ready-mix concrete plants, lime production, and construction material industries.",
-            "PackingQuestion": "What packing options are available?",
-            "PackingAnswer": "Available in loose bulk, 1 MT jumbo bags, and customized export packaging according to customer requirements.",
-            "CustomizedQuestion": "Can you provide customized grades and sizes?",
-            "CustomizedAnswer": "Yes. We provide customized chemical composition, lump sizes, and packaging based on customer specifications.",
-            "ExportQuestion": "Do you export Cement Grade Limestone internationally?",
-            "ExportAnswer": "Yes. We export premium-quality Cement Grade Limestone worldwide with consistent quality, competitive pricing, and reliable logistics."
-          }
-        },
-        "ConstuctionGradeLimestone": {
-          "Name": "Construction Grade Limestone",
-          "Description": "Construction Grade Limestone is a durable and high-quality natural stone widely used in construction, infrastructure, road building, concrete production, and civil engineering projects. It offers excellent strength, durability, and weather resistance.",
-          "Specifications": {
-            "Grade": "Grade",
-            "Packing": "Packing",
-            "Standard": "Standard",
-            "Origin": "Origin",
-            "GradeValue": "CG-75 / CG-80 / CG-85",
-            "PackingValue": "Loose Bulk / 1 MT Jumbo Bag",
-            "StandardValue": "IS / ASTM / ISO Equivalent",
-            "OriginValue": "India"
-          },
-          "TechnicalTables": {
-            "ChemicalComposition": "Chemical Composition",
-            "PhysicalProperties": "Physical Properties",
-            "ChemicalHeaders": {
-              "Grade": "Grade",
-              "CaCO₃": "Calcium Carbonate",
-              "CaO": "Calcium Oxide",
-              "MgO": "Magnesium Oxide",
-              "SiO₂": "Silica",
-              "Size": "Size"
-            },
-            "PhysicalHeaders": {
-              "Property": "Property",
-              "Value": "Value"
-            },
-            "PhysicalPropertiesRows": {
-              "Appearance": "Appearance",
-              "WhiteGrey": "White Grey",
-              "Shape": "Shape",
-              "Lumps": "Lumps",
-              "Color": "Color",
-              "Density": "Density",
-              "SpecificGravity": "Specific Gravity",
-              "Hardness": "Hardness",
-              "Packing": "Packing",
-              "Storage": "Storage",
-              "StoreDryCoveredArea": "Store in a dry and covered area"
-            }
-          },
-          "Applications": {
-            "RoadConstruction": "Road Construction",
-            "BuildingConstruction": "Building Construction",
-            "ConcreteProduction": "Concrete Production",
-            "AsphaltMix": "Asphalt Mix",
-            "RailwayBallast": "Railway Ballast",
-            "InfrastructureProjects": "Infrastructure Projects",
-            "Aggregates": "Construction Aggregates",
-            "CivilEngineering": "Civil Engineering"
-          },
-          "FAQ": {
-            "WhatIsConstructionGradeLimestoneQuestion": "What is Construction Grade Limestone?",
-            "WhatIsConstructionGradeLimestoneAnswer": "Construction Grade Limestone is a natural stone used as aggregate and base material for roads, buildings, bridges, concrete, and infrastructure projects due to its strength and durability.",
-            "GradesQuestion": "What grades of Construction Grade Limestone do you supply?",
-            "GradesAnswer": "We supply CG-75, CG-80, CG-85, and customized grades with various sizes and chemical compositions to meet construction requirements.",
-            "ApplicationsQuestion": "What are the applications of Construction Grade Limestone?",
-            "ApplicationsAnswer": "Construction Grade Limestone is widely used in road construction, concrete manufacturing, asphalt production, railway ballast, civil engineering, and infrastructure development.",
-            "PackingQuestion": "What packing options are available?",
-            "PackingAnswer": "Available in loose bulk, 1 MT jumbo bags, and customized packaging according to customer requirements.",
-            "CustomizedQuestion": "Can you provide customized grades and sizes?",
-            "CustomizedAnswer": "Yes. We provide customized particle sizes, chemical composition, and packaging to meet specific construction project requirements.",
-            "ExportQuestion": "Do you export Construction Grade Limestone internationally?",
-            "ExportAnswer": "Yes. We export premium-quality Construction Grade Limestone to domestic and international markets with reliable quality, competitive pricing, and timely delivery."
-          }
-        }
-      }
-    },
-    "SteelPipesTubes": {
-      "Name": "أنابيب ومواسير الفولاذ",
-      "Category": "الفولاذ النهائي",
-      "ShortDescription": "أنابيب فولاذية ملحومة وغير ملحومة لقطاع النفط والغاز والبنية التحتية.",
-      "Description": "أنابيب ومواسير فولاذية مطابقة لمعايير API وASTM.",
-      "Specifications": {
         "Grades": "الدرجات",
-        "ODRange": "نطاق القطر الخارجي",
-        "WallThickness": "سماكة الجدار",
-        "Ends": "النهايات",
-        "Coating": "الطلاء"
+        "Material": "المادة",
+        "Standard": "المعيار",
+        "Length": "الطول",
+        "Surface": "السطح",
+        "Shape": "الشكل",
+        "YieldStrength": "مقاومة الخضوع",
+        "Applications": "التطبيقات"
       },
-      "Applications": {
-        "Oilgastransmission": "نقل النفط والغاز",
-        "Waterinfrastructure": "البنية التحتية للمياه",
-        "EPCprojectpiping": "أنابيب مشاريع EPC",
-        "Industrialprocesslines": "خطوط العمليات الصناعية"
+      "Variants": {
+        "SteelBillets": {
+          "Name": "قضبان الصلب نصف المصنعة",
+          "Description": "قضبان الصلب نصف المصنعة هي منتجات فولاذية نصف مصنعة عالية الجودة يتم إنتاجها باستخدام عمليات الصب المستمر أو الدرفلة على الساخن. تُستخدم كمادة خام أساسية لإنتاج حديد التسليح، وأسلاك القضبان، والمقاطع الإنشائية، والأنابيب غير الملحومة، ومختلف المنتجات الفولاذية الهندسية. تتميز بقوة عالية، ودقة في الأبعاد، وقابلية ممتازة للحام، وخصائص ميكانيكية متفوقة للتطبيقات الصناعية.",
+          "Specifications": {
+            "Grade": "الدرجة",
+            "Size": "المقاس",
+            "Length": "الطول",
+            "Origin": "بلد المنشأ",
+            "GradeValue": "IS2062 / ASTM A36 / SAE",
+            "SizeValue": "100×100 مم – 200×200 مم",
+            "LengthValue": "6 – 12 متر",
+            "OriginValue": "الهند"
+          },
+          "TechnicalTables": {
+            "ChemicalComposition": "التركيب الكيميائي",
+            "PhysicalProperties": "الخواص الفيزيائية",
+            "ChemicalHeaders": {
+              "Grade": "الدرجة",
+              "Carbon": "الكربون",
+              "Manganese": "المنغنيز",
+              "Silicon": "السيليكون",
+              "Sulphur": "الكبريت",
+              "Phosphorus": "الفوسفور"
+            },
+            "PhysicalHeaders": {
+              "Property": "الخاصية",
+              "Value": "القيمة"
+            },
+            "PhysicalPropertiesRows": {
+              "Appearance": "المظهر",
+              "SolidSteelBillets": "قضبان صلب مصمتة",
+              "Shape": "الشكل",
+              "Square": "مربع",
+              "Color": "اللون",
+              "GreyMetallic": "رمادي معدني",
+              "Density": "الكثافة",
+              "Packing": "التعبئة",
+              "SteelStrappedBundles": "حزم مربوطة بشرائط فولاذية",
+              "Storage": "التخزين",
+              "StoreDryCoveredArea": "يُحفظ في مكان جاف ومغطى"
+            }
+          },
+          "Applications": {
+            "RollingMills": "مصانع الدرفلة",
+            "RebarManufacturing": "تصنيع حديد التسليح",
+            "WireRodProduction": "إنتاج أسلاك القضبان",
+            "StructuralSteel": "الفولاذ الإنشائي",
+            "ForgingIndustry": "صناعة الحدادة",
+            "EngineeringComponents": "المكونات الهندسية",
+            "AutomotiveIndustry": "صناعة السيارات",
+            "ConstructionIndustry": "صناعة البناء"
+          },
+          "FAQ": {
+            "WhatIsSteelBilletsQuestion": "ما هي قضبان الصلب نصف المصنعة؟",
+            "WhatIsSteelBilletsAnswer": "قضبان الصلب نصف المصنعة هي منتجات فولاذية نصف مصنعة تُستخدم كمادة خام لإنتاج حديد التسليح، وأسلاك القضبان، والمقاطع الإنشائية، والأنابيب غير الملحومة، وغيرها من المنتجات الفولاذية.",
+            "GradesQuestion": "ما هي درجات قضبان الصلب التي توفرونها؟",
+            "GradesAnswer": "نوفر قضبان الصلب بدرجات IS2062 وASTM A36 وSAE، بالإضافة إلى درجات مخصصة حسب متطلبات العملاء.",
+            "ApplicationsQuestion": "ما هي استخدامات قضبان الصلب؟",
+            "ApplicationsAnswer": "تُستخدم قضبان الصلب على نطاق واسع في مصانع الدرفلة، وقطاع البناء، وصناعة السيارات، والهندسة، والحدادة، ومشاريع البنية التحتية.",
+            "PackingQuestion": "ما هي خيارات التعبئة المتوفرة؟",
+            "PackingAnswer": "يتم توريد قضبان الصلب في حزم مربوطة بشرائط فولاذية، مناسبة للنقل المحلي والتصدير.",
+            "CustomizedQuestion": "هل يمكنكم توفير مقاسات ودرجات مخصصة؟",
+            "CustomizedAnswer": "نعم، نوفر مقاسات وأطوال ودرجات وتغليفًا مخصصًا وفقًا لمواصفات العملاء.",
+            "ExportQuestion": "هل تقومون بتصدير قضبان الصلب دوليًا؟",
+            "ExportAnswer": "نعم، نقوم بتصدير قضبان الصلب عالية الجودة إلى جميع أنحاء العالم مع الالتزام بمعايير الجودة الصارمة والأسعار التنافسية والتسليم في الوقت المحدد."
+          }
+        },
+        "SteelBloom": {
+          "Name": "بلوم الصلب",
+          "Description": "بلوم الصلب هو منتج فولاذي نصف مصنع عالي الجودة يتميز بمساحة مقطع عرضي أكبر من البليت. يتم تصنيعه باستخدام عمليات الصب المستمر أو الدرفلة على الساخن، ويُستخدم على نطاق واسع في إنتاج المقاطع الإنشائية، وقضبان السكك الحديدية، والأنابيب غير الملحومة، وأعمال الحدادة الثقيلة، والمكونات الهندسية. يوفر بلوم الصلب قوة ممتازة، ودقة في الأبعاد، وخصائص ميكانيكية فائقة للتطبيقات الصناعية.",
+          "Specifications": {
+            "Grade": "الدرجة",
+            "Size": "المقاس",
+            "Length": "الطول",
+            "Origin": "بلد المنشأ",
+            "GradeValue": "IS2062 / ASTM A36 / SAE",
+            "SizeValue": "200×200 مم – 400×400 مم",
+            "LengthValue": "6 – 12 متر",
+            "OriginValue": "الهند"
+          },
+          "TechnicalTables": {
+            "ChemicalComposition": "التركيب الكيميائي",
+            "PhysicalProperties": "الخواص الفيزيائية",
+            "ChemicalHeaders": {
+              "Grade": "الدرجة",
+              "Carbon": "الكربون",
+              "Manganese": "المنغنيز",
+              "Silicon": "السيليكون",
+              "Sulphur": "الكبريت",
+              "Phosphorus": "الفوسفور"
+            },
+            "PhysicalHeaders": {
+              "Property": "الخاصية",
+              "Value": "القيمة"
+            },
+            "PhysicalPropertiesRows": {
+              "Appearance": "المظهر",
+              "SolidSteelBloom": "بلوم صلب مصمت",
+              "Shape": "الشكل",
+              "SquareOrRectangular": "مربع / مستطيل",
+              "Color": "اللون",
+              "GreyMetallic": "رمادي معدني",
+              "Density": "الكثافة",
+              "Packing": "التعبئة",
+              "SteelStrappedBundles": "حزم مربوطة بشرائط فولاذية",
+              "Storage": "التخزين",
+              "StoreDryCoveredArea": "يُحفظ في مكان جاف ومغطى"
+            }
+          },
+          "Applications": {
+            "RailwayTracks": "قضبان السكك الحديدية",
+            "StructuralSteel": "الفولاذ الإنشائي",
+            "SeamlessPipeManufacturing": "تصنيع الأنابيب غير الملحومة",
+            "HeavyForging": "الحدادة الثقيلة",
+            "EngineeringComponents": "المكونات الهندسية",
+            "ConstructionIndustry": "صناعة البناء",
+            "HeavyMachinery": "الآلات الثقيلة",
+            "RollingMills": "مصانع الدرفلة"
+          },
+          "FAQ": {
+            "WhatIsSteelBloomQuestion": "ما هو بلوم الصلب؟",
+            "WhatIsSteelBloomAnswer": "بلوم الصلب هو منتج فولاذي نصف مصنع ذو مقطع عرضي أكبر من البليت، ويُستخدم بشكل أساسي في تصنيع الفولاذ الإنشائي، وقضبان السكك الحديدية، والأنابيب غير الملحومة، ومنتجات الهندسة الثقيلة.",
+            "GradesQuestion": "ما هي درجات بلوم الصلب التي توفرونها؟",
+            "GradesAnswer": "نوفر بلوم الصلب بدرجات IS2062 وASTM A36 وSAE، بالإضافة إلى درجات مخصصة وفقًا لمتطلبات العملاء.",
+            "ApplicationsQuestion": "ما هي استخدامات بلوم الصلب؟",
+            "ApplicationsAnswer": "يُستخدم بلوم الصلب على نطاق واسع في البنية التحتية للسكك الحديدية، والهندسة الثقيلة، وإنتاج الفولاذ الإنشائي، وتصنيع الأنابيب غير الملحومة، والحدادة، ومصانع الدرفلة.",
+            "PackingQuestion": "ما هي خيارات التعبئة المتوفرة؟",
+            "PackingAnswer": "يتم توريد بلوم الصلب في حزم مربوطة بشرائط فولاذية، مناسبة للنقل المحلي والتصدير.",
+            "CustomizedQuestion": "هل يمكنكم توفير مقاسات ودرجات مخصصة؟",
+            "CustomizedAnswer": "نعم، نوفر مقاسات وأطوال ودرجات وتغليفًا مخصصًا لبلوم الصلب وفقًا لمواصفات العملاء.",
+            "ExportQuestion": "هل تقومون بتصدير بلوم الصلب دوليًا؟",
+            "ExportAnswer": "نعم، نقوم بتصدير بلوم الصلب عالي الجودة إلى جميع أنحاء العالم مع الالتزام بمعايير الجودة الصارمة والأسعار التنافسية والتسليم في الوقت المحدد."
+          }
+        },
+        "SteelPlates": {
+          "Name": "ألواح الصلب",
+          "Description": "ألواح الصلب هي منتجات فولاذية مسطحة عالية القوة يتم تصنيعها من خلال عمليات الدرفلة على الساخن. تُستخدم على نطاق واسع في البناء، وصناعة السفن، وإنشاء الجسور، وأوعية الضغط، والهندسة الثقيلة، وصناعة النفط والغاز، والتصنيع الصناعي. توفر ألواح الصلب قوة ممتازة، وقابلية عالية للحام، ومتانة، ومقاومة للتآكل، مما يجعلها مثالية للتطبيقات الإنشائية والهندسية.",
+          "Specifications": {
+            "Grade": "الدرجة",
+            "Thickness": "السماكة",
+            "Width": "العرض",
+            "Origin": "بلد المنشأ",
+            "GradeValue": "IS2062 E250 / ASTM A36 / ASTM A516 Gr.70",
+            "ThicknessValue": "5 – 200 مم",
+            "WidthValue": "1000 – 3000 مم",
+            "OriginValue": "الهند"
+          },
+          "TechnicalTables": {
+            "ChemicalComposition": "التركيب الكيميائي",
+            "PhysicalProperties": "الخواص الفيزيائية",
+            "ChemicalHeaders": {
+              "Grade": "الدرجة",
+              "Carbon": "الكربون",
+              "Manganese": "المنغنيز",
+              "Silicon": "السيليكون",
+              "Sulphur": "الكبريت",
+              "Phosphorus": "الفوسفور"
+            },
+            "PhysicalHeaders": {
+              "Property": "الخاصية",
+              "Value": "القيمة"
+            },
+            "PhysicalPropertiesRows": {
+              "Appearance": "المظهر",
+              "FlatSteelPlates": "ألواح صلب مسطحة",
+              "Shape": "الشكل",
+              "Rectangular": "مستطيل",
+              "Color": "اللون",
+              "GreyMetallic": "رمادي معدني",
+              "Density": "الكثافة",
+              "Thickness": "السماكة",
+              "Width": "العرض",
+              "Packing": "التعبئة",
+              "SteelStrappedBundles": "حزم مربوطة بشرائط فولاذية",
+              "Storage": "التخزين",
+              "StoreDryCoveredArea": "يُحفظ في مكان جاف ومغطى"
+            }
+          },
+          "Applications": {
+            "ShipBuilding": "بناء السفن",
+            "BridgeConstruction": "بناء الجسور",
+            "PressureVessels": "أوعية الضغط",
+            "Boilers": "الغلايات",
+            "HeavyEngineering": "الهندسة الثقيلة",
+            "IndustrialFabrication": "التصنيع الصناعي",
+            "OilAndGasIndustry": "صناعة النفط والغاز",
+            "ConstructionIndustry": "صناعة البناء"
+          },
+          "FAQ": {
+            "WhatIsSteelPlatesQuestion": "ما هي ألواح الصلب؟",
+            "WhatIsSteelPlatesAnswer": "ألواح الصلب هي منتجات فولاذية مسطحة يتم تصنيعها بالدرفلة على الساخن، وتُستخدم على نطاق واسع في الإنشاءات، والهندسة الثقيلة، وصناعة السفن، والجسور، وأوعية الضغط، والتطبيقات الصناعية.",
+            "GradesQuestion": "ما هي درجات ألواح الصلب التي توفرونها؟",
+            "GradesAnswer": "نوفر ألواح الصلب بدرجات IS2062 E250 وASTM A36 وASTM A516 Gr.70، بالإضافة إلى درجات مخصصة وفقًا لمتطلبات العملاء.",
+            "ApplicationsQuestion": "ما هي استخدامات ألواح الصلب؟",
+            "ApplicationsAnswer": "تُستخدم ألواح الصلب في البناء، وبناء الجسور، وصناعة السفن، والهندسة الثقيلة، وصناعة النفط والغاز، وأوعية الضغط، والغلايات، والتصنيع الصناعي.",
+            "PackingQuestion": "ما هي خيارات التعبئة المتوفرة؟",
+            "PackingAnswer": "يتم توريد ألواح الصلب في حزم مربوطة بشرائط فولاذية أو على منصات تحميل، وهي مناسبة للنقل المحلي والتصدير.",
+            "CustomizedQuestion": "هل يمكنكم توفير مقاسات ودرجات مخصصة؟",
+            "CustomizedAnswer": "نعم، نوفر سماكات وعروضًا وأطوالًا ودرجات وتغليفًا مخصصًا وفقًا لمواصفات العملاء.",
+            "ExportQuestion": "هل تقومون بتصدير ألواح الصلب دوليًا؟",
+            "ExportAnswer": "نعم، نقوم بتصدير ألواح الصلب عالية الجودة إلى جميع أنحاء العالم مع الالتزام بمعايير الجودة الصارمة والأسعار التنافسية والتغليف المطابق لمعايير التصدير."
+          }
+        },
+        "SteelTubes": {
+          "Name": "الأنابيب الفولاذية",
+          "Description": "الأنابيب الفولاذية هي منتجات فولاذية مجوفة مصممة بدقة للاستخدام في التطبيقات الإنشائية والميكانيكية والصناعية وصناعة السيارات وقطاع البناء. يتم تصنيعها وفقًا لمعايير الجودة الدولية، مما يوفر قوة عالية، ودقة في الأبعاد، ومقاومة ممتازة للتآكل، وقابلية جيدة للحام. تتوفر الأنابيب الفولاذية بأنواعها غير الملحومة والملحومة لتلبية مختلف المتطلبات الصناعية.",
+          "Specifications": {
+            "Grade": "الدرجة",
+            "OuterDiameter": "القطر الخارجي",
+            "WallThickness": "سماكة الجدار",
+            "Origin": "بلد المنشأ",
+            "GradeValue": "ASTM A53 / ASTM A106 / IS 1239",
+            "OuterDiameterValue": "15 – 600 مم",
+            "WallThicknessValue": "2 – 25 مم",
+            "OriginValue": "الهند"
+          },
+          "TechnicalTables": {
+            "ChemicalComposition": "التركيب الكيميائي",
+            "PhysicalProperties": "الخواص الفيزيائية",
+            "ChemicalHeaders": {
+              "Grade": "الدرجة",
+              "Carbon": "الكربون",
+              "Manganese": "المنغنيز",
+              "Silicon": "السيليكون",
+              "Sulphur": "الكبريت",
+              "Phosphorus": "الفوسفور"
+            },
+            "PhysicalHeaders": {
+              "Property": "الخاصية",
+              "Value": "القيمة"
+            },
+            "PhysicalPropertiesRows": {
+              "Appearance": "المظهر",
+              "SteelTubes": "الأنابيب الفولاذية",
+              "Shape": "الشكل",
+              "RoundSquareRectangular": "دائري / مربع / مستطيل",
+              "Color": "اللون",
+              "GreyMetallic": "رمادي معدني",
+              "Density": "الكثافة",
+              "OuterDiameter": "القطر الخارجي",
+              "WallThickness": "سماكة الجدار",
+              "Packing": "التعبئة",
+              "SteelBundled": "حزم مربوطة بشرائط فولاذية",
+              "Storage": "التخزين",
+              "StoreDryCoveredArea": "يُحفظ في مكان جاف ومغطى"
+            }
+          },
+          "Applications": {
+            "ConstructionIndustry": "صناعة البناء",
+            "StructuralFramework": "الهياكل الإنشائية",
+            "MechanicalEngineering": "الهندسة الميكانيكية",
+            "AutomotiveIndustry": "صناعة السيارات",
+            "OilAndGasIndustry": "صناعة النفط والغاز",
+            "WaterDistribution": "توزيع المياه",
+            "IndustrialFabrication": "التصنيع الصناعي",
+            "InfrastructureProjects": "مشاريع البنية التحتية"
+          },
+          "FAQ": {
+            "WhatIsSteelTubesQuestion": "ما هي الأنابيب الفولاذية؟",
+            "WhatIsSteelTubesAnswer": "الأنابيب الفولاذية هي مقاطع فولاذية مجوفة تُستخدم في التطبيقات الإنشائية والميكانيكية والصناعية ونقل السوائل، وتتوفر بأنواعها الملحومة وغير الملحومة.",
+            "GradesQuestion": "ما هي درجات الأنابيب الفولاذية التي توفرونها؟",
+            "GradesAnswer": "نوفر الأنابيب الفولاذية بدرجات ASTM A53 وASTM A106 وIS 1239، بالإضافة إلى درجات مخصصة وفقًا لمتطلبات العملاء.",
+            "ApplicationsQuestion": "ما هي استخدامات الأنابيب الفولاذية؟",
+            "ApplicationsAnswer": "تُستخدم الأنابيب الفولاذية على نطاق واسع في البناء، والبنية التحتية، وصناعة السيارات، والهندسة الميكانيكية، وصناعة النفط والغاز، وتوزيع المياه، والتصنيع الصناعي.",
+            "PackingQuestion": "ما هي خيارات التعبئة المتوفرة؟",
+            "PackingAnswer": "يتم توريد الأنابيب الفولاذية في حزم مربوطة بشرائط فولاذية مع حماية للأطراف وتغليف مطابق لمعايير التصدير.",
+            "CustomizedQuestion": "هل يمكنكم توفير مقاسات ودرجات مخصصة؟",
+            "CustomizedAnswer": "نعم، نوفر أقطارًا وسماكات جدران وأطوالًا ودرجات وتغليفًا مخصصًا وفقًا لمواصفات العملاء.",
+            "ExportQuestion": "هل تقومون بتصدير الأنابيب الفولاذية دوليًا؟",
+            "ExportAnswer": "نعم، نقوم بتصدير الأنابيب الفولاذية عالية الجودة إلى جميع أنحاء العالم مع الالتزام بمعايير الجودة الصارمة والأسعار التنافسية والتسليم في الوقت المحدد."
+          }
+        },
+        "ColdRolledCoils": {
+          "Name": "لفائف الصلب المدرفلة على البارد",
+          "Description": "لفائف الصلب المدرفلة على البارد (CRC) هي منتجات فولاذية عالية الجودة يتم تصنيعها باستخدام عملية الدرفلة على البارد للحصول على تشطيب سطحي ممتاز، وأبعاد دقيقة، وخصائص ميكانيكية محسنة. تُستخدم على نطاق واسع في صناعات السيارات، والأجهزة المنزلية، والأثاث، والمعدات الكهربائية، والبناء، والهندسة، حيث تتطلب التطبيقات قوة عالية، وقابلية تشكيل ممتازة، وسطحًا أملسًا.",
+          "Specifications": {
+            "Grade": "الدرجة",
+            "Thickness": "السماكة",
+            "Width": "العرض",
+            "Origin": "بلد المنشأ",
+            "GradeValue": "CR1 / CR2 / ASTM A1008",
+            "ThicknessValue": "0.30 – 3.00 مم",
+            "WidthValue": "600 – 1500 مم",
+            "OriginValue": "الهند"
+          },
+          "TechnicalTables": {
+            "ChemicalComposition": "التركيب الكيميائي",
+            "PhysicalProperties": "الخواص الفيزيائية",
+            "ChemicalHeaders": {
+              "Grade": "الدرجة",
+              "Carbon": "الكربون",
+              "Manganese": "المنغنيز",
+              "Silicon": "السيليكون",
+              "Sulphur": "الكبريت",
+              "Phosphorus": "الفوسفور"
+            },
+            "PhysicalHeaders": {
+              "Property": "الخاصية",
+              "Value": "القيمة"
+            },
+            "PhysicalPropertiesRows": {
+              "Appearance": "المظهر",
+              "ColdRolledSteelCoils": "لفائف الصلب المدرفلة على البارد",
+              "Shape": "الشكل",
+              "Coil": "لفافة",
+              "Color": "اللون",
+              "GreyMetallic": "رمادي معدني",
+              "Density": "الكثافة",
+              "Thickness": "السماكة",
+              "Width": "العرض",
+              "Packing": "التعبئة",
+              "ExportStandardPacking": "تغليف قياسي للتصدير",
+              "Storage": "التخزين",
+              "StoreDryCoveredArea": "يُحفظ في مكان جاف ومغطى"
+            }
+          },
+          "Applications": {
+            "AutomotiveIndustry": "صناعة السيارات",
+            "HomeAppliances": "الأجهزة المنزلية",
+            "ElectricalEquipment": "المعدات الكهربائية",
+            "FurnitureManufacturing": "تصنيع الأثاث",
+            "IndustrialFabrication": "التصنيع الصناعي",
+            "ConstructionIndustry": "صناعة البناء",
+            "SteelProcessing": "معالجة الصلب",
+            "EngineeringComponents": "المكونات الهندسية"
+          },
+          "FAQ": {
+            "WhatIsColdRolledCoilsQuestion": "ما هي لفائف الصلب المدرفلة على البارد؟",
+            "WhatIsColdRolledCoilsAnswer": "لفائف الصلب المدرفلة على البارد هي صفائح فولاذية تتم معالجتها في درجة حرارة الغرفة لتوفير تشطيب سطحي ممتاز، ودقة أبعاد عالية، وقوة ميكانيكية كبيرة للاستخدامات الصناعية.",
+            "GradesQuestion": "ما هي درجات لفائف الصلب المدرفلة على البارد التي توفرونها؟",
+            "GradesAnswer": "نوفر لفائف الصلب المدرفلة على البارد بدرجات CR1 وCR2 وASTM A1008، بالإضافة إلى درجات مخصصة وفقًا لمتطلبات العملاء.",
+            "ApplicationsQuestion": "ما هي استخدامات لفائف الصلب المدرفلة على البارد؟",
+            "ApplicationsAnswer": "تُستخدم لفائف الصلب المدرفلة على البارد في تصنيع السيارات، والأجهزة المنزلية، والمعدات الكهربائية، والأثاث، والهندسة، والبناء، والتصنيع الصناعي.",
+            "PackingQuestion": "ما هي خيارات التعبئة المتوفرة؟",
+            "PackingAnswer": "يتم توريد لفائف الصلب المدرفلة على البارد بتغليف قياسي للتصدير، يشمل تغليفًا مقاومًا للرطوبة، وأشرطة فولاذية، وحماية لحواف اللفائف.",
+            "CustomizedQuestion": "هل يمكنكم توفير مقاسات ودرجات مخصصة؟",
+            "CustomizedAnswer": "نعم، نوفر سماكات وعروضًا ودرجات وتغليفًا مخصصًا لللفائف وفقًا لمواصفات العملاء.",
+            "ExportQuestion": "هل تقومون بتصدير لفائف الصلب المدرفلة على البارد دوليًا؟",
+            "ExportAnswer": "نعم، نقوم بتصدير لفائف الصلب المدرفلة على البارد عالية الجودة إلى جميع أنحاء العالم مع الالتزام بمعايير الجودة الصارمة، والأسعار التنافسية، والتسليم في الوقت المحدد."
+          }
+        },
+        "TMTBars": {
+          "Name": "قضبان TMT (حديد التسليح)",
+          "Description": "قضبان TMT (القضبان المعالجة حرارياً وميكانيكياً) هي قضبان تسليح فولاذية عالية القوة مصممة للهياكل الخرسانية المسلحة. توفر قوة شد عالية، وليونة ممتازة، وقابلية للحام، ومقاومة للتآكل، ومقاومة للزلازل، مما يجعلها مثالية لمشاريع البناء السكنية والتجارية والصناعية ومشاريع البنية التحتية.",
+          "Specifications": {
+            "Grade": "الدرجة",
+            "Diameter": "القطر",
+            "Length": "الطول",
+            "Origin": "بلد المنشأ",
+            "GradeValue": "Fe 500 / Fe 550 / Fe 600",
+            "DiameterValue": "8 – 40 مم",
+            "LengthValue": "12 متر (قياسي)",
+            "OriginValue": "الهند"
+          },
+          "TechnicalTables": {
+            "ChemicalComposition": "التركيب الكيميائي",
+            "PhysicalProperties": "الخواص الفيزيائية",
+            "ChemicalHeaders": {
+              "Grade": "الدرجة",
+              "Carbon": "الكربون",
+              "Manganese": "المنغنيز",
+              "Sulphur": "الكبريت",
+              "Phosphorus": "الفوسفور",
+              "YieldStrength": "مقاومة الخضوع"
+            },
+            "PhysicalHeaders": {
+              "Property": "الخاصية",
+              "Value": "القيمة"
+            },
+            "PhysicalPropertiesRows": {
+              "Appearance": "المظهر",
+              "RibbedSteelBars": "قضبان فولاذية مضلعة",
+              "Shape": "الشكل",
+              "Round": "دائري",
+              "Color": "اللون",
+              "GreyMetallic": "رمادي معدني",
+              "Density": "الكثافة",
+              "Diameter": "القطر",
+              "Length": "الطول",
+              "Packing": "التعبئة",
+              "SteelStrappedBundles": "حزم مربوطة بشرائط فولاذية",
+              "Storage": "التخزين",
+              "StoreDryCoveredArea": "يُحفظ في مكان جاف ومغطى"
+            }
+          },
+          "Applications": {
+            "ResidentialConstruction": "البناء السكني",
+            "CommercialBuildings": "المباني التجارية",
+            "Bridges": "الجسور",
+            "Highways": "الطرق السريعة",
+            "IndustrialStructures": "المنشآت الصناعية",
+            "InfrastructureProjects": "مشاريع البنية التحتية",
+            "Dams": "السدود",
+            "MetroRailProjects": "مشاريع مترو الأنفاق"
+          },
+          "FAQ": {
+            "WhatIsTMTBarsQuestion": "ما هي قضبان TMT؟",
+            "WhatIsTMTBarsAnswer": "قضبان TMT هي قضبان تسليح فولاذية معالجة حرارياً وميكانيكياً تُستخدم في الهياكل الخرسانية المسلحة، وتوفر قوة عالية، ومرونة، ومقاومة للتآكل، ومقاومة للزلازل.",
+            "GradesQuestion": "ما هي درجات قضبان TMT التي توفرونها؟",
+            "GradesAnswer": "نوفر قضبان TMT بدرجات Fe 500 وFe 550 وFe 600، بالإضافة إلى درجات مخصصة وفقاً لمتطلبات العملاء.",
+            "ApplicationsQuestion": "ما هي استخدامات قضبان TMT؟",
+            "ApplicationsAnswer": "تُستخدم قضبان TMT على نطاق واسع في المباني السكنية، والمجمعات التجارية، والجسور، والطرق السريعة، والسدود، ومشاريع مترو الأنفاق، والمنشآت الصناعية.",
+            "PackingQuestion": "ما هي خيارات التعبئة المتوفرة؟",
+            "PackingAnswer": "يتم توريد قضبان TMT في حزم مربوطة بشرائط فولاذية مع تغليف مطابق لمعايير التصدير.",
+            "CustomizedQuestion": "هل يمكنكم توفير مقاسات ودرجات مخصصة؟",
+            "CustomizedAnswer": "نعم، نوفر أقطاراً وأطوالاً ودرجات وتغليفاً مخصصاً وفقاً لمواصفات العملاء.",
+            "ExportQuestion": "هل تقومون بتصدير قضبان TMT دولياً؟",
+            "ExportAnswer": "نعم، نقوم بتصدير قضبان TMT عالية الجودة إلى جميع أنحاء العالم مع الالتزام بمعايير الجودة الصارمة، والأسعار التنافسية، والتسليم في الوقت المحدد."
+          }
+        }
       }
     },
-    "IndustrialMinerals": {
-      "Name": "المعادن الصناعية",
-      "Category": "المعادن الصناعية",
-      "ShortDescription": "البوكسيت والفلورسبار والكوارتز ومعادن متخصصة لصناعات الفولاذ والكيماويات.",
-      "Description": "مجموعة متنوعة من المعادن الصناعية لدعم إنتاج الفولاذ والألومنيوم والمواد الكيميائية.",
-      "Specifications": {
-        "Products": "المنتجات",
-        "Purity": "النقاء",
-        "Moisture": "الرطوبة",
-        "Packaging": "التعبئة",
-        "Inspection": "الفحص"
-      },
-      "Applications": {
-        "Steelfluxing": "صهر الفولاذ",
-        "Aluminumsmelting": "صهر الألومنيوم",
-        "Chemicalfeedstock": "مواد أولية كيميائية",
-        "Ceramicmanufacturing": "تصنيع السيراميك"
-      }
-    },
-    "SteelIndustryRawMaterials": {
-      "Name": "المواد الخام لصناعة الفولاذ",
-      "Category": "المواد الخام",
-      "ShortDescription": "توريد متكامل لخام الحديد والفحم ومواد الشحن لمصانع الفولاذ.",
-      "Description": "حل متكامل لتوريد المواد الخام لمصانع الفولاذ المتكاملة.",
-      "Specifications": {
-        "IronOreFe": "خام الحديد Fe",
-        "MetCokeCSR": "فحم الكوك المعدني CSR",
-        "PCICoal": "فحم PCI",
-        "Delivery": "التسليم",
-        "Volumes": "الكميات"
-      },
-      "Applications": {
-        "Blastfurnaceoperations": "عمليات الفرن العالي",
-        "DRIEAFplants": "مصانع DRI / EAF",
-        "Integratedsteelmills": "مصانع الفولاذ المتكاملة",
-        "Pelletplantfeedstock": "مواد تغذية مصانع الكريات"
-      }
-    }
+    "ViewAllProducts": "عرض المنتجات"
   },
   "Common": {
     "Overview": "نظرة عامة",
@@ -1801,45 +3496,6 @@
       "globalExportPartners": "شركاء التصدير العالميون"
     }
   },
-  "ViewAllProducts": "عرض جميع المنتجات",
-  "title": "هل أنتم مستعدون لتوريد مواد التعدين والمعادن عالية الجودة؟",
-  "description": "تواصلوا مع فريق التصدير لدينا للحصول على المواصفات الفنية والأسعار وجدولة السفن والاستشارات المتعلقة بشروط Incoterms.",
-  "SubmitExporInquiry": "إرسال استفسار التصدير",
-  "companyInfo": "المصدر الهندي الموثوق للمواد الخام الخاصة بصناعة المعادن والصلب. نخدم شركات تصنيع الصلب العالمية منذ",
-  "Company": "الشركة",
-  "Productss": "المنتجات",
-  "Contactss": "اتصل بنا",
-  "SocialMedia": "تابعنا على وسائل التواصل الاجتماعي",
-  "Reserved": "جميع الحقوق محفوظة.",
-  "PrivacyPolicy": "سياسة الخصوصية",
-  "Trade": "شروط التجارة",
-  "Address1": "المكتب الرئيسي في دلهي: الطابق الأرضي، CC-23، أفانتِيكا 1، طريق أفانتِيكا الرئيسي، مركز سيني لغسيل السيارات، أفانتِيكا، غازي آباد،",
-  "Address2": "أتر براديش 201015، الهند",
-  "Inquiry": "تم استلام الاستفسار",
-  "Thank": "شكرًا لك. سيتواصل معك فريق التصدير لدينا في أقرب وقت.",
-  "Another": "إرسال استفسار آخر",
-  "FullName": "الاسم الكامل",
-  "Email": "البريد الإلكتروني",
-  "Media": "الهاتف / واتساب",
-  "ProductInterest": "المنتج المطلوب",
-  "Quantity": "الكمية التقديرية",
-  "Destination": "ميناء الوجهة",
-  "Incoterms": "شروط التجارة الدولية المفضلة (Incoterms)",
-  "Message": "الرسالة",
-  "SubmitInquiry": "إرسال الاستفسار",
-  "contacted": "من خلال إرسال هذا النموذج، فإنك توافق على أن يتم التواصل معك بخصوص استفسارك.",
-  "Applications": "مجالات الاستخدام",
-  "Specifications": "المواصفات الفنية",
-  "Request": "طلب عرض سعر",
-  "RelatedProducts": "المنتجات ذات الصلة",
-  "BackToProducts": "العودة إلى المنتجات",
-  "Overview": "نظرة عامة",
-  "Careers": "الوظائف في مجموعة SSL",
-  "Build": "ابنِ مستقبلك مع مجموعة SSL. استكشف الوظائف المتاحة وقدّم طلبك عبر الإنترنت.",
-  "ViewOpen": "عرض الوظائف المتاحة",
-  "ContactHR": "اتصل بالموارد البشرية",
-  "OpenPositions": "الوظائف المتاحة",
-  "Connect": "قم بربط هذا القسم بنظام إدارة المحتوى (CMS) أو واجهة برمجة التطبيقات (API) الخاصة بك.",
   "media": {
     "eyebrow": "المركز الإعلامي",
     "title": "المركز الإعلامي",
@@ -1889,5 +3545,146 @@
       "button": "اشترك",
       "success": "تم الاشتراك بنجاح!"
     }
-  }
+  },
+  "privatepolicy": {
+    "Information": "1. المعلومات التي نجمعها",
+    "Address1": "المكتب الرئيسي - دلهي: الطابق الأرضي، CC-23، أفانتيكا 1، طريق أفانتيكا الرئيسي، مركز سايني للغسيل، أفانتيكا، غازي آباد،",
+    "Address2": "ولاية أوتار براديش 201015، الهند",
+    "technicalinformation": "قد نقوم بجمع بعض المعلومات الشخصية والتقنية عند استخدامك لموقعنا الإلكتروني أو عند التواصل معنا.",
+    "PersonalInformation": "المعلومات الشخصية",
+    "FullName": "الاسم الكامل",
+    "CompanyName": "اسم الشركة",
+    "EmailAddress": "عنوان البريد الإلكتروني",
+    "PhoneNumber": "رقم الهاتف",
+    "Location": "الدولة / الموقع",
+    "BusinessRequirements": "متطلبات العمل",
+    "voluntarily": "أي معلومات يتم تقديمها طوعًا من خلال نماذج الاتصال الخاصة بنا",
+    "TechnicalInformation": "المعلومات التقنية",
+    "IPAddress": "عنوان IP",
+    "BrowserType": "نوع المتصفح",
+    "OperatingSystem": "نظام التشغيل",
+    "DeviceInformation": "معلومات الجهاز",
+    "PagesVisited": "الصفحات التي تمت زيارتها",
+    "VisitDate": "تاريخ ووقت الزيارة",
+    "Statistics": "إحصائيات استخدام الموقع",
+    "YourInformation": "2. كيفية استخدام معلوماتك",
+    "Respond": "الرد على استفسارات الأعمال.",
+    "Provide": "تقديم عروض الأسعار ومعلومات المنتجات.",
+    "Improve": "تحسين موقعنا الإلكتروني وتجربة العملاء.",
+    "Process": "معالجة طلبات العملاء.",
+    "Maintain": "الحفاظ على أمن الموقع الإلكتروني.",
+    "Comply": "الامتثال للالتزامات القانونية المعمول بها.",
+    "Cookies": "3. ملفات تعريف الارتباط (Cookies)",
+    "functionality": "قد تستخدم SSL Group ملفات تعريف الارتباط لتحسين وظائف الموقع الإلكتروني، وتذكر تفضيلات المستخدم، وتحليل حركة المرور على الموقع، وتعزيز تجربة التصفح الخاصة بك.",
+    "functionproperly": "يمكنك تعطيل ملفات تعريف الارتباط من خلال إعدادات المتصفح، ولكن قد لا تعمل بعض ميزات الموقع بشكل صحيح.",
+    "SharingofInformation": "4. مشاركة المعلومات",
+    "personalinformation": "نحن لا نبيع أو نؤجر معلوماتك الشخصية.",
+    "Businesspartners": "شركاء الأعمال عند الضرورة.",
+    "Shipping": "مزودو خدمات الشحن والخدمات اللوجستية.",
+    "Technology": "مزودو الخدمات التقنية.",
+    "Government": "الجهات الحكومية أو القانونية عند الطلب وفقًا للقانون.",
+    "DataSecurity": "5. أمن البيانات",
+    "administrative": "نطبق إجراءات إدارية وتقنية ومادية مناسبة لحماية معلوماتك من الوصول غير المصرح به أو الإفصاح عنها أو تعديلها أو إتلافها. وعلى الرغم من أننا نسعى لحماية بياناتك، فلا توجد أي وسيلة لنقل البيانات عبر الإنترنت آمنة بنسبة 100٪.",
+    "DataRetention": "6. الاحتفاظ بالبيانات",
+    "obligations": "نحتفظ بمعلوماتك فقط للمدة اللازمة لتحقيق الأغراض التجارية، والامتثال للالتزامات القانونية، وتسوية النزاعات، وتنفيذ اتفاقياتنا.",
+    "ThirdParty": "7. روابط الجهات الخارجية",
+    "responsible": "قد يحتوي موقعنا الإلكتروني على روابط لمواقع إلكترونية تابعة لجهات خارجية. ولا تتحمل SSL Group مسؤولية سياسات الخصوصية أو محتوى تلك المواقع الخارجية.",
+    "YourRights": "8. حقوقك",
+    "Requestaccess": "طلب الوصول إلى معلوماتك الشخصية.",
+    "Requestcorrection": "طلب تصحيح المعلومات غير الدقيقة.",
+    "Requestdeletion": "طلب حذف معلوماتك.",
+    "Withdrawconsent": "سحب موافقتك عند الاقتضاء.",
+    "processing": "الاعتراض على بعض أنشطة معالجة البيانات.",
+    "ChildrenPrivacy": "9. خصوصية الأطفال",
+    "knowingly": "خدماتنا مخصصة لمستخدمي الأعمال وليست موجهة للأفراد الذين تقل أعمارهم عن 18 عامًا. ولا نقوم عن علم بجمع معلومات شخصية من الأطفال.",
+    "International": "10. نقل البيانات الدولي",
+    "countries": "إذا قمت بالوصول إلى موقعنا الإلكتروني من خارج الهند، فقد يتم نقل معلوماتك ومعالجتها في الهند أو في دول أخرى يعمل فيها مزودو خدماتنا.",
+    "ChangestoTh": "11. التغييرات على سياسة الخصوصية",
+    "effectivedate": "تحتفظ SSL Group بالحق في تعديل سياسة الخصوصية هذه في أي وقت. وسيتم نشر أي تحديثات على هذه الصفحة مع تاريخ السريان المعدل.",
+    "Heading": "سياسة الخصوصية",
+    "Updated": "آخر تحديث",
+    "Welcometo": "مرحبًا بكم في",
+    "safeguarding": "نحن ملتزمون بحماية خصوصيتك والحفاظ على أمان أي معلومات شخصية تشاركها معنا. توضح سياسة الخصوصية هذه كيفية جمع معلوماتك واستخدامها وتخزينها وحمايتها عند استخدامك لموقعنا الإلكتروني.",
+    "ContactUs": "12. اتصل بنا",
+    "questionsregarding": "إذا كانت لديك أي أسئلة بخصوص سياسة الخصوصية هذه أو كيفية التعامل مع معلوماتك، يرجى التواصل معنا."
+  },
+  "termsconditions": {
+    "Address1": "المكتب الرئيسي - دلهي: الطابق الأرضي، CC-23، أفانتيكا 1، طريق أفانتيكا الرئيسي، مركز سايني للغسيل، أفانتيكا، غازي آباد،",
+    "Address2": "ولاية أوتار براديش 201015، الهند",
+    "AcceptanceofTerms": "1. قبول الشروط والأحكام",
+    "TermsConditions": "من خلال الوصول إلى موقع SSL Group الإلكتروني أو استخدامه، فإنك توافق على الالتزام بهذه الشروط والأحكام. وإذا كنت لا توافق على أي جزء منها، فيرجى التوقف عن استخدام الموقع.",
+    "AboutSSLGroup": "2. نبذة عن SSL Group",
+    "informational": "تعمل SSL Group في تجارة وتوريد السبائك الحديدية والمعادن والفلزات ومنتجات الكربون والمواد الخام الصناعية ذات الصلة. المعلومات الواردة في هذا الموقع مخصصة للأغراض التجارية والمعلومات العامة فقط.",
+    "Website": "3. استخدام الموقع الإلكتروني",
+    "lawful": "استخدم هذا الموقع للأغراض القانونية فقط.",
+    "unauthorized": "لا تحاول الوصول غير المصرح به إلى أنظمتنا.",
+    "malicious": "لا تقم بتحميل برامج ضارة أو أي محتوى ضار.",
+    "functionality": "لا تسيء استخدام وظائف الموقع أو تعيق عمله.",
+    "prior": "لا تنسخ محتوى الموقع دون الحصول على موافقة كتابية مسبقة.",
+    "ProductInformation": "4. معلومات المنتجات",
+    "manufacturing": "يتم توفير أوصاف المنتجات والمواصفات والصور والمعلومات الفنية لأغراض مرجعية عامة فقط. وقد تختلف المواصفات الفعلية للمنتجات وفقًا لمعايير التصنيع أو متطلبات العملاء أو توفر الموردين.",
+    "Quotations": "5. الأسعار وعروض الأسعار",
+    "Pricesdisplayed": "الأسعار المعروضة (إن وجدت) قابلة للتغيير دون إشعار مسبق.",
+    "Official": "تكون عروض الأسعار الرسمية صالحة فقط إذا صدرت مباشرة من SSL Group.",
+    "additional": "قد تُضاف الضرائب ورسوم الشحن والتأمين وغيرها من الرسوم المطبقة ما لم يُذكر خلاف ذلك.",
+    "Intellectual": "6. الملكية الفكرية",
+    "reproduction": "جميع محتويات هذا الموقع، بما في ذلك الشعارات والرسومات وصور المنتجات والنصوص والمستندات والأيقونات والتصاميم، هي ملكية فكرية لشركة SSL Group ما لم يُذكر خلاف ذلك. ويُحظر تمامًا النسخ أو التوزيع أو التعديل دون تصريح.",
+    "ThirdParty": "7. روابط الجهات الخارجية",
+    "convenience": "قد يحتوي هذا الموقع على روابط لمواقع إلكترونية تابعة لجهات خارجية لراحتك. ولا تتحمل SSL Group أي مسؤولية عن محتوى أو سياسات أو ممارسات تلك المواقع الخارجية.",
+    "Liability": "8. تحديد المسؤولية",
+    "consequential": "لا تتحمل SSL Group أي مسؤولية عن أي أضرار مباشرة أو غير مباشرة أو عرضية أو تبعية أو خاصة تنشأ عن استخدام هذا الموقع أو عدم القدرة على استخدامه أو استخدام محتواه.",
+    "Disclaimer": "9. إخلاء المسؤولية",
+    "warranties": "على الرغم من أننا نسعى لضمان أن تكون جميع المعلومات الواردة في هذا الموقع دقيقة ومحدثة، فإن SSL Group لا تقدم أي ضمانات بشأن اكتمال أو دقة أو موثوقية أي معلومات مقدمة.",
+    "Privacy": "10. الخصوصية",
+    "PrivacyPolicy": "يخضع استخدامك لهذا الموقع أيضًا لسياسة الخصوصية الخاصة بنا، والتي توضح كيفية جمع معلوماتك الشخصية واستخدامها وحمايتها.",
+    "ChangestoTerms": "11. التعديلات على الشروط",
+    "acceptance": "تحتفظ SSL Group بالحق في تعديل هذه الشروط والأحكام في أي وقت دون إشعار مسبق. ويُعد استمرارك في استخدام الموقع بعد نشر التعديلات موافقةً على الشروط المعدلة.",
+    "GoverningLaw": "12. القانون الواجب التطبيق",
+    "jurisdiction": "تخضع هذه الشروط والأحكام وتُفسر وفقًا لقوانين جمهورية الهند. وتخضع أي نزاعات تنشأ عن استخدام هذا الموقع للاختصاص الحصري للمحاكم المختصة في الهند.",
+    "Heading": "الشروط والأحكام",
+    "Updated": "آخر تحديث",
+    "Welcometo": "مرحبًا بكم في",
+    "acknowledge": "تنظم هذه الشروط والأحكام وصولك إلى موقعنا الإلكتروني واستخدامك له. وباستخدام هذا الموقع، فإنك تقر بأنك قد قرأت هذه الشروط وفهمتها ووافقت عليها.",
+    "ContactInformation": "13. اتصل بنا",
+    "regarding": "إذا كانت لديك أي أسئلة بخصوص هذه الشروط والأحكام، فيرجى التواصل معنا."
+  },
+  "ViewAllProducts": "عرض جميع المنتجات",
+  "title": "هل أنتم مستعدون لتوريد مواد التعدين والمعادن عالية الجودة؟",
+  "description": "تواصلوا مع فريق التصدير لدينا للحصول على المواصفات الفنية والأسعار وجدولة السفن والاستشارات المتعلقة بشروط Incoterms.",
+  "SubmitExporInquiry": "إرسال استفسار التصدير",
+  "companyInfo": "المصدر الهندي الموثوق للمواد الخام الخاصة بصناعة المعادن والصلب. نخدم شركات تصنيع الصلب العالمية منذ",
+  "Company": "الشركة",
+  "Productss": "المنتجات",
+  "Contactss": "اتصل بنا",
+  "SocialMedia": "تابعنا على وسائل التواصل الاجتماعي",
+  "Reserved": "جميع الحقوق محفوظة.",
+  "PrivacyPolicy": "سياسة الخصوصية",
+  "Trade": "الشروط والأحكام",
+  "Address1": "المكتب الرئيسي في دلهي: الطابق الأرضي، CC-23، أفانتِيكا 1، طريق أفانتِيكا الرئيسي، مركز سيني لغسيل السيارات، أفانتِيكا، غازي آباد،",
+  "Address2": "أتر براديش 201015، الهند",
+  "Inquiry": "تم استلام الاستفسار",
+  "Thank": "شكرًا لك. سيتواصل معك فريق التصدير لدينا في أقرب وقت.",
+  "Another": "إرسال استفسار آخر",
+  "FullName": "الاسم الكامل",
+  "Email": "البريد الإلكتروني",
+  "Media": "الهاتف / واتساب",
+  "ProductInterest": "المنتج المطلوب",
+  "Quantity": "الكمية التقديرية",
+  "Destination": "ميناء الوجهة",
+  "Incoterms": "شروط التجارة الدولية المفضلة (Incoterms)",
+  "Message": "الرسالة",
+  "SubmitInquiry": "إرسال الاستفسار",
+  "contacted": "من خلال إرسال هذا النموذج، فإنك توافق على أن يتم التواصل معك بخصوص استفسارك.",
+  "Applications": "مجالات الاستخدام",
+  "Specifications": "المواصفات الفنية",
+  "Request": "طلب عرض سعر",
+  "RelatedProducts": "المنتجات ذات الصلة",
+  "BackToProducts": "العودة إلى المنتجات",
+  "Overview": "نظرة عامة",
+  "Careers": "الوظائف في مجموعة SSL",
+  "Build": "ابنِ مستقبلك مع مجموعة SSL. استكشف الوظائف المتاحة وقدّم طلبك عبر الإنترنت.",
+  "ViewOpen": "عرض الوظائف المتاحة",
+  "ContactHR": "اتصل بالموارد البشرية",
+  "OpenPositions": "الوظائف المتاحة",
+  "Connect": "قم بربط هذا القسم بنظام إدارة المحتوى (CMS) أو واجهة برمجة التطبيقات (API) الخاصة بك."
 }

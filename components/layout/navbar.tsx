@@ -94,6 +94,7 @@ export function Navbar() {
         className="
           container flex items-center justify-between
           mx-auto
+          md:px-6
         "
       >
         <Link
@@ -108,7 +109,6 @@ export function Navbar() {
             className="
               flex items-center
               h-15 w-40
-              ml-[18px]
               from-gunmetal to-charcoal
               rounded-lg
             "
@@ -121,6 +121,7 @@ export function Navbar() {
               className="
                 object-cover
                 group-hover:brightness-110
+                w-auto h-auto
               "
               priority
             >
@@ -247,7 +248,7 @@ export function Navbar() {
           </Button>
         </div>
         <div className="flex align-center">
-          <div className="mx-2">
+          <div className="">
             <LanguageSwitcher />
           </div>
           <button

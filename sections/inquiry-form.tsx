@@ -1,13 +1,14 @@
 "use client";
 
 import { useState } from "react";
-import { Send } from "lucide-react";
+import { Send, Loader2, AlertCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { useTranslations } from "next-intl";
+import { useLocale } from "next-intl";
 
 interface InquiryFormProps {
   title?: string;
@@ -15,50 +16,59 @@ interface InquiryFormProps {
   variant?: "default" | "export";
 }
 
+type Status = "idle" | "submitting" | "success" | "error";
+
 export function InquiryForm({
   title = "Send an Inquiry",
   description = "Our export team responds within 24 business hours.",
   variant = "default",
 }: InquiryFormProps) {
-  const [submitted, setSubmitted] = useState(false);
+  const [status, setStatus] = useState<Status>("idle");
+  const t = useTranslations();
+  const locale = useLocale();
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
     const form = e.currentTarget;
     const data = new FormData(form);
     const payload = Object.fromEntries(data.entries());
 
+    setStatus("submitting");
+
     try {
-      await fetch("/api/inquiry", {
+      const res = await fetch("/api/inquiry", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ...payload, type: variant }),
+        body: JSON.stringify({ ...payload, type: variant, locale }),
       });
-    } catch {
-      // Fallback: still show success in UI; log server-side in production monitoring
-    }
 
-    setSubmitted(true);
-    form.reset();
+      if (!res.ok) {
+        throw new Error(`Request failed with status ${res.status}`);
+      }
+
+      setStatus("success");
+      form.reset();
+    } catch (err) {
+      const msg = err instanceof Error ? err.message : "Something went wrong";
+      console.error("Inquiry submission failed:", msg);
+      setStatus("error");
+    }
   };
 
-  const t = useTranslations()
-
-  if (submitted) {
+  if (status === "success") {
     return (
       <Card className="border-industrial-blue/30">
         <CardContent className="p-8 text-center">
           <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-industrial-blue/20">
             <Send className="h-8 w-8 text-industrial-blue" />
           </div>
-          <h3 className="font-heading text-xl font-bold text-white">{t("Inquiry")} </h3>
-          <p className="mt-2 text-metallic/80">
-             {t("Thank")}
-          </p>
+          <h3 className="font-heading text-xl font-bold text-white">{t("Inquiry")}</h3>
+          <p className="mt-2 text-metallic/80">{t("Thank")}</p>
           <Button
             variant="secondary"
             className="mt-6"
-            onClick={() => setSubmitted(false)}
+            onClick={() => setStatus("idle")}
           >
             {t("Another")}
           </Button>
@@ -76,19 +86,19 @@ export function InquiryForm({
         </CardDescription>
       </CardHeader>
       <CardContent>
-        <form onSubmit={handleSubmit} className="space-y-5">
+        <form className="space-y-5" onSubmit={handleSubmit}>
           <div className="grid gap-5 sm:grid-cols-2">
             <div className="space-y-2">
               <Label htmlFor="name" className="text-white">
                 {t("FullName")}*
               </Label>
-              <Input id="name" name="name" required placeholder="Your name" />
+              <Input id="name" name="name" required placeholder="Your name" autoComplete="name" />
             </div>
             <div className="space-y-2">
               <Label htmlFor="company" className="text-white">
                 {t("Company")} *
               </Label>
-              <Input id="company" name="company" required placeholder="Company name" />
+              <Input id="company" name="company" required placeholder="Company name" autoComplete="organization" />
             </div>
           </div>
           <div className="grid gap-5 sm:grid-cols-2">
@@ -102,13 +112,25 @@ export function InquiryForm({
                 type="email"
                 required
                 placeholder="you@company.com"
+                autoComplete="email"
+                inputMode="email"
               />
             </div>
             <div className="space-y-2">
+              {/* NOTE: this label was previously wired to the "Media" translation key,
+                  which looks like a copy-paste mistake. Point it at a proper "Phone" key
+                  in your en/hi/ar message files. */}
               <Label htmlFor="phone" className="text-white">
-                {t("Media")}
+                Phone
               </Label>
-              <Input id="phone" name="phone" placeholder="+1 234 567 8900" />
+              <Input
+                id="phone"
+                type="tel"
+                name="phone"
+                placeholder="+91 98765 43210"
+                autoComplete="tel"
+                inputMode="tel"
+              />
             </div>
           </div>
           {variant === "export" && (
@@ -116,7 +138,7 @@ export function InquiryForm({
               <div className="grid gap-5 sm:grid-cols-2">
                 <div className="space-y-2">
                   <Label htmlFor="product" className="text-white">
-                    {t("ProductInterest")} 
+                    {t("ProductInterest")}
                   </Label>
                   <Input
                     id="product"
@@ -126,23 +148,23 @@ export function InquiryForm({
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="quantity" className="text-white">
-                    {t("Quantity")} 
+                    {t("Quantity")}
                   </Label>
-                  <Input id="quantity" name="quantity" placeholder="e.g. 5,000 MT" />
+                  <Input type="text" id="quantity" name="quantity" placeholder="e.g. 5,000 MT" />
                 </div>
               </div>
               <div className="grid gap-5 sm:grid-cols-2">
                 <div className="space-y-2">
                   <Label htmlFor="destination" className="text-white">
-                    {t("Destination")} 
+                    {t("Destination")}
                   </Label>
-                  <Input id="destination" name="destination" placeholder="e.g. Jebel Ali" />
+                  <Input type="text" id="destination" name="destination" placeholder="e.g. Jebel Ali" />
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="incoterms" className="text-white">
-                    {t("Incoterms")} 
+                    {t("Incoterms")}
                   </Label>
-                  <Input id="incoterms" name="incoterms" placeholder="e.g. CIF, FOB" />
+                  <Input type="text" id="incoterms" name="incoterms" placeholder="e.g. CIF, FOB" />
                 </div>
               </div>
             </>
@@ -159,16 +181,39 @@ export function InquiryForm({
               rows={5}
             />
           </div>
-          <Button type="submit" size="lg" className="w-full">
-            <Send className="h-4 w-4" />
-             {t("SubmitInquiry")}
+
+          {status === "error" && (
+            <div className="flex items-start gap-2 rounded-md border border-red-500/40 bg-red-500/10 p-3 text-sm text-red-200">
+              <AlertCircle className="mt-0.5 h-4 w-4 shrink-0" />
+              <p>
+                Submit Error{" "}
+                <a href="mailto:shivani.yadav@sslgroup.in" className="underline">
+                  shivani.yadav@sslgroup.in
+                </a>
+                .
+              </p>
+            </div>
+          )}
+
+          <Button type="submit" size="lg" className="w-full" disabled={status === "submitting"}>
+            {status === "submitting" ? (
+              <>
+                <Loader2 className="h-4 w-4 animate-spin" />
+                Sending
+              </>
+            ) : (
+              <>
+                <Send className="h-4 w-4" />
+                Submit Inquiry
+              </>
+            )}
           </Button>
           <p className="text-center text-xs text-metallic/60">
-            {t("contacted")}
-            {/* Wire to: POST /api/inquiry → Resend/SendGrid/Nodemailer */}
+            contacted
           </p>
         </form>
       </CardContent>
     </Card>
   );
 }
+

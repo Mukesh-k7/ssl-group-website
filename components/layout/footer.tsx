@@ -55,6 +55,7 @@ export function Footer() {
                   className="
                     object-cover
                     group-hover:brightness-110
+                    w-auto h-auto
                   "
                 />
               </div>
@@ -168,22 +169,30 @@ export function Footer() {
                 <Link
                   href="https://www.google.com/maps?q=28.67378742741595,77.47962866652804"
                   target="_blank"
+                  className="
+                  flex gap-3
+                  text-sm text-metallic/80
+                  hover:text-white
+                  "
                 >
                   <MapPin
                     className="
-                    w-4 h-4
-                    mt-0.5
-                    text-[#c96a00] text-bold
-                    shrink-0
-                  "
+                  w-4 h-4
+                  mt-0.5
+                text-[#c96a00] text-bold
+                shrink-0
+                "
                   /
                   >
+                  <div >
+                    <span>
+                      {t("Address1")}
+                      <br />
+                      {t("Address2")}
+                    </span>
+                  </div>
                 </Link>
-                <span>
-                  {t("Address1")}
-                  <br />
-                  {t("Address2")}
-                </span>
+
               </li>
               <li>
                 <a
@@ -266,7 +275,6 @@ export function Footer() {
             {/* Instagram */}
 
             <a
-
               href="https://www.instagram.com/sslgroup821/?hl=en"
               target="_blank"
               rel="noopener noreferrer"
@@ -439,7 +447,6 @@ export function Footer() {
             my-8
           "
         />
-
         <div
           className="
             flex flex-col md:flex-row items-center justify-between
@@ -457,7 +464,7 @@ export function Footer() {
             "
           >
             <Link
-              href="/contact"
+              href="/privacy-policy"
               className="
                 hover:text-white
               "
@@ -465,7 +472,7 @@ export function Footer() {
               {t("PrivacyPolicy")}
             </Link>
             <Link
-              href="/contact"
+              href="/terms-conditions"
               className="
                 hover:text-white
               "
@@ -475,6 +482,6 @@ export function Footer() {
           </div>
         </div>
       </div>
-    </footer>
+    </footer >
   );
 }
