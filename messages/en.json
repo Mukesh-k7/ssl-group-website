@@ -3699,5 +3699,8 @@
   "ViewOpen": "View Open Roles",
   "ContactHR": "Contact HR",
   "OpenPositions": "Open Positions",
-  "Connect": "Connect this section to your CMS or API."
+  "Connect": "Connect this section to your CMS or API.",
+
+  "SubmitError": "Submit Error",
+  "Sending": "Sending"
 }

@@ -121,7 +121,7 @@ export function InquiryForm({
                   which looks like a copy-paste mistake. Point it at a proper "Phone" key
                   in your en/hi/ar message files. */}
               <Label htmlFor="phone" className="text-white">
-                Phone
+                {t("Media")}
               </Label>
               <Input
                 id="phone"
@@ -186,7 +186,7 @@ export function InquiryForm({
             <div className="flex items-start gap-2 rounded-md border border-red-500/40 bg-red-500/10 p-3 text-sm text-red-200">
               <AlertCircle className="mt-0.5 h-4 w-4 shrink-0" />
               <p>
-                Submit Error{" "}
+                {t("SubmitError")} {" "}
                 <a href="mailto:mukesh.maurya@sslgroup.in" className="underline">
                   mukesh.maurya@sslgroup.in
                 </a>
@@ -199,17 +199,17 @@ export function InquiryForm({
             {status === "submitting" ? (
               <>
                 <Loader2 className="h-4 w-4 animate-spin" />
-                Sending
+                 {t("Sending")}
               </>
             ) : (
               <>
                 <Send className="h-4 w-4" />
-                Submit Inquiry
+                 {t("SubmitInquiry")}
               </>
             )}
           </Button>
           <p className="text-center text-xs text-metallic/60">
-            contacted
+             {t("contacted")}
           </p>
         </form>
       </CardContent>
