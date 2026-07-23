@@ -39,11 +39,11 @@ export async function POST(req: NextRequest) {
     `Phone: ${phone || "-"}`,
     ...(isExport
       ? [
-          `Product: ${product || "-"}`,
-          `Quantity: ${quantity || "-"}`,
-          `Destination: ${destination || "-"}`,
-          `Incoterms: ${incoterms || "-"}`,
-        ]
+        `Product: ${product || "-"}`,
+        `Quantity: ${quantity || "-"}`,
+        `Destination: ${destination || "-"}`,
+        `Incoterms: ${incoterms || "-"}`,
+      ]
       : []),
     "",
     `Message:`,
@@ -61,9 +61,9 @@ export async function POST(req: NextRequest) {
 
   try {
     await transporter.sendMail({
-      from: `"SSL Group Website" <${process.env.SMTP_USER}>`,
-      to: process.env.INQUIRY_RECIPIENT || "shivani.yadav@sslgroup.in",
-      replyTo: email,
+      from: `"${name} (via SSL Group Website)" <${process.env.SMTP_USER}>`,
+      replyTo: `"${name}" <${email}>`,
+      to: process.env.INQUIRY_RECIPIENT || "mukesh.maurya@sslgroup.in",
       subject: `SSL Group - New ${isExport ? "Export " : ""}Inquiry from ${company}`,
       text: lines.join("\n"),
     });

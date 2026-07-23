@@ -187,8 +187,8 @@ export function InquiryForm({
               <AlertCircle className="mt-0.5 h-4 w-4 shrink-0" />
               <p>
                 Submit Error{" "}
-                <a href="mailto:shivani.yadav@sslgroup.in" className="underline">
-                  shivani.yadav@sslgroup.in
+                <a href="mailto:mukesh.maurya@sslgroup.in" className="underline">
+                  mukesh.maurya@sslgroup.in
                 </a>
                 .
               </p>
