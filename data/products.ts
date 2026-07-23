@@ -4,7 +4,7 @@ export const products: Product[] = [
   {
     slug: "pig-iron",
     key: "PigIron",
-    category: "Ferrous Metals",
+    category: "ferrousMetals",
     shortDescription: "ShortDescription",
     description: "Description",
     image: "/images/products/pig-iron.png",
@@ -429,7 +429,7 @@ export const products: Product[] = [
   {
     slug: "ferro-alloys",
     key: "FerroAlloys",
-    category: "Alloying Materials",
+    category: "alloyingMaterials",
     shortDescription: "ShortDescription",
     description: "Description",
     imageAlt: "Ferro Alloys",
@@ -855,13 +855,13 @@ export const products: Product[] = [
         ],
 
         applications: [
-          "DuctileIron",
-          "NodularCastIron",
-          "FoundryIndustry",
-          "CastIronProduction",
           "SteelMaking",
-          "AutomotiveComponents",
-          "EngineeringCastings",
+          "AlloySteel",
+          "StructuralSteel",
+          "ConstructionSteel",
+          "FoundryIndustry",
+          "EngineeringComponents",
+          "RailwayComponents",
           "MetalManufacturing"
         ],
 
@@ -1104,9 +1104,477 @@ export const products: Product[] = [
   },
 
   {
+    slug: "coal",
+    key: "Coal",
+    category: "industrialMinerals",
+    shortDescription: "ShortDescription",
+    description: "Description",
+    image: "/images/products/coal.jpg",
+    imageAlt: "Coal Products",
+    featured: true,
+    specification: [
+      { key: "FixedCarbon", value: "45 – 75%" },
+      { key: "AshContent", value: "8 – 25%" },
+      { key: "VolatileMatter", value: "18 – 35%" },
+      { key: "Moisture", value: "3 – 12%" },
+      { key: "Sulphur", value: "0.3 – 1.0%" },
+    ],
+
+    variants: [
+      {
+        id: 1,
+        translationKey: "Anthracite",
+        image: "/images/products/anthracite.jpg",
+        description: "Description",
+
+        specifications: [
+          {
+            key: "Grade",
+            value: "GradeValue"
+          },
+          {
+            key: "Packing",
+            value: "PackingValue"
+          },
+          {
+            key: "Standard",
+            value: "StandardValue"
+          },
+          {
+            key: "Origin",
+            value: "OriginValue"
+          }
+        ],
+
+        technicalTables: [
+          {
+            title: "ChemicalComposition",
+
+            headers: ["Grade", "FC", "Ash", "VM", "Moisture", "Sulfur"],
+
+            rows: [
+              ["AC 85", "85% Min", "12% Max", "6% Max", "1.0% Max", "0.5% Max"],
+              ["AC 90", "90% Min", "8% Max", "5% Max", "1.0% Max", "0.4% Max"],
+              ["AC 95", "95% Min", "5% Max", "3% Max", "0.8% Max", "0.3% Max"]
+            ]
+          },
+
+          {
+            title: "PhysicalProperties",
+
+            headers: ["Property", "Value"],
+
+            rows: [
+              ["Appearance", "Black"],
+              ["Shape", "Lumps"],
+              ["Color", "Black"],
+              ["Density", "1.4–1.6 g/cm³"],
+              ["SpecificGravity", "1.5"],
+              ["CalorificValue", "7000–8500 Kcal/kg"],
+              ["Packing", "25 Kg Bags / 1 MT Jumbo Bag"],
+              ["Storage", "StoreDryCoveredArea"]
+            ]
+          }
+        ],
+
+        applications: [
+          "SteelMaking",
+          "FoundryIndustry",
+          "CarbonAdditive",
+          "MetallurgicalIndustry",
+          "WaterFiltration",
+          "PowerGeneration",
+          "ChemicalIndustry",
+          "IndustrialHeating"
+        ],
+
+        faq: [
+          {
+            question: "WhatIsAnthraciteQuestion",
+            answer: "WhatIsAnthraciteAnswer"
+          },
+          {
+            question: "GradesQuestion",
+            answer: "GradesAnswer"
+          },
+          {
+            question: "ApplicationsQuestion",
+            answer: "ApplicationsAnswer"
+          },
+          {
+            question: "PackingQuestion",
+            answer: "PackingAnswer"
+          },
+          {
+            question: "CustomizedQuestion",
+            answer: "CustomizedAnswer"
+          },
+          {
+            question: "ExportQuestion",
+            answer: "ExportAnswer"
+          }
+        ],
+
+        downloads: [
+          {
+            title: "Technical Datasheet",
+            file: "/downloads/fesi-datasheet.pdf",
+          },
+
+          {
+            title: "MSDS",
+            file: "/downloads/fesi-msds.pdf",
+          },
+
+          {
+            title: "Test Certificate",
+            file: "/downloads/fesi-test.pdf",
+          },
+        ],
+      },
+
+      {
+        id: 2,
+        translationKey: "SteamCoal",
+        image: "/images/products/steam-coal.jpg",
+        description: "Description",
+
+        specifications: [
+          {
+            key: "Grade",
+            value: "GradeValue"
+          },
+          {
+            key: "Packing",
+            value: "PackingValue"
+          },
+          {
+            key: "Standard",
+            value: "StandardValue"
+          },
+          {
+            key: "Origin",
+            value: "OriginValue"
+          }
+        ],
+
+        technicalTables: [
+          {
+            title: "ChemicalComposition",
+
+            headers: ["Grade", "GCV", "Ash", "VM", "Moisture", "Sulfur"],
+
+            rows: [
+              ["5500 GCV", "5500 Kcal/kg", "18% Max", "28% Max", "10% Max", "0.8% Max"],
+              ["6000 GCV", "6000 Kcal/kg", "15% Max", "26% Max", "9% Max", "0.7% Max"],
+              ["6500 GCV", "6500 Kcal/kg", "12% Max", "24% Max", "8% Max", "0.6% Max"]
+            ]
+          },
+
+          {
+            title: "PhysicalProperties",
+
+            headers: ["Property", "Value"],
+
+            rows: [
+              ["Appearance", "Black"],
+              ["Shape", "Lumps"],
+              ["Color", "Black"],
+              ["Density", "1.2–1.5 g/cm³"],
+              ["SpecificGravity", "1.3"],
+              ["CalorificValue", "5500–6500 Kcal/kg"],
+              ["Packing", "Loose Bulk / 1 MT Jumbo Bag"],
+              ["Storage", "StoreDryCoveredArea"]
+            ]
+          }
+        ],
+
+        applications: [
+          "PowerGeneration",
+          "CementIndustry",
+          "SteelIndustry",
+          "PaperIndustry",
+          "TextileIndustry",
+          "IndustrialBoilers",
+          "BrickKilns",
+          "ChemicalIndustry"
+        ],
+
+        faq: [
+          {
+            question: "WhatIsSteamCoalQuestion",
+            answer: "WhatIsSteamCoalAnswer"
+          },
+          {
+            question: "GradesQuestion",
+            answer: "GradesAnswer"
+          },
+          {
+            question: "ApplicationsQuestion",
+            answer: "ApplicationsAnswer"
+          },
+          {
+            question: "PackingQuestion",
+            answer: "PackingAnswer"
+          },
+          {
+            question: "CustomizedQuestion",
+            answer: "CustomizedAnswer"
+          },
+          {
+            question: "ExportQuestion",
+            answer: "ExportAnswer"
+          }
+        ],
+
+        downloads: [
+          {
+            title: "Technical Datasheet",
+            file: "/downloads/fesi-datasheet.pdf",
+          },
+
+          {
+            title: "MSDS",
+            file: "/downloads/fesi-msds.pdf",
+          },
+
+          {
+            title: "Test Certificate",
+            file: "/downloads/fesi-test.pdf",
+          },
+        ],
+      },
+
+      {
+        id: 3,
+        translationKey: "PulverizedCoalInjection",
+        image: "/images/products/pci.jpg",
+        description: "Description",
+
+        specifications: [
+          {
+            key: "Grade",
+            value: "GradeValue"
+          },
+          {
+            key: "Packing",
+            value: "PackingValue"
+          },
+          {
+            key: "Standard",
+            value: "StandardValue"
+          },
+          {
+            key: "Origin",
+            value: "OriginValue"
+          }
+        ],
+
+        technicalTables: [
+          {
+            title: "ChemicalComposition",
+
+            headers: ["Grade", "FC", "Ash", "VM", "Moisture", "Sulfur"],
+
+            rows: [
+              ["PCI 70", "70% Min", "10% Max", "20% Max", "1.0% Max", "0.6% Max"],
+              ["PCI 75", "75% Min", "8% Max", "18% Max", "1.0% Max", "0.5% Max"],
+              ["PCI 80", "80% Min", "6% Max", "16% Max", "0.8% Max", "0.4% Max"]
+            ]
+          },
+
+          {
+            title: "PhysicalProperties",
+
+            headers: ["Property", "Value"],
+
+            rows: [
+              ["Appearance", "Black"],
+              ["Shape", "Fine Powder"],
+              ["Color", "Black"],
+              ["Density", "0.8–1.1 g/cm³"],
+              ["SpecificGravity", "1.2"],
+              ["ParticleSize", "75–200 Microns"],
+              ["Packing", "25 Kg Bags / 1 MT Jumbo Bag"],
+              ["Storage", "StoreDryCoveredArea"]
+            ]
+          }
+        ],
+
+        applications: [
+          "BlastFurnace",
+          "SteelMaking",
+          "IronMaking",
+          "MetallurgicalIndustry",
+          "FoundryIndustry",
+          "FuelSubstitution",
+          "IndustrialHeating",
+          "EnergyEfficiency"
+        ],
+
+        faq: [
+          {
+            question: "WhatIsPulverizedCoalInjectionQuestion",
+            answer: "WhatIsPulverizedCoalInjectionAnswer"
+          },
+          {
+            question: "GradesQuestion",
+            answer: "GradesAnswer"
+          },
+          {
+            question: "ApplicationsQuestion",
+            answer: "ApplicationsAnswer"
+          },
+          {
+            question: "PackingQuestion",
+            answer: "PackingAnswer"
+          },
+          {
+            question: "CustomizedQuestion",
+            answer: "CustomizedAnswer"
+          },
+          {
+            question: "ExportQuestion",
+            answer: "ExportAnswer"
+          }
+        ],
+
+        downloads: [
+          {
+            title: "Technical Datasheet",
+            file: "/downloads/fesi-datasheet.pdf",
+          },
+
+          {
+            title: "MSDS",
+            file: "/downloads/fesi-msds.pdf",
+          },
+
+          {
+            title: "Test Certificate",
+            file: "/downloads/fesi-test.pdf",
+          },
+        ],
+      },
+
+      {
+        id: 4,
+        translationKey: "CokingCoal",
+        image: "/images/products/cooking-coal.jpg",
+        description: "Description",
+
+        specifications: [
+          {
+            key: "Grade",
+            value: "GradeValue"
+          },
+          {
+            key: "Packing",
+            value: "PackingValue"
+          },
+          {
+            key: "Standard",
+            value: "StandardValue"
+          },
+          {
+            key: "Origin",
+            value: "OriginValue"
+          }
+        ],
+
+        technicalTables: [
+          {
+            title: "ChemicalComposition",
+
+            headers: ["Grade", "FC", "Ash", "VM", "Moisture", "Sulfur"],
+
+            rows: [
+              ["Prime Hard", "86% Min", "9% Max", "22% Max", "8% Max", "0.6% Max"],
+              ["Medium Coking", "82% Min", "10% Max", "24% Max", "9% Max", "0.7% Max"],
+              ["Semi Soft", "78% Min", "12% Max", "26% Max", "10% Max", "0.8% Max"]
+            ]
+          },
+
+          {
+            title: "PhysicalProperties",
+
+            headers: ["Property", "Value"],
+
+            rows: [
+              ["Appearance", "Black"],
+              ["Shape", "Lumps"],
+              ["Color", "Black"],
+              ["Density", "1.3–1.5 g/cm³"],
+              ["SpecificGravity", "1.35"],
+              ["CalorificValue", "6800–7800 Kcal/kg"],
+              ["Packing", "Loose Bulk / 1 MT Jumbo Bag"],
+              ["Storage", "StoreDryCoveredArea"]
+            ]
+          }
+        ],
+
+        applications: [
+          "BlastFurnace",
+          "CokeManufacturing",
+          "SteelMaking",
+          "IronMaking",
+          "MetallurgicalIndustry",
+          "FoundryIndustry",
+          "IndustrialFuel",
+          "ChemicalIndustry"
+        ],
+
+        faq: [
+          {
+            question: "WhatIsCokingCoalQuestion",
+            answer: "WhatIsCokingCoalAnswer"
+          },
+          {
+            question: "GradesQuestion",
+            answer: "GradesAnswer"
+          },
+          {
+            question: "ApplicationsQuestion",
+            answer: "ApplicationsAnswer"
+          },
+          {
+            question: "PackingQuestion",
+            answer: "PackingAnswer"
+          },
+          {
+            question: "CustomizedQuestion",
+            answer: "CustomizedAnswer"
+          },
+          {
+            question: "ExportQuestion",
+            answer: "ExportAnswer"
+          }
+        ],
+
+        downloads: [
+          {
+            title: "Technical Datasheet",
+            file: "/downloads/fesi-datasheet.pdf",
+          },
+
+          {
+            title: "MSDS",
+            file: "/downloads/fesi-msds.pdf",
+          },
+
+          {
+            title: "Test Certificate",
+            file: "/downloads/fesi-test.pdf",
+          },
+        ],
+      },
+    ]
+  },
+
+  {
     slug: "nobal-alloy",
     key: "NobalAlloy",
-    category: "Specialty Alloys",
+    category: "specialtyAlloys",
     shortDescription: "ShortDescription",
     description: "Description",
     image: "/images/products/NOBLE-ALLOYS3.png",
@@ -1439,7 +1907,7 @@ export const products: Product[] = [
   {
     slug: "carbon-products",
     key: "CarbonProducts",
-    category: "Carbon Materials",
+    category: "carbonMaterials",
     shortDescription: "ShortDescription",
     description: "Description",
     image: "/images/products/carbon-product.jpg",
@@ -1681,7 +2149,7 @@ export const products: Product[] = [
   {
     slug: "carbide-ore",
     key: "CarbideOre",
-    category: "Industrial Minerals",
+    category: "industrialMinerals",
     shortDescription: "ShortDescription",
     description: "Description",
     image: "/images/products/Silicon-Carbide-1.jpg",
@@ -2327,477 +2795,9 @@ export const products: Product[] = [
   },
 
   {
-    slug: "coal",
-    key: "Coal",
-    category: "Industrial Minerals",
-    shortDescription: "ShortDescription",
-    description: "Description",
-    image: "/images/products/coal.jpg",
-    imageAlt: "Coal Products",
-    featured: true,
-    specification: [
-      { key: "FixedCarbon", value: "45 – 75%" },
-      { key: "AshContent", value: "8 – 25%" },
-      { key: "VolatileMatter", value: "18 – 35%" },
-      { key: "Moisture", value: "3 – 12%" },
-      { key: "Sulphur (S)", value: "0.3 – 1.0%" },
-    ],
-
-    variants: [
-      {
-        id: 1,
-        translationKey: "Anthracite",
-        image: "/images/products/anthracite.jpg",
-        description: "Description",
-
-        specifications: [
-          {
-            key: "Grade",
-            value: "GradeValue"
-          },
-          {
-            key: "Packing",
-            value: "PackingValue"
-          },
-          {
-            key: "Standard",
-            value: "StandardValue"
-          },
-          {
-            key: "Origin",
-            value: "OriginValue"
-          }
-        ],
-
-        technicalTables: [
-          {
-            title: "ChemicalComposition",
-
-            headers: ["Grade", "FC", "Ash", "VM", "Moisture", "Sulfur"],
-
-            rows: [
-              ["AC 85", "85% Min", "12% Max", "6% Max", "1.0% Max", "0.5% Max"],
-              ["AC 90", "90% Min", "8% Max", "5% Max", "1.0% Max", "0.4% Max"],
-              ["AC 95", "95% Min", "5% Max", "3% Max", "0.8% Max", "0.3% Max"]
-            ]
-          },
-
-          {
-            title: "PhysicalProperties",
-
-            headers: ["Property", "Value"],
-
-            rows: [
-              ["Appearance", "Black"],
-              ["Shape", "Lumps"],
-              ["Color", "Black"],
-              ["Density", "1.4–1.6 g/cm³"],
-              ["SpecificGravity", "1.5"],
-              ["CalorificValue", "7000–8500 Kcal/kg"],
-              ["Packing", "25 Kg Bags / 1 MT Jumbo Bag"],
-              ["Storage", "StoreDryCoveredArea"]
-            ]
-          }
-        ],
-
-        applications: [
-          "SteelMaking",
-          "FoundryIndustry",
-          "CarbonAdditive",
-          "MetallurgicalIndustry",
-          "WaterFiltration",
-          "PowerGeneration",
-          "ChemicalIndustry",
-          "IndustrialHeating"
-        ],
-
-        faq: [
-          {
-            question: "WhatIsAnthraciteQuestion",
-            answer: "WhatIsAnthraciteAnswer"
-          },
-          {
-            question: "GradesQuestion",
-            answer: "GradesAnswer"
-          },
-          {
-            question: "ApplicationsQuestion",
-            answer: "ApplicationsAnswer"
-          },
-          {
-            question: "PackingQuestion",
-            answer: "PackingAnswer"
-          },
-          {
-            question: "CustomizedQuestion",
-            answer: "CustomizedAnswer"
-          },
-          {
-            question: "ExportQuestion",
-            answer: "ExportAnswer"
-          }
-        ],
-
-        downloads: [
-          {
-            title: "Technical Datasheet",
-            file: "/downloads/fesi-datasheet.pdf",
-          },
-
-          {
-            title: "MSDS",
-            file: "/downloads/fesi-msds.pdf",
-          },
-
-          {
-            title: "Test Certificate",
-            file: "/downloads/fesi-test.pdf",
-          },
-        ],
-      },
-
-      {
-        id: 2,
-        translationKey: "SteamCoal",
-        image: "/images/products/steam-coal.jpg",
-        description: "Description",
-
-        specifications: [
-          {
-            key: "Grade",
-            value: "GradeValue"
-          },
-          {
-            key: "Packing",
-            value: "PackingValue"
-          },
-          {
-            key: "Standard",
-            value: "StandardValue"
-          },
-          {
-            key: "Origin",
-            value: "OriginValue"
-          }
-        ],
-
-        technicalTables: [
-          {
-            title: "ChemicalComposition",
-
-            headers: ["Grade", "GCV", "Ash", "VM", "Moisture", "Sulfur"],
-
-            rows: [
-              ["5500 GCV", "5500 Kcal/kg", "18% Max", "28% Max", "10% Max", "0.8% Max"],
-              ["6000 GCV", "6000 Kcal/kg", "15% Max", "26% Max", "9% Max", "0.7% Max"],
-              ["6500 GCV", "6500 Kcal/kg", "12% Max", "24% Max", "8% Max", "0.6% Max"]
-            ]
-          },
-
-          {
-            title: "PhysicalProperties",
-
-            headers: ["Property", "Value"],
-
-            rows: [
-              ["Appearance", "Black"],
-              ["Shape", "Lumps"],
-              ["Color", "Black"],
-              ["Density", "1.2–1.5 g/cm³"],
-              ["SpecificGravity", "1.3"],
-              ["CalorificValue", "5500–6500 Kcal/kg"],
-              ["Packing", "Loose Bulk / 1 MT Jumbo Bag"],
-              ["Storage", "StoreDryCoveredArea"]
-            ]
-          }
-        ],
-
-        applications: [
-          "PowerGeneration",
-          "CementIndustry",
-          "SteelIndustry",
-          "PaperIndustry",
-          "TextileIndustry",
-          "IndustrialBoilers",
-          "BrickKilns",
-          "ChemicalIndustry"
-        ],
-
-        faq: [
-          {
-            question: "WhatIsSteamCoalQuestion",
-            answer: "WhatIsSteamCoalAnswer"
-          },
-          {
-            question: "GradesQuestion",
-            answer: "GradesAnswer"
-          },
-          {
-            question: "ApplicationsQuestion",
-            answer: "ApplicationsAnswer"
-          },
-          {
-            question: "PackingQuestion",
-            answer: "PackingAnswer"
-          },
-          {
-            question: "CustomizedQuestion",
-            answer: "CustomizedAnswer"
-          },
-          {
-            question: "ExportQuestion",
-            answer: "ExportAnswer"
-          }
-        ],
-
-        downloads: [
-          {
-            title: "Technical Datasheet",
-            file: "/downloads/fesi-datasheet.pdf",
-          },
-
-          {
-            title: "MSDS",
-            file: "/downloads/fesi-msds.pdf",
-          },
-
-          {
-            title: "Test Certificate",
-            file: "/downloads/fesi-test.pdf",
-          },
-        ],
-      },
-
-      {
-        id: 3,
-        translationKey: "PulverizedCoalInjection",
-        image: "/images/products/pci.jpg",
-        description: "Description",
-
-        specifications: [
-          {
-            key: "Grade",
-            value: "GradeValue"
-          },
-          {
-            key: "Packing",
-            value: "PackingValue"
-          },
-          {
-            key: "Standard",
-            value: "StandardValue"
-          },
-          {
-            key: "Origin",
-            value: "OriginValue"
-          }
-        ],
-
-        technicalTables: [
-          {
-            title: "ChemicalComposition",
-
-            headers: ["Grade", "FC", "Ash", "VM", "Moisture", "Sulfur"],
-
-            rows: [
-              ["PCI 70", "70% Min", "10% Max", "20% Max", "1.0% Max", "0.6% Max"],
-              ["PCI 75", "75% Min", "8% Max", "18% Max", "1.0% Max", "0.5% Max"],
-              ["PCI 80", "80% Min", "6% Max", "16% Max", "0.8% Max", "0.4% Max"]
-            ]
-          },
-
-          {
-            title: "PhysicalProperties",
-
-            headers: ["Property", "Value"],
-
-            rows: [
-              ["Appearance", "Black"],
-              ["Shape", "Fine Powder"],
-              ["Color", "Black"],
-              ["Density", "0.8–1.1 g/cm³"],
-              ["SpecificGravity", "1.2"],
-              ["ParticleSize", "75–200 Microns"],
-              ["Packing", "25 Kg Bags / 1 MT Jumbo Bag"],
-              ["Storage", "StoreDryCoveredArea"]
-            ]
-          }
-        ],
-
-        applications: [
-          "BlastFurnace",
-          "SteelMaking",
-          "IronMaking",
-          "MetallurgicalIndustry",
-          "FoundryIndustry",
-          "FuelSubstitution",
-          "IndustrialHeating",
-          "EnergyEfficiency"
-        ],
-
-        faq: [
-          {
-            question: "WhatIsPulverizedCoalInjectionQuestion",
-            answer: "WhatIsPulverizedCoalInjectionAnswer"
-          },
-          {
-            question: "GradesQuestion",
-            answer: "GradesAnswer"
-          },
-          {
-            question: "ApplicationsQuestion",
-            answer: "ApplicationsAnswer"
-          },
-          {
-            question: "PackingQuestion",
-            answer: "PackingAnswer"
-          },
-          {
-            question: "CustomizedQuestion",
-            answer: "CustomizedAnswer"
-          },
-          {
-            question: "ExportQuestion",
-            answer: "ExportAnswer"
-          }
-        ],
-
-        downloads: [
-          {
-            title: "Technical Datasheet",
-            file: "/downloads/fesi-datasheet.pdf",
-          },
-
-          {
-            title: "MSDS",
-            file: "/downloads/fesi-msds.pdf",
-          },
-
-          {
-            title: "Test Certificate",
-            file: "/downloads/fesi-test.pdf",
-          },
-        ],
-      },
-
-      {
-        id: 4,
-        translationKey: "CokingCoal",
-        image: "/images/products/cooking-coal.jpg",
-        description: "Description",
-
-        specifications: [
-          {
-            key: "Grade",
-            value: "GradeValue"
-          },
-          {
-            key: "Packing",
-            value: "PackingValue"
-          },
-          {
-            key: "Standard",
-            value: "StandardValue"
-          },
-          {
-            key: "Origin",
-            value: "OriginValue"
-          }
-        ],
-
-        technicalTables: [
-          {
-            title: "ChemicalComposition",
-
-            headers: ["Grade", "FC", "Ash", "VM", "Moisture", "Sulfur"],
-
-            rows: [
-              ["Prime Hard", "86% Min", "9% Max", "22% Max", "8% Max", "0.6% Max"],
-              ["Medium Coking", "82% Min", "10% Max", "24% Max", "9% Max", "0.7% Max"],
-              ["Semi Soft", "78% Min", "12% Max", "26% Max", "10% Max", "0.8% Max"]
-            ]
-          },
-
-          {
-            title: "PhysicalProperties",
-
-            headers: ["Property", "Value"],
-
-            rows: [
-              ["Appearance", "Black"],
-              ["Shape", "Lumps"],
-              ["Color", "Black"],
-              ["Density", "1.3–1.5 g/cm³"],
-              ["SpecificGravity", "1.35"],
-              ["CalorificValue", "6800–7800 Kcal/kg"],
-              ["Packing", "Loose Bulk / 1 MT Jumbo Bag"],
-              ["Storage", "StoreDryCoveredArea"]
-            ]
-          }
-        ],
-
-        applications: [
-          "BlastFurnace",
-          "CokeManufacturing",
-          "SteelMaking",
-          "IronMaking",
-          "MetallurgicalIndustry",
-          "FoundryIndustry",
-          "IndustrialFuel",
-          "ChemicalIndustry"
-        ],
-
-        faq: [
-          {
-            question: "WhatIsCokingCoalQuestion",
-            answer: "WhatIsCokingCoalAnswer"
-          },
-          {
-            question: "GradesQuestion",
-            answer: "GradesAnswer"
-          },
-          {
-            question: "ApplicationsQuestion",
-            answer: "ApplicationsAnswer"
-          },
-          {
-            question: "PackingQuestion",
-            answer: "PackingAnswer"
-          },
-          {
-            question: "CustomizedQuestion",
-            answer: "CustomizedAnswer"
-          },
-          {
-            question: "ExportQuestion",
-            answer: "ExportAnswer"
-          }
-        ],
-
-        downloads: [
-          {
-            title: "Technical Datasheet",
-            file: "/downloads/fesi-datasheet.pdf",
-          },
-
-          {
-            title: "MSDS",
-            file: "/downloads/fesi-msds.pdf",
-          },
-
-          {
-            title: "Test Certificate",
-            file: "/downloads/fesi-test.pdf",
-          },
-        ],
-      },
-    ]
-  },
-
-  {
     slug: "limestone",
     key: "LimeStone",
-    category: "Industrial Minerals",
+    category: "industrialMinerals",
     shortDescription: "ShortDescription",
     description: "Description",
     image: "/images/products/limestone.jpg",
@@ -3279,7 +3279,7 @@ export const products: Product[] = [
   {
     slug: "natural-graphite",
     key: "NaturalGraphite",
-    category: "Industrial Minerals",
+    category: "industrialMinerals",
     shortDescription: "ShortDescription",
     description: "Description",
     image: "/images/products/natural-graphite.jpg",
@@ -3630,6 +3630,731 @@ export const products: Product[] = [
       }
     ]
   },
+
+  {
+    slug: "steel-products",
+    key: "SteelProducts",
+    category: "industrialMinerals",
+    shortDescription: "ShortDescription",
+    description: "Description",
+    image: "/images/products/steel-product.jpg",
+    imageAlt: "Steels Products",
+    featured: true,
+    specification: [
+      { key: "Material", value: "Structural Steel" },
+      { key: "Grade", value: "IS 2062 E250 / E350" },
+      { key: "Standard", value: "ASTM, EN, IS" },
+      { key: "Length", value: "6 – 12 m" },
+      { key: "Surface", value: "Hot Rolled" },
+      { key: "Shape", value: "I-Beam, H-Beam, Channel, Angle" },
+      { key: "YieldStrength", value: "250 – 350 MPa" },
+      { key: "Applications", value: "Buildings, Bridges & Industrial Structures" },
+    ],
+    variants: [
+      {
+        id: 1,
+        translationKey: "SteelBillets",
+        image: "/images/products/billets.jpg",
+        description: "SteelBilletsDescription",
+
+        specifications: [
+          {
+            key: "Grade",
+            value: "GradeValue"
+          },
+          {
+            key: "Size",
+            value: "SizeValue"
+          },
+          {
+            key: "Length",
+            value: "LengthValue"
+          },
+          {
+            key: "Origin",
+            value: "OriginValue"
+          }
+        ],
+
+        technicalTables: [
+          {
+            title: "ChemicalComposition",
+
+            headers: [
+              "Grade",
+              "Carbon",
+              "Manganese",
+              "Silicon",
+              "Sulphur",
+              "Phosphorus"
+            ],
+
+            rows: [
+              ["IS2062", "0.23% Max", "1.50% Max", "0.40% Max", "0.045% Max", "0.045% Max"],
+              ["ASTM A36", "0.26% Max", "0.80–1.20%", "0.40% Max", "0.050% Max", "0.040% Max"],
+              ["SAE 1020", "0.18–0.23%", "0.30–0.60%", "0.15–0.35%", "0.050% Max", "0.040% Max"]
+            ]
+          },
+
+          {
+            title: "PhysicalProperties",
+
+            headers: ["Property", "Value"],
+
+            rows: [
+              ["Appearance", "Solid Steel Billets"],
+              ["Shape", "Square"],
+              ["Color", "Grey Metallic"],
+              ["Density", "7.85 g/cm³"],
+              ["Length", "6–12 m"],
+              ["Size", "100×100 mm – 200×200 mm"],
+              ["Packing", "Steel Strapped Bundles"],
+              ["Storage", "Store in Dry Covered Area"]
+            ]
+          }
+        ],
+
+        applications: [
+          "RollingMills",
+          "RebarManufacturing",
+          "WireRodProduction",
+          "StructuralSteel",
+          "ForgingIndustry",
+          "EngineeringComponents",
+          "AutomotiveIndustry",
+          "ConstructionIndustry"
+        ],
+
+        faq: [
+          {
+            question: "WhatIsSteelBilletsQuestion",
+            answer: "WhatIsSteelBilletsAnswer"
+          },
+          {
+            question: "GradesQuestion",
+            answer: "SteelBilletsGradesAnswer"
+          },
+          {
+            question: "ApplicationsQuestion",
+            answer: "SteelBilletsApplicationsAnswer"
+          },
+          {
+            question: "PackingQuestion",
+            answer: "SteelBilletsPackingAnswer"
+          },
+          {
+            question: "CustomizedQuestion",
+            answer: "SteelBilletsCustomizationAnswer"
+          },
+          {
+            question: "ExportQuestion",
+            answer: "SteelBilletsExportAnswer"
+          }
+        ],
+
+        downloads: [
+          {
+            title: "Technical Datasheet",
+            file: "/downloads/steel-billets-datasheet.pdf",
+          },
+          {
+            title: "MSDS",
+            file: "/downloads/steel-billets-msds.pdf",
+          },
+          {
+            title: "Test Certificate",
+            file: "/downloads/steel-billets-test-certificate.pdf",
+          },
+        ],
+      },
+
+      {
+        id: 2,
+        translationKey: "SteelBloom",
+        image: "/images/products/steel-blooms.jpg",
+        description: "SteelBloomDescription",
+
+        specifications: [
+          {
+            key: "Grade",
+            value: "GradeValue"
+          },
+          {
+            key: "Size",
+            value: "SizeValue"
+          },
+          {
+            key: "Length",
+            value: "LengthValue"
+          },
+          {
+            key: "Origin",
+            value: "OriginValue"
+          }
+        ],
+
+        technicalTables: [
+          {
+            title: "ChemicalComposition",
+
+            headers: [
+              "Grade",
+              "Carbon",
+              "Manganese",
+              "Silicon",
+              "Sulphur",
+              "Phosphorus"
+            ],
+
+            rows: [
+              ["IS2062", "0.23% Max", "1.50% Max", "0.40% Max", "0.045% Max", "0.045% Max"],
+              ["ASTM A36", "0.26% Max", "0.80–1.20%", "0.40% Max", "0.050% Max", "0.040% Max"],
+              ["SAE 1020", "0.18–0.23%", "0.30–0.60%", "0.15–0.35%", "0.050% Max", "0.040% Max"]
+            ]
+          },
+
+          {
+            title: "PhysicalProperties",
+
+            headers: ["Property", "Value"],
+
+            rows: [
+              ["Appearance", "Solid Steel Bloom"],
+              ["Shape", "Square / Rectangular"],
+              ["Color", "Grey Metallic"],
+              ["Density", "7.85 g/cm³"],
+              ["Length", "6–12 m"],
+              ["Size", "200×200 mm – 400×400 mm"],
+              ["Packing", "Steel Strapped Bundles"],
+              ["Storage", "Store in Dry Covered Area"]
+            ]
+          }
+        ],
+
+        applications: [
+          "RailwayTracks",
+          "StructuralSteel",
+          "SeamlessPipeManufacturing",
+          "HeavyForging",
+          "EngineeringComponents",
+          "ConstructionIndustry",
+          "HeavyMachinery",
+          "RollingMills"
+        ],
+
+        faq: [
+          {
+            question: "WhatIsSteelBloomQuestion",
+            answer: "WhatIsSteelBloomAnswer"
+          },
+          {
+            question: "GradesQuestion",
+            answer: "GradesAnswer"
+          },
+          {
+            question: "ApplicationsQuestion",
+            answer: "ApplicationsAnswer"
+          },
+          {
+            question: "PackingQuestion",
+            answer: "PackingAnswer"
+          },
+          {
+            question: "CustomizedQuestion",
+            answer: "CustomizedAnswer"
+          },
+          {
+            question: "ExportQuestion",
+            answer: "ExportAnswer"
+          }
+        ],
+
+        downloads: [
+          {
+            title: "Technical Datasheet",
+            file: "/downloads/steel-bloom-datasheet.pdf",
+          },
+          {
+            title: "MSDS",
+            file: "/downloads/steel-bloom-msds.pdf",
+          },
+          {
+            title: "Test Certificate",
+            file: "/downloads/steel-bloom-test-certificate.pdf",
+          },
+        ],
+      },
+
+      {
+        id: 3,
+        translationKey: "SteelPlates",
+        image: "/images/products/steel-plates.jpg",
+        description: "SteelPlatesDescription",
+
+        specifications: [
+          {
+            key: "Grade",
+            value: "GradeValue"
+          },
+          {
+            key: "Thickness",
+            value: "ThicknessValue"
+          },
+          {
+            key: "Width",
+            value: "WidthValue"
+          },
+          {
+            key: "Origin",
+            value: "OriginValue"
+          }
+        ],
+
+        technicalTables: [
+          {
+            title: "ChemicalComposition",
+
+            headers: [
+              "Grade",
+              "Carbon",
+              "Manganese",
+              "Silicon",
+              "Sulphur",
+              "Phosphorus"
+            ],
+
+            rows: [
+              ["IS2062 E250", "0.23% Max", "1.50% Max", "0.40% Max", "0.045% Max", "0.045% Max"],
+              ["ASTM A36", "0.26% Max", "0.80–1.20%", "0.40% Max", "0.050% Max", "0.040% Max"],
+              ["ASTM A516 Gr.70", "0.27% Max", "0.85–1.20%", "0.40% Max", "0.035% Max", "0.035% Max"]
+            ]
+          },
+
+          {
+            title: "PhysicalProperties",
+
+            headers: ["Property", "Value"],
+
+            rows: [
+              ["Appearance", "Flat Steel Plates"],
+              ["Shape", "Rectangular"],
+              ["Color", "Grey Metallic"],
+              ["Density", "7.85 g/cm³"],
+              ["Thickness", "5–200 mm"],
+              ["Width", "1000–3000 mm"],
+              ["Packing", "Steel Strapped Bundles"],
+              ["Storage", "Store in Dry Covered Area"]
+            ]
+          }
+        ],
+
+        applications: [
+          "ShipBuilding",
+          "BridgeConstruction",
+          "PressureVessels",
+          "Boilers",
+          "HeavyEngineering",
+          "IndustrialFabrication",
+          "OilAndGasIndustry",
+          "ConstructionIndustry"
+        ],
+
+        faq: [
+          {
+            question: "WhatIsSteelPlatesQuestion",
+            answer: "WhatIsSteelPlatesAnswer"
+          },
+          {
+            question: "GradesQuestion",
+            answer: "GradesAnswer"
+          },
+          {
+            question: "ApplicationsQuestion",
+            answer: "ApplicationsAnswer"
+          },
+          {
+            question: "PackingQuestion",
+            answer: "PackingAnswer"
+          },
+          {
+            question: "CustomizedQuestion",
+            answer: "CustomizedAnswer"
+          },
+          {
+            question: "ExportQuestion",
+            answer: "ExportAnswer"
+          }
+        ],
+
+        downloads: [
+          {
+            title: "Technical Datasheet",
+            file: "/downloads/steel-plates-datasheet.pdf",
+          },
+          {
+            title: "MSDS",
+            file: "/downloads/steel-plates-msds.pdf",
+          },
+          {
+            title: "Test Certificate",
+            file: "/downloads/steel-plates-test-certificate.pdf",
+          },
+        ],
+      },
+
+      {
+        id: 4,
+        translationKey: "SteelTubes",
+        image: "/images/products/steel-pipes-tubes.jpg",
+        description: "SteelTubesDescription",
+
+        specifications: [
+          {
+            key: "Grade",
+            value: "GradeValue"
+          },
+          {
+            key: "OuterDiameter",
+            value: "OuterDiameterValue"
+          },
+          {
+            key: "WallThickness",
+            value: "WallThicknessValue"
+          },
+          {
+            key: "Origin",
+            value: "OriginValue"
+          }
+        ],
+
+        technicalTables: [
+          {
+            title: "ChemicalComposition",
+
+            headers: [
+              "Grade",
+              "Carbon",
+              "Manganese",
+              "Silicon",
+              "Sulphur",
+              "Phosphorus"
+            ],
+
+            rows: [
+              ["ASTM A53", "0.30% Max", "1.20% Max", "0.30% Max", "0.05% Max", "0.05% Max"],
+              ["ASTM A106", "0.35% Max", "0.29–1.06%", "0.10% Min", "0.035% Max", "0.035% Max"],
+              ["IS 1239", "0.20% Max", "1.30% Max", "0.35% Max", "0.045% Max", "0.045% Max"]
+            ]
+          },
+
+          {
+            title: "PhysicalProperties",
+
+            headers: ["Property", "Value"],
+
+            rows: [
+              ["Appearance", "Steel Tubes"],
+              ["Shape", "Round / Square / Rectangular"],
+              ["Color", "Grey Metallic"],
+              ["Density", "7.85 g/cm³"],
+              ["OuterDiameter", "15–600 mm"],
+              ["WallThickness", "2–25 mm"],
+              ["Packing", "Steel Strapped Bundles"],
+              ["Storage", "Store in Dry Covered Area"]
+            ]
+          }
+        ],
+
+        applications: [
+          "ConstructionIndustry",
+          "StructuralFramework",
+          "MechanicalEngineering",
+          "AutomotiveIndustry",
+          "OilAndGasIndustry",
+          "WaterDistribution",
+          "IndustrialFabrication",
+          "InfrastructureProjects"
+        ],
+
+        faq: [
+          {
+            question: "WhatIsSteelTubesQuestion",
+            answer: "WhatIsSteelTubesAnswer"
+          },
+          {
+            question: "GradesQuestion",
+            answer: "GradesAnswer"
+          },
+          {
+            question: "ApplicationsQuestion",
+            answer: "ApplicationsAnswer"
+          },
+          {
+            question: "PackingQuestion",
+            answer: "PackingAnswer"
+          },
+          {
+            question: "CustomizedQuestion",
+            answer: "CustomizedAnswer"
+          },
+          {
+            question: "ExportQuestion",
+            answer: "ExportAnswer"
+          }
+        ],
+
+        downloads: [
+          {
+            title: "Technical Datasheet",
+            file: "/downloads/steel-tubes-datasheet.pdf",
+          },
+          {
+            title: "MSDS",
+            file: "/downloads/steel-tubes-msds.pdf",
+          },
+          {
+            title: "Test Certificate",
+            file: "/downloads/steel-tubes-test-certificate.pdf",
+          }
+        ]
+      },
+
+      {
+        id: 5,
+        translationKey: "ColdRolledCoils",
+        image: "/images/products/cold-rolls-coils.jpg",
+        description: "ColdRolledCoilsDescription",
+
+        specifications: [
+          {
+            key: "Grade",
+            value: "GradeValue"
+          },
+          {
+            key: "Thickness",
+            value: "ThicknessValue"
+          },
+          {
+            key: "Width",
+            value: "WidthValue"
+          },
+          {
+            key: "Origin",
+            value: "OriginValue"
+          }
+        ],
+
+        technicalTables: [
+          {
+            title: "ChemicalComposition",
+
+            headers: [
+              "Grade",
+              "Carbon",
+              "Manganese",
+              "Silicon",
+              "Sulphur",
+              "Phosphorus"
+            ],
+
+            rows: [
+              ["CR1", "0.12% Max", "0.60% Max", "0.03% Max", "0.030% Max", "0.030% Max"],
+              ["CR2", "0.10% Max", "0.50% Max", "0.03% Max", "0.030% Max", "0.030% Max"],
+              ["ASTM A1008", "0.15% Max", "0.60% Max", "0.03% Max", "0.030% Max", "0.030% Max"]
+            ]
+          },
+
+          {
+            title: "PhysicalProperties",
+
+            headers: ["Property", "Value"],
+
+            rows: [
+              ["Appearance", "Cold Rolled Steel Coils"],
+              ["Shape", "Coil"],
+              ["Color", "Grey Metallic"],
+              ["Density", "7.85 g/cm³"],
+              ["Thickness", "0.30–3.00 mm"],
+              ["Width", "600–1500 mm"],
+              ["Packing", "Export Standard Packing"],
+              ["Storage", "Store in Dry Covered Area"]
+            ]
+          }
+        ],
+
+        applications: [
+          "AutomotiveIndustry",
+          "HomeAppliances",
+          "ElectricalEquipment",
+          "FurnitureManufacturing",
+          "IndustrialFabrication",
+          "ConstructionIndustry",
+          "SteelProcessing",
+          "EngineeringComponents"
+        ],
+
+        faq: [
+          {
+            question: "WhatIsColdRolledCoilsQuestion",
+            answer: "WhatIsColdRolledCoilsAnswer"
+          },
+          {
+            question: "GradesQuestion",
+            answer: "GradesAnswer"
+          },
+          {
+            question: "ApplicationsQuestion",
+            answer: "ApplicationsAnswer"
+          },
+          {
+            question: "PackingQuestion",
+            answer: "PackingAnswer"
+          },
+          {
+            question: "CustomizedQuestion",
+            answer: "CustomizedAnswer"
+          },
+          {
+            question: "ExportQuestion",
+            answer: "ExportAnswer"
+          }
+        ],
+
+        downloads: [
+          {
+            title: "Technical Datasheet",
+            file: "/downloads/cold-rolled-coils-datasheet.pdf",
+          },
+          {
+            title: "MSDS",
+            file: "/downloads/cold-rolled-coils-msds.pdf",
+          },
+          {
+            title: "Test Certificate",
+            file: "/downloads/cold-rolled-coils-test-certificate.pdf",
+          }
+        ]
+      },
+
+      {
+        id: 6,
+        translationKey: "TMTBars",
+        image: "/images/products/tmt-baars.jpg",
+        description: "TMTBarsDescription",
+
+        specifications: [
+          {
+            key: "Grade",
+            value: "GradeValue"
+          },
+          {
+            key: "Diameter",
+            value: "DiameterValue"
+          },
+          {
+            key: "Length",
+            value: "LengthValue"
+          },
+          {
+            key: "Origin",
+            value: "OriginValue"
+          }
+        ],
+
+        technicalTables: [
+          {
+            title: "ChemicalComposition",
+
+            headers: [
+              "Grade",
+              "Carbon",
+              "Manganese",
+              "Sulphur",
+              "Phosphorus",
+              "YieldStrength"
+            ],
+
+            rows: [
+              ["Fe 500", "0.30% Max", "1.50% Max", "0.055% Max", "0.055% Max", "500 MPa"],
+              ["Fe 550", "0.30% Max", "1.50% Max", "0.055% Max", "0.055% Max", "550 MPa"],
+              ["Fe 600", "0.30% Max", "1.50% Max", "0.055% Max", "0.055% Max", "600 MPa"]
+            ]
+          },
+
+          {
+            title: "PhysicalProperties",
+
+            headers: ["Property", "Value"],
+
+            rows: [
+              ["Appearance", "Ribbed Steel Bars"],
+              ["Shape", "Round"],
+              ["Color", "Grey Metallic"],
+              ["Density", "7.85 g/cm³"],
+              ["Diameter", "8–40 mm"],
+              ["Length", "12 m Standard"],
+              ["Packing", "Steel Strapped Bundles"],
+              ["Storage", "Store in Dry Covered Area"]
+            ]
+          }
+        ],
+
+        applications: [
+          "ResidentialConstruction",
+          "CommercialBuildings",
+          "Bridges",
+          "Highways",
+          "IndustrialStructures",
+          "InfrastructureProjects",
+          "Dams",
+          "MetroRailProjects"
+        ],
+
+        faq: [
+          {
+            question: "WhatIsTMTBarsQuestion",
+            answer: "WhatIsTMTBarsAnswer"
+          },
+          {
+            question: "GradesQuestion",
+            answer: "GradesAnswer"
+          },
+          {
+            question: "ApplicationsQuestion",
+            answer: "ApplicationsAnswer"
+          },
+          {
+            question: "PackingQuestion",
+            answer: "PackingAnswer"
+          },
+          {
+            question: "CustomizedQuestion",
+            answer: "CustomizedAnswer"
+          },
+          {
+            question: "ExportQuestion",
+            answer: "ExportAnswer"
+          }
+        ],
+
+        downloads: [
+          {
+            title: "Technical Datasheet",
+            file: "/downloads/tmt-bars-datasheet.pdf",
+          },
+          {
+            title: "MSDS",
+            file: "/downloads/tmt-bars-msds.pdf",
+          },
+          {
+            title: "Test Certificate",
+            file: "/downloads/tmt-bars-test-certificate.pdf",
+          }
+        ]
+      },
+    ]
+  },
+
 ];
 
 export function getProductBySlug(slug: string): Product | undefined {
