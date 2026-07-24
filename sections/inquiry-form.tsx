@@ -127,6 +127,7 @@ export function InquiryForm({
                 id="phone"
                 type="tel"
                 name="phone"
+                required
                 placeholder="+91 98765 43210"
                 autoComplete="tel"
                 inputMode="tel"

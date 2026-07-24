@@ -6,6 +6,8 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
+import { useSearchParams } from "next/navigation";
+
 
 // TODO: replace with your real office/hiring locations
 const LOCATIONS = ["Ghaziabad, India", "Mumbai, India", "Dubai, UAE"];
@@ -29,6 +31,8 @@ interface FormErrors {
 type Status = "idle" | "submitting" | "success" | "error";
 
 export function JobApplicationForm() {
+  const searchParams = useSearchParams();
+  const positionFromUrl = searchParams.get("position") || "";
   const [status, setStatus] = useState<Status>("idle");
   const [errors, setErrors] = useState<FormErrors>({});
   const [serverError, setServerError] = useState<string | null>(null);
@@ -118,7 +122,7 @@ export function JobApplicationForm() {
 
   if (status === "success") {
     return (
-      <div className="mx-auto max-w-2xl rounded-xl border bg-white p-8 text-center shadow-sm">
+      <div className="mx-auto max-w-4xl rounded-xl border bg-white p-8 text-center shadow-sm">
         <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-green-100">
           <CheckCircle2 className="h-8 w-8 text-green-600" />
         </div>
@@ -134,8 +138,20 @@ export function JobApplicationForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="mx-auto max-w-2xl space-y-6 rounded-xl border py-24 bg-gradient-to-br from-industrial-blue/40 via-gunmetal to-charcoal p-8 shadow-sm" noValidate>
+    <form onSubmit={handleSubmit} className="mx-auto max-w-8xl space-y-6 rounded-xl border py-24 bg-gradient-to-br from-industrial-blue/40 via-gunmetal to-charcoal p-8 shadow-sm" noValidate>
       <div className="grid gap-5 sm:grid-cols-2">
+        {positionFromUrl && (
+          <div className="space-y-2">
+            <Label htmlFor="position">Job Position</Label>
+            <Input
+              id="position"
+              name="position"
+              value={positionFromUrl}
+              readOnly
+              className="cursor-not-allowed bg-gradient-to-br from-industrial-blue/40"
+            />
+          </div>
+        )}
         <div className="space-y-2">
           <Label htmlFor="name">Full Name</Label>
           <Input id="name" name="name" placeholder="Your full name" autoComplete="name" />
@@ -160,11 +176,11 @@ export function JobApplicationForm() {
             id="location"
             name="location"
             defaultValue=""
-            className="flex h-10 w-full rounded-md border border-input bg-transparent px-3 py-2 text-sm shadow-sm"
+            className="flex h-10 w-full rounded-md border border-input px-3 py-2 text-sm shadow-sm bg-gradient-to-br from-industrial-blue/40"
           >
-            <option value="" disabled>Select a location</option>
+            <option value="" disabled className="text-dark">Select a location</option>
             {LOCATIONS.map((loc) => (
-              <option key={loc} value={loc}>{loc}</option>
+              <option key={loc} value={loc} className="text-industrial-blue/80">{loc}</option>
             ))}
           </select>
           {errors.location && <p className="text-sm text-red-600">{errors.location}</p>}
@@ -189,17 +205,16 @@ export function JobApplicationForm() {
           onDragOver={(e) => { e.preventDefault(); setIsDragging(true); }}
           onDragLeave={() => setIsDragging(false)}
           onDrop={handleDrop}
-          className={`cursor-pointer rounded-lg border-2 border-dashed p-8 text-center transition-colors ${
-            isDragging ? "border-blue-500 bg-blue-50" : "border-gray-300"
-          }`}
+          className={`cursor-pointer rounded-lg border-2 border-dashed p-8 text-center transition-colors ${isDragging ? "border-blue-500 bg-blue-50" : "border-gray-300"
+            }`}
         >
           <UploadCloud className="mx-auto mb-2 h-6 w-6 text-gray-400" />
           {resumeFile ? (
             <p className="font-medium text-gray-900">{resumeFile.name}</p>
           ) : (
             <>
-              <p className="font-medium text-gray-900">Click to upload or drag and drop your resume</p>
-              <p className="text-sm text-gray-500">PDF, DOC, or DOCX — max 5MB</p>
+              <p className="font-medium text-gray-100">Click to upload or drag and drop your resume</p>
+              <p className="text-sm text-gray-400">PDF, DOC, or DOCX — max 5MB</p>
             </>
           )}
           <input ref={fileInputRef} type="file" accept=".pdf,.doc,.docx" className="hidden" onChange={handleFileInputChange} />

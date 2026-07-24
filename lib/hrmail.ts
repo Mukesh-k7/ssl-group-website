@@ -4,6 +4,7 @@ interface ApplicationMailInput {
   name: string;
   email: string;
   phone: string;
+  position?: string;
   location: string;
   experience: string;
   coverNote?: string;
@@ -15,6 +16,7 @@ export async function sendApplicationNotification(data: ApplicationMailInput) {
     `Name: ${data.name}`,
     `Email: ${data.email}`,
     `Phone: ${data.phone}`,
+    `Position Applied For: ${data.position || "-"}`,
     `Location Applying For: ${data.location}`,
     `Years of Experience: ${data.experience}`,
     "",
@@ -37,19 +39,18 @@ export async function sendApplicationNotification(data: ApplicationMailInput) {
     from: `"${data.name} (via Career Portal)" <${process.env.SMTP_USER}>`,
     replyTo: `"${data.name}" <${data.email}>`,
     to: process.env.HR_RECIPIENT_EMAIL || "shivani.yadav@sslgroup.in",
-    subject: `New Application — ${data.location} (${data.experience} exp) — ${data.name}`,
+    subject: `New Application — ${data.position || data.location} — ${data.name}`,
     text: lines.join("\n"),
   });
 }
 
-export async function sendCandidateConfirmation(data: Pick<ApplicationMailInput, "name" | "email" | "location">) {
+export async function sendCandidateConfirmation(data: Pick<ApplicationMailInput, "name" | "email" | "location" | "position">) {
   if (!smtpAvailable || !transporter) return;
 
-  // Best-effort — don't let a failure here block the application submission
   await transporter.sendMail({
     from: `"SSL Group Careers" <${process.env.SMTP_USER}>`,
     to: data.email,
     subject: `We've received your application — SSL Group`,
-    text: `Hi ${data.name},\n\nThanks for applying for the ${data.location} position at SSL Group. Our HR team will review your application and reach out if there's a match.\n\nBest,\nSSL Group Careers Team`,
+    text: `Hi ${data.name},\n\nThanks for applying for the ${data.position || data.location} position at SSL Group. Our HR team will review your application and reach out if there's a match.\n\nBest,\nSSL Group Careers Team`,
   });
 }

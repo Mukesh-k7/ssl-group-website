@@ -11,6 +11,8 @@ cloudinary.config({
   api_secret: process.env.CLOUDINARY_API_SECRET,
 });
 
+
+
 const MAX_FILE_SIZE = 5 * 1024 * 1024; // 5MB
 const ALLOWED_TYPES = [
   "application/pdf",
@@ -21,7 +23,7 @@ const ALLOWED_TYPES = [
 export async function POST(req: NextRequest) {
   try {
     const formData = await req.formData();
-
+    const position = formData.get("position")?.toString().trim();
     const name = formData.get("name")?.toString().trim();
     const email = formData.get("email")?.toString().trim();
     const phone = formData.get("phone")?.toString().trim();
@@ -57,12 +59,18 @@ export async function POST(req: NextRequest) {
     const bytes = await resume!.arrayBuffer();
     const buffer = Buffer.from(bytes);
 
+    const originalName = resume!.name; // e.g. "Mukesh_Maurya.pdf"
+    const extension = originalName.split(".").pop(); // "pdf" or "docx"
+    const safeBaseName = name!.replace(/\s+/g, "_");
+
     const uploadResult = await new Promise<{ secure_url: string }>((resolve, reject) => {
       const uploadStream = cloudinary.uploader.upload_stream(
         {
           folder: "ssl-group/resumes",
           resource_type: "raw",
-          public_id: `${Date.now()}-${name!.replace(/\s+/g, "_")}`,
+          public_id: `${Date.now()}-${safeBaseName}.${extension}`,
+          use_filename: false,
+          unique_filename: false,
         },
         (error, result) => {
           if (error || !result) return reject(error);
@@ -86,6 +94,7 @@ export async function POST(req: NextRequest) {
       name: name!,
       email: email!,
       phone: phone!,
+      position,
       location: location!,
       experience: experience!,
       coverNote,
@@ -93,7 +102,7 @@ export async function POST(req: NextRequest) {
     });
 
     try {
-      await sendCandidateConfirmation({ name: name!, email: email!, location: location! });
+      await sendCandidateConfirmation({ name: name!, email: email!, location: location!, position });
     } catch (err) {
       console.error("Candidate confirmation email failed:", err);
     }

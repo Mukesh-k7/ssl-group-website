@@ -9,6 +9,7 @@ import { Benefits, Jobopening, Recruitments, Culture, Departments, Worktype, Dom
 import { } from "react/jsx-runtime";
 import { useTranslations } from "next-intl";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 // Provide a minimal JSX.IntrinsicElements declaration to avoid
 // "JSX element implicitly has type 'any'" when react/jsx-runtime types
 // are not available in the environment.
@@ -238,15 +239,19 @@ export default function CareersPage({ i }: { i: number }) {
                   <span className="bg-white/5 text-[#94A3B8] text-xs px-2.5 py-1 rounded-full">{t(`jobs.${job.key}.location`)} </span>
                   <span className="bg-white/5 text-[#94A3B8] text-xs px-2.5 py-1 rounded-full">{t(`jobs.${job.key}.domain`)} </span>
                 </div>
-                <button
-                  onClick={() => router.push("/jobs")}
-                  className={`w-full py-2.5 rounded-lg text-xs font-bold transition-all cursor-pointer ${i === 0
+                <Link href={`/jobs?position=${encodeURIComponent(job.title)}`}>
+                  <button
+                    onClick={() => router.push("/jobs")}
+                    className={`w-full py-2.5 rounded-lg text-xs font-bold transition-all cursor-pointer ${i === 0
                       ? "bg-gradient-to-r from-[#F97316] to-[#EAB308] text-[#080C14]"
                       : "border border-white/10 text-white hover:bg-white/5"
-                    }`}
-                >
-                  {t("ApplyNow")}
-                </button>
+                      }`}
+                  >
+                    {t("ApplyNow")}
+                  </button>
+                </Link>
+
+
                 {/* <button
                   className={`w-full py-2.5 rounded-lg text-xs font-bold transition-all cursor-pointer ${i === 0
                     ? "bg-gradient-to-r from-[#F97316] to-[#EAB308] text-[#080C14]"

@@ -42,7 +42,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
   const product = getProductBySlug(slug);
   if (!product) notFound();
   const t = await getTranslations();
-  const related = products.filter((p) => p.slug !== slug).slice(0, 6);
+  const related = products.filter((p) => p.slug !== slug).slice(0, 9);
 
   return (
     <>
