@@ -94,7 +94,6 @@ export default async function RootLayout({
 
           <Footer />
          
-
           <div className="flex items-center justify-center">
             <ScrollToSection />
             <WhatsAppButton />

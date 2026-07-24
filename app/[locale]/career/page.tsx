@@ -8,6 +8,7 @@ import { StatsCounterSection } from "@/sections/stats-counter"
 import { Benefits, Jobopening, Recruitments, Culture, Departments, Worktype, Domain } from "@/data/site";
 import { } from "react/jsx-runtime";
 import { useTranslations } from "next-intl";
+import { useRouter } from "next/navigation";
 // Provide a minimal JSX.IntrinsicElements declaration to avoid
 // "JSX element implicitly has type 'any'" when react/jsx-runtime types
 // are not available in the environment.
@@ -20,7 +21,8 @@ declare global {
   }
 }
 
-export default function CareersPage() {
+export default function CareersPage({ i }: { i: number }) {
+  const router = useRouter();
   const t = useTranslations("careers");
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedDept, setSelectedDept] = useState("All Departments");
@@ -237,13 +239,22 @@ export default function CareersPage() {
                   <span className="bg-white/5 text-[#94A3B8] text-xs px-2.5 py-1 rounded-full">{t(`jobs.${job.key}.domain`)} </span>
                 </div>
                 <button
+                  onClick={() => router.push("/jobs")}
+                  className={`w-full py-2.5 rounded-lg text-xs font-bold transition-all cursor-pointer ${i === 0
+                      ? "bg-gradient-to-r from-[#F97316] to-[#EAB308] text-[#080C14]"
+                      : "border border-white/10 text-white hover:bg-white/5"
+                    }`}
+                >
+                  {t("ApplyNow")}
+                </button>
+                {/* <button
                   className={`w-full py-2.5 rounded-lg text-xs font-bold transition-all cursor-pointer ${i === 0
                     ? "bg-gradient-to-r from-[#F97316] to-[#EAB308] text-[#080C14]"
                     : "border border-white/10 text-white hover:bg-white/5"
                     }`}
                 >
-                  {t("ApplyNow")}
-                </button>
+                  
+                </button> */}
               </div>
             ))}
           </div>
