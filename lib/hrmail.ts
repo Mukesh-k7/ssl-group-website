@@ -9,6 +9,7 @@ interface ApplicationMailInput {
   experience: string;
   coverNote?: string;
   resumeUrl: string;
+  dob: string
 }
 
 export async function sendApplicationNotification(data: ApplicationMailInput) {
@@ -16,6 +17,7 @@ export async function sendApplicationNotification(data: ApplicationMailInput) {
     `Name: ${data.name}`,
     `Email: ${data.email}`,
     `Phone: ${data.phone}`,
+    `DOB: ${data.dob}`,
     `Position Applied For: ${data.position || "-"}`,
     `Location Applying For: ${data.location}`,
     `Years of Experience: ${data.experience}`,
@@ -39,7 +41,7 @@ export async function sendApplicationNotification(data: ApplicationMailInput) {
     from: `"${data.name} (via Career Portal)" <${process.env.SMTP_USER}>`,
     replyTo: `"${data.name}" <${data.email}>`,
     to: process.env.HR_RECIPIENT_EMAIL || "shivani.yadav@sslgroup.in",
-    subject: `New Application — ${data.position || data.location} — ${data.name}`,
+    subject: `New Application — ${data.position || data.location} — ${data.name} - ${data.dob}`,
     text: lines.join("\n"),
   });
 }

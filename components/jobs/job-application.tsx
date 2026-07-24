@@ -10,7 +10,7 @@ import { useSearchParams } from "next/navigation";
 
 
 // TODO: replace with your real office/hiring locations
-const LOCATIONS = ["Ghaziabad, India", "Mumbai, India", "Dubai, UAE"];
+const LOCATIONS = ["Ghaziabad", "Dubai", "UAE"];
 
 const MAX_FILE_SIZE = 5 * 1024 * 1024;
 const ALLOWED_TYPES = [
@@ -26,6 +26,7 @@ interface FormErrors {
   location?: string;
   experience?: string;
   resume?: string;
+  dob?: string
 }
 
 type Status = "idle" | "submitting" | "success" | "error";
@@ -81,14 +82,17 @@ export function JobApplicationForm() {
     const phone = data.get("phone")?.toString().trim();
     const location = data.get("location")?.toString().trim();
     const experience = data.get("experience")?.toString().trim();
+    const dob = data.get("dob")?.toString().trim()
 
     const newErrors: FormErrors = {};
     if (!name) newErrors.name = "Name is required.";
     if (!email) newErrors.email = "Email is required.";
     if (!phone) newErrors.phone = "Phone number is required.";
+    if (!dob) newErrors.dob = "Please enter your data of birth"
     if (!location) newErrors.location = "Please select a location.";
     if (!experience) newErrors.experience = "Experience is required.";
     if (!resumeFile) newErrors.resume = "Please attach your resume.";
+
 
     setErrors(newErrors);
     if (Object.keys(newErrors).length > 0) return;
@@ -162,6 +166,12 @@ export function JobApplicationForm() {
           <Input id="email" name="email" type="email" placeholder="you@example.com" autoComplete="email" />
           {errors.email && <p className="text-sm text-red-600">{errors.email}</p>}
         </div>
+
+        <div className="space-y-2">
+          <Label htmlFor="email">Date Of Birth</Label>
+          <Input id="dob" name="dob" type="dob" placeholder="08/10/1999" autoComplete="dob" />
+          {errors.dob && <p className="text-sm text-red-600">{errors.dob}</p>}
+        </div>
       </div>
 
       <div className="grid gap-5 sm:grid-cols-2">
@@ -210,7 +220,7 @@ export function JobApplicationForm() {
         >
           <UploadCloud className="mx-auto mb-2 h-6 w-6 text-gray-400" />
           {resumeFile ? (
-            <p className="font-medium text-gray-900">{resumeFile.name}</p>
+            <p className="font-medium text-gray-400">{resumeFile.name}</p>
           ) : (
             <>
               <p className="font-medium text-gray-100">Click to upload or drag and drop your resume</p>

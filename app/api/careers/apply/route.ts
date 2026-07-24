@@ -1,9 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { v2 as cloudinary } from "cloudinary";
 import { sendApplicationNotification, sendCandidateConfirmation } from "@/lib/hrmail";
-// TODO: import your existing candidate/application Mongoose model here, e.g.:
-// import { Candidate } from "@/models/Candidate";
-// import { connectDB } from "@/lib/db";
+
 
 cloudinary.config({
   cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
@@ -27,6 +25,7 @@ export async function POST(req: NextRequest) {
     const name = formData.get("name")?.toString().trim();
     const email = formData.get("email")?.toString().trim();
     const phone = formData.get("phone")?.toString().trim();
+    const dob = formData.get("dob")?.toString().trim()
     const location = formData.get("location")?.toString().trim();
     const experience = formData.get("experience")?.toString().trim();
     const coverNote = formData.get("coverNote")?.toString().trim();
@@ -38,6 +37,7 @@ export async function POST(req: NextRequest) {
     if (!email) errors.email = "Email is required.";
     if (!phone) errors.phone = "Phone number is required.";
     if (!location) errors.location = "Please select a location.";
+    if (!dob) errors.dob = "Please enter your data of birth"
     if (!experience) errors.experience = "Experience is required.";
     if (!resume || resume.size === 0) errors.resume = "Please attach your resume.";
 
@@ -80,21 +80,12 @@ export async function POST(req: NextRequest) {
       uploadStream.end(buffer);
     });
 
-    // TODO: persist to MongoDB so this shows up in your HR pipeline
-    // (Applied → Shortlisted → Interview → Hired/Rejected). Example:
-    //
-    // await connectDB();
-    // await Candidate.create({
-    //   name, email, phone, location, experience, coverNote,
-    //   resumeUrl: uploadResult.secure_url,
-    //   status: "Applied",
-    // });
-
     await sendApplicationNotification({
       name: name!,
       email: email!,
       phone: phone!,
       position,
+      dob: dob!,
       location: location!,
       experience: experience!,
       coverNote,
