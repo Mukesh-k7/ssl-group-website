@@ -376,8 +376,8 @@ const [dropdownOpen, setDropdownOpen] = useState(false);
               <AlertCircle className="mt-0.5 h-4 w-4 shrink-0" />
               <p>
                 Submit Error{" "}
-                <a href="mailto:mukesh.shivaniy0795@gmail.com" className="underline">
-                  mukesh.shivaniy0795@gmail.com
+                <a href="mailto:md@sslgroup.in" className="underline">
+                  md@sslgroup.in
                 </a>
                 .
               </p>
