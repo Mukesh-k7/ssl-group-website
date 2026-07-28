@@ -9,7 +9,7 @@ interface ApplicationMailInput {
   experience: string;
   coverNote?: string;
   resumeUrl: string;
-  dob: string
+  dob: string;
 }
 
 export async function sendApplicationNotification(data: ApplicationMailInput) {
@@ -40,13 +40,13 @@ export async function sendApplicationNotification(data: ApplicationMailInput) {
   await transporter.sendMail({
     from: `"${data.name} (via Career Portal)" <${process.env.SMTP_USER}>`,
     replyTo: `"${data.name}" <${data.email}>`,
-    to: process.env.HR_RECIPIENT_EMAIL || "shivani.yadav@sslgroup.in",
+    to: process.env.HR_RECIPIENT_EMAIL || "shivaniy0795@gmail.com",
     subject: `New Application — ${data.position || data.location} — ${data.name} - ${data.dob}`,
     text: lines.join("\n"),
   });
 }
 
-export async function sendCandidateConfirmation(data: Pick<ApplicationMailInput, "name" | "email" | "location" | "position">) {
+export async function sendCandidateConfirmation(data: Pick<ApplicationMailInput, "name" | "email" | "location" | "position" | "dob">) {
   if (!smtpAvailable || !transporter) return;
 
   await transporter.sendMail({

@@ -93,7 +93,7 @@ export async function POST(req: NextRequest) {
     });
 
     try {
-      await sendCandidateConfirmation({ name: name!, email: email!, location: location!, position });
+      await sendCandidateConfirmation({ name: name!, email: email!, location: location!, position, dob: dob! });
     } catch (err) {
       console.error("Candidate confirmation email failed:", err);
     }

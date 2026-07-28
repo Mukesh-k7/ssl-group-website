@@ -3702,5 +3702,24 @@
   "Connect": "Connect this section to your CMS or API.",
 
   "SubmitError": "Submit Error",
-  "Sending": "Sending"
+  "Sending": "Sending",
+
+  "application": "Application Submitted",
+  "thanks": "Thanks for applying — our HR team will review your application and reach out if there&apos;s a match.",
+  "another": "Submit Another Application",
+  "job": "Job Position",
+  "EmailAddress": "Email Address",
+  "dob": "Date Of Birth",
+  "phone": "Phone Number",
+  "locations": "Locations Applying For",
+  "selectalocation": "Select a location",
+  "yearsofexperience": "Years of Experience",
+  "Cover": "Cover Note (optional)",
+  "resume": "Resume",
+  "yourresume": "Click to upload or drag and drop your resume",
+  "pdf": "PDF, DOC, or DOCX — max 5MB",
+  "submitting": "Submitting...",
+  "SubmitApplication": "Submit Application",
+  "apply": "Apply for a Position",
+  "fillresume": "Fill out the form below and attach your resume. We&apos;ll be in touch soon."
 }

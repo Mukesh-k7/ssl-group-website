@@ -6,6 +6,7 @@ import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
 import { WhatsAppButton } from "@/components/shared/whatsapp-button";
 import ScrollToSection from "@/components/shared/scroll-to-top";
+import { Chatbot } from "@/components/chatbot/chat";
 
 
 import {
@@ -91,14 +92,17 @@ export default async function RootLayout({
           <Navbar />
 
           <main>{children}</main>
+          <Chatbot />
 
           <Footer />
-         
+
           <div className="flex items-center justify-center">
+
             <ScrollToSection />
             <WhatsAppButton />
           </div>
         </NextIntlClientProvider>
       </body>
     </html>
-  )}
+  )
+}
