@@ -38,7 +38,7 @@ export default function CareersPage() {
             </button>
           </div>
         </section>
-        <section id="jobs" className="mx-auto max-w-7xl px-6 pb-16">
+        <section id="jobs" className="px-6 pb-16">
           <div className="rounded-2xl border border-white/10 p-8">
             <h2 className="text-2xl font-semibold">{t("OpenPositions")} </h2>
             <p className="mt-2 text-slate-400">
