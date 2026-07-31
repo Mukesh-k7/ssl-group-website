@@ -400,7 +400,7 @@ export default function CareersPage({ i }: { i: number }) {
                     <div className="text-3xl font-black text-[#FFF]">{step.step} </div>
                   </div>
                   <div className="text-white font-bold text-sm mb-2">{t(`process.${step.key}.title`)}</div>
-                  <div className="text-[#64748B] text-xs leading-relaxed"> {t(`process.${step.key}.description`)} </div>
+                  <div className="text-[#94A3B8] text-xs leading-relaxed"> {t(`process.${step.key}.description`)} </div>
                 </div>
               </div>
             ))}

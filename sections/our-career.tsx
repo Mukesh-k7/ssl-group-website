@@ -50,20 +50,31 @@ export default function CareersPage() {
 
 
       {open && (
-        <div className="fixed inset-0 bg-black/60 flex items-center justify-center z-50">
+        <div className="fixed inset-0 bg-black/60 flex items-center justify-center z-[10000]">
           <div className="bg-white rounded-xl p-6 w-[380px]">
-            <h2 className="text-2xl font-bold mb-5">Contact HR</h2>
+            <h2 className="text-2xl font-bold mb-5">{t("ContactHR")}</h2>
 
             <div className="space-y-4">
 
               <a
                 href="tel:+9192174 00795"
+                className="flex items-center gap-3 p-3 rounded-lg border hover:bg-gray-100 bg-gradient-to-br from-[#f38203] via-[#c3bd70] to-[#97724c]"
+              >
+                <Phone />
+                <div>
+                  <p className="font-semibold">{t("CallHR")}</p>
+                  <p className="text-gray-200">+91 92174 00795</p>
+                </div>
+              </a>
+              <br></br>
+              <a
+                href="tel:+919599053451"
                 className="flex items-center gap-3 p-3 rounded-lg border hover:bg-gray-100 bg-gradient-to-br from-industrial-blue/40 via-gunmetal to-charcoal"
               >
                 <Phone />
                 <div>
-                  <p className="font-semibold">Call HR</p>
-                  <p className="text-gray-500">+91 92174 00795</p>
+                  <p className="font-semibold">{t("SeniorHR")}</p>
+                  <p className="text-gray-400">+91 95602 59699</p>
                 </div>
               </a>
 
@@ -74,8 +85,8 @@ export default function CareersPage() {
               >
                 <MessageCircle className="text-green-600" />
                 <div>
-                  <p className="font-semibold">WhatsApp HR</p>
-                  <p className="text-gray-500">Start Chat</p>
+                  <p className="font-semibold"> {t("WhatsAppHR")} </p>
+                  <p className="text-[#fff]"> {t("StartChat")}</p>
                 </div>
               </a>
 
@@ -85,8 +96,8 @@ export default function CareersPage() {
               >
                 <Mail />
                 <div>
-                  <p className="font-semibold">Email HR</p>
-                  <p className="text-gray-500">hr@sslgroup.com</p>
+                  <p className="font-semibold"> {t("EmailHR")} </p>
+                  <p className="text-gray-400">hr@sslgroup.com</p>
                 </div>
               </a>
 
@@ -96,7 +107,7 @@ export default function CareersPage() {
               onClick={() => setOpen(false)}
               className="mt-6 w-full bg-blue-600 text-white py-2 rounded-lg cursor-pointer hover:bg-blue-700 transition"
             >
-              Close
+              {t("Close")}
             </button>
           </div>
         </div>

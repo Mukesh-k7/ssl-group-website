@@ -81,14 +81,14 @@ export function Chatbot() {
       {/* Floating toggle button — orange brand accent */}
       <button
         onClick={() => setIsOpen((prev) => !prev)}
-        className="fixed bottom-6 right-6 z-50 flex h-16 w-16 items-center justify-center rounded-full bg-[#F97316] text-white shadow-lg transition-colors hover:bg-[#EAB308] fixed top-1/2 -translate-y-1/2"
+        className="fixed bottom-6 right-6 z-[1000] flex h-16 w-16 items-center justify-center rounded-full bg-[#F97316] text-white shadow-lg transition-colors hover:bg-[#EAB308] fixed top-1/2 -translate-y-1/2"
         aria-label="Open chat"
       >
         {isOpen ? <X className="h-6 w-6" /> : <MessageCircle className="h-6 w-6" />}
       </button>
 
       {isOpen && (
-        <div className="fixed bottom-24 right-6 z-50 flex h-[450px] w-[300px] flex-col rounded-xl border border-[#F97316]/20 bg-white shadow-2xl">
+        <div className="fixed bottom-24 right-6 z-[1000] flex h-[450px] w-[300px] flex-col rounded-xl border border-[#F97316]/20 bg-white shadow-2xl">
           {/* Header — dark brand background */}
           <div className="flex items-center justify-between rounded-t-xl bg-[#080C14] px-4 py-3">
             <div>

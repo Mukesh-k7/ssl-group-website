@@ -3485,7 +3485,7 @@
       },
       "finalInterview": {
         "title": "Final Interview",
-        "description": "Meet with department heads and leadership. Offer letter issued within 5 working days post-interview."
+        "description": "Meet with department heads and leadership. Offer letter issued within 6 working days post-interview."
       }
     },
     "culture": {
@@ -3721,5 +3721,15 @@
   "submitting": "Submitting...",
   "SubmitApplication": "Submit Application",
   "apply": "Apply for a Position",
-  "fillresume": "Fill out the form below and attach your resume. We&apos;ll be in touch soon."
+  "fillresume": "Fill out the form below and attach your resume. We&apos;ll be in touch soon.",
+  "CallHR": "Call HR",
+  "WhatsAppHR": "WhatsApp HR",
+  "StartChat": "Start Chat",
+  "EmailHR": "Email HR",
+  "Close": "Close",
+  "SeniorHR": "Senior HR",
+
+  "Found": "Page Not Found",
+  "exist": "The page you are looking for may have been moved or does not exist on",
+  "Return": "Return Home"
 }
