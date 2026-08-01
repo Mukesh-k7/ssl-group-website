@@ -9,6 +9,7 @@ import { Benefits, Jobopening, Recruitments, Culture, Departments, Worktype, Dom
 import { } from "react/jsx-runtime";
 import { useTranslations } from "next-intl";
 import { useRouter } from "next/navigation";
+import CareerListing from "./../product-listing/page";
 import Link from "next/link";
 // Provide a minimal JSX.IntrinsicElements declaration to avoid
 // "JSX element implicitly has type 'any'" when react/jsx-runtime types
@@ -215,7 +216,9 @@ export default function CareersPage({ i }: { i: number }) {
           </div>
 
           {/* Job Cards Grid */}
+          <CareerListing />
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+
             {visibleJobs.map((job, i) => (
               <div
                 key={i}

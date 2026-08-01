@@ -15,7 +15,6 @@ export const metadata: Metadata = {
 export default function PrivacyPolicyPage() {
     const t = useTranslations("privatepolicy");
 
-
     const sections = [
         {
             title: t("Information"),

@@ -62,7 +62,7 @@ export function InquiryForm({
 
   const dropdownRef = useRef<HTMLDivElement>(null);
   const [search, setSearch] = useState("");
-const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
 
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
@@ -376,8 +376,8 @@ const [dropdownOpen, setDropdownOpen] = useState(false);
               <AlertCircle className="mt-0.5 h-4 w-4 shrink-0" />
               <p>
                 Submit Error{" "}
-                <a href="mailto:md@sslgroup.in" className="underline">
-                  md@sslgroup.in
+                <a href="mailto:export@sslgroup.in" className="underline">
+                  export@sslgroup.in
                 </a>
                 .
               </p>

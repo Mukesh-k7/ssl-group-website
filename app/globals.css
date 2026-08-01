@@ -69,3 +69,8 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--industrial-blue);
 }
+
+
+.min-h-screen {
+    min-height: 83px!important;
+}
