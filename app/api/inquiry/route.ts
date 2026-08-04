@@ -84,7 +84,7 @@ export async function POST(req: NextRequest) {
     await transporter.sendMail({
       from: `"${name} (via SSL Group Website)" <${process.env.SMTP_USER}>`,
       replyTo: `"${name}" <${email}>`,
-      to: process.env.INQUIRY_RECIPIENT || "export@sslgroup.in",
+      to: process.env.INQUIRY_RECIPIENT || "pawanray@sslgroup.in",
       subject: `SSL Group - New ${isExport ? "Export " : ""}Inquiry from ${company}`,
       text: lines.join("\n"),
     });
