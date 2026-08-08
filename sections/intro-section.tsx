@@ -67,7 +67,7 @@ export function IntroSection() {
                 font-heading font-bold
               "
             >
-               {t("IndiaPremierMetallurgyExportHouse")}
+              {t("IndiaPremierMetallurgyExportHouse")}
             </h2>
             <p
               className="
@@ -76,7 +76,7 @@ export function IntroSection() {
               "
             >
               {t("description1")}
-             
+
             </p>
             <p
               className="
@@ -85,7 +85,7 @@ export function IntroSection() {
               "
             >
               {t("description2")}
-              
+
             </p>
             <Button
               className="
@@ -94,7 +94,7 @@ export function IntroSection() {
               asChild
             >
               <Link href="#about-content">
-                 {t("OurStory")}
+                {t("OurStory")}
                 <ArrowRight
                   className="
                     w-4 h-4
@@ -149,7 +149,7 @@ export function IntroSection() {
                     text-sm text-metallic
                   "
                 >
-                   {t("GhaziabadGlobalExportOperations")}
+                  {t("GhaziabadGlobalExportOperations")}
                 </p>
               </div>
             </div>

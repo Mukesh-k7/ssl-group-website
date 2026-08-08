@@ -11,7 +11,7 @@ import {
   AnimatedSection,
   SectionHeader,
 } from "@/components/shared/animated-section";
-import { ProductCard }  from "@/components/products/product-card";
+import { ProductCard } from "@/components/products/product-card";
 import { Button } from "@/components/ui/button";
 import { products } from "@/data/products";
 import type { Product } from "@/types";

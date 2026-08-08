@@ -3700,10 +3700,8 @@
   "ContactHR": "Contact HR",
   "OpenPositions": "Open Positions",
   "Connect": "Connect this section to your CMS or API.",
-
   "SubmitError": "Submit Error",
   "Sending": "Sending",
-
   "application": "Application Submitted",
   "thanks": "Thanks for applying — our HR team will review your application and reach out if there&apos;s a match.",
   "another": "Submit Another Application",
@@ -3728,7 +3726,6 @@
   "EmailHR": "Email HR",
   "Close": "Close",
   "SeniorHR": "Senior HR",
-
   "Found": "Page Not Found",
   "exist": "The page you are looking for may have been moved or does not exist on",
   "Return": "Return Home"

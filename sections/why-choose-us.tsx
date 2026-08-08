@@ -65,13 +65,7 @@ export function WhyChooseUsSection() {
             return (
               <StaggerItem key={item.key}>
                 <div
-                  className="
-h-full 
-p-6 
-bg-charcoal hover:bg-gradient-to-br from-industrial-blue/40 via-gunmetal to-charcoal
-rounded-xl 
-transition-all group 
-                  "
+                  className="h-full p-6 bg-charcoal hover:bg-gradient-to-br from-industrial-blue/40 via-gunmetal to-charcoal rounded-xl transition-all group"
                 >
                   <div
                     className="

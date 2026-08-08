@@ -9,19 +9,7 @@ import {
 } from "@/components/shared/animated-section";
 import { exportRegions } from "@/data/site";
 import { useTranslations } from "next-intl";
-
-
-// export type AnimatedSectionProps = {
-//   id: string
-//   className?: string
-//   style?: React.CSSProperties
-// }
-
 export function ExportMapSection() {
-
-  //   const sectionStyle: React.CSSProperties = {
-  //   background: "linear-gradient(135deg, #3D3F38, #6B8FA0, #9B6E7C, #C8B87A, #9DA09A)",
-  // };
   const t = useTranslations('export');
 
   return (
@@ -107,12 +95,7 @@ export function ExportMapSection() {
                     {(t.raw(`${region.key}.Countries`) as string[]).map((country) => (
                       <span
                         key={country}
-                        className="
-      px-3 py-1
-      text-xs text-metallic
-      bg-charcoal/60
-      rounded-full border border-white/10
-    "
+                        className="px-3 py-1 text-xs text-metallic bg-charcoal/60 rounded-full border border-white/10"
                       >
                         {country}
                       </span>

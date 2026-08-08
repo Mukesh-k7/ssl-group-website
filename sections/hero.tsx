@@ -158,16 +158,6 @@ export function HeroSection() {
               "
             >
               {t("GlobalMetallurgy")} {t("TrustedSupply")}
-              {/* <span
-                className="
-                  block
-                  text-transparent
-                  bg-gradient-to-r bg-clip-text from-metallic via-white
-                  to-metallic
-                "
-              >
-                .
-              </span> */}
             </motion.h1>
             <motion
               .p
@@ -206,15 +196,6 @@ export function HeroSection() {
                 </Link>
               </Button>
               <Button size="lg" variant="secondary" asChild>
-                {/* <a href={company.catalogUrl}>
-                  <Download
-                    className="
-                      h-5 w-5
-                    "
-                    /
-                  >
-                  Download Catalog
-                </a> */}
                 <a href={"https://www.sslgroup.in/images/ssl-brouchser-final.pdf"} target="_blank" rel="noopener noreferrer">
                   <Download
                     className="
@@ -225,9 +206,6 @@ export function HeroSection() {
                   {t("DownloadCatalog")}
                 </a>
               </Button>
-
-              {/* <h1>{t("title")}</h1>
-              <p>{t("subtitle")}</p> */}
             </motion.div>
 
             <motion

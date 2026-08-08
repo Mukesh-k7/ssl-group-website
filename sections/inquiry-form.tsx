@@ -9,7 +9,6 @@ import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { useTranslations, useLocale } from "next-intl";
 import { getCountries, getCountryCallingCode } from "libphonenumber-js";
-import { useSearchParams } from "next/navigation";
 import { ChevronDown } from "lucide-react";
 
 interface InquiryFormProps {
@@ -92,8 +91,6 @@ export function InquiryForm({
     if (!ALLOWED_TYPES.includes(file.type)) return "File must be a PDF, DOC, or DOCX.";
     return null;
   };
-
-
 
   const handleFileSelect = (file: File) => {
     const error = validateFile(file);
