@@ -9,8 +9,9 @@ import { Benefits, Jobopening, Recruitments, Culture, Departments, Worktype, Dom
 import { } from "react/jsx-runtime";
 import { useTranslations } from "next-intl";
 import { useRouter } from "next/navigation";
-import CareerListing from "./../product-listing/page";
 import Link from "next/link";
+// import CareerListing from "./../product-listing/page";
+
 // Provide a minimal JSX.IntrinsicElements declaration to avoid
 // "JSX element implicitly has type 'any'" when react/jsx-runtime types
 // are not available in the environment.
@@ -216,7 +217,7 @@ export default function CareersPage({ i }: { i: number }) {
           </div>
 
           {/* Job Cards Grid */}
-          <CareerListing />
+          {/* <CareerListing /> */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
 
             {visibleJobs.map((job, i) => (
@@ -253,16 +254,6 @@ export default function CareersPage({ i }: { i: number }) {
                     {t("ApplyNow")}
                   </button>
                 </Link>
-
-
-                {/* <button
-                  className={`w-full py-2.5 rounded-lg text-xs font-bold transition-all cursor-pointer ${i === 0
-                    ? "bg-gradient-to-r from-[#F97316] to-[#EAB308] text-[#080C14]"
-                    : "border border-white/10 text-white hover:bg-white/5"
-                    }`}
-                >
-                  
-                </button> */}
               </div>
             ))}
           </div>
@@ -330,11 +321,6 @@ export default function CareersPage({ i }: { i: number }) {
                     }`}
                 >
                   <div className={`mb-4 ${i === 1 ? "text-[#F97316]" : "text-[#475569]"} group-hover:text-[#F97316] transition-colors`}>
-                    {/* {(() => {
-                      const Icon = b.icon;
-                      return typeof Icon === "function" ? <Icon className="w-8 h-8" /> : Icon;
-                    })()} */}
-                    {/* {b.icon} */}
                     <b.icon />
                   </div>
                   <div className="text-white font-bold text-sm mb-2">{t(`benefits.${b.key}.title`)}</div>

@@ -40,7 +40,7 @@ export async function sendApplicationNotification(data: ApplicationMailInput) {
   await transporter.sendMail({
     from: `"${data.name} (via Career Portal)" <${process.env.SMTP_USER}>`,
     replyTo: `"${data.name}" <${data.email}>`,
-    to: process.env.HR_RECIPIENT_EMAIL || "shivaniy0795@gmail.com",
+    to: process.env.HR_RECIPIENT_EMAIL || "hr@sslgroup.in",
     subject: `New Application — ${data.position || data.location} — ${data.name} - ${data.dob}`,
     text: lines.join("\n"),
   });

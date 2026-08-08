@@ -68,7 +68,7 @@ export default function CareersPage() {
               </a>
               <br></br>
               <a
-                href="tel:+919599053451"
+                href="tel:+919560259699"
                 className="flex items-center gap-3 p-3 rounded-lg border hover:bg-gray-100 bg-gradient-to-br from-industrial-blue/40 via-gunmetal to-charcoal"
               >
                 <Phone />
@@ -79,7 +79,7 @@ export default function CareersPage() {
               </a>
 
               <a
-                href="https://wa.me/919217400795"
+                href="https://wa.me/919560259699"
                 target="_blank"
                 className="flex items-center gap-3 p-3 rounded-lg border hover:bg-green-50 bg-gradient-to-br from-green-500/40 via-green-600 to-green-700"
               >
@@ -91,13 +91,13 @@ export default function CareersPage() {
               </a>
 
               <a
-                href="mailto:shivani.yadav@sslgroup.com"
+                href="mailto:hr@sslgroup.in"
                 className="flex items-center gap-3 p-3 rounded-lg border hover:bg-gray-100 bg-gradient-to-br from-industrial-blue/40 via-gunmetal to-charcoal"
               >
                 <Mail />
                 <div>
                   <p className="font-semibold"> {t("EmailHR")} </p>
-                  <p className="text-gray-400">hr@sslgroup.com</p>
+                  <p className="text-gray-400">hr@sslgroup.in</p>
                 </div>
               </a>
 

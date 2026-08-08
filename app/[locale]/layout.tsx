@@ -90,14 +90,10 @@ export default async function RootLayout({
           messages={messages}
         >
           <Navbar />
-
           <main>{children}</main>
           <Chatbot />
-
           <Footer />
-
           <div className="flex items-center justify-center">
-
             <ScrollToSection />
             <WhatsAppButton />
           </div>

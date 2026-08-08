@@ -39,7 +39,7 @@ export default function GlobalPresencePage() {
             title={t("Regional")}
             description={t("Teams")}
             titleClassName="font-heading font-bold text-3xl text-black md:text-4xl lg:text-5xl
-          tracking-tight"
+            tracking-tight"
             descriptionClassName="mt-4
             text-lg text-industrial-blue/70 leading-relaxed"
             align="center"

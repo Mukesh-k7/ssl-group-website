@@ -204,7 +204,6 @@ export default function PrivacyPolicyPage() {
                                 <strong>SSL Group</strong>
                             </p>
 
-
                             <ul className="space-y-4">
                                 <li className="flex text-sm gap-3">
                                     <Link

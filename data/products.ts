@@ -55,7 +55,6 @@ export const products: Product[] = [
         ],
         technicalTables: [
           {
-
             title: "ChemicalComposition",
             headers: ["Grade", "C", "Si", "Mn", "P", "S"],
             rows: [
@@ -726,7 +725,6 @@ export const products: Product[] = [
         technicalTables: [
           {
             title: "ChemicalComposition",
-
             headers: ["Grade", "Cr", "C", "Si", "P", "S"],
 
             rows: [
@@ -737,7 +735,6 @@ export const products: Product[] = [
 
           {
             title: "PhysicalProperties",
-
             headers: ["Property", "Value"],
 
             rows: [
@@ -827,7 +824,6 @@ export const products: Product[] = [
         technicalTables: [
           {
             title: "ChemicalComposition",
-
             headers: ["Grade", "Si", "Mg", "Ca", "RE", "Fe"],
 
             rows: [
@@ -838,7 +834,6 @@ export const products: Product[] = [
 
           {
             title: "PhysicalProperties",
-
             headers: ["Property", "Value"],
 
             rows: [
@@ -927,7 +922,6 @@ export const products: Product[] = [
         technicalTables: [
           {
             title: "ChemicalComposition",
-
             headers: ["Grade", "Si", "Mg", "Ca", "RE", "Fe"],
 
             rows: [
@@ -938,7 +932,6 @@ export const products: Product[] = [
 
           {
             title: "PhysicalProperties",
-
             headers: ["Property", "Value"],
 
             rows: [
@@ -1027,7 +1020,6 @@ export const products: Product[] = [
         technicalTables: [
           {
             title: "ChemicalComposition",
-
             headers: ["Grade", "Si", "Ca", "Al", "Ba", "Fe"],
 
             rows: [
@@ -1038,7 +1030,6 @@ export const products: Product[] = [
 
           {
             title: "PhysicalProperties",
-
             headers: ["Property", "Value"],
 
             rows: [
@@ -1149,7 +1140,6 @@ export const products: Product[] = [
         technicalTables: [
           {
             title: "ChemicalComposition",
-
             headers: ["Grade", "FC", "Ash", "VM", "Moisture", "Sulfur"],
 
             rows: [
@@ -1161,7 +1151,6 @@ export const products: Product[] = [
 
           {
             title: "PhysicalProperties",
-
             headers: ["Property", "Value"],
 
             rows: [
@@ -1961,7 +1950,6 @@ export const products: Product[] = [
         technicalTables: [
           {
             title: "ChemicalComposition",
-
             headers: ["Grade", "FC", "Ash", "VM", "Moisture", "S"],
 
             rows: [
@@ -1972,7 +1960,6 @@ export const products: Product[] = [
 
           {
             title: "PhysicalProperties",
-
             headers: ["Property", "Value"],
 
             rows: [
@@ -2072,7 +2059,6 @@ export const products: Product[] = [
         technicalTables: [
           {
             title: "ChemicalComposition",
-
             headers: ["Grade", "FC", "Ash", "VM", "Moisture", "S"],
 
             rows: [
@@ -2083,7 +2069,6 @@ export const products: Product[] = [
 
           {
             title: "PhysicalProperties",
-
             headers: ["Property", "Value"],
 
             rows: [
@@ -2207,7 +2192,6 @@ export const products: Product[] = [
         technicalTables: [
           {
             title: "ChemicalComposition",
-
             headers: ["Grade", "C", "Si", "Mn", "S", "P"],
 
             rows: [
@@ -2219,7 +2203,6 @@ export const products: Product[] = [
 
           {
             title: "PhysicalProperties",
-
             headers: ["Property", "Value"],
 
             rows: [
@@ -2319,7 +2302,6 @@ export const products: Product[] = [
         technicalTables: [
           {
             title: "ChemicalComposition",
-
             headers: ["Grade", "C", "Si", "Mn", "S", "P"],
 
             rows: [
@@ -2331,7 +2313,6 @@ export const products: Product[] = [
 
           {
             title: "PhysicalProperties",
-
             headers: ["Property", "Value"],
 
             rows: [
@@ -2516,7 +2497,6 @@ export const products: Product[] = [
         technicalTables: [
           {
             title: "ChemicalComposition",
-
             headers: ["Grade", "SiC", "FC", "Fe₂O₃", "Moisture"],
 
             rows: [
@@ -2529,7 +2509,6 @@ export const products: Product[] = [
 
           {
             title: "PhysicalProperties",
-
             headers: ["Property", "Value"],
 
             rows: [
@@ -2618,7 +2597,6 @@ export const products: Product[] = [
         technicalTables: [
           {
             title: "ChemicalComposition",
-
             headers: ["Grade", "SiC", "FC", "Fe₂O₃", "Moisture"],
 
             rows: [
@@ -2630,7 +2608,6 @@ export const products: Product[] = [
 
           {
             title: "PhysicalProperties",
-
             headers: ["Property", "Value"],
 
             rows: [
@@ -2719,7 +2696,6 @@ export const products: Product[] = [
         technicalTables: [
           {
             title: "ChemicalComposition",
-
             headers: ["Grade", "CaC₂", "Gas Yield", "PH₃", "H₂S"],
 
             rows: [
@@ -2731,7 +2707,6 @@ export const products: Product[] = [
 
           {
             title: "PhysicalProperties",
-
             headers: ["Property", "Value"],
 
             rows: [
@@ -2854,7 +2829,6 @@ export const products: Product[] = [
         technicalTables: [
           {
             title: "ChemicalComposition",
-
             headers: ["Grade", "CaCO₃", "CaO", "MgO", "SiO₂", "Size"],
 
             rows: [
@@ -3321,7 +3295,6 @@ export const products: Product[] = [
         technicalTables: [
           {
             title: "ChemicalComposition",
-
             headers: ["Grade", "Fixed Carbon", "Ash", "Moisture", "Volatile Matter"],
 
             rows: [
@@ -3545,7 +3518,6 @@ export const products: Product[] = [
         technicalTables: [
           {
             title: "ChemicalComposition",
-
             headers: ["Grade", "Fixed Carbon", "Expansion Volume", "Moisture", "Particle Size"],
 
             rows: [
@@ -3557,7 +3529,6 @@ export const products: Product[] = [
 
           {
             title: "PhysicalProperties",
-
             headers: ["Property", "Value"],
 
             rows: [
@@ -3679,7 +3650,6 @@ export const products: Product[] = [
         technicalTables: [
           {
             title: "ChemicalComposition",
-
             headers: [
               "Grade",
               "Carbon",
@@ -3698,7 +3668,6 @@ export const products: Product[] = [
 
           {
             title: "PhysicalProperties",
-
             headers: ["Property", "Value"],
 
             rows: [
@@ -3796,7 +3765,6 @@ export const products: Product[] = [
         technicalTables: [
           {
             title: "ChemicalComposition",
-
             headers: [
               "Grade",
               "Carbon",
@@ -3815,9 +3783,7 @@ export const products: Product[] = [
 
           {
             title: "PhysicalProperties",
-
             headers: ["Property", "Value"],
-
             rows: [
               ["Appearance", "Solid Steel Bloom"],
               ["Shape", "Square / Rectangular"],
@@ -3913,7 +3879,6 @@ export const products: Product[] = [
         technicalTables: [
           {
             title: "ChemicalComposition",
-
             headers: [
               "Grade",
               "Carbon",
@@ -3932,7 +3897,6 @@ export const products: Product[] = [
 
           {
             title: "PhysicalProperties",
-
             headers: ["Property", "Value"],
 
             rows: [
@@ -4030,7 +3994,6 @@ export const products: Product[] = [
         technicalTables: [
           {
             title: "ChemicalComposition",
-
             headers: [
               "Grade",
               "Carbon",
@@ -4049,7 +4012,6 @@ export const products: Product[] = [
 
           {
             title: "PhysicalProperties",
-
             headers: ["Property", "Value"],
 
             rows: [
@@ -4147,7 +4109,6 @@ export const products: Product[] = [
         technicalTables: [
           {
             title: "ChemicalComposition",
-
             headers: [
               "Grade",
               "Carbon",
@@ -4166,7 +4127,6 @@ export const products: Product[] = [
 
           {
             title: "PhysicalProperties",
-
             headers: ["Property", "Value"],
 
             rows: [
@@ -4264,7 +4224,6 @@ export const products: Product[] = [
         technicalTables: [
           {
             title: "ChemicalComposition",
-
             headers: [
               "Grade",
               "Carbon",
@@ -4283,7 +4242,6 @@ export const products: Product[] = [
 
           {
             title: "PhysicalProperties",
-
             headers: ["Property", "Value"],
 
             rows: [

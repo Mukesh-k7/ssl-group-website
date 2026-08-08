@@ -12,7 +12,6 @@ import { company, navigation } from "@/data/site";
 import { cn } from "@/lib/utils";
 import LanguageSwitcher from "@/components/layout/LanguageSwitcher";
 import { useTranslations } from 'next-intl';
-// import Globe from "./globe";
 
 const locales = ["en", "hi", "ar"];
 
@@ -57,9 +56,6 @@ function getActiveHref(pathname: string, itemHref: string) {
       return `#${anchorId}`;
     }
   }
-  // if (pathname === "/about" && itemHref === "/about") {
-  //   return "#about-content";
-  // }
   return itemHref;
 }
 export function Navbar() {
@@ -78,7 +74,7 @@ export function Navbar() {
   useEffect(() => {
     setIsOpen(false);
   }, [pathname]);
-  // bg-gradient-to-l from-[#F97316] to-[#EAB308] text-[#080C14]bg-gradient-to-r from-[#F97316] to-[#EAB308] text-[#080C14]" bg-gradient-to-l from-[#a75500] via-[#f9884b] to-[#f3d3b0] py-3 shadow-2xl shadow-black/40 backdrop-blur-xl  bg-[linear-gradient(135deg,#7B3000_0%,#C25A00_40%,#E8820A_70%,#A84800_100%)]
+ 
 
   return (
     <header
@@ -89,7 +85,7 @@ export function Navbar() {
           : "bg-white py-5 text-black"
       )}
     >
-      {/* bg-[linear-gradient(140deg,#f1edea_0%,#f3892d_40%,#E8820A_70%,#A84800_100%)] */}
+      
       <nav
         className="
           container flex items-center justify-between
@@ -326,7 +322,7 @@ export function Navbar() {
               <div
                 className="flex flex-col mt-4 pt-4 border-t border-white/10 gap-2"
               >
-                {/* <LanguageSwitcher /> */}
+                
                 <Button variant="secondary" asChild>
                   <a
                     href="https://www.sslgroup.in/images/ssl-brouchser-final.pdf"

@@ -16,8 +16,6 @@ export const metadata: Metadata = createPageMetadata({
   path: "/infrastructure",
 });
 
-
-
 export default function InfrastructurePage() {
   const t = useTranslations("facilitiess")
   return (

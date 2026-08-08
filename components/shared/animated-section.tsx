@@ -103,35 +103,6 @@ export function SectionHeader({
         align === "left" && "text-left"
       )}
     >
-      {/* {eyebrow && (
-        <p
-          className="
-            mb-3
-            text-lg text-transparent font-bold tracking-[0.2em] uppercase
-            bg-gradient-to-b bg-clip-text from-[#F7941D] via-[#C96A00]
-            to-[#5B2A00]
-            drop-shadow-[2px_2px_0px_rgba(0,0,0,0.25)]
-          "
-        >
-          {eyebrow}
-        </p>
-      )}
-      <h2
-        className="
-          font-heading font-bold text-3xl text-black md:text-4xl lg:text-5xl
-          tracking-tight
-        "
-      >
-        {title}
-      </h2>
-      {description && (
-        <p
-          className="
-            mt-4
-            text-lg text-industrial-blue/70 leading-relaxed
-          "
-        >{description}</p>
-      )} */}
       {eyebrow && (
         <p
           className={eyebrowClassName}

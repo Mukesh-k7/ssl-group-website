@@ -260,8 +260,6 @@ export default function ContactPage() {
               referrerPolicy="no-referrer-when-downgrade"
               allowFullScreen
             />
-
-            
           </div>
         </div>
       </AnimatedSection>

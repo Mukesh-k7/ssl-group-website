@@ -13,7 +13,7 @@ export const company = {
   domain: "www.sslgroup.in",
   email: "info@sslgroup.in",
   salesEmail: "export@sslgroup.in",
-  hrEmail: "shivani.yadav@sslgroup.in",
+  hrEmail: "hr@sslgroup.in",
   phone: "+91 - 9599053449",
   whatsapp: "+91 - 9599053449",
   address: {

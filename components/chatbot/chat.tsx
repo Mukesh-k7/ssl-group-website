@@ -6,7 +6,12 @@ import { MessageCircle, X, Send, Loader2 } from "lucide-react";
 interface ChatMessage {
   role: "user" | "assistant";
   content: string;
+  history?: {
+    role: string;
+    content: string;
+  }[];
 }
+
 
 export function Chatbot() {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,53 +26,76 @@ export function Chatbot() {
     scrollRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages]);
 
-  const sendMessage = async () => {
-    const trimmed = input.trim();
-    if (!trimmed || isStreaming) return;
+const sendMessage = async () => {
+  if (!input.trim() || isStreaming) return;
 
-    const newMessages: ChatMessage[] = [...messages, { role: "user", content: trimmed }];
-    setMessages(newMessages);
-    setInput("");
-    setIsStreaming(true);
-    setMessages((prev) => [...prev, { role: "assistant", content: "" }]);
+  const question = input.trim();
 
-    try {
-      const res = await fetch("/api/chatbot", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ messages: newMessages }),
-      });
+  const history: ChatMessage[] = [
+    ...messages,
+    {
+      role: "user",
+      content: question,
+    },
+  ];
 
-      if (!res.ok || !res.body) throw new Error("Request failed");
+  setMessages(history);
 
-      const reader = res.body.getReader();
-      const decoder = new TextDecoder();
-      let accumulated = "";
+  setInput("");
 
-      while (true) {
-        const { done, value } = await reader.read();
-        if (done) break;
-        accumulated += decoder.decode(value, { stream: true });
-        setMessages((prev) => {
-          const updated = [...prev];
-          updated[updated.length - 1] = { role: "assistant", content: accumulated };
-          return updated;
-        });
-      }
-    } catch (err) {
-      console.error("Chatbot request failed:", err);
+  setIsStreaming(true);
+
+  setMessages((prev) => [
+    ...prev,
+    {
+      role: "assistant",
+      content: "",
+    },
+  ]);
+
+  try {
+    const res = await fetch("/api/chatbot", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        messages: history,
+      }),
+    });
+
+    if (!res.body)
+      throw new Error("No stream.");
+
+    const reader = res.body.getReader();
+
+    const decoder = new TextDecoder();
+
+    let answer = "";
+
+    while (true) {
+      const { done, value } =
+        await reader.read();
+
+      if (done) break;
+
+      answer += decoder.decode(value);
+
       setMessages((prev) => {
-        const updated = [...prev];
-        updated[updated.length - 1] = {
+        const copy = [...prev];
+
+        copy[copy.length - 1] = {
           role: "assistant",
-          content: "Sorry, something went wrong. Please try again or use our Inquiry form.",
+          content: answer,
         };
-        return updated;
+
+        return copy;
       });
-    } finally {
-      setIsStreaming(false);
     }
-  };
+  } finally {
+    setIsStreaming(false);
+  }
+};
 
   const handleKeyDown = (e: KeyboardEvent<HTMLInputElement>) => {
     if (e.key === "Enter" && !e.shiftKey) {

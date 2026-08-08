@@ -8,15 +8,12 @@ import { Card, CardContent } from "@/components/ui/card";
 import type { Product } from "@/types";
 import { useTranslations } from "next-intl";
 
-
 interface ProductCardProps {
   product: Product;
 }
 
 export function ProductCard({ product }: ProductCardProps) {
   const t = useTranslations("Products");
-
-
 
   return (
     <motion.div whileHover={{ y: -6 }} transition={{ duration: 0.3 }}>
@@ -40,8 +37,7 @@ export function ProductCard({ product }: ProductCardProps) {
             aspect-[4/3]
           "
         >
-          {/* from-[#7C2D12] from-[#7C2D12] via-[#EA580C] via-[#EA580C]
-            to-[#FDBA74] to-[#FDBA74] */}
+          
           <div
             className="
               absolute inset-0
