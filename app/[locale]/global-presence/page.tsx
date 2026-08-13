@@ -48,7 +48,7 @@ export default function GlobalPresencePage() {
             {exportRegions.map((region) => (
               <div
                 key={region.key}
-                className="rounded-xl bg-gradient-to-br from-industrial-blue/40 via-gunmetal to-charcoal p-8"
+                className="rounded-xl bg-gradient-to-br from-slate-600 via-slate-900 to-zinc-950 hover:bg-gradient-to-br from-slate-800 via-slate-800 to-zinc-850 p-8"
               >
                 <h3 className="font-heading text-2xl font-bold text-white">{t(`${region.key}.Title`)}</h3>
                 <p className="mt-2 text-metallic/80">{t(`${region.key}.Description`)}</p>

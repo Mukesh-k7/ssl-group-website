@@ -52,7 +52,7 @@ export default function CareersPage() {
       {open && (
         <div className="fixed inset-0 bg-black/60 flex items-center justify-center z-[10000]">
           <div className="bg-white rounded-xl p-6 w-[380px]">
-            <h2 className="text-2xl font-bold mb-5">{t("ContactHR")}</h2>
+            <h2 className="text-2xl font-bold mb-5 text-black text-center">{t("ContactHR")}</h2>
 
             <div className="space-y-4">
 
@@ -66,10 +66,10 @@ export default function CareersPage() {
                   <p className="text-gray-200">+91 92174 00795</p>
                 </div>
               </a>
-              <br></br>
+              
               <a
                 href="tel:+919560259699"
-                className="flex items-center gap-3 p-3 rounded-lg border hover:bg-gray-100 bg-gradient-to-br from-industrial-blue/40 via-gunmetal to-charcoal"
+                className="flex items-center gap-3 p-3 rounded-lg border hover:bg-gray-100 bg-gradient-to-br from-slate-600 via-slate-900 to-zinc-950"
               >
                 <Phone />
                 <div>
@@ -92,7 +92,7 @@ export default function CareersPage() {
 
               <a
                 href="mailto:hr@sslgroup.in"
-                className="flex items-center gap-3 p-3 rounded-lg border hover:bg-gray-100 bg-gradient-to-br from-industrial-blue/40 via-gunmetal to-charcoal"
+                className="flex items-center gap-3 p-3 rounded-lg border hover:bg-gray-100 bg-gradient-to-br from-slate-600 via-slate-900 to-zinc-950"
               >
                 <Mail />
                 <div>

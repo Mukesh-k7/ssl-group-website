@@ -72,7 +72,7 @@ export default function ContactPage() {
               <div
                 className="
                   p-6
-                  bg-gradient-to-br from-industrial-blue/40 via-gunmetal to-charcoal border-0
+                  bg-gradient-to-br from-slate-600 via-slate-900 to-zinc-950 border-0
                   rounded-xl border border-white/10
                 "
               >
@@ -187,7 +187,7 @@ export default function ContactPage() {
                 className="
                   flex items-center
                   p-6
-                  bg-[#25D366] hover:bg-[#25D366]/20
+                  bg-[#25D366] hover:bg-[#25D366]/80
                   rounded-xl border border-[#25D366]/30
                   transition-colors
                   gap-4
@@ -216,7 +216,7 @@ export default function ContactPage() {
               <div
                 className="
                   p-6
-                  bg-gradient-to-br from-industrial-blue/40 via-gunmetal to-charcoal border-0
+                  bg-gradient-to-br from-slate-600 via-slate-900 to-zinc-950 border-0
                   rounded-xl border border-white/10
                 "
               >

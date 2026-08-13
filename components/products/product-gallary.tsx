@@ -144,7 +144,7 @@ const variantT = useTranslations(`Products.${product.key}.Variants` as any);
                                     </div>
                                 ))}
                             </div>
-                            <Button className="mt-6 w-full cursor-pointer" onClick={() => router.push("/contact")}>
+                            <Button className="mt-6 w-full cursor-pointer bg-gradient-to-br from-slate-950 via-slate-800 to-zinc-900" onClick={() => router.push("/contact")}>
                                 {commonT("RequestQuote")}
                             </Button>
                         </CardContent>

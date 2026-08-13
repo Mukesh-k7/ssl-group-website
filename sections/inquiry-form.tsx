@@ -185,7 +185,7 @@ export function InquiryForm({
   }
 
   return (
-    <Card className="bg-gradient-to-br from-industrial-blue/40 via-gunmetal to-charcoal border-0">
+    <Card className="bg-gradient-to-br from-slate-600 via-slate-900 to-zinc-950 border-0">
       <CardHeader>
         <CardTitle>{title}</CardTitle>
         <CardDescription className="text-white/70">

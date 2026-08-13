@@ -7,10 +7,12 @@ const PRODUCTION_HOST = "www.sslgroup.in";
 const intlMiddleware = createMiddleware({
   locales: ["en", "hi", "ar"],
   defaultLocale: "en",
+  localePrefix: "always",
 });
 
 export function middleware(request: NextRequest) {
   const host = request.headers.get("host")?.split(":")[0] ?? "";
+  const pathname = request.nextUrl.pathname;
 
   if (host === "sslgroup.in") {
     const url = request.nextUrl.clone();
@@ -19,6 +21,7 @@ export function middleware(request: NextRequest) {
     return NextResponse.redirect(url, 308);
   }
 
+  // Allow middleware to process all locale-based routing
   return intlMiddleware(request);
 }
 

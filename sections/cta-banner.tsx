@@ -84,7 +84,7 @@ export function CtaBannerSection( ) {
                   >
                 </Link>
               </Button>
-              <Button size="lg" variant="outline" asChild>
+              <Button size="lg" variant="outline" asChild className="bg-[#007aff94] hover:bg-[#007affc9]">
                 <a href={`mailto:${company.email}`}>
                   <Mail
                     className="

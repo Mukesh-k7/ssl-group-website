@@ -240,7 +240,9 @@ export function Navbar() {
             </a>
           </Button>
           <Button asChild>
-            <Link href={`/${locale}/contact`}> {t("GetQuote")}</Link>
+            <Link href={`/${locale}/contact`} className="bg-[#007affc9] hover:bg-[#007aff94]">
+              {t("GetQuote")}
+            </Link>
           </Button>
         </div>
         <div className="flex align-center">
@@ -332,7 +334,7 @@ export function Navbar() {
                   </a>
                 </Button>
                 <Button asChild>
-                  <Link href={`/${locale}/contact`}>
+                  <Link href={`/${locale}/contact`} className="bg-[#007aff94] hover:bg-[#007affc9]">
                     {t("GetExportQuote")}
                   </Link>
                 </Button>

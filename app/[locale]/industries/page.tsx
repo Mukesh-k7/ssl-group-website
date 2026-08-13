@@ -67,9 +67,9 @@ export default function IndustriesPage() {
           <SectionHeader
             title={t("SectorExpertise")}
             description={t("logistics")}
-                        titleClassName="font-heading font-bold text-3xl text-black md:text-4xl lg:text-5xl
+            titleClassName="font-heading font-bold text-3xl text-black md:text-4xl lg:text-5xl
           tracking-tight"
-            descriptionClassName="mt-4
+            descriptionClassName="
             text-lg text-industrial-blue/70 leading-relaxed"
             align="center"
           />
@@ -90,7 +90,7 @@ export default function IndustriesPage() {
                   className="
                     flex
                     p-8
-                    bg-gradient-to-br from-industrial-blue/40 via-gunmetal to-charcoal
+                    bg-gradient-to-br from-slate-600 via-slate-900 to-zinc-950 hover:bg-gradient-to-br from-slate-800 via-slate-800 to-zinc-850
                     rounded-xl
                     gap-6
                   "
@@ -134,11 +134,11 @@ export default function IndustriesPage() {
                         text-sm text-[#c96a00]
                       "
                     >
-                       {t("KeyMarkets")}: {regions
-                      .map((region) =>
-                        t(`${industry.key}.RegionLabels.${region}`)
-                      )
-                      .join(" · ")} 
+                      {t("KeyMarkets")}: {regions
+                        .map((region) =>
+                          t(`${industry.key}.RegionLabels.${region}`)
+                        )
+                        .join(" · ")}
                     </p>
                   </div>
                 </article>

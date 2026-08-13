@@ -74,7 +74,7 @@ export function ProductCard({ product }: ProductCardProps) {
               backdrop-blur-sm
             "
           >
-            <span>{t(`${product.key}.Category`)}</span>
+            <span className="text-[#f97316] font-bold">{t(`${product.key}.Category`)}</span>
           </span >
         </div >
         <CardContent
@@ -92,7 +92,7 @@ export function ProductCard({ product }: ProductCardProps) {
           <p
             className="
               mt-2
-              text-sm text-metallic/80 leading-relaxed line-clamp-2
+              text-sm text-[#d7d7d7d1] leading-relaxed line-clamp-2
             "
           >
             {t(`${product.key}.ShortDescription`)}
@@ -105,7 +105,7 @@ export function ProductCard({ product }: ProductCardProps) {
             {product.specification.slice(0, 3).map((spec) => (
               <li
                 key={spec.key}
-                className="flex justify-between text-xs text-metallic/70"
+                className="flex justify-between text-xs text-[#d7d7d7d1]"
               >
                 <span>
                   {t.has(`${product.key}.Specification.${spec.key}` as any)
@@ -113,7 +113,7 @@ export function ProductCard({ product }: ProductCardProps) {
                     : spec.key}
                 </span>
 
-                <span className="text-metallic font-medium">
+                <span className="text-[#d7d7d7d1] font-medium">
                   {spec.value}
                 </span>
               </li>
@@ -124,12 +124,15 @@ export function ProductCard({ product }: ProductCardProps) {
             className="
               w-full
               mt-6
-              bg-[#1e3a5f]
+              bg-[#1e3a5f] hover:bg-[#1e3a5f] text-white font-medium
+              flex items-center justify-center gap-2
+              transition-all
               group/btn
+              border-0 
             "
             asChild
           >
-            <Link href={`/products/${product.slug}`}>
+            <Link href={`/products/${product.slug}`} >
               {t("ViewAllProducts")}
               <ArrowRight
                 className="

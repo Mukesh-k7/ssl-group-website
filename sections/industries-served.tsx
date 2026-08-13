@@ -86,7 +86,7 @@ export function IndustriesServedSection({ limit }: { limit?: number }) {
                     flex flex-col
                     h-full
                     p-6
-                    bg-charcoal hover:bg-gradient-to-br from-industrial-blue/40 via-gunmetal to-charcoal
+                    bg-gradient-to-br from-slate-600 via-slate-900 to-zinc-950 hover:bg-gradient-to-br from-slate-800 via-slate-800 to-zinc-850
                     rounded-xl
                     border border-white/10 hover:border-industrial-blue/40
                     transition-all
