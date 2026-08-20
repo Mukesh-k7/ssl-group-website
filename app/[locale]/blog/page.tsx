@@ -86,7 +86,7 @@ export default function BlogPage() {
                       mt-2
                       font-heading font-bold text-xl text-white
                       transition-colors
-                      group-hover:text-[#c96a00]
+                      group-hover:text-[#fcaf1c]
                     "
                   >
                     <Link href={`/blog/${post.slug}`}>{t(`${post.key}.Title`)}</Link>
@@ -150,7 +150,7 @@ export default function BlogPage() {
                       href={`/blog/${post.slug}`}
                       className="
                         flex items-center
-                        text-sm text-[#c96a00] hover:text-white
+                        text-sm text-[#fcaf1c] hover:text-white
                         gap-1
                       "
                     >

@@ -69,7 +69,7 @@ export default function CertificationsPage() {
                   className="
                     h-10 w-10
                     mb-4
-                    text-[#c96a00]
+                    text-[#fcaf1c]
                   "
                 /
                 >
@@ -81,7 +81,7 @@ export default function CertificationsPage() {
                 <p
                   className="
                     mt-1
-                    text-sm text-[#c96a00]
+                    text-sm text-[#fcaf1c]
                   "
                 >
                   {t(`${cert.key}.issuer`)} · {t("Certified")} {cert.year}
@@ -107,7 +107,7 @@ export default function CertificationsPage() {
             <FileText
               className="
                 h-8 w-8
-                text-[#c96a00]
+                text-[#fcaf1c]
                 shrink-0
               "
             /

@@ -58,7 +58,7 @@
     "Since": "Since",
     "GhaziabadGlobalExportOperations": "Ghaziabad · Global Export Operations",
     "Title": "Forging Global Metallurgy Partnerships",
-    "SSLGroup": "Since 2018, SSL Group has grown from a Delhi trading house into a premier international exporter of steel industry raw materials — trusted by manufacturers across 45+ countries.",
+    "SSLGroup": "Since 2004, SSL Group has grown from a Delhi trading house into a premier international exporter of steel industry raw materials — trusted by manufacturers across 45+ countries.",
     "Documentation": "We exist to bridge the gap between India`s world-class metallurgical production capacity and the global steel industry`s demand for reliable, export-grade raw materials. Every shipment reflects our commitment to quality, documentation, and long-term partnership.",
     "Eyebrow": "Our Mission",
     "Globals": "Connecting Indian Metallurgy to the World",
@@ -3015,9 +3015,9 @@
       "issuer": "TÜV SÜD"
     },
     "OHSAS45001": {
-      "Title": "OHSAS 45001",
-      "Description": "Occupational health and safety standards at processing and port facilities.",
-      "issuer": "DNV"
+      "Title": "UDYAM:2017",
+      "Description": "Government-recognized MSME registration under the Ministry of Micro, Small and Medium Enterprises, Government of India.",
+      "issuer": "Ministry of MSME"
     },
     "ResponsibleMineralsInitiative": {
       "Title": "Responsible Minerals Initiative",
@@ -3112,26 +3112,42 @@
     "Eyebrow": "Client Trust",
     "Title": "Trusted by Global Steel Leaders",
     "Description": "Long-term partnerships with procurement teams across the Middle East, Africa, and Europe.",
-    "UAE": {
-      "Title": "UAE",
-      "quote": "SSL Group has been our primary ferro alloy supplier for three integrated steel plants. Consistency in chemistry and on-time vessel loading is exceptional.",
-      "author": "Khalid Al-Rashid",
+    "Rajasthan": {
+      "Title": "Rajasthan, India",
+      "quote": "SSL Group India is a reliable and professional partner, known for quality products, competitive pricing, and timely deliveries. We highly recommend their services",
+      "author": "Mr. Amit",
       "role": "Chief Procurement Officer",
-      "company": "Gulf Steel Industries"
+      "company": "Downhole Tools Private Limited"
     },
     "India": {
-      "Title": "India",
-      "author": "Anirudh Tandon",
-      "quote": "Their pig iron grades meet our foundry specifications without deviation. Documentation and LC compliance are enterprise-grade.",
-      "role": "Materials Director",
-      "company": "EuroCast Foundries"
+      "Title": "Kanpur, India",
+      "author": "Mr. Amar",
+      "quote": "SSL Group India is a dependable supplier of ferro alloys and metallurgical raw materials, offering consistent quality, competitive prices, and excellent service. We value their partnership and look forward to continued collaboration.",
+      "role": "Owner",
+      "company": "The India Thermit Corporation Ltd."
     },
     "Tanzania": {
       "Title": "Tanzania",
-      "quote": "From zinc ore to natural graphite, SSL Group consolidates our raw material basket with transparent pricing and reliable African corridor logistics.",
-      "author": "James Okafor",
-      "role": "VP Supply Chain",
-      "company": "Continental Steel Works"
+      "quote": "Working with SSL Group India has been a great experience. Their reliability, transparency, product quality, and commitment to customer satisfaction truly set them apart. We look forward to a long-term partnership.",
+      "author": "Mr. Samwelly",
+      "role": "Head of Procurement",
+      "company": "Last Choice Company"
+    },
+
+    "Africa": {
+      "Title": "Cape Town South Africa",
+      "quote": "SSL Group has been a trusted partner for our business, providing high-quality materials and exceptional service. Their commitment to excellence and customer satisfaction is truly commendable.",
+      "author": "Mr. Kamal",
+      "role": "Head of Procurement",
+      "company": "Kamal Group"
+    },
+
+    "Arabia": {
+      "Title": "Saudi Arabia(Dubai)",
+      "quote": "We have had a great experience working with SSL Group India. Their professionalism, commitment, and customer support make them a trusted long-term partner.",
+      "author": "Mr. Aneesh",
+      "role": "Procurement Manager",
+      "company": "Alkawther industries"
     }
   },
   "contact": {
@@ -3272,12 +3288,12 @@
     "Openings": "View All Openings",
     "ShowLess": "Show Less",
     "Life": "Life at SSL Group",
-    "GlobalOperations": "Global Operations Since 2018",
+    "GlobalOperations": "Global Operations Since 2004",
     "Locations": "Ghaziabad, UP · Africa · Middle East · Europe",
     "whysslgroup": "Why SSL Group",
     "Career": "Your Career in",
     "GlobalTrade": "Global Trade",
-    "Supply": "SSL Group has supplied ferrous and non-ferrous materials to steel plants, foundries, and EPC contractors worldwide since 2018. When you join our team, you become part of supply chains that feed real infrastructure — bridges, factories, and energy grids across continents.",
+    "Supply": "SSL Group has supplied ferrous and non-ferrous materials to steel plants, foundries, and EPC contractors worldwide since 2004. When you join our team, you become part of supply chains that feed real infrastructure — bridges, factories, and energy grids across continents.",
     "OurStory": "Read Our Story",
     "Culture": "Culture",
     "LifeAt": "Life at",
@@ -3561,7 +3577,7 @@
   },
   "privatepolicy": {
     "Information": "1. Information We Collect",
-    "Address1": "Delhi Head Office : Ground Floor, CC-23, AVANTIKA 1, Avantika Main Road, Saini Washing Center, Avantika, Ghaziabad,",
+    "Address1": "Head Office : Ground Floor, CC-23, AVANTIKA 1, Avantika Main Road, Saini Washing Center, Avantika, Ghaziabad,",
     "Address2": "Uttar Pradesh 201015, India",
     "technicalinformation": "We may collect certain personal and technical information when you interact with our website or contact us.",
     "PersonalInformation": "Personal Information",
@@ -3622,7 +3638,7 @@
     "questionsregarding": "If you have any questions regarding this Privacy Policy or how your information is handled, please contact us."
   },
   "termsconditions": {
-    "Address1": "Delhi Head Office : Ground Floor, CC-23, AVANTIKA 1, Avantika Main Road, Saini Washing Center, Avantika, Ghaziabad,",
+    "Address1": "Head Office : Ground Floor, CC-23, AVANTIKA 1, Avantika Main Road, Saini Washing Center, Avantika, Ghaziabad,",
     "Address2": "Uttar Pradesh 201015, India",
     "AcceptanceofTerms": "1. Acceptance of Terms",
     "TermsConditions": "By accessing or using the SSL Group website, you agree to comply with these Terms & Conditions. If you do not agree with any part of these terms, please discontinue use of our website.",

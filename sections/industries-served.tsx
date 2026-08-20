@@ -97,7 +97,7 @@ export function IndustriesServedSection({ limit }: { limit?: number }) {
                     className="
                       h-8 w-8
                       mb-4
-                      text-[#c96a00]
+                      text-[#fcaf1c]
                       transition-transform
                       group-hover:scale-110
                     "
@@ -121,7 +121,7 @@ export function IndustriesServedSection({ limit }: { limit?: number }) {
                   <p
                     className="
                       mt-4
-                      text-xs text-[#c96a00]
+                      text-xs text-[#fcaf1c]
                     "
                   >
                     {regions

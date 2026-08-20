@@ -75,7 +75,7 @@ export default function InfrastructurePage() {
                     className="
                       h-10 w-10
                       mb-4
-                      text-[#c96a00]
+                      text-[#fcaf1c]
                     "
                   /
                   >
@@ -93,7 +93,7 @@ export default function InfrastructurePage() {
                     </h2>
                     <span
                       className="
-                        font-heading font-bold text-3xl text-[#c96a00]
+                        font-heading font-bold text-3xl text-[#fcaf1c]
                       "
                     >
                       {t(`${facility.key}.stats`)}

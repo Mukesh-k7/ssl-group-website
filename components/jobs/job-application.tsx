@@ -177,7 +177,7 @@ export function JobApplicationForm() {
 
   if (status === "success") {
     return (
-      <div className="mx-auto max-w-4xl rounded-xl border bg-white p-8 text-center shadow-sm">
+      <div className="mx-auto max-w-4xl rounded-xl border bg-[#fff] p-8 text-center shadow-sm">
         <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-green-100">
           <CheckCircle2 className="h-8 w-8 text-green-600" />
         </div>
@@ -193,7 +193,7 @@ export function JobApplicationForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="mx-auto max-w-8xl space-y-6 rounded-xl border py-24 bg-gradient-to-br from-industrial-blue/40 via-gunmetal to-charcoal p-8 shadow-sm" noValidate>
+    <form onSubmit={handleSubmit} className="mx-auto max-w-8xl space-y-6 rounded-xl border py-24 bg-gradient-to-br from-[#6a6a6c] via-[#5771af] to-[#89899a] p-8 shadow-sm" noValidate>
       <div className="grid gap-5 sm:grid-cols-2">
         {positionFromUrl && (
           <div className="space-y-2">
@@ -304,9 +304,13 @@ export function JobApplicationForm() {
             defaultValue=""
             className="flex h-10 w-full rounded-md border border-input px-3 py-2 text-sm shadow-sm bg-gradient-to-br from-industrial-blue/40"
           >
-            <option value="" disabled className="text-dark"> {t("selectalocation")} </option>
+            <option value="" disabled className="text-[#000]">
+              {t("selectalocation")}
+            </option>
             {LOCATIONS.map((loc) => (
-              <option key={loc} value={loc} className="text-industrial-blue/80">{loc}</option>
+              <option key={loc} value={loc} className="text-[#000]">
+                {loc}
+              </option>
             ))}
           </select>
           {errors.location && <p className="text-sm text-red-400">{errors.location}</p>}
@@ -352,7 +356,7 @@ export function JobApplicationForm() {
         <div className="rounded-md border border-red-300 bg-red-50 p-3 text-sm text-red-400">{serverError}</div>
       )}
 
-      <Button type="submit" size="lg" className="w-full" disabled={status === "submitting"}>
+      <Button type="submit" size="lg" className="w-full bg-[#007aff94]" disabled={status === "submitting"}>
         {status === "submitting" ? (
           <><Loader2 className="mr-2 h-4 w-4 animate-spin" /> {t("submitting")} </>
         ) : t(

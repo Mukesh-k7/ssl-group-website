@@ -20,7 +20,7 @@ export const company = {
     line1: "Head Office : Ground Floor, CC-23, AVANTIKA 1, Avantika Main Road, Saini Washing Center, Avantika, Ghaziabad,",
     line2: " Uttar Pradesh 201015, India",
   },
-  founded: 2018,
+  founded: 2004,
   catalogUrl: getAbsoluteUrl("/catalog/ssl-product-catalog.pdf"),
 };
 
@@ -52,7 +52,7 @@ export const navigation: NavItem[] = [
 ];
 
 export const stats: Stat[] = [
-  { key: "yearsofExcellence", value: 28, suffix: "+" },
+  { key: "yearsofExcellence", value: 20, suffix: "+" },
   { key: "countriesServed", value: 45, suffix: "+" },
   { key: "annualExportVolume", value: 2.4, suffix: "M MT", prefix: "" },
   { key: "globalPartners", value: 320, suffix: "+" },
@@ -79,27 +79,42 @@ export const whyChooseUs = [
 
 export const testimonials: Testimonial[] = [
   {
-    quote:
-      "SSL Group has been our primary ferro alloy supplier for three integrated steel plants. Consistency in chemistry and on-time vessel loading is exceptional.",
-    author: "Khalid Al-Rashid",
-    role: "Chief Procurement Officer",
-    company: "Gulf Steel Industries",
-    key: "UAE",
+    quote: "SSL Group India is a reliable and professional partner, known for quality products, competitive pricing, and timely deliveries. We highly recommend their services",
+    author: "Mr. Amit",
+    role: "Chief Officer",
+    company: "Downhole Tools Private Limited",
+    key: "Rajasthan",
   },
+
   {
-    quote:
-      "Their pig iron grades meet our foundry specifications without deviation. Documentation and LC compliance are enterprise-grade.",
-    author: "Anirudh Tandon",
+    quote:"SSL Group has been a trusted partner for our business, providing high-quality materials and exceptional service. Their commitment to excellence and customer satisfaction is truly commendable.",
+    author: "Mr. Kamal",
     role: "Materials Director",
-    company: "EuroCast Foundries",
+    company: "Kamal Group",
+    key: "Africa",
+  },
+  
+  {
+    quote:"We have had a great experience working with SSL Group India. Their professionalism, commitment, and customer support make them a trusted long-term partner.",
+    author: "Mr. Aneesh",
+    role: "Procurement Manager",
+    company: "Alkawther industries",
+    key: "Arabia",
+  },
+
+  {
+    quote:"SSL Group India is a dependable supplier of ferro alloys and metallurgical raw materials, offering consistent quality, competitive prices, and excellent service.",
+    author: "Mr. Amar",
+    role: "Owner",
+    company: "The India Thermit Corporation Ltd.",
     key: "India",
   },
+
   {
-    quote:
-      "From zinc ore to natural graphite, SSL Group consolidates our raw material basket with transparent pricing and reliable African corridor logistics.",
-    author: "James Okafor",
-    role: "VP Supply Chain",
-    company: "Continental Steel Works",
+    quote:"Working with SSL Group India has been a great experience. Their reliability, transparency, product quality, and commitment to customer satisfaction truly set them apart.",
+    author: "Mr. Samwelly",
+    role: "Owner",
+    company: "Last Choice Company",
     key: "Tanzania",
   },
 ];
@@ -256,20 +271,20 @@ export const Benefits = [
 ];
 
 export const Jobopening = [
-  { key: "exportDocumentationExecutive", title: "Export Documentation Executive", dept: "Operations", type: "Full-time", location: "Ghaziabad", domain:"Internatoinal" },
-  { key: "exportDocumentationManager", title: "Export Documentation Manager", dept: "Operations", type: "Full-time", location: "Ghaziabad", domain:"Internatoinal" },
-  { key: "internationalTradeManager", title: "International Trade Manager", dept: "Trade", type: "Full-time", location: "Ghaziabad", domain:"Internatoinal" },
-  { key: "accountExecutive", title: "Account Executive", dept: "Account", type: "Full-time", location: "Ghaziabad", domain:"All" },
-  { key: "accountManager", title: "Account Manager", dept: "Account", type: "Full-time", location: "Ghaziabad", domain:"All" },
-  { key: "hrExecutive", title: "HR Executive", dept: "Human Resource", type: "Full-time", location: "Ghaziabad", domain:"All" },
-  { key: "hrManager", title: "HR Manager", dept: "Human Resource", type: "Full-time", location: "Ghaziabad", domain:"All" },
-  { key: "itExecutive", title: "IT Executive", dept: "IT", type: "Full-time", location: "Ghaziabad", domain:"All" },
-  { key: "corporateLawyer", title: "Corporate Lawyer", dept: "Legal", type: "Full-time", location: "Ghaziabad", domain:"All" },
-  { key: "adminExecutive", title: "Admin Executive", dept: "Admin Office", type: "Full-time", location: "Ghaziabad", domain:"All" },
-  { key: "logisticsCoordinator", title: "Logistics Coordinator", dept: "Logistics", type: "Full-time", location: "Ghaziabad", domain:"All" },
+  { key: "exportDocumentationExecutive", title: "Export Documentation Executive", dept: "Operations", type: "Full-time", location: "Ghaziabad", domain: "Internatoinal" },
+  { key: "exportDocumentationManager", title: "Export Documentation Manager", dept: "Operations", type: "Full-time", location: "Ghaziabad", domain: "Internatoinal" },
+  { key: "internationalTradeManager", title: "International Trade Manager", dept: "Trade", type: "Full-time", location: "Ghaziabad", domain: "Internatoinal" },
+  { key: "accountExecutive", title: "Account Executive", dept: "Account", type: "Full-time", location: "Ghaziabad", domain: "All" },
+  { key: "accountManager", title: "Account Manager", dept: "Account", type: "Full-time", location: "Ghaziabad", domain: "All" },
+  { key: "hrExecutive", title: "HR Executive", dept: "Human Resource", type: "Full-time", location: "Ghaziabad", domain: "All" },
+  { key: "hrManager", title: "HR Manager", dept: "Human Resource", type: "Full-time", location: "Ghaziabad", domain: "All" },
+  { key: "itExecutive", title: "IT Executive", dept: "IT", type: "Full-time", location: "Ghaziabad", domain: "All" },
+  { key: "corporateLawyer", title: "Corporate Lawyer", dept: "Legal", type: "Full-time", location: "Ghaziabad", domain: "All" },
+  { key: "adminExecutive", title: "Admin Executive", dept: "Admin Office", type: "Full-time", location: "Ghaziabad", domain: "All" },
+  { key: "logisticsCoordinator", title: "Logistics Coordinator", dept: "Logistics", type: "Full-time", location: "Ghaziabad", domain: "All" },
   { key: "businessDevelopmentExecutive", title: "Business Development Executive", dept: "Sale & Marketing", type: "Full-time", location: "Ghaziabad", domain: "Domestic" },
-  { key: "globalBusinessDevelopment", title: "Global Business Development", dept: "Sale & Marketing", type: "Full-time", location: "Ghaziabad", domain:"Internatoinal" },
-  { key: "exportSales", title: "Export Sales", dept: "Sale & Marketing", type: "Full-time", location: "Ghaziabad", domain:"Internatoinal" },
+  { key: "globalBusinessDevelopment", title: "Global Business Development", dept: "Sale & Marketing", type: "Full-time", location: "Ghaziabad", domain: "Internatoinal" },
+  { key: "exportSales", title: "Export Sales", dept: "Sale & Marketing", type: "Full-time", location: "Ghaziabad", domain: "Internatoinal" },
   { key: "businessDevelopmentAssistent", title: "Business Development Assistant", dept: "Sale & Marketing", type: "Full-time", location: "Ghaziabad", domain: "Domestic" },
   { key: "businessDevelopmentManager", title: "Business Development Manager", dept: "Sale & Marketing", type: "Full-time", location: "Ghaziabad", domain: "Domestic" },
   { key: "domesticSales", title: "Domestic Sales", dept: "Sale & Marketing", type: "Full-time", location: "Ghaziabad", domain: "Domestic" },

@@ -185,7 +185,7 @@ export function InquiryForm({
   }
 
   return (
-    <Card className="bg-gradient-to-br from-slate-600 via-slate-900 to-zinc-950 border-0">
+    <Card className="bg-gradient-to-br from-[#6a6a6c] via-[#5771af] to-[#89899a] border-0">
       <CardHeader>
         <CardTitle>{title}</CardTitle>
         <CardDescription className="text-white/70">
@@ -381,7 +381,7 @@ export function InquiryForm({
             </div>
           )}
 
-          <Button type="submit" size="lg" className="w-full" disabled={status === "submitting"}>
+          <Button type="submit" size="lg" className="w-full bg-[#007aff94]" disabled={status === "submitting"}>
             {status === "submitting" ? (
               <>
                 <Loader2 className="h-4 w-4 animate-spin" />

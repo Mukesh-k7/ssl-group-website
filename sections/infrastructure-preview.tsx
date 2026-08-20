@@ -60,7 +60,7 @@ export function InfrastructurePreviewSection() {
                 className="
                   h-10 w-10
                   mx-auto mb-4
-                  text-[#c96a00]
+                  text-[#fcaf1c]
                 "
               />
               <h3

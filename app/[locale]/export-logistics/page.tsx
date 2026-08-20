@@ -75,7 +75,7 @@ export default function ExportLogisticsPage() {
                   className="
                     h-8 w-8
                     mb-4
-                    text-[#c96a00]
+                    text-[#fcaf1c] 
                   "
                 /
                 >

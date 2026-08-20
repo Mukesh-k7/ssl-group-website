@@ -81,7 +81,7 @@ export function Navbar() {
       className={cn(
         "fixed left-0 right-0 top-0 z-50 transition-all duration-300",
         scrolled
-          ? "py-3 shadow-2xl shadow-black/40 backdrop-blur-xl bg-[linear-gradient(140deg,#f1edea_0%,#f3892d_40%,#E8820A_70%,#A84800_100%)]"
+          ? "py-3 shadow-2xl shadow-black/40 backdrop-blur-xl bg-[linear-gradient(140deg,_#f1edea_0%,_#ecba90_40%,_#eaaf6a_70%,_#dca758_100%)]"
           : "bg-white py-5 text-black"
       )}
     >
@@ -167,7 +167,7 @@ export function Navbar() {
               className="
                 flex items-center
                 px-3 py-2
-                text-sm text-[#1e3a5f] hover:text-[#1e3a5f] font-medium font-bold
+                text-sm text-[#1e3a5f] hover:text-[#1e3a5f] font-medium font-bold 
                 rounded-md
                 transition-colors
                 gap-1
@@ -192,7 +192,7 @@ export function Navbar() {
                 className="
                   min-w-[180px]
                   p-2
-                  bg-gunmetal/95
+                  bg-[#689ee5]
                   rounded-lg border border-white/10
                   shadow-xl backdrop-blur-xl
                 "
@@ -209,8 +209,8 @@ export function Navbar() {
                       href={href}
                       className="
                         block
-                        px-3 py-2
-                        text-sm text-metallic hover:text-white
+                        px-3 py-2 my-2
+                        text-sm text-white hover:text-white bg-gradient-to-br from-slate-600 via-slate-900 to-zinc-950
                         hover:bg-white/5
                         rounded-md
                       "
@@ -311,10 +311,10 @@ export function Navbar() {
                       isActive
                         ? scrolled
                           ? "text-white"
-                          : "bg-gradient-to-b from-[#FFD27A] via-[#b16100] to-[#5B2A00] bg-clip-text text-transparent"
+                          : "bg-gradient-to-br from-slate-600 via-slate-900 to-zinc-950 bg-clip-text text-transparent"
                         : scrolled
-                          ? "text-white/80 hover:text-white"
-                          : "text-white/80 hover:text-white"
+                          ? "text-white/80 hover:text-white bg-gradient-to-br from-slate-600 via-slate-900 to-zinc-950"
+                          : "text-white/80 hover:text-white bg-gradient-to-br from-slate-600 via-slate-900 to-zinc-950"
                     )}
                   >
                     {t(item.key)}

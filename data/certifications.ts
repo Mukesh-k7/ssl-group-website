@@ -15,9 +15,9 @@ export const certifications: Certification[] = [
   },
   {
     key: "OHSAS45001",
-    issuer: "DNV",
+    issuer: "Ministry of MSME",
     description: "Occupational health and safety standards at processing and port facilities.",
-    year: "2020",
+    year: "2017",
   },
   {
     key: "ResponsibleMineralsInitiative",

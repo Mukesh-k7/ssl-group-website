@@ -47,7 +47,7 @@ export default function MediaCenterPage() {
   const currentCategory = mediaCategories.find((c) => c.id === activeCategory)!;
 
   return (
-    <main className="min-h-screen bg-[#080C14]">
+    <main className="min-h-screen bg-[rgb(228 229 230 / 39%)]">
       {/* Hero */}
       <section className="relative overflow-hidden pt-32 pb-20 bg-charcoal border-b border-white/10">
         <div className="absolute inset-0 bg-industrial-grid opacity-40" />

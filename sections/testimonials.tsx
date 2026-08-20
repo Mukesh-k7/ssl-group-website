@@ -73,14 +73,7 @@ export function TestimonialsSection() {
                 <SwiperSlide key={index}>
                   <StaggerItem key={item.author} className="flex items-center justify-center">
                     <blockquote
-                      className="
-                  flex flex-col
-                  h-full
-                  p-6
-                  w-[700px]
-                  bg-gradient-to-br from-slate-600 via-slate-900 to-zinc-950 hover:bg-gradient-to-br from-slate-800 via-slate-800 to-zinc-850
-                  rounded-xl 
-                "
+                      className="flex flex-col h-full p-6 w-[700px] bg-gradient-to-br from-slate-600 via-slate-900 to-zinc-950 hover:bg-gradient-to-br from-slate-800 via-slate-800 to-zinc-850 rounded-xl"
                     >
                       <Quote
                         className="

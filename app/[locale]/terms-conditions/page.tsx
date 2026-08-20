@@ -119,7 +119,7 @@ export default function TermsAndConditionsPage() {
     ];
 
     return (
-        <main className="bg-gray-50 py-16 my-16">
+        <main className="bg-gray-50 py-16 mt-20">
             <div className="mx-auto max-w-5xl px-6">
                 <div className="rounded-xl bg-white p-8 shadow-lg md:p-12">
                     <h1 className="text-4xl font-bold text-gray-900">
@@ -169,7 +169,7 @@ export default function TermsAndConditionsPage() {
                                         target="_blank"
                                         className="flex gap-3 text-sm"
                                     >
-                                        <MapPin className="w-4 h-4 mt-0.5 text-[#c96a00] text-bold shrink-0" />
+                                        <MapPin className="w-4 h-4 mt-0.5 text-[#fcaf1c] text-bold shrink-0" />
                                         <div >
                                             <span>
                                                 {t("Address1")}
@@ -185,7 +185,7 @@ export default function TermsAndConditionsPage() {
                                         className="flex items-center text-sm gap-3"
                                     >
                                         <Phone
-                                            className="w-4 h-4 text-[#c96a00] text-bold"
+                                            className="w-4 h-4 text-[#fcaf1c] text-bold"
                                         />
                                         {company.phone}
                                     </a>
@@ -195,7 +195,7 @@ export default function TermsAndConditionsPage() {
                                         href={`mailto:${company.email}`}
                                         className="flex items-center text-sm gap-3">
                                         <Mail
-                                            className="w-4 h-4 text-[#c96a00] text-bold" />
+                                            className="w-4 h-4 text-[#fcaf1c] text-bold" />
                                         {company.email}
                                     </a>
                                 </li>

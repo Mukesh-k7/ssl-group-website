@@ -14,7 +14,7 @@ export function HeroSection() {
     { value: "2.4M+", label: t("MTExportedAnnually") },
     { value: "320+", label: t("GlobalPartners") },
     { value: "9", label: t("ProductCategories") },
-    { value: "28+", label: t("YearsExcellence") },
+    { value: "20+", label: t("YearsExcellence") },
   ];
 
   const highlights = [

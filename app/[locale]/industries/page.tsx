@@ -107,7 +107,7 @@ export default function IndustriesPage() {
                     <Icon
                       className="
                         h-7 w-7
-                        text-[#c96a00]
+                        text-[#fcaf1c]
                       "
                     /
                     >
@@ -131,7 +131,7 @@ export default function IndustriesPage() {
                     <p
                       className="
                         mt-4
-                        text-sm text-[#c96a00]
+                        text-sm text-[#fcaf1c]
                       "
                     >
                       {t("KeyMarkets")}: {regions

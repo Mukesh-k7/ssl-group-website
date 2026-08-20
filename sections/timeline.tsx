@@ -63,7 +63,7 @@ export function TimelineSection() {
               >
                 <span
                   className="
-                    text-xs text-[#c96a00] font-bold
+                    text-xs text-[#fcaf1c] font-bold
                   "
                 >{event.year.slice(2)}</span>
               </div>
@@ -74,7 +74,7 @@ export function TimelineSection() {
               >
                 <span
                   className="
-                    font-heading font-bold text-2xl text-[#c96a00]
+                    font-heading font-bold text-2xl text-[#fcaf1c]
                   "
                 >
                   {event.year} 

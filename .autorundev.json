@@ -2,5 +2,9 @@
   "ssl-group-website": {
     "path": "./.",
     "start": "npm run dev"
+  },
+  "types/ssl-group-website": {
+    "path": "./types/ssl-group-website",
+    "start": "npm run dev"
   }
 }

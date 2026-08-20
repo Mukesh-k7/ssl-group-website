@@ -57,7 +57,7 @@ export default function AboutPage() {
                   tracking-tight"
                 eyebrowClassName="mb-3
                   text-lg text-transparent font-bold tracking-[0.2em] uppercase
-                bg-gradient-to-b bg-clip-text from-[#F7941D] via-[#C96A00]
+                bg-gradient-to-b bg-clip-text from-[#F7941D] via-[#fcaf1c]
                 to-[#5B2A00] drop-shadow-[2px_2px_0px_rgba(0,0,0,0.25)]"
                 align="left"
               />

@@ -179,7 +179,7 @@ export function Footer() {
                     className="
                   w-4 h-4
                   mt-0.5
-                text-[#c96a00] text-bold
+                text-[#fcaf1c] text-bold
                 shrink-0
                 "
                   /
@@ -206,7 +206,7 @@ export function Footer() {
                   <Phone
                     className="
                       w-4 h-4
-                      text-[#c96a00] text-bold
+                      text-[#fcaf1c] text-bold
                     "
                   />
                   {company.phone}
@@ -224,7 +224,7 @@ export function Footer() {
                   <Mail
                     className="
                       w-4 h-4
-                      text-[#c96a00] text-bold
+                      text-[#fcaf1c] text-bold
                     "
                   />
                   {company.email}
@@ -254,7 +254,7 @@ export function Footer() {
                 inline-flex items-center
                 p-[8px] pb-[7px] mt-2
                 text-sm text-metallic/80 hover:text-white
-                rounded-[23px] border border-[#c96a00]
+                rounded-[23px] border border-[#fcaf1c]
                 gap-2
               "
               aria-label="LinkedIn"
@@ -281,7 +281,7 @@ export function Footer() {
               className="
                 inline-flex items-center
                 p-[8px] pb-[7px] mx-2 mt-2
-                rounded-[23px] border border-[#c96a00]
+                rounded-[23px] border border-[#fcaf1c]
                 gap-2
               "
               aria-label="Instagram"
@@ -324,7 +324,7 @@ export function Footer() {
               className="
                 inline-flex items-center
                 p-[8px] pb-[7px] mt-2
-                rounded-[23px] border border-[#c96a00]
+                rounded-[23px] border border-[#fcaf1c]
                 gap-2
               "
               aria-label="Twitter"
@@ -368,7 +368,7 @@ export function Footer() {
               className="
                 inline-flex items-center
                 p-[8px] pb-[7px] mx-2 mt-2
-                rounded-[23px] border border-[#c96a00]
+                rounded-[23px] border border-[#fcaf1c]
                 gap-2
               "
               aria-label="Facebook"
@@ -408,7 +408,7 @@ export function Footer() {
               className="
                 inline-flex items-center
                 p-[8px] pb-[7px] mt-2
-                rounded-[23px] border border-[#c96a00]
+                rounded-[23px] border border-[#fcaf1c]
                 gap-2
               "
               aria-label="YouTube"

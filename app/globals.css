@@ -1,9 +1,14 @@
 @import "tailwindcss";
 
+@theme {
+  --color-brand: #e37900;
+  --color-brand-dark: #c96800;
+}
+
 :root {
-  --charcoal: #111111;
-  --gunmetal: #2a2a2a;
-  --metallic: #bfc3c9;
+  --charcoal: #656d72;
+  --gunmetal: #656d72;
+  --metallic: #abb1b9;
   --industrial-blue: #1e3a5f;
   --white: #ffffff;
 
@@ -34,10 +39,8 @@ body {
 }
 
 .font-heading {
-  font-family: var(
-    --font-space-grotesk,
-    var(--font-inter, system-ui, sans-serif)
-  );
+  font-family: var(--font-space-grotesk,
+      var(--font-inter, system-ui, sans-serif));
 }
 
 .bg-industrial-grid {
@@ -45,6 +48,10 @@ body {
     linear-gradient(rgba(191, 195, 201, 0.03) 1px, transparent 1px),
     linear-gradient(90deg, rgba(191, 195, 201, 0.03) 1px, transparent 1px);
   background-size: 48px 48px;
+}
+
+.bg-\[linear-gradient\(140deg\,\#f1edea_0\%\,\#f3892d_40\%\,\#E8820A_70\%\,\#A84800_100\%\)\] {
+  background-image: linear-gradient(140deg, #f1edea 0%, #ecba90 40%, #eaaf6a 70%, #dca758 100%) !important;
 }
 
 ::selection {
@@ -68,4 +75,10 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--industrial-blue);
+}
+
+
+
+.jobs {
+  background-color: #ffffffd1 !important;
 }
