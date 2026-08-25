@@ -68,7 +68,7 @@ export function ExportMapSection() {
                     <MapPin
                       className="
                         h-5 w-5
-                        text-[#f38203] text-bold
+                        text-[#fcaf1c] text-bold
                       "
                     /
                     >

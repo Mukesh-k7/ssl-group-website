@@ -74,7 +74,7 @@ export function ProductCard({ product }: ProductCardProps) {
               backdrop-blur-sm
             "
           >
-            <span className="text-[#f97316] font-bold">{t(`${product.key}.Category`)}</span>
+            <span className="text-[#fcaf1c] font-bold">{t(`${product.key}.Category`)}</span>
           </span >
         </div >
         <CardContent
@@ -124,7 +124,7 @@ export function ProductCard({ product }: ProductCardProps) {
             className="
               w-full
               mt-6
-              bg-[#1e3a5f] hover:bg-[#1e3a5f] text-white font-medium
+              bg-brand hover:bg-[#fcaf1c] text-white font-medium
               flex items-center justify-center gap-2
               transition-all
               group/btn

@@ -26,7 +26,7 @@ export function TimelineSection() {
         <div
           className="
             relative
-            max-w-3xl
+            max-w-9xl
             mx-auto
           "
         >

@@ -64,7 +64,7 @@ export function PageHero({ title, description, eyebrow }: PageHeroProps) {
             <p
               className="
                 mb-4
-                text-sm text-[#c35303d1] font-semibold uppercase
+                text-sm text-[#fcaf1c] font-semibold uppercase
                 tracking-[0.2em]
               "
             >

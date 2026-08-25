@@ -17,7 +17,7 @@ interface Props {
 
 export default function ProductGallery({ product }: Props) {
     const commonT = useTranslations("Common");
-const variantT = useTranslations(`Products.${product.key}.Variants` as any);
+    const variantT = useTranslations(`Products.${product.key}.Variants` as any);
     const [selectedVariant, setSelectedVariant] = useState(
         product.variants[0]
     );

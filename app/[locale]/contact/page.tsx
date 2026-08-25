@@ -72,7 +72,7 @@ export default function ContactPage() {
               <div
                 className="
                   p-6
-                  bg-gradient-to-br from-slate-600 via-slate-900 to-zinc-950 border-0
+                  bg-gradient-to-br from-[#656d72] via-[#656d72] to-[#656d72] border-0
                   rounded-xl border border-white/10
                 "
               >
@@ -216,7 +216,7 @@ export default function ContactPage() {
               <div
                 className="
                   p-6
-                  bg-gradient-to-br from-slate-600 via-slate-900 to-zinc-950 border-0
+                  bg-gradient-to-br from-[#656d72] via-[#656d72] to-[#656d72] border-0
                   rounded-xl border border-white/10
                 "
               >

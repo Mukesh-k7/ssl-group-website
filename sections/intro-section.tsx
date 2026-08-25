@@ -117,7 +117,7 @@ export function IntroSection() {
               "
               style={{
                 backgroundImage:
-                  "linear-gradient(135deg, rgba(30,58,95,0.3), rgba(17,17,17,0.8)), url('/images/products/home.jpg')",
+                  "linear-gradient(135deg, rgb(63 116 185 / 40%) 0%, rgb(211 194 194 / 90%) 100%), url(/images/products/home.jpg)",
                 backgroundColor: "#2A2A2A",
               }}
             /

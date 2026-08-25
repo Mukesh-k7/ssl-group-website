@@ -79,7 +79,7 @@ export function TestimonialsSection() {
                         className="
                     h-8 w-8
                     mb-4
-                    text-[#c35303d1]
+                    text-[#fcaf1c]
                   "
                       /
                       >
@@ -112,7 +112,7 @@ export function TestimonialsSection() {
                         <p
                           className="
                       mt-1
-                      text-xs text-[#c35303d1]
+                      text-xs text-[#fcaf1c]
                     "
                         >{t(`${item.key}.Title`)}</p>
                       </footer>

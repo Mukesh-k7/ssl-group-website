@@ -71,7 +71,7 @@ export function CertificationsPreviewSection() {
                   <Award
                     className="
                       h-6 w-6
-                      text-[#f38203] text-bold
+                      text-[#fcaf1c] text-bold
                     "
                   /
                   >

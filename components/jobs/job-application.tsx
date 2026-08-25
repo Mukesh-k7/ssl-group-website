@@ -193,7 +193,7 @@ export function JobApplicationForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="mx-auto max-w-8xl space-y-6 rounded-xl border py-24 bg-gradient-to-br from-[#6a6a6c] via-[#5771af] to-[#89899a] p-8 shadow-sm" noValidate>
+    <form onSubmit={handleSubmit} className="mx-auto max-w-8xl space-y-6 rounded-xl border py-24 bg-gradient-to-br from-[#656d72] via-[#656d72] to-[#656d72] p-8 shadow-sm" noValidate>
       <div className="grid gap-5 sm:grid-cols-2">
         {positionFromUrl && (
           <div className="space-y-2">

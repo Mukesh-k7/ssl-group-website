@@ -15,7 +15,7 @@ export function CtaBannerSection( ) {
     <section
       className="
         py-20
-        backdrop-blur-xl bg-[linear-gradient(140deg,#f1edea_0%,#f3892d_40%,#E8820A_70%,#A84800_100%)]
+        backdrop-blur-xl bg-sunset-2
       "
     >
       <div

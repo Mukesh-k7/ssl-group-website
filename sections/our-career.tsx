@@ -25,14 +25,14 @@ export default function CareersPage() {
           <div className="mt-10 flex flex-wrap gap-4">
             <Link
               href="/career"
-              className="rounded-lg bg-[#0461cfad] px-5 py-3 font-medium"
+              className="rounded-lg bg-brand px-5 py-3 font-medium"
             >
               {t("ViewOpen")}
             </Link>
 
             <button
               onClick={() => setOpen(true)}
-              className="rounded-lg border border-slate-700 px-5 py-3 hover:bg-white hover:text-black transition"
+              className="rounded-lg border border-slate-700 px-5 py-3 bg-brand hover:bg-[#fcaf1c] hover:text-black transition"
             >
               {t("ContactHR")}
             </button>

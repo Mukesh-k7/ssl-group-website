@@ -75,7 +75,7 @@ export default function BlogPage() {
                 >
                   <span
                     className="
-                      text-xs text-[#c35303d1] font-semibold uppercase
+                      text-xs text-[#fcaf1c] font-semibold uppercase
                       tracking-wider
                     "
                   >

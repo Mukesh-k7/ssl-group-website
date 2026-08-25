@@ -119,7 +119,7 @@ export function HeroSection() {
             >
               {highlights.map(({ icon: Icon, label }) => (
                 <div key={label} className="flex items-center gap-3 rounded-2xl border border-white/10 bg-gunmetal/70 px-4 py-3 text-sm text-metallic">
-                  <Icon className="h-5 w-5 text-[#f38203]" />
+                  <Icon className="h-5 w-5 text-[#fcaf1c]" />
                   {label}
                 </div>
               ))}
@@ -137,7 +137,7 @@ export function HeroSection() {
                 className="h-[650px] bg-cover bg-center bg-no-repeat"
                 style={{
                   backgroundImage:
-                    "linear-gradient(135deg, rgba(30,58,95,0.4) 0%, rgba(17,17,17,0.9) 100%), url('/images/products/banner.png')",
+                    "linear-gradient(135deg, rgb(63 116 185 / 40%) 0%, rgb(211 194 194 / 90%) 100%), url(/images/products/banner.png)",
                 }}
               />
 

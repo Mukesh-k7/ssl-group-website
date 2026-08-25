@@ -3,6 +3,40 @@
 @theme {
   --color-brand: #e37900;
   --color-brand-dark: #c96800;
+
+  --background-image-sunset-2: linear-gradient(140deg, #f1edea 0%, #f7b67f 40%, #f9b465 70%, #f79d17 100%);
+}
+
+.to-\[\#FDBA74\] {
+  --tw-gradient-to: #e0bd98!important;
+  --tw-gradient-stops: var(--tw-gradient-via-stops);
+}
+
+.via-\[\#EA580C\] {
+  --tw-gradient-via: #f09161!important;
+  --tw-gradient-via-stops: var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-via) var(--tw-gradient-via-position), var(--tw-gradient-to) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-via-stops);
+}
+
+.from-\[\#7C2D12\] {
+    --tw-gradient-from: #b67058!important;
+    --tw-gradient-stops: var(--tw-gradient-via-stops);
+}
+
+.via-\[\#C96A00\] {
+    --tw-gradient-via: #fcaf1c!important;
+    --tw-gradient-via-stops: var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-via) var(--tw-gradient-via-position), var(--tw-gradient-to) var(--tw-gradient-to-position);
+    --tw-gradient-stops: var(--tw-gradient-via-stops);
+}
+
+.to-\[\#5B2A00\] {
+    --tw-gradient-to: #5b2a00!important;
+    --tw-gradient-stops: var(--tw-gradient-via-stops);
+}
+
+.from-\[\#F7941D\] {
+    --tw-gradient-from: #f7941d!important;
+    --tw-gradient-stops: var(--tw-gradient-via-stops);
 }
 
 :root {

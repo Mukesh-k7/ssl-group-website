@@ -81,7 +81,7 @@ export function Navbar() {
       className={cn(
         "fixed left-0 right-0 top-0 z-50 transition-all duration-300",
         scrolled
-          ? "py-3 shadow-2xl shadow-black/40 backdrop-blur-xl bg-[linear-gradient(140deg,_#f1edea_0%,_#ecba90_40%,_#eaaf6a_70%,_#dca758_100%)]"
+          ? "py-3 shadow-2xl shadow-black/40 backdrop-blur-xl bg-sunset-2"
           : "bg-white py-5 text-black"
       )}
     >

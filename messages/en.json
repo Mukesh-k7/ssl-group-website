@@ -3133,7 +3133,6 @@
       "role": "Head of Procurement",
       "company": "Last Choice Company"
     },
-
     "Africa": {
       "Title": "Cape Town South Africa",
       "quote": "SSL Group has been a trusted partner for our business, providing high-quality materials and exceptional service. Their commitment to excellence and customer satisfaction is truly commendable.",
@@ -3141,7 +3140,6 @@
       "role": "Head of Procurement",
       "company": "Kamal Group"
     },
-
     "Arabia": {
       "Title": "Saudi Arabia(Dubai)",
       "quote": "We have had a great experience working with SSL Group India. Their professionalism, commitment, and customer support make them a trusted long-term partner.",
@@ -3230,28 +3228,28 @@
     "Title": "Building Global Metallurgy Leadership",
     "Journey": "Our Journey",
     "Foundation": {
-      "Title": "Foundation",
-      "Description": "SSL Group established in Delhi as a metallurgical raw materials trading firm."
+      "Title": "Global Logistics Foundation",
+      "Description": "Established our logistics operations with a vision to connect businesses across international markets. We developed strong expertise in **global freight forwarding, container handling and export logistics**, managing more than **200 TEUs per month** across international destinations."
     },
-    "Export": {
-      "Title": "Export Operations",
-      "Description": "First international shipments of pig iron and ferro alloys to Middle East markets."
+    "International": {
+      "Title": "Entering International Trade",
+      "Description": "Expanded from logistics into international trading by establishing our **Export Company**. This marked the beginning of our journey in the **Ferro Alloys and Metallurgical Materials** sector, with a focus on building reliable global customer and supplier relationships."
     },
-    "Africa": {
-      "Title": "Africa Expansion",
-      "Description": "Dedicated trade corridor established for West and East African steel manufacturers."
+    "FerroAlloys": {
+      "Title": "Strengthening Ferro Alloys Exports",
+      "Description": "Achieved a significant milestone of **100+ MT of Ferro Alloys exports per month**. With growing customer confidence and a stronger supply chain, we expanded our presence across international markets, establishing ourselves as a trusted partner in the global metallurgical industry."
     },
-    "Infrastructure": {
-      "Title": "Infrastructure Investment",
-      "Description": "Bonded warehousing and port-side blending facilities commissioned at major Indian ports."
+    "Expansion": {
+      "Title": "Global Network Expansion",
+      "Description": "Focused on expanding our international customer base and supplier network. We strengthened our presence in key markets across **Asia, the Middle East, Africa and Europe**, while developing long-term partnerships in the metallurgical industry."
     },
-    "European": {
-      "Title": "European Network",
-      "Description": "Strategic distributor partnerships formed across Germany, Italy, and Spain."
+    "Partner": {
+      "Title": "Global Supply Partner",
+      "Description": "Entered a new phase of growth with a stronger international presence and an expanded customer and supplier network. Our operations evolved beyond conventional trading into **end-to-end sourcing, quality coordination, logistics and international supply solutions** for the metallurgical industry."
     },
-    "Sustainability": {
-      "Title": "Sustainability Framework",
-      "Description": "ESG reporting and responsible sourcing program launched across mineral supply chains."
+    "NextChapter": {
+      "Title": "Building the Next Chapter",
+      "Description": "Today, we are focused on creating a **globally connected metallurgical supply platform**, combining our experience in logistics, international trade and Ferro Alloys with a growing network across **India, Dubai and international markets**.Our vision is simple — **to become a trusted global partner for the sourcing and supply of critical metallurgical raw materials**, built on reliability, transparency, quality and long-term relationships."
     }
   },
   "services": {

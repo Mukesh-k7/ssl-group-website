@@ -18,7 +18,6 @@ export default function JobApplicationPage() {
         <Suspense fallback={<div className="text-center text-gray-500">Loading form...</div>}>
           <JobApplicationForm />
         </Suspense>
-
       </div>
     </main>
   );
