@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 import createMiddleware from "next-intl/middleware";
 
-const PRODUCTION_HOST = "www.sslgroup.in";
+const PRODUCTION_HOST = "www.sslgroup.com";
 const LOCALES = ["en", "hi", "ar"];
 
 const intlMiddleware = createMiddleware({
@@ -19,7 +19,7 @@ export function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
   const adminEnabled = process.env.ENABLE_ADMIN === "true";
 
-  if (host === "sslgroup.in") {
+  if (host === "sslgroup.com") {
     const url = request.nextUrl.clone();
     url.host = PRODUCTION_HOST;
     url.protocol = "https";
