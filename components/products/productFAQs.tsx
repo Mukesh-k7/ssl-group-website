@@ -53,7 +53,7 @@ export default function ProductFAQ({
             </button>
 
             {openIndex === index && (
-              <div className="border-t px-5 py-4 text-gray-600 dark:text-gray-400">
+              <div className="border-t px-5 py-4 text-[#ccd2da]">
                 {variantT(`${translationKey}.FAQ.${item.answer}` as any)}
               </div>
             )}

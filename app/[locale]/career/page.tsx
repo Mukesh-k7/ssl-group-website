@@ -72,7 +72,7 @@ export default function CareersPage({ i }: { i: number }) {
       <section className="relative min-h-screen flex items-center pt-16 overflow-hidden bg-[#858585a8] ">
         {/* bg texture */}
         <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-gradient-to-br from-[#080C14] via-[#0D1420] to-[#080C14]" />
+          <div className="absolute inset-0 bg-gradient-to-br bg-[#858585a8]" />
           <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#F97316]/5 rounded-full blur-[120px]" />
           <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-[#EAB308]/5 rounded-full blur-[100px]" />
           {/* grid lines */}
@@ -127,14 +127,14 @@ export default function CareersPage({ i }: { i: number }) {
 
           {/* Hero stats card */}
           <div className="hidden lg:block">
-            <div className="bg-[#0D1520]/80 border border-white/10 rounded-2xl p-8 backdrop-blur-sm">
+            <div className="bg-[#858585a8] border border-white/10 rounded-2xl p-8 backdrop-blur-sm">
               <div className="grid grid-cols-2 gap-6 mb-8">
                 {STATS.map((s, index) => (
-                  <div key={index} className="bg-[#0A0E1A] rounded-xl p-5 border border-white/5">
+                  <div key={index} className="bg-[#64748B] rounded-xl p-5 border border-white/5">
                     <div className="text-2xl font-black bg-gradient-to-r from-[#F97316] to-[#EAB308] bg-clip-text text-transparent mb-1">
                       {s.value}
                     </div>
-                    <div className="text-[#64748B] text-xs font-medium">{t(`stats.${s.label}`)}  </div>
+                    <div className="text-[#aac7f0] text-xs font-medium">{t(`stats.${s.label}`)}  </div>
                   </div>
                 ))}
               </div>
@@ -400,7 +400,7 @@ export default function CareersPage({ i }: { i: number }) {
       {/* CTA BANNER */}
       <section className="py-6 px-6 bg-[#858585a8] relative overflow-hidden">
         <div className="container mx-auto">
-          <div className="bg-gradient-to-r from-[#0D1520] via-[#F97316]/10 to-[#0D1520] border border-[#F97316]/20 rounded-2xl p-12 text-center relative overflow-hidden">
+          <div className="bg-gradient-to-r from-[#ad9a7f] via-[#ad9a7f]/10 to-[#6c809b] border border-[#F97316]/20 rounded-2xl p-12 text-center relative overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#F97316]/5" />
             <div className="relative">
               <div className="text-[#F97316] text-xs font-bold tracking-widest uppercase mb-4">{t("ReadytoApply")}?  </div>
