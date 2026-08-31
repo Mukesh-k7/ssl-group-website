@@ -12,7 +12,7 @@ const intlMiddleware = createMiddleware({
 });
 
 // matches /en/admin, /hi/admin/xyz, /ar/admin etc.
-const adminPageRegex = new RegExp(`^/(${LOCALES.join("|")})/admin(/|$)`);
+const adminPageRegex = new RegExp(`^(/(${LOCALES.join("|")}))?/admin(/|$)`);;
 
 export function middleware(request: NextRequest) {
   const host = request.headers.get("host")?.split(":")[0] ?? "";
