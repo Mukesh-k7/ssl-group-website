@@ -48,7 +48,7 @@ export const navigation: NavItem[] = [
   { key: "insights", href: "/blog" },
   { key: "contact", href: "/contact" },
   { key: "career", href: "/career" },
-  { key: "media", href: "/media-center" },
+  // { key: "media", href: "/media-center" },
 ];
 
 export const stats: Stat[] = [
