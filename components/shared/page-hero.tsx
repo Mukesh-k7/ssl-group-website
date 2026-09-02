@@ -14,8 +14,8 @@ export function PageHero({ title, description, eyebrow }: PageHeroProps) {
       className="
         relative overflow-hidden
         pt-32 pb-20
-        bg-white via-transparent to-charcoal
-        border-b border-white/10
+        bg-linear-to-b from-industrial-blue/40 via-transparent to-charcoal
+        border-b border-t border-white/10
       "
     >
       <div
@@ -69,7 +69,7 @@ export function PageHero({ title, description, eyebrow }: PageHeroProps) {
           )}
           <h1
             className="
-              font-heading font-bold text-4xl text-[#3b3b3ba8]  md:text-5xl lg:text-6xl
+              font-heading font-bold text-4xl text-white md:text-5xl lg:text-6xl
               tracking-tight
             "
           >
@@ -78,7 +78,7 @@ export function PageHero({ title, description, eyebrow }: PageHeroProps) {
           <p
             className="
               mt-6
-              text-lg text-[#424040a8]  md:text-xl leading-relaxed
+              text-lg text-metallic/90 md:text-xl leading-relaxed
             "
           >
             {description}
