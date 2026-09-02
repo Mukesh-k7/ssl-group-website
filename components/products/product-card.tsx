@@ -122,7 +122,7 @@ export function ProductCard({ product }: ProductCardProps) {
             className="
               w-full
               mt-6
-              bg-brand hover:bg-[#fcaf1c] text-white font-medium
+              bg-[#fca503] hover:bg-[#fcaf1c] text-white font-medium
               flex items-center justify-center gap-2
               transition-all
               group/btn

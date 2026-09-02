@@ -37,8 +37,8 @@ export default function ProductGallery({ product }: Props) {
                         <button
                             key={variant.id}
                             onClick={() => setSelectedVariant(variant)}
-                            className={`overflow-hidden rounded-lg border-2 w-[146px] h-[138px] transition-all ${selectedVariant.id === variant.id
-                                ? "border-orange-500"
+                            className={`overflow-hidden rounded-lg border-2 w-[146] h-[138] transition-all ${selectedVariant.id === variant.id
+                                ? "border-[#fcaf1c]"
                                 : "border-gray-600 hover:border-gray-400"
                                 }`}
                         >
@@ -47,7 +47,7 @@ export default function ProductGallery({ product }: Props) {
                                 alt={variantT(`${variant.translationKey}.Name` as any)}
                                 width={200}
                                 height={109}
-                                className="w-full h-[109px] object-cover rounded-lg"
+                                className="w-full h-[109] object-cover rounded-lg"
                             />
                             <p className="p-1 text-[11px] font-medium">
                                 {variantT(`${variant.translationKey}.Name` as any)}
@@ -62,7 +62,7 @@ export default function ProductGallery({ product }: Props) {
                         alt={selectedVariant.translationKey}
                         width={900}
                         height={600}
-                        className="w-full h-[500px] object-cover transition-all duration-500 group-hover:scale-125"
+                        className="w-full h-[500] object-cover transition-all duration-500 group-hover:scale-125"
                     />
                 </div>
                 {/* Overview */}
@@ -86,7 +86,7 @@ export default function ProductGallery({ product }: Props) {
                                 key={item}
                                 className="flex items-center gap-2"
                             >
-                                <CheckCircle className="h-5 w-5 text-orange-500" />
+                                <CheckCircle className="h-5 w-5 text-[#fcaf1c]" />
                                 {variantT(`${selectedVariant.translationKey}.Applications.${item}` as any)}
                             </li>
                         ))}

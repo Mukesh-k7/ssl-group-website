@@ -128,7 +128,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
                 >
                   <p
                     className="
-                      text-xs text-[#c35303d1]
+                      text-xs text-[#fcaf1c]
                     "
                   >
                     {t(`Products.${p.key}.Category`)}
