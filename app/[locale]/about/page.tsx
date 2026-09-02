@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { PageHero } from "@/components/shared/page-hero";
-import { AnimatedSection, SectionHeader } from "@/components/shared/animated-section";
+import {
+  AnimatedSection,
+  SectionHeader,
+} from "@/components/shared/animated-section";
 import { TimelineSection } from "@/sections/timeline";
 import { StatsCounterSection } from "@/sections/stats-counter";
 import { CtaBannerSection } from "@/sections/cta-banner";
@@ -8,6 +11,8 @@ import { PageBreadcrumbJsonLd } from "@/components/shared/page-breadcrumb-jsonld
 import { createPageMetadata } from "@/lib/seo";
 import { company, Values } from "@/data/site";
 import { useTranslations } from "next-intl";
+import { HeroSection } from "@/sections/hero";
+import { IntroSection } from "@/sections/intro-section";
 
 export const metadata: Metadata = createPageMetadata({
   title: "About Us",
@@ -17,7 +22,7 @@ export const metadata: Metadata = createPageMetadata({
 });
 
 export default function AboutPage() {
-  const t = useTranslations("about")
+  const t = useTranslations("about");
   return (
     <>
       <PageBreadcrumbJsonLd
@@ -26,11 +31,13 @@ export default function AboutPage() {
           { name: "About Us", path: "/about" },
         ]}
       />
+      <IntroSection />
       <PageHero
-        eyebrow={t("title")}
+        eyebrow={t("Eyebrow")}
         title={t("Title")}
         description={t("SSLGroup")}
       />
+      
       <AnimatedSection
         id="about-content"
         className="
@@ -51,13 +58,13 @@ export default function AboutPage() {
           >
             <div>
               <SectionHeader
-                eyebrow={t("Eyebrow")}
+                
                 title={t("Globals")}
                 titleClassName="font-heading font-bold text-3xl text-white md:text-4xl lg:text-5xl
                   tracking-tight"
                 eyebrowClassName="mb-3
                   text-lg text-transparent font-bold tracking-[0.2em] uppercase
-                bg-gradient-to-b bg-clip-text from-[#F7941D] via-[#fcaf1c]
+                bg-linear-to-b bg-clip-text from-[#F7941D] via-[#fcaf1c]
                 to-[#5B2A00] drop-shadow-[2px_2px_0px_rgba(0,0,0,0.25)]"
                 align="left"
               />
@@ -96,13 +103,18 @@ export default function AboutPage() {
                     className="
                       font-heading font-semibold text-white
                     "
-                  > {t(`${value.key}.Title`)} </h3>
+                  >
+                    {" "}
+                    {t(`${value.key}.Title`)}{" "}
+                  </h3>
                   <p
                     className="
                       mt-2
                       text-sm text-metallic/80
                     "
-                  >{t(`${value.key}.Description`)}</p>
+                  >
+                    {t(`${value.key}.Description`)}
+                  </p>
                 </div>
               ))}
             </div>

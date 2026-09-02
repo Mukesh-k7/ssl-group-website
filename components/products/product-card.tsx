@@ -22,7 +22,7 @@ export function ProductCard({ product }: ProductCardProps) {
           overflow-hidden
           h-full
           text-transparent
-          bg-gradient-to-br from-industrial-blue/40 via-gunmetal to-charcoal
+          bg-linear-to-br from-industrial-blue/40 via-gunmetal to-charcoal
           border-white/10 hover:border-industrial-blue/40
           transition-all hover:shadow-2xl hover:shadow-industrial-blue/10
           group
@@ -31,10 +31,10 @@ export function ProductCard({ product }: ProductCardProps) {
         <div
           className="
             relative overflow-hidden
-            text-transparent text-transparent
-            bg-gunmetal bg-gradient-to-r bg-clip-text bg-gradient-to-r bg-clip-text
+            text-transparent
+            bg-gunmetal bg-linear-to-r bg-clip-text
             from-[#a75500] via-[#f9884b] to-[#f3d3b0]
-            aspect-[4/3]
+            aspect-4/3
           "
         >
           
@@ -55,15 +55,13 @@ export function ProductCard({ product }: ProductCardProps) {
             }}
             role="img"
             aria-label={product.key}
-          /
-          >
+            />
           <div
             className="
               absolute inset-0
-              bg-gradient-to-t from-charcoal via-charcoal/20 to-transparent
+              bg-linear-to-t from-charcoal via-charcoal/20 to-transparent
             "
-          /
-          >
+          />
           <span
             className="
               absolute top-4 left-4

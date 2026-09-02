@@ -70,8 +70,7 @@ export function StatsCounterSection() {
           px-4 md:px-6 mx-auto
         "
       >
-        <motion
-          .div
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}

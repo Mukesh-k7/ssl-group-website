@@ -72,9 +72,9 @@ export default function CareersPage({ i }: { i: number }) {
       <section className="relative min-h-screen flex items-center pt-16 overflow-hidden bg-[#858585a8] ">
         {/* bg texture */}
         <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-gradient-to-br bg-[#858585a8]" />
-          <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#F97316]/5 rounded-full blur-[120px]" />
-          <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-[#EAB308]/5 rounded-full blur-[100px]" />
+          <div className="absolute inset-0 bg-linear-to-br bg-[#858585a8]" />
+          <div className="absolute top-0 right-0 w-150 h-600 bg-[#F97316]/5 rounded-full blur-[120px]" />
+          <div className="absolute bottom-0 left-0 w-400 h-400 bg-[#EAB308]/5 rounded-full blur-[100px]" />
           {/* grid lines */}
           <div
             className="absolute inset-0 opacity-[0.03]"
@@ -97,7 +97,7 @@ export default function CareersPage({ i }: { i: number }) {
             <h1 className="text-4xl lg:text-4xl font-black leading-[1.05] mb-6">
               <span className="text-white">{t("Team")} </span>
               <br />
-              <span className="bg-gradient-to-r from-[#F97316] via-[#EAB308] to-[#F97316] bg-clip-text text-transparent">
+              <span className="bg-linear-to-r from-[#F97316] via-[#EAB308] to-[#F97316] bg-clip-text text-transparent">
                 {t("Premier")}
               </span>
               <br />
@@ -109,7 +109,7 @@ export default function CareersPage({ i }: { i: number }) {
             <div className="flex flex-wrap gap-4">
               <a
                 href="#openings"
-                className="bg-gradient-to-r from-[#F97316] to-[#EAB308] text-[#080C14] px-8 py-3.5 rounded font-bold text-sm hover:opacity-90 transition-opacity inline-flex items-center gap-2"
+                className="bg-linear-to-r from-[#F97316] to-[#EAB308] text-[#080C14] px-8 py-3.5 rounded font-bold text-sm hover:opacity-90 transition-opacity inline-flex items-center gap-2"
               >
                 {t("Openings")}
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -131,7 +131,7 @@ export default function CareersPage({ i }: { i: number }) {
               <div className="grid grid-cols-2 gap-6 mb-8">
                 {STATS.map((s, index) => (
                   <div key={index} className="bg-[#64748B] rounded-xl p-5 border border-white/5">
-                    <div className="text-2xl font-black bg-gradient-to-r from-[#F97316] to-[#EAB308] bg-clip-text text-transparent mb-1">
+                    <div className="text-2xl font-black bg-linear-to-r from-[#F97316] to-[#EAB308] bg-clip-text text-transparent mb-1">
                       {s.value}
                     </div>
                     <div className="text-[#aac7f0] text-xs font-medium">{t(`stats.${s.label}`)}  </div>
@@ -139,7 +139,7 @@ export default function CareersPage({ i }: { i: number }) {
                 ))}
               </div>
               <div className="flex items-center gap-3 bg-[#F97316]/10 border border-[#F97316]/20 rounded-xl p-4">
-                <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#F97316] to-[#EAB308] flex items-center justify-center flex-shrink-0">
+                <div className="w-10 h-10 rounded-full bg-linear-to-br from-[#F97316] to-[#EAB308] flex items-center justify-center shrink-0">
                   <svg className="w-5 h-5 text-[#080C14]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064" />
                   </svg>
@@ -223,7 +223,7 @@ export default function CareersPage({ i }: { i: number }) {
             {visibleJobs.map((job, i) => (
               <div
                 key={i}
-                className={`bg-[#0D1520] border rounded-xl p-6 hover:border-[#F97316]/40 transition-all group  ${i === 0 ? "border-[#F97316]/40 bg-gradient-to-br from-industrial-blue/40 via-gunmetal to-charcoal" : "border-white/5"
+                className={`bg-[#0D1520] border rounded-xl p-6 hover:border-[#F97316]/40 transition-all group  ${i === 0 ? "border-[#F97316]/40 bg-linear-to-br from-industrial-blue/40 via-gunmetal to-charcoal" : "border-white/5"
                   }`}
               >
                 <div className="flex items-start justify-between mb-4">
@@ -231,7 +231,7 @@ export default function CareersPage({ i }: { i: number }) {
                     <div className="text-white font-bold text-sm mb-1">{t(`jobs.${job.key}.title`)}</div>
                     <div className="text-[#F97316] text-xs font-semibold">{t("title")}</div>
                   </div>
-                  <div className={`w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0 ${i === 0 ? "bg-[#F97316]/20" : "bg-white/5"}`}>
+                  <div className={`w-8 h-8 rounded-lg flex items-center justify-center shrink-0 ${i === 0 ? "bg-[#F97316]/20" : "bg-white/5"}`}>
                     <svg className={`w-4 h-4 ${i === 1 ? "text-[#fcaf1c]" : "text-[#fcaf1c]"}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 00.75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 00-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0112 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 01-.673-.38m0 0A2.18 2.18 0 013 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 013.413-.387m7.5 0V5.25A2.25 2.25 0 0013.5 3h-3a2.25 2.25 0 00-2.25 2.25v.894m7.5 0a48.667 48.667 0 00-7.5 0M12 12.75h.008v.008H12v-.008z" />
                     </svg>
@@ -247,7 +247,7 @@ export default function CareersPage({ i }: { i: number }) {
                   <button
                     onClick={() => router.push("/jobs")}
                     className={`w-full py-2.5 rounded-lg text-xs font-bold transition-all cursor-pointer ${i === 0
-                      ? "bg-gradient-to-r from-[#F97316] to-[#EAB308] text-[#080C14]"
+                      ? "bg-linear-to-r from-[#F97316] to-[#EAB308] text-[#080C14]"
                       : "border border-white/10 text-white bg-[#0461cfad] hover:bg-white/5"
                       }`}
                   >
@@ -276,9 +276,9 @@ export default function CareersPage({ i }: { i: number }) {
             <>
               <div className="text-center py-16 text-[#475569]">
                 <svg className="w-12 h-12 mx-auto mb-4 opacity-40" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" className="text-[#fff] fw-[bold]" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" className="text-white" />
                 </svg>
-                <p className="text-sm text-[#fff] fw-[bold]"> {t("Rolesmatch")} </p>
+                <p className="text-sm text-white font-bold"> {t("Rolesmatch")} </p>
               </div>
             </>
           )}
@@ -286,7 +286,7 @@ export default function CareersPage({ i }: { i: number }) {
       </section>
 
       {/* BENEFITS */}
-      <section className="py-24 bg-[#fff] transition-colors">
+      <section className="py-24 bg-white transition-colors">
         <div className="container mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-16 items-start">
             <div>
@@ -296,7 +296,7 @@ export default function CareersPage({ i }: { i: number }) {
               <h2 className="text-4xl font-black text-black leading-tight mb-6">
                 {t("Career")}
                 <br />
-                <span className="bg-gradient-to-r from-[#F97316] to-[#EAB308] bg-clip-text text-transparent">
+                <span className="bg-linear-to-r from-[#F97316] to-[#EAB308] bg-clip-text text-transparent">
                   {t("GlobalTrade")}
                 </span>
               </h2>
@@ -317,7 +317,7 @@ export default function CareersPage({ i }: { i: number }) {
               {Benefits.map((b, i) => (
                 <div
                   key={i}
-                  className={`bg-gradient-to-br from-slate-600 via-slate-900 to-zinc-950 rounded-xl p-5 hover:border-[#F97316]/30 transition-colors group ${i === 1 ? "border-[#F97316]/30 bg-gradient-to-br from-industrial-blue/40 via-gunmetal to-charcoal" : "border-white/5"
+                  className={`bg-linear-to-br from-slate-600 via-slate-900 to-zinc-950 rounded-xl p-5 hover:border-[#F97316]/30 transition-colors group ${i === 1 ? "border-[#F97316]/30 bg-linear-to-br from-industrial-blue/40 via-gunmetal to-charcoal" : "border-white/5"
                     }`}
                 >
                   <div className={`mb-4 ${i === 1 ? "text-[#F97316]" : "text-[#a1b3cd]"} group-hover:text-[#F97316] transition-colors`}>
@@ -334,12 +334,12 @@ export default function CareersPage({ i }: { i: number }) {
 
       {/* LIFE AT SSL */}
       <section id="life" className="py-24 bg-[#858585a8] relative overflow-hidden">
-        <div className="absolute right-0 top-0 w-[500px] h-[500px] bg-[#EAB308]/4 rounded-full blur-[120px]" />
+        <div className="absolute right-0 top-0 w-125 h-125 bg-[#EAB308]/4 rounded-full blur-[120px]" />
         <div className="relative container mx-auto px-6">
           <div className="text-center mb-16">
             <div className="text-[#F97316] text-xs font-bold tracking-widest uppercase mb-4">{t("Culture")} </div>
             <h2 className="text-4xl lg:text-5xl font-black text-white mb-6">
-              {t("LifeAt")} <span className="bg-gradient-to-r from-[#F97316] to-[#EAB308] bg-clip-text text-transparent"> {t("title")} </span>
+              {t("LifeAt")} <span className="bg-linear-to-r from-[#F97316] to-[#EAB308] bg-clip-text text-transparent"> {t("title")} </span>
             </h2>
             <p className="text-[#94A3B8] max-w-2xl mx-auto leading-relaxed">
               {t("Bureaucracy")}
@@ -348,7 +348,7 @@ export default function CareersPage({ i }: { i: number }) {
           <div className="grid md:grid-cols-3 gap-6">
             {Culture.map((card) => (
               <div key={card.key} className="bg-[#0D1520] border border-white/5 rounded-2xl p-8 relative overflow-hidden group hover:border-white/10 transition-colors">
-                <div className={`absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[${card.accent}] to-transparent`}
+                <div className={`absolute top-0 left-0 right-0 h-1 bg-linear-to-r from-[${card.accent}] to-transparent`}
                   style={{ background: `linear-gradient(to right, ${card.accent}, transparent)` }}
                 />
                 <div className="text-white font-black text-xl mb-4">{t(`culture.${card.key}.title`)} </div>
@@ -360,15 +360,15 @@ export default function CareersPage({ i }: { i: number }) {
       </section>
 
       {/* RECRUITMENT PROCESS */}
-      <section className="py-24 bg-[#fff] transition-colors">
+      <section className="py-24 bg-white transition-colors">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <div className="text-lg text-transparent font-bold tracking-[0.2em] uppercase
-            bg-gradient-to-b bg-clip-text from-[#F7941D] via-[#fcaf1c]
+            <div className="text-lg text-transparent font-bold tracking-widest uppercase
+            bg-linear-to-b bg-clip-text from-[#F7941D] via-[#fcaf1c]
             to-[#5B2A00]
-            drop-shadow-[2px_2px_0px_rgba(0,0,0,0.25)] font-bold tracking-widest mb-4">{t("HowWeHire")} </div>
+            drop-shadow-[2px_2px_0px_rgba(0,0,0,0.25)] mb-4">{t("HowWeHire")} </div>
             <h2 className="text-4xl lg:text-5xl font-black text-black mb-4">
-              {t("Recruitment")} <span className="bg-gradient-to-r from-[#F97316] to-[#EAB308] bg-clip-text text-transparent"> {t("Process")} </span>
+              {t("Recruitment")} <span className="bg-linear-to-r from-[#F97316] to-[#EAB308] bg-clip-text text-transparent"> {t("Process")} </span>
             </h2>
             <p className="text-[#64748B] max-w-xl mx-auto text-sm leading-relaxed">
               {t("Transparent")}
@@ -379,11 +379,11 @@ export default function CareersPage({ i }: { i: number }) {
             {Recruitments.map((step, i) => (
               <div key={i} className="relative">
                 {i < Recruitments.length - 1 && (
-                  <div className="hidden lg:block absolute top-8 left-[calc(100%-12px)] w-6 h-px bg-gradient-to-r from-[#F97316]/40 to-transparent z-10" />
+                  <div className="hidden lg:block absolute top-8 left-[calc(100%-12px)] w-6 h-px bg-linear-to-r from-[#F97316]/40 to-transparent z-10" />
                 )}
-                <div className="bg-gradient-to-br from-slate-600 via-slate-900 to-zinc-950 rounded-2xl p-6 hover:border-[#F97316]/20 transition-colors group">
+                <div className="bg-linear-to-br from-slate-600 via-slate-900 to-zinc-950 rounded-2xl p-6 hover:border-[#F97316]/20 transition-colors group">
                   <div className="flex items-center gap-3 mb-5">
-                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#F97316]/20 to-[#EAB308]/10 border border-[#F97316]/20 flex items-center justify-center text-[#F97316] group-hover:from-[#F97316]/30 transition-colors">
+                    <div className="w-12 h-12 rounded-xl bg-linear-to-br from-[#F97316]/20 to-[#EAB308]/10 border border-[#F97316]/20 flex items-center justify-center text-[#F97316] group-hover:from-[#F97316]/30 transition-colors">
                       <step.icon />
                     </div>
                     <div className="text-3xl font-black text-[#FFF]">{step.step} </div>
@@ -400,8 +400,8 @@ export default function CareersPage({ i }: { i: number }) {
       {/* CTA BANNER */}
       <section className="py-6 px-6 bg-[#858585a8] relative overflow-hidden">
         <div className="container mx-auto">
-          <div className="bg-gradient-to-r from-[#ad9a7f] via-[#ad9a7f]/10 to-[#6c809b] border border-[#F97316]/20 rounded-2xl p-12 text-center relative overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#F97316]/5" />
+          <div className="bg-linear-to-r from-[#ad9a7f] via-[#ad9a7f]/10 to-[#6c809b] border border-[#F97316]/20 rounded-2xl p-12 text-center relative overflow-hidden">
+            <div className="absolute inset-0 bg-linear-to-b from-transparent to-[#F97316]/5" />
             <div className="relative">
               <div className="text-[#F97316] text-xs font-bold tracking-widest uppercase mb-4">{t("ReadytoApply")}?  </div>
               <h2 className="text-3xl lg:text-4xl font-black text-white mb-4">
@@ -417,7 +417,7 @@ export default function CareersPage({ i }: { i: number }) {
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
                   href="#openings"
-                  className="bg-gradient-to-r from-[#F97316] to-[#EAB308] text-[#080C14] px-3 py-3.5 rounded-lg font-bold text-sm hover:opacity-90 transition-opacity inline-flex items-center justify-center gap-2"
+                  className="bg-linear-to-r from-[#F97316] to-[#EAB308] text-[#080C14] px-3 py-3.5 rounded-lg font-bold text-sm hover:opacity-90 transition-opacity inline-flex items-center justify-center gap-2"
                 >
                   {t("Browse")}
                   <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>

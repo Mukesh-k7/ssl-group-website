@@ -15,7 +15,7 @@ export default function CareersPage() {
   const [open, setOpen] = useState(false);
   const t = useTranslations()
   return (
-    <section className="text-white bg-gradient-to-br from-industrial-blue/40 via-gunmetal to-charcoal">
+    <section className="text-white bg-linear-to-br from-industrial-blue/40 via-gunmetal to-charcoal">
       <div className="container mx-auto ">
         <section className="px-6 py-24">
           <h1 className="text-5xl font-bold">{t("Careers")} </h1>
@@ -50,15 +50,15 @@ export default function CareersPage() {
 
 
       {open && (
-        <div className="fixed inset-0 bg-black/60 flex items-center justify-center z-[10000]">
-          <div className="bg-white rounded-xl p-6 w-[380px]">
+        <div className="fixed inset-0 bg-black/60 flex items-center justify-center z-10000">
+          <div className="bg-white rounded-xl p-6 w-95">
             <h2 className="text-2xl font-bold mb-5 text-black text-center">{t("ContactHR")}</h2>
 
             <div className="space-y-4">
 
               <a
                 href="tel:+9192174 00795"
-                className="flex items-center gap-3 p-3 rounded-lg border hover:bg-gray-100 bg-gradient-to-br from-[#f38203] via-[#c3bd70] to-[#97724c]"
+                className="flex items-center gap-3 p-3 rounded-lg border hover:bg-gray-100 bg-linear-to-br from-[#f38203] via-[#c3bd70] to-[#97724c]"
               >
                 <Phone />
                 <div>
@@ -69,7 +69,7 @@ export default function CareersPage() {
               
               <a
                 href="tel:+919560259699"
-                className="flex items-center gap-3 p-3 rounded-lg border hover:bg-gray-100 bg-gradient-to-br from-slate-600 via-slate-900 to-zinc-950"
+                className="flex items-center gap-3 p-3 rounded-lg border hover:bg-gray-100 bg-linear-to-br from-slate-600 via-slate-900 to-zinc-950"
               >
                 <Phone />
                 <div>
@@ -81,18 +81,18 @@ export default function CareersPage() {
               <a
                 href="https://wa.me/919560259699"
                 target="_blank"
-                className="flex items-center gap-3 p-3 rounded-lg border hover:bg-green-50 bg-gradient-to-br from-green-500/40 via-green-600 to-green-700"
+                className="flex items-center gap-3 p-3 rounded-lg border hover:bg-green-50 bg-linear-to-br from-green-500/40 via-green-600 to-green-700"
               >
                 <MessageCircle className="text-green-600" />
                 <div>
                   <p className="font-semibold"> {t("WhatsAppHR")} </p>
-                  <p className="text-[#fff]"> {t("StartChat")}</p>
+                  <p className="text-white"> {t("StartChat")}</p>
                 </div>
               </a>
 
               <a
                 href="mailto:hr@sslgroup.in"
-                className="flex items-center gap-3 p-3 rounded-lg border hover:bg-gray-100 bg-gradient-to-br from-slate-600 via-slate-900 to-zinc-950"
+                className="flex items-center gap-3 p-3 rounded-lg border hover:bg-gray-100 bg-linear-to-br from-slate-600 via-slate-900 to-zinc-950"
               >
                 <Mail />
                 <div>

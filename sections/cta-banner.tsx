@@ -6,11 +6,14 @@ import { ArrowRight, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { company } from "@/data/site";
 import { useTranslations } from "next-intl";
+import { useRegion } from "@/components/region/region-context";
 
 export function CtaBannerSection( ) {
 
 
-  const t = useTranslations()
+  const t = useTranslations();
+  const { region } = useRegion();
+  const isInternational = region === "International";
   return (
     <section
       className="
@@ -24,15 +27,14 @@ export function CtaBannerSection( ) {
           mx-auto px-4 md:px-6
         "
       >
-        <motion
-          .div
+        <motion.div
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           className="
             relative overflow-hidden
             p-8 md:p-12 lg:p-16
-            bg-gradient-to-br from-industrial-blue/40 via-gunmetal to-charcoal
+            bg-linear-to-br from-industrial-blue/40 via-gunmetal to-charcoal
             rounded-2xl
           "
         >
@@ -45,8 +47,7 @@ export function CtaBannerSection( ) {
               blur-3xl
               -right-20 -top-20
             "
-            /
-          >
+          />
           <div
             className="
               relative
@@ -58,14 +59,18 @@ export function CtaBannerSection( ) {
                 font-heading font-bold text-3xl text-white md:text-4xl
               "
             >
-              {t("title")}
+              {isInternational ? "Global Trade Support for International Buyers" : t("title")}
             </h2>
             <p
               className="
                 mt-4
                 text-lg text-metallic/90
               "
-            >{t("description")}</p>
+            >
+              {isInternational
+                ? "We help international partners source, ship, and coordinate quality materials with reliable documentation and export execution."
+                : t("description")}
+            </p>
             <div
               className="
                 flex flex-wrap
@@ -75,23 +80,13 @@ export function CtaBannerSection( ) {
             >
               <Button size="lg" asChild className="bg-[#007aff94] hover:bg-[#007affc9]">
                 <Link href="/contact">
-                  {t("SubmitExporInquiry")}
-                  <ArrowRight
-                    className="
-                      h-5 w-5
-                    "
-                    /
-                  >
+                  {isInternational ? "Submit International Inquiry" : t("SubmitExporInquiry")}
+                  <ArrowRight className="h-5 w-5" />
                 </Link>
               </Button>
               <Button size="lg" variant="outline" asChild className="bg-[#007aff94] hover:bg-[#007affc9]">
                 <a href={`mailto:${company.email}`}>
-                  <Mail
-                    className="
-                      h-5 w-5
-                    "
-                    /
-                  >
+                  <Mail className="h-5 w-5" />
                   {company.email}
                 </a>
               </Button>

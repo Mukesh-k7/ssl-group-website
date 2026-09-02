@@ -51,7 +51,7 @@ export default function MediaCenterPage() {
       {/* Hero */}
       <section className="relative overflow-hidden pt-32 pb-20 bg-charcoal border-b border-white/10">
         <div className="absolute inset-0 bg-industrial-grid opacity-40" />
-        <div className="absolute inset-0 bg-gradient-to-b from-industrial-blue/10 via-transparent to-charcoal" />
+        <div className="absolute inset-0 bg-linear-to-b from-industrial-blue/10 via-transparent to-charcoal" />
         <div className="absolute top-0 h-96 w-96 bg-industrial-blue/10 rounded-full blur-3xl -right-32" />
 
         {/* Background image overlay */}
@@ -104,7 +104,7 @@ export default function MediaCenterPage() {
       </section>
 
       {/* Category Tabs */}
-      <section className="sticky top-[72px] z-30 bg-[#080C14]/95 backdrop-blur-xl border-b border-white/10">
+      <section className="sticky top-18 z-30 bg-[#080C14]/95 backdrop-blur-xl border-b border-white/10">
         <div className="container mx-auto px-4 md:px-6">
           <div className="flex overflow-x-auto scrollbar-none gap-1 py-3">
             {mediaCategories.map((cat) => {
@@ -116,11 +116,11 @@ export default function MediaCenterPage() {
                   onClick={() => setActiveCategory(cat.id)}
                   className={`flex items-center gap-2 px-4 py-2.5 rounded-lg text-sm font-medium whitespace-nowrap transition-all ${
                     isActive
-                      ? "bg-gradient-to-r from-[#F97316] to-[#EAB308] text-[#080C14] shadow-lg shadow-orange-500/20"
+                      ? "bg-linear-to-r from-[#F97316] to-[#EAB308] text-[#080C14] shadow-lg shadow-orange-500/20"
                       : "text-metallic/70 hover:text-white hover:bg-white/5"
                   }`}
                 >
-                  <Icon className="h-4 w-4 flex-shrink-0" />
+                  <Icon className="h-4 w-4 shrink-0" />
                   {t(`categories.${cat.id}.title`)}
                 </button>
               );
@@ -177,7 +177,7 @@ export default function MediaCenterPage() {
                     style={{ aspectRatio: i === 0 ? "auto" : "4/3" }}
                     onClick={() => setLightbox({ src: item.image, title: item.title, date: item.date })}
                   >
-                    <div className={`relative w-full ${i === 0 ? "h-72 md:h-full min-h-[280px]" : "h-[280px]"}`}>
+                    <div className={`relative w-full ${i === 0 ? "h-72 md:h-full min-h-70" : "h-70"}`}>
                       <Image
                         src={item.image}
                         alt={item.title}
@@ -185,7 +185,7 @@ export default function MediaCenterPage() {
                         sizes="290px"
                         className="object-cover transition-transform duration-500 group-hover:scale-105"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
+                      <div className="absolute inset-0 bg-linear-to-t from-black/70 via-transparent to-transparent" />
                       <div className="absolute bottom-0 left-0 right-0 p-3">
                         <p className="text-white text-sm font-semibold leading-tight">{item.title}</p>
                         {item.date && (
@@ -211,11 +211,11 @@ export default function MediaCenterPage() {
         .map((cat, sectionIdx) => {
           const Icon = categoryIcons[cat.id] ?? ImageIcon;
           return (
-            <section key={cat.id} className={`py-14 ${sectionIdx % 2 === 0 ? "bg-white/[0.02]" : ""}`}>
+            <section key={cat.id} className={`py-14 ${sectionIdx % 2 === 0 ? "bg-white/2" : ""}`}>
               <div className="container mx-auto px-4 md:px-6">
                 <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
                   <div className="flex gap-3">
-                    <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#F97316]/20 to-[#EAB308]/10 border border-white/10 flex items-center justify-center">
+                    <div className="w-10 h-10 rounded-lg bg-linear-to-br from-[#F97316]/20 to-[#EAB308]/10 border border-white/10 flex items-center justify-center">
                       <Icon className="h-5 w-5 text-amber-400" />
                     </div>
                     <div>
@@ -247,7 +247,7 @@ export default function MediaCenterPage() {
                       className="group relative cursor-pointer overflow-hidden rounded-xl border border-white/10"
                       onClick={() => setLightbox({ src: item.image, title: item.title, date: item.date })}
                     >
-                      <div className="relative w-full h-[290px] ">
+                      <div className="relative w-full h-72.5 ">
                         <Image
                           src={item.image}
                           alt={item.title}
@@ -256,7 +256,7 @@ export default function MediaCenterPage() {
                           className="object-cover transition-transform duration-500 group-hover:scale-105"
                          
                         />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+                        <div className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent" />
                         <div className="absolute bottom-0 left-0 right-0 p-3">
                           <p className="text-white text-xs font-medium leading-tight">{item.title}</p>
                           {item.date && (
@@ -314,7 +314,7 @@ export default function MediaCenterPage() {
 
           <div className="text-center mt-8">
             <Button
-              className="bg-gradient-to-r from-[#F97316] to-[#EAB308] text-[#080C14] font-semibold hover:opacity-90"
+              className="bg-linear-to-r from-[#F97316] to-[#EAB308] text-[#080C14] font-semibold hover:opacity-90"
               asChild
             >
               <Link href={`/${locale}/media-center/gallery`}>
@@ -327,11 +327,11 @@ export default function MediaCenterPage() {
       </section>
 
       {/* Newsletter CTA */}
-      <section className="py-16 bg-gradient-to-r from-[#0D1B2E] to-[#0a1520] border-t border-white/10">
+      <section className="py-16 bg-linear-to-r from-[#0D1B2E] to-[#0a1520] border-t border-white/10">
         <div className="container mx-auto px-4 md:px-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-8">
             <div className="flex items-center gap-4">
-              <div className="w-14 h-14 rounded-full bg-gradient-to-br from-amber-500/20 to-orange-500/10 border border-white/10 flex items-center justify-center flex-shrink-0">
+              <div className="w-14 h-14 rounded-full bg-linear-to-br from-amber-500/20 to-orange-500/10 border border-white/10 flex items-center justify-center shrink-0">
                 <Mail className="h-6 w-6 text-amber-400" />
               </div>
               <div>
@@ -356,7 +356,7 @@ export default function MediaCenterPage() {
                 />
                 <Button
                   onClick={() => { if (email) setSubscribed(true); }}
-                  className="bg-gradient-to-r from-[#F97316] to-[#EAB308] text-[#080C14] font-semibold hover:opacity-90 whitespace-nowrap"
+                  className="bg-linear-to-r from-[#F97316] to-[#EAB308] text-[#080C14] font-semibold hover:opacity-90 whitespace-nowrap"
                 >
                   {t("newsletter.button")}
                   <ArrowRight className="h-4 w-4 ml-1.5" />

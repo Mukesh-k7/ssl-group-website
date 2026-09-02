@@ -63,7 +63,7 @@ export default function BlogPage() {
                 <div
                   className="
                     h-2
-                    bg-gradient-to-r from-industrial-blue to-metallic/30
+                      bg-linear-to-r from-industrial-blue to-metallic/30
                   "
                   /
                 >

@@ -6,9 +6,13 @@ import { ArrowRight, Download, Globe, Shield } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";
 import { company } from "@/data/site";
+import { useRegion } from "@/components/region/region-context";
 
 export function HeroSection() {
   const t = useTranslations("hero");
+  const { region } = useRegion();
+
+  const isInternational = region === "International";
 
   const stats = [
     { value: "2.4M+", label: t("MTExportedAnnually") },
@@ -25,18 +29,18 @@ export function HeroSection() {
   return (
     <section
       id="home"
-      className="relative flex items-center overflow-hidden min-h-screen bg-gradient-to-br from-industrial-blue/40 via-gunmetal to-charcoal"
+      className="relative flex min-h-screen items-center overflow-hidden bg-linear-to-br from-industrial-blue/40 via-gunmetal to-charcoal"
     >
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-industrial-grid opacity-30" />
 
         <motion.div
-          className="absolute inset-0 bg-gradient-to-br from-industrial-blue/30 via-charcoal to-charcoal"
+          className="absolute inset-0 bg-linear-to-br from-industrial-blue/30 via-charcoal to-charcoal"
           animate={{ opacity: [0.4, 0.6, 0.4] }}
           transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
         />
 
-        <div className="absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-t from-charcoal to-transparent" />
+        <div className="absolute bottom-0 left-0 right-0 h-1/2 bg-linear-to-t from-charcoal to-transparent" />
 
         <svg className="absolute inset-0 h-full w-full opacity-[0.06]" xmlns="http://www.w3.org/2000/svg">
           <defs>
@@ -48,12 +52,12 @@ export function HeroSection() {
         </svg>
 
         <motion.div
-          className="absolute top-16 left-[-6rem] h-[420px] w-[420px] rounded-full bg-industrial-blue/20 blur-[120px]"
+          className="absolute -left-24 top-16 h-105 w-105 rounded-full bg-industrial-blue/20 blur-[120px]"
           animate={{ x: [0, 40, 0], y: [0, 20, 0] }}
           transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
         />
         <motion.div
-          className="absolute bottom-24 right-[-5rem] h-[340px] w-[340px] rounded-full bg-metallic/10 blur-[100px]"
+          className="absolute bottom-24 -right-20 h-85 w-85 rounded-full bg-metallic/10 blur-[100px]"
           animate={{ x: [0, -30, 0], y: [0, -15, 0] }}
           transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
         />
@@ -78,7 +82,9 @@ export function HeroSection() {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="mt-8 max-w-3xl text-4xl font-heading font-bold tracking-tight text-white sm:text-5xl md:text-6xl lg:text-5xl"
             >
-              {t("GlobalMetallurgy")} {t("TrustedSupply")}
+              {isInternational
+                ? "Global Metallurgy. International Supply."
+                : `${t("GlobalMetallurgy")} ${t("TrustedSupply")}`}
             </motion.h1>
 
             <motion.p
@@ -87,7 +93,9 @@ export function HeroSection() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="mt-6 max-w-xl text-lg leading-relaxed text-metallic/90 md:text-xl"
             >
-              {company.name} - {t("description")}
+              {isInternational
+                ? "Global sourcing, export-ready supply, and reliable metallurgical support for international buyers and manufacturing partners."
+                : `${company.name} - ${t("description")}`}
             </motion.p>
 
             <motion.div
@@ -98,7 +106,7 @@ export function HeroSection() {
             >
               <Button size="lg" asChild className="bg-[#007aff94] hover:bg-[#007affc9]">
                 <Link href="/contact">
-                  {t("RequestExportQuote")}
+                  {isInternational ? "Request International Quote" : t("RequestExportQuote")}
                   <ArrowRight className="h-5 w-5" />
                 </Link>
               </Button>
@@ -132,9 +140,9 @@ export function HeroSection() {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="relative hidden lg:block"
           >
-            <div className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-gunmetal/40 shadow-2xl backdrop-blur-sm">
+            <div className="relative overflow-hidden rounded-4xl border border-white/10 bg-gunmetal/40 shadow-2xl backdrop-blur-sm">
               <div
-                className="h-[650px] bg-cover bg-center bg-no-repeat"
+                className="h-162.5 bg-cover bg-center bg-no-repeat"
                 style={{
                   backgroundImage:
                     "linear-gradient(135deg, rgb(63 116 185 / 40%) 0%, rgb(211 194 194 / 90%) 100%), url(/images/products/banner.png)",
@@ -144,7 +152,7 @@ export function HeroSection() {
               <div className="absolute inset-0 flex flex-col justify-end p-8">
                 <div className="grid grid-cols-2 gap-4">
                   {stats.map((stat) => (
-                    <div key={stat.label} className="rounded-3xl bg-gradient-to-r from-[#7C2D12] via-[#EA580C] to-[#FDBA74] p-5 shadow-black/40">
+                    <div key={stat.label} className="rounded-3xl bg-linear-to-r from-[#7C2D12] via-[#EA580C] to-[#FDBA74] p-5 shadow-black/40">
                       <p className="text-2xl font-heading font-bold text-white">{stat.value}</p>
                       <p className="mt-1 text-xs text-[#d6d8ff]">{stat.label}</p>
                     </div>

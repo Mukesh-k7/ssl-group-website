@@ -36,7 +36,7 @@ export default function ExportLogisticsPage() {
       <AnimatedSection
         className="
           py-16
-          bg-[#fff]
+          bg-white
           transition-colors
         "
       >
@@ -66,7 +66,7 @@ export default function ExportLogisticsPage() {
                 key={service.key}
                 className="
                   p-6
-                  bg-gradient-to-br from-slate-600 via-slate-900 to-zinc-950 hover:bg-gradient-to-br from-slate-800 via-slate-800 to-zinc-850
+                  bg-linear-to-br from-slate-700 via-slate-850 to-zinc-900
                   rounded-xl
                 "
               >
@@ -96,7 +96,7 @@ export default function ExportLogisticsPage() {
           <div
             className="
               mt-16 p-8
-              bg-gradient-to-br from-slate-600 via-slate-900 to-zinc-950 hover:bg-gradient-to-br from-slate-800 via-slate-800 to-zinc-850
+              bg-linear-to-br from-slate-700 via-slate-850 to-zinc-900
               rounded-xl border border-white/10
               gap-4
             "

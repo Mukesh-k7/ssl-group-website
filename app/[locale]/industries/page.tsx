@@ -54,7 +54,7 @@ export default function IndustriesPage() {
       <AnimatedSection
         className="
           py-24
-          bg-[#fff]
+          bg-white
           transition-colors
         "
       >
@@ -90,7 +90,7 @@ export default function IndustriesPage() {
                   className="
                     flex
                     p-8
-                    bg-gradient-to-br from-slate-600 via-slate-900 to-zinc-950 hover:bg-gradient-to-br from-slate-800 via-slate-800 to-zinc-850
+                    bg-linear-to-br from-slate-700 via-slate-850 to-zinc-900
                     rounded-xl
                     gap-6
                   "

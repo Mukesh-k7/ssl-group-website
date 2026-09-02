@@ -185,7 +185,7 @@ export function InquiryForm({
   }
 
   return (
-    <Card className="bg-gradient-to-br from-[#656d72] via-[#656d72] to-[#656d72] border-0">
+    <Card className="bg-linear-to-br from-[#656d72] via-[#656d72] to-[#656d72] border-0">
       <CardHeader>
         <CardTitle>{title}</CardTitle>
         <CardDescription className="text-white/70">
@@ -257,7 +257,7 @@ export function InquiryForm({
                             key={c.iso2}
                             type="button"
                             onClick={() => { setCountry(c); setDropdownOpen(false); setSearch(""); }}
-                            className="flex w-full items-center gap-2 px-3 py-2 text-left text-sm text-[#000] hover:bg-gray-900  hover:text-white"
+                            className="flex w-full items-center gap-2 px-3 py-2 text-left text-sm text-black hover:bg-gray-900 hover:text-white"
                           >
                             <img
                               src={`https://flagcdn.com/w40/${c.iso2.toLowerCase()}.png`}

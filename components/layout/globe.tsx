@@ -5,7 +5,7 @@ import globeImg from '@/public/Earth.png'; // Ensure Earth.png is in your /publi
 export default function GlobeIcon() {
   return (
     /* No dark background wrapper—this allows it to sit cleanly on your white header */
-    <div className="flex items-center justify-center inline-block">
+    <div className="flex items-center justify-center">
       {/* Icon Container matched to standard global navbar icon size (approx 28px to 32px) */}
       <div className="relative w-10 h-10 rounded-full overflow-hidden shadow-[0_0_10px_rgba(0,180,216,0.4)] border border-cyan-400/30">
         

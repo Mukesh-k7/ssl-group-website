@@ -24,12 +24,7 @@ function getLocale(pathname: string) {
 
 const homeAnchorIds: Record<string, string> = {
   "/": "home",
-  "/about": "about-content",
-  "/products": "products",
-  "/industries": "industries",
-  "/export-logistics": "export",
-  "/certifications": "certifications-preview",
-  "/infrastructure": "infrastructure",
+ 
 };
 
 function getNavHref(
@@ -146,7 +141,7 @@ export function Navbar() {
                   activeHref === href
                     ? scrolled
                       ? "text-white"
-                      : "bg-gradient-to-b from-[#FFD27A] via-[#b16100] to-[#5B2A00] bg-clip-text text-transparent"
+                      : "bg-linear-to-b from-[#FFD27A] via-[#b16100] to-[#5B2A00] bg-clip-text text-transparent"
                     : scrolled
                       ? "text-white/80 hover:text-white"
                       : "text-black/80 hover:text-black"
@@ -167,7 +162,7 @@ export function Navbar() {
               className="
                 flex items-center
                 px-3 py-2
-                text-sm text-[#1e3a5f] hover:text-[#1e3a5f] font-medium font-bold 
+                text-sm text-[#1e3a5f] hover:text-[#1e3a5f] font-bold
                 rounded-md
                 transition-colors
                 gap-1
@@ -190,7 +185,7 @@ export function Navbar() {
             >
               <div
                 className="
-                  min-w-[180px]
+                  min-w-45
                   p-2
                   bg-[#689ee5]
                   rounded-lg border border-white/10
@@ -210,7 +205,7 @@ export function Navbar() {
                       className="
                         block
                         px-3 py-2 my-2
-                        text-sm text-white hover:text-white bg-gradient-to-br from-slate-600 via-slate-900 to-zinc-950
+                        text-sm text-white hover:text-white bg-linear-to-br from-slate-600 via-slate-900 to-zinc-950
                         hover:bg-white/5
                         rounded-md
                       "
@@ -229,7 +224,7 @@ export function Navbar() {
             gap-3
           "
         >
-          <Button variant="ghost" size="sm" asChild className="text-[#1e3a5f] hover:text-[#1e3a5f] font-medium font-bold">
+          <Button variant="ghost" size="sm" asChild className="text-[#1e3a5f] hover:text-[#1e3a5f] font-bold">
             <a href={"https://www.sslgroup.in/images/ssl-brouchser-final.pdf"} download>
               <Download
                 className="
@@ -311,10 +306,10 @@ export function Navbar() {
                       isActive
                         ? scrolled
                           ? "text-white"
-                          : "bg-gradient-to-br from-slate-600 via-slate-900 to-zinc-950 bg-clip-text text-transparent"
+                          : "bg-linear-to-br from-slate-600 via-slate-900 to-zinc-950 bg-clip-text text-transparent"
                         : scrolled
-                          ? "text-white/80 hover:text-white bg-gradient-to-br from-slate-600 via-slate-900 to-zinc-950"
-                          : "text-white/80 hover:text-white bg-gradient-to-br from-slate-600 via-slate-900 to-zinc-950"
+                          ? "text-white/80 hover:text-white bg-linear-to-br from-slate-600 via-slate-900 to-zinc-950"
+                            : "text-white/80 hover:text-white bg-linear-to-br from-slate-600 via-slate-900 to-zinc-950"
                     )}
                   >
                     {t(item.key)}

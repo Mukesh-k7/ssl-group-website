@@ -137,7 +137,8 @@ export default function TermsAndConditionsPage() {
                     <div className="mt-12 space-y-10">
                         {sections.map((section) => (
                             <section key={section.title}>
-                                <h2 className="mb-4 text-2xl font-bold text-transparent font-bold bg-gradient-to-b bg-clip-text from-[#F7941D] via-[#C96A00] to-[#5B2A00] drop-shadow-[2px_2px_0px_rgba(0,0,0,0.25)]">
+                                <h2 className="mb-4 text-2xl font-bold text-transparent bg-linear-to-b bg-clip-text from-[#F7941D] via-[#C96A00] to-[#5B2A00] drop-shadow-[2px_2px_0px_rgba(0,0,0,0.25)]">
+                                    <h2 className="mb-4 text-2xl font-bold text-transparent bg-linear-to-b bg-clip-text from-[#F7941D] via-[#C96A00] to-[#5B2A00] drop-shadow-[2px_2px_0px_rgba(0,0,0,0.25)]">
                                     {section.title}
                                 </h2>
 
@@ -149,7 +150,8 @@ export default function TermsAndConditionsPage() {
                     </div>
 
                     <section className="mt-12 border-t pt-10">
-                        <h2 className="mb-5 text-2xl font-bold text-transparent font-bold bg-gradient-to-b bg-clip-text from-[#F7941D] via-[#C96A00] to-[#5B2A00] drop-shadow-[2px_2px_0px_rgba(0,0,0,0.25)]">
+                        <h2 className="mb-5 text-2xl font-bold text-transparent bg-linear-to-b bg-clip-text from-[#F7941D] via-[#C96A00] to-[#5B2A00] drop-shadow-[2px_2px_0px_rgba(0,0,0,0.25)]">
+                            <h2 className="mb-5 text-2xl font-bold text-transparent bg-linear-to-b bg-clip-text from-[#F7941D] via-[#C96A00] to-[#5B2A00] drop-shadow-[2px_2px_0px_rgba(0,0,0,0.25)]">
                             {t("ContactInformation")}
                         </h2>
 
@@ -203,7 +205,7 @@ export default function TermsAndConditionsPage() {
                                 <li>
                                     <a
                                         href={company.website}
-                                        className="inline-blockmt-3 text-sm text-[#0853b1]"
+                                        className="inline-block mt-3 text-sm text-[#0853b1]"
                                     >
                                         🌐 {company.website}
                                     </a>

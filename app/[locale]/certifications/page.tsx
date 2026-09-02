@@ -32,7 +32,7 @@ export default function CertificationsPage() {
       />
       <AnimatedSection
         className="
-          py-24 bg-[#fff]
+          py-24 bg-white
           transition-colors
         "
       >
@@ -61,7 +61,7 @@ export default function CertificationsPage() {
                 key={cert.key}
                 className="
                   p-8
-                  bg-gradient-to-br from-slate-600 via-slate-900 to-zinc-950 hover:bg-gradient-to-br from-slate-800 via-slate-800 to-zinc-850
+                  bg-linear-to-br from-slate-700 via-slate-850 to-zinc-900
                   rounded-xl
                 "
               >
@@ -99,7 +99,7 @@ export default function CertificationsPage() {
             className="
               flex items-start
               mt-16 p-8
-              bg-gradient-to-br from-slate-600 via-slate-900 to-zinc-950 hover:bg-gradient-to-br from-slate-800 via-slate-800 to-zinc-850
+              bg-linear-to-br from-slate-700 via-slate-850 to-zinc-900
               rounded-xl
               gap-4
             "

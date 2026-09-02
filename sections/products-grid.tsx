@@ -33,7 +33,7 @@ export function ProductsGridSection({
   const t = useTranslations('products');
 
   return (
-    <AnimatedSection className="py-24 bg-gradient-to-br from-industrial-blue/40 via-gunmetal to-charcoal" id="products">
+    <AnimatedSection className="py-24 bg-linear-to-br from-industrial-blue/40 via-gunmetal to-charcoal" id="products">
       <div className="container mx-auto px-4 md:px-6">
         <SectionHeader
           eyebrow={t("Eyebrow")}
@@ -41,7 +41,7 @@ export function ProductsGridSection({
           description={t("Description")}
           eyebrowClassName="mb-3
             text-lg text-transparent font-bold tracking-[0.2em] uppercase
-            bg-gradient-to-b bg-clip-text from-[#F7941D] via-[#C96A00]
+            bg-linear-to-b bg-clip-text from-[#F7941D] via-[#C96A00]
             to-[#5B2A00]
             drop-shadow-[2px_2px_0px_rgba(0,0,0,0.25)]"
           titleClassName="font-heading font-bold text-3xl text-white md:text-4xl lg:text-5xl

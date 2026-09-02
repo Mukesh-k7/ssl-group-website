@@ -7,6 +7,7 @@ import { Footer } from "@/components/layout/footer";
 import { WhatsAppButton } from "@/components/shared/whatsapp-button";
 import ScrollToSection from "@/components/shared/scroll-to-top";
 import { Chatbot } from "@/components/chatbot/chat";
+import { RegionProvider } from "@/components/region/region-context";
 
 
 import {
@@ -89,14 +90,16 @@ export default async function RootLayout({
           locale={locale}
           messages={messages}
         >
-          <Navbar />
-          <main>{children}</main>
-          <Chatbot />
-          <Footer />
-          <div className="flex items-center justify-center">
-            <ScrollToSection />
-            <WhatsAppButton />
-          </div>
+          <RegionProvider>
+            <Navbar />
+            <main>{children}</main>
+            <Chatbot />
+            <Footer />
+            <div className="flex items-center justify-center">
+              <ScrollToSection />
+              <WhatsAppButton />
+            </div>
+          </RegionProvider>
         </NextIntlClientProvider>
       </body>
     </html>

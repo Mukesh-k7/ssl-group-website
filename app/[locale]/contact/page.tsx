@@ -36,7 +36,7 @@ export default function ContactPage() {
       <AnimatedSection
         className="
           py-24
-          bg-[#fff]
+          bg-white
           transition-colors
         "
       >
@@ -72,7 +72,7 @@ export default function ContactPage() {
               <div
                 className="
                   p-6
-                  bg-gradient-to-br from-[#656d72] via-[#656d72] to-[#656d72] border-0
+                  bg-linear-to-br from-[#656d72] via-[#656d72] to-[#656d72]
                   rounded-xl border border-white/10
                 "
               >
@@ -196,7 +196,7 @@ export default function ContactPage() {
                 <MessageCircle
                   className="
                     h-8 w-8
-                    text-[#fff]
+                    text-white
                   "
                 />
                 <div>
@@ -216,7 +216,7 @@ export default function ContactPage() {
               <div
                 className="
                   p-6
-                  bg-gradient-to-br from-[#656d72] via-[#656d72] to-[#656d72] border-0
+                  bg-linear-to-br from-[#656d72] via-[#656d72] to-[#656d72]
                   rounded-xl border border-white/10
                 "
               >

@@ -45,7 +45,7 @@ export function WhyChooseUsSection() {
           description={t("Description")}
           eyebrowClassName="mb-3
             text-lg text-transparent font-bold tracking-[0.2em] uppercase
-            bg-gradient-to-b bg-clip-text from-[#F7941D] via-[#C96A00]
+            bg-linear-to-b bg-clip-text from-[#F7941D] via-[#C96A00]
             to-[#5B2A00]
             drop-shadow-[2px_2px_0px_rgba(0,0,0,0.25)]"
           titleClassName="font-heading font-bold text-3xl text-black md:text-4xl lg:text-5xl
@@ -65,7 +65,7 @@ export function WhyChooseUsSection() {
             return (
               <StaggerItem key={item.key}>
                 <div
-                  className="h-full p-6 bg-gradient-to-br from-slate-600 via-slate-900 to-zinc-950 rounded-xl transition-all group"
+                  className="h-full p-6 bg-linear-to-br from-slate-700 via-slate-850 to-zinc-900 rounded-xl transition-all group"
                 >
                   <div
                     className="
@@ -73,7 +73,7 @@ export function WhyChooseUsSection() {
                       h-12 w-12
                       mb-4
                       text-industrial-blue hover:text-white
-                      bg-gradient-to-br from-industrial-blue/40 via-gunmetal to-charcoal
+                      bg-linear-to-br from-industrial-blue/40 via-gunmetal to-charcoal
                       rounded-lg
                       transition-colors
                       group-hover:bg-industrial-blue group-hover:text-white

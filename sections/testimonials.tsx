@@ -36,7 +36,7 @@ export function TestimonialsSection() {
           description={t("Description")}
           eyebrowClassName="mb-3
             text-lg text-transparent font-bold tracking-[0.2em] uppercase
-            bg-gradient-to-b bg-clip-text from-[#F7941D] via-[#C96A00]
+            bg-linear-to-b bg-clip-text from-[#F7941D] via-[#C96A00]
             to-[#5B2A00]
             drop-shadow-[2px_2px_0px_rgba(0,0,0,0.25)]"
           titleClassName="font-heading font-bold text-3xl text-black md:text-4xl lg:text-5xl
@@ -73,7 +73,7 @@ export function TestimonialsSection() {
                 <SwiperSlide key={index}>
                   <StaggerItem key={item.author} className="flex items-center justify-center">
                     <blockquote
-                      className="flex flex-col h-full p-6 w-[700px] bg-gradient-to-br from-slate-600 via-slate-900 to-zinc-950 hover:bg-gradient-to-br from-slate-800 via-slate-800 to-zinc-850 rounded-xl"
+                      className="flex flex-col h-full p-6 w-175 bg-linear-to-br from-slate-700 via-slate-850 to-zinc-900 rounded-xl"
                     >
                       <Quote
                         className="

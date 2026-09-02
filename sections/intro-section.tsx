@@ -34,7 +34,7 @@ export function IntroSection() {
       id="about-content"
       className="
         py-24
-        bg-gradient-to-br from-industrial-blue/40 via-gunmetal to-charcoal
+        bg-linear-to-br from-industrial-blue/40 via-gunmetal to-charcoal
       "
     >
       <div
@@ -54,7 +54,7 @@ export function IntroSection() {
               className="
                 mb-3
                 text-lg text-transparent font-bold tracking-[0.2em] uppercase
-                bg-gradient-to-b bg-clip-text from-[#F7941D] via-[#C96A00]
+                bg-linear-to-b bg-clip-text from-[#F7941D] via-[#C96A00]
                 to-[#5B2A00]
                 drop-shadow-[2px_2px_0px_rgba(0,0,0,0.25)]
               "
@@ -87,27 +87,12 @@ export function IntroSection() {
               {t("description2")}
 
             </p>
-            <Button
-              className="
-                mt-8
-              "
-              asChild
-            >
-              <Link href="#about-content">
-                {t("OurStory")}
-                <ArrowRight
-                  className="
-                    w-4 h-4
-                  "
-                />
-              </Link>
-            </Button>
           </div>
           <div
             className="
               relative overflow-hidden
               rounded-2xl border border-white/10
-              aspect-[4/3]
+              aspect-4/3
             "
           >
             <div
@@ -120,8 +105,7 @@ export function IntroSection() {
                   "linear-gradient(135deg, rgb(63 116 185 / 40%) 0%, rgb(211 194 194 / 90%) 100%), url(/images/products/home.jpg)",
                 backgroundColor: "#2A2A2A",
               }}
-            /
-            >
+            />
             <div
               className="
                 absolute inset-0 flex items-end
@@ -131,9 +115,9 @@ export function IntroSection() {
               <div
                 className="
                   p-4
-                  bg-gradient-to-r from-[#7C2D12] via-[#EA580C] to-[#FDBA74]
-                  rounded-lg rounded-lg border-0 border border-white/10
-                  backdrop-blur-md backdrop-blur-xl backdrop-blur-md
+                  bg-linear-to-r from-[#7C2D12] via-[#EA580C] to-[#FDBA74]
+                  rounded-lg border border-white/10
+                  backdrop-blur-md
                   shadow-2xl shadow-black/40
                 "
               >

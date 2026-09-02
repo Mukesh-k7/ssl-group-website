@@ -14,7 +14,7 @@ export function PageHero({ title, description, eyebrow }: PageHeroProps) {
       className="
         relative overflow-hidden
         pt-32 pb-20
-        bg-gradient-to-b from-industrial-blue/40 via-transparent to-charcoal
+        bg-white via-transparent to-charcoal
         border-b border-white/10
       "
     >
@@ -24,15 +24,13 @@ export function PageHero({ title, description, eyebrow }: PageHeroProps) {
           bg-industrial-grid
           opacity-40
         "
-        /
-      >
+      />
       <div
         className="
           absolute inset-0
-          bg-gradient-to-b from-industrial-blue/20 via-transparent to-charcoal
+          bg-linear-to-b from-industrial-blue/20 via-transparent to-charcoal
         "
-        /
-      >
+      />
       <div
         className="
           absolute top-0
@@ -42,8 +40,7 @@ export function PageHero({ title, description, eyebrow }: PageHeroProps) {
           blur-3xl
           -right-32
         "
-        /
-      >
+      />
 
       <div
         className="
@@ -51,8 +48,7 @@ export function PageHero({ title, description, eyebrow }: PageHeroProps) {
           mx-auto px-4 md:px-6
         "
       >
-        <motion
-          .div
+        <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -73,7 +69,7 @@ export function PageHero({ title, description, eyebrow }: PageHeroProps) {
           )}
           <h1
             className="
-              font-heading font-bold text-4xl text-white md:text-5xl lg:text-6xl
+              font-heading font-bold text-4xl text-[#3b3b3ba8]  md:text-5xl lg:text-6xl
               tracking-tight
             "
           >
@@ -82,7 +78,7 @@ export function PageHero({ title, description, eyebrow }: PageHeroProps) {
           <p
             className="
               mt-6
-              text-lg text-metallic/90 md:text-xl leading-relaxed
+              text-lg text-[#424040a8]  md:text-xl leading-relaxed
             "
           >
             {description}
