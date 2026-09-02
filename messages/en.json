@@ -1376,7 +1376,7 @@
             }
         },
         "NobalAlloy": {
-            "Name": "Nobal Alloy",
+            "Name": "Noble Alloy",
             "Category": "Specialty Alloys",
             "ShortDescription": "High-purity Nobal Alloy for grain refinement and micro-alloying in specialty steel grades.",
             "Description": "Precision Nobal Alloy with controlled titanium content for aerospace-grade steels, high-strength low-alloy applications, and critical casting operations requiring grain refinement.",
@@ -2847,11 +2847,7 @@
                 "MiddleEast": "Middle East",
                 "Asia": "Asia"
             },
-            "Regions": [
-                "Global",
-                "MiddleEast",
-                "Asia"
-            ]
+            "Regions": ["Global", "MiddleEast", "Asia"]
         },
         "FoundriesCastings": {
             "Title": "Foundries & Castings",
@@ -2861,11 +2857,7 @@
                 "India": "India",
                 "Africa": "Africa"
             },
-            "Regions": [
-                "Europe",
-                "India",
-                "Africa"
-            ]
+            "Regions": ["Europe", "India", "Africa"]
         },
         "EPCContractors": {
             "Title": "EPC Contractors",
@@ -2875,11 +2867,7 @@
                 "AsiaPacific": "Asia-Pacific",
                 "Africa": "Africa"
             },
-            "Regions": [
-                "MiddleEast",
-                "Africa",
-                "AsiaPacific"
-            ]
+            "Regions": ["MiddleEast", "Africa", "AsiaPacific"]
         },
         "Infrastructure": {
             "Title": "Infrastructure",
@@ -2889,11 +2877,7 @@
                 "MiddleEast": "Middle East",
                 "Africa": "Africa"
             },
-            "Regions": [
-                "India",
-                "Africa",
-                "MiddleEast"
-            ]
+            "Regions": ["India", "Africa", "MiddleEast"]
         },
         "IndustrialProcurement": {
             "Title": "Industrial Procurement",
@@ -2901,9 +2885,7 @@
             "RegionLabels": {
                 "Global": "Global"
             },
-            "Regions": [
-                "Global"
-            ]
+            "Regions": ["Global"]
         },
         "GalvanizingZinc": {
             "Title": "Galvanizing & Zinc",
@@ -2912,10 +2894,7 @@
                 "Europe": "Europe",
                 "Asia": "Asia"
             },
-            "Regions": [
-                "Europe",
-                "Asia"
-            ]
+            "Regions": ["Europe", "Asia"]
         },
         "Refractories": {
             "Title": "Refractories",
@@ -2923,9 +2902,7 @@
             "RegionLabels": {
                 "Global": "Global"
             },
-            "Regions": [
-                "Global"
-            ]
+            "Regions": ["Global"]
         },
         "OilGas": {
             "Title": "Oil & Gas",
@@ -2934,10 +2911,7 @@
                 "MiddleEast": "Middle East",
                 "Africa": "Africa"
             },
-            "Regions": [
-                "MiddleEast",
-                "Africa"
-            ]
+            "Regions": ["MiddleEast", "Africa"]
         },
         "Tailored": "Tailored metallurgical supply solutions for every segment of the global steel and industrial ecosystem.",
         "Industrie": "Industries",
@@ -2953,45 +2927,22 @@
         "AsiaPacific": {
             "Title": "Asia-Pacific",
             "Description": "Expanding partnerships with regional steel manufacturers and pipe producers.",
-            "Countries": [
-                "Vietnam",
-                "Indonesia",
-                "Bangladesh",
-                "Thailand"
-            ]
+            "Countries": ["Vietnam", "Indonesia", "Bangladesh", "Thailand"]
         },
         "MiddleEast": {
             "Title": "Middle East",
             "Description": "Strategic hub for steel and EPC procurement with dedicated Jebel Ali routing.",
-            "Countries": [
-                "UAE",
-                "Saudi Arabia",
-                "Oman",
-                "Qatar",
-                "Kuwait"
-            ]
+            "Countries": ["UAE", "Saudi Arabia", "Oman", "Qatar", "Kuwait"]
         },
         "Africa": {
             "Title": "Africa",
             "Description": "Growing foundry and infrastructure demand served via Mombasa and Lagos corridors.",
-            "Countries": [
-                "Nigeria",
-                "Kenya",
-                "South Africa",
-                "Egypt",
-                "Morocco"
-            ]
+            "Countries": ["Nigeria", "Kenya", "South Africa", "Egypt", "Morocco"]
         },
         "Europe": {
             "Title": "Europe",
             "Description": "Distributor network for ferro alloys and industrial minerals across EU steel clusters.",
-            "Countries": [
-                "Germany",
-                "Italy",
-                "Spain",
-                "Netherlands",
-                "Poland"
-            ]
+            "Countries": ["Germany", "Italy", "Spain", "Netherlands", "Poland"]
         },
         "WorldWide": "World Wide",
         "GlobalPresence": "Global Presence",
@@ -3072,40 +3023,25 @@
             "Title": "Bonded Warehousing",
             "Description": "Climate-controlled storage at Mumbai, Kandla, and Visakhapatnam with inventory management and blending capabilities.",
             "stats": "50,000+ MT",
-            "Locations": [
-                "Delhi",
-                "Kolkata",
-                "Vizag"
-            ]
+            "Locations": ["Delhi", "Kolkata", "Vizag"]
         },
         "Laboratories": {
             "Title": "Quality Laboratories",
             "Description": "In-house and partner labs for chemical analysis, sieve testing, and metallurgical property verification before dispatch.",
             "stats": "3 Labs",
-            "Locations": [
-                "Delhi HQ",
-                "Kandla Port",
-                "Vizag Port"
-            ]
+            "Locations": ["Delhi HQ", "Kandla Port", "Vizag Port"]
         },
         "Operations": {
             "Title": "Port-Side Operations",
             "Description": "Dedicated loading berths, stevedoring contracts, and vessel coordination for bulk and break-bulk shipments.",
             "stats": "4 Major Ports",
-            "Locations": [
-                "JNPT",
-                "Kandla",
-                "Vizag",
-                "Haldia"
-            ]
+            "Locations": ["JNPT", "Kandla", "Vizag", "Haldia"]
         },
         "Dispatch": {
             "Title": "Packaging & Dispatch",
             "Description": "Bulk vessel, containerized, jumbo bag, and break-bulk packaging with customizable sizing and labeling.",
             "stats": "Multi-Modal",
-            "Locations": [
-                "Pan-India Network"
-            ]
+            "Locations": ["Pan-India Network"]
         }
     },
     "testimonials": {
