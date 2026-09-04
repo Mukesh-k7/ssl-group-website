@@ -996,7 +996,7 @@ export const products: Product[] = [
       {
         id: 6,
         translationKey: "Inoculants",
-        image: "/images/products/inoculants.jpg",
+        image: "/images/products/Inoculants.jpg",
         description: "Description",
         specifications: [
           {

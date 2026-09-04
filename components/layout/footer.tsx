@@ -252,7 +252,7 @@ export function Footer() {
               rel="noopener noreferrer"
               className="
                 inline-flex items-center
-                p-[8px] pb-[7px] mt-2
+                p-2 pb-1.75 mt-2
                 text-sm text-metallic/80 hover:text-white
                 rounded-[23px] border border-[#fcaf1c]
                 gap-2
@@ -280,7 +280,7 @@ export function Footer() {
               rel="noopener noreferrer"
               className="
                 inline-flex items-center
-                p-[8px] pb-[7px] mx-2 mt-2
+                p-2 pb-1.75 mx-2 mt-2
                 rounded-[23px] border border-[#fcaf1c]
                 gap-2
               "
@@ -323,7 +323,7 @@ export function Footer() {
               rel="noopener noreferrer"
               className="
                 inline-flex items-center
-                p-[8px] pb-[7px] mt-2
+                p-2 pb-1.75 mt-2
                 rounded-[23px] border border-[#fcaf1c]
                 gap-2
               "

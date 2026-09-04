@@ -165,7 +165,7 @@ export function InquiryForm({
 
   if (status === "success") {
     return (
-      <Card className="border-industrial-blue/30">
+      <Card className="border-industrial-blue/30 bg-[#656d72]">
         <CardContent className="p-8 text-center">
           <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-industrial-blue/20">
             <Send className="h-8 w-8 text-industrial-blue" />

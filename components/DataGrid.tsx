@@ -311,7 +311,7 @@ export default function DataGrid<T extends Record<string, any>>({
       <div className="overflow-x-auto">
         <table className="w-full text-sm">
           <thead>
-            <tr className="border-b border-white/10 bg-white/[0.02]">
+            <tr className="border-b border-white/10 bg-white/2">
               {expandable && <th className="w-8 px-3 py-2" />}
               <th className="w-8 px-3 py-2" />
               {columns.map((col) => (
@@ -358,7 +358,7 @@ export default function DataGrid<T extends Record<string, any>>({
               const isExpanded = expandedRows.has(id);
               return (
                 <React.Fragment key={String(id)}>
-                  <tr className="border-b border-white/5 hover:bg-white/[0.03]">
+                  <tr className="border-b border-white/5 hover:bg-white/3">
                     {expandable && (
                       <td className="px-3 py-2">
                         <button
@@ -384,7 +384,7 @@ export default function DataGrid<T extends Record<string, any>>({
                     ))}
                   </tr>
                   {expandable && isExpanded && (
-                    <tr className="bg-white/[0.02]">
+                    <tr className="bg-white/2">
                       <td colSpan={columns.length + 2} className="px-6 py-3">
                         {renderExpanded ? renderExpanded(row) : null}
                       </td>
@@ -446,7 +446,7 @@ function ToolbarButton({
     <button
       onClick={onClick}
       disabled={disabled}
-      className="rounded-md border border-white/10 bg-white/[0.03] px-3 py-1.5 text-sm text-slate-200 transition hover:border-[#F97316]/50 hover:text-[#F97316] disabled:cursor-not-allowed disabled:opacity-40"
+      className="rounded-md border border-white/10 bg-white/3 px-3 py-1.5 text-sm text-slate-200 transition hover:border-[#F97316]/50 hover:text-[#F97316] disabled:cursor-not-allowed disabled:opacity-40"
     >
       {label}
     </button>
