@@ -33,7 +33,7 @@ export function IntroSection() {
     <AnimatedSection
       id="about-content"
       className="
-        py-24
+        py-24 translate-x-2.5 translate-y-12.75
         bg-linear-to-br from-industrial-blue/40 via-gunmetal to-charcoal
       "
     >
