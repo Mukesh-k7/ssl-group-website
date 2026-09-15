@@ -9,9 +9,8 @@ import { StatsCounterSection } from "@/sections/stats-counter";
 import { CtaBannerSection } from "@/sections/cta-banner";
 import { PageBreadcrumbJsonLd } from "@/components/shared/page-breadcrumb-jsonld";
 import { createPageMetadata } from "@/lib/seo";
-import { company, Values } from "@/data/site";
+import {  Values } from "@/data/site";
 import { useTranslations } from "next-intl";
-import { HeroSection } from "@/sections/hero";
 import { IntroSection } from "@/sections/intro-section";
 
 export const metadata: Metadata = createPageMetadata({

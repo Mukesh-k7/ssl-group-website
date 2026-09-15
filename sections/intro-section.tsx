@@ -1,9 +1,6 @@
 "use client";
 
-import Link from "next/link";
-import { ArrowRight } from "lucide-react";
 import { AnimatedSection } from "@/components/shared/animated-section";
-import { Button } from "@/components/ui/button";
 import { company } from "@/data/site";
 import { useTranslations } from 'next-intl';
 
