@@ -8,6 +8,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { useSearchParams } from "next/navigation";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 import { ChevronDown } from "lucide-react";
 import { getCountries, getCountryCallingCode } from "libphonenumber-js";
 
@@ -177,7 +178,7 @@ export function JobApplicationForm() {
 
   if (status === "success") {
     return (
-      <div className="mx-auto max-w-4xl rounded-xl border bg-[#fff] p-8 text-center shadow-sm">
+      <div className="mx-auto max-w-4xl rounded-xl border bg-white p-8 text-center shadow-sm">
         <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-green-100">
           <CheckCircle2 className="h-8 w-8 text-green-600" />
         </div>
@@ -193,7 +194,7 @@ export function JobApplicationForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="mx-auto max-w-8xl space-y-6 rounded-xl border py-24 bg-gradient-to-br from-[#656d72] via-[#656d72] to-[#656d72] p-8 shadow-sm" noValidate>
+    <form onSubmit={handleSubmit} className="mx-auto max-w-8xl space-y-6 rounded-xl border py-24 bg-linear-to-br from-[#656d72] via-[#656d72] to-[#656d72] p-8 shadow-sm" noValidate>
       <div className="grid gap-5 sm:grid-cols-2">
         {positionFromUrl && (
           <div className="space-y-2">
@@ -203,7 +204,7 @@ export function JobApplicationForm() {
               name="position"
               value={positionFromUrl}
               readOnly
-              className="cursor-not-allowed bg-gradient-to-br from-industrial-blue/40"
+              className="cursor-not-allowed bg-linear-to-br from-industrial-blue/40"
             />
           </div>
         )}
@@ -235,9 +236,11 @@ export function JobApplicationForm() {
                 onClick={() => setDropdownOpen((prev) => !prev)}
                 className="flex h-10 w-24 items-center gap-1 rounded-md border border-input bg-transparent px-2 text-sm shadow-sm"
               >
-                <img
+                <Image
                   src={`https://flagcdn.com/w40/${country.iso2.toLowerCase()}.png`}
                   alt={country.label}
+                  width={24}
+                  height={16}
                   className="h-4 w-6 rounded-sm object-cover"
                 />
                 <span>{country.code}</span>
@@ -260,11 +263,13 @@ export function JobApplicationForm() {
                         key={c.iso2}
                         type="button"
                         onClick={() => { setCountry(c); setDropdownOpen(false); setSearch(""); }}
-                        className="flex w-full items-center gap-2 px-3 py-2 text-left text-sm text-[#000] hover:bg-gray-900  hover:text-white"
+                        className="flex w-full items-center gap-2 px-3 py-2 text-left text-sm text-black hover:bg-gray-900  hover:text-white"
                       >
-                        <img
+                        <Image
                           src={`https://flagcdn.com/w40/${c.iso2.toLowerCase()}.png`}
                           alt={c.label}
+                          width={24}
+                          height={16}
                           className="h-4 w-6 rounded-sm object-cover"
                         />
                         <span className="truncate">{c.label}</span>
@@ -302,13 +307,13 @@ export function JobApplicationForm() {
             id="location"
             name="location"
             defaultValue=""
-            className="flex h-10 w-full rounded-md border border-input px-3 py-2 text-sm shadow-sm bg-gradient-to-br from-industrial-blue/40"
+            className="flex h-10 w-full rounded-md border border-input px-3 py-2 text-sm shadow-sm bg-linear-to-br from-industrial-blue/40"
           >
-            <option value="" disabled className="text-[#000]">
+            <option value="" disabled className="text-black">
               {t("selectalocation")}
             </option>
             {LOCATIONS.map((loc) => (
-              <option key={loc} value={loc} className="text-[#000]">
+              <option key={loc} value={loc} className="text-black">
                 {loc}
               </option>
             ))}

@@ -9,7 +9,7 @@ export const company = {
   name: "SSL Group",
   tagline: "Global Metallurgy. Trusted Supply.",
   legalName: "SSL Group International Trading Pvt. Ltd.",
-  website: "https://www.sslgroup.in/",
+  website: "https://www.sslgroup.com/",
   domain: "www.sslgroup.in",
   email: "info@sslgroup.in",
   salesEmail: "export@sslgroup.in",

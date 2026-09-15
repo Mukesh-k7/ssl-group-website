@@ -6,8 +6,8 @@ const nextConfig: NextConfig = {
     return [
       {
         source: "/:path*",
-        has: [{ type: "host", value: "sslgroup.in" }],
-        destination: "https://www.sslgroup.in/:path*",
+        has: [{ type: "host", value: "sslgroup.com" }],
+        destination: "https://www.sslgroup.com/:path*",
         permanent: true,
       },
     ];

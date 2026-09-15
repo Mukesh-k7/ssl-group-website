@@ -1,9 +1,9 @@
-/** Production site — https://www.sslgroup.in */
+/** Production site — https://www.sslgroup.com */
 export const SITE_URL = "http://localhost:3000";
 export const SITE_DOMAIN = "localhost:3000";
 
 /**
- * Absolute URL for a path. Root returns https://www.sslgroup.in/
+ * Absolute URL for a path. Root returns https://www.sslgroup.com/
  */
 export function getAbsoluteUrl(path = ""): string {
   if (!path || path === "/") {

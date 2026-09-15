@@ -42,6 +42,7 @@ export default function AboutPage() {
         id="about-content"
         className="
           py-24
+          translate-x-2.5 translate-y-12.75
         "
       >
         <div
