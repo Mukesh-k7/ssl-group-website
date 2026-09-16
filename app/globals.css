@@ -1,21 +1,19 @@
 @import "tailwindcss";
-
 @theme {
-  --color-brand: #e37900;
-  --color-brand-dark: #c96800;
-
-  --background-image-sunset-2: linear-gradient(140deg, #f1edea 0%, #f7b67f 40%, #f9b465 70%, #f79d17 100%);
+    --color-brand: #e37900;
+    --color-brand-dark: #c96800;
+    --background-image-sunset-2: linear-gradient(140deg, #f1edea 0%, #f7b67f 40%, #f9b465 70%, #f79d17 100%);
 }
 
 .to-\[\#FDBA74\] {
-  --tw-gradient-to: #e0bd98!important;
-  --tw-gradient-stops: var(--tw-gradient-via-stops);
+    --tw-gradient-to: #e0bd98!important;
+    --tw-gradient-stops: var(--tw-gradient-via-stops);
 }
 
 .via-\[\#EA580C\] {
-  --tw-gradient-via: #f09161!important;
-  --tw-gradient-via-stops: var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-via) var(--tw-gradient-via-position), var(--tw-gradient-to) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-via-stops);
+    --tw-gradient-via: #f09161!important;
+    --tw-gradient-via-stops: var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-via) var(--tw-gradient-via-position), var(--tw-gradient-to) var(--tw-gradient-to-position);
+    --tw-gradient-stops: var(--tw-gradient-via-stops);
 }
 
 .from-\[\#7C2D12\] {
@@ -40,79 +38,81 @@
 }
 
 :root {
-  --charcoal: #656d72;
-  --gunmetal: #656d72;
-  --metallic: #abb1b9;
-  --industrial-blue: #1e3a5f;
-  --white: #ffffff;
-
-  --background: var(--charcoal);
-  --foreground: var(--white);
+    --charcoal: #656d72;
+    --gunmetal: #656d72;
+    --metallic: #abb1b9;
+    --industrial-blue: #1e3a5f;
+    --white: #ffffff;
+    --background: var(--charcoal);
+    --foreground: var(--white);
 }
 
 :root {
-  --color-charcoal: var(--charcoal);
-  --color-gunmetal: var(--gunmetal);
-  --color-metallic: var(--metallic);
-  --color-industrial-blue: var(--industrial-blue);
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-
-  --font-sans: var(--font-inter);
-  --font-heading: var(--font-space-grotesk);
+    --color-charcoal: var(--charcoal);
+    --color-gunmetal: var(--gunmetal);
+    --color-metallic: var(--metallic);
+    --color-industrial-blue: var(--industrial-blue);
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+    --font-sans: var(--font-inter);
+    --font-heading: var(--font-space-grotesk);
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
-  background-color: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-inter, system-ui, sans-serif);
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-inter, system-ui, sans-serif);
 }
 
 .font-heading {
-  font-family: var(--font-space-grotesk,
-      var(--font-inter, system-ui, sans-serif));
+    font-family: var(--font-space-grotesk, var(--font-inter, system-ui, sans-serif));
 }
 
 .bg-industrial-grid {
-  background-image:
-    linear-gradient(rgba(191, 195, 201, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(191, 195, 201, 0.03) 1px, transparent 1px);
-  background-size: 48px 48px;
+    background-image: linear-gradient(rgba(191, 195, 201, 0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(191, 195, 201, 0.03) 1px, transparent 1px);
+    background-size: 48px 48px;
 }
 
-.bg-\[linear-gradient\(140deg\,\#f1edea_0\%\,\#f3892d_40\%\,\#E8820A_70\%\,\#A84800_100\%\)\] {
-  background-image: linear-gradient(140deg, #f1edea 0%, #ecba90 40%, #eaaf6a 70%, #dca758 100%) !important;
+.bg-\[linear-gradient\(140deg\, \#f1edea_0\%\, \#f3892d_40\%\, \#E8820A_70\%\, \#A84800_100\%\)\] {
+    background-image: linear-gradient(140deg, #f1edea 0%, #ecba90 40%, #eaaf6a 70%, #dca758 100%) !important;
 }
 
 ::selection {
-  background-color: rgba(30, 58, 95, 0.8);
-  color: #ffffff;
+    background-color: rgba(30, 58, 95, 0.8);
+    color: #ffffff;
 }
 
+
 /* Scrollbar */
+
 ::-webkit-scrollbar {
-  width: 8px;
+    width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--charcoal);
+    background: var(--charcoal);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--gunmetal);
-  border-radius: 4px;
+    background: var(--gunmetal);
+    border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--industrial-blue);
+    background: var(--industrial-blue);
 }
-
-
 
 .jobs {
-  background-color: #ffffffd1 !important;
+    background-color: #ffffffd1 !important;
 }
+
+
+/* to   #6c7b85
+
+via  #969da1
+
+from  #8a969d */

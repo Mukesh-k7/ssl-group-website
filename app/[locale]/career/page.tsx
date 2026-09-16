@@ -1,6 +1,3 @@
-/// <reference types="react" />
-/// <reference types="react/jsx-runtime" />
-/** @jsxImportSource react */
 "use client";
 
 import React, { useState } from "react";
@@ -67,12 +64,12 @@ export default function CareersPage({ i }: { i: number }) {
   const [showAll, setShowAll] = useState(false);
   const visibleJobs = showAll ? filtered : filtered.slice(0, 3)
   return (
-    <div className="min-h-screen bg-[#858585a8] text-[#E8EDF2] font-sans">
+    <div className="min-h-screen bg-linear-to-br from-[#8a969d] via-[#969da1] to-[#6c7b85] text-[#E8EDF2] font-sans">
       {/* HERO */}
-      <section className="relative min-h-screen flex items-center pt-16 overflow-hidden bg-[#858585a8] ">
+      <section className="relative min-h-screen flex items-center pt-16 overflow-hidden bg-linear-to-br from-[#8a969d] via-[#969da1] to-[#6c7b85]">
         {/* bg texture */}
         <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-linear-to-br bg-[#858585a8]" />
+          <div className="absolute inset-0 bg-linear-to-br from-[#8a969d] via-[#969da1] to-[#6c7b85]" />
           <div className="absolute top-0 right-0 w-150 h-600 bg-[#F97316]/5 rounded-full blur-[120px]" />
           <div className="absolute bottom-0 left-0 w-400 h-400 bg-[#EAB308]/5 rounded-full blur-[100px]" />
           {/* grid lines */}
@@ -88,9 +85,9 @@ export default function CareersPage({ i }: { i: number }) {
 
         <div className="relative mx-auto container px-6 py-24 grid lg:grid-cols-2 gap-16 items-center">
           <div>
-            <div className="inline-flex items-center gap-2 bg-[#858585a8] border border-[#F97316]/20 rounded-full px-4 py-1.5 mb-8">
+            <div className="inline-flex items-center gap-2 bg-linear-to-br from-[#8a969d] via-[#969da1] to-[#6c7b85] border border-[#F97316]/20 rounded-full px-4 py-1.5 mb-8">
               <div className="w-1.5 h-1.5 bg-[#F97316] rounded-full animate-pulse" />
-              <span className="text-[#F97316] text-xs font-semibold tracking-wider uppercase">
+              <span className="text-[#f3a908] text-xs font-semibold tracking-wider uppercase">
                 {t("NowHiring")}  — {Jobopening.length} {t("PositionsOpen")}
               </span>
             </div>
@@ -103,7 +100,7 @@ export default function CareersPage({ i }: { i: number }) {
               <br />
               <span className="text-white">{t("Metallurgy")} </span>
             </h1>
-            <p className="text-[#94A3B8] text-lg leading-relaxed mb-10 max-w-lg">
+            <p className="text-white text-lg leading-relaxed mb-10 max-w-lg">
               {t("Intersection")}
             </p>
             <div className="flex flex-wrap gap-4">
@@ -127,7 +124,7 @@ export default function CareersPage({ i }: { i: number }) {
 
           {/* Hero stats card */}
           <div className="hidden lg:block">
-            <div className="bg-[#858585a8] border border-white/10 rounded-2xl p-8 backdrop-blur-sm">
+            <div className="bg-linear-to-br from-[#8a969d] via-[#969da1] to-[#6c7b85] border border-white/10 rounded-2xl p-8 backdrop-blur-sm">
               <div className="grid grid-cols-2 gap-6 mb-8">
                 {STATS.map((s, index) => (
                   <div key={index} className="bg-[#64748B] rounded-xl p-5 border border-white/5">
@@ -158,17 +155,17 @@ export default function CareersPage({ i }: { i: number }) {
       <StatsCounterSection />
 
       {/* JOB OPENINGS */}
-      <section id="openings" className="py-24 bg-[#858585a8]">
+      <section id="openings" className="py-24 bg-linear-to-br from-[#8a969d] via-[#969da1] to-[#6c7b85]">
         <div className="container mx-auto px-6">
           <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-8">
             <div>
-              <div className="text-[#F97316] text-xs font-bold tracking-widest uppercase mb-3"> {t("Careers")} </div>
+              <div className="text-[#f3a908] text-xs font-bold tracking-widest uppercase mb-3"> {t("Careers")} </div>
               <h2 className="text-4xl font-black text-white">
                 {t("Positions")}
               </h2>
             </div>
             <div className="text-[#FFF] text-sm font-medium">
-              <span className="text-[#F97316] font-bold text-lg">{filtered.length}</span> {t("Positionsavailable")}
+              <span className="text-[#f3a908] font-bold text-lg">{filtered.length}</span> {t("Positionsavailable")}
             </div>
           </div>
 
@@ -229,7 +226,7 @@ export default function CareersPage({ i }: { i: number }) {
                 <div className="flex items-start justify-between mb-4">
                   <div>
                     <div className="text-white font-bold text-sm mb-1">{t(`jobs.${job.key}.title`)}</div>
-                    <div className="text-[#F97316] text-xs font-semibold">{t("title")}</div>
+                    <div className="text-[#f3a908] text-xs font-semibold">{t("title")}</div>
                   </div>
                   <div className={`w-8 h-8 rounded-lg flex items-center justify-center shrink-0 ${i === 0 ? "bg-[#F97316]/20" : "bg-white/5"}`}>
                     <svg className={`w-4 h-4 ${i === 1 ? "text-[#fcaf1c]" : "text-[#fcaf1c]"}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -248,7 +245,7 @@ export default function CareersPage({ i }: { i: number }) {
                     onClick={() => router.push("/jobs")}
                     className={`w-full py-2.5 rounded-lg text-xs font-bold transition-all cursor-pointer ${i === 0
                       ? "bg-linear-to-r from-[#F97316] to-[#EAB308] text-[#080C14]"
-                      : "border border-white/10 text-white bg-[#0461cfad] hover:bg-white/5"
+                      : "border border-white/10 text-white bg-[#0461cfad]"
                       }`}
                   >
                     {t("ApplyNow")}
@@ -290,7 +287,7 @@ export default function CareersPage({ i }: { i: number }) {
         <div className="container mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-16 items-start">
             <div>
-              <div className="text-[#F97316] text-xs font-bold tracking-widest uppercase mb-4">
+              <div className="text-[#f3a908] text-xs font-bold tracking-widest uppercase mb-4">
                 {t("whysslgroup")}
               </div>
               <h2 className="text-4xl font-black text-black leading-tight mb-6">
@@ -320,7 +317,7 @@ export default function CareersPage({ i }: { i: number }) {
                   className={`bg-linear-to-br from-slate-600 via-slate-900 to-zinc-950 rounded-xl p-5 hover:border-[#F97316]/30 transition-colors group ${i === 1 ? "border-[#F97316]/30 bg-linear-to-br from-industrial-blue/40 via-gunmetal to-charcoal" : "border-white/5"
                     }`}
                 >
-                  <div className={`mb-4 ${i === 1 ? "text-[#F97316]" : "text-[#a1b3cd]"} group-hover:text-[#F97316] transition-colors`}>
+                  <div className={`mb-4 ${i === 1 ? "text-[#f3a908]" : "text-[#a1b3cd]"} group-hover:text-[#f3a908] transition-colors`}>
                     <b.icon />
                   </div>
                   <div className="text-white font-bold text-sm mb-2">{t(`benefits.${b.key}.title`)}</div>
@@ -333,15 +330,15 @@ export default function CareersPage({ i }: { i: number }) {
       </section>
 
       {/* LIFE AT SSL */}
-      <section id="life" className="py-24 bg-[#858585a8] relative overflow-hidden">
+      <section id="life" className="py-24 bg-linear-to-br from-[#8a969d] via-[#969da1] to-[#6c7b85] relative overflow-hidden">
         <div className="absolute right-0 top-0 w-125 h-125 bg-[#EAB308]/4 rounded-full blur-[120px]" />
         <div className="relative container mx-auto px-6">
           <div className="text-center mb-16">
-            <div className="text-[#F97316] text-xs font-bold tracking-widest uppercase mb-4">{t("Culture")} </div>
+            <div className="text-[#f3a908] text-xs font-bold tracking-widest uppercase mb-4">{t("Culture")} </div>
             <h2 className="text-4xl lg:text-5xl font-black text-white mb-6">
               {t("LifeAt")} <span className="bg-linear-to-r from-[#F97316] to-[#EAB308] bg-clip-text text-transparent"> {t("title")} </span>
             </h2>
-            <p className="text-[#94A3B8] max-w-2xl mx-auto leading-relaxed">
+            <p className="text-white max-w-2xl mx-auto leading-relaxed">
               {t("Bureaucracy")}
             </p>
           </div>
@@ -383,7 +380,7 @@ export default function CareersPage({ i }: { i: number }) {
                 )}
                 <div className="bg-linear-to-br from-slate-600 via-slate-900 to-zinc-950 rounded-2xl p-6 hover:border-[#F97316]/20 transition-colors group">
                   <div className="flex items-center gap-3 mb-5">
-                    <div className="w-12 h-12 rounded-xl bg-linear-to-br from-[#F97316]/20 to-[#EAB308]/10 border border-[#F97316]/20 flex items-center justify-center text-[#F97316] group-hover:from-[#F97316]/30 transition-colors">
+                    <div className="w-12 h-12 rounded-xl bg-linear-to-br from-[#F97316]/20 to-[#EAB308]/10 border border-[#F97316]/20 flex items-center justify-center text-[#f3a908] group-hover:from-[#F97316]/30 transition-colors">
                       <step.icon />
                     </div>
                     <div className="text-3xl font-black text-[#FFF]">{step.step} </div>
@@ -398,18 +395,18 @@ export default function CareersPage({ i }: { i: number }) {
       </section>
 
       {/* CTA BANNER */}
-      <section className="py-6 px-6 bg-[#858585a8] relative overflow-hidden">
+      <section className="py-6 px-6 bg-linear-to-br from-[#8a969d] via-[#969da1] to-[#6c7b85] relative overflow-hidden">
         <div className="container mx-auto">
           <div className="bg-linear-to-r from-[#ad9a7f] via-[#ad9a7f]/10 to-[#6c809b] border border-[#F97316]/20 rounded-2xl p-12 text-center relative overflow-hidden">
             <div className="absolute inset-0 bg-linear-to-b from-transparent to-[#F97316]/5" />
             <div className="relative">
-              <div className="text-[#F97316] text-xs font-bold tracking-widest uppercase mb-4">{t("ReadytoApply")}?  </div>
+              <div className="text-[#f3a908] text-xs font-bold tracking-widest uppercase mb-4">{t("ReadytoApply")}?  </div>
               <h2 className="text-3xl lg:text-4xl font-black text-white mb-4">
                 {t("SourceYour")}
               </h2>
-              <p className="text-[#94A3B8] mb-8 max-w-lg mx-auto text-sm leading-relaxed">
+              <p className="text-white mb-8 max-w-lg mx-auto text-sm leading-relaxed">
                 {t("SendYour")} {" "}
-                <a href="mailto:hr@sslgroup.in" className="text-[#F97316] hover:underline">
+                <a href="mailto:hr@sslgroup.in" className="text-[#f3a908] hover:underline">
                   hr@sslgroup.in
                 </a>{" "}
                 {t("Directly")}
