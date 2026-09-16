@@ -1,15 +1,13 @@
 "use client";
 
 import { useState, useRef, DragEvent, ChangeEvent, useEffect, useMemo, FormEvent } from "react";
-import { Loader2, UploadCloud, CheckCircle2 } from "lucide-react";
+import { Loader2, UploadCloud, CheckCircle2, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { useSearchParams } from "next/navigation";
 import { useTranslations } from "next-intl";
-import Image from "next/image";
-import { ChevronDown } from "lucide-react";
 import { getCountries, getCountryCallingCode } from "libphonenumber-js";
 
 
@@ -55,9 +53,6 @@ export function JobApplicationForm() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [search, setSearch] = useState("");
   const dropdownRef = useRef<HTMLDivElement>(null);
-
-  const [countryCode, setCountryCode] = useState("+91");
-
   const searchParams = useSearchParams();
   const positionFromUrl = searchParams.get("position") || "";
   const [status, setStatus] = useState<Status>("idle");
@@ -133,15 +128,21 @@ export function JobApplicationForm() {
     const phone = data.get("phone")?.toString().trim();
     const location = data.get("location")?.toString().trim();
     const experience = data.get("experience")?.toString().trim();
-    const dob = data.get("dob")?.toString().trim()
+    const dob = data.get("dob")?.toString().trim();
     const newErrors: FormErrors = {};
+
     if (!name) newErrors.name = "Name is required.";
     if (!email) newErrors.email = "Email is required.";
-    if (!phone) newErrors.phone = "Phone number is required.";
-    if (!dob) newErrors.dob = "Please enter your data of birth"
+    if (!phone) {
+      newErrors.phone = "Phone number is required.";
+    } else if (phoneNumber.length !== 10) {
+      newErrors.phone = "Enter a valid 10-digit phone number.";
+    }
+    if (!dob) newErrors.dob = "Please enter your date of birth.";
     if (!location) newErrors.location = "Please select a location.";
     if (!experience) newErrors.experience = "Experience is required.";
     if (!resumeFile) newErrors.resume = "Please attach your resume.";
+
     setErrors(newErrors);
     if (Object.keys(newErrors).length > 0) return;
 
@@ -164,15 +165,14 @@ export function JobApplicationForm() {
 
       setStatus("success");
       form.reset();
+      setPhoneNumber("");
       setResumeFile(null);
+      setCountry(DEFAULT_COUNTRY);
+      setSearch("");
     } catch (err) {
       console.error("Application submission failed:", err);
       setServerError(err instanceof Error ? err.message : "Something went wrong");
       setStatus("error");
-    }
-
-    if (phoneNumber.length !== 10) {
-      newErrors.phone = "Enter a valid 10-digit phone number.";
     }
   };
 
@@ -221,7 +221,7 @@ export function JobApplicationForm() {
 
         <div className="space-y-2">
           <Label htmlFor="dob" className="text-white"> {t("dob")} </Label>
-          <Input id="dob" name="dob" type="dob" placeholder="08/10/1999" autoComplete="dob" />
+          <Input id="dob" name="dob" type="date" autoComplete="bday" />
           {errors.dob && <p className="text-sm text-red-400">{errors.dob}</p>}
         </div>
       </div>
@@ -236,7 +236,7 @@ export function JobApplicationForm() {
                 onClick={() => setDropdownOpen((prev) => !prev)}
                 className="flex h-10 w-24 items-center gap-1 rounded-md border border-input bg-transparent px-2 text-sm shadow-sm"
               >
-                <Image
+                <img
                   src={`https://flagcdn.com/w40/${country.iso2.toLowerCase()}.png`}
                   alt={country.label}
                   width={24}
@@ -265,7 +265,7 @@ export function JobApplicationForm() {
                         onClick={() => { setCountry(c); setDropdownOpen(false); setSearch(""); }}
                         className="flex w-full items-center gap-2 px-3 py-2 text-left text-sm text-black hover:bg-gray-900  hover:text-white"
                       >
-                        <Image
+                        <img
                           src={`https://flagcdn.com/w40/${c.iso2.toLowerCase()}.png`}
                           alt={c.label}
                           width={24}
