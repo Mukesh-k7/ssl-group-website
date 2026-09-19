@@ -18,8 +18,8 @@ export default function NotFound() {
       <h1 className="font-heading mt-2 text-4xl font-bold text-white"> {t("Found")} </h1>
       <p className="mt-4 max-w-md text-metallic/80">
          {t("exist")} {" "}
-        <a href="https://www.sslgroup.com/" className="text-industrial-blue hover:text-white">
-          www.sslgroup.com
+        <a href="https://www.sslgroupindia.com/" className="text-industrial-blue hover:text-white">
+          www.sslgroupindia.com
         </a>
         .
       </p>

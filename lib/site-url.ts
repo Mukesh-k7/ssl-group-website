@@ -1,4 +1,4 @@
-/** Production site — https://www.sslgroup.com */
+/** Production site — https://www.sslgroupindia.com */
 export const SITE_URL = "http://localhost:3000";
 export const SITE_DOMAIN = "localhost:3000";
 
