@@ -37,7 +37,7 @@ export default function AdminLoginForm({ locale }: AdminLoginFormProps) {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-6 rounded-[1.5rem] border border-white/10 bg-gunmetal/80 p-8 shadow-[0_15px_40px_rgba(0,0,0,0.18)]">
+    <form onSubmit={handleSubmit} className="space-y-6 rounded-3xl border border-white/10 bg-gunmetal/80 p-8 shadow-[0_15px_40px_rgba(0,0,0,0.18)]">
       <div>
         <label className="mb-2 block text-sm font-medium text-white">Username</label>
         <Input

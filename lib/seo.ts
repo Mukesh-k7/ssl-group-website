@@ -134,7 +134,7 @@ export function organizationSchema() {
       telephone: company.phone,
       availableLanguage: ["English", "Hindi"],
     },
-    sameAs: ["https://www.sslgroup.com/", "https://www.linkedin.com/company/ssl-group"],
+    sameAs: ["https://www.sslgroupindia.com/", "https://www.linkedin.com/company/ssl-group"],
   };
 }
 

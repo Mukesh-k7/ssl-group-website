@@ -21,7 +21,6 @@ export async function POST(req: NextRequest) {
   const incoterms = formData.get("incoterms")?.toString().trim();
   const message = formData.get("message")?.toString().trim();
   const type = formData.get("type")?.toString();
-  const locale = formData.get("locale")?.toString();
   const document = formData.get("document") as File | null;
 
   if (!name || !company || !email || !message) {

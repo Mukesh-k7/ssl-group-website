@@ -3,7 +3,7 @@ export const SITE_URL = "http://localhost:3000";
 export const SITE_DOMAIN = "localhost:3000";
 
 /**
- * Absolute URL for a path. Root returns https://www.sslgroup.com/
+ * Absolute URL for a path. Root returns https://www.sslgroupindia.com/
  */
 export function getAbsoluteUrl(path = ""): string {
   if (!path || path === "/") {
